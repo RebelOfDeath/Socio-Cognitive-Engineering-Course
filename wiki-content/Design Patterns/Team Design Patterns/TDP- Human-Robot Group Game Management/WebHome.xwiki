@@ -1,0 +1,45 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Design%20Patterns/spaces/Team%20Design%20Patterns/spaces/TDP%3A%20Human-Robot%20Group%20Game%20Management/pages/WebHome
+title: TDP: Human-Robot Group Game Management
+syntax: xwiki/2.1
+version: 1.1
+hash: 2d59c741c43601935b63810e4fbd9d08b2926bdb16c7c92f1a28eaabee880e6b
+%%WIKI-SYNC-META%%
+|(% colspan="1" style="width:385px" %)Problem|(% style="width:726px" %)The [[Activity Coordinator>>doc:Main.sdf.Stakeholders.Activity Coordinator.WebHome]] and [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] have to manage the interactive game play and emerging social behaviors of a group of vulnerable game participants such as [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]]. The allocation of tasks should be harmonized to the momentary capacities of the coordinator and robot, the varying needs of the players, and to the context. Pausing the game is part of the game management, as a mitigation strategy for prevention and handling of troubles that appear during the game play.
+|(% style="width:385px" %)Solution Structure|(% style="width:726px" %)[[image:129826985.png||height="231" width="539"]]
+|(% style="width:385px" %)Solution Description|(% style="width:726px" %)(((
+All actors (activity coordinator, humanoid robot, players) are **co-located**.
+
+1. Robot leads the game (i.e., is the game master, GM).
+1. Vulnerable game participants play the game (i.e., are the players, PL).
+1. Robot reflects on game play.
+1. Activity coordinator (CO) supervises players' state and engagement;
+11. if (s)he identifies risks for troubles to appear, the coordinator initiates a takeover from scene A (Active) to B (Pause).
+11. if (s)he recognizes that the risk for troubles disappeared, the coordinator initiates a takeover (from scene B to A)
+1. Activity coordinator starts and leads a social activity,
+1. Players socialize under the guidance of the activity coordinator.
+1. Robot engages in small talk.
+)))
+|(% style="width:385px" %)Human RQ|(% style="width:726px" %)(((
+* Player:  Show perceptual and cognitive capabilities to play the game.
+* Coordinator: Know the vulnerabilities of the players (memory). Show perceptual and cognitive skills to identify and mitigate risks for troubles in the game play.
+)))
+|(% style="width:385px" %)Machine RQ|(% style="width:726px" %)(((
+* [[RQ01.0: Lead the bingo game>>doc:2\. Specification.Requirements.RQ01\.0\: Lead the bingo game.WebHome]]
+* [[RQ02.0: Personalize game assignments>>doc:2\. Specification.Requirements.RQ02.WebHome]]
+* [[RQ03.0: Reflect on game performance>>doc:2\. Specification.Requirements.RQ03\.0\: Reflect on game performance.WebHome]]
+* [[RQ04.0: Respond to players conversations.>>doc:2\. Specification.Requirements.RQ04\.0\: Respond to players conversations\..WebHome]]
+)))
+|(% style="width:385px" %)Consequences|(% style="width:726px" %)(((
+**+** Offload of coordinator so that (s)he can concentrate on advancing players individual and social experiences.
+
+**~ -** The game play may be constrained by robot's limitations to sense and understand players' game experience
+)))
+|(% style="width:385px" %)Grounding|(% style="width:726px" %)(((
+Status: Proto Pattern.
+
+Instantiations: [[UC01.0: Music Bingo>>doc:2\. Specification.b\. Use Cases.UC01\.0\: Music Bingo.WebHome]].
+)))
+|(% style="width:385px" %)Related Patterns|(% style="width:726px" %)[[IDP: Title>>doc:Design Patterns.Interaction Design Patterns.IDP\: Title.WebHome]]
+
+ 

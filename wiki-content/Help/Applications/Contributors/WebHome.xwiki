@@ -1,0 +1,27 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Help/spaces/Applications/spaces/Contributors/pages/WebHome
+title: Contributors
+syntax: xwiki/2.0
+version: 1.1
+hash: ed6c1583ad465bb90bf722a735c104b0d3084a87b030c58853d0976e6327204d
+%%WIKI-SYNC-META%%
+{{velocity}}
+#set ($columnsProperties = {
+  'longText1': {"type":"text","filterable":false,"sortable":false,"html":true},
+  'doc.title': {"type":"text","size":20,"displayName":"Name","link":"view"},
+  'staticList1': {"type":"list","size":10},
+  'date1': {"type":"text","size":10,"html":true},
+  '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
+})
+#set ($options = {
+  'className': 'Help.Applications.Contributors.Code.ContributorsClass',
+  'translationPrefix': 'contributors.livetable.',
+  'tagCloud': true,
+  'rowCount': 15,
+  'maxPages': 10,
+  'selectedColumn': 'longText1',
+  'defaultOrder': 'asc'
+})
+#set ($columns = ['longText1', 'doc.title', 'staticList1', 'date1', '_actions'])
+#livetable('contributors' $columns $columnsProperties $options)
+{{/velocity}}

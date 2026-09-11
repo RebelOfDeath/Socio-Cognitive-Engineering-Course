@@ -1,0 +1,145 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/Stakeholders/pages/WebHome
+title: 2. Stakeholders
+syntax: xwiki/2.1
+version: 10.1
+hash: 482b35a014600434fb54800f9546f07d978514341dadbd17c60783e85ee4248a
+%%WIKI-SYNC-META%%
+= Stakeholder - Resident with dementia [ST-01] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-01
+|Name|Resident with dementia
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Type|Direct
+|Values and motivations|(((
+- HV-01: Dignity
+
+- HV-02: Autonomy
+
+- HV-03: Comfort
+
+- HV-04: Privacy 
+
+- HV-05: Wellbeing
+)))
+|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+
+= Stakeholder - Care home staff member [ST-02] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-02
+|Name|Care home staff member
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Type|Direct
+|Values and motivations|(((
+- HV-01: Dignity
+
+- HV-02: Autonomy
+
+- HV-03: Comfort
+
+- HV-04: Privacy - [[limit the amount of surveillance at their workplace>>Main.b\. Human Factors.1\. Human Values||anchor="Human Value [HV-nn]"]] 
+
+- HV-05: Wellbeing
+)))
+|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+
+= Stakeholder - Family members of Resident [ST-03] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-03
+|Name|Care home staff member
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Type|Direct
+|Values and motivations|(((
+- HV-01: Dignity
+
+- HV-02: Autonomy
+
+- HV-03: Comfort
+
+- HV-04: Privacy 
+
+- HV-05: Wellbeing
+)))
+|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+
+= Stakeholder - Management or the Owners of the care home [ST-04] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-04
+|Name|Care home staff member
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Type|Direct
+|Values and motivations|(((
+- HV-01: Dignity
+
+- HV-02: Autonomy
+
+- HV-03: Comfort
+
+- HV-04: Privacy 
+
+- HV-05: Wellbeing
+)))
+|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+
+= Stakeholder - Medical staff: GP, Nurse [ST-05] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-05
+|Name|Care home staff member
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Type|Direct
+|Values and motivations|(((
+- HV-01: Dignity
+
+- HV-02: Autonomy
+
+- HV-03: Comfort
+
+- HV-04: Privacy 
+
+- HV-05: Wellbeing
+)))
+|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+
+== Graph edges ==
+
+performs → Situated Activity; holds → Human Value; appears-in → Problem Scenario; referenced-by → Claim.

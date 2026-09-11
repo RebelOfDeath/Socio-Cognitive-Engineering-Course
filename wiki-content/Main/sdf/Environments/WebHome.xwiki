@@ -1,0 +1,135 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/Environments/pages/WebHome
+title: 1. Situated Activities
+syntax: xwiki/2.1
+version: 12.1
+hash: 3137ecbf089206a9829e4e3f217e56dcde64c7faeb69dac8e15f4fd0ca94fc2f
+%%WIKI-SYNC-META%%
+= Situated Activity  [SA-1] =
+
+//What a Stakeholder currently does, in the conditions they actually do it in. The empirical base everything else rests on.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-01
+|Name|Brushing teeth
+|Status|In Progress
+|Evidence basis|(((
+Direct observation: with the consent of the resident, or the resident walks you through their routine
+
+Surveys: ask care home employees about their experience with the activity
+
+Longitudinal study about recall of everyday task [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/11997490/>>https://pubmed.ncbi.nlm.nih.gov/11997490/]]
+
+Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/12597076/>>https://pubmed.ncbi.nlm.nih.gov/12597076/]]
+)))
+|Goal|Maintain oral hygiene as part of the resident's normal morning routine, with as much independence as possible
+|Performing Actor(s)|(((
+ST-01: Resident with dementia
+
+ST-02: Care home employee
+)))
+|Trigger|Morning routine, after waking, washing and/or breakfast
+|Constituent Tasks|(((
+~1. Recognize that is time to brush teeth
+
+2. Go to the bathroom/sink
+
+3. Locate toothbrush and toothpaste
+
+4. Pick up toothbrush
+
+5. Open toothpaste
+
+6. Put toothpaste on toothbrush
+
+7. Brush all teeth
+
+8. Rinse/spit
+
+9. Put toothbrush and toothpaste away
+)))
+|Context|Resident's bathroom in a dementia care home usually during a morning/evening care routine. Care staff may be nearby, the resident's cognitive abilities and need for assistance can vary.
+|Frequency and duration|Twice daily and approximately 2-5 minutes
+|Tools and artifacts|Toothbrush, toothpaste, sink, cup, mirror, towels, possible visual prompts/hints used by the care home 
+|Existing workarounds|(((
+- Verbally reminding the resident to brush their teeth
+
+- Placing toothbrush in front of them
+
+- Putting toothpaste onto the toothbrush
+
+- Demonstrating the brushing action
+
+- Breaking the activity into verbal instructions
+
+- Physically assisting the resident
+)))
+|Observed breakdowns|(((
+- Forgetting to start tooth brushing
+
+- Losing track of the sequence
+
+- Not recognising an object
+
+- Performing a single step over and over again
+
+- Stopping before completing the whole activity
+)))
+
+= Situated Activity  [SA-2] =
+
+//What a Stakeholder currently does, in the conditions they actually do it in. The empirical base everything else rests on.//
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-02
+|Name|Remind to take medication
+|Status|In Progress
+|Evidence basis|(((
+While, Duane, Beanland & Koch (2013), “Medication management: the perspectives of people with dementia and family carers.”
+
+Interview residents with dementia and care home employees
+
+Longitudinal study about recall of everyday task [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/11997490/>>https://pubmed.ncbi.nlm.nih.gov/11997490/]]
+
+Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/12597076/>>https://pubmed.ncbi.nlm.nih.gov/12597076/]]
+)))
+|Goal|Correct dose taken, on time
+|Performing Actor(s)|(((
+ST-01: Resident with dementia
+
+ST-02: Care home employee
+)))
+|Trigger|Morning routine, after waking, washing and/or breakfast - depending on the needs of the patient/type of medication
+|Constituent Tasks|(((
+~1. Recognize that it is time to take medication
+
+2. Identify which medicine/s should be taken
+
+3. Go to where the medicines are stored/located 
+
+4. Locate the medicine container
+
+5. Open the medicine container
+
+6. 
+)))
+|Context|Care home, morning, staff present
+|Frequency and duration|daily or whenever the prescription says it should be taken
+|Tools and artifacts|Glass, water, medication: pills, syringe, suppository, cream/ointment, food (when needs to be taken with food or to mask the taste)
+|Existing workarounds|Sticky notes, reminder app, reminder by caretaker in person, placing medication in a visible spot,
+|Observed breakdowns|(((
+When medication time depends on a variable, for example wake-up time,
+
+ 
+)))
+
+== Graph edges ==
+
+performed-by → Stakeholder; illustrated-by → Problem Scenario. Its Goal field is the Foundation-level anchor a later Specification-phase Objective derives from.

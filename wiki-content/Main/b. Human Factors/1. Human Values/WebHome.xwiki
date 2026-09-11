@@ -1,0 +1,33 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/1.%20Human%20Values/pages/WebHome
+title: 1. Human Values
+syntax: xwiki/2.1
+version: 7.1
+hash: 1fae9f22b18f5fb6277d183e890d2f23b8e7a463b9d63c9e33d8e9181d99b892
+%%WIKI-SYNC-META%%
+= Autonomy [HV-01] =
+
+//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-01
+|Name|Autonomy
+|Status|In Progress
+|Evidence basis|Interviews/observations with residents and care staff
+|Situated meaning|Autonomy means being able to participate in everyday activities and make choices for themselves, rather than having tasks automatically taken over by caregivers or technology. In daily activities such as brushing teeth or taking medication, this means allowing the person to initiate and perform the steps they are still capable of doing, while providing assistance or prompting only when needed.
+|Held by|(((
+ST-01: Resident with dementia
+
+ST-02: Care home employee
+)))
+|Intrinsic or instrumental|It is an intrinsic value because having choice and control over one's own everyday activities is valuable in itself. It can also instrumentally support related values such as dignity and wellbeing.
+|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
+|Source|the value theory, framework, or elicitation method this rests on.
+
+== Graph edges ==
+
+held-by → Stakeholder; party-to → Value Tension; operationalized-by → Measure.

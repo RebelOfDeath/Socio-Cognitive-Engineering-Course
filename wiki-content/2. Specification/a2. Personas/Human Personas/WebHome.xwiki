@@ -1,0 +1,32 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/a2.%20Personas/spaces/Human%20Personas/pages/WebHome
+title: Human Personas
+syntax: xwiki/2.1
+version: 1.3
+hash: 125fa1fc4dcb977b5f5df352f813b5e34c236d86d88177d6f7c20061128acde9
+%%WIKI-SYNC-META%%
+= Human Persona  [HP-nn] =
+
+//One per Direct Stakeholder (§1.1) who appears as a human Actor in the Design Scenario. Elaborates the values and relationship to other Stakeholders already captured in the Foundation into the behavioral detail a Foundation-level Stakeholder record deliberately leaves out. Indirect Stakeholders are not given a Persona; their role is carried by their relationship to a Direct one.//
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. HP-01, HP-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
+|Elaborates|the Stakeholder ID (§1.1) this Persona builds on. A Persona without one is a new Stakeholder that should have been documented in the Foundation first.
+|Role in Scenario|their position in the Design Scenario.
+|Task Demands|which Tasks require System support or collaboration.
+|Specific Capabilities and Needs|what they can and cannot do, relevant to this design.
+|Values and Motivations|elaborates the Human Value ID(s) already recorded for this Stakeholder in §1.1.
+|Social Network and Relationships|elaborates the relationship to other Stakeholders already recorded in §1.1.
+|History and Experiences|prior events shaping their stance, including prior technology they rejected, and why.
+|Constraints and Privacy Considerations|what they will not accept, stated as a position rather than a rule.
+
+== Graph edges ==
+
+elaborates → Stakeholder (§1.1); appears-in → Design Scenario; referenced-by → Value Story, Claim.

@@ -1,0 +1,42 @@
+{
+  "Administration.mp4": {
+    "sha256": "e6b786651e1441ede0a47aad5ae9c7e245af21bfde7ac7e6205f6494243a0be8",
+    "size": "629579",
+    "version": "1.1"
+  },
+  "Administration.webm": {
+    "sha256": "76874d752a5decd86c6ac0ce6cd3b82dff226282d1a8a7aa640c3535e0585d7d",
+    "size": "362187",
+    "version": "1.1"
+  },
+  "Template.mp4": {
+    "sha256": "bdbfb31c0f49cb111fe4668db3cb359fabdbebc277fb5abc70991e70da2f8927",
+    "size": "644965",
+    "version": "1.1"
+  },
+  "Template.webm": {
+    "sha256": "e9fb3e16c55599610a8fe0af35ac4f296ff2f1379147ab1df2b966b097fa944f",
+    "size": "473068",
+    "version": "1.1"
+  },
+  "article.png": {
+    "sha256": "3e8e06751f04d7c042eaba49dbec5837eeade17b94629c309f215cd91c1b646c",
+    "size": "385120",
+    "version": "1.1"
+  },
+  "encyclopedia.png": {
+    "sha256": "b8f7697eb93bcf13f567f4241ab591d48838a2f82f97f139a7fa13ece16a238d",
+    "size": "339408",
+    "version": "1.1"
+  },
+  "meeting.png": {
+    "sha256": "dc9dc0991e24eff2c46f2a509de7530c5f92ddd48e48fceb980187f4a9563bc7",
+    "size": "85555",
+    "version": "1.1"
+  },
+  "simple.png": {
+    "sha256": "b98baef6fafcc697336797dff67f93db41eeace18ebcd236e43780fbdfdb7456",
+    "size": "185180",
+    "version": "1.1"
+  }
+}

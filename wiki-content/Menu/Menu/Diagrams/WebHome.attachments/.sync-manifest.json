@@ -1,0 +1,12 @@
+{
+  "diagram.png": {
+    "sha256": "5e89879184510e91e477d41c61bd86a0e9209e9ecc17909a7b0ee20427950cbc",
+    "size": "81",
+    "version": "1.1"
+  },
+  "diagram.svg": {
+    "sha256": "1d10a91bed6c0ab1ecc5badad788412146a5f1a1eecf6ae892b5688dfb2220c1",
+    "size": "347",
+    "version": "1.1"
+  }
+}

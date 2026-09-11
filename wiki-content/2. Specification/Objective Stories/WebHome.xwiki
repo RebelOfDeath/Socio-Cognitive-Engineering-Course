@@ -1,0 +1,24 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/Objective%20Stories/pages/WebHome
+title: a3. Objective Stories
+syntax: xwiki/2.1
+version: 5.3
+hash: 46bb41f3dcc5ddcf065f120265ac752d8b2b9612cc98c067cbd08fb5b0fd93eb
+%%WIKI-SYNC-META%%
+= Objective Story  [OS-nn] =
+
+//A short narrative connecting a Function to the Human Value it serves, where a design choice needs that justification made explicit. The narrative form of what §2.6 records formally as a Grounding link.//
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. VS-01, VS-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
+|Narrative|names the Function, names the value it serves, and states the connection in language a Stakeholder would recognize as true to what they said.
+|Concerns|the Function ID and the Human Value ID (§1.2) it connects.
+
+== Graph edges ==

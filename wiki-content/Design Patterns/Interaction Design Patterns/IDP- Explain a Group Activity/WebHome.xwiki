@@ -1,0 +1,32 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Design%20Patterns/spaces/Interaction%20Design%20Patterns/spaces/IDP%3A%20Explain%20a%20Group%20Activity/pages/WebHome
+title: IDP: Explain a Group Activity
+syntax: xwiki/2.1
+version: 1.1
+hash: bdd789a48db68e37cced3b57ff88640254c55bd298494c31863b775e370f8aa6
+%%WIKI-SYNC-META%%
+**Design problem: **The specific role of the [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] (e.g., Pepper)  in the group activity (e.g., a game) and the game or activity to play, are not yet known to the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]] (i.e., the participants). The participants do not know how the activity has to be played and how they should participate.
+
+**Design solution:** In this design pattern, the robot follows a monologue to explain the activity and what the participants are expected to do in the session. After this monologue, the robot asks for confirmation about whether or not the explanation has been understood. If this is not the case, the explanation is repeated. The tone of the robot remains friendly and uses open gestures to make the interaction less formal.
+
+**Use when: **After the introduction but before the start of an activity, when participants are unfamiliar with the goal of the interaction.
+
+**Design rationale: **This design pattern follows the Didactic Communication pattern introduced by Khan et al., where there is a transmission of information from the robot to the human agent. By explaining the activity, participants will know what to expect and how they can participate in the activity.
+
+**Example: **In our use case (i.e. "group exercise"  as specified by group 4 of the SCE-course in 2020), Pepper explains using speech and hand gestures, the goal of the activity, which is to perform exercise moves together with the PwD. The speech rate is slightly lower than average considering the age and cognitive abilities of the participants. Pepper then explains the steps involved such as playing the song and demonstrating the dance moves that the participants are expected to repeat. Pepper confirms that the explanation is understood and if not, repeats the explanation. For detail on the parameter setting, see the Table below.
+
+
+|=(% colspan="2" %)Parameter|=Choice|=Rationale
+|(% colspan="2" %)Gesture Openness|Open|Makes the interaction less formal so that the PwD can familiarize themself better with Pepper.
+|(% colspan="2" %)Gaze Diversion|Diverted|Pepper will be able to look at all the PwD instead of fixating on one of them.
+|(% colspan="2" %)Proxemic Closeness|(((
+Average
+
+(between close and far)
+)))|Kept in the middle since there will be PwD both close and far away from Pepper at the same time.
+|(% rowspan="3" %)Voice
+ |(% colspan="1" %)Pitch|Middle|A high pitch makes Pepper sound friendly but it should not be too high otherwise the PwD might not be able to hear Pepper well.
+|(% colspan="1" %)Speed|Slower than average|Since the PwD are old, a low speech rate will help them understand Pepper better but it should not be too sow otherwise, they will be bored. 
+|(% colspan="1" %)Prosody|Strong|The prosody of the voice should be strong so that Pepper can articulate better.
+|(% colspan="2" %)Speech Acts|Informal|An informal tone makes the interaction more comfortable for the participants.
+|(% colspan="2" %)Eye Color|White|The eyes should be white so as to not distract the PwD.

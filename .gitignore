@@ -1,0 +1,3 @@
+wiki-sync/.env
+__pycache__/
+*.pyc

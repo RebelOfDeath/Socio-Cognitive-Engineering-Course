@@ -1,0 +1,64 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Documentation/spaces/SCE%20Guide/pages/WebHome
+title: SCE Guide
+syntax: xwiki/2.1
+version: 1.1
+hash: 63f375f80823ac99f14f5325356400a1fac042cf4bed95282d2926b32dc44f43
+%%WIKI-SYNC-META%%
+= Introduction =
+
+At TNO (Netherlands organisation for applied scientific research) and  Delft University of Technology, researchers have been working on a research & development method for complex, intelligent, and interactive technology called "Socio-Cognitive Engineering" (SCE). The SCE method has been developed over the years in an iterative way, and has been applied in multiple projects and a wide variety of application domains such a task support system in naval ships (Neerincx & Lindenberg, 2008); ePartners for astronauts during long-term missions (Neerincx et al., 2011); a support system for elderly living at home (Spiekman et al., 2011); a human-agent/robot teamwork system for disaster response (Mioch et al., 2012); a virtual coach for low-literates to practice societal participation (Schouten et al., 2017); a virtual assistant for workload harmonization in train-traffic control teams (Harbers et al., 2017); and a hybrid agent-based system for child's diabetes management (Neerincx et al., 2019). An overview of the literature can be found at [[https:~~/~~/scetool.ewi.tudelft.nl>>url:https://scetool.ewi.tudelft.nl/]].
+
+The SCE method structures and guides the systematic creation, evaluation and documentation of technological designs that aim to provide social, cognitive and affective support to help humans in realizing their goals and values. The method combines different design approaches and techniques in order to establish a sound, theoretically and empirically grounded design solution. In contrast to a “waterfall procedure”, SCE allows for quick, incremental, and iterative generate-and-test cycles (e.g. agile development). In this process, researchers and developers are required to continuously specify, refine, and integrate different parts of the system (i.e. components). SCE supports the sharing and reusing of the evolving design knowledge by the heterogeneous, multi-disciplinary development community. Key is the generation, refinement, validation, maintenance, and reuse of coherent and concise design specifications. Such design specifications describe //both// what the technology should do //and// the underlying design rationale (the why and when). Three main segments are distinguished: (A) Foundation, (B) Specification, and (C) Evaluation (Below, we summarize the SCE method; for some short examples, see SCE Example).
+
+
+[[image:https://confluence.ewi.tudelft.nl/download/attachments/60260354/image2021-1-25_14-31-59.png?version=1&modificationDate=1611581519000&api=v2||height="250"]][[image:SCE-image.png]]
+
+**Figure**: Socio-Cognitive Engineering method (SCE) with three main components (Foundation, Specification and Evaluation) and the underlying or abstracted behavioral & declarative design knowledge (resp. design patterns and ontology).
+
+= Foundation =
+
+The foundation describes the design rationale in terms of (a) operational demands, (b) relevant human factors knowledge, and (c) envisioned technologies. Together, these three constituents describe (1) the problem to be solved, (2) the existing knowledge on ways to solve the problem, and (3) the technology needed to implement that solution.
+
+== Operational Demands ==
+
+The operational demands describe the current practice as it is, i.e. without the envisioned technology. For the operational demands, SCE prescribes as main components the stakeholders and their characteristics (including their values), and the problem description and analysis thereof. A //problem scenario// provides a short storyline to illustrate the way in which stakeholders experience the problem. To obtain a clear overview of the problem, it needs to be analysed: what are the causes of the problem? Can the problem be broken down into smaller problems? And what type of problems are related to this problem yet beyond the scope of the current problem description?
+
+== Human Factors ==
+
+When designing technology, there are two driving questions that need to be well-thought out: (1) What tasks and/or values is the human trying to accomplish and how can the technology support the human in doing so?, and (2) How can the technology be designed such that the human is able to work with the technology? The Human Factors component of the SCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. Note that we emphasize that this knowledge should be relevant for the problem and its design solution: the knowledge described here should lead to a better understanding of either (1) or (2). The three constituents important to the human factors analysis are: (a) the human factors knowledge, (b) measures, and (c) interaction design patterns. Human factors //knowledge// describes available knowledge coming from previous research about how to solve the problems that have been identified in the problem analysis. //Measures //describe how to operationalise the quality of the intended behaviour or performance, i.e. how well is a user working with the design able to reach his/her objectives and what is the quality of the collaboration between the human worker and the technology?// Interaction design patterns (IDPs)// focus on the human-computer interaction, such as usable interface design and control options. IDPs offer generic solutions to recurring HCI design problems that have been proven to be effective. IDPs are often made available in repositories.
+
+== Technology ==
+
+The envisioned technology describes the available options of using existing technology and/or the need to develop novel technology in order to come to a system solution. The SCE method asks designers to specify what devices (hardware) and software could be used in the system design. In addition, for each type of technology, an argument should be provided as to why this technology might be of use and what the possible downsides might be of that particular type of technology.
+
+= Specification =
+
+The system design specification describes the solution to the problem in the form of a system design that makes use of the identified relevant human factors knowledge and the envisioned technology. The system specification consists of (a) design scenarios, (b)  use cases, (c) requirements, and (d) claims.
+
+= Evaluation =
+
+The design evaluation aims to test and validate the system’s design, or to discriminate between multiple design options, such that the current design can be improved upon in incremental development cycles. The SCE method describes two parts that are relevant with respect to the system evaluation: (1) the prototype and/or simulation, and (2) the evaluation that describes the evaluation method and results.
+
+= Design Patterns =
+
+The Socio-Cognitive Engineering method fosters the specification and maintenance of the design rationale, including the abstraction of so-called design patterns: generic, re-usable solutions to recurring design problems. These design patterns contain knowledge of various disciplines and should be presented in an understandable way for all stakeholders in the research & development process (e.g., the experts of the concerning domains and disciplines). They are being developed in numerous research and development projects, available for application in other projects and for other development teams. We distinguish Team Design Patterns (TDP) and Interaction Design Patterns (IDP).
+
+== Team Design Patterns (TDP) ==
+
+
+[[image:https://confluence.ewi.tudelft.nl/download/attachments/60260354/image2021-1-25_14-58-14.png?version=1&modificationDate=1611583095000&api=v2||height="250"]][[image:bias.png]]
+
+**Figure**: A "Bias Mitigation" Team Design Pattern (TDP), in which (1) the machine uses learning models to predict diagnoses, (2) the human supervises the task to assess predictions' accuracy, (3) the human performs moral supervision to assess prediction's fairness (e.g., the risks for discrimination), (4) if the accuracy-fairness trade-off is inappropriate, the human initiates a takeover, and (5) decides whether to change the model and how (see van Stijn et al. 2021).
+
+**References:**
+
+1. van Diggelen, J., & Johnson, M. (2019). Team Design Patterns. In //Proceedings of the 7th International Conference on Human-Agent Interaction// (pp. 118-126).
+1. van der Waa, J., van Diggelen, J., Siebert, L. C., Neerincx, M., & Jonker, C. (2020, July). Allocation of Moral Decision-Making in Human-Agent Teams: A Pattern Approach. In //International Conference on Human-Computer Interaction// (pp. 203-220). Springer, Cham.
+1. Van Stijn, J.J., Neerincx, M.A., ten Teije, A.T., and Vethman, S. (2021). Team Design Patterns for Moral Decisions in Hybrid Intelligent Systems: A Case Study of Bias Mitigation. AAAI 2021 Spring Symposium on Combining Machine Learning and Knowledge Engineering (AAAI-MAKE 2021)
+
+== Interaction Design Patterns ==
+
+= Ontology =
+
+The SCE method prescribes the construction of an ontology, i.e. a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies. Furthermore, the ontology can serve as the basis for the technology’s data structure. By specifying important concepts in the ontology and also choosing to use only one word instead of various ambiguous synonyms, communication becomes clearer and misunderstandings can be reduced to a minimum. The terms specified in the ontology are consistently used throughout the entire project.

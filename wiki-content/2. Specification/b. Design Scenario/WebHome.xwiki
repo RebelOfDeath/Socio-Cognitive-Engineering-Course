@@ -1,0 +1,19 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/b.%20Design%20Scenario/pages/WebHome
+title: a1. Design Scenario
+syntax: xwiki/2.1
+version: 1.1
+hash: ba6961580c8a2b17d0f4617b89e121bb13479a68d6d9cb9800e19f591d87ac3d
+%%WIKI-SYNC-META%%
+//<This is an adjusted version of the problem scenario that shows the proposed solution of the problem; a story board can be added to illustrate the design scenario>//
+
+
+{{html}}
+<label for="status">Status:</label>
+    <select name="status" id="status">
+        <option value="Not Started">Not Started</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Under Review">Under Review</option>
+        <option value="Finalized">Finalized</option>
+    </select>
+{{/html}}

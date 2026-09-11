@@ -1,0 +1,106 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/3.%20Problem%20Scenario/pages/WebHome
+title: 3. Problem Scenario
+syntax: xwiki/2.1
+version: 5.1
+hash: 5d5cb66a5c03de7ed21b88130b16398a9c8692c22e3721376a691a7d4a9d11ea
+%%WIKI-SYNC-META%%
+= Problem Scenario  [PS-01] =
+
+//A narrative locating the Problem in a concrete moment, plus the analysis of why it happens.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-01
+|Name|Losing track of the tooth brushing routine
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Narrative|It is morning in the dementia care home. The resident has finished their breakfast and returns to their room to perform their normal morning routine. A care worker reminds the resident that it is time to brush their teeth. The resident goes into the bathroom and stands in front of the sink. The toothbrush and toothpaste are visible next to the sink. The resident picks up the toothbrush but then pauses and appears unsure of what to do next. After some thought, they put the toothbrush back down. The care worker notices this and verbally prompts the resident to pick up the toothpaste. However, after putting the toothpaste on the toothbrush they again pause and are unsure of what to do next. The resident requires another verbal prompt from the care worker to eventually successfully finish this activity.
+|Stakeholders involved|(((
+- ST-01: Resident with dementia
+
+- ST-02: Care worker
+)))
+|Activities involved|SA-01: Brushing teeth
+|Breakdown point|The activity breaks down when the resident is unable to determine their next action independently in the tooth brushing sequence without the help of verbal prompts from for example the care worker
+|Causes|(((
+Root causes:
+
+- Difficulty remembering the correct sequence of actions
+
+- Difficulty recognizing what an object is for
+
+Contributing causes:
+
+- Instructions being too complex
+
+- Environmental distractions
+)))
+|Sub-problems|(((
+~1. Initiation: Resident may have difficulty with recognizing that it is time to start brushing their teeth
+
+2. Sequencing: Resident may begin the activity but lose track of which action comes next
+
+3. Completion: Resident may stop too early with brushing their teeth
+)))
+|Out of scope|General medication routines and other personal-care activities
+
+= Problem Scenario  [PS-02] =
+
+//A narrative locating the Problem in a concrete moment, plus the analysis of why it happens.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-02
+|Name|Difficulty completing the medication routine
+|Status|In Progress
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Narrative|(((
+A resident with dementia needs to take prescribed medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it is time to take it. At first the resident agrees to take the medicine.
+
+The care worker places the medication and a glass of water in front of the resident. However, the resident becomes distracted by activity elsewhere in the room and does not take the medication. After some time, the resident appears to have forgotten why the medication and water are in front of them.
+
+The care worker returns their attention to the medication and reminds them that they need to take it. The resident is not sure and asks what the tablets are for. The care worker explains again and provides reassurance. Following some more prompts, the resident takes the medication.
+)))
+|Stakeholders involved|(((
+- ST-01: Resident with dementia
+
+- ST-02: Care worker
+)))
+|Activities involved|SA-02: Brushing teeth
+|Breakdown point|The activity breaks down when the resident does not independently continue with taking the medication after it has been presented and requires repeated prompting and reassurance from the care worker.
+|Causes|(((
+Root causes:
+
+- Difficulty remembering the purpose of the medication after it has been presented
+
+- Difficulty remembering and doing the care worker's instruction
+
+- Difficulty independently starting the next action in the medication-taking sequence.
+
+Contributing causes:
+
+- Instructions being too complex
+
+- Environmental distractions
+)))
+|Sub-problems|(((
+~1. Initiation: Resident may have difficulty with recognizing that it is time to take their medication
+
+2. Sequencing: Resident may begin the activity but lose track of which action comes next or what the purpose is of the action/medicine
+
+3. Completion: Resident may stop too early with brushing their teeth
+)))
+|Out of scope|Medication prescribing and dosage decisions, changing medication, diagnosing medical conditions, physically administering medication, emergency medical treatment, and determining whether a medication is appropriate.
+
+==   ==
+
+== Graph edges ==
+
+illustrates → Problem; motivates → (Specification-phase) Objective.

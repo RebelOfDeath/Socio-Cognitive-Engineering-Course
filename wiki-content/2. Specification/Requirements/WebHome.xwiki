@@ -1,0 +1,33 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/Requirements/pages/WebHome
+title: c. Team Design Pattern
+syntax: xwiki/2.1
+version: 1.3
+hash: 2802b1ed90d1eef1b9602f85ccdc17cc66d7a8c95e110428e395be6b891a6345
+%%WIKI-SYNC-META%%
+= Design pattern, Team (TDP)  [TDP-nn] =
+
+//A reusable solution to a recurring collaboration problem, specifying task allocation between human and System Actors, independent of any one Task or Context.//
+
+**Report Format:** §2.4 Team Design Patterns (Task Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. TDP-01, TDP-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
+|Problem|the coordination problem, and why task allocation matters here.
+|Solution Structure|a diagram of who does what, if useful.
+|Solution Description|a narrative of how Actors collaborate.
+|Per-Actor allocation|which Tasks (Foundation-Phase) fall to each human Actor, and which Functions (Specification-Phase) fall to the System, as a short numbered list per side.
+|Consequences: benefits|what this allocation preserves or improves.
+|Consequences: risks|what this allocation assumes or trades away. A pattern that only lists benefits hasn't been thought through.
+|Related Patterns|other patterns this one builds on or complements.
+|Connection to Claims|the specific Claim(s) this pattern supports, by reference ID (e.g. UC01-F1-CL1). Required, not optional.
+|Validation path|either multiple known uses, or a literature-grounded rationale connected explicitly to those Claims. Neither present makes it a Proto-Pattern, labeled as such.
+
+== Graph edges ==
+
+allocates → Task (§1.1), Function; supports → Claim.

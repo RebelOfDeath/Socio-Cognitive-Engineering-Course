@@ -1,0 +1,30 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/Measuring%20Instruments/pages/WebHome
+title: 5. Evaluation Methods
+syntax: xwiki/2.1
+version: 1.1
+hash: 2809fe2ab51f945d6507bb708c70e4cdfeb6cd9204bdef0173fe7e323cff5f32
+%%WIKI-SYNC-META%%
+= Evaluation Method  [EM-nn] =
+
+//A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. EM-01, EM-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Procedure summary|what is actually done.
+|Purpose|Verification (does the Function operate as specified?) or Validation (does it produce the intended effect?).
+|Human subjects required|yes/no.
+|Measures used|Measure ID(s).
+|Cost and feasibility|what running it would require, realistically.
+|Known limitations|what this method cannot establish, so it is not later asked to.
+
+== Graph edges ==
+
+produces → Evidence; applies → Measure.

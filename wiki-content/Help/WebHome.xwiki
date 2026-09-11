@@ -1,0 +1,131 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Help/pages/WebHome
+title: Help
+syntax: xwiki/2.1
+version: 1.1
+hash: f906efe1c1c41dbccd80023a3c264648c8d8e8883004bea331542cba71009570
+%%WIKI-SYNC-META%%
+{{include reference="Help.Code.VelocityMacros" /}}
+
+{{velocity output="false"}}
+#macro (display4Cards $cards)
+  <div class="row">
+    #foreach ($card in $cards)
+      ## See http://getbootstrap.com/css/#grid-responsive-resets .
+      #if ($foreach.index > 0 && $foreach.index % 2 == 0)
+        <div class="clearfix visible-sm-block "></div>
+      #end
+      #if ($foreach.index > 0 && $foreach.index % 3 == 0)
+        <div class="clearfix visible-md-block"></div>
+      #end
+      #if ($foreach.index > 0 && $foreach.index % 4 == 0)
+        <div class="clearfix visible-lg-block"></div>
+      #end
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        #helpExampleCard($card)
+      </div>
+    #end
+  </div>
+#end
+
+#set ($howToCards = [{
+  'icon': 'fa fa-support',
+  'title': $services.localization.render('help.start.title'),
+  'description': $services.localization.render('help.start.description'),
+  'documentation': "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/?version=$escapetool.url($xwiki.version)"
+}, {
+  'icon': 'fa fa-play-circle',
+  'title': $services.localization.render('help.videos.title'),
+  'description': $services.localization.render('help.videos.description'),
+  'documentation': 'Help.Videos.WebHome'
+}])
+
+#if ($xwiki.exists('Help.History.WebHome'))
+  #set ($historyURL = $xwiki.getURL('Help.History.WebHome', 'view', $NULL, 'History'))
+#else
+  ## We need to generate the page history because the Extension Manager doesn't import it.
+  #set ($historyURL = $xwiki.getURL('Help.History.WebHome', 'save', $escapetool.url({
+    'content': $services.localization.render('help.history.version11.content'),
+    'comment': $services.localization.render('help.history.version11.comment'),
+    'form_token': $services.csrf.token,
+    'xredirect': $xwiki.getURL('Help.History.WebHome', 'save', $escapetool.url({
+      'title': $services.localization.render('help.history.version21.title'),
+      'content': $services.localization.render('help.history.version21.content'),
+      'form_token': $services.csrf.token,
+      'xredirect': $xwiki.getURL('Help.History.WebHome', 'save', $escapetool.url({
+        'title': $services.localization.render('help.history.version22.title'),
+        'content': $services.localization.render('help.history.version22.content',['**']),
+        'comment': $services.localization.render('help.history.version22.comment'),
+        'minorEdit': 1,
+        'form_token': $services.csrf.token,
+        'xredirect': $xwiki.getURL('Help.History.WebHome', 'save', $escapetool.url({
+          'content': "$services.localization.render('help.history.version31.content',['**']) $util.newline${util.newline} $services.localization.render('help.history.version31.content1')",
+          'form_token': $services.csrf.token,
+          'xredirect': $xwiki.getURL('Help.History.WebHome', 'view', $NULL, 'History')
+        }))
+      }))
+    }))
+  })))
+#end
+
+#set ($featureCards = [{
+  'icon': 'fa fa-pencil',
+  'title': $services.localization.render('help.edit.title'),
+  'description': $services.localization.render('help.edit.description',["<a href='https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing' class='wikiexternallink'>",'</a>',"<a href='$xwiki.getURL('XWiki.XWikiSyntax')'>"]),
+  'documentation': 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing',
+  'examples': $xwiki.getURL('Sandbox.WebHome', 'edit', 'editor=wysiwyg')
+}, {
+  'icon': 'fa fa-file-text-o',
+  'title': $services.localization.render('help.templates.title'),
+  'description':  $services.localization.render('help.templates.description'),
+  'documentation': 'Help.Templates.WebHome',
+  'examples': $xwiki.getURL('Help.Templates.WebHome', 'view', $NULL, 'HExamples')
+}, {
+  'icon': 'fa fa-file-excel-o',
+  'title': $services.localization.render('help.macros.title'),
+  'description':  $services.localization.render('help.macros.description'),
+  'documentation': 'Help.Macros.WebHome',
+  'examples': $xwiki.getURL('Help.Macros.WebHome', 'view', $NULL, 'HExamples')
+}, {
+  'icon': 'fa fa-files-o',
+  'title': $services.localization.render('help.applications.title'),
+  'description':  $services.localization.render('help.applications.description'),
+  'documentation': 'Help.Applications.WebHome',
+  'examples': $xwiki.getURL('Help.Applications.WebHome', 'view', $NULL, 'HExamples')
+}, {
+  'icon': 'fa fa-sitemap',
+  'title': $services.localization.render('help.organization.title'),
+  'description':  $services.localization.render('help.organization.description'),
+  'documentation': 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/',
+  'examples': $xwiki.getURL('Main.AllDocs', 'view', 'view=tree')
+}, {
+  'icon': 'fa fa-history',
+  'title': $services.localization.render('help.history.title'),
+  'description':  $services.localization.render('help.history.description'),
+  'documentation': 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl',
+  'examples': $historyURL
+}, {
+  'icon': 'fa fa-download',
+  'title': $services.localization.render('help.import.title'),
+  'description':  $services.localization.render('help.import.description'),
+  'documentation': 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Imports'
+}])
+{{/velocity}}
+
+{{velocity}}
+= $services.localization.render('help.title1') =
+
+$services.localization.render('help.description1')
+
+{{html clean="false"}}
+#display4Cards($howToCards)
+{{/html}}
+
+= $services.localization.render('help.title2') =
+
+$services.localization.render('help.description2')
+
+{{html clean="false"}}
+#display4Cards($featureCards)
+{{/html}}
+{{/velocity}}

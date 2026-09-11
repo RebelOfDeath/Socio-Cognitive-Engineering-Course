@@ -1,0 +1,31 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/Music%20and%20Cognition/pages/WebHome
+title: 3. Human Factors Concepts
+syntax: xwiki/2.1
+version: 1.1
+hash: 778fd107af26246e468ed4f5478aeb5b516745951cf6cfa588f738b874f44483
+%%WIKI-SYNC-META%%
+= Human Factors Concept  [HFC-nn] =
+
+//A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. HFC-01, HFC-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Concept statement|the principle, stated so a reader unfamiliar with the literature can use it.
+|Human factor addressed|the underlying phenomenon (trust, workload, situation awareness, stigma, behaviour change…).
+|Proposed mechanism|what causes what, and under what conditions — this is what makes an expected effect predictable rather than hoped for.
+|Source|specific citation, not a keyword or a field name.
+|Conditions and population of validity|where the finding holds, and any known limits on transferring it to this Stakeholder group.
+|Predicted Effect type|what kind of effect this concept would lead you to expect.
+|Associated Measures|Measure ID(s) that could detect that effect.
+
+== Graph edges ==
+
+grounds → (Specification-phase) Claim; explains → Human Value.

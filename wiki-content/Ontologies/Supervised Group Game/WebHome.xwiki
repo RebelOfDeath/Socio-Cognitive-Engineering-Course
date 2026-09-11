@@ -1,0 +1,42 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Ontologies/spaces/Supervised%20Group%20Game/pages/WebHome
+title: Supervised Group Game
+syntax: xwiki/2.1
+version: 1.1
+hash: 13606af7cbb8935dec63de2d353b1e5b48176f7e39cfcaf95df4ba0a49d276b2
+%%WIKI-SYNC-META%%
+= Structure =
+
+[[image:127107090.jpg||height="396" width="583"]]
+
+[[image:130908168.jpg||height="341" width="627"]]
+
+[[image:attachments/127107077/127107090.jpg||height="400"]]
+
+
+= Vocabulary =
+
+|=Generic concepts|=Definition
+|Activity| 
+|Actor| 
+|(% colspan="1" %)Role|(% colspan="1" %) 
+|(% colspan="1" %)Memory|(% colspan="1" %) 
+
+|=Activity|=Definition
+|Game| 
+|Game Master| 
+|Player| 
+|Assignment| 
+
+|=Actors|=Definition
+|Activity Coordinator|Is a role.
+|Humanoid Robot|Is a role.
+|People with Dementia|Is a role.
+
+|=Relations|=Definition
+|is_a| 
+|(% colspan="1" %)has_property|(% colspan="1" %) 
+|managed_by| 
+|led_by| 
+|(% colspan="1" %)remembered_by|(% colspan="1" %) 
+|(% colspan="1" %)contains_experiences_of|(% colspan="1" %) 

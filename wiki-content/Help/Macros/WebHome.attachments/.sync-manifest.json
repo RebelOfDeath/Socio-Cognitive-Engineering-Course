@@ -1,0 +1,22 @@
+{
+  "EM.mp4": {
+    "sha256": "8913a598f63c628feee78a4e2720d15a3dc71fb2342d367e23f80da8a975da95",
+    "size": "929081",
+    "version": "1.1"
+  },
+  "EM.webm": {
+    "sha256": "02d45ec2af209feaa1e612e81e1204b1fac4c6401fdb6a21ceea8e496d3a1bff",
+    "size": "754584",
+    "version": "1.1"
+  },
+  "Macro.mp4": {
+    "sha256": "c4413b6af4ffb9f07cfb8b0d8ba270eedd19e04add0cbd091b075af624f4fc7f",
+    "size": "695469",
+    "version": "1.1"
+  },
+  "Macro.webm": {
+    "sha256": "4798399e45421154c2a3cea766a1efe21fc47ff06a82c31d2b7988036d28367d",
+    "size": "456960",
+    "version": "1.1"
+  }
+}

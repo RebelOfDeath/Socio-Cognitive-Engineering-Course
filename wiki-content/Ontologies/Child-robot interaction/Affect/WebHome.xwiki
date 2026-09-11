@@ -1,0 +1,64 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Ontologies/spaces/Child-robot%20interaction/spaces/Affect/pages/WebHome
+title: Affect
+syntax: xwiki/2.1
+version: 1.1
+hash: 52560e61417f166ae5ee05d376ef438b282d7f96093d2ad5f1f7217cfe3a96d4
+%%WIKI-SYNC-META%%
+== OWL file ==
+
+//[[link to affect ontology>>attach:135364611.owl]]//
+
+== Authors ==
+
+Anne Merel Sternheim
+
+== Short description of ontology ==
+
+The designed ontology is based on the Emotional State Model for Affective Semantics (ESMAS), which was designed especially for the PAL project [[image:plugins/servlet/confluence/placeholder/unknown-macro]]. ESMAS takes several existing models (James Russell's Circumplex Model of Emotions, the Schachter-Singer theory of emotion and Joseph Forgas' Affect Infusion Model) as a basis and integrates these to describe how Mood and Emotion continuously influence each other. One's emotional state is the direct result of these influences and can be approximated with the ESMAS.
+
+The ontology serves several purposes:
+
+* represent the emotional state of the human actor and formulate an appropriate response when questioned.
+* communicate the human's emotions, using common/understandable labels for emotional states.
+* be able to infer the valence and intensity of the human's emotion.
+
+[[image:135364612.jpg||height="405" width="647"]]
+
+[[image:attachments/135364609/135364612.jpg||height="250"]]
+
+== Related work ==
+
+Forgas, J. P. (1995). Mood and judgements" the affect infusion model (AIM). Psychological Bulletin, 117(1):39-66. [[image:plugins/servlet/confluence/placeholder/unknown-macro]]
+
+Schachter, S. and Singer, J. E. (1962). Cognitive, social, and psychological determinants of emotional state. Psychological review, 69(5). [[image:plugins/servlet/confluence/placeholder/unknown-macro]]
+
+== Ontology design ==
+
+=== Ontology development ===
+
+The design goal of the ontology was in supporting the PAL system in achieving several goals:
+
+1. The PAL system has to be able to formulate an appropriate response, based on the emotional state of the child.
+1. The PAL system must be able to communicate about the child's emotions, using common emotion labels in a correct manner.
+1. The PAL system should be able to "understand" the child's emotions, by being able to infer valence/intensity values for the child's emotions.
+
+=== Ontology structure ===
+
+[[image:135364610.jpg||height="275" width="902"]]
+
+
+**Emotional state** - An emotional state is the result of the continuous influence that mood and emotion have on each other, observed at a certain point in time in a single individual (agent).
+
+**Response** - The output that specifies what action that is to be taken, based on the emotional state of the agent.
+
+**Agent** - An actor that can be animate or inanimate, as long as it can have an emotional state.
+
+**Mood** - Low intensity, diffuse, and relatively enduring active state without a salient antecedent cause.
+
+== Evaluation and results ==
+
+No evaluation in a practical setting as of yet.
+
+
+=== References ===

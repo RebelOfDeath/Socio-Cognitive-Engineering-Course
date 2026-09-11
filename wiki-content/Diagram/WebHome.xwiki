@@ -1,0 +1,38 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Diagram/pages/WebHome
+title: Diagrams
+syntax: xwiki/2.1
+version: 1.1
+hash: 816a3e8a5b3f9a167439ea0c7d8bf18fd8701624ec14ec599e053a650404dad4
+%%WIKI-SYNC-META%%
+{{include reference="Licenses.Code.VelocityMacros"/}}
+
+{{velocity output="false"}}
+#macro (diagramLiveTable)
+  #set ($columnsProperties = {
+    'doc.location': {"type":"text","size":20,"html":true},
+    'doc.date': {"type":"text","size":10},
+    'doc.author': {"type":"text","size":10,"link":"author"},
+    '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
+  })
+  #set ($options = {
+    'className': 'Diagram.DiagramClass',
+    'resultPage': 'Diagram.DiagramLiveTableResults',
+    'translationPrefix': 'diagram.livetable.',
+    'tagCloud': true,
+    'rowCount': 15,
+    'maxPages': 10
+  })
+  #set ($columns = ['doc.location', 'doc.date', 'doc.author', '_actions'])
+  #livetable('diagram' $columns $columnsProperties $options)
+#end
+{{/velocity}}
+
+{{velocity}}
+#if ($services.licensing.licensor.hasLicensureForEntity(
+    $services.model.createDocumentReference('', 'Diagram', 'DiagramClass')))
+  #diagramLiveTable()
+#else
+  {{error}}#getMissingLicenseMessage('diagram.extension.name'){{/error}}
+#end
+{{/velocity}}

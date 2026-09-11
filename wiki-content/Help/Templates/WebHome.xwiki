@@ -1,0 +1,123 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Help/spaces/Templates/pages/WebHome
+title: Templates
+syntax: xwiki/2.1
+version: 1.1
+hash: 361d8e2d5bfb68ce1be45806d0f01fc664854c58399ed161e2ada95204019bec
+%%WIKI-SYNC-META%%
+{{include reference="Help.Code.VelocityMacros" /}}
+
+{{velocity output="false"}}
+#set ($featuresPrefix = 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features')
+#set ($exoPrefix = 'https://extensions.xwiki.org/xwiki/bin/view/Extension')
+#set ($actionCards = [{
+  'title': $services.localization.render('help.templates.useTemplates.title'),
+  'description': $services.localization.render('help.templates.useTemplates.description'),
+  'tip': $services.localization.render('help.templates.useTemplates.tip',
+    ["<a href='$featuresPrefix/DocumentLifecycle#HCreate' class='wikiexternallink'>",'</a>']),
+  'thumbnail': 'Template',
+  'actions': [{
+    'label': $services.localization.render('help.try.label'),
+    'type': 'success',
+    'url': $xwiki.getURL('Sandbox.WebHome', 'create', $escapetool.url({
+      'title': "New Page $datetool.get('dd MMM yyyy, HH:mm')"
+    }))
+  }]
+}, {
+  'title': $services.localization.render('help.templates.create.title'),
+  'description': $services.localization.render('help.templates.create.description'),
+  'tip': $services.localization.render('help.templates.create.tip',
+    ["<a href='$exoPrefix/Administration+Application#HCreatetheTemplateProvider' class='wikiexternallink'>",'</a>']),
+  'thumbnail': 'Administration',
+  'actions': [{
+    'label': $services.localization.render('help.more.label'),
+    'url': "$exoPrefix/Administration+Application#HCreatetheTemplateProvider"
+  }]
+}])
+
+#if ($hasAdmin)
+  #set ($discard = $actionCards[1].actions.add(0, {
+    'label': $services.localization.render('help.browse.label'),
+    'url': $xwiki.getURL('XWiki.XWikiPreferences', 'admin', 'editor=globaladmin&section=Templates')
+  }))
+#end
+
+#macro (getTemplateExample $inputCard $outputCard)
+  #set ($templateReference = $services.model.resolveDocument($inputCard.templateReference))
+  #if ($xwiki.getDocument($templateReference).isNew())
+    #set ($outputCard = {
+      'title': $inputCard.title,
+      'description': $inputCard.description,
+      'documentation': "$exoPrefix/Templates+Application/",
+      'thumbnail': $inputCard.thumbnail
+    })
+    #else
+      #set ($outputCard = {
+        'title': $inputCard.title,
+        'description': $inputCard.description,
+        'examples': $inputCard.templateReference,
+        'thumbnail': $inputCard.thumbnail
+      })
+  #end
+#end
+
+#set ($exampleCards = [{
+  'title': $services.localization.render('help.templates.article.title'),
+  'description':$services.localization.render('help.templates.article.description'),
+  'templateReference': 'Templates.Article.Template.WebHome',
+  'thumbnail': 'Help.Templates.WebHome@article.png'
+}, {
+  'title': $services.localization.render('help.templates.encyclopedia.title'),
+  'description': $services.localization.render('help.templates.encyclopedia.description'),
+  'templateReference': 'Templates.Encyclopedia.Template.WebHome',
+  'thumbnail': 'Help.Templates.WebHome@encyclopedia.png'
+}, {
+  'title': $services.localization.render('help.templates.meeting.title'),
+  'description': $services.localization.render('help.templates.meeting.description'),
+  'templateReference': 'Templates.Meeting.Template.WebHome',
+  'thumbnail': 'Help.Templates.WebHome@meeting.png'
+}, {
+  'title': $services.localization.render('help.templates.simple.title'),
+  'description': $services.localization.render('help.templates.simple.description'),
+  'templateReference': 'Templates.SimplePage.Template.WebHome',
+  'thumbnail': 'Help.Templates.WebHome@simple.png'
+}])
+{{/velocity}}
+
+{{velocity}}
+{{html clean="false"}}
+<div class="row">
+  #foreach ($card in $actionCards)
+    ## See http://getbootstrap.com/css/#grid-responsive-resets .
+    #if ($foreach.index > 0 && $foreach.index % 2 == 0)
+      <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
+    #end
+    <div class="col-xs-12 col-sm-6">
+      #helpActionCard($card)
+    </div>
+  #end
+</div>
+<h3 id="HExamples">$services.localization.render('help.templates.examples.title')</h3>
+<p>$services.localization.render('help.templates.examples.description')</p>
+<div class="row">
+  #foreach ($card in $exampleCards)
+    ## See http://getbootstrap.com/css/#grid-responsive-resets .
+    #if ($foreach.index > 0 && $foreach.index % 2 == 0)
+      <div class="clearfix visible-sm-block "></div>
+    #end
+    #if ($foreach.index > 0 && $foreach.index % 3 == 0)
+      <div class="clearfix visible-md-block"></div>
+    #end
+    #if ($foreach.index > 0 && $foreach.index % 4 == 0)
+      <div class="clearfix visible-lg-block"></div>
+    #end
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      #set ($outputCard = {})
+      #getTemplateExample($card $outputCard)
+      #helpExampleCard($outputCard)
+    </div>
+  #end
+</div>
+<p><a href="$exoPrefix/Templates+Application/" class="wikiexternallink">$services.localization.render('help.templates.more')</a></p>
+{{/html}}
+{{/velocity}}

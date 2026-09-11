@@ -1,0 +1,21 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Help/spaces/Macros/spaces/Gallery/pages/WebHome
+title: Gallery
+syntax: xwiki/2.1
+version: 1.1
+hash: b7004ded2696ea0de239fd0e20deb206ba7764c140b3836bb6df49ef30de845d
+%%WIKI-SYNC-META%%
+{{velocity}}
+$services.localization.render('help.macros.gallery', ['**', '**']) [[$services.localization.render('help.more.label')>>https://extensions.xwiki.org/xwiki/bin/view/Extension/Gallery+Macro]]
+{{/velocity}}
+
+
+{{example}}
+{{gallery}}
+image:Koi1.jpg
+image:Koi2.jpg
+image:Koi3.jpg
+image:Koi4.jpg
+image:Koi5.jpg
+{{/gallery}}
+{{/example}}

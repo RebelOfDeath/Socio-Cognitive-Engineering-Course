@@ -1,0 +1,32 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/c.%20Technology/spaces/Music%20Management/pages/WebHome
+title: Technology Options
+syntax: xwiki/2.1
+version: 1.1
+hash: 13f92802199d18dd67da81922e24aa6be71d83b782f2b73a6e4f157f34a56982
+%%WIKI-SYNC-META%%
+= Technology Option  [TECH-nn] =
+
+//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. TECH-01, TECH-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Category|AI/ICT, Social Robot, sensing, or other.
+|Capabilities|what it can do that is relevant here.
+|Limitations|what it cannot do, and where it degrades.
+|Maturity and feasibility|technical readiness within this project's real constraints.
+|Failure and fallback behaviour|what happens when it fails or is unavailable.
+|Benefits|which Goals or Human Values it serves, by ID.
+|Drawbacks|including which Value Tension it strains, by ID.
+|Selected or rejected|and, if rejected, the reason — a rejected option is still Foundation knowledge.
+
+== Graph edges ==
+
+enables → (Specification-phase) Function; addresses → Goal / Human Value; strains → Value Tension.

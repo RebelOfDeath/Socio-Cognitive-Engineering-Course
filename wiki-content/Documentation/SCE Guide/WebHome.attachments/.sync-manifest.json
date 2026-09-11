@@ -1,0 +1,12 @@
+{
+  "SCE-image.png": {
+    "sha256": "bddd77bffce9c7a5abdfbe010808aba491d16b2e783262e8474d82846b333dec",
+    "size": "47663",
+    "version": "1.1"
+  },
+  "bias.png": {
+    "sha256": "07ef46aff444dc570c233a7abd7b829441c311853eb3d693aaa28cbefc04912f",
+    "size": "70008",
+    "version": "1.1"
+  }
+}

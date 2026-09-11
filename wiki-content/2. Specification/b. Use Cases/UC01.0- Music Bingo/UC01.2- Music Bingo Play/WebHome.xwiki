@@ -1,0 +1,33 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/b.%20Use%20Cases/spaces/UC01.0%3A%20Music%20Bingo/spaces/UC01.2%3A%20Music%20Bingo%20Play/pages/WebHome
+title: UC01.2: Music Bingo Play
+syntax: xwiki/2.1
+version: 1.1
+hash: 6bc8d0daa2b281e466cf29d1bd62503512f40f54d605d743141d4a259e5b184c
+%%WIKI-SYNC-META%%
+|(% style="width:147px" %)**Objective**|(% style="width:752px" %)[[OB01: Entertain and stimulate PwD>>doc:2\. Specification.Objectives.OB01\: Entertain and stimulate PwD.WebHome]]
+|(% style="width:147px" %)**TDP**|(% style="width:752px" %)[[TDP: Human-Robot Group Game Management>>doc:Design Patterns.Team Design Patterns.TDP\: Human-Robot Group Game Management.WebHome]]
+|(% style="width:147px" %)**Actors**|(% style="width:752px" %)[[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]], [[Activity Coordinator>>doc:Main.sdf.Stakeholders.Activity Coordinator.WebHome]], [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]]
+|(% style="width:147px" %)**Pre-condition**|(% style="width:752px" %)(((
+[[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]] are sitting in semicircle, waiting for the group activity to start;
+
+[[Activity Coordinator>>doc:Main.sdf.Stakeholders.Activity Coordinator.WebHome]] set up the game and handed out Bingo cards to [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]];
+
+[[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] is ready to start the game, right in front of the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]].
+)))
+|(% style="width:147px" %)**Post-condition**|(% style="width:752px" %)The game ended.
+|(% style="width:147px" %)**Action sequence**|(% style="width:752px" %)(((
+1. The [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] plays a 30-second clip of a song from the playlist provided by the [[Activity Coordinator>>doc:Main.sdf.Stakeholders.Activity Coordinator.WebHome]]. 
+1. The [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] initiates a conversation among the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]], asking if they recognise the artist of the song last played and to share memories they may associate with the song.
+1. The [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] encourages the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]] to mark the artist on their Bingo cards if they recognize the song. 
+1. If a song is not recognized by the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]], the [[Humanoid Robot>>path:Humanoid-Robot_126287881.html]] shares fun facts about the song obtained from the knowledge base.
+1. If a [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]] shouts "Bingo!":
+11. The [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] will engage with the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]] who shouted "Bingo!" and check if all songs of his or her bingo card have been check-marked
+11. If not all songs in the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]]'s list have been played yet, the [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] will remind the player that there is still a song left. The [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] then continues the game.
+11. Otherwise, the [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] will identify the player who shouted "Bingo!". If the [[Person with Dementia>>doc:Main.sdf.Stakeholders.Person with Dementia.WebHome]]'s songs have indeed all been played and the [[Activity Coordinator>>doc:Main.sdf.Stakeholders.Activity Coordinator.WebHome]] confirms this, the [[Humanoid Robot>>doc:Main.c\. Technology.Humanoid Robot.WebHome]] marks the winner of the game. 
+)))
+
+|**UC Step**|**Requirements**|**Claims**|**IDP**
+|...|...|...|...
+|7|[[RQ03.2: Fill voids with fun facts>>doc:2\. Specification.Requirements.RQ03\.0\: Reflect on game performance.RQ03\.2\: Fill voids with fun facts.WebHome]]|[[CL001: Improved affect of PwD>>doc:Ontologies.Child-robot interaction.Affect.WebHome]]|[[IDP: Title>>doc:Design Patterns.Interaction Design Patterns.IDP\: Title.WebHome]]
+|...|...|...|...

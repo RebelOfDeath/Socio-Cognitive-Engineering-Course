@@ -1,0 +1,116 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Help/spaces/Macros/pages/WebHome
+title: Macros
+syntax: xwiki/2.1
+version: 1.1
+hash: 076155e168ec7365e71efc5748c5cb7e9c636bd7cab81a62d81a781c44e452a4
+%%WIKI-SYNC-META%%
+{{include reference="Help.Code.VelocityMacros" /}}
+
+{{velocity output="false"}}
+#if ($hasAdmin)
+  #set ($section = 'XWiki.Extensions')
+  #if (!$xwiki.exists($section))
+    ## Support for pre-9.2RC1 Administration Application
+    #set ($section = 'XWiki.AddExtensions')
+  #end
+  #set ($browseMacrosURL = $xwiki.getURL('XWiki.XWikiPreferences', 'admin', "section=${section}&search=macro&repo="))
+#else
+  #set ($browseMacrosURL = 'https://extensions.xwiki.org/xwiki/bin/view/Extension/#%7Ct=extensions&p=1&l=30&s=doc.creationDate&d=desc&category=macro')
+#end
+
+#set ($actionCards = [{
+  'title': $services.localization.render('help.macros.useMacros.title'),
+  'description': $services.localization.render('help.macros.useMacros.description'),
+  'tip':$services.localization.render('help.macros.useMacros.tip', ["<a href='https://extensions.xwiki.org/xwiki/bin/view/Extension/CKEditor+Integration' class='wikiexternallink'>",'</a>', $services.icon.renderHTML('cog')]),
+  'thumbnail': 'Macro',
+  'actions': [{
+    'label':  $services.localization.render('help.try.label'),
+    'type': 'success',
+    'url': $xwiki.getURL('Sandbox.TestPage1', 'edit', 'editor=wysiwyg')
+  }]
+}, {
+  'title': $services.localization.render('help.macros.browseMacros.title'),
+  'description': $services.localization.render('help.macros.browseMacros.description'),
+  'tip': $services.localization.render('help.macros.browseMacros.tip', ["<a href='#if($xwiki.exists('XWiki.XWikiSyntaxMacrosList'))$xwiki.getURL('XWiki.XWikiSyntaxMacrosList')#{else}$xwiki.getURL('XWiki.WikiMacros')#end'>",'</a>']),
+  'thumbnail': 'EM',
+  'actions': [{
+    'label':  $services.localization.render('help.browse.label'),
+    'url': $browseMacrosURL
+  }, {
+    'label': $services.localization.render('help.more.label'),
+    'url': 'https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/Tutorials/WritingMacros/WikiMacroTutorial/'
+  }]
+}])
+
+#set ($exampleCards = [{
+  'title': $services.localization.render('help.macros.box.title'),
+  'description': $services.localization.render('help.macros.box.description'),
+  'documentation': 'https://extensions.xwiki.org/xwiki/bin/view/Extension/Box+Macro',
+  'examples': 'Help.Macros.Box.WebHome',
+  'thumbnail': 'Help.Macros.Box.WebHome@box.png'
+}, {
+  'title': $services.localization.render('help.macros.toc.title'),
+  'description': $services.localization.render('help.macros.toc.description'),
+  'documentation': 'https://extensions.xwiki.org/xwiki/bin/view/Extension/TOC+Macro',
+  'examples': 'Help.Macros.ToC.WebHome',
+  'thumbnail': 'Help.Macros.ToC.WebHome@toc.png'
+}, {
+  'title': $services.localization.render('help.macros.gallery.title'),
+  'description': $services.localization.render('help.macros.gallery.description'),
+  'documentation': 'https://extensions.xwiki.org/xwiki/bin/view/Extension/Gallery+Macro',
+  'examples': 'Help.Macros.Gallery.WebHome',
+  'thumbnail': 'Help.Macros.Gallery.WebHome@gallery.png'
+}, {
+  'title': $services.localization.render('help.macros.chart.title') ,
+  'description': $services.localization.render('help.macros.chart.description'),
+  'documentation': 'https://extensions.xwiki.org/xwiki/bin/view/Extension/Chart+Macro',
+  'examples': 'Help.Macros.Chart.WebHome',
+  'thumbnail': 'Help.Macros.Chart.WebHome@chart.png'
+}, {
+  'title': $services.localization.render('help.macros.tree.title') ,
+  'description': $services.localization.render('help.macros.tree.description'),
+  'documentation': 'https://extensions.xwiki.org/xwiki/bin/view/Extension/Document+Tree+Macro',
+  'examples': 'Help.Macros.Tree.WebHome',
+  'thumbnail': 'Help.Macros.Tree.WebHome@tree.png'
+}, {
+  'title': $services.localization.render('help.macros.notifications.title') ,
+  'description': $services.localization.render('help.macros.notifications.description'),
+  'documentation': 'https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HNotificationsMacro',
+  'examples': 'Help.Macros.Notifications.WebHome',
+  'thumbnail': 'Help.Macros.Notifications.WebHome@notifications.png'
+}])
+{{/velocity}}
+
+{{velocity}}
+{{html clean="false"}}
+<div class="row">
+  #foreach ($card in $actionCards)
+    ## See http://getbootstrap.com/css/#grid-responsive-resets .
+    #if ($foreach.index > 0 && $foreach.index % 2 == 0)
+      <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
+    #end
+    <div class="col-xs-12 col-sm-6">
+      #helpActionCard($card)
+    </div>
+  #end
+</div>
+<h3 id="HExamples">Examples</h3>
+<p>Need help or confused with some of our macros? Check out their documentation and find out more about their functionality.</p>
+<div class="row">
+  #foreach ($card in $exampleCards)
+    ## See http://getbootstrap.com/css/#grid-responsive-resets .
+    #if ($foreach.index > 0 && $foreach.index % 2 == 0)
+      <div class="clearfix visible-sm-block "></div>
+    #end
+    #if ($foreach.index > 0 && $foreach.index % 3 == 0)
+      <div class="clearfix visible-md-block visible-lg-block"></div>
+    #end
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      #helpExampleCard($card)
+    </div>
+  #end
+</div>
+<p><a href="https://extensions.xwiki.org/xwiki/bin/view/Main/#%7Ct=extensions&p=1&l=30&s=doc.creationDate&d=desc&category=macro" class="wikiexternallink">$services.localization.render('help.macros.more')</a></p>
+{{/html}}
+{{/velocity}}

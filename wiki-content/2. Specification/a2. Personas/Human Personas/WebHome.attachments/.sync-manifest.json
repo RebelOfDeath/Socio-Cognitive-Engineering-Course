@@ -1,0 +1,17 @@
+{
+  "01.jpg": {
+    "sha256": "33b4539bc01c965ca926b8e2beed8d79e6de26e1d7e856de67ce9ff61df95aa2",
+    "size": "73352",
+    "version": "1.1"
+  },
+  "02.jpg": {
+    "sha256": "9c654f6788ac73853aeb6af8ac80de8f69163e55aa1ec863dd06648f4a7d283a",
+    "size": "76588",
+    "version": "1.1"
+  },
+  "03.jpg": {
+    "sha256": "146608543c3ec9785ea3e4bb768997b5186a51df8c81dc2e0c95b1e3bdbc6d41",
+    "size": "41124",
+    "version": "1.1"
+  }
+}

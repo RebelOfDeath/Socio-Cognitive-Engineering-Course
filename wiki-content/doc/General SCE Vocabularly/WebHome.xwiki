@@ -1,0 +1,43 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/doc/spaces/General%20SCE%20Vocabularly/pages/WebHome
+title: General SCE Vocabularly
+syntax: xwiki/2.1
+version: 1.1
+hash: 9853e35f77dea3da4926380fd91dd5b57af2b96faa4b6b008a3668ab70bfc8e1
+%%WIKI-SYNC-META%%
+Created by Mark Neerincx, last modified on 25 Jan, 2021
+
+|**Claim**|(((
+A claim refers to an intended and/or side effect of a particular functionality of the system (described in a functional requirement). Claims are used to formulate hypotheses about the beneficial and detrimental effects of adding a particular functionality to the design specification. These hypotheses can be tested in evaluation studies to investigate the beneficial effect of including a certain functionality in the design.
+
+Claims can refer to both positive effects (benefits) of using the system, but also to possible negative side effects (downsides) of using the system. Usually the positive and negative claims pose a trade-off for a specific functionality. Yet ultimately, the positive effects should outweigh the negative effects of including the respective functionality in the design.
+
+Claims are generally considered to be admissible if there has been previous scientific evidence supporting the claim, for instance in research related to existing theories from human factors knowledge. Most claims are related to or derived from human factors theories and/or principles.
+)))
+|**Design specification**|The design specification is the collection of use cases, requirements, claims, and ontology. Together they describe the outline of the system's behaviour, functionalities, and intended effects. This should be sufficient to provide a blueprint for developers to implement the design in an operational, interactive version of the system (a prototype). A specification refers to an explicit set of requirements to be satisfied by a design, system, product, or service.
+|**Functional requirement**|In the SCE method, functional requirements describe functional properties of the system that follow directly from the user requirements and/or the operational demands. Functional requirements are described as “the system shall do <requirement>”. The MoSCoW (Must have, Should have, Could have, Won't have this time) method can be used to prioritise the requirements.
+|**Human Factors concept**|A Human Factors (HF) concept is an idea, principle, or theory based in the human factors literature. The concept is deemed relevant to the design if it can be used to stipulate the design rationale, claims, or design pattern premises.
+|(% colspan="1" %)**Design pattern**|(% colspan="1" %)(((
+Design is about shaping digital things for people’s use. Its main focus is on behaviour and imagining things as they might be.
+
+By identifying recurring problems that need a solution, design patterns can provide a solution that can be consistently used throughout the design. Not every problem can be solved with an design pattern and not every design pattern needs a fully detailed specification in the design specification. Only if there is a recurring problem for which no currently available design patterns provide a solution, it is required to describe a new design pattern.
+
+Design patterns draw from premises that are grounded in human factors research.
+
+We distinguish Team Design Patterns (TDP) and Interaction Design Patterns (IDP).
+)))
+|(% colspan="1" %)**Team design pattern**|(% colspan="1" %)<tbd>
+|**Interaction design pattern**|(((
+Interaction design is heavily focused on satisfying the needs and desires of the majority of people who will use the product. To be inclusive, the diversity of the potential end-user population should be well addressed.
+
+An interaction design pattern is an abstracted interaction that is not tied to one specific task, event or context. It is a formal description of a general solution to a recurring interaction design problem within the design specification.
+)))
+|**Ontology**|An ontology formally represents declarative knowledge as a collection of interlinked descriptions of entities or concepts within a domain (possibly as a hierarchy). The ontology uses a shared vocabulary to denote the classes, attributes, instances, and relations of those concepts. An ontology is a collection of concepts, along with their definition, and AxB relations between them. The ontology can be regarded as a domain-specific language to speak about the design.
+|**Operational demand**|An operational demand is a demand formulated by future end users and other stakeholders. As such, they describe the wishes coming from the workplace / environment.
+|**Requirement**|A requirement is some functionality or capability the system needs to be able to perform, address, or satisfy.
+|**Stakeholder**|A stakeholder is a person or institution that is directly or indirectly affected by the design. Stakeholders also have certain values that are important to them.
+|**Technology**|The technology describes the type of currently existing, or to be developed, technologies used in the system to produce the desired behaviour.
+|**Use case**|A use case is a sequence of interactions between multiple roles or actors. A use case is situated, i.e. related to a given circumstance/context/activity (as opposed to design patterns).
+|**Value**|A value is something a person finds very important to protect and support. It is a driving force in decision making and goal selection. An instrumental value is worth having as a means to something else that is good. An intrinsically valuable thing is worth having for itself. Intrinsic and instrumental goods are not mutually exclusive categories. Some things are both good in themselves, and also good for getting other things that are good.
+
+ 

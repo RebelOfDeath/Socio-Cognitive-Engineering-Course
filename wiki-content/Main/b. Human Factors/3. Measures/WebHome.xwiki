@@ -1,0 +1,31 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/3.%20Measures/pages/WebHome
+title: 4. Measures
+syntax: xwiki/2.1
+version: 1.1
+hash: 8fab324eb217aa242b2792c8ed904f696994e0c7e8b5a47fd338d50e4650fed2
+%%WIKI-SYNC-META%%
+= Measure  [M-nn] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. M-01, M-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Construct measured|what it actually captures.
+|Type|quantitative or qualitative.
+|Instrument or procedure|the scale, protocol, log, or coding scheme used.
+|Scoring or coding scheme|how raw observation becomes a value — for qualitative Measures, the coding rules.
+|Validity and reliability|prior evidence where it exists; state plainly where the Measure is bespoke.
+|Serves|Verification, Validation, or both.
+|Burden|participants, equipment, time, and the ethics load it implies.
+
+== Graph edges ==
+
+operationalizes → (Specification-phase) Claim / Premise; used-by → Evaluation Method.

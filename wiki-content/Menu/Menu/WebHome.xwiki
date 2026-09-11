@@ -1,0 +1,43 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Menu/spaces/Menu/pages/WebHome
+title: Menu
+syntax: xwiki/2.1
+version: 1.1
+hash: e087264736e37a899da8734d323aa01473ce96ccee2bddbd52d1062696ae641a
+%%WIKI-SYNC-META%%
+* [[~[~[image:icon:house~]~] Project home>>doc:Main.WebHome||rel="noopener noreferrer" target="_blank"]] 
+* [[Design Patterns >>doc:Design Patterns.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[Team Design Patterns>>doc:Design Patterns.Team Design Patterns.WebHome||rel="noopener noreferrer" target="_blank"]]
+*** [[TDP: Human-Robot Group Game Management>>doc:Design Patterns.Team Design Patterns.TDP\: Human-Robot Group Game Management.WebHome]]
+** [[Interaction Design Patterns>>doc:Design Patterns.Interaction Design Patterns.WebHome||rel="noopener noreferrer" target="_blank"]]
+* [[Ontologies >>Ontologies.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[Child-Robot Interaction>>doc:rejamexample:Ontologies.Child-robot interaction.WebHome||rel="noopener noreferrer" target="_blank"]]
+*** [[PAL>>doc:rejamexample:Ontologies.Child-robot interaction.PAL.WebHome||rel="noopener noreferrer" target="_blank"]]
+*** [[Affect>>doc:Ontologies.Child-robot interaction.Affect.WebHome]]
+** [[Elderly-Robot Interaction>>doc:Ontologies.Elderly-Robot Interaction.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[Supervised Group Game>>doc:Ontologies.Supervised Group Game.WebHome]]
+* [[Tools>>path:/xwiki/bin/view/Tools/]]
+** [[Quick Start>>path:/xwiki/bin/view/Tools/a.%20Quickstart/]]
+*** [[Step 1: Use Case>>path:/xwiki/bin/view/Tools/a.%20Quickstart/User%20Story/]]
+*** [[Step 2: Functions>>path:/xwiki/bin/view/Tools/a.%20Quickstart/Step%202%3A%20Functions/]]
+*** [[Step 3: Effects>>path:/xwiki/bin/view/Tools/a.%20Quickstart/Step%203%3A%20Effects/]]
+*** [[Step 4: Claims>>path:/xwiki/bin/view/Tools/a.%20Quickstart/Step%204%3A%20Measurements%20%28extra%29/]]
+*** [[Storyboard>>path:/xwiki/bin/view/Tools/a.%20Quickstart/Storyboard/]]
+** [[Templates>>path:/xwiki/bin/view/Tools/Templates/]]
+** [[Design Workshop>>path:/xwiki/bin/view/Tools/Design%20Workshop/]]
+** [[Situated Design Rationale>>path:/xwiki/bin/view/Tools/Situated%20Design%20Rationale/]]
+* [[Documentation>>Documentation.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[SCE Guide>>doc:Documentation.SCE Guide.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[SCE FAQ>>doc:Documentation.SCE FAQ.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[SCE Glossary>>doc:Documentation.SCE Glossary.WebHome||rel="noopener noreferrer" target="_blank"]]
+*** [[General SCE Vocabulary>>doc.General SCE Vocabularly.WebHome||rel="noopener noreferrer" target="_blank"]]
+*** [[Team Design Pattern Vocabulary>>doc.Team Design Pattern Vocabularly.WebHome||rel="noopener noreferrer" target="_blank"]]
+** [[XWiki User Guide>>https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/||rel="noopener noreferrer" target="_blank"]]
+** [[XWiki documentation>>https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/]]
+** [[XWiki Syntax Guide>>XWiki.XWikiSyntax||queryString="xpage=print" rel="noopener noreferrer" target="_blank"]]
+* [[Publications>>path:/xwiki/bin/view/Publications/]]
+* [[Wiki directory>>path:/xwiki/bin/view/Wiki%20directory/]]
+** [[TNO HatLab>>https://hmt.hatlab.tnods.nl/]]
+** [[SCE course>>path:/xwiki/bin/view/Wiki%20directory/SCE%20course/]]
+** [[Projects>>path:/xwiki/bin/view/Wiki%20directory/Projects/]]
+* [[Contact>>path:/xwiki/bin/view/Contact/]]

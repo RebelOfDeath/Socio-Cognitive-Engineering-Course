@@ -1,0 +1,75 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/b.%20Use%20Cases/pages/WebHome
+title: b. Use Case with Claims/Premises
+syntax: xwiki/2.1
+version: 2.1
+hash: 76c5bc50cae529d3bb6895a05edc3b431123306b50d9061bbad19cbd4328b342
+%%WIKI-SYNC-META%%
+= Objective  [OBJ-nn] =
+
+//The bridge between Foundation and Specification. Per the verbatim Function definition, a Function is specified to contribute to an operational objective, a human-factors objective, or a Human Value, so this is where Foundation knowledge becomes something a Function can be traced to. A Specification-Phase concept, documented here rather than in §1.4 because it presupposes a proposed System, which §1.4 does not yet have.//
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. OBJ-01, OBJ-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
+|Statement|the end-state to be reached, not the capability that reaches it.
+|Type|operational (derived from a Goal), human-factors (derived from a Human Factors Concept), or value-derived (derived from a Human Value).
+|Derived from|the Foundation entity ID this Objective answers to: a Goal recorded on a Situated Activity for operational, an HFC for human-factors, an HV for value-derived. This field replaces what a separate “operational demand” node would otherwise carry.
+|Priority|relative to other Objectives, where they compete.
+
+== Graph edges ==
+
+derived-from → Goal (on a Situated Activity) / Human Factors Concept / Human Value; served-by → Function; referenced-by → Claim.
+
+
+
+= Use Case  [UC01, UC02…] =
+
+//A formal description of one distinct Goal-directed interaction between Actors and the System. One Use Case per interaction, not per screen or per Technology feature.//
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. UC01, UC02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
+|Objective(s) served|by ID. A Use Case may serve more than one.
+|TDP(s) and IDP(s) used|by ID. A Use Case may cite more than one of either, or none, since different Functions within it may draw on different patterns.
+|Actors|who and what participates, human and System.
+|Trigger|what initiates this Use Case.
+|Pre-condition|any condition a Function or Effect depends on to hold. There is no separate Prerequisite field.
+|Post-condition|the state once the Use Case concludes, across its main and alternate flows.
+|Action Sequence|(Specification-Phase), step by step, with any step lacking a counterpart in a §1.1 Task flagged as a deliberate addition. Alternate flows and exception handling branch from specific steps.
+|Function(s) realized|(Specification-Phase): what the system should do, without unnecessarily prescribing implementation, each assigned a stable ID (F1, F2…) unique across the whole Specification, not reset per Use Case.
+
+== Graph edges ==
+
+realizes → Design Scenario; serves → Objective; uses → Team Design Pattern, Interaction Design Pattern; asserts → Premise, Claim.
+
+
+== Premises table ==
+
+One row per Premise:
+
+|=Premise ID|=Function|=Evaluation Method(s) / Measure(s)|=Verification Criteria|=Step(s)
+|UC01-F1-PR1|F1|by Foundation ID, e.g. EM-01, M-01|what “operates as specified” means here: availability, correctness, accuracy, timing, reliability, robustness, or conformity to specified interaction behaviour, stated as a condition on the cited Measure(s)|n/a
+
+== Claims table ==
+
+One row per Claim:
+
+|=Claim ID|=Function|=Serves Objective|=Effect|=Grounding|=Evaluation Method(s) / Measure(s)|=Validation Criteria|=Step(s)
+|UC01-F1-CL1|F1|by ID, e.g. OBJ-02|expected positive or adverse effect|Human factor / Human value|by Foundation ID, e.g. EM-02, M-02|the condition on those Measure(s) under which the Claim is considered to hold|n/
+
+
+
+ 

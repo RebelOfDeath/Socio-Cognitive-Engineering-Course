@@ -1,0 +1,204 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Documentation/spaces/SCE%20FAQ/pages/WebHome
+title: SCE FAQ
+syntax: xwiki/2.1
+version: 1.1
+hash: 3af89754b2e517f652cb9217be6ca752d6ff1adf77de05aba66512c8fa72e00f
+%%WIKI-SYNC-META%%
+== Workflow ==
+
+====== What should I do during a SCRUM sprint in an SCE process? ======
+
+Go ask your scrum master if you do not know what to do. For example, you are new to the team, just completed your previous tasks, are unsure where your current research interests match or you do not know what should be prioritized. Make some agreements with your scrum master on this, and make sure your own interests are covered.
+
+This means that you have to be clear with what you want to work on, and your scrum master to have an overview of priorities and potential gaps in work.
+
+====== How do I know if my idea is relevant given the entire Research & Development (R&D) project? ======
+
+If you have an idea for research or implementation, walk through these three steps:
+
+1) Discuss your idea first with one or two others within the team. Make sure that you have a clear grasp of what your idea is.
+
+2) Plan during the drift a meeting with the Scrum Master and Product Owner where you pitch your idea.
+
+3) Both the Scrum Master and Product Owner can give you a go or no-go for your idea. If it is a go, the idea can be written in one or more User Stories and added to the backlog (note that this does not mean you can work on it next sprint, this depends on the sprint planning).
+
+== Confluence & SCE ==
+
+=== On the meaning of Confluence and SCE concepts ===
+
+==== General ====
+
+====== What is SCE? ======
+
+SCE stands for Socio-Cognitive Engineering. The SCE method entails an iterative incremental research and development (R&D) process of human-agent systems with an explicit description of the design rationale ([[source>>url:https://confluence.ewi.tudelft.nl/display/SE/SCE+Example+Home]]). What does this mean? It means that it offers a way to do research and development to solve real-world problems that entails systems where humans and intelligent systems interact. It offers a way to do this while explicitly describing how researchers and developers came to the specific design of the entire system. By this the method tries to ensure a way of engineering that takes the human, technology and context systematically into account, all design steps are documented (not only results and benefits but also the upsides and downsides) and the underlying knowledge that was used to develop the entire system.
+
+It is important to know that the SCE method regards the engineering of a specific system for a specific problem.
+
+There are also some examples at [[SCE Example Home>>url:https://confluence.ewi.tudelft.nl/display/SE/SCE+Example+Home]].
+
+====== What is the System? ======
+
+SCE aims at the development of a joint Human-Machine System (e.g., explicating both the human and machine tasks and the task allocation process). The "machine" is the actual software and/or hardware that is designed, being designed, or planned to be designed in the near future. It is that which solves a concrete and specific problem, it may (and most likely does) do so by relying on existing generic technologies.
+
+====== What is the Problem? ======
+
+The Problem is an actual and specific issue a group or multiple groups of people (with current technology) come across when living or doing their job (e.g. a fall prevention and assistance system for the elderly). In addition, it may entail potential future issues that are foreseen due to some reasons (e.g. a system to remedy energy shortage due to climate changes and current industry).
+
+==== Foundation ====
+
+====== What is the Foundation? ======
+
+The Foundation contains the information (knowledge, models, methods, tools, ...)  required to design and build a specific system.
+
+Foundation is a segment within the SCE method. The SCE method is about describing the design of a specific system for a specific problem. However, the method acknowledges that to do so, a certain amount of knowledge, experience and tools are required. These form the foundation of the specific system that is or will be developed. It not only includes an overview of the literature and current systems but may just as well include new research and technologies that were developed for the specific system. As long as this information is in some way more generic and reusable (i.e., not only applicable to the system being designed), it belongs to the Foundation. In addition, it contains a description of the current status quo relevant to the specific system (e.g. a problem statement, challenges, overview of user groups, etc.).
+
+====== What are the Operational Demands? ======
+
+The Operational Demands describe the current practice as it is without the to-be-designed system and related technologies. For the operational demands, the SCE method prescribes as main components the stakeholders and their characteristics, and the problem description and analysis thereof. As such this segment of SCE provides an overview of all that is relevant to the problem the intended system will ideally solve. Note that there nowhere is required to give an exhaustive list of such 'demands'. These are encapsulated in the descriptions of stakeholders and problem descriptions.
+
+====== What are the Stakeholders? ======
+
+There are two kinds of Stakeholders: Direct Stakeholders and Indirect Stakeholders. In general, a stakeholder is a person (or organization) who is related to the system we are designing and developing. A Direct Stakeholder is, as the name implies, someone who is directly related to the system. Normally these are the users. An Indirect Stakeholder is someone who has some benefit from the system but does so in an indirect way. For example, in the design of a system that prevents the elderly from falling the elderly are direct stakeholders whereas their family members and insurance companies are indirect stakeholders. A Stakeholder description should explain as specifically as reasonably possible who these people are in the form of a general profile, but also what their values are and their relation to other stakeholders. 
+
+====== What are the Tasks? ======
+
+A Task is a certain action or sequence of actions a Stakeholder group generally goes through to achieve a certain goal. By documenting these actions it becomes easier, as a system designer, to think of the things a system should (still) allow in some form or another. These tasks can be small (e.g. opening a door as the elderly) or large (walking the dog as the elderly).
+
+====== What are the Personas? ======
+
+Persona is a term used in User Experience Design (UX-Design). It is a tool for system designers to bring life to a stakeholder group as it provides a detailed description of a single (fictive) member of that group. They offer information a system designer or developer can use to think of the requirements and effects a certain system functionality may have. For example, when designing a system to prevent the elderly from falling, two personas can be made: Andrew who likes to walk and be active and Sarah who loves to read on her balcony. Both personas offer concrete information about putting the (intended) system in a context in which it may be used. This allows designers to think about how certain functionality would work out.
+
+There is plenty of material on personas, for example, on [[this wikipedia page>>url:https://en.wikipedia.org/wiki/Persona_(user_experience)]].
+
+====== What is the Problem Scenario? ======
+
+A problem scenario provides a short storyline to illustrate the way in which stakeholders experience a problem. This storyline is allowed and even preferred, to be specific. This means that it can literally be a small story about a specific stakeholder (e.g. a persona named "Andrew") that has to deal with the problem the system has to solve. This makes it a scenario, instead of a mere definition. A story form ensures that the problem is grounded in specific (hypothetical) situations and issues the stakeholder group(s) run into given the current status quo. Since a problem can encapsulate many different issues and it may not be the same problem for every person, multiple problem scenarios can, and preferably should, be defined.
+
+In addition, any relevant information to the problem scenarios can also be provided under this segment. See these as a kind of appendices containing additional contextual information, although not specifically in the form of a story (e.g. a summary and link to an elaborate user experience study on which one or more problem scenarios were based).
+
+====== What are the Human Factors? ======
+
+The Human Factors segment of the SCE method describes the available relevant knowledge about, for instance, human cognition, performance, task support, learning, human-machine interaction, ergonomics, etc. The three constituents important to the human factors analysis are (a) the human factors knowledge (theories, models, methods, tools), (b) measuring instruments, and (c) interaction design patterns. The three constituents important to the human factors analysis are (a) the human factors knowledge, (b) measures, and (c) interaction design patterns.
+
+Note that we emphasize that this knowledge should be relevant to the problem and its design solution: the knowledge described here should lead to a better understanding of what the system should support and how it should function.
+
+====== What is the Human Factors Knowledge? ======
+
+The Human factors knowledge describes available knowledge coming from previous research about how to solve the problems that have been identified.
+
+====== What are Measures? ======
+
+The Measures describe how to operationalize the quality of the usage of the system, i.e. how well is a stakeholder working with the design able to reach his/her objectives and what is the quality of the collaboration between the human and the system?
+
+====== What are the Design Patterns? ======
+
+Design Patterns (DPs) offer generic solutions to recurring design problems that have been proven to be effective. DPs can fall under different categories, such as Interaction Design Patterns that focus on things as usable interface design and control options or Human-Agent Team Design Patterns that focus on things such as how humans and agents can collaborate effectively through information sharing. DPs are often made available in repositories.
+
+====== What is Technology? ======
+
+The Technology segment encompasses both Current Technology as well as Envisioned Technology. The Current Technology includes software and hardware that is already out there which is generic enough to be applied to the system that is being designed and described. For example, wearable activity sensors and their software APIs. Envisioned Technology includes software and hardware that is envisioned to be required for the intended system to be able to function. For example, a certain software package to detect a specific type of biases in data and AI models. An important property of Envisioned Technology is that it is in essence applicable to more than just the intended system: It encompasses a (substantive) portion of the research that was committed in light of the intended system but which is applicable to more than just that.
+
+It is important to remember that when an Envisioned Technology is developed, it becomes Current Technology. As such, there is no clear distinction made between these two in the Confluence Space.
+
+==== Specification ====
+
+====== What is the Specification? ======
+
+The Specification describes a solution to the problem that is documented in the Foundation. It describes this solution in the form of a system design that makes use of the identified problems, relevant human factors and current and/or envisioned technology. The main thing to remember is that the Specification is specific to a problem and system implementation. Hence all which is stated in this segment relates to these two specific things. Anything that is more generically applicable (whether it already existed or was developed) forms the foundation of the system and thus belongs in the Foundation.
+
+The system specification consists of objectives, design scenarios, actors and use cases, requirements, and claims.
+
+====== What are Objectives? ======
+
+An Objective describes what is tried to be achieved with the system. This is different than a Requirement, as this specifies what the system should be capable of. Instead, an Objective describes an end-state of the joint cognitive system (e.g., an unbiased classification or a well-calibrated level of trust) and, possibly, the overall desired way to achieve this end-state (e.g. a hybrid-AI approach that utilizes knowledge- and data-driven approaches to the fullest).
+
+====== What are Design Scenarios? ======
+
+The Design Scenarios are short descriptive stories that provide a clear description of how a persona will work with the technology thereby showing (a) the solution offered to one of the problem scenarios and (b) its expected beneficial effects. Thus, design scenarios are closely related to problem scenarios: they preferably can be the same story but a design scenario tells it from the perspective where the persona uses the system that is being designed. Together, the problem and design scenarios provide a contextualized view on what the problem is, who encounters it, how the system will solve it and how the system is being used in the process.
+
+====== What are Use Cases? ======
+
+A Use Case is a step-by-step interaction description between one or more personas and the system. It commonly describes this in the form of a narrative which depicts every action the persona(s) and the system perform, however, it does not state anything on how this is actually done.
+
+====== What are the Requirements? ======
+
+The Requirements are specific functional descriptions of what the system should be capable of.
+
+====== What are Claims? ======
+
+The Claims are statements that explain what the system should support or achieve with a given functionality.
+
+This explicit linking of requirements to claims enables designers to formulate hypotheses that need to be tested in system evaluations to justify the adoption of the functional requirement. If the claim cannot be proven to be valid through system evaluations, the designers need to refine their system design, for instance, by trying to improve the functionality, replacing the functionality with a different one, or dropping the functionality and the claim altogether (i.e. by deciding that the objective is not reachable at this point). Either way, there is no use in including functionality that does not achieve its underlying claims.
+
+Design decisions are often the outcome of weighting the pros and cons of the design choice, Therefore, claims explicate the trade-off by specifying the expected upsides and the downsides that might occur (at the end, it should be justified that the upsides are higher than the downsides, e.g. in an empirical experiment with the end-users).
+
+Ideally, a Claim is not only linked to a Requirement but also a Measurement Instrument from the Foundation segment. There can be one or more measurements that are needed to evaluate the claim.
+
+====== What is the difference between Foundation and Specification? ======
+
+The Foundation segment is the place where all relevant information is documented regarding the problem, context, humans, technologies and more. The relevance is determined by what is needed to design a specific system.
+
+The Specification segment is the place where all relevant information is documented regarding the solution, requirements, claims and more. The relevance is determined by whether it describes the system that is being designed or not.
+
+Hence, the Foundation contains the actual foundational knowledge needed to specify the system in the Specification.
+
+====== When does something from the Specification move to the Foundation? ======
+
+The SCE method supports an iterative design process. It does so in several ways, but one of these is that developed functionality can lead to generic technologies being developed and evaluated. Functionality is described in a Requirement so it may happen that much of the (new or generic) content of a Requirement is relocated to the Technology portion of the Foundation.
+
+==== Evaluation ====
+
+====== What are Evaluations? ======
+
+An Evaluation aims to test and validate the system’s design, or to discriminate between multiple design options, such that the current design can be improved upon in incremental development cycles. Note that this entails both user evaluations as well as technical performance evaluations.
+
+Ideally, an evaluation contains an artefact (prototype), evaluation method and evaluation results and can be constructed iteratively. For example, when setting up a first evaluation one may start with describing the artefact and method and later add the results.
+
+====== What are Artefacts? ======
+
+An Artefact is an implementation or prototype that incorporates a given set of requirements, interaction design patterns, and technological means. An Artefact can be the full system, but is often only a portion of it to allow for a controlled evaluation. Often the Artefact links to a set of Requirements that will be tested.
+
+====== What are Evaluation Methods? ======
+
+An Evaluation Method is a general description of how an evaluation is or will be construed. It can take many forms, such as a human-in-the-loop study, a use-case-based simulation, or an expert review but also more technological methods such as a test of robustness, accuracy, and speed. Ideally, a evaluation method refers to the Claim(s) it tries to evaluate and indirectly the Measurement(s) it will use for that (indirectly, because a Claim links to the Measurements).
+
+====== What are Evaluation Results? ======
+
+An Evaluation Result describes the outcomes of an applied evaluation method. Preferably, it also documents potential changes to the Foundation and/or Specification that resulted from these results.
+
+====== How does an Evaluation lead to a change in the Foundation? ======
+
+An evaluation may result in new knowledge about the problem, stakeholders, technologies or other topics described in the Foundation. As such, an evaluation can lead to changes or additions to the Foundation.
+
+====== How does an Evaluation lead to a change in the Specification? ======
+
+An evaluation may disprove a certain claim. In this case, the linked claims and Requirements that reside in the Specification segment, need to be updated or even removed altogether. There is no sense in keeping a Requirement whose claim is disproved.
+
+==== Ontology ====
+
+====== What is the Ontology? ======
+
+The SCE methodology prescribes the construction of an ontology; a vocabulary describing a common language to be used throughout the system specification to avoid miscommunication, misunderstanding, and inconsistencies.
+
+This segment may also be used to document data structures, however, it is important to clearly separate such ontologies from the ontology used by the team itself.
+
+=== On how to add content to Confluence ===
+
+====== Where should I put <this> in Confluence? ======
+
+Try to find it right place by looking at the questions on this page or to the SCE example. If you are still not sure, add it to the place you think it belongs to and ask the Confluence project space coordinator, whether it is the correct spot for it (with a link to your page). He or she can advise you on this.
+
+=== Practical things on how to do stuff ===
+
+====== How do I refer to Jira Stories within a Confluence page? ======
+
+When editing a page, you can insert a link to most Jira Issues (these include: Stories, Tasks, etc) by using the regular 'insert' functionality: the "+" on top of your editor. Next, you can search in the linked Jira repository on the issue you wish to link to. This will create an automatic link from that page to the Jira Issue you chose to link.
+
+====== How do I add labels to a Confluence page and why should I do this? ======
+
+You can add one or more labels to any page by scrolling down and clicking on the label icon. This opens up a window in which you can add a new label. Labels are useful. You can search on them (click on the search box and select 'Labels') but can also link multiple pages under one category. For example, the label 'help' can be added to any page and by simply clicking on that label or searching for it you have an overview of all help-related topics. Similar things could be achieved to link pages on categories (e.g. "XAI" or "Bias") or progress (e.g. "Done" or "In Progress").
+
+Document generated by Confluence on 24 Aug 2022 20:47
+
+[[Atlassian>>url:http://www.atlassian.com/]]

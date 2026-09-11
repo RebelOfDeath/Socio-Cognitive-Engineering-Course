@@ -1,0 +1,39 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/0.%20Introduction/spaces/a.%20Quickstart/spaces/Step%202%3A%20Functions/pages/WebHome
+title: Step 2: Functions
+syntax: xwiki/2.1
+version: 1.1
+hash: 4c67c97f9000a8f32c56e11b90520b20bd20633ac13443f9b8a4d4f067f6b3e7
+%%WIKI-SYNC-META%%
+|**Topic**|**Question**|**Answer**
+|(((
+[[image:5.png]]
+
+//Overall objective//
+)))|(((
+What is the overall objective of the human-AI system?
+
+How do human and AI collaborate and support each other (interdependence)?
+)))| 
+|(((
+[[image:6.png]]
+
+//Functions//
+
+ 
+)))|(((
+What are the functions of the AI system (s)?
+
+What does it actually do?
+
+What are its inputs, and what are its outputs?
+)))|(((
+ 
+)))
+|(((
+[[image:8.png]]
+
+//Interaction//
+)))|How do you expect the human to interact with these AI functions? Does the human provide any input? (just a (high-level) description of interaction(s) is fine, e.g. “Actor A provides feedback in the form of tags”)|(((
+ 
+)))

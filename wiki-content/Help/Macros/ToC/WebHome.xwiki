@@ -1,0 +1,40 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Help/spaces/Macros/spaces/ToC/pages/WebHome
+title: Table of Contents
+syntax: xwiki/2.1
+version: 1.1
+hash: 37d18b01eb08f053044ed9ca44a1f23cb3b4abc8bda953d462c04ada6a5084f4
+%%WIKI-SYNC-META%%
+{{velocity}}
+$services.localization.render('help.macros.toc',['**']) [[$services.localization.render('help.more.label')>>https://extensions.xwiki.org/xwiki/bin/view/Extension/TOC+Macro]]
+
+= $services.localization.render('help.macros.toc.description.title') =
+
+$services.localization.render('help.macros.toc.description.content', ['[[','>>https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/?syntax=2.1&section=Headings]]'])
+
+= $services.localization.render('help.macros.toc.examples.title') =
+
+== $services.localization.render('help.macros.toc.simple') ==
+{{/velocity}}
+
+{{example}}
+{{toc/}}
+{{/example}}
+
+{{velocity}}
+== $services.localization.render('help.macros.toc.startingPoint') ==
+{{/velocity}}
+
+{{example}}
+{{toc start="2"/}}
+{{/example}}
+
+{{velocity}}
+== $services.localization.render('help.macros.toc.insideBox') ==
+{{/velocity}}
+
+{{example}}
+{{box cssClass="floatinginfobox"}}
+{{toc/}}
+{{/box}}
+{{/example}}

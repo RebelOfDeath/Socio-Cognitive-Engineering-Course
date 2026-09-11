@@ -1,0 +1,31 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/2.%20Value%20Tensions/pages/WebHome
+title: 2. Value Tensions
+syntax: xwiki/2.1
+version: 1.1
+hash: 45e093a614e4f223ecb4ec8debb8f917d2d0c88e6a84b878f7156605f9737ccb
+%%WIKI-SYNC-META%%
+= Value Tension  [VT-nn] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. VT-01, VT-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Values in tension|the two (or more) Human Value IDs, and which pulls which way.
+|Domain area|safety, privacy, reliability, time-criticality, or physical/environmental.
+|Nature of the conflict|why serving one costs the other, concretely.
+|Non-negotiable floor|any regulatory requirement or hard safety standard that bounds the trade-off absolutely, with citation. State “none” explicitly if there is none — this field is what prevents a real safety limit being mistaken for an open trade-off.
+|Current resolution|how this design resolves it, and the rationale.
+|Alternatives considered|other resolutions weighed, and why they were not taken.
+|Status of the tension|resolved, provisionally resolved, or open — an open tension is a candidate for a Claim about adverse effects.
+
+== Graph edges ==
+
+involves → Human Value; bounds → (Specification-phase) Function; strained-by → Technology Option.
