@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/1.%20Human%20Values/pages/WebHome
 title: 1. Human Values
 syntax: xwiki/2.1
-version: 7.1
-hash: 1fae9f22b18f5fb6277d183e890d2f23b8e7a463b9d63c9e33d8e9181d99b892
+version: 10.1
+hash: 89a6b0c70de24c60c7c75d65e97bf6707ae91eac54aac003fdeccdce99649bd6
 %%WIKI-SYNC-META%%
 = Autonomy [HV-01] =
 
@@ -25,8 +25,12 @@ ST-01: Resident with dementia
 ST-02: Care home employee
 )))
 |Intrinsic or instrumental|It is an intrinsic value because having choice and control over one's own everyday activities is valuable in itself. It can also instrumentally support related values such as dignity and wellbeing.
-|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
-|Source|the value theory, framework, or elicitation method this rests on.
+|Recognition criteria|(((
+Served: the person is given meaningful opportunities to make choices, initiate actions and perform steps independently. assistance or prompting is provided when needed rather than automatically taking over. 
+
+Violated: choices are unnecessarily overridden, the resident is not given an opportunity to act independently, or caregivers/technology routinely take over activities the resident remains capable of performing.
+)))
+|Source|Self-Determination Theory
 
 == Graph edges ==
 
