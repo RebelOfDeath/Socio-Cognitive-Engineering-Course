@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/1.%20Human%20Values/pages/WebHome
 title: 1. Human Values
 syntax: xwiki/2.1
-version: 10.1
-hash: 89a6b0c70de24c60c7c75d65e97bf6707ae91eac54aac003fdeccdce99649bd6
+version: 12.1
+hash: 0ba262049804e3046285b6cec8c17af9b0c310a8175a33f1f76e9925bc02cdfe
 %%WIKI-SYNC-META%%
 = Autonomy [HV-01] =
 
@@ -31,6 +31,92 @@ Served: the person is given meaningful opportunities to make choices, initiate a
 Violated: choices are unnecessarily overridden, the resident is not given an opportunity to act independently, or caregivers/technology routinely take over activities the resident remains capable of performing.
 )))
 |Source|Self-Determination Theory
+
+= Dignity  [HV-02] =
+
+//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
+|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
+|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
+|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
+|Source|the value theory, framework, or elicitation method this rests on.
+
+==   ==
+
+= Privacy  [HV-03] =
+
+//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
+|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
+|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
+|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
+|Source|the value theory, framework, or elicitation method this rests on.
+
+==   ==
+
+= Competence  [HV-04] =
+
+//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
+|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
+|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
+|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
+|Source|the value theory, framework, or elicitation method this rests on.
+
+==   ==
+
+= Well-being  [HV-05] =
+
+//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
+|Name|A short, human-readable label for this instance.
+|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
+|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
+|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
+|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
+|Source|the value theory, framework, or elicitation method this rests on.
+
+==   ==
+
+==   ==
 
 == Graph edges ==
 
