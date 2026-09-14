@@ -5,6 +5,10 @@ Usage:
     python3 sync.py pull                # download all pages (+ attachments) into ../wiki-content
     python3 sync.py status              # show local files with unpushed edits
     python3 sync.py push [file]         # push one file, or all changed files if omitted
+    python3 sync.py outline             # regenerate ../OUTLINE.md from local files
+
+'pull' regenerates OUTLINE.md automatically; 'outline' does it on its own and
+needs no credentials or network.
 
 Both page text and attachments (images, PDFs, etc.) are synced two-way.
 Attachments for a page live in a "<PageName>.attachments/" folder next to its
@@ -27,6 +31,9 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import outline  # noqa: E402  (needs the path insert above)
 
 NS = "{http://www.xwiki.org}"
 META_MARK = "%%WIKI-SYNC-META%%"
@@ -365,6 +372,7 @@ def cmd_pull(cfg: Config):
         f"{stats['attachments_kept_local']} kept local edits, "
         f"{stats['attachments_conflicts']} conflict(s)."
     )
+    outline.main()
 
 
 def iter_local_files(cfg: Config):
@@ -527,7 +535,12 @@ def main():
         help="Specific .xwiki file or attachment file (default: all changed files)",
     )
     sub.add_parser("status", help="List local files with unpushed changes")
+    sub.add_parser("outline", help="Regenerate OUTLINE.md from the local files (no network)")
     args = parser.parse_args()
+
+    # 'outline' reads only local files, so it needs no credentials.
+    if args.command == "outline":
+        return outline.main()
 
     cfg = load_config()
     if args.command == "pull":
@@ -539,4 +552,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)
