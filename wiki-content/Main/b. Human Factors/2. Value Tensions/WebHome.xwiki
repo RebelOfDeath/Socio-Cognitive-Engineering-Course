@@ -61,7 +61,7 @@ Constant monitoring of all activities: not preferred because it unnecessarily re
 )))
 |Status of the tension|Provisionally resolved
 
-= Value Tension  [VT-03] =
+= Competence vs Well-being  [VT-03] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -70,17 +70,25 @@ Constant monitoring of all activities: not preferred because it unnecessarily re
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. VT-01, VT-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Values in tension|the two (or more) Human Value IDs, and which pulls which way.
-|Domain area|safety, privacy, reliability, time-criticality, or physical/environmental.
-|Nature of the conflict|why serving one costs the other, concretely.
-|Non-negotiable floor|any regulatory requirement or hard safety standard that bounds the trade-off absolutely, with citation. State “none” explicitly if there is none — this field is what prevents a real safety limit being mistaken for an open trade-off.
-|Current resolution|how this design resolves it, and the rationale.
-|Alternatives considered|other resolutions weighed, and why they were not taken.
-|Status of the tension|resolved, provisionally resolved, or open — an open tension is a candidate for a Claim about adverse effects.
+|ID|VT-03
+|Name|Competence vs Well-being
+|Status|In Progress
+|Evidence basis|Interviews/observations with residents and care staff
+|Values in tension|(((
+HV-04 Competence: pulls toward giving the resident opportunities to perform activities and individual steps themselves, so that they can use and maintain their remaining abilities and experience themselves as capable.
+
+HV-05 Well-being: pulls toward preventing unnecessary frustration, confusion, anxiety, or distress when an activity becomes too difficult for the resident.
+)))
+|Domain area|physical/environmental
+|Nature of the conflict|Giving the resident time and opportunity to attempt an activity independently can support competence by allowing them to use their remaining abilities and experience successful task completion. However, if the activity or individual step is beyond the resident's current ability, continued attempts may lead to repeated failure, confusion, frustration, or distress. Providing assistance earlier may protect well-being, but can also remove opportunities for the resident to demonstrate and maintain competence.
+|Non-negotiable floor|none
+|Current resolution|The situated objective is to allow the resident to use and maintain their remaining abilities while avoiding unnecessary frustration or distress. The conditional function is: IF the resident is able to continue the activity independently, THEN allow them sufficient time to complete the step themselves; IF repeated difficulty is detected, THEN provide a supportive prompt; IF the resident remains unable to continue or shows signs of distress, THEN increase the level of assistance.
+|Alternatives considered|(((
+Immediate assistance when the resident hesitates: not preferred because hesitation does not necessarily indicate inability and may remove opportunities to exercise competence.
+
+Allowing the resident to continue attempting the task without assistance: not preferred because repeated unsuccessful attempts may cause unnecessary frustration, confusion, or distress.
+)))
+|Status of the tension|Provisionally resolved
 
 == Graph edges ==
 
