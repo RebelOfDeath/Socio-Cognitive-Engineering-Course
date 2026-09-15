@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/Stakeholders/pages/WebHome
 title: 2. Stakeholders
 syntax: xwiki/2.1
-version: 10.1
-hash: 482b35a014600434fb54800f9546f07d978514341dadbd17c60783e85ee4248a
+version: 11.1
+hash: b74f6c7f38fb5cf90dce8ecd4d505bb35f3897a3f563ef259937772dc89cb77c
 %%WIKI-SYNC-META%%
 = Stakeholder - Resident with dementia [ST-01] =
 
@@ -69,10 +69,10 @@ hash: 482b35a014600434fb54800f9546f07d978514341dadbd17c60783e85ee4248a
 
 |=Field|=Description
 |ID|ST-03
-|Name|Care home staff member
+|Name|Family members of Resident
 |Status|In Progress
 |Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Direct
+|Type|Indirect
 |Values and motivations|(((
 - HV-01: Dignity
 
@@ -96,10 +96,10 @@ hash: 482b35a014600434fb54800f9546f07d978514341dadbd17c60783e85ee4248a
 
 |=Field|=Description
 |ID|ST-04
-|Name|Care home staff member
+|Name|Management or the Owners of the care home
 |Status|In Progress
 |Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Direct
+|Type|Indirect
 |Values and motivations|(((
 - HV-01: Dignity
 
@@ -123,10 +123,10 @@ hash: 482b35a014600434fb54800f9546f07d978514341dadbd17c60783e85ee4248a
 
 |=Field|=Description
 |ID|ST-05
-|Name|Care home staff member
+|Name|GP, Nurse
 |Status|In Progress
 |Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Direct
+|Type|Indirect
 |Values and motivations|(((
 - HV-01: Dignity
 
