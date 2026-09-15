@@ -5,7 +5,7 @@ syntax: xwiki/2.1
 version: 1.1
 hash: 778fd107af26246e468ed4f5478aeb5b516745951cf6cfa588f738b874f44483
 %%WIKI-SYNC-META%%
-= Human Factors Concept  [HFC-nn] =
+= Perceived Autonomy and Technology Acceptance  [HFC-01] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -14,17 +14,59 @@ hash: 778fd107af26246e468ed4f5478aeb5b516745951cf6cfa588f738b874f44483
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. HFC-01, HFC-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Concept statement|the principle, stated so a reader unfamiliar with the literature can use it.
-|Human factor addressed|the underlying phenomenon (trust, workload, situation awareness, stigma, behaviour change…).
-|Proposed mechanism|what causes what, and under what conditions — this is what makes an expected effect predictable rather than hoped for.
-|Source|specific citation, not a keyword or a field name.
-|Conditions and population of validity|where the finding holds, and any known limits on transferring it to this Stakeholder group.
-|Predicted Effect type|what kind of effect this concept would lead you to expect.
-|Associated Measures|Measure ID(s) that could detect that effect.
+|ID|HFC-01
+|Name|Perceived Autonomy and Technology Acceptance
+|Status|In Progress
+|Evidence basis|Human-factors literature, supported by interviews/observations with residents and care staff concerning independence and assistance during everyday activities.
+|Concept statement|Assistive technology that preserves the resident's sense of choice and control is more likely to be accepted and continuously used than technology that automatically takes over activities or makes decisions on the resident's behalf.
+|Human factor addressed|Perceived autonomy; motivation to engage with and continue using assistive technology.
+|Proposed mechanism|When assistance is provided automatically or without giving the resident an opportunity to act, the interaction may be experienced as controlling. This can reduce the resident's sense of autonomy and willingness to engage with the support. Giving the resident a meaningful opportunity to initiate an activity, choose, or respond before assistance is increased preserves perceived control and may increase acceptance of the support.
+|Source|Self-Determination Theory (Deci & Ryan) as applied in assistive-technology acceptance research.
+|Conditions and population of validity|The mechanism is established more generally and in older-adult populations. Transfer to people with moderate dementia must be treated cautiously because it assumes that the resident can perceive and interpret the choice being offered. The level and presentation of choice may therefore need to be adapted to cognitive ability.
+|Predicted Effect type|Higher perceived autonomy; greater willingness to engage with assistance; sustained use; reduced avoidance or rejection of the technology.
+|Associated Measures|M-xx: Perceived autonomy / felt control during the interaction.
+
+= Perceived surveillance and privacy-related acceptance  [HFC-02] =
+
+//A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|ID|HFC-02
+|Name|Perceived surveillance and technology acceptance
+|Status|In Progress
+|Evidence basis|Interviews/observations concerning privacy during everyday care activities, provisional human-factors concept requiring confirmation from relevant assistive-technology and dementia literature.
+|Concept statement|Monitoring that is perceived as continuous, intrusive, or unnecessarily detailed can reduce a person's sense of privacy and may lead to discomfort, avoidance, or rejection of the technology.
+|Human factor addressed|Perceived surveillance; privacy perception; technology acceptance.
+|Proposed mechanism|Increasing the amount or visibility of monitoring can provide caregivers or technology with more information about whether assistance is needed. However, when the resident becomes aware of being continuously observed or believes that more personal information is being collected than necessary, the support may be experienced as surveillance. This may reduce perceived privacy and willingness to accept the system.
+|Source|Specific citation from privacy/surveillance and assistive-technology literature required before this concept is finalized.
+|Conditions and population of validity|Must be established specifically for older adults and, where possible, people with dementia. Cognitive impairment may affect whether and how monitoring is perceived, so findings from general technology users should not automatically be transferred to this population.
+|Predicted Effect type|Perceived privacy; discomfort with monitoring; willingness to accept monitoring; avoidance or rejection behaviour.
+|Associated Measures|M-xx: Perceived privacy / monitoring acceptability; qualitative observations or interview coding for expressions of being watched or monitored.
+
+= Perceived surveillance and privacy-related acceptance  [HFC-03] =
+
+//A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|ID|HFC-03
+|Name|Adaptive assistance, competence and distress
+|Status|In Progress
+|Evidence basis|Interviews/observations with residents and care staff concerning residents' ability to perform everyday activity steps; provisional human-factors concept requiring supporting literature.
+|Concept statement|Assistance should be matched to the person's current ability: providing too much assistance can remove opportunities to exercise competence, while providing too little assistance when a task exceeds the person's current capability can result in repeated failure, confusion, or distress.
+|Human factor addressed|Task performance; cognitive capability; perceived competence; frustration and distress.
+|Proposed mechanism|When an activity remains within the resident's current capabilities, allowing sufficient time to perform the activity supports successful task completion and perceived competence. When task demands exceed those capabilities, repeated unsuccessful attempts can increase cognitive difficulty and emotional distress. Increasing assistance only when difficulty persists can therefore preserve opportunities for competence while limiting unnecessary frustration.
+|Source|Specific citation from dementia, cognitive-support, prompting, or adaptive-assistance literature required before this concept is finalized.
+|Conditions and population of validity|The appropriate level and timing of assistance is likely to vary with the resident's cognitive abilities, the familiarity and complexity of the activity, and their momentary condition. Evidence should therefore be selected specifically for people with dementia or closely comparable older-adult populations rather than assumed from general users.
+|Predicted Effect type|Successful independent task steps; perceived competence; frequency of assistance; frustration, confusion, or distress during the activity.
+|Associated Measures|M-xx: Independent task-step completion; M-xx: Prompt level required; M-xx: Observed frustration/distress.
+
+
 
 == Graph edges ==
 
