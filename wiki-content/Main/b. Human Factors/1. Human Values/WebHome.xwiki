@@ -32,92 +32,166 @@ Violated: choices are unnecessarily overridden, the resident is not given an opp
 )))
 |Source|Self-Determination Theory
 
-= Dignity  [HV-02] =
+= **Dignity [HV-02]** =
 
-//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+*//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//*
 
-**Report Format:** §1.2 Human Values and Human Factors
+****Report Format:**** §1.2 Human Values and Human Factors
 
-== Fields ==
-
-|=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
-|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
-|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
-|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
-|Source|the value theory, framework, or elicitation method this rests on.
-
-==   ==
-
-= Privacy  [HV-03] =
-
-//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
-
-**Report Format:** §1.2 Human Values and Human Factors
-
-== Fields ==
+== **Fields** ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
-|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
-|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
-|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
-|Source|the value theory, framework, or elicitation method this rests on.
 
-==   ==
+|ID|HV-02
 
-= Competence  [HV-04] =
+|Name|Dignity
 
-//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+|Status|In Progress
 
-**Report Format:** §1.2 Human Values and Human Factors
+|Evidence basis|Interviews/observations with residents and care staff
 
-== Fields ==
+|Situated meaning|Dignity means treating people as individuals with individual preferences, abilities, and personal histories, rather than reducing them to their diagnosis or level of dependency. During everyday care activities, this means communicating respectfully, involving the resident in what is happening, avoiding unnecessary exposure or embarrassment, and providing assistance in a way that preserves the person's sense of self-worth.
 
-|=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
-|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
-|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
-|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
-|Source|the value theory, framework, or elicitation method this rests on.
+|Held by|(((
 
-==   ==
+ST-01: Resident with dementia
 
-= Well-being  [HV-05] =
+ST-02: Care home employee
 
-//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+)))
 
-**Report Format:** §1.2 Human Values and Human Factors
+|Intrinsic or instrumental|It is an intrinsic value because being treated with respect and as a person of equal worth is valuable in itself. It can also instrumentally support related values such as autonomy and well-being.
 
-== Fields ==
+|Recognition criteria|(((
+
+Served: the resident is addressed respectfully, included in decisions concerning them, and supported in ways that preserve their sense of identity and self-worth. Care is provided discretely and without unnecessary infantilisation, embarrassment, or exposure.
+
+Violated: the resident is spoken about or treated as though they are not present, unnecessarily infantilised, embarrassed, exposed, ignored, or treated primarily as a task or diagnosis rather than as a person.
+
+)))
+
+|Source|Person-Centred Dementia Care
+
+= **Privacy [HV-03]** =
+
+*//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//*
+
+****Report Format:**** §1.2 Human Values and Human Factors
+
+== **Fields** ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. HV-01, HV-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Situated meaning|what this value actually means in this domain, for these Stakeholders, in these Activities — not the dictionary sense of the label.
-|Held by|Stakeholder ID(s), with relative priority per Stakeholder where these differ.
-|Intrinsic or instrumental|worth having for its own sake, or because it leads to something else. If instrumental, name the value it serves.
-|Recognition criteria|how anyone could tell, in practice, that this value has been served or violated. A value with no recognition criteria cannot ground a Claim.
-|Source|the value theory, framework, or elicitation method this rests on.
 
-==   ==
+|ID|HV-03
 
-==   ==
+|Name|Privacy
 
-== Graph edges ==
+|Status|In Progress
+
+|Evidence basis|Interviews/observations with residents and care staff
+
+|Situated meaning|Privacy means that people retain appropriate control over access to their body, personal space, belongings, activities, and personal information, even when they require assistance or monitoring. In everyday care, this means that observation, reminders, sensors, or caregiver involvement should not be more intrusive than necessary and that sensitive activities such as dressing, toileting, medication use, or personal hygiene should be handled discretely.
+
+|Held by|(((
+
+ST-01: Resident with dementia
+
+ST-02: Care home employee
+
+)))
+
+|Intrinsic or instrumental|It is primarily an intrinsic value because having personal boundaries and control over access to oneself is valuable in itself. It also instrumentally supports dignity, autonomy, and trust.
+
+|Recognition criteria|(((
+
+Served: personal information, spaces, and care activities are accessed only when necessary and by appropriate people. Residents are given private space where possible, and monitoring or assistance is limited to what is required for safe and effective care.
+
+Violated: residents are unnecessarily watched, exposed, interrupted, or monitored; personal information is accessible to people who do not need it; or technology collects or communicates more information than is necessary for the care activity.
+
+)))
+
+|Source|Value Sensitive Design
+
+= **Competence [HV-04]** =
+
+*//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//*
+
+****Report Format:**** §1.2 Human Values and Human Factors
+
+== **Fields** ==
+
+|=Field|=Description
+
+|ID|HV-04
+
+|Name|Competence
+
+|Status|In Progress
+
+|Evidence basis|Interviews/observations with residents and care staff
+
+|Situated meaning|Competence means enabling residents to experience that they are still capable of successfully carrying out meaningful parts of everyday activities despite cognitive decline. In activities such as brushing teeth, dressing, preparing for bed, or taking medication, this means adapting tasks and providing suitable prompts so that residents can use the abilities they still have instead of immediately having the activity completed for them.
+
+|Held by|(((
+
+ST-01: Resident with dementia
+
+ST-02: Care home employee
+
+)))
+
+|Intrinsic or instrumental|It is primarily an instrumental value because maintaining and supporting the resident's ability to perform everyday activities helps preserve autonomy, dignity, and well-being. Experiencing oneself as capable may also have intrinsic value for the resident.
+
+|Recognition criteria|(((
+
+Served: activities are matched to the resident's remaining abilities, instructions or prompts are understandable, and the resident is given opportunities to successfully complete steps themselves. Assistance increases only when the resident needs it.
+
+Violated: tasks are made unnecessarily difficult or confusing, the resident repeatedly experiences avoidable failure, or caregivers or technology take over tasks that the resident could still perform with appropriate support.
+
+)))
+
+|Source|Self-Determination Theory
+
+= **Well-being [HV-05]** =
+
+*//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//*
+
+****Report Format:**** §1.2 Human Values and Human Factors
+
+== **Fields** ==
+
+|=Field|=Description
+
+|ID|HV-05
+
+|Name|Well-being
+
+|Status|In Progress
+
+|Evidence basis|Interviews/observations with residents and care staff
+
+|Situated meaning|Well-being means supporting the resident's emotional and physical comfort and helping everyday life remain calm, meaningful, and pleasant. In the context of dementia care, this includes reducing avoidable stress, confusion, frustration, discomfort, and anxiety while supporting positive experiences such as familiarity, confidence, social connection, enjoyment, and a sense of security during daily activities.
+
+|Held by|(((
+
+ST-01: Resident with dementia
+
+ST-02: Care home employee
+
+)))
+
+|Intrinsic or instrumental|It is an intrinsic value because the resident's physical and emotional quality of life is valuable in itself. It can also be supported instrumentally by values such as autonomy, dignity, competence, privacy, and social connection.
+
+|Recognition criteria|(((
+
+Served: the resident is generally comfortable and calm during the activity, assistance reduces rather than increases confusion or distress, and the activity supports positive experiences such as satisfaction, familiarity, enjoyment, or social connection.
+
+Violated: an activity, care practice, or technology causes avoidable anxiety, frustration, discomfort, confusion, isolation, or distress, particularly when the negative effect persists or could reasonably have been prevented through a different form of support.
+
+)))
+
+|Source|Person-Centred Dementia Care
+
+== **Graph edges** ==
 
 held-by → Stakeholder; party-to → Value Tension; operationalized-by → Measure.
