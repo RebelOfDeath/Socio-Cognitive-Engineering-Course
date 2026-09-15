@@ -118,16 +118,24 @@ ST-02: Care home employee
 
 5. Open the medicine container
 
-6. 
+6. Put a designated amount of pills in the mouth
+
+7. Locate cup of water
+
+8. Swallow pills with the help of the water
+
+9. Confirm that task was completed
 )))
 |Context|Care home, morning, staff present
 |Frequency and duration|daily or whenever the prescription says it should be taken
 |Tools and artifacts|Glass, water, medication: pills, syringe, suppository, cream/ointment, food (when needs to be taken with food or to mask the taste)
-|Existing workarounds|Sticky notes, reminder app, reminder by caretaker in person, placing medication in a visible spot,
+|Existing workarounds|Post-it note with instructions, pill organizer, reminder app, reminder by caretaker in person, placing the medication in a visible spot, delegate an employee whose task is to assist with taking medication.
 |Observed breakdowns|(((
-When medication time depends on a variable, for example wake-up time,
-
- 
+1. Resident with Alzheimer's has forgotten what type of medication they need to take, or has forgotten that they need to take medication entirely.
+1*. The post-it note with instructions is missed.
+1*. Medication has run out and was not refilled on time.
+1*. The pill organizer (which medication on which day at which time) was not refilled or was refilled incorrectly by accident.
+1*. Care home staff member is overloaded and did not check in with Resident on time
 )))
 
 == Graph edges ==
