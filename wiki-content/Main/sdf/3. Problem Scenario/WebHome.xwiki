@@ -99,7 +99,23 @@ Contributing causes:
 
 4. Communication - The resident fails to confirm that they have taken the medication, risking taking the same medication a second time.
 )))
-|Out of scope|Medication prescribing and dosage decisions, changing medication - decided by the primary care practitioner; diagnosing medical conditions - not handled by the robot (such as when the resident does not talk for an extended period of time); physically administering medication - would require a dedicated product involving computer vision and is very error-prone and time-consuming; emergency medical treatment - we could consider relaying a possible emergency to care staff, but likely out of scop; and determining whether a medication is appropriate - primary care practitioner.
+|Out of scope|(((
+- Medication prescribing and dosage decisions, changing medication - decided by the primary care practitioner.
+
+- Determining whether a medication is appropriate - primary care practitioner.
+
+- Diagnosing medical conditions - not handled by the robot (such as when the resident does not talk for an extended period of time).
+
+- Physically administering medication - would require a dedicated product involving computer vision and is very error-prone and time-consuming.
+
+- Emergency medical treatment - we could consider relaying a possible emergency to care staff, but likely out of scope.
+
+- Residents who have to take critical medication such as heart medication - the care home blacklists these residents to require a care home employee to be present.
+
+- Residents who only have to take vitamin C daily or anti-congestion meds preventively are permitted - they may get confused or suddenly not know where they can find the medication, but little harm follows.
+
+- General monitoring of the resident - we only report a failure in completing the task, we avoid surveilling the patient in general. This covers fall detection and failure to respond to a query.
+)))
 
 ==   ==
 
