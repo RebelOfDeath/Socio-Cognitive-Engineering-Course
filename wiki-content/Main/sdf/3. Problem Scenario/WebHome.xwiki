@@ -73,7 +73,7 @@ The care worker returns their attention to the medication and reminds them that 
 
 - ST-02: Care worker
 )))
-|Activities involved|SA-02: Brushing teeth
+|Activities involved|SA-02: Remind to take medication
 |Breakdown point|The activity breaks down when the resident does not independently continue with taking the medication after it has been presented and requires repeated prompting and reassurance from the care worker.
 |Causes|(((
 Root causes:
@@ -91,13 +91,15 @@ Contributing causes:
 - Environmental distractions
 )))
 |Sub-problems|(((
-~1. Initiation: Resident may have difficulty with recognizing that it is time to take their medication
+~1. Initiation - Resident may have difficulty with recognizing that it is time to take their medication
 
-2. Sequencing: Resident may begin the activity but lose track of which action comes next or what the purpose is of the action/medicine
+2. Sequencing - Resident may begin the activity but lose track of which action comes next or what the purpose is of the action/medicine
 
-3. Completion: Resident may stop too early with brushing their teeth
+3. Completion - The Resident only takes some of the medication but not all.
+
+4. Communication - The resident fails to confirm that they have taken the medication, risking taking the same medication a second time.
 )))
-|Out of scope|Medication prescribing and dosage decisions, changing medication, diagnosing medical conditions, physically administering medication, emergency medical treatment, and determining whether a medication is appropriate.
+|Out of scope|Medication prescribing and dosage decisions, changing medication - decided by the primary care practitioner; diagnosing medical conditions - not handled by the robot (such as when the resident does not talk for an extended period of time); physically administering medication - would require a dedicated product involving computer vision and is very error-prone and time-consuming; emergency medical treatment - we could consider relaying a possible emergency to care staff, but likely out of scop; and determining whether a medication is appropriate - primary care practitioner.
 
 ==   ==
 
