@@ -5,7 +5,63 @@ syntax: xwiki/2.1
 version: 1.1
 hash: 45e093a614e4f223ecb4ec8debb8f917d2d0c88e6a84b878f7156605f9737ccb
 %%WIKI-SYNC-META%%
-= Value Tension  [VT-nn] =
+= Autonomy vs Well-being  [VT-01] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-01
+|Name|Autonomy vs Well-being
+|Status|In Progress
+|Evidence basis|Interviews/observations with residents and care staff
+|Values in tension|(((
+HV-01 Autonomy: pulls toward allowing the resident to initiate and perform everyday activities independently.
+
+HV-05 Well-being: pulls toward intervening when independent performance may lead to distress, confusion, discomfort, or unsafe outcomes.
+)))
+|Domain area|safety/physical-environmental
+|Nature of the conflict|Giving residents more freedom to perform activities independently supports autonomy, but too little assistance may result in mistakes, confusion, frustration, or unsafe situations.
+|Non-negotiable floor|If there is an immediate risk of serious harm, the system must notify caregivers for intervention.
+|Current resolution|The situated objective is to support the resident in completing everyday activities as independently as possible while preventing avoidable distress or harm. The conditional function is: IF the resident is able to continue the activity independently, THEN no assistance is provided; IF difficulty is detected, THEN increasingly supportive prompting is provided; IF a safety-critical condition occurs, THEN caregiver assistance is requested.
+|Alternatives considered|(((
+Immediate assistance whenever difficulty is detected: not preferred because it unnecessarily reduces autonomy.
+
+No intervention unless explicitly requested: not preferred because a resident with dementia may not always be able to recognise or communicate when assistance is required.
+)))
+|Status of the tension|Provisionally resolved
+
+= Privacy vs Well-being  [VT-02] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-02
+|Name|Privacy vs Well-being
+|Status|In progress
+|Evidence basis|Interviews/observations with residents and care staff
+|Values in tension|(((
+HV-03 Privacy: pulls toward allowing the resident to maintain their privacy and personal space.
+
+HV-05 Well-being: pulls toward intervening when independent performance may lead to distress, confusion, discomfort, or unsafe outcomes.
+)))
+|Domain area|safety and privacy
+|Nature of the conflict| Allowing residents to maintain privacy and personal space supports their dignity and autonomy, but too little monitoring may result in mistakes, confusion, frustration, or unsafe situations.
+|Non-negotiable floor|none
+|Current resolution|Monitor only the information necessary to determine whether support is needed, and avoid sharing sensitive information unless the agreed conditions for caregiver involvement are met.
+|Alternatives considered|(((
+Constant monitoring of all activities: not preferred because it unnecessarily reduces privacy and dignity.
+)))
+|Status of the tension|Provisionally resolved
+
+= Value Tension  [VT-03] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
