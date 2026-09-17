@@ -5,31 +5,159 @@ syntax: xwiki/2.1
 version: 2.1
 hash: 76c5bc50cae529d3bb6895a05edc3b431123306b50d9061bbad19cbd4328b342
 %%WIKI-SYNC-META%%
-= Objective  [OBJ-nn] =
+{{box title="Status of this page"}}
+Objectives and Functions are drafted and traceable to the Foundation.
 
-//The bridge between Foundation and Specification. Per the verbatim Function definition, a Function is specified to contribute to an operational objective, a human-factors objective, or a Human Value, so this is where Foundation knowledge becomes something a Function can be traced to. A Specification-Phase concept, documented here rather than in §1.4 because it presupposes a proposed System, which §1.4 does not yet have.//
+On evidence. This project has collected no primary data: no resident or care worker has been observed or interviewed. Each Evidence basis field below says so, and cites published literature instead. Where nothing could be found the field says TODO. Full citations are in the References section at the bottom, each marked with how confident we are in it.
+
+Cells marked [pending §1.3] wait on the Technology Option selection; cells marked [pending §1.2] cite Measures and Evaluation Methods drafted here but not yet written up on their own Foundation pages. See //Open items//.
+{{/box}}
+
+= Objective  [OBJ-01] =
+
+//The bridge between Foundation and Specification. Per the verbatim Function definition, a Function is specified to contribute to an operational objective, a human-factors objective, or a Human Value, so this is where Foundation knowledge becomes something a Function can be traced to.//
 
 **Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
 
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. OBJ-01, OBJ-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Statement|the end-state to be reached, not the capability that reaches it.
-|Type|operational (derived from a Goal), human-factors (derived from a Human Factors Concept), or value-derived (derived from a Human Value).
-|Derived from|the Foundation entity ID this Objective answers to: a Goal recorded on a Situated Activity for operational, an HFC for human-factors, an HV for value-derived. This field replaces what a separate “operational demand” node would otherwise carry.
-|Priority|relative to other Objectives, where they compete.
+|ID|OBJ-01
+|Name|Activity reaches completion without care-worker prompting carrying it
+|Status|In Progress
+|Evidence basis|(((
+Derived from the Goal recorded on SA-01, and from PS-01's account of how that Goal currently fails.
+
+Literature: Rogers et al. (1999) found that systematic graduated prompting of nursing-home residents with dementia produced a 26% increase in self-dressing and significantly fewer physical assists than usual care, in a severely impaired cohort (mean MMSE 6.07). That establishes the effect direction is achievable.
+
+No primary data collected by this project. SA-01's own Evidence basis lists staff surveys and resident observation as //intended//, not completed.
+)))
+|Statement|The resident reaches the last step of the tooth-brushing activity, and the verbal prompting a care worker currently has to supply is no longer what carries them there.
+|Type|Operational
+|Derived from|Goal on SA-01 ("maintain oral hygiene as part of the resident's normal morning routine, with as much independence as possible")
+|Priority|Must. This is the Goal SA-01 states, and the point at which PS-01 breaks down.
 
 == Graph edges ==
 
-derived-from → Goal (on a Situated Activity) / Human Factors Concept / Human Value; served-by → Function; referenced-by → Claim.
+derived-from → Goal (SA-01); served-by → F1, F2, F3; referenced-by → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6.
 
+= Objective  [OBJ-02] =
 
+//The bridge between Foundation and Specification.//
 
-= Use Case  [UC01, UC02…] =
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|OBJ-02
+|Name|A genuine opportunity to act before assistance arrives
+|Status|In Progress
+|Evidence basis|(((
+Derived from HV-01 and HV-04, and from VT-03's current resolution.
+
+Literature: Self-determination theory (Ryan & Deci, 2000) for the value itself. For why this matters specifically in dementia care, Kitwood (1997) names //disempowerment// - "not allowing or enabling a person to use the abilities they still have" - as one of the detractors that erode personhood.
+
+No primary data collected by this project.
+)))
+|Statement|At each step of the activity, the resident has had a real opportunity to act on their own before any assistance arrives.
+|Type|Value-derived
+|Derived from|HV-01 Autonomy and HV-04 Competence. Informed by VT-03's resolution, which already states the trade-off this Objective sits on.
+|Priority|Must. Without it, OBJ-01 could be satisfied by a System that simply narrates every step - which is what the existing workaround recorded on SA-01 already does, and what PS-01 identifies as the problem rather than the solution.
+
+== Graph edges ==
+
+derived-from → HV-01, HV-04; served-by → F2; referenced-by → UC01-F2-CL1, UC01-F2-CL3, UC01-F2-CL4; narrated-by → OS-01.
+
+= Objective  [OBJ-03] =
+
+//The bridge between Foundation and Specification.//
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|OBJ-03
+|Name|Difficulty resolved where it appears, before it becomes distress
+|Status|In Progress
+|Evidence basis|(((
+Derived from HFC-03.
+
+Literature: de Werd et al. (2013) review error-prevention techniques for teaching everyday tasks to people with dementia; Rogers et al. (1999) found disruptive behaviours //decreased// significantly under systematic prompting. Both support the principle that assistance timing matters to distress.
+
+Contested on direction - the same literature favours preventing the error rather than allowing it, which is not what F2 does. See Open item O-7.
+
+No primary data collected by this project.
+)))
+|Statement|Where the resident cannot continue unaided, the difficulty is resolved at the step where it appears, rather than accumulating into confusion or distress.
+|Type|Human-factors
+|Derived from|HFC-03 Adaptive assistance, competence and distress
+|Priority|Must. This is the other side of OBJ-02; VT-03 is the trade-off between the two, and a design that serves only one of them has not resolved that tension.
+
+== Graph edges ==
+
+derived-from → HFC-03; served-by → F2, F3; referenced-by → UC01-F2-CL2, UC01-F2-CL4, UC01-F3-CL6.
+
+= Objective  [OBJ-04] =
+
+//The bridge between Foundation and Specification.//
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|OBJ-04
+|Name|Support without the feeling of being watched
+|Status|In Progress
+|Evidence basis|(((
+Derived from HV-03, and from the scope decision recorded in PS-02's out-of-scope field ("we only report a failure in completing the task, we avoid surveilling the patient in general").
+
+Literature: Niemeijer et al. (2010), a systematic review of 79 papers on the ethical and practical acceptability of surveillance technology in residential care for people with dementia. Niemeijer et al. (2015) then asked residents themselves, and concluded such technology can contribute to autonomy //only// when embedded in a person-centred approach - which is the condition this Objective encodes.
+
+No primary data collected by this project.
+)))
+|Statement|The resident is supported through the activity without experiencing it as being watched, and without detail about a personal-care activity reaching anyone who does not need it.
+|Type|Value-derived
+|Derived from|HV-03 Privacy. Bounded by VT-02's resolution, and explained by HFC-02.
+|Priority|Should. It constrains how F1 and F4 may be built rather than adding a capability of its own - but the constraint is hard, because tooth brushing is a personal-care activity.
+
+== Graph edges ==
+
+derived-from → HV-03; served-by → F1, F3, F4; referenced-by → UC01-F1-CL7, UC01-F4-CL8; narrated-by → OS-02.
+
+= Objective  [OBJ-05] =
+
+//The bridge between Foundation and Specification.//
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|OBJ-05
+|Name|Prompting that does not talk down to the resident
+|Status|In Progress
+|Evidence basis|(((
+Derived from HV-02's recognition criteria, which names infantilisation explicitly.
+
+Literature: Kitwood (1997) lists //infantilisation// - "treating the person like a child; using condescending language or gestures toward an adult" - among the 17 detractors of personhood that make up what he called malignant social psychology in dementia care. //Outpacing// (giving information or choices too quickly) is a second detractor directly relevant to how F2 paces a prompt.
+
+Robot-specific support: Lee et al. (2016) on ageing stereotypes embedded in assistive robot design; Furlanis et al. (2026) for why an embodied system carries this risk differently from a screen, via their "embodied treatment" dimension - gaze, timing, tone. See Open item O-10.
+
+No primary data collected by this project.
+)))
+|Statement|The resident is prompted through the activity without being addressed as less capable than they are.
+|Type|Value-derived
+|Derived from|HV-02 Dignity
+|Priority|Should. Distinct from OBJ-02: OBJ-02 is about whether the opportunity to act exists, this is about how the prompt reads when it does arrive. A System could serve one and violate the other.
+
+== Graph edges ==
+
+derived-from → HV-02; served-by → F2; referenced-by → UC01-F2-CL5.
+
+= Use Case  [UC01] =
 
 //A formal description of one distinct Goal-directed interaction between Actors and the System. One Use Case per interaction, not per screen or per Technology feature.//
 
@@ -38,38 +166,255 @@ derived-from → Goal (on a Situated Activity) / Human Factors Concept / Human V
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. UC01, UC02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Objective(s) served|by ID. A Use Case may serve more than one.
-|TDP(s) and IDP(s) used|by ID. A Use Case may cite more than one of either, or none, since different Functions within it may draw on different patterns.
-|Actors|who and what participates, human and System.
-|Trigger|what initiates this Use Case.
-|Pre-condition|any condition a Function or Effect depends on to hold. There is no separate Prerequisite field.
-|Post-condition|the state once the Use Case concludes, across its main and alternate flows.
-|Action Sequence|(Specification-Phase), step by step, with any step lacking a counterpart in a §1.1 Task flagged as a deliberate addition. Alternate flows and exception handling branch from specific steps.
-|Function(s) realized|(Specification-Phase): what the system should do, without unnecessarily prescribing implementation, each assigned a stable ID (F1, F2…) unique across the whole Specification, not reset per Use Case.
+|ID|UC01
+|Name|Support the resident through the morning tooth-brushing routine
+|Status|In Progress
+|Evidence basis|(((
+Formalizes SA-01 and PS-01.
 
-== Graph edges ==
+Closest prior system: COACH (Mihailidis et al., 2008) prompted six older adults with moderate-to-severe dementia through handwashing using audio and audio-video prompts, and scored what M-02 scores here - one point per step completed without human assistance. It is the nearest published precedent for this Use Case and should be cited wherever this design is defended.
 
-realizes → Design Scenario; serves → Objective; uses → Team Design Pattern, Interaction Design Pattern; asserts → Premise, Claim.
+No primary data collected by this project. No resident or care worker has been observed or interviewed; SA-01 and PS-01 rest on literature plus the group's own reasoning.
+)))
+|Objective(s) served|OBJ-01, OBJ-02, OBJ-03, OBJ-04, OBJ-05
+|TDP(s) and IDP(s) used|[pending Steps 12-13] A graduated-assistance TDP and a low-intrusion prompting IDP are both anticipated; the recurring structure is visible already in F2's ladder, so these should be abstracted once UC02 exists to confirm the recurrence.
+|Actors|(((
+ST-01 Resident with dementia (Direct) - the only Actor who interacts with the System in real time.
 
+ST-02 Care home staff member (Direct) - receives handover from F3 and reviews the F4 record; does not operate the System during the activity.
+
+The System (robot) - per the scope decision recorded in PS-02.
+
+ST-03 Family members (Indirect) - affected by outcomes, not an Actor in this Use Case, and not a recipient of anything F4 records.
+)))
+|Trigger|The resident's tooth-brushing window opens - SA-01's trigger, after waking, washing and/or breakfast - and either the resident is at the sink, or the window is running down with the activity not started. Both are in scope, because PS-01's first sub-problem is initiation.
+|Pre-condition|(((
+The resident's SA-01 step sequence is configured, together with the assistance baseline they currently need.
+
+The System is powered and positioned to observe the sink area [pending §1.3 - what "observe" means depends on the Technology Option selected].
+
+A care worker is reachable within the home for F3.
+
+Consent arrangements for ST-01 are in place, on the terms VT-02's resolution sets.
+)))
+|Post-condition|(((
+One of the following holds:
+
+- the resident has completed SA-01 step 9, unaided or after prompting at some level;
+
+- a care worker has taken over following F3;
+
+- the window has closed with the activity incomplete, and that fact is recorded.
+
+In every case F4 holds a session record, and no step-by-step trace of the activity is retained.
+)))
+|Action Sequence|(((
+~1. The tooth-brushing window opens. The System begins tracking the activity (F1). **Deliberate addition** - SA-01 task 1 is the resident recognising that it is time, which PS-01 shows failing.
+
+2. The resident enters the bathroom and begins (SA-01 tasks 2-3).
+
+2-alt. The resident has not begun by the end of the window. F2 issues an initiation prompt. If there is no response, step 9.
+
+3. The resident performs a step; the System tracks progress (F1). SA-01 tasks 4-8.
+
+4. A stall is detected on the current step. The System waits the configured interval and does nothing. **Deliberate addition** - the wait is the design, not an implementation delay. See OS-01, and Open item O-7 for the literature that contests it.
+
+5. The resident resumes unaided. Return to step 3.
+
+6. The stall persists past the interval. F2 issues the lowest-level prompt available for that step.
+
+7. The resident resumes. F2 stops prompting; return to step 3.
+
+8. The stall persists. F2 re-prompts one level more specific, up to the demonstration level.
+
+8-alt. Signs of distress at any point. Remaining prompt levels are skipped; go to step 9.
+
+9. Prompting is exhausted without progress. F3 requests care-worker assistance, passing the activity, the step reached, and the reason.
+
+10. A safety-critical condition occurs at any point. F3 immediately, per VT-01's non-negotiable floor. **Deliberate addition** - and currently in conflict with PS-02's out-of-scope field; see Open item O-2.
+
+11. The resident completes SA-01 step 9, or a care worker takes over, or the window closes. F4 records the session. **Deliberate addition** - SA-01 records no handover task.
+
+**Exception handling.** If the System cannot track the activity - sensor loss, power, or an unrecognised sequence - it reports a degraded state to the care worker rather than failing silently, and the activity falls back to the existing SA-01 workarounds. Verified by UC01-F1-PR1.
+)))
+|Function(s) realized|F1, F2, F3, F4 - specified in full below.
+
+== Functions ==
+
+**Function F1** (track position in the activity sequence): the System determines which step of the SA-01 sequence the resident is currently on, and whether progress to the next step has stalled, from the resident's observable actions on the activity's own tools and fixtures - requiring the resident neither to report anything nor to operate the System. It observes the activity only, not the resident in general. Serves OBJ-01, OBJ-04. Bounded by VT-02. Enabled by [pending §1.3].
+
+**Function F2** (prompt at the lowest sufficient level, after a wait): on a detected stall, the System waits a configured interval, then issues the least specific prompt that could unblock the current step. If the stall persists it re-prompts one level more specific - orienting the resident to the activity, then naming the next action, then demonstrating it - and stops as soon as the resident resumes. Prompts address the resident by name and in the second person, phrased as an offer rather than an instruction. Serves OBJ-01, OBJ-02, OBJ-03, OBJ-05. Bounded by VT-01, VT-03. Enabled by [pending §1.3].
+
+//Where F2's ladder comes from. It is not invented: it is the escalation SA-01 already records as existing workarounds - verbal reminder, then naming, then demonstrating the brushing action, then physical assistance - made systematic, with physical assistance deliberately left to the care worker via F3 rather than taken on by the System. Rogers et al. (1999) is the published precedent for graduated prompting of this kind in nursing-home dementia care.//
+
+//Where it is contested. F2 is a least-to-most ladder. The dementia ADL literature largely runs the other way, favouring errorless learning and vanishing cues - prompt early to prevent the error, then fade support across sessions (de Werd et al., 2013). The largest trial of that approach, REDALI-DEM, then found structured relearning improved ADL performance but errorless learning gave no advantage over trial-and-error learning. So the evidence neither endorses F2's direction nor rules it out. See Open item O-7; this is a design bet, and should be presented as one.//
+
+**Function F3** (hand over to a care worker): the System requests care-worker assistance when prompting has been exhausted without progress, when the resident shows signs of distress, or when a safety-critical condition occurs. It passes only the activity, the step reached, and the reason for handover. Serves OBJ-01, OBJ-03, OBJ-04. Bounded by VT-01 - and carries VT-01's non-negotiable floor - and by VT-02. Enabled by [pending §1.3].
+
+**Function F4** (record the session for handover): the System records, per session, whether the activity was completed, the highest prompt level required, and whether a care worker was called. It retains no step-by-step detail of the activity itself. Serves OBJ-04. Bounded by VT-02. Enabled by [pending §1.3].
+
+//Note: F4 has no operational Objective it can be traced to. Its justification is care-continuity handover, and no Goal on SA-01 covers that. Recorded as Open item O-3 rather than silently dropped.//
 
 == Premises table ==
 
-One row per Premise:
+One row per Premise. Verification only - does the Function operate as specified.
 
 |=Premise ID|=Function|=Evaluation Method(s) / Measure(s)|=Verification Criteria|=Step(s)
-|UC01-F1-PR1|F1|by Foundation ID, e.g. EM-01, M-01|what “operates as specified” means here: availability, correctness, accuracy, timing, reliability, robustness, or conformity to specified interaction behaviour, stated as a condition on the cited Measure(s)|n/a
+|UC01-F1-PR1|F1|EM-01, M-01. No human subjects.|(((
+Accuracy and robustness. The System identifies the resident's current SA-01 step correctly in at least [threshold pending §1.3] of staged sessions, and detects a stall within [pending §1.3] seconds of its onset.
+
+On sensor loss or an unrecognised sequence, a degraded state is reported to the care worker rather than the System failing silently.
+)))|1, 3, 4, exception path
+|UC01-F2-PR2|F2|EM-01, M-01 (timing component). No human subjects.|(((
+Timing and conformity to specified interaction behaviour. The full wait interval elapses before any prompt is issued. Prompting ascends exactly one level at a time, never skipping a level except on the distress path. Prompting stops within [pending §1.3] seconds of the resident resuming. No prompt is repeated at the same level more than once.
+
+The false-prompt rate matters more than it looks: mistimed prompts were the failure mode observed in COACH (Mihailidis et al., 2008), and are the mechanism by which UC01-F2-CL4 would come true.
+)))|4, 6, 7, 8
+|UC01-F3-PR3|F3|EM-01, M-01. No human subjects.|(((
+Timing, correctness, and availability. A handover request reaches a care worker within [pending §1.3] seconds of the triggering condition. The request carries only activity, step reached, and reason. The safety-critical path pre-empts all pending prompting rather than queueing behind it.
+)))|9, 10, 8-alt
+|UC01-F4-PR4|F4|EM-01, M-06 (record-content component). No human subjects.|(((
+Correctness and conformity. The session record contains exactly the three specified items and no step-level trace of the activity. Records are not readable by roles outside the agreed set - ST-03 in particular is not a recipient.
+)))|11
 
 == Claims table ==
 
-One row per Claim:
+One row per Claim. Validation - does the Function produce the intended effect. Premise and Claim numbers are drawn from project-wide counters, not reset per Use Case or per Function.
 
 |=Claim ID|=Function|=Serves Objective|=Effect|=Grounding|=Evaluation Method(s) / Measure(s)|=Validation Criteria|=Step(s)
-|UC01-F1-CL1|F1|by ID, e.g. OBJ-02|expected positive or adverse effect|Human factor / Human value|by Foundation ID, e.g. EM-02, M-02|the condition on those Measure(s) under which the Claim is considered to hold|n/
+|UC01-F2-CL1|F2|OBJ-02, OBJ-01|Positive. Increases the number of SA-01 steps the resident completes with no prompt at all, compared with the care worker's current prompt-on-hesitation pattern. Concerns ST-01, SA-01, PS-01.|HFC-03; HV-01, HV-04. Precedent: Rogers et al. (1999) for the effect; Mihailidis et al. (2008) for the same outcome measure in a prompting system.|EM-02; M-02, M-04|M-02 mean above the same residents' pre-System baseline, with no increase in M-04.|3-8
+|UC01-F2-CL2|F2|OBJ-03, OBJ-01|Positive. Where the resident does stall, the graduated ladder resolves it at a lower level of assistance than current practice, which moves to naming or demonstrating at once. Concerns ST-01, ST-02, SA-01, HV-04.|HFC-03. Precedent: Rogers et al. (1999) found significantly fewer physical assists under graduated prompting.|EM-02; M-03, M-02|M-03 distribution shifted toward lower levels than baseline, at equal or better completion on M-02.|6-8
+|UC01-F2-CL3|F2|OBJ-02|Positive. Increases the resident's felt sense of doing the activity themselves rather than being led through it. Concerns ST-01, HV-01.|HFC-01; HV-01. Ryan & Deci (2000) for the mechanism; Peek et al. (2014) for acceptance factors in this population.|EM-02; M-05|M-05 mean no lower than the pre-System baseline, and higher for residents who complete more steps unprompted. Weak by construction - resident self-reports of need satisfaction show documented ceiling effects, so a null result here would not be informative. See Open item O-8.|3-8
+|UC01-F2-CL4|F2|OBJ-02, OBJ-03|**Adverse.** For residents whose current ability falls below a step's demand, the deliberate wait before prompting increases observed frustration rather than producing independent completion. Concerns ST-01, HV-05.|HFC-03; HV-05. This tests VT-03 directly. Precedent: mistimed and false-alarm prompts in COACH (Mihailidis et al., 2008) were observed to produce general frustration and confusion - the same mechanism CL1 relies on, running the wrong way.|EM-02; M-04, M-03|Holds if M-04 (Resistiveness to Care Scale) rises above baseline for the lower-ability subgroup while M-02 does not improve for them. If it holds, the wait interval must become per-resident rather than configured once.|4, 6
+|UC01-F2-CL5|F2|OBJ-05|**Adverse.** Being prompted through tooth brushing by a robot is experienced as infantilising, independently of whether it improves completion. Concerns ST-01, HV-02.|HV-02; Kitwood (1997), who names infantilisation and outpacing among the detractors that erode personhood in dementia care. Robot-specific: Lee et al. (2016) on ageing stereotypes in assistive robot design, and Furlanis et al. (2026), whose "embodied treatment" dimension covers the gaze, timing and tone F2 controls - including a case of exaggerated gentleness toward older adults read as condescension.|EM-02, EM-03; M-04, M-06|Holds if residents or care staff describe the prompting as talking down to the resident or as child-like. Sensitive to §1.3: Pemberton et al. (2026) suggest an expressive humanoid form would raise this risk relative to an appliance-like one, so a negative result on one embodiment does not clear the other.|6-8
+|UC01-F3-CL6|F3|OBJ-01, OBJ-03|Positive. Reduces the share of sessions that end incomplete, by bringing a care worker in when prompting has run out instead of the activity being abandoned. Concerns ST-01, ST-02, SA-01, PS-01.|HV-05; HFC-03|EM-02; M-02, M-07|Fewer incomplete sessions than baseline, without an increase in M-07 total care-worker prompting time. The second half is at risk: Rogers et al. (1999) found graduated prompting took considerably //more// caregiver time than usual care. Absorbing that time is the point of the System, but it is an empirical question. See Open item O-9.|9, 10, 8-alt
+|UC01-F1-CL7|F1|OBJ-04|Positive. The resident does not experience the step tracking as being watched, because it requires nothing of them and observes the activity rather than the person. Concerns ST-01, HV-03.|HFC-02; HV-03. Niemeijer et al. (2010, 2015) - residents can experience surveillance technology as supporting autonomy, but only within a person-centred approach. Pemberton et al. (2026) sharpens the risk: older adults assigned humanoid robots the "Warden" role - oversight without attachment - which is this Claim failing by design rather than by accident.|EM-02, EM-03; M-06|No resident expressions of being watched in M-06 coding, and care staff judge the retained record proportionate. Sensitive to §1.3 on the same axis as CL5.|1, 3
+|UC01-F4-CL8|F4|OBJ-04|Positive. The three-item session record gives the care worker enough to adjust the support they offer, without exposing how the resident performed a personal-care activity step by step. Concerns ST-02, ST-01, HV-03.|HV-03; VT-02 resolution; Niemeijer et al. (2010) on proportionality of what is recorded.|EM-03; M-06|Care staff report the record sufficient for handover and identify nothing in it they consider intrusive.|11
 
+== Graph edges ==
 
+realizes → Design Scenario (§2.1, pending Step 9); serves → OBJ-01…OBJ-05; uses → TDP, IDP (pending Steps 12-13); asserts → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC01-F4-PR4, UC01-F2-CL1…UC01-F4-CL8.
 
- 
+= Use Case  [UC02] =
+
+//Declared and deliberately deferred, so the scope decision is explicit rather than implicit in what happened to get written first.//
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|UC02
+|Name|Support the resident through the medication routine
+|Status|Not Started
+|Evidence basis|Would formalize SA-02 and PS-02. No primary data collected by this project.
+|Scope decision|(((
+SA-02 and SA-01 have different triggers and different Goals, so this is a separate Use Case rather than an alternate flow of UC01 - it is not a candidate for merging.
+
+It is deferred for this cycle rather than dropped. Reasons:
+
+- PS-02's out-of-scope field already narrows it heavily, including a care-home blacklist for residents on critical medication, which needs settling before Functions can be written.
+
+- PS-02 adds a fourth sub-problem, confirmation, that has no counterpart in PS-01 - the resident failing to confirm they have taken the medication, risking a double dose. That needs its own Function and its own Claim, and possibly a safety Premise, rather than reusing F1-F4.
+
+- Specifying it properly would roughly double the Premise and Claim count, and §1.2 Measures are not yet written for the first set.
+
+F1-F4 are expected to transfer, since both activities are stepwise sequences with initiation, sequencing and completion breakdowns. Confirming that recurrence across two Use Cases is what would justify abstracting the TDP and IDP in Steps 12-13 - so UC02 should be written before those are finalized, not after.
+)))
+
+= Open items =
+
+These are gaps recorded as explicit decisions rather than left silent, per Step 14.
+
+|=ID|=Item|=Blocks|=Owner
+|O-1|§1.2 Measures and Evaluation Methods are still empty templates. M-01…M-07 and EM-01…EM-03 are drafted below and cited throughout the tables above, but they are not yet Foundation entities. Anyone else writing Measures should start at M-08.|Every Verification and Validation Criteria cell above|§1.2 owner
+|O-2|VT-01's non-negotiable floor requires the System to notify caregivers on immediate risk of serious harm. PS-02's out-of-scope field calls relaying an emergency "likely out of scope". Both cannot stand.|Action Sequence step 10; F3's scope; UC01-F3-PR3|Group decision
+|O-3|F4 has no Objective it can be traced to. Either SA-01 needs a Goal covering care continuity and handover, or F4 is out of scope this cycle.|F4|Group decision
+|O-4|Resolved. UC01-F2-CL5 previously rested on a Human Value with no supporting concept. Kitwood (1997) supplies it - infantilisation and outpacing are named detractors of personhood in dementia care. Remaining action: §1.2 should add this as an HFC so the Claim grounds on a concept rather than on a Claim-level citation.|Nothing|§1.2 owner
+|O-5|§1.3 Technology Options is an empty template. The robot decision is recorded only incidentally, in PS-02's out-of-scope field.|All [pending §1.3] thresholds; the "Enabled by" clause on F1-F4|§1.3 owner
+|O-6|The HV IDs on the §1.1 Stakeholders page do not match the §1.2 Human Values page. Every Grounding cell above uses the §1.2 numbering.|Traceability of every Grounding cell|§1.1 owner
+|O-7|(((
+F2's direction is contested by the literature. F2 is least-to-most: allow the stall, prompt minimally, then escalate. The dementia ADL literature largely favours the opposite - errorless learning with vanishing cues, prompting early to prevent the error and fading support across sessions (de Werd et al., 2013). The largest trial of that approach, REDALI-DEM (Voigt-Radloff et al., 2017; n = 161, nine 1-hour sessions over eight weeks), found that structured relearning improved ADL performance and that improvements held for six months - but that errorless learning gave no additional effect over trial-and-error learning. Note that de Werd is an author on both the review and the trial that failed to confirm it.
+
+Two things follow. First, the evidence neither endorses F2's direction nor rules it out. Second, REDALI-DEM's participants had Alzheimer's or mixed-type dementia and were living at home, so even that null result transfers to care-home residents only cautiously.
+
+Either F2 is re-specified as most-to-least with fading, or it stays as a deliberate bet that UC01-F2-CL4 is designed to settle - which has to be stated as a bet rather than presented as established.
+)))|F2's specification; CL1, CL4|Group decision
+|O-8|(((
+Self-report of autonomy in this population is unreliable, and this is measured, not just suspected. Custers et al. (2013) compared nursing-home residents' self-reported fulfilment of the needs for relatedness, autonomy and competence against trained neutral observers rating videotaped caregiving episodes. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement between the two, and only the //in general// self-report related to self-reported well-being.
+
+So UC01-F2-CL3 cannot rest on M-05 alone: a favourable M-05 result may just be the ceiling. Custers et al. also supplies the fix, since it measures need fulfilment three ways - in general, in the caring relationship, and during a specific videotaped caregiving episode. The third is the right shape for M-05, because it is episode-specific rather than global, and it comes with an observer counterpart.
+
+Remaining caveat: that sample was physically frail residents (n = 36, mean age 80), not specifically residents with dementia.
+)))|M-05; UC01-F2-CL3|§1.2 owner
+|O-9|UC01-F3-CL6 asserts no increase in care-worker time, but Rogers et al. (1999) found graduated prompting took considerably more caregiver time than usual care. The System is meant to absorb that, which is the point - but the Claim should probably be split into completion effect and time effect rather than asserting both at once.|UC01-F3-CL6|Mine, pending group view
+|O-10|(((
+Resolved. The earlier TODO asked whether being prompted by a //robot// specifically, rather than a screen or a voice, changes the infantilisation effect in CL5. It does.
+
+Furlanis et al. (2026) argue that social robots are "socially legible bodies, interpreted in context through posture, timing, tone, and spatial behavior", and give three dimensions along which bias is enacted: embodied stereotypes (appearance), embodied constraints (affordances), and embodied treatment - bias arising in real-time interaction through gaze, timing and tone. F2's prompt pacing falls in the third. Their illustrative case includes a robot that exaggerated slowness and gentleness toward older adults, which was read as condescending rather than accommodating, which is CL5's mechanism. Note this paper is explicitly conceptual, so it frames the risk rather than measuring it.
+
+The empirical source they cite for this is Lee et al. (2016), "That robot is not for me: Addressing stereotypes of aging in assistive robot design."
+
+Form also changes the role the robot gets assigned. Pemberton et al. (2026) interviewed 13 older adults and found they sort socially assistive robots into four roles by autonomy and relationship tolerance - Carer, Pet, Warden, Tool. Humanoid robots were assigned the "Warden" role: oversight without attachment. Older adults preferred "tool" or "pet" framings over "friend" or "assistant" to protect dignity and autonomy, and (reported there from Prakash & Rogers, 2015) preferred more mechanical-looking robots that preserve emotional distance in private contexts such as bathing. Tooth brushing is such a context.
+
+So CL5 and CL7 are both sensitive to the §1.3 choice, and in the same direction: a humanoid, expressive form raises the infantilisation risk in CL5 //and// the being-watched risk in CL7. See Open item O-11.
+
+Transfer limits: Pemberton et al. studied cognitively intact older adults, in a VR home setup, ageing in place - not care-home residents with dementia.
+)))|CL5, CL7; feeds §1.3|Closed
+
+|O-11|(((
+Arising from O-10. The evidence points somewhere specific on the open embodiment question: for a personal-care activity, a less humanlike, appliance-like form that preserves emotional distance is better supported than an expressive humanoid one. Zsiga et al. (2013, reported in Pemberton et al., 2026) also found older adults name overreach in control and cognitive support as key barriers to acceptance - which is this System's exact category.
+
+Two actions: (a) §1.3 should record this as the rationale for whichever Technology Option is selected, and as the reason for rejecting a humanoid one; (b) §1.2 should add an HFC on embodiment and perceived role, so CL5 grounds on a concept rather than on Claim-level citations. That would also close the remaining half of O-4.
+)))|§1.3's selection rationale; CL5's grounding|§1.3 and §1.2 owners
+
+== Measures and Evaluation Methods these tables require ==
+
+//Drafted here so the tables above are not citing nothing. These belong on the §1.2 pages, not on this one - move them there and delete this section. Where a published instrument exists it is named, so these are selections rather than inventions.//
+
+|=ID|=Construct|=Instrument|=Type|=Serves|=Human subjects
+|M-01|Step-tracking and stall-detection performance - correct step identification, stall-detection latency, spurious-prompt rate|Staged-event protocol against a ground-truth log. Bespoke, but the protocol follows COACH's system-performance reporting (Mihailidis et al., 2008).|Quantitative|Verification|No
+|M-02|Independent step completion - SA-01 steps completed with no prompt, per session|Step-level scoring as used in COACH (Mihailidis et al., 2008): one point per step completed without human assistance. Directly reusable, not adapted.|Quantitative|Validation|Yes
+|M-03|Prompt level required - highest level reached per step: none, orienting, naming, demonstration, care-worker takeover|Bespoke ordinal coding. Levels correspond to SA-01's own recorded workarounds and to the assistance levels used in Rogers et al. (1999).|Quantitative, ordinal|Validation|Yes
+|M-04|Observed distress and resistance during the activity|(((
+Resistiveness to Care Scale (Mahoney et al., 1999) - 13 observed behaviours, α .82-.87, developed specifically for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017). Validated, not invented.
+
+Optionally paired with the Observed Emotion Rating Scale for affect - psychometrics in Lawton et al. (1996). Burden note: Lawton et al. (1999) found that reliability was "less than desirable" when the scale was used by certified nursing assistants rather than trained research staff, so if care staff rather than we do the rating, training time has to be budgeted.
+)))|Observational, coded|Validation|Yes
+|M-05|Perceived autonomy and felt control - the M-xx placeholder HFC-01 already points at|(((
+Use the episode-specific items from Custers et al. (2013), which measured nursing-home residents' fulfilment of the autonomy, competence and relatedness needs during a specific videotaped caregiving episode - the right granularity for a single tooth-brushing session.
+
+Must be paired with the observer rating, not used alone: the same study found residents rate their need fulfilment higher than observers do, with only weak-to-moderate agreement. See Open item O-8.
+)))|Quantitative, plus observer counterpart|Validation|Yes
+|M-06|Perceived privacy and monitoring acceptability - the M-xx placeholder HFC-02 already points at|Interview coding for expressions of being watched, plus care-staff judgement of what the record exposes. Bespoke, but the concern set is drawn from Niemeijer et al. (2010, 2015).|Mixed|Validation|Yes
+|M-07|Care-worker prompting load - count and duration of prompting episodes per session|Time-sampled observation, as in Rogers et al. (1999), which reported proportion of a morning care session spent on physical assists.|Quantitative|Validation|Yes
+
+|=ID|=Evaluation Method|=Purpose|=Measures|=Known limitation
+|EM-01|Staged-session verification against a ground-truth log. Scripted stalls, resumptions, and confounders at a mock sink.|Verification|M-01, M-06 (record content)|Cannot establish real-world accuracy with an actual resident in an actual bathroom.
+|EM-02|Observed within-resident comparison during the real morning routine, against each resident's own pre-System baseline. Design follows the single-subject alternating baseline-intervention structure used in COACH (Mihailidis et al., 2008).|Validation|M-02, M-03, M-04, M-05, M-07|Small n, no control group, cannot separate novelty effects from the design. High ethics load - dementia participants, supported consent.
+|EM-03|Care-staff interview on the handover record and on perceived intrusion.|Validation|M-06, M-07|Cannot establish the resident's own privacy experience - only how staff read it.
+
+= References =
+
+//Marked for confidence, so they can be checked rather than trusted. "Verified" means title, authors, journal, year and identifier were all confirmed against the source or an indexing database.//
+
+|=Key|=Citation|=Confidence
+|Mihailidis et al. (2008)|Mihailidis, A., Boger, J. N., Craig, T., & Hoey, J. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28. doi:10.1186/1471-2318-8-28. PMID 18992135. Open access.|Verified. The single most important source for this page.
+|Rogers et al. (1999)|Rogers, J. C., Holm, M. B., Burgio, L. D., Granieri, E., Hsu, C., Hardin, J. M., & McDowell, B. J. (1999). Improving morning care routines of nursing home residents with dementia. //Journal of the American Geriatrics Society//, 47(9), 1049-1057. PMID 10484245.|Verified.
+|Kitwood (1997)|Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Buckingham: Open University Press.|Verified as a work. The specific detractor list (infantilisation, disempowerment, outpacing) is reported consistently across secondary sources - check page numbers against the book before quoting.
+|Niemeijer et al. (2010)|Niemeijer, A. R., Frederiks, B. J. M., Riphagen, I. I., Legemaate, J., Eefsting, J. A., & Hertogh, C. M. P. M. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//. PMID 20199699.|Verified. Volume and page numbers not confirmed - check.
+|Niemeijer et al. (2015)|Niemeijer, A. R., Depla, M. F. I. A., Frederiks, B. J. M., & Hertogh, C. M. P. M. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320. PMID 24913545.|Verified.
+|Mahoney et al. (1999)|Mahoney, E. K., Hurley, A. C., Volicer, L., et al. (1999). Development and testing of the Resistiveness to Care Scale. //Research in Nursing & Health//, 22(1), 27-38. PMID 9928961.|Verified. Full author list not confirmed beyond the first three - check.
+|Galik et al. (2017)|Galik, E., Resnick, B., Vigne, E., Holmes, S. D., & Nalls, V. (2017). Reliability and validity of the Resistiveness to Care Scale among cognitively impaired older adults. //JAMDA//. PMID 27776986.|Verified. Volume and pages not confirmed - check.
+|Lawton et al. (1996)|Lawton, M. P., Van Haitsma, K., & Klapper, J. (1996). Observed affect in nursing home residents with Alzheimer's disease. //Journal of Gerontology B: Psychological Sciences and Social Sciences//, 51(1), P3-P14. doi:10.1093/geronb/51b.1.p3. PMID 8548515.|Verified from source. This is the psychometrics paper - cite this one for the instrument's validity.
+|Lawton et al. (1999)|Lawton, M. P., Van Haitsma, K., Perkinson, M., & Ruckdeschel, K. (1999). Observed affect and quality of life in dementia: Further affirmations and problems. //Journal of Mental Health and Aging//, 5(1), 69-81.|Verified from source. Note: ResearchGate lists this as //Aging & Mental Health// 5(1) - that is wrong, the article's own header says //Journal of Mental Health and Aging//. Cite this one for the rater-training caveat, not for psychometrics.
+|Peek et al. (2014)|Peek, S. T. M., Wouters, E. J. M., van Hoof, J., Luijkx, K. G., Boeije, H. R., & Vrijhoef, H. J. M. (2014). Factors influencing acceptance of technology for aging in place: a systematic review. //International Journal of Medical Informatics//, 83(4), 235-248. PMID 24529817.|Verified.
+|de Werd et al. (2013)|de Werd, M. M. E., Boelen, D., Olde Rikkert, M. G. M., & Kessels, R. P. C. (2013). Errorless learning of everyday tasks in people with dementia. //Clinical Interventions in Aging//. doi:10.2147/CIA.S46809. PMID 24049443.|Author names now corroborated - all four appear in the same order and with the same initials in the Voigt-Radloff et al. (2017) author list. Volume and pages still unconfirmed.
+|Voigt-Radloff et al. (2017)|Voigt-Radloff, S., de Werd, M. M. E., Leonhart, R., Boelen, D. H. E., Olde Rikkert, M. G. M., Fliessbach, K., Klöppel, S., Heimbach, B., Fellgiebel, A., Dodel, R., Eschweiler, G. W., Hausner, L., Kessels, R. P. C., & Hüll, M. (2017). Structured relearning of activities of daily living in dementia: the randomized controlled REDALI-DEM trial on errorless learning. //Alzheimer's Research & Therapy//, 9, 22. doi:10.1186/s13195-017-0247-9. Trial registration DRKS00003117. Open access.|Verified from source. Was cited by title only; full author list now confirmed. Participants lived at home, not in care homes - a transfer limit worth stating.
+|Ryan & Deci (2000)|Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.|Not independently verified here - standard citation, but confirm. §1.2 already names SDT as the source for HV-01 and HV-04.
+|Friedman et al.|Friedman, B., Kahn, P. H., Jr., & Borning, A. (2008). Value Sensitive Design and Information Systems. In K. E. Himma & H. T. Tavani (Eds.), //The Handbook of Information and Computer Ethics//. doi:10.1002/9780470281819.ch4|Verified. §1.2 cites "Value Sensitive Design" as a source for HV-02, HV-03 and HV-05 without a reference - this is the one to use.
+|Custers et al. (2013)|Custers, A. F. J., Westerhof, G. J., Kuin, Y., Gerritsen, D. L., & Riksen-Walraven, J. M. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209. doi:10.1007/s10433-013-0263-y.|Verified from source. Radboud Nijmegen and Twente, so Dutch nursing homes: the closest population in this reference list to our own setting. Supplies both M-05's instrument shape and the evidence behind Open item O-8.
+|Furlanis et al. (2026)|Furlanis, T., Brščić, D., & Kanda, T. (2026). Robotic Bias and Its Dimensions. In //Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26)//, Edinburgh, UK, 562-571. doi:10.1145/3757279.3785613. CC-BY 4.0.|Verified from source. Note the limitation before citing: the authors state their claims "remain largely at a conceptual level" and the restaurant-robot case is "a fictional yet research-informed vignette", not a study. Cite it for the framework and for framing the risk - not as empirical evidence.
+|Lee et al. (2016)|Lee, H. R., Tan, H., & Šabanović, S. (2016). That robot is not for me: Addressing stereotypes of aging in assistive robot design. In //25th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN '16)//, 708-713. doi:10.1109/ROMAN.2016.7745148.|Citation verified from the Furlanis et al. reference list, but the paper itself has not been read - obtain it before relying on its findings. It is the empirical anchor Furlanis et al. cite for older adults feeling patronised by assistive robots, so it is worth getting.
+|Pemberton et al. (2026)|Pemberton, L., Mehandjiev, N., & Carter, M. (2026). The Tool, the Pet, the Carer & the Warden: A Conceptual Framework of How Older Adults Perceive Socially Assistive Robots. //Information Systems Frontiers//, 28, 1039-1059. doi:10.1007/s10796-026-10699-2. Open access.|Verified from source. Qualitative, n = 13, VR smart-home setup. Transfer limits to state whenever it is cited: cognitively intact older adults, ageing in place at home - not care-home residents with dementia.
+|Secondary citations|Prakash & Rogers (2015) on mechanical-looking robots in private contexts; Zsiga et al. (2013) on control and cognitive-support overreach; Coghlan et al. (2021) on "tool"/"pet" preference; Pino et al. (2015); Vandemeulebroucke et al. (2020); Heerink et al. (2010).|Not read - cited second-hand via Pemberton et al. (2026). Marked as such everywhere they appear above. Retrieve the originals before any of these carries weight in the report.

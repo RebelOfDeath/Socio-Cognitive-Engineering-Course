@@ -1,3 +1,6 @@
 wiki-sync/.env
 __pycache__/
 *.pyc
+
+# Local copies of the course manuals and cited papers, not ours to redistribute
+tmp-pdfs/
