@@ -5,7 +5,6 @@ syntax: xwiki/2.1
 version: 1.1
 hash: ba6961580c8a2b17d0f4617b89e121bb13479a68d6d9cb9800e19f591d87ac3d
 %%WIKI-SYNC-META%%
-//<This is an adjusted version of the problem scenario that shows the proposed solution of the problem; a story board can be added to illustrate the design scenario>//
 
 
 {{html}}
@@ -17,3 +16,22 @@ hash: ba6961580c8a2b17d0f4617b89e121bb13479a68d6d9cb9800e19f591d87ac3d
         <option value="Finalized">Finalized</option>
     </select>
 {{/html}}
+
+
+= Design Scenario [DS-02]=
+//<This is an adjusted version of the problem scenario that shows the proposed solution of the problem; a story board can be added to illustrate the design scenario>//
+
+A resident with dementia needs to take prescriped medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it's time to take it. At first, the resident agrees to take the medicine.
+
+The care worker places the medication and a glass of water on the tray in front of the helper robot, and the device gives a brief, friendly acknowledgement for the patient, letting them know that they can take the medication whenever they are ready. The helper robot then goes quiet.
+
+The resident becomes distracted by activity somewhere else in the room and does not take the medication. After a few minutes in which the tray weight has not changed, the helper robot notices that the patient did not take the medication. The device then glows warm light and gently reminds the patient about the medication. 
+
+The resident returns their attention to the tray and the robot and, unsure of why the tablets are there, asks the robot for clarification. The device responds simply, friendly, and gently that these are the patient's morning tablets, that help with their condition, and that should be taken with the water on the tray. In care the resident does have more questions about the medication, the robot calmly repeats its purpose and reassures the patient to take it.  Because of the reassuring but still matter-of-fact, adamant tone, the resident does not need the care worker to re-explain everything from scratch, and is convinced into taking the medication.
+
+The resident therefore picks up the medication and water, and the helper robot detects the weight change. The robot also senses that the medication dispenser/container has been opened, which indicates that the patient indeed took the medication. The device then asks the resident to confirm that they took the tablets. The helper robot gives a short, friendly acknowledgement, and saves to the record that the patient has taken the medication, avoiding this way the risk of it being offered again later by mistake.
+
+The care worker was free to attend to another resident during the distraction, instead of having to repeatedly prompt. They are only pulled back if the robot's requests go unanswered several times, in which case the device sends a quiet notification that a check-in with the patient is needed. 
+
+
+
