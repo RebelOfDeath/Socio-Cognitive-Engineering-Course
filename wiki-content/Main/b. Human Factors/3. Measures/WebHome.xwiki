@@ -5,7 +5,8 @@ syntax: xwiki/2.1
 version: 1.1
 hash: 8fab324eb217aa242b2792c8ed904f696994e0c7e8b5a47fd338d50e4650fed2
 %%WIKI-SYNC-META%%
-= Measure  [M-nn] =
+
+= Step-tracking and stall-detection performance  [M-01] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -14,18 +15,180 @@ hash: 8fab324eb217aa242b2792c8ed904f696994e0c7e8b5a47fd338d50e4650fed2
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. M-01, M-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Construct measured|what it actually captures.
-|Type|quantitative or qualitative.
-|Instrument or procedure|the scale, protocol, log, or coding scheme used.
-|Scoring or coding scheme|how raw observation becomes a value — for qualitative Measures, the coding rules.
-|Validity and reliability|prior evidence where it exists; state plainly where the Measure is bespoke.
-|Serves|Verification, Validation, or both.
-|Burden|participants, equipment, time, and the ethics load it implies.
+|ID|M-01
+|Name|Step-tracking and stall-detection performance
+|Status|In Progress
+|Evidence basis|The protocol follows the system-performance reporting of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
+|Construct measured|Whether the System correctly identifies which SA-01 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
+|Type|Quantitative
+|Instrument or procedure|Staged-event protocol against a ground-truth log: scripted steps, stalls, resumptions and confounders at a mock sink, with each event timestamped by the experimenter.
+|Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Pass thresholds are [pending §1.3], since they depend on the sensing technology selected.
+|Validity and reliability|Bespoke. Validity rests on the accuracy of the ground-truth log, not on prior psychometric evidence.
+|Serves|Verification
+|Burden|No human subjects - staged events only. Requires a mock sink set-up and the prototype.
 
 == Graph edges ==
 
-operationalizes → (Specification-phase) Claim / Premise; used-by → Evaluation Method.
+operationalizes → UC01-F1-PR1, UC01-F2-PR2 (timing component), UC01-F3-PR3; used-by → EM-01.
+
+= Independent step completion  [M-02] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-02
+|Name|Independent step completion
+|Status|In Progress
+|Evidence basis|Step-level scoring as used in COACH (Mihailidis et al., 2008), which scored older adults with moderate-to-severe dementia on handwashing steps completed without human assistance. Directly reused, not adapted.
+|Construct measured|How many steps of the SA-01 sequence the resident completes with no prompt, per session.
+|Type|Quantitative
+|Instrument or procedure|Observer scoring of each SA-01 step during the real morning routine.
+|Scoring or coding scheme|One point per SA-01 step completed without any prompt or human assistance; summed per session (0-9 for SA-01's nine steps). Compared against the same resident's pre-System baseline.
+|Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers: TODO - establish before EM-02.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-03, VT-02).
+
+== Graph edges ==
+
+operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6; used-by → EM-02; operationalizes → HV-04 (Competence), HV-01 (Autonomy).
+
+= Prompt level required  [M-03] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-03
+|Name|Prompt level required
+|Status|In Progress
+|Evidence basis|Bespoke ordinal coding. The levels correspond to SA-01's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
+|Construct measured|The highest level of assistance needed to get the resident through each step.
+|Type|Quantitative (ordinal)
+|Instrument or procedure|Observer coding per SA-01 step, during the real morning routine.
+|Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
+|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: TODO.
+|Serves|Validation
+|Burden|Human subjects - as M-02, collected in the same observation.
+
+== Graph edges ==
+
+operationalizes → UC01-F2-CL2, UC01-F2-CL4; used-by → EM-02; operationalizes → HV-04 (Competence).
+
+= Observed distress and resistance  [M-04] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-04
+|Name|Observed distress and resistance
+|Status|In Progress
+|Evidence basis|(((
+Resistiveness to Care Scale (Mahoney et al., 1999), developed specifically for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017).
+
+Optionally paired with the Observed Emotion Rating Scale for affect (Lawton, Van Haitsma & Klapper, 1996).
+)))
+|Construct measured|Frustration, distress and resistance shown by the resident during the activity.
+|Type|Quantitative (observational, coded)
+|Instrument or procedure|Resistiveness to Care Scale - 13 observed behaviours - rated during or from the care episode. Optionally the Observed Emotion Rating Scale alongside it.
+|Scoring or coding scheme|Per the Resistiveness to Care Scale manual (Mahoney et al., 1999). TODO: record the exact item scoring and aggregation rule once the manual is obtained. Compared against the resident's pre-System baseline.
+|Validity and reliability|Validated, not invented: internal consistency α .82-.87 (Mahoney et al., 1999), with further reliability and validity support in cognitively impaired older adults (Galik et al., 2017). For the Observed Emotion Rating Scale, psychometrics in Lawton et al. (1996); Lawton et al. (1999) found reliability "less than desirable" when rated by certified nursing assistants rather than trained research staff.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. If care staff rather than researchers do the rating, rater-training time has to be budgeted (Lawton et al., 1999).
+
+== Graph edges ==
+
+operationalizes → UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5; used-by → EM-02; operationalizes → HV-05 (Well-being).
+
+= Perceived autonomy and felt control  [M-05] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-05
+|Name|Perceived autonomy and felt control
+|Status|In Progress
+|Evidence basis|Episode-specific need-fulfilment items from Custers et al. (2013), which measured Dutch nursing-home residents' fulfilment of the needs for autonomy, competence and relatedness during a specific videotaped caregiving episode, with a trained-observer counterpart. Provisional: that sample was physically frail residents (n = 36, mean age 80), not specifically residents with dementia.
+|Construct measured|The resident's felt sense of doing the activity themselves rather than being led through it, during a specific session.
+|Type|Quantitative, with an observer counterpart
+|Instrument or procedure|Episode-specific autonomy items from Custers et al. (2013), asked after the session, paired with an observer rating of the same episode.
+|Scoring or coding scheme|TODO: record the item format and scoring from Custers et al. (2013). Report self-report and observer scores separately; do not combine them.
+|Validity and reliability|Custers et al. (2013) found residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement. The self-report therefore has a documented ceiling and must not be used alone - see §2.3 Open item O-8.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. Self-report may be difficult for residents with more advanced dementia; the observer rating also needs a trained observer present.
+
+== Graph edges ==
+
+operationalizes → UC01-F2-CL3; used-by → EM-02; operationalizes → HV-01 (Autonomy). Associated with HFC-01.
+
+= Perceived privacy and monitoring acceptability  [M-06] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-06
+|Name|Perceived privacy and monitoring acceptability
+|Status|In Progress
+|Evidence basis|Bespoke, but the concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
+|Construct measured|Whether residents experience the System as watching them, and whether care staff judge what the session record exposes as proportionate.
+|Type|Mixed (qualitative coding, plus a check of record content)
+|Instrument or procedure|(((
+Validation component: interview coding of resident and care-staff accounts for expressions of being watched or monitored, plus care-staff judgement of what the session record exposes.
+
+Verification component (record content): inspection of stored session records against the three specified items.
+)))
+|Scoring or coding scheme|(((
+Code any resident or staff statement describing the System as watching, checking on, or recording the resident. Code care-staff judgements of each record item as proportionate or intrusive. TODO: full coding rules and a second coder.
+
+Record-content check: pass if the record holds exactly the three specified items and no step-level trace.
+)))
+|Validity and reliability|Bespoke - no prior validity evidence. Inter-coder reliability: TODO.
+|Serves|Both - Verification (record content) and Validation (perceived privacy)
+|Burden|Human subjects for the validation component - residents with dementia (supported consent) and care staff. The record-content check needs no human subjects.
+
+== Graph edges ==
+
+operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8; used-by → EM-01, EM-03; operationalizes → HV-03 (Privacy). Associated with HFC-02.
+
+= Care-worker prompting load  [M-07] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-07
+|Name|Care-worker prompting load
+|Status|In Progress
+|Evidence basis|Time-sampled observation as used in Rogers et al. (1999), which reported the proportion of a morning care session spent on physical assists.
+|Construct measured|How much of the care worker's time a resident's activity takes.
+|Type|Quantitative
+|Instrument or procedure|Time-sampled observation of care-worker prompting during the activity.
+|Scoring or coding scheme|Count and total duration of care-worker prompting episodes per session. Compared against the pre-System baseline.
+|Validity and reliability|Method follows Rogers et al. (1999); our specific coding is bespoke. Inter-rater reliability: TODO.
+|Serves|Validation
+|Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-02) and residents.
+
+== Graph edges ==
+
+operationalizes → UC01-F3-CL6; used-by → EM-02, EM-03.
