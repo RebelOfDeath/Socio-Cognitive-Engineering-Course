@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/c.%20Technology/spaces/Music%20Management/pages/WebHome
 title: Technology Options
 syntax: xwiki/2.1
-version: 1.1
-hash: 13f92802199d18dd67da81922e24aa6be71d83b782f2b73a6e4f157f34a56982
+version: 2.1
+hash: 23046e193782781661d4d6e9d52d5b341e06bc2db360da3af3a3aa1abdccfb13
 %%WIKI-SYNC-META%%
 {{box title="Status of this page"}}
 Selection for UC01 (tooth brushing), the activity chosen as this cycle's spine (§2.3 Open item O-13). The System combines three selected options: Pepper for interaction and prompting (TECH-01), sensors on the tooth-brushing items for tracking the activity (TECH-02), and a care-staff notification channel (TECH-03). Three options are rejected or deferred and kept here as Foundation knowledge.

@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/Environments/pages/WebHome
 title: 1. Situated Activities
 syntax: xwiki/2.1
-version: 13.1
-hash: 91390474a22b326183862d8cde1b7695774b9095fd350baf977f9b9bf7ad5218
+version: 14.1
+hash: 1e9600b0cd4429920e90e43fd6d7ba750aae695369e9037ba70d66014405a586
 %%WIKI-SYNC-META%%
 = Situated Activity  [SA-01] =
 
@@ -25,8 +25,6 @@ Rogers et al. (1999) describe morning care routines, including oral hygiene, of 
 Longitudinal study about recall of everyday task [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/11997490/>>https://pubmed.ncbi.nlm.nih.gov/11997490/]]
 
 Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/12597076/>>https://pubmed.ncbi.nlm.nih.gov/12597076/]]
-
-Planned: observation of the routine with the resident's consent, and a survey of care-home employees about the activity.
 )))
 |Goal|Maintain oral hygiene as part of the resident's normal morning routine, with as much independence as possible
 |Performing Actor(s)|(((
@@ -55,7 +53,7 @@ ST-02: Care home staff member (supports and prompts when needed)
 9. Put toothbrush and toothpaste away
 )))
 |Context|Resident's bathroom in a dementia care home usually during a morning/evening care routine. Care staff may be nearby, the resident's cognitive abilities and need for assistance can vary.
-|Frequency and duration|Twice daily (standard oral-hygiene advice); approximately 2-5 minutes per episode. The duration is a group estimate, not measured.
+|Frequency and duration|Twice daily approximately 2-5 minutes per episode. The duration is a group estimate, not measured.
 |Tools and artifacts|Toothbrush, toothpaste, sink, cup, mirror, towels, possible visual prompts/hints used by the care home 
 |Existing workarounds|(((
 - Verbally reminding the resident to brush their teeth
@@ -107,8 +105,6 @@ Longitudinal study about recall of everyday task [[https:~~/~~/pubmed.ncbi.nlm.n
 
 Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm.nih.gov/12597076/>>https://pubmed.ncbi.nlm.nih.gov/12597076/]]
 
-Planned: interviews with residents with dementia and care home employees.
-
 Scope note: this activity is carried by UC02, deferred to a later cycle (see §2.3 Open item O-13).
 )))
 |Goal|Take the right medication at the right time, understanding what it is for, without needing to be reminded repeatedly
@@ -138,7 +134,7 @@ ST-02: Care home employee (prepares the medication and reminds the resident)
 9. Confirm that task was completed
 )))
 |Context|Care home, morning, staff present
-|Frequency and duration|Daily, or as often as the prescription says. Duration not yet estimated - to be established in the planned interviews.
+|Frequency and duration|Daily, or as often as the prescription says. Duration 2-5 minutes per episode. The duration is a group estimate, not measured.
 |Tools and artifacts|Glass, water, medication: pills, syringe, suppository, cream/ointment, food (when needs to be taken with food or to mask the taste)
 |Existing workarounds|Post-it note with instructions, pill organizer, reminder app, reminder by caretaker in person, placing the medication in a visible spot, delegate an employee whose task is to assist with taking medication.
 |Observed breakdowns|(((
@@ -173,8 +169,6 @@ performed-by → ST-01 (supported by ST-02); illustrated-by → PS-02. Goal fiel
 Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional.
 
 Constructed from the care worker's part in PS-01 and PS-02 and from HP-02. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
-
-Planned: shadowing a care worker through a morning round, and a staff survey on time spent prompting.
 )))
 |Goal|Get every resident on the round through their morning care safely and in time, giving each the support they actually need, and know afterwards what each resident needed so care can continue at handover
 |Performing Actor(s)|ST-02: Care home staff member
@@ -193,7 +187,7 @@ Planned: shadowing a care worker through a morning round, and a staff survey on 
 6. Record the care given and hand over at the end of the shift
 )))
 |Context|One care worker is responsible for several residents during the busy morning period, under time pressure and with frequent interruptions. Residents' needs for support vary from day to day.
-|Frequency and duration|Every morning shift. Duration and number of residents per care worker not yet estimated - to be established in the planned shadowing.
+|Frequency and duration|Every morning shift. 5 - 8 residents per care worker, 30 - 60 minutes per round. The duration is a group estimate, not measured.
 |Tools and artifacts|Handover notes and care record, medication list or trolley, residents' own personal-care items
 |Existing workarounds|(((
 - Preparing items in advance, such as putting toothpaste on the toothbrush (SA-01)

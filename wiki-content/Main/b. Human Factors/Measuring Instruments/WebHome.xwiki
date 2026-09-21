@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/Measuring%20Instruments/pages/WebHome
 title: 5. Evaluation Methods
 syntax: xwiki/2.1
-version: 2.1
-hash: d9bd263fec912845e160e4d02d82604f35d5c29d5b088e6e89a04c38e5a14cfb
+version: 3.1
+hash: 2ad2a1ee9a335786d7efb8341fb9257d87ee1c380618995d3485cd2b378baff5
 %%WIKI-SYNC-META%%
 {{box title="Status of this page"}}
 EM-01 to EM-03 were first drafted in §2.3 (Use Case with Claims/Premises) and have been moved here as Foundation entities. §2.3 now points here. Anyone adding an Evaluation Method should start at EM-04. The Measures they apply are on the §1.2 [[4. Measures>>Main.b\. Human Factors.3\. Measures.WebHome]] page.
