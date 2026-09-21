@@ -10,7 +10,7 @@ Objectives and Functions are drafted and traceable to the Foundation.
 
 On evidence. This project has collected no primary data: no resident or care worker has been observed or interviewed. Each Evidence basis field below says so, and cites published literature instead. Where nothing could be found the field says TODO. Full citations are in the References section at the bottom, each marked with how confident we are in it.
 
-Cells marked [pending §1.3] wait on the Technology Option selection; cells marked [pending §1.2] cite Evaluation Methods drafted here but not yet written up on their own Foundation page. Measures are on the §1.2 Measures page. See //Open items//.
+Cells marked [pending §1.3] wait on the Technology Option selection; Measures and Evaluation Methods cited below are documented on their §1.2 Foundation pages. See //Open items//.
 {{/box}}
 
 = Objective  [OBJ-01] =
@@ -327,7 +327,7 @@ F1-F4 are expected to transfer, since both activities are stepwise sequences wit
 These are gaps recorded as explicit decisions rather than left silent, per Step 14.
 
 |=ID|=Item|=Blocks|=Owner
-|O-1|Partly resolved. M-01…M-07 are now Foundation entities on the §1.2 Measures page; anyone adding a Measure should start at M-08. §1.2 Evaluation Methods is still an empty template - EM-01…EM-03 are drafted below and cited throughout the tables above, but are not yet Foundation entities.|Every Verification and Validation Criteria cell above that cites an EM|§1.2 owner
+|O-1|Resolved. M-01…M-07 are on the §1.2 [[4. Measures>>Main.b\. Human Factors.3\. Measures.WebHome]] page and EM-01…EM-03 on the §1.2 [[5. Evaluation Methods>>Main.b\. Human Factors.Measuring Instruments.WebHome]] page. New Measures start at M-08, new Evaluation Methods at EM-04.|Nothing|Closed
 |O-2|VT-01's non-negotiable floor requires the System to notify caregivers on immediate risk of serious harm. PS-02's out-of-scope field calls relaying an emergency "likely out of scope". Both cannot stand.|Action Sequence step 10; F3's scope; UC01-F3-PR3|Group decision
 |O-3|F4 has no Objective it can be traced to. Either SA-01 needs a Goal covering care continuity and handover, or F4 is out of scope this cycle.|F4|Group decision
 |O-4|Resolved. UC01-F2-CL5 previously rested on a Human Value with no supporting concept. Kitwood (1997) supplies it - infantilisation and outpacing are named detractors of personhood in dementia care. Remaining action: §1.2 should add this as an HFC so the Claim grounds on a concept rather than on a Claim-level citation.|Nothing|§1.2 owner
@@ -367,15 +367,6 @@ Arising from O-10. The evidence points somewhere specific on the open embodiment
 
 Two actions: (a) §1.3 should record this as the rationale for whichever Technology Option is selected, and as the reason for rejecting a humanoid one; (b) §1.2 should add an HFC on embodiment and perceived role, so CL5 grounds on a concept rather than on Claim-level citations. That would also close the remaining half of O-4.
 )))|§1.3's selection rationale; CL5's grounding|§1.3 and §1.2 owners
-
-== Evaluation Methods these tables require ==
-
-//Measures M-01 to M-07 have moved to the §1.2 [[4. Measures>>Main.b\. Human Factors.3\. Measures.WebHome]] page. The Evaluation Methods below are still drafted here so the tables above are not citing nothing - they belong on the §1.2 Evaluation Methods page. Move them there and delete this section.//
-
-|=ID|=Evaluation Method|=Purpose|=Measures|=Known limitation
-|EM-01|Staged-session verification against a ground-truth log. Scripted stalls, resumptions, and confounders at a mock sink.|Verification|M-01, M-06 (record content)|Cannot establish real-world accuracy with an actual resident in an actual bathroom.
-|EM-02|Observed within-resident comparison during the real morning routine, against each resident's own pre-System baseline. Design follows the single-subject alternating baseline-intervention structure used in COACH (Mihailidis et al., 2008).|Validation|M-02, M-03, M-04, M-05, M-07|Small n, no control group, cannot separate novelty effects from the design. High ethics load - dementia participants, supported consent.
-|EM-03|Care-staff interview on the handover record and on perceived intrusion.|Validation|M-06, M-07|Cannot establish the resident's own privacy experience - only how staff read it.
 
 = References =
 

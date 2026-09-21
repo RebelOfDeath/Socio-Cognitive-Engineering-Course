@@ -5,7 +5,13 @@ syntax: xwiki/2.1
 version: 1.1
 hash: 2809fe2ab51f945d6507bb708c70e4cdfeb6cd9204bdef0173fe7e323cff5f32
 %%WIKI-SYNC-META%%
-= Evaluation Method  [EM-nn] =
+{{box title="Status of this page"}}
+EM-01 to EM-03 were first drafted in §2.3 (Use Case with Claims/Premises) and have been moved here as Foundation entities. §2.3 now points here. Anyone adding an Evaluation Method should start at EM-04. The Measures they apply are on the §1.2 [[4. Measures>>Main.b\. Human Factors.3\. Measures.WebHome]] page.
+
+No primary data has been collected by this project. Cost and feasibility entries are the group's own estimates, not measured.
+{{/box}}
+
+= Staged-session verification  [EM-01] =
 
 //A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
 
@@ -14,17 +20,65 @@ hash: 2809fe2ab51f945d6507bb708c70e4cdfeb6cd9204bdef0173fe7e323cff5f32
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. EM-01, EM-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Procedure summary|what is actually done.
-|Purpose|Verification (does the Function operate as specified?) or Validation (does it produce the intended effect?).
-|Human subjects required|yes/no.
-|Measures used|Measure ID(s).
-|Cost and feasibility|what running it would require, realistically.
-|Known limitations|what this method cannot establish, so it is not later asked to.
+|ID|EM-01
+|Name|Staged-session verification
+|Status|In Progress
+|Evidence basis|Staged-event testing against a ground-truth log follows the system-performance evaluation of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
+|Procedure summary|Scripted steps, stalls, resumptions and confounders are performed at a mock sink against a timestamped ground-truth log. The System's step identification, stall detection, prompting and handover requests are compared with the log. Stored session records are inspected for their content.
+|Purpose|Verification
+|Human subjects required|No
+|Measures used|M-01; M-06 (record-content component only)
+|Cost and feasibility|Low. Needs a mock sink set-up, the prototype and experimenter time; no ethics approval for human subjects. Can run as soon as a prototype exists.
+|Known limitations|Cannot establish real-world accuracy with an actual resident in an actual bathroom. Scripted stalls may not resemble real hesitation.
 
 == Graph edges ==
 
-produces → Evidence; applies → Measure.
+produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC01-F4-PR4; applies → M-01, M-06.
+
+= Within-resident baseline comparison  [EM-02] =
+
+//A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-02
+|Name|Within-resident baseline comparison
+|Status|In Progress
+|Evidence basis|Design follows the single-subject alternating baseline-intervention structure used in COACH (Mihailidis et al., 2008) with older adults with moderate-to-severe dementia.
+|Procedure summary|Residents are observed during the real morning routine, first without the System to establish each resident's own baseline, then with it, alternating between the two phases. Trained observers score the activity during each session.
+|Purpose|Validation
+|Human subjects required|Yes - residents with dementia (supported consent) and the care staff working with them.
+|Measures used|M-02, M-03, M-04, M-05, M-07. TODO: UC01-F2-CL5 and UC01-F1-CL7 cite EM-02 with M-06, but this procedure includes no resident interview to code - either add one, or cite only EM-03 for M-06 in those Claims.
+|Cost and feasibility|High. Needs access to a care home, ethics approval, supported consent, trained observers present during a personal-care activity, and enough sessions per resident for both phases.
+|Known limitations|Small n and no control group. Cannot separate novelty effects from the design. The observer's presence during a personal-care activity may itself change behaviour.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3, UC01-F2-CL4, UC01-F2-CL5, UC01-F3-CL6, UC01-F1-CL7; applies → M-02, M-03, M-04, M-05, M-07.
+
+= Care-staff interview  [EM-03] =
+
+//A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-03
+|Name|Care-staff interview
+|Status|In Progress
+|Evidence basis|Bespoke. The interview's concern set is drawn from Niemeijer et al. (2010, 2015) on the acceptability of surveillance technology in residential dementia care.
+|Procedure summary|Care staff are interviewed about the handover record the System produces and about whether they perceive the System as intrusive, for residents or for themselves. Interviews are coded with M-06's coding scheme.
+|Purpose|Validation
+|Human subjects required|Yes - care staff.
+|Measures used|M-06, M-07
+|Cost and feasibility|Moderate. Needs informed consent and staff time during working hours; lower ethics load than EM-02 because residents are not participants.
+|Known limitations|Cannot establish the resident's own privacy experience - only how staff read it. Staff accounts of their own prompting load are self-reports, not observations.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8; applies → M-06, M-07.
