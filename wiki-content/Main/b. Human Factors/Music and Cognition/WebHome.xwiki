@@ -2,8 +2,13 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/b.%20Human%20Factors/spaces/Music%20and%20Cognition/pages/WebHome
 title: 3. Human Factors Concepts
 syntax: xwiki/2.1
+<<<<<<< HEAD
 version: 2.1
 hash: db1096912bf6b9f1d9dcbe2e9c930e05cbbdad8ff2e5f0708380152adc9e20eb
+=======
+version: 3.1
+hash: 6745db9ff951f608b6f12a2353b127db882615e4fbaea7bce5ad51f2290a60f3
+>>>>>>> d3a7c72941b63e8c3ff7b33a013ac4b6764a994b
 %%WIKI-SYNC-META%%
 = Perceived Autonomy and Technology Acceptance  [HFC-01] =
 
@@ -17,16 +22,30 @@ hash: db1096912bf6b9f1d9dcbe2e9c930e05cbbdad8ff2e5f0708380152adc9e20eb
 |ID|HFC-01
 |Name|Perceived Autonomy and Technology Acceptance
 |Status|In Progress
-|Evidence basis|Human-factors literature, supported by interviews/observations with residents and care staff concerning independence and assistance during everyday activities.
+|Evidence basis|(((
+Human-factors literature only. No interviews or observations have been carried out by this project.
+
+Peek et al. (2014), a systematic review of factors influencing acceptance of technology for ageing in place, identifies a framework of 27 pre-implementation factors including perceived usefulness, perceived need, and concerns about the technology. Ryan & Deci (2000) supplies the autonomy mechanism.
+)))
 |Concept statement|Assistive technology that preserves the resident's sense of choice and control is more likely to be accepted and continuously used than technology that automatically takes over activities or makes decisions on the resident's behalf.
 |Human factor addressed|Perceived autonomy; motivation to engage with and continue using assistive technology.
 |Proposed mechanism|When assistance is provided automatically or without giving the resident an opportunity to act, the interaction may be experienced as controlling. This can reduce the resident's sense of autonomy and willingness to engage with the support. Giving the resident a meaningful opportunity to initiate an activity, choose, or respond before assistance is increased preserves perceived control and may increase acceptance of the support.
-|Source|Self-Determination Theory (Deci & Ryan) as applied in assistive-technology acceptance research.
+|Source|(((
+Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
+
+Peek, S. T. M., Wouters, E. J. M., van Hoof, J., Luijkx, K. G., Boeije, H. R., & Vrijhoef, H. J. M. (2014). Factors influencing acceptance of technology for aging in place: a systematic review. //International Journal of Medical Informatics//, 83(4), 235-248. PMID 24529817.
+
+Mihailidis, A., Boger, J. N., Craig, T., & Hoey, J. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28. PMID 18992135. - the concrete case of a prompting system in this population.
+)))
 |Conditions and population of validity|The mechanism is established more generally and in older-adult populations. Transfer to people with moderate dementia must be treated cautiously because it assumes that the resident can perceive and interpret the choice being offered. The level and presentation of choice may therefore need to be adapted to cognitive ability.
 |Predicted Effect type|Higher perceived autonomy; greater willingness to engage with assistance; sustained use; reduced avoidance or rejection of the technology.
-|Associated Measures|M-xx: Perceived autonomy / felt control during the interaction.
+|Associated Measures|(((
+M-05: Perceived autonomy / felt control during the interaction. Use the episode-specific items from Custers, A. F. J., Westerhof, G. J., Kuin, Y., Gerritsen, D. L., & Riksen-Walraven, J. M. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209. doi:10.1007/s10433-013-0263-y.
 
-= Perceived surveillance and privacy-related acceptance  [HFC-02] =
+Caution: in that study residents rated their own need fulfilment //higher// than trained observers did, with only weak-to-moderate agreement. A self-report measure cannot stand alone here - pair it with the observer rating. See §2.3 Open item O-8.
+)))
+
+= Perceived surveillance and technology acceptance  [HFC-02] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -37,16 +56,26 @@ hash: db1096912bf6b9f1d9dcbe2e9c930e05cbbdad8ff2e5f0708380152adc9e20eb
 |ID|HFC-02
 |Name|Perceived surveillance and technology acceptance
 |Status|In Progress
-|Evidence basis|Interviews/observations concerning privacy during everyday care activities, provisional human-factors concept requiring confirmation from relevant assistive-technology and dementia literature.
+|Evidence basis|(((
+Literature only. No interviews or observations have been carried out by this project.
+
+Niemeijer et al. (2010) is a systematic review of 79 papers on the ethical and practical acceptability of surveillance technology in residential care for people with dementia or intellectual disabilities. Niemeijer et al. (2015) then interviewed residents themselves.
+)))
 |Concept statement|Monitoring that is perceived as continuous, intrusive, or unnecessarily detailed can reduce a person's sense of privacy and may lead to discomfort, avoidance, or rejection of the technology.
 |Human factor addressed|Perceived surveillance; privacy perception; technology acceptance.
 |Proposed mechanism|Increasing the amount or visibility of monitoring can provide caregivers or technology with more information about whether assistance is needed. However, when the resident becomes aware of being continuously observed or believes that more personal information is being collected than necessary, the support may be experienced as surveillance. This may reduce perceived privacy and willingness to accept the system.
-|Source|Specific citation from privacy/surveillance and assistive-technology literature required before this concept is finalized.
+|Source|(((
+Niemeijer, A. R., Frederiks, B. J. M., Riphagen, I. I., Legemaate, J., Eefsting, J. A., & Hertogh, C. M. P. M. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//. PMID 20199699.
+
+Niemeijer, A. R., Depla, M. F. I. A., Frederiks, B. J. M., & Hertogh, C. M. P. M. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320. PMID 24913545. - the key finding for us: surveillance technology can support autonomy, but only when embedded in a person-centred approach.
+
+Also relevant: Niemeijer et al. (2011), //Journal of Medical Ethics// 37(5), 303-310, which used concept mapping to find an inherent duality in professional views, rooted in the moral conflict between safety and freedom - i.e. our VT-01 and VT-02, found independently.
+)))
 |Conditions and population of validity|Must be established specifically for older adults and, where possible, people with dementia. Cognitive impairment may affect whether and how monitoring is perceived, so findings from general technology users should not automatically be transferred to this population.
 |Predicted Effect type|Perceived privacy; discomfort with monitoring; willingness to accept monitoring; avoidance or rejection behaviour.
-|Associated Measures|M-xx: Perceived privacy / monitoring acceptability; qualitative observations or interview coding for expressions of being watched or monitored.
+|Associated Measures|M-06: Perceived privacy / monitoring acceptability. Interview coding for expressions of being watched or monitored, plus care-staff judgement of what the session record exposes. Bespoke, but the concern set is drawn from Niemeijer et al. (2010, 2015) rather than invented.
 
-= Perceived surveillance and privacy-related acceptance  [HFC-03] =
+= Adaptive assistance, competence and distress  [HFC-03] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -57,14 +86,34 @@ hash: db1096912bf6b9f1d9dcbe2e9c930e05cbbdad8ff2e5f0708380152adc9e20eb
 |ID|HFC-03
 |Name|Adaptive assistance, competence and distress
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff concerning residents' ability to perform everyday activity steps; provisional human-factors concept requiring supporting literature.
+|Evidence basis|(((
+Literature only. No interviews or observations have been carried out by this project.
+
+Rogers et al. (1999) is the strongest support: systematic graduated prompting of nursing-home residents with dementia produced a 26% increase in self-dressing, significantly fewer physical assists, and significantly //fewer// disruptive behaviours than usual care - so matching assistance to ability improved performance and reduced distress together, in a severely impaired cohort (mean MMSE 6.07).
+
+Caveat on direction. This concept says assistance should match ability, but it does not settle //which way// to approach that match. The dementia ADL literature largely favours errorless learning with vanishing cues - prompt early to prevent the error, then fade support (de Werd et al., 2013) - whereas §2.3's F2 waits and escalates. The REDALI-DEM trial (Voigt-Radloff et al., 2017; n = 161) found structured relearning improved ADL performance and held for six months, but that errorless learning gave no additional effect over trial-and-error learning - so neither direction is settled. See §2.3 Open item O-7.
+)))
 |Concept statement|Assistance should be matched to the person's current ability: providing too much assistance can remove opportunities to exercise competence, while providing too little assistance when a task exceeds the person's current capability can result in repeated failure, confusion, or distress.
 |Human factor addressed|Task performance; cognitive capability; perceived competence; frustration and distress.
 |Proposed mechanism|When an activity remains within the resident's current capabilities, allowing sufficient time to perform the activity supports successful task completion and perceived competence. When task demands exceed those capabilities, repeated unsuccessful attempts can increase cognitive difficulty and emotional distress. Increasing assistance only when difficulty persists can therefore preserve opportunities for competence while limiting unnecessary frustration.
-|Source|Specific citation from dementia, cognitive-support, prompting, or adaptive-assistance literature required before this concept is finalized.
+|Source|(((
+Rogers, J. C., Holm, M. B., Burgio, L. D., Granieri, E., Hsu, C., Hardin, J. M., & McDowell, B. J. (1999). Improving morning care routines of nursing home residents with dementia. //Journal of the American Geriatrics Society//, 47(9), 1049-1057. PMID 10484245.
+
+de Werd, M. M. E., Boelen, D., Olde Rikkert, M. G. M., & Kessels, R. P. C. (2013). Errorless learning of everyday tasks in people with dementia. //Clinical Interventions in Aging//. PMID 24049443.
+
+Voigt-Radloff, S., de Werd, M. M. E., Leonhart, R., Boelen, D. H. E., Olde Rikkert, M. G. M., Fliessbach, K., Klöppel, S., Heimbach, B., Fellgiebel, A., Dodel, R., Eschweiler, G. W., Hausner, L., Kessels, R. P. C., & Hüll, M. (2017). Structured relearning of activities of daily living in dementia: the randomized controlled REDALI-DEM trial on errorless learning. //Alzheimer's Research & Therapy//, 9, 22. doi:10.1186/s13195-017-0247-9. - participants lived at home rather than in care homes, so this transfers to our population only cautiously.
+
+Mihailidis, A., Boger, J. N., Craig, T., & Hoey, J. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28. PMID 18992135. - mistimed and false-alarm prompts here produced observed frustration and confusion, which is the failure mode this concept predicts.
+)))
 |Conditions and population of validity|The appropriate level and timing of assistance is likely to vary with the resident's cognitive abilities, the familiarity and complexity of the activity, and their momentary condition. Evidence should therefore be selected specifically for people with dementia or closely comparable older-adult populations rather than assumed from general users.
 |Predicted Effect type|Successful independent task steps; perceived competence; frequency of assistance; frustration, confusion, or distress during the activity.
-|Associated Measures|M-xx: Independent task-step completion; M-xx: Prompt level required; M-xx: Observed frustration/distress.
+|Associated Measures|(((
+M-02: Independent task-step completion - the scoring used in Mihailidis et al. (2008), directly reusable.
+
+M-03: Prompt level required - bespoke ordinal coding, levels matching SA-01's recorded workarounds.
+
+M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney et al., 1999), 13 observed behaviours, α .82-.87, built for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017). Validated, not invented. Optionally paired with the Observed Emotion Rating Scale for affect (psychometrics: Lawton, Van Haitsma & Klapper, 1996, //J Gerontol B//, 51(1), P3-P14).
+)))
 
 
 
