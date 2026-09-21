@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/a2.%20Personas/pages/WebHome
 title: a2. Personas and Profiles
 syntax: xwiki/2.1
-version: 2.1
-hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+version: 3.1
+hash: 9e8df37b4230fbde372d1ff8fecca2ea0e12a6a8a54f66b7a8694161812d9254
 %%WIKI-SYNC-META%%
 
 **Report Format:** §2.2 Personas and Profiles
@@ -23,10 +23,11 @@ grounding its Principle instead.
 3. Having the completion of the task logged and acknowledged so it is not repeated or missed.
 |Specific Capabilities and Needs| Can ask questions and agree to take the medication, communicate, and physically pick up and take the medication when reminded. Cannot reliably remember the action or its purpose when faced with external distractions. Cannot always return to a task that has been interrupted. Needs calm, friendly and simple cues and reassurance.
 |Values and Motivations| (((
-- HV-01: Dignity - The resident wants to be spoken to as someone capable of deciding to take their medication. 
-- HV-02: Autonomy - The resident wants to feel like the task is within their control/choice, and that they can carry it out independently.
+- HV-01: Autonomy - The resident wants to feel like the task is within their control/choice, and that they can carry it out independently.
+- HV-02: Dignity - The resident wants to be spoken to as someone capable of deciding to take their medication. 
 - HV-03: Privacy - The resident does not want to be constantly monitored and recorded. 
-- HV-04: Wellbeing - The resident needs to take the medication in order to follow the treatment plan and maximize their own wellbeing.
+- HV-04: Competence - The resident wants to experience that they can still take their medication themselves once reminded, rather than having each step done or handed to them.
+- HV-05: Well-being - The resident needs to take the medication in order to follow the treatment plan and maximize their own wellbeing.
 )))
 |Social Network and Relationships| The resident receives support from ST-02 (the care worker) and may have ST-03 (family) involved in their care. DS-02 does not change the dependency the resident has on the care worker for receiving the medication and being encouraged to take it. Instead, the frequency of that dependence is reduced, as the device is a tool that holds the routine steady in moments where the care worker may be not present or busy.
 |History and Experiences| No prior technology rejection recorded. Previous experiences include repeated confusion (from PS-02), needing repeated reminders and redirection to complete tasks. Being approached repeatedly and re-explained everything can be confusing and tiring, which is why smaller, gentler cues are desirable.
@@ -49,10 +50,11 @@ grounding its Principle instead.
 3. No need for constant double checking.
 |Specific Capabilities and Needs| Can talk to the patient, explain the purpose of medication and personally reassure the resident when needed. Can intervene when something is wrong. Needs the signals from the helper robot to be rare and meaningful rather than several smaller, low-value alerts.
 |Values and Motivations| (((
-- HV-01: Dignity - Wants the resident to be treated respectfully even when they cannot be present physically to assist them.
-- HV-02: Autonomy - Lets the resident complete the activity themselves with the help of the device, rather than having to walk them through it every time.
+- HV-01: Autonomy - Lets the resident complete the activity themselves with the help of the device, rather than having to walk them through it every time.
+- HV-02: Dignity - Wants the resident to be treated respectfully even when they cannot be present physically to assist them.
 - HV-03: Privacy - Wants to limit the surveillance at their own workplace.
-- HV-04: Wellbeing - Has the resident's best interest in mind, therefore knowing the importance of medication for their general wellbeing.
+- HV-04: Competence - Wants the resident to keep using the abilities they still have, so prefers gentle reminders that let the resident take the medication themselves over stepping in and doing it for them.
+- HV-05: Well-being - Has the resident's best interest in mind, therefore knowing the importance of medication for their general wellbeing.
 )))
 |Social Network and Relationships| Provides the appropriate support to the resident and, when necessary, coordinates the resident's family involvement. In DS-02, the careworker is the main figure in explaining, reassuring, and communicating with the resident's family and medical staff.
 |History and Experiences| No prior technology rejection recorded. Previous experiences include the burden of needing to repeatedly return to one resident during the task. 
