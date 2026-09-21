@@ -48,6 +48,7 @@ Caution: in that study residents rated their own need fulfilment //higher// than
 
 == Fields ==
 
+|=Field|=Description
 |ID|HFC-02
 |Name|Perceived surveillance and technology acceptance
 |Status|In Progress
@@ -78,6 +79,7 @@ Also relevant: Niemeijer et al. (2011), //Journal of Medical Ethics// 37(5), 303
 
 == Fields ==
 
+|=Field|=Description
 |ID|HFC-03
 |Name|Adaptive assistance, competence and distress
 |Status|In Progress
@@ -112,6 +114,62 @@ M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney e
 
 
 
+= Personhood and malignant social psychology  [HFC-04] =
+
+//A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-04
+|Name|Personhood and malignant social psychology
+|Status|In Progress
+|Evidence basis|Literature only. No interviews or observations have been carried out by this project. Kitwood (1997) is the founding text of person-centred dementia care.
+|Concept statement|How people with dementia are treated in everyday interactions can erode or sustain their sense of being a person. Infantilising them, outpacing them (going faster than they can follow), or treating them as a task rather than a person erodes personhood, even when the help itself is well-meant and effective.
+|Human factor addressed|Personhood; experienced dignity; stigma.
+|Proposed mechanism|Each interaction carries an implicit message about the person's standing. Being addressed like a child, rushed, or talked through a basic activity signals that the person is no longer competent, which undermines their sense of self and can show up as withdrawal, distress or resistance. The effect comes from how help is delivered - tone, pacing, wording - not only from whether help is given, so an assistive System can enact it through its prompting style.
+|Source|Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Buckingham: Open University Press. The list of detractors (including infantilisation and outpacing) is reported consistently in secondary sources; check page numbers against the book before quoting.
+|Conditions and population of validity|Developed for people with dementia in care settings, so it transfers directly to our population. It is a conceptual framework drawn from care practice rather than an experimentally tested mechanism.
+|Predicted Effect type|Experienced infantilisation; resistance or withdrawal during care; resident and staff descriptions of the System as talking down to the resident.
+|Associated Measures|M-04 (Resistiveness to Care Scale, for resistance during the activity); M-06 (interview coding, extended to code descriptions of being talked down to - see UC01-F2-CL5).
+
+= Embodiment and perceived role of assistive robots  [HFC-05] =
+
+//A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-05
+|Name|Embodiment and perceived role of assistive robots
+|Status|In Progress
+|Evidence basis|Literature only. No interviews or observations have been carried out by this project. Pemberton et al. (2026) is a qualitative interview study (n = 13); Furlanis et al. (2026) is explicitly conceptual. Both are summarised in §2.3 Open item O-10.
+|Concept statement|The physical form and behaviour of an assistive robot shape the role older adults assign to it. A humanoid, expressive robot tends to be read as a supervisor ("Warden"), while a more mechanical, tool-like robot is read as an aid; and a robot's gaze, timing and tone can come across as condescending even when meant to be gentle.
+|Human factor addressed|Perceived role of the robot; perceived surveillance; experienced dignity; technology acceptance.
+|Proposed mechanism|People interpret robots as social actors through posture, timing, tone and spatial behaviour. A human-like body invites human-like role attributions, and oversight by a human-like figure without a relationship is experienced as being watched. Exaggerated slowness or gentleness toward older adults is read as condescension. A tool-like framing and restrained expressivity preserve emotional distance, which older adults prefer in private contexts such as bathing (Prakash & Rogers, 2015, as reported in Pemberton et al., 2026).
+|Source|(((
+Pemberton, L., Mehandjiev, N., & Carter, M. (2026). The Tool, the Pet, the Carer & the Warden: A Conceptual Framework of How Older Adults Perceive Socially Assistive Robots. //Information Systems Frontiers//, 28, 1039-1059. doi:10.1007/s10796-026-10699-2.
+
+Furlanis, T., Brščić, D., & Kanda, T. (2026). Robotic Bias and Its Dimensions. //Proceedings of HRI '26//, 562-571. doi:10.1145/3757279.3785613.
+
+Lee, H. R., Tan, H., & Šabanović, S. (2016). That robot is not for me: Addressing stereotypes of aging in assistive robot design. //RO-MAN '16//, 708-713. doi:10.1109/ROMAN.2016.7745148. - cited via Furlanis et al.; not yet read.
+)))
+|Conditions and population of validity|Pemberton et al. studied cognitively intact older adults ageing in place, in a VR home setup - not care-home residents with dementia. Whether residents with moderate dementia attribute roles to a robot in the same way is uncertain and must not be assumed. Furlanis et al. provide a framework, not measurements.
+|Predicted Effect type|Perceived surveillance; experienced infantilisation; acceptance or rejection of the robot, depending on form and behaviour.
+|Associated Measures|M-06 (perceived privacy and monitoring - including descriptions of the robot as watching or supervising); M-04 (resistance during the activity).
+
 == Graph edges ==
 
-grounds → (Specification-phase) Claim; explains → Human Value.
+HFC-01: grounds → UC01-F2-CL3; explains → HV-01; associated-measure → M-05.
+
+HFC-02: grounds → UC01-F1-CL7; explains → HV-03; associated-measure → M-06.
+
+HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL4, UC01-F3-CL6, UC01-F3-CL9; explains → HV-04, HV-05; associated-measure → M-02, M-03, M-04.
+
+HFC-04: grounds → UC01-F2-CL5; explains → HV-02; associated-measure → M-04, M-06.
+
+HFC-05: grounds → UC01-F2-CL5, UC01-F1-CL7; explains → HV-02, HV-03; informs → TECH-01 selection rationale; associated-measure → M-06, M-04.

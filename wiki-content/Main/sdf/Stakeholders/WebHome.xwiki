@@ -17,20 +17,24 @@ hash: 4e1906b8901c2746bab25a1d6e71da3572a9abe92fc9fd4a4c371aa55e112b52
 |ID|ST-01
 |Name|Resident with dementia
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Direct
+|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Type|Direct - interacts with the System during the activity
 |Values and motivations|(((
-- HV-01: Autonomy
+- HV-02: Dignity (high)
 
-- HV-02: Dignity
+- HV-01: Autonomy (high)
 
-- HV-03: Privacy
+- HV-05: Well-being (high)
 
-- HV-04: Competence
+- HV-04: Competence (medium)
 
-- HV-05: Well-being
+- HV-03: Privacy (medium)
 )))
-|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+|Relationship to other Stakeholders|Receives day-to-day support from ST-02 care workers. ST-03 family members may visit and be involved in care decisions, including consent. Receives medical care from ST-05, and lives in a home run by ST-04.
+
+== Graph edges ==
+
+performs → SA-01, SA-02; holds → HV-01, HV-02, HV-03, HV-04, HV-05; appears-in → PS-01, PS-02; elaborated-as → HP-01 (§2.2).
 
 = Stakeholder - Care home staff member [ST-02] =
 
@@ -44,20 +48,26 @@ hash: 4e1906b8901c2746bab25a1d6e71da3572a9abe92fc9fd4a4c371aa55e112b52
 |ID|ST-02
 |Name|Care home staff member
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Direct
+|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Type|Direct - receives handover requests and reviews the session record
 |Values and motivations|(((
-- HV-01: Autonomy
+- HV-05: Well-being (high)
 
-- HV-02: Dignity
+- HV-06: Attentive care (high)
 
-- HV-03: Privacy - [[limit the amount of surveillance at their workplace>>Main.b\. Human Factors.1\. Human Values||anchor="Human Value [HV-nn]"]] 
+- HV-02: Dignity (medium)
 
-- HV-04: Competence 
+- HV-01: Autonomy (medium) - endorses it for residents, but weighs it against the time available
 
-- HV-05: Well-being
+- HV-04: Competence (medium)
+
+- HV-03: Privacy (medium) - for residents, and against surveillance of their own work
 )))
-|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+|Relationship to other Stakeholders|Supports several ST-01 residents per shift. Employed by ST-04. Keeps ST-03 informed about their relative, and coordinates with ST-05 on medication and health.
+
+== Graph edges ==
+
+performs → SA-03; supports → SA-01, SA-02; holds → HV-01 to HV-06; appears-in → PS-01, PS-02; elaborated-as → HP-02 (§2.2).
 
 = Stakeholder - Family members of Resident [ST-03] =
 
@@ -71,20 +81,24 @@ hash: 4e1906b8901c2746bab25a1d6e71da3572a9abe92fc9fd4a4c371aa55e112b52
 |ID|ST-03
 |Name|Family members of Resident
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Indirect
+|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Type|Indirect - affected by outcomes, does not interact with the System and does not receive its records
 |Values and motivations|(((
-- HV-01: Autonomy
+- HV-05: Well-being (high)
 
-- HV-02: Dignity
+- HV-02: Dignity (high)
 
-- HV-03: Privacy
+- HV-01: Autonomy (medium)
 
-- HV-04: Competence
+- HV-06: Attentive care (medium)
 
-- HV-05: Well-being
+- HV-03: Privacy (low) - may want more information about their relative than the resident would choose to share
 )))
-|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+|Relationship to other Stakeholders|Relatives of ST-01. In contact with ST-02 about their relative's care, and may be involved in consent decisions on ST-01's behalf.
+
+== Graph edges ==
+
+holds → HV-01, HV-02, HV-03, HV-05, HV-06.
 
 = Stakeholder - Management or the Owners of the care home [ST-04] =
 
@@ -98,20 +112,22 @@ hash: 4e1906b8901c2746bab25a1d6e71da3572a9abe92fc9fd4a4c371aa55e112b52
 |ID|ST-04
 |Name|Management or the Owners of the care home
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Indirect
+|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Type|Indirect - decides on adopting the System, does not interact with it
 |Values and motivations|(((
-- HV-01: Autonomy
+- HV-06: Attentive care (high) - staffing and workload
 
-- HV-02: Dignity
+- HV-05: Well-being (high) - quality of care
 
-- HV-03: Privacy
+- HV-03: Privacy (medium) - data-protection obligations for residents and staff
 
-- HV-04: Competence
-
-- HV-05: Well-being
+- HV-02: Dignity (medium)
 )))
-|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+|Relationship to other Stakeholders|Employs ST-02. Responsible for the home's quality of care, staffing and data protection, and for the living environment of ST-01.
+
+== Graph edges ==
+
+holds → HV-02, HV-03, HV-05, HV-06.
 
 = Stakeholder - Medical staff: GP, Nurse [ST-05] =
 
@@ -123,23 +139,19 @@ hash: 4e1906b8901c2746bab25a1d6e71da3572a9abe92fc9fd4a4c371aa55e112b52
 
 |=Field|=Description
 |ID|ST-05
-|Name|GP, Nurse
+|Name|Medical staff: GP, Nurse
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Type|Indirect
+|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Type|Indirect - responsible for care plans and medication, does not interact with the System
 |Values and motivations|(((
-- HV-01: Autonomy
+- HV-05: Well-being (high)
 
-- HV-02: Dignity
+- HV-03: Privacy (medium) - medical confidentiality
 
-- HV-03: Privacy
-
-- HV-04: Competence
-
-- HV-05: Well-being
+- HV-01: Autonomy (medium)
 )))
-|Relationship to other Stakeholders|Receives support from ST-02 care workers, may have ST-03 family members involved in their care.
+|Relationship to other Stakeholders|Prescribes and reviews ST-01's medication and health. Relies on ST-02 to carry out care plans day to day.
 
 == Graph edges ==
 
-performs → Situated Activity; holds → Human Value; appears-in → Problem Scenario; referenced-by → Claim.
+holds → HV-01, HV-03, HV-05.

@@ -18,16 +18,33 @@ hash: 080378c389323cc18c9c4ea547772fad91acc9b0670f4903357788fb4cd77c3e
 {{/html}}
 
 
-= Design Scenario [DS-02]=
-//<This is an adjusted version of the problem scenario that shows the proposed solution of the problem; a story board can be added to illustrate the design scenario>//
+= Design Scenario [DS-01] =
+//Reimagines PS-01 (losing track of the tooth-brushing routine) with the System in place. Realized by UC01. Technology: Pepper (TECH-01), sensors on the tooth-brushing items (TECH-02), and a notification to the care worker's phone (TECH-03).//
 
-A resident with dementia needs to take prescriped medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it's time to take it. At first, the resident agrees to take the medicine.
+It is morning in the dementia care home. The resident has finished breakfast and returns to their room. The care worker, Myra, reminds them that it is time to brush their teeth, and moves on to help the next resident on the round.
+
+The resident goes into the bathroom and stands in front of the sink. Pepper stands quietly just outside the bathroom door, its camera lenses covered and its eye lights dimmed. The resident picks up the toothbrush. The sensor in the toothbrush registers the pick-up, and the System notes that the resident has reached that step. Pepper says nothing.
+
+The resident pauses, toothbrush in hand, and seems unsure what comes next. Pepper waits. After the configured interval nothing has changed, so Pepper gives the lightest prompt, calmly and by name: "Mary, would you like some toothpaste on your brush?" The resident picks up the toothpaste, and the weight pad under it registers the lift. Pepper goes quiet again.
+
+The resident puts toothpaste on the brush but then stops again. This time the orienting prompt is not enough, so after another wait Pepper names the next action: "You could brush your teeth now." Its chest tablet shows a short, simple picture of someone brushing. The resident starts brushing; the toothbrush sensor registers the motion and Pepper stops prompting at once.
+
+The resident rinses and puts the toothbrush back in the cup. Pepper says "All done," once, in an ordinary adult tone - no praise that would suit a child - and nothing more.
+
+Meanwhile Myra has been helping another resident get dressed. They were not called back, because the resident finished with Pepper's prompts. On their phone the session record shows three things only: tooth brushing completed, highest prompt level "naming", no care worker needed. Nothing about how the resident brushed their teeth is stored.
+
+If the resident had stopped responding and nothing had moved for several minutes, Pepper would have told the resident that someone was coming, and Myra's phone would have received a short message: tooth brushing, step reached, reason for the call.
+
+= Design Scenario [DS-02] =
+//Medication - kept for UC02, deferred to a later cycle (§2.3 Open item O-13). The tray-based device described here corresponds to TECH-06 (§1.3), not to the Pepper-based System selected for UC01.//
+
+A resident with dementia needs to take prescribed medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it's time to take it. At first, the resident agrees to take the medicine.
 
 The care worker places the medication and a glass of water on the tray in front of the helper robot, and the device gives a brief, friendly acknowledgement for the patient, letting them know that they can take the medication whenever they are ready. The helper robot then goes quiet.
 
 The resident becomes distracted by activity somewhere else in the room and does not take the medication. After a few minutes in which the tray weight has not changed, the helper robot notices that the patient did not take the medication. The device then glows warm light and gently reminds the patient about the medication. 
 
-The resident returns their attention to the tray and the robot and, unsure of why the tablets are there, asks the robot for clarification. The device responds simply, friendly, and gently that these are the patient's morning tablets, that help with their condition, and that should be taken with the water on the tray. In care the resident does have more questions about the medication, the robot calmly repeats its purpose and reassures the patient to take it.  Because of the reassuring but still matter-of-fact, adamant tone, the resident does not need the care worker to re-explain everything from scratch, and is convinced into taking the medication.
+The resident returns their attention to the tray and the robot and, unsure of why the tablets are there, asks the robot for clarification. The device responds simply, friendly, and gently that these are the patient's morning tablets, that help with their condition, and that should be taken with the water on the tray. In case the resident does have more questions about the medication, the robot calmly repeats its purpose and reassures the patient to take it.  Because of the reassuring but still matter-of-fact, adamant tone, the resident does not need the care worker to re-explain everything from scratch, and is convinced into taking the medication.
 
 The resident therefore picks up the medication and water, and the helper robot detects the weight change. The robot also senses that the medication dispenser/container has been opened, which indicates that the patient indeed took the medication. The device then asks the resident to confirm that they took the tablets. The helper robot gives a short, friendly acknowledgement, and saves to the record that the patient has taken the medication, avoiding this way the risk of it being offered again later by mistake.
 

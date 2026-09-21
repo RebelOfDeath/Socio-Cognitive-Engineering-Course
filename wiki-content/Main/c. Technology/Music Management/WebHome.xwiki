@@ -5,7 +5,15 @@ syntax: xwiki/2.1
 version: 1.1
 hash: 13f92802199d18dd67da81922e24aa6be71d83b782f2b73a6e4f157f34a56982
 %%WIKI-SYNC-META%%
-= Technology Option  [TECH-nn] =
+{{box title="Status of this page"}}
+Selection for UC01 (tooth brushing), the activity chosen as this cycle's spine (§2.3 Open item O-13). The System combines three selected options: Pepper for interaction and prompting (TECH-01), sensors on the tooth-brushing items for tracking the activity (TECH-02), and a care-staff notification channel (TECH-03). Three options are rejected or deferred and kept here as Foundation knowledge.
+
+Pepper is the project's robot platform. The group's own evidence (HFC-05, §2.3 Open items O-10 and O-11) favours a less humanlike, tool-like form for personal care, so choosing Pepper creates a tension. It is recorded below with mitigations, and tested by UC01-F2-CL5 and UC01-F1-CL7, rather than argued away.
+
+No hands-on testing has been done yet. Hardware details come from vendor documentation and should be checked against the unit the course provides.
+{{/box}}
+
+= Pepper humanoid robot (selected)  [TECH-01] =
 
 //An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
 
@@ -14,19 +22,173 @@ hash: 13f92802199d18dd67da81922e24aa6be71d83b782f2b73a6e4f157f34a56982
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. TECH-01, TECH-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
-|Category|AI/ICT, Social Robot, sensing, or other.
-|Capabilities|what it can do that is relevant here.
-|Limitations|what it cannot do, and where it degrades.
-|Maturity and feasibility|technical readiness within this project's real constraints.
-|Failure and fallback behaviour|what happens when it fails or is unavailable.
-|Benefits|which Goals or Human Values it serves, by ID.
-|Drawbacks|including which Value Tension it strains, by ID.
-|Selected or rejected|and, if rejected, the reason — a rejected option is still Foundation knowledge.
+|ID|TECH-01
+|Name|Pepper humanoid robot (selected)
+|Status|In Progress
+|Evidence basis|Vendor documentation (SoftBank Robotics / Aldebaran); the course's own design-pattern examples use Pepper. No hands-on testing by this project yet.
+|Category|Social Robot
+|Capabilities|Humanoid robot about 1.2 m tall on a wheeled base, with a tablet on its chest, microphones, speakers, head and body cameras, a depth sensor, touch sensors, and LEDs in its eyes and shoulders. Relevant here: spoken prompts that address the resident by name (F2); the chest tablet can show a picture or short video of the next step, which gives F2 its demonstration level without the robot miming the action; speech recognition for simple replies; touch sensors as a non-verbal way to respond.
+|Limitations|(((
+- Size: its height and wheeled base may not fit in a care-home bathroom, and it must never block the resident's path. It will probably have to stand at the bathroom doorway or just outside, within earshot and sight of the sink. To be checked on site.
+
+- Form: a humanoid, expressive robot is more likely to be read as a supervisor ("Warden") and to come across as condescending (HFC-05). This is the main drawback.
+
+- Cameras: its cameras are physically present even when unused, so the resident may still feel watched.
+
+- Speech recognition of older adults with dementia in a noisy bathroom is likely to be unreliable, so F2 must not depend on understanding what the resident says.
+
+- It cannot detect the resident's position in the tooth-brushing sequence without its cameras - that is TECH-02's job.
+)))
+|Maturity and feasibility|Commercially available and supplied by the course, with a documented software toolkit. Feasible within the project for spoken prompts, tablet content and touch input. Not waterproof, so it has to be kept away from the sink.
+|Failure and fallback behaviour|If Pepper is unavailable (battery, crash, network), TECH-02 still tracks the activity and the System reports a degraded state to the care worker through TECH-03; the activity falls back to the existing SA-01 workarounds. This is what UC01-F1-PR1's robustness clause verifies. Pepper has to be charged between sessions.
+|Benefits|Serves the Goal on SA-01 by prompting the resident through stalls (F2); HV-04 Competence by letting the resident do as much as possible themselves; HV-06 Attentive care by taking over the waiting and low-level prompting from the care worker (SA-03).
+|Drawbacks|(((
+Strains VT-04 (Dignity vs Competence): its humanoid form raises the infantilisation risk. Mitigations: tool-like framing, low expressivity (no gaze-following during the activity, no exaggerated gentleness), adult-register prompts phrased as offers, demonstration on the tablet rather than by gesture.
+
+Strains VT-02 (Privacy vs Well-being): cameras are present. Mitigations: cameras are not used by any Function; the camera streams are disabled in software and the lenses are visibly covered, so residents and staff can see they are not in use; no audio is stored.
+
+If UC01-F2-CL5 or UC01-F1-CL7 hold for Pepper, TECH-05 is the fallback.
+)))
+|Selected or rejected|Selected - the project's robot platform. Chosen over TECH-05 despite the embodiment evidence, which is why the mitigations above are part of the design and not optional.
 
 == Graph edges ==
 
-enables → (Specification-phase) Function; addresses → Goal / Human Value; strains → Value Tension.
+enables → F2, F3 (resident-facing part); addresses → Goal (SA-01), HV-04, HV-06; strains → VT-04, VT-02; realized-in → RP-01 (§2.2).
+
+= Sensors on the tooth-brushing items (selected)  [TECH-02] =
+
+//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-02
+|Name|Sensors on the tooth-brushing items (selected)
+|Status|In Progress
+|Evidence basis|Group reasoning. Connected toothbrushes with built-in motion sensors are commercially available; weight and flow sensors are standard, off-the-shelf components. COACH (Mihailidis et al., 2008) tracked a comparable stepwise ADL, but with a camera (TECH-04).
+|Category|Sensing / AI-ICT
+|Capabilities|Tracks the SA-01 sequence from the items themselves rather than the person: a motion sensor in or clipped to the toothbrush (picked up, brushing motion, put down), a weight pad under the toothbrush cup and toothpaste (lifted, returned), and a flow sensor on the tap (rinsing). From these, F1 infers the current step and detects a stall when no expected change follows within the configured interval. Requires nothing from the resident, and observes the activity, not the resident.
+|Limitations|(((
+- It cannot sense steps that do not involve a sensed item - recognising that it is time (step 1) and walking to the bathroom (step 2). Initiation can only be inferred from the time window running down with no toothbrush pick-up.
+
+- It cannot see distress or a collapse. Distress is only detected if the resident says so or touches Pepper. A possible emergency is inferred when there is no sensor change and no response to prompts for a configured time, and is then treated as safety-critical (F3) - the same rule the manual's example uses for non-response.
+
+- It cannot tell whether all teeth were brushed well, only that brushing motion occurred.
+
+- Sensors can be moved, get wet, or be confused by a staff member handling the items.
+)))
+|Maturity and feasibility|Prototype level: needs to be built from off-the-shelf sensors and a microcontroller. Feasible within the project for a mock sink (EM-01); robustness in a real bathroom is unproven.
+|Failure and fallback behaviour|If a sensor stops reporting, the System reports a degraded state to the care worker (TECH-03) rather than prompting on bad data; the activity falls back to the existing SA-01 workarounds.
+|Benefits|Serves the Goal on SA-01 (knowing where the resident is in the sequence at all). Serves HV-03 Privacy: no camera, and nothing is worn.
+|Drawbacks|Strains VT-05 (detection reliability): tracking from item events is coarser than video, so stall detection will produce some false and some missed stalls. Accepted in order to stay within VT-02.
+|Selected or rejected|Selected - enables F1 without a camera.
+
+== Graph edges ==
+
+enables → F1, F4 (session data); addresses → Goal (SA-01), HV-03; strains → VT-05.
+
+= Care-staff notification and session record (selected)  [TECH-03] =
+
+//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-03
+|Name|Care-staff notification and session record (selected)
+|Status|In Progress
+|Evidence basis|Group reasoning; care homes commonly already have a nurse-call system and work phones for staff. HP-02 requires alerts to be rare and meaningful.
+|Category|AI/ICT
+|Capabilities|Sends a handover request to the care worker's work phone - activity, step reached, reason (F3) - and stores the three-item session record (F4) on a local server for the care record.
+|Limitations|Integration with the home's existing nurse-call system depends on the vendor and is probably not feasible in this project, so the prototype uses a separate phone app. A second channel could add to staff workload if it alerts too often.
+|Maturity and feasibility|High - standard messaging and storage.
+|Failure and fallback behaviour|If a handover request is not acknowledged within a configured time, it is re-sent and escalated to a second care worker; failures are logged. If the record cannot be stored, the session is flagged as unrecorded rather than silently lost.
+|Benefits|Serves HV-06 Attentive care (the care worker is only called when needed) and HV-05 Well-being (help arrives when prompting fails or there is a safety risk).
+|Drawbacks|Strains VT-02: the session record is data about a personal-care activity, so what it holds is limited to three items (UC01-F4-PR4) and it is not shared with ST-03.
+|Selected or rejected|Selected.
+
+== Graph edges ==
+
+enables → F3, F4; addresses → HV-05, HV-06; strains → VT-02.
+
+= Camera-based activity recognition (rejected)  [TECH-04] =
+
+//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-04
+|Name|Camera-based activity recognition (rejected)
+|Status|In Progress
+|Evidence basis|COACH (Mihailidis et al., 2008) tracked handwashing with a camera over the sink; it is the closest published precedent.
+|Category|Sensing / AI-ICT
+|Capabilities|Could track every step, including ones that do not involve a sensed item, and could see distress or a collapse.
+|Limitations|Continuous video of a resident in their bathroom during a personal-care activity.
+|Maturity and feasibility|Research prototypes exist; Pepper's own cameras could in principle be used.
+|Failure and fallback behaviour|Not applicable - rejected.
+|Benefits|Would serve the Goal on SA-01 with better detection than TECH-02, which would ease VT-05.
+|Drawbacks|Violates HV-03 Privacy and strains VT-02 more than anything else considered. Continuous monitoring is the concern HFC-02 describes (Niemeijer et al., 2010, 2015), and it would make UC01-F1-CL7 fail by design.
+|Selected or rejected|Rejected - the privacy cost in a bathroom outweighs the detection gain. Retained because it is the reason F1 works from items instead, and it would be the first option to revisit if TECH-02 proves too unreliable.
+
+== Graph edges ==
+
+(no outgoing edges to Specification - rejected option, retained as Foundation knowledge); would strain → VT-02.
+
+= Tool-like sink-side prompting device (rejected)  [TECH-05] =
+
+//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-05
+|Name|Tool-like sink-side prompting device (rejected)
+|Status|In Progress
+|Evidence basis|HFC-05: older adults prefer mechanical-looking, tool-like devices that keep emotional distance in private contexts (Pemberton et al., 2026, reporting Prakash & Rogers, 2015). COACH delivered prompts through a screen and speaker at the sink (Mihailidis et al., 2008).
+|Category|AI/ICT
+|Capabilities|A small speaker, light and screen mounted by the sink that gives the same F2 prompts, without a humanoid body.
+|Limitations|No social presence; cannot be the course's robot platform.
+|Maturity and feasibility|High - simple hardware.
+|Failure and fallback behaviour|Same as TECH-01.
+|Benefits|Best supported by the evidence for VT-04 (Dignity) and VT-02 (Privacy): less risk of being read as a supervisor or of talking down to the resident. Fits inside a bathroom.
+|Drawbacks|Does not use the project's robot platform.
+|Selected or rejected|Rejected - project constraint: the project uses Pepper. Retained because the evidence favours it for personal care, and it is the fallback if UC01-F2-CL5 or UC01-F1-CL7 hold for Pepper.
+
+== Graph edges ==
+
+(no outgoing edges to Specification - rejected option, retained as Foundation knowledge).
+
+= Medication tray or dispenser with sensors (deferred)  [TECH-06] =
+
+//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-06
+|Name|Medication tray or dispenser with sensors (deferred)
+|Status|In Progress
+|Evidence basis|Previously the embodiment in RP-01 and DS-02 (§2.1, §2.2).
+|Category|Sensing / AI-ICT
+|Capabilities|A tray with a weight sensor, or a lockable dispenser with an open-state sensor, which detects whether medication has been picked up.
+|Limitations|Cannot track a tooth-brushing sequence, so it cannot enable F1 (§2.3 Open item O-13).
+|Maturity and feasibility|High - simple sensors.
+|Failure and fallback behaviour|To be specified with UC02.
+|Benefits|Would serve the Goal on SA-02.
+|Drawbacks|To be assessed with UC02, including VT-06.
+|Selected or rejected|Deferred - fits UC02 (medication), which is deferred to a later cycle.
+
+== Graph edges ==
+
+(none this cycle - deferred with UC02).

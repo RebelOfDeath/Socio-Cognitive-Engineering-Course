@@ -17,7 +17,7 @@ hash: 3385ad9d818449ae078f9e0abae1b252ebe84d85abe87f523b024af3b2915d9b
 |ID|VT-01
 |Name|Autonomy vs Well-being
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
 |Values in tension|(((
 HV-01 Autonomy: pulls toward allowing the resident to initiate and perform everyday activities independently.
 
@@ -25,8 +25,8 @@ HV-05 Well-being: pulls toward intervening when independent performance may lead
 )))
 |Domain area|safety/physical-environmental
 |Nature of the conflict|Giving residents more freedom to perform activities independently supports autonomy, but too little assistance may result in mistakes, confusion, frustration, or unsafe situations.
-|Non-negotiable floor|If there is an immediate risk of serious harm, the system must notify caregivers for intervention.
-|Current resolution|The situated objective is to support the resident in completing everyday activities as independently as possible while preventing avoidable distress or harm. The conditional function is: IF the resident is able to continue the activity independently, THEN no assistance is provided; IF difficulty is detected, THEN increasingly supportive prompting is provided; IF a safety-critical condition occurs, THEN caregiver assistance is requested.
+|Non-negotiable floor|None identified. No regulation or hard safety standard has been found that bounds this trade-off; recorded explicitly so it reads as a genuine trade-off. Notifying a care worker on immediate risk of serious harm is a group design decision (§2.3 Open item O-2) and is part of the current resolution, not a floor.
+|Current resolution|The situated objective is to support the resident in completing everyday activities as independently as possible while preventing avoidable distress or harm. The conditional function is: IF the resident is able to continue the activity independently, THEN no assistance is provided; IF difficulty is detected, THEN increasingly supportive prompting is provided; IF a safety-critical condition occurs (an immediate risk of serious harm during the activity), THEN a care worker is notified at once, pre-empting any prompting.
 |Alternatives considered|(((
 Immediate assistance whenever difficulty is detected: not preferred because it unnecessarily reduces autonomy.
 
@@ -45,15 +45,15 @@ No intervention unless explicitly requested: not preferred because a resident wi
 |=Field|=Description
 |ID|VT-02
 |Name|Privacy vs Well-being
-|Status|In progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
 |Values in tension|(((
 HV-03 Privacy: pulls toward allowing the resident to maintain their privacy and personal space.
 
 HV-05 Well-being: pulls toward intervening when independent performance may lead to distress, confusion, discomfort, or unsafe outcomes.
 )))
 |Domain area|safety and privacy
-|Nature of the conflict| Allowing residents to maintain privacy and personal space supports their dignity and autonomy, but too little monitoring may result in mistakes, confusion, frustration, or unsafe situations.
+|Nature of the conflict|The System can only offer timely support if it knows how the activity is going, and the more it senses and records, the better it can judge. But every extra sensor, and every detail recorded or shared, reduces the resident's privacy during a personal-care activity in their own bathroom - and cameras in particular make support feel like being watched.
 |Non-negotiable floor|none
 |Current resolution|Monitor only the information necessary to determine whether support is needed, and avoid sharing sensitive information unless the agreed conditions for caregiver involvement are met.
 |Alternatives considered|(((
@@ -73,13 +73,13 @@ Constant monitoring of all activities: not preferred because it unnecessarily re
 |ID|VT-03
 |Name|Competence vs Well-being
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
 |Values in tension|(((
 HV-04 Competence: pulls toward giving the resident opportunities to perform activities and individual steps themselves, so that they can use and maintain their remaining abilities and experience themselves as capable.
 
 HV-05 Well-being: pulls toward preventing unnecessary frustration, confusion, anxiety, or distress when an activity becomes too difficult for the resident.
 )))
-|Domain area|physical/environmental
+|Domain area|safety
 |Nature of the conflict|Giving the resident time and opportunity to attempt an activity independently can support competence by allowing them to use their remaining abilities and experience successful task completion. However, if the activity or individual step is beyond the resident's current ability, continued attempts may lead to repeated failure, confusion, frustration, or distress. Providing assistance earlier may protect well-being, but can also remove opportunities for the resident to demonstrate and maintain competence.
 |Non-negotiable floor|none
 |Current resolution|The situated objective is to allow the resident to use and maintain their remaining abilities while avoiding unnecessary frustration or distress. The conditional function is: IF the resident is able to continue the activity independently, THEN allow them sufficient time to complete the step themselves; IF repeated difficulty is detected, THEN provide a supportive prompt; IF the resident remains unable to continue or shows signs of distress, THEN increase the level of assistance.
@@ -90,6 +90,126 @@ Allowing the resident to continue attempting the task without assistance: not pr
 )))
 |Status of the tension|Provisionally resolved
 
+= Dignity vs Competence  [VT-04] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-04
+|Name|Dignity vs Competence
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
+|Values in tension|(((
+HV-04 Competence: pulls toward prompting the resident through the activity so they can still do it themselves.
+
+HV-02 Dignity: pulls toward not being instructed through a basic personal-care activity at all, least of all by a machine, because being talked through tooth brushing can be experienced as being treated like a child.
+)))
+|Domain area|safety (psychological) - this tension is not about physical harm but about the resident's standing as a person
+|Nature of the conflict|The prompting that lets the resident complete more steps themselves is the same prompting that can feel infantilising. Kitwood (1997) names infantilisation and outpacing as detractors that erode personhood in dementia care, and an embodied robot's gaze, timing and tone can enact the same thing (Furlanis et al., 2026). The more explicit and frequent the prompts, the more competence is supported and the greater the dignity risk.
+|Non-negotiable floor|None identified.
+|Current resolution|Prompts are phrased as offers rather than instructions, address the resident by name in an adult register, and stop as soon as the resident resumes (F2). The robot is framed as a tool rather than a carer or supervisor, and its expressivity is kept low (see §1.3 TECH-01 and HFC-05).
+|Alternatives considered|(((
+No prompting at all, care worker only: not preferred, because it removes the competence benefit and leaves PS-01 as it is.
+
+Continuous step-by-step narration: not preferred, because it maximises the infantilisation risk and removes opportunities to act unprompted.
+)))
+|Status of the tension|Open. Tested by UC01-F2-CL5 (adverse Claim). Strained by TECH-01 (Pepper), whose humanoid form raises the risk (§2.3 Open item O-10).
+
+= Autonomy vs Well-being (detection reliability)  [VT-05] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-05
+|Name|Autonomy vs Well-being (detection reliability)
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
+|Values in tension|(((
+HV-01 Autonomy: pulls toward prompting only when the resident is genuinely stuck, so that a false stall detection does not interrupt someone who was managing on their own.
+
+HV-05 Well-being: pulls toward detecting every stall, so that a resident who is stuck is not left confused or distressed.
+)))
+|Domain area|reliability
+|Nature of the conflict|Stall detection has to trade missed stalls against false alarms. A sensitive detector catches more real stalls but prompts residents who were only pausing; a conservative one leaves stuck residents waiting. In the COACH study, mistimed and false-alarm prompts produced frustration and confusion (Mihailidis et al., 2008), so false prompts are not merely an annoyance - they cause the harm the System is meant to prevent.
+|Non-negotiable floor|None identified.
+|Current resolution|Favour fewer false prompts: F2 waits a configured interval before any prompt, and the lowest prompt level is the least intrusive, so a false detection costs little. The false-prompt rate is verified in UC01-F2-PR2 (M-01).
+|Alternatives considered|Maximum sensitivity with immediate prompting: not preferred, because false prompts interrupt the resident and COACH found they cause frustration.
+|Status of the tension|Provisionally resolved. Open until EM-01 shows an acceptable false-prompt rate, and UC01-F2-CL4 tests whether the wait itself causes frustration.
+
+= Autonomy vs Well-being (medication timing)  [VT-06] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-06
+|Name|Autonomy vs Well-being (medication timing)
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
+|Values in tension|(((
+HV-01 Autonomy: pulls toward letting the resident take their medication when they are ready.
+
+HV-05 Well-being: pulls toward the medication being taken on time, as prescribed.
+)))
+|Domain area|time-criticality
+|Nature of the conflict|The longer the resident is left to take medication in their own time, the greater the risk it is taken late or not at all; the more firmly timing is enforced, the less the resident decides.
+|Non-negotiable floor|For time-critical medication, yes: PS-02 records that the care home requires a care worker to be present for residents on critical medication such as heart medication, so those residents are excluded. TODO: cite the care home's protocol or the applicable guideline. For the remaining medication, none identified.
+|Current resolution|Deferred with UC02 (later cycle). DS-02 sketches a resolution: the resident may take the medication when ready, with a gentle reminder after a few minutes and a care worker notified if reminders go unanswered.
+|Alternatives considered|Not yet considered - to be done when UC02 is specified.
+|Status of the tension|Open, deferred to UC02.
+
+= Competence vs Attentive care  [VT-07] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-07
+|Name|Competence vs Attentive care
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional.
+|Values in tension|(((
+HV-04 Competence: pulls toward giving the resident time and graduated prompting, so they do as much as possible themselves.
+
+HV-06 Attentive care: pulls toward getting each resident through their morning care quickly, so the care worker can attend to the others.
+)))
+|Domain area|time-criticality
+|Nature of the conflict|Graduated prompting preserves competence, but Rogers et al. (1999) found it took considerably more caregiver time than usual care. Under morning time pressure (SA-03), care workers therefore tend to take over activities residents could still do themselves, which is quicker but costs competence.
+|Non-negotiable floor|None identified.
+|Current resolution|The System carries the waiting and the lower prompt levels, so the extra time graduated prompting takes is spent by the robot rather than the care worker, who is called only when prompting is exhausted, the resident is distressed, or there is a safety risk (F3).
+|Alternatives considered|(((
+Care worker prompts as now: not preferred, because it is the SA-03 breakdown this design addresses.
+
+System completes the activity quickly for the resident: not possible for tooth brushing, and would sacrifice competence anyway.
+)))
+|Status of the tension|Open. Tested by UC01-F3-CL9, which asks whether care-worker time actually falls (M-07).
+
 == Graph edges ==
 
-involves → Human Value; bounds → (Specification-phase) Function; strained-by → Technology Option.
+VT-01: involves → HV-01, HV-05; bounds → F2, F3; tested-by → UC01-F2-CL4.
+
+VT-02: involves → HV-03, HV-05; bounds → F1, F3, F4; strained-by → TECH-01, TECH-03 (TECH-04 rejected for straining it most); tested-by → UC01-F1-CL7, UC01-F4-CL8.
+
+VT-03: involves → HV-04, HV-05; bounds → F2; tested-by → UC01-F2-CL1, UC01-F2-CL4.
+
+VT-04: involves → HV-02, HV-04; bounds → F2; strained-by → TECH-01; tested-by → UC01-F2-CL5.
+
+VT-05: involves → HV-01, HV-05; bounds → F1, F2; strained-by → TECH-02; tested-by → UC01-F2-PR2, UC01-F2-CL4.
+
+VT-06: involves → HV-01, HV-05; bounds → UC02 (later cycle).
+
+VT-07: involves → HV-04, HV-06; bounds → F2, F3; tested-by → UC01-F3-CL9.

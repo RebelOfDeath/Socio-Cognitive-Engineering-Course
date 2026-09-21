@@ -22,7 +22,7 @@ hash: ba674418c5114a3e6a9d569189ef07898abd7dec21ac1369ed9e4c449ad36d05
 |Construct measured|Whether the System correctly identifies which SA-01 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
 |Type|Quantitative
 |Instrument or procedure|Staged-event protocol against a ground-truth log: scripted steps, stalls, resumptions and confounders at a mock sink, with each event timestamped by the experimenter.
-|Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Pass thresholds are [pending §1.3], since they depend on the sensing technology selected.
+|Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Pass thresholds are still to be set from a first EM-01 pilot with the selected item sensors (TECH-02) - see §2.3 Open item O-20.
 |Validity and reliability|Bespoke. Validity rests on the accuracy of the ground-truth log, not on prior psychometric evidence.
 |Serves|Verification
 |Burden|No human subjects - staged events only. Requires a mock sink set-up and the prototype.
@@ -48,13 +48,13 @@ operationalizes → UC01-F1-PR1, UC01-F2-PR2 (timing component), UC01-F3-PR3; us
 |Type|Quantitative
 |Instrument or procedure|Observer scoring of each SA-01 step during the real morning routine.
 |Scoring or coding scheme|One point per SA-01 step completed without any prompt or human assistance; summed per session (0-9 for SA-01's nine steps). Compared against the same resident's pre-System baseline.
-|Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers: TODO - establish before EM-02.
+|Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers, per step (completed unprompted: yes/no): Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
 |Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-03, VT-02).
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6; used-by → EM-02; operationalizes → HV-04 (Competence), HV-01 (Autonomy).
+operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6; used-by → EM-02; operationalizes → HV-04 (Competence), HV-01 (Autonomy). Associated with HFC-03.
 
 = Prompt level required  [M-03] =
 
@@ -73,7 +73,7 @@ operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6; used-by → EM-02; op
 |Type|Quantitative (ordinal)
 |Instrument or procedure|Observer coding per SA-01 step, during the real morning routine.
 |Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
-|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: TODO.
+|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-02, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
 |Burden|Human subjects - as M-02, collected in the same observation.
 
@@ -101,7 +101,7 @@ Optionally paired with the Observed Emotion Rating Scale for affect (Lawton, Van
 |Construct measured|Frustration, distress and resistance shown by the resident during the activity.
 |Type|Quantitative (observational, coded)
 |Instrument or procedure|Resistiveness to Care Scale - 13 observed behaviours - rated during or from the care episode. Optionally the Observed Emotion Rating Scale alongside it.
-|Scoring or coding scheme|Per the Resistiveness to Care Scale manual (Mahoney et al., 1999). TODO: record the exact item scoring and aggregation rule once the manual is obtained. Compared against the resident's pre-System baseline.
+|Scoring or coding scheme|Each of the 13 behaviours is rated for duration (0 absent, 1 less than 16 s, 2 16-59 s, 3 1-2 min, 4 more than 2 min) and intensity (1 mild, 2 moderate, 3 extreme). Duration and intensity are multiplied per item and summed to a total score from 0 (no resistiveness) to 156 (Mahoney et al., 1999, as described in "Revising the Resistiveness to Care Scale", PMC5897769). Compared against the resident's pre-System baseline.
 |Validity and reliability|Validated, not invented: internal consistency α .82-.87 (Mahoney et al., 1999), with further reliability and validity support in cognitively impaired older adults (Galik et al., 2017). For the Observed Emotion Rating Scale, psychometrics in Lawton et al. (1996); Lawton et al. (1999) found reliability "less than desirable" when rated by certified nursing assistants rather than trained research staff.
 |Serves|Validation
 |Burden|Human subjects - residents with dementia, supported consent. If care staff rather than researchers do the rating, rater-training time has to be budgeted (Lawton et al., 1999).
@@ -126,8 +126,14 @@ operationalizes → UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5; used-by → EM-02; op
 |Construct measured|The resident's felt sense of doing the activity themselves rather than being led through it, during a specific session.
 |Type|Quantitative, with an observer counterpart
 |Instrument or procedure|Episode-specific autonomy items from Custers et al. (2013), asked after the session, paired with an observer rating of the same episode.
-|Scoring or coding scheme|TODO: record the item format and scoring from Custers et al. (2013). Report self-report and observer scores separately; do not combine them.
-|Validity and reliability|Custers et al. (2013) found residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement. The self-report therefore has a documented ceiling and must not be used alone - see §2.3 Open item O-8.
+|Scoring or coding scheme|(((
+Self-report: the three autonomy items used for the videotaped caregiving episode in Custers et al. (2013), for example "Do you feel that you could make your own choices concerning, for example, your clothes?", adapted to tooth brushing. Each item is answered on a 5-point scale (1 no, absolutely not; 2 no; 3 partly; 4 yes; 5 yes, absolutely) in a short semi-structured interview straight after the session. Score: mean of the three items.
+
+Observer: the 7-point "support of autonomy" scale from the same study, rating how far the prompting respects the resident's perspective and supports their choices, using the study's behavioural definitions for each point.
+
+Report self-report and observer scores separately; do not combine them.
+)))
+|Validity and reliability|In Custers et al. (2013) the need-fulfilment scale for the videotaped episode had α = .69, and observers agreed within one scale point on 79% of episodes for support of autonomy. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement, so the self-report has a documented ceiling and must not be used alone. Our adaptation to tooth brushing is untested. Observer agreement will be checked as in M-02, using weighted kappa.
 |Serves|Validation
 |Burden|Human subjects - residents with dementia, supported consent. Self-report may be difficult for residents with more advanced dementia; the observer rating also needs a trained observer present.
 
@@ -148,25 +154,27 @@ operationalizes → UC01-F2-CL3; used-by → EM-02; operationalizes → HV-01 (A
 |Name|Perceived privacy and monitoring acceptability
 |Status|In Progress
 |Evidence basis|Bespoke, but the concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
-|Construct measured|Whether residents experience the System as watching them, and whether care staff judge what the session record exposes as proportionate.
+|Construct measured|Whether residents experience the System as watching them or talking down to them, and whether care staff judge what the session record exposes as proportionate.
 |Type|Mixed (qualitative coding, plus a check of record content)
 |Instrument or procedure|(((
-Validation component: interview coding of resident and care-staff accounts for expressions of being watched or monitored, plus care-staff judgement of what the session record exposes.
+Validation component, residents: a short, verbally administered post-session interview in EM-02 (bespoke, three open questions: how it felt to have the robot there while brushing their teeth; whether it felt like being watched; whether they liked how it spoke to them).
+
+Validation component, care staff: the EM-03 interview, including their judgement of what the session record exposes.
 
 Verification component (record content): inspection of stored session records against the three specified items.
 )))
 |Scoring or coding scheme|(((
-Code any resident or staff statement describing the System as watching, checking on, or recording the resident. Code care-staff judgements of each record item as proportionate or intrusive. TODO: full coding rules and a second coder.
+Code each statement into one of: W - the System watches, checks on, or supervises the resident; R - the System records or reports on the resident; T - the System talks down to the resident or treats them like a child (for UC01-F2-CL5); N - neutral or positive about the System's presence. A statement can carry more than one code. Code each record item named by care staff as P (proportionate) or I (intrusive). Report counts per code per resident; any W, R or T code is reported with its quote.
 
 Record-content check: pass if the record holds exactly the three specified items and no step-level trace.
 )))
-|Validity and reliability|Bespoke - no prior validity evidence. Inter-coder reliability: TODO.
+|Validity and reliability|Bespoke - no prior validity evidence; the code set follows the concerns in Niemeijer et al. (2010, 2015) and Kitwood (1997). Inter-coder reliability: two coders code all interviews independently, kappa per code, κ ≥ .60 acceptable (Landis & Koch, 1977); disagreements are resolved by discussion and the resolution recorded.
 |Serves|Both - Verification (record content) and Validation (perceived privacy)
 |Burden|Human subjects for the validation component - residents with dementia (supported consent) and care staff. The record-content check needs no human subjects.
 
 == Graph edges ==
 
-operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8; used-by → EM-01, EM-03; operationalizes → HV-03 (Privacy). Associated with HFC-02.
+operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8; used-by → EM-01, EM-02 (resident interview), EM-03; operationalizes → HV-03 (Privacy), HV-02 (Dignity). Associated with HFC-02, HFC-04, HFC-05.
 
 = Care-worker prompting load  [M-07] =
 
@@ -185,10 +193,10 @@ operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1
 |Type|Quantitative
 |Instrument or procedure|Time-sampled observation of care-worker prompting during the activity.
 |Scoring or coding scheme|Count and total duration of care-worker prompting episodes per session. Compared against the pre-System baseline.
-|Validity and reliability|Method follows Rogers et al. (1999); our specific coding is bespoke. Inter-rater reliability: TODO.
+|Validity and reliability|Method follows Rogers et al. (1999); our specific coding is bespoke. Inter-rater reliability: two observers time the same prompting episodes in at least 20% of sessions; agreement on episode counts as Cohen's kappa and on durations as an intraclass correlation, with κ or ICC ≥ .60 treated as acceptable.
 |Serves|Validation
 |Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-02) and residents.
 
 == Graph edges ==
 
-operationalizes → UC01-F3-CL6; used-by → EM-02, EM-03.
+operationalizes → UC01-F3-CL9; used-by → EM-02, EM-03; operationalizes → HV-06 (Attentive care).

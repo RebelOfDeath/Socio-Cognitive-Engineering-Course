@@ -17,7 +17,7 @@ hash: 7eac189681f68c1fc13cadcdec36238edb66cd4a78cb14f33f4faf4f6d226bb8
 |ID|PS-01
 |Name|Losing track of the tooth brushing routine
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Evidence basis|Constructed from SA-01 and the ST-01/ST-02 records, which rest on literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional. The pattern of stalling mid-sequence and needing repeated prompts matches Rogers et al. (1999) and the COACH study (Mihailidis et al., 2008). Not yet member-checked; planned with a care worker.
 |Narrative|It is morning in the dementia care home. The resident has finished their breakfast and returns to their room to perform their normal morning routine. A care worker reminds the resident that it is time to brush their teeth. The resident goes into the bathroom and stands in front of the sink. The toothbrush and toothpaste are visible next to the sink. The resident picks up the toothbrush but then pauses and appears unsure of what to do next. After some thought, they put the toothbrush back down. The care worker notices this and verbally prompts the resident to pick up the toothpaste. However, after putting the toothpaste on the toothbrush they again pause and are unsure of what to do next. The resident requires another verbal prompt from the care worker to eventually successfully finish this activity.
 |Stakeholders involved|(((
 - ST-01: Resident with dementia
@@ -46,7 +46,15 @@ Contributing causes:
 
 3. Completion: Resident may stop too early with brushing their teeth
 )))
-|Out of scope|General medication routines and other personal-care activities
+|Out of scope|(((
+- Medication routines - a separate activity (SA-02) with its own Problem Scenario (PS-02) and Use Case (UC02), deferred to a later cycle so this cycle can specify one activity properly.
+
+- Other personal-care activities such as dressing, washing and toileting - they share the initiation, sequencing and completion sub-problems, but involve more intimate exposure and physical assistance. Extending the approach to them is a later decision, if it works for tooth brushing.
+
+- Physically assisting the resident (for example guiding their hand) - the robot cannot do this safely; it stays with the care worker, who is called in via handover.
+
+- Dental health assessment - a clinical judgement for ST-05 or a dental professional, not something the System should infer.
+)))
 
 = Problem Scenario  [PS-02] =
 
@@ -60,7 +68,7 @@ Contributing causes:
 |ID|PS-02
 |Name|Difficulty completing the medication routine
 |Status|In Progress
-|Evidence basis|How this knowledge was obtained — direct observation, interview, literature, secondary data, or proxy informant — flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Measure or Evaluation Method, cite existing use in a validation study or authoritative literature (e.g. a validated-instrument source or textbook) instead.
+|Evidence basis|Constructed from SA-02 and the ST-01/ST-02 records, which rest on literature (While et al., 2013) and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this is provisional. Not yet member-checked. Scope note: carried by UC02, deferred to a later cycle (§2.3 Open item O-13).
 |Narrative|(((
 A resident with dementia needs to take prescribed medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it is time to take it. At first the resident agrees to take the medicine.
 
@@ -108,17 +116,17 @@ Contributing causes:
 
 - Physically administering medication - would require a dedicated product involving computer vision and is very error-prone and time-consuming.
 
-- Emergency medical treatment - we could consider relaying a possible emergency to care staff, but likely out of scope.
+- Emergency medical treatment - out of scope. Notifying a care worker when there is an immediate risk of serious harm during the activity is in scope (group decision, §2.3 Open item O-2); treating or assessing the emergency is not.
 
 - Residents who have to take critical medication such as heart medication - the care home blacklists these residents to require a care home employee to be present.
 
 - Residents who only have to take vitamin C daily or anti-congestion meds preventively are permitted - they may get confused or suddenly not know where they can find the medication, but little harm follows.
 
-- General monitoring of the resident - we only report a failure in completing the task, we avoid surveilling the patient in general. This covers fall detection and failure to respond to a query.
+- General monitoring of the resident - we only report a failure to complete the task, or an immediate risk of harm during it, and avoid surveilling the patient in general. This excludes fall detection outside the activity and general failure to respond to a query.
 )))
-
-==   ==
 
 == Graph edges ==
 
-illustrates → Problem; motivates → (Specification-phase) Objective.
+PS-01: illustrates → Problem; involves → ST-01, ST-02, SA-01, SA-03; motivates → OBJ-01; reimagined-as → DS-01 (§2.1).
+
+PS-02: illustrates → Problem; involves → ST-01, ST-02, SA-02, SA-03; motivates → UC02 (later cycle); reimagined-as → DS-02 (§2.1).

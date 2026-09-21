@@ -17,20 +17,16 @@ hash: afc21a3bcbb16e506640610d6aca69674f2c27589a0941adcd08904a769cfb79
 |ID|HV-01
 |Name|Autonomy
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional. Planned: laddering interviews with care staff and, with supported consent, residents.
 |Situated meaning|Autonomy means being able to participate in everyday activities and make choices for themselves, rather than having tasks automatically taken over by caregivers or technology. In daily activities such as brushing teeth or taking medication, this means allowing the person to initiate and perform the steps they are still capable of doing, while providing assistance or prompting only when needed.
-|Held by|(((
-ST-01: Resident with dementia
-
-ST-02: Care home employee
-)))
+|Held by|ST-01 (high); ST-02 (medium - endorses it for residents, but weighs it against the time available); ST-03 (medium); ST-05 (medium)
 |Intrinsic or instrumental|It is an intrinsic value because having choice and control over one's own everyday activities is valuable in itself. It can also instrumentally support related values such as dignity and wellbeing.
 |Recognition criteria|(((
 Served: the person is given meaningful opportunities to make choices, initiate actions and perform steps independently. assistance or prompting is provided when needed rather than automatically taking over. 
 
 Violated: choices are unnecessarily overridden, the resident is not given an opportunity to act independently, or caregivers/technology routinely take over activities the resident remains capable of performing.
 )))
-|Source|Self-Determination Theory
+|Source|Self-determination theory: Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
 
 = Dignity [HV-02] =
 
@@ -44,18 +40,15 @@ Violated: choices are unnecessarily overridden, the resident is not given an opp
 |ID|HV-02
 |Name|Dignity
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional. Planned: laddering interviews with care staff and, with supported consent, residents.
 |Situated meaning|Dignity means treating people as individuals with individual preferences, abilities, and personal histories, rather than reducing them to their diagnosis or level of dependency. During everyday care activities, this means communicating respectfully, involving the resident in what is happening, avoiding unnecessary exposure or embarrassment, and providing assistance in a way that preserves the person's sense of self-worth.
-|Held by|(((
-ST-01: Resident with dementia
-ST-02: Care home employee
-)))
+|Held by|ST-01 (high); ST-03 (high); ST-02 (medium); ST-04 (medium)
 |Intrinsic or instrumental|It is an intrinsic value because being treated with respect and as a person of equal worth is valuable in itself. It can also instrumentally support related values such as autonomy and well-being.
 |Recognition criteria|(((
 Served: the resident is addressed respectfully, included in decisions concerning them, and supported in ways that preserve their sense of identity and self-worth. Care is provided discretely and without unnecessary infantilisation, embarrassment, or exposure.
 Violated: the resident is spoken about or treated as though they are not present, unnecessarily infantilised, embarrassed, exposed, ignored, or treated primarily as a task or diagnosis rather than as a person.
 )))
-|Source|Value Sensitive Design
+|Source|Value Sensitive Design: Friedman, B., Kahn, P. H., Jr., & Borning, A. (2008). Value Sensitive Design and Information Systems. In K. E. Himma & H. T. Tavani (Eds.), //The Handbook of Information and Computer Ethics//. Personhood in dementia care: Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press.
 
 = Privacy [HV-03] =
 
@@ -69,18 +62,15 @@ Violated: the resident is spoken about or treated as though they are not present
 |ID|HV-03
 |Name|Privacy
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional. Planned: laddering interviews with care staff and, with supported consent, residents.
 |Situated meaning|Privacy means that people retain appropriate control over access to their body, personal space, belongings, activities, and personal information, even when they require assistance or monitoring. In everyday care, this means that observation, reminders, sensors, or caregiver involvement should not be more intrusive than necessary and that sensitive activities such as dressing, toileting, medication use, or personal hygiene should be handled discretely.
-|Held by|(((
-ST-01: Resident with dementia
-ST-02: Care home employee
-)))
+|Held by|ST-01 (medium); ST-02 (medium - for residents, and against surveillance of their own work); ST-04 (medium - data-protection obligations); ST-05 (medium - medical confidentiality); ST-03 (low - may want more information than the resident would share)
 |Intrinsic or instrumental|It is primarily an intrinsic value because having personal boundaries and control over access to oneself is valuable in itself. It also instrumentally supports dignity, autonomy, and trust.
 |Recognition criteria|(((
 Served: personal information, spaces, and care activities are accessed only when necessary and by appropriate people. Residents are given private space where possible, and monitoring or assistance is limited to what is required for safe and effective care.
 Violated: residents are unnecessarily watched, exposed, interrupted, or monitored; personal information is accessible to people who do not need it; or technology collects or communicates more information than is necessary for the care activity.
 )))
-|Source|Value Sensitive Design
+|Source|Value Sensitive Design (Friedman et al., 2008). Surveillance in residential dementia care: Niemeijer et al. (2010), //International Psychogeriatrics//, PMID 20199699.
 
 = Competence [HV-04] =
 
@@ -94,18 +84,15 @@ Violated: residents are unnecessarily watched, exposed, interrupted, or monitore
 |ID|HV-04
 |Name|Competence
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional. Planned: laddering interviews with care staff and, with supported consent, residents.
 |Situated meaning|Competence means enabling residents to experience that they are still capable of successfully carrying out meaningful parts of everyday activities despite cognitive decline. In activities such as brushing teeth, dressing, preparing for bed, or taking medication, this means adapting tasks and providing suitable prompts so that residents can use the abilities they still have instead of immediately having the activity completed for them.
-|Held by|(((
-ST-01: Resident with dementia
-ST-02: Care home employee
-)))
+|Held by|ST-01 (medium); ST-02 (medium)
 |Intrinsic or instrumental|It is primarily an instrumental value because maintaining and supporting the resident's ability to perform everyday activities helps preserve autonomy, dignity, and well-being. Experiencing oneself as capable may also have intrinsic value for the resident.
 |Recognition criteria|(((
 Served: activities are matched to the resident's remaining abilities, instructions or prompts are understandable, and the resident is given opportunities to successfully complete steps themselves. Assistance increases only when the resident needs it.
 Violated: tasks are made unnecessarily difficult or confusing, the resident repeatedly experiences avoidable failure, or caregivers or technology take over tasks that the resident could still perform with appropriate support.
 )))
-|Source|Self-Determination Theory
+|Source|Self-determination theory, competence need (Ryan & Deci, 2000).
 
 = Well-being [HV-05] =
 
@@ -119,19 +106,49 @@ Violated: tasks are made unnecessarily difficult or confusing, the resident repe
 |ID|HV-05
 |Name|Well-being
 |Status|In Progress
-|Evidence basis|Interviews/observations with residents and care staff
+|Evidence basis|Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional. Planned: laddering interviews with care staff and, with supported consent, residents.
 |Situated meaning|Well-being means supporting the resident's emotional and physical comfort and helping everyday life remain calm, meaningful, and pleasant. In the context of dementia care, this includes reducing avoidable stress, confusion, frustration, discomfort, and anxiety while supporting positive experiences such as familiarity, confidence, social connection, enjoyment, and a sense of security during daily activities.
-|Held by|(((
-ST-01: Resident with dementia
-ST-02: Care home employee
-)))
+|Held by|ST-01 (high); ST-02 (high); ST-03 (high); ST-04 (high); ST-05 (high)
 |Intrinsic or instrumental|It is an intrinsic value because the resident's physical and emotional quality of life is valuable in itself. It can also be supported instrumentally by values such as autonomy, dignity, competence, privacy, and social connection.
 |Recognition criteria|(((
 Served: the resident is generally comfortable and calm during the activity, assistance reduces rather than increases confusion or distress, and the activity supports positive experiences such as satisfaction, familiarity, enjoyment, or social connection.
 Violated: an activity, care practice, or technology causes avoidable anxiety, frustration, discomfort, confusion, isolation, or distress, particularly when the negative effect persists or could reasonably have been prevented through a different form of support.
 )))
-|Source|Value sensitive Design
+|Source|Value Sensitive Design (Friedman et al., 2008).
+
+= Attentive care [HV-06] =
+
+//An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-06
+|Name|Attentive care
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional. Planned: laddering interviews with care staff and, with supported consent, residents.
+|Situated meaning|Attentive care means care staff having enough time and attention to give each resident the support they actually need during the morning round, without being pulled back to the same resident repeatedly or having to rush other residents. For the care worker it is about being able to do the job well; for management it is about staffing and the quality of care the home provides.
+|Held by|ST-02 (high); ST-04 (high); ST-03 (medium - wants their relative to be attended to)
+|Intrinsic or instrumental|Instrumental. It serves the residents' Well-being (HV-05) and Dignity (HV-02), because rushed staff tend to take over activities or skip them, and it serves the care worker's own well-being at work. Because it is instrumental, it should not be traded against the values it serves: saving staff time by taking over activities the resident could do would defeat its purpose.
+|Recognition criteria|(((
+Served: a care worker can attend to another resident while one completes an activity; they return to the same resident less often; prompting time per resident falls without completion falling.
+
+Violated: residents are left waiting; staff take over activities to save time; the System adds work, for example through frequent low-value alerts that have to be checked.
+)))
+|Source|Value Sensitive Design (Friedman et al., 2008). Caregiver time in graduated prompting: Rogers et al. (1999), //Journal of the American Geriatrics Society//, 47(9), 1049-1057. Derived from SA-03 and HP-02.
 
 == **Graph edges** ==
 
-held-by → Stakeholder; party-to → Value Tension; operationalized-by → Measure.
+HV-01: held-by → ST-01, ST-02, ST-03, ST-05; party-to → VT-01, VT-05, VT-06; operationalized-by → M-02, M-05; explained-by → HFC-01.
+
+HV-02: held-by → ST-01, ST-02, ST-03, ST-04; party-to → VT-04; operationalized-by → M-04, M-06; explained-by → HFC-04, HFC-05.
+
+HV-03: held-by → ST-01, ST-02, ST-03, ST-04, ST-05; party-to → VT-02; operationalized-by → M-06; explained-by → HFC-02.
+
+HV-04: held-by → ST-01, ST-02; party-to → VT-03, VT-04, VT-07; operationalized-by → M-02, M-03; explained-by → HFC-03.
+
+HV-05: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-03, VT-05, VT-06; operationalized-by → M-04.
+
+HV-06: held-by → ST-02, ST-03, ST-04; party-to → VT-07; operationalized-by → M-07.
