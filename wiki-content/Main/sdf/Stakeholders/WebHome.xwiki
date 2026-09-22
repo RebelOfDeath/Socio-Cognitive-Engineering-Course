@@ -17,7 +17,7 @@ hash: dd62b24ba365d62781e584e8c956ff95efd23f4f93a00d2f14cd08679f809ee6
 |ID|ST-01
 |Name|Resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning.
 |Type|Direct - interacts with the System during the activity
 |Values and motivations|(((
 - HV-02: Dignity (high)
@@ -48,7 +48,7 @@ performs → SA-01, SA-02; holds → HV-01, HV-02, HV-03, HV-04, HV-05; appears-
 |ID|ST-02
 |Name|Care home staff member
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning.
 |Type|Direct - receives handover requests and reviews the session record
 |Values and motivations|(((
 - HV-05: Well-being (high)
@@ -81,7 +81,7 @@ performs → SA-03; supports → SA-01, SA-02; holds → HV-01 to HV-06; appears
 |ID|ST-03
 |Name|Family members of Resident
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning.
 |Type|Indirect - affected by outcomes, does not interact with the System and does not receive its records
 |Values and motivations|(((
 - HV-05: Well-being (high)
@@ -112,7 +112,7 @@ holds → HV-01, HV-02, HV-03, HV-05, HV-06.
 |ID|ST-04
 |Name|Management or the Owners of the care home
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning.
 |Type|Indirect - decides on adopting the System, does not interact with it
 |Values and motivations|(((
 - HV-06: Attentive care (high) - staffing and workload
@@ -141,7 +141,7 @@ holds → HV-02, HV-03, HV-05, HV-06.
 |ID|ST-05
 |Name|Medical staff: GP, Nurse
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning.
 |Type|Indirect - responsible for care plans and medication, does not interact with the System
 |Values and motivations|(((
 - HV-05: Well-being (high)

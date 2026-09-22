@@ -2,7 +2,7 @@
 
 *A continuous reading of §1 Foundation and §2 Specification, concatenated from the wiki pages listed in [OUTLINE.md](OUTLINE.md). The field tables of the source pages are rendered here as prose, and the per-page "Graph edges" sections are replaced by the single traceability diagram at the end.*
 
-**A standing caveat, stated once.** This project has collected no primary data. No resident, care worker, family member or manager has been interviewed or observed. Everything below rests on published literature plus the group's own reasoning, and every source page flags itself as provisional. Where the text says what a resident wants or what a care worker needs, read it as a claim the project intends to check, not one it has checked. The planned methods — laddering interviews with care staff, supported-consent interviews with residents, shadowing a morning round, a staff survey — are recorded but not yet carried out.
+**A standing caveat, stated once.** This project has collected no primary data. No resident, care worker, family member or manager has been interviewed or observed. Everything below rests on published literature plus the group's own reasoning, and every source page flags itself as provisional. Where the text says what a resident wants or what a care worker needs, read it as a claim the project has not checked against anyone it describes.
 
 ---
 
