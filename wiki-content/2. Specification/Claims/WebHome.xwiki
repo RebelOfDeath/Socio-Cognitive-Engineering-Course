@@ -2,10 +2,10 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/Claims/pages/WebHome
 title: d.Interaction Design Pattern
 syntax: xwiki/2.1
-version: 1.5
-hash: 629d9494b490528fc0963b4dd14ac9de096c010c2fceb5b70f1718bad72ac918
+version: 2.1
+hash: 631dbe4024a8cc7986d13c703f42cb1414e0ce680259f73bd185725c02a842d5
 %%WIKI-SYNC-META%%
-= Design pattern, Interaction (IDP)  [IDP-nn] =
+= Respectful graduated prompting [IDP-01] =
 
 //A reusable solution to a recurring interface or interaction problem: how the System communicates and is controlled.//
 
@@ -14,16 +14,41 @@ hash: 629d9494b490528fc0963b4dd14ac9de096c010c2fceb5b70f1718bad72ac918
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. IDP-01, IDP-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Problem|the interaction problem this pattern addresses.
-|Principle|the underlying design insight, why the solution works, kept separate from the Solution itself.
-|Solution|concrete, numbered strategies.
-|Research Link|the literature that grounds the Principle.
-|Connection to Claims|the specific Claim(s) this pattern supports, by reference ID (e.g. UC01-F1-CL1). This is what lets the pattern count as validated even without prior known uses elsewhere.
+|ID|IDP-01
+|Name|Respectful graduated prompting
+|Status|In Progress
+|Evidence basis|(((
+Literature and group reasoning only. No residents or care workers have been interviewed or observed by this project, and the interaction has not yet been evaluated.
+
+The pattern is derived from SA-01's existing reminder and demonstration workarounds, PS-01, DS-01 and UC01 F2. HFC-01, HFC-03, HFC-04 and HFC-05 ground the principles concerning autonomy, adaptive assistance, personhood and robot embodiment. TECH-01 and RP-01 provide the selected modality: Pepper speech and tablet content with restrained movement. The cited literature does not establish that the proposed wording, timing or embodiment works for the intended residents.
+)))
+|Problem|In a stepwise activity, a resident may hesitate because they need time, have forgotten the next action, or are unable to continue. A prompt that arrives too early, repeats, or sounds childlike can remove control and dignity. A prompt that arrives too late or is too vague can leave the resident confused or distressed. The System needs a consistent way to offer help and to stop when help is no longer needed.
+|Principle|Match the specificity and timing of assistance to the person's present ability, while preserving a meaningful opportunity to act independently. Communicate with an adult respectfully and make assistance an offer, not a judgment about failure. The group selected wait-then-escalate, from least to most specific, as a stated design hypothesis. If UC01-F2-CL4 shows increased distress, first adapt the wait per resident and then consider earlier prompting with fading cues.
+|Solution|(((
+1. Remain silent while TECH-02 indicates that the resident is progressing.
+2. After a reliably inferred stall, allow an individualized wait before prompting. Set this interval per resident after the O-20 pilot.
+3. Begin with one short, calm, low-information prompt. Phrase it as an offer in the second person and in an ordinary adult register; do not announce failure or use exaggerated praise. Confirm with residents whether using their name is welcome in this setting.
+4. If needed, move to a more direct prompt and then a simple picture or short video on Pepper's tablet. Avoid indefinite repetition; if there is no response, escalate, reassess, or hand over. Pepper does not mime the action with its arms.
+5. Stop prompting as soon as the item sensors indicate that progress has resumed.
+6. Hand over under F3 if the difficulty remains unresolved, stress or confusion appears, task-state uncertainty is high, or physical or safety help is needed. On unreliable sensor data, do not guess; report the degraded state.
+7. Keep Pepper visibly tool-like during the activity: cameras disabled and covered, minimal head and arm motion, no gaze-following, soft eye lights rather than alarms, and no conversation beyond the routine. Position it at the doorway only if the O-21 mock-up shows that this is audible, visible and physically safe.
+)))
+|Research Link|(((
+HFC-01 links autonomy and perceived control to acceptance, citing Ryan & Deci (2000) and Peek et al. (2014). HFC-03 cites Rogers et al. (1999) for graduated assistance in nursing-home morning care and Mihailidis et al. (2008) for automated prompting during handwashing; it also records mistimed prompts as a possible source of confusion. Peters et al. (2014) provide a direct tooth-brushing precedent in TEBRA, including repeated prompts within a hierarchy of increasingly informative assistance. Wang et al. (2017) show that robot-delivered stepwise prompting is plausible for people with Alzheimer's disease while acceptance of a robot varies. Braley et al. (2019) support leaving automated prompting when confusion or frustration appears and restoring human communication. HFC-04 uses Kitwood (1997) for infantilisation and outpacing. HFC-05 covers how embodiment, gaze, timing and tone affect the role assigned to an assistive robot, drawing on Furlanis et al. (2026), Lee et al. (2016), and Pemberton et al. (2026). De Werd et al. (2013) and Voigt-Radloff et al. (2017) support the competing early-prompt/errorless-learning approach recorded in UC01 O-7.
+
+These works cover different activities and populations. The transfer limits recorded in HFC-03 and HFC-05 still apply; the selected interaction must be evaluated with the intended users rather than presented as established practice.
+)))
+|Connection to Claims|Shapes F2 at UC01 steps 4-8. Supports the design rationale for UC01-F2-CL1 (independent steps), UC01-F2-CL2 (lower prompt level), and UC01-F2-CL3 (felt autonomy). UC01-F2-CL4 (distress caused by waiting) and UC01-F2-CL5 (infantilising prompts) are adverse claims that test whether this pattern actually works as intended. The pattern does not by itself establish any of these effects.
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Why it matters
+|Prompt thresholds (O-20)|Use EM-01 to set stall and prompt-stop timing, then configure the wait per resident with care-worker input.|Needed to verify UC01-F2-PR2 and reduce the risk tested by UC01-F2-CL4.
+|Pepper placement (O-21)|Test doorway audibility, tablet visibility, water clearance and obstruction with the actual robot or a full-size mock-up.|Determines whether strategy 7 and tablet demonstration are feasible; TECH-05 is the fallback.
+|Exact interaction content|Co-design or review the name use, wording, volume, images, acknowledgement and touch input with residents and care staff where ethically feasible.|HP-01 and RP-01 are still provisional and the interaction has not been tested with intended users.
+|Research and evaluation|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors, then apply M-02 to M-06 through EM-02 and EM-03, including both parts of M-05.|Tests independent performance, assistance level, distress, autonomy, privacy and infantilisation.
+|Reuse beyond UC01|Compare the pattern with UC02 after its medication-specific confirmation, reassurance and safety rules are specified.|Shows which parts transfer and which require a separate IDP.
 
 == Graph edges ==
 
-shapes → Function's Action Sequence; supports → Claim.
+shapes → F2 in UC01 steps 4-8; supports → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3; tested against → UC01-F2-CL4, UC01-F2-CL5.

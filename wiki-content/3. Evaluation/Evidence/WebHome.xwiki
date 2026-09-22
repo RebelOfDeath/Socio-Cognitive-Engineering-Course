@@ -1,0 +1,35 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3.%20Evaluation/spaces/Evidence/pages/WebHome
+title: c. Evidence
+syntax: xwiki/2.1
+version: 2.1
+hash: 2c328bca85a1bd2d99ff2604b0953607878190b1ae5446259c21240cdb46d9f9
+%%WIKI-SYNC-META%%
+= Evidence [EV-nn] =
+
+//What one Evaluation Report established about one Premise or one Claim. This is the entity the Evaluation Report page points at with its “produces → Evidence” edge.//
+
+**How to use this page:** Duplicate it once per Premise or Claim addressed by an Evaluation Report. A report that addressed three Claims produces three separate Evidence pages, each with its own criteria assessment and verdict — do not average several findings into one Evidence entry.
+
+|**ID**|Stable identifier, unique within this entity type (e.g. EV-01, EV-02…).
+\\[ fill in ]
+|**Name**|A short, human-readable label for this instance.
+\\[ fill in ]
+|**Status**|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+\\[ fill in ]
+|**Bears on**|The Premise or Claim ID this Evidence addresses. Exactly one.
+\\[ fill in ]
+|**Source**|The Evaluation Report that produced it, by ID. The Evaluation Method applied and the ethics basis are recorded once on that report, not repeated here.
+\\[ fill in, e.g. ER-01 (report name) ]
+|**Assessed against criteria**|Met / Partly met / Not met / Not assessed. Whether the Premise’s Verification Criteria or the Claim’s Validation Criteria was actually applied, and with what result. Use “Not assessed” where the named Measure(s) were not applied against their stated threshold.
+\\[ fill in ]
+|**Result observed**|What the cited Evaluation Report’s Finding(s) or Result(s) showed for this Premise/Claim, stated before interpretation. A short restatement, not a copy — the full account lives on the Evaluation Report.
+\\[ fill in ]
+|**Verdict**|Supports / Qualifies / Challenges the Premise or Claim named in Bears on.
+\\[ fill in ]
+|**Basis for verdict**|Required whenever Assessed against criteria is “Not assessed”: what grounded the verdict instead (reviewer judgment, an unresolved disagreement between reviewers, an observed but unmeasured behaviour). Otherwise, state “criteria assessment.”
+\\[ fill in ]
+|**Limitations**|What this Evidence cannot establish: sample size, an unverified Premise the Claim was tested on, a Measure applied outside its validated population, a method used ad hoc, or a build that has since changed.
+\\[ fill in ]
+
+**Graph edges:** //produced-by ← Evaluation Report; verifies → Premise / validates → Claim.//

@@ -1,40 +1,82 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3.%20Evaluation/spaces/b.%20Test/pages/WebHome
-title: b. Test
+title: b. Evaluation Reports
 syntax: xwiki/2.1
-version: 1.1
-hash: c3e847020dda194fb40d918aae5506fd1a95d0b43c209fe37a4c4660701ba65f
+version: 4.2
+hash: 1e1f207246b46ca17d19f624ea636407c315de5318aa82a35a94e3bb163eb31b
 %%WIKI-SYNC-META%%
-= 1. Introduction =
+= Evaluation Report [ER-nn] =
 
-//<include a short summary of the claims to be tested, i.e., the effects of the functions in a specfic use case>//
+//What one Formative pass or Summative Test set out to establish and how: the Artifact and build evaluated, the ethics and consent basis for doing so, the Evaluation Method applied, and what was found. Formative and Summative reports share this one template, distinguished by the Mode field below; the Verification and Validation Summary records what each Evidence entity, in turn, draws from here.//
 
+**How to use this page:** Duplicate it once per Formative pass or Summative Test. 
 
-= 2. Method =
+== Shared fields ==
 
+|**ID**|Stable identifier, unique within this entity type (e.g. ER-01, ER-02…).
+\\[ fill in ]
+|**Name**|A short, human-readable label for this instance.
+\\[ fill in ]
+|**Status**|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+\\[ fill in ]
+|**Mode**|Formative / Summative. Decides which field group below you fill in.
+\\[ Formative  or  Summative ]
+|**Artifact used**|The Artifact this report evaluated, by ID, and which build.
+\\[ fill in ]
+|**Evaluation Method(s) applied**|By Foundation ID where the method was one of those surveyed, or stated as ad hoc where it was not, and whether it addressed a Premise, a Claim, or both. Evidence entries this report produces cite this report rather than repeating the method.
+\\[ fill in ]
+|**Ethics**|Evidence of ethics review/approval and the informed-consent procedure used, including any special protections for vulnerable groups; or, where this report involved no human participants, an explicit statement that no ethics review was required and why.
+\\[ fill in ]
+|**Introduction**|Which Premise(s) or Claim(s) this report addresses, named explicitly where it covers more than one; for a Summative report, also why an early (Formative) check was not enough.
+\\[ fill in ]
+|**Method**|(((
+**If Formative:** what was done, informally — a few sentences on the walkthrough, inspection, or informal session. No Participants/Procedure formality required.
 
-== 2.1 Participants ==
+**If Summative:** in full, using the structure below. Where the Test involves no human subjects, mark Participants and Procedure “not applicable” and describe the protocol, ground truth, and confounders tested in their place; Measures and Material still apply.
 
+**Participants:** who, how recruited.
+[ fill in, or “not applicable” ]
 
-== 2.2 Experimental design ==
+**Experimental design:** within-subject, between-subject, or single-case.
+[ fill in, or “not applicable” ]
 
+**Tasks:** what participants actually did.
+[ fill in ]
 
-== 2.3 Tasks ==
+**Measures:** from the Foundation, precisely defined.
+[ fill in ]
 
+**Procedure:** the session script.
+[ fill in, or “not applicable” ]
 
-== 2.4 Measures ==
+**Material:** what was shown, given, or used.
+[ fill in ]
+)))
 
+== Formative-only fields ==
 
-== 2.5 Procedure ==
+//Fill in if Mode is Formative; otherwise write “not applicable (Mode is Summative)” below each.//
 
+|**Finding(s)**|One entry per Premise or Claim addressed: what was observed, as observed, before interpretation. Include any unexpected findings outside the stated Premises and Claims — these produce no Evidence entity, but should still be recorded here.
+\\[ fill in ]
+|**Implications**|What changes as a result, or what it tells you before running a Summative Test, for the Foundation, the Specification, or an upcoming Summative Test.
+\\[ fill in ]
 
-== 2.6 Material ==
+== Summative-only fields ==
 
+//Fill in if Mode is Summative; otherwise write “not applicable (Mode is Formative)” below each.//
 
-= 3. Results =
+|**Result(s)**|One entry per Premise or Claim addressed: what each Measure showed, as observed, before interpretation, plus any finding the stated criteria do not speak to. If a Claim was tested on an unverified Premise, state that limitation here too.
+\\[ fill in ]
+|**Discussion**|What the Result(s) mean — this report’s own reading of its own Result(s). Project-level interpretation across all reports belongs on the Discussion and Limitations page, not here.
+\\[ fill in ]
+|**Conclusions**|The verdict this report itself reaches, before the Verification and Validation Summary roll-up.
+\\[ fill in ]
 
+**Graph edges:** //uses → Artifact; applies → Evaluation Method; produces → Evidence.//
 
-= 4. Discussion =
+----
 
+**Evidence produced by this report** — list each Evidence page this report produced, by ID and name, e.g.:
 
-= 5. Conclusions =
+* [ EV-nn — short name ]

@@ -2,10 +2,10 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20Specification/spaces/Requirements/pages/WebHome
 title: c. Team Design Pattern
 syntax: xwiki/2.1
-version: 1.3
-hash: 2802b1ed90d1eef1b9602f85ccdc17cc66d7a8c95e110428e395be6b891a6345
+version: 2.1
+hash: 1cd4c4aa73d4fba31eb83be9f104ca8ad9e738207b770f04828049b6705e88f6
 %%WIKI-SYNC-META%%
-= Design pattern, Team (TDP)  [TDP-nn] =
+= Graduated activity support with human handover [TDP-01] =
 
 //A reusable solution to a recurring collaboration problem, specifying task allocation between human and System Actors, independent of any one Task or Context.//
 
@@ -14,20 +14,75 @@ hash: 2802b1ed90d1eef1b9602f85ccdc17cc66d7a8c95e110428e395be6b891a6345
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. TDP-01, TDP-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Problem|the coordination problem, and why task allocation matters here.
-|Solution Structure|a diagram of who does what, if useful.
-|Solution Description|a narrative of how Actors collaborate.
-|Per-Actor allocation|which Tasks (Foundation-Phase) fall to each human Actor, and which Functions (Specification-Phase) fall to the System, as a short numbered list per side.
-|Consequences: benefits|what this allocation preserves or improves.
-|Consequences: risks|what this allocation assumes or trades away. A pattern that only lists benefits hasn't been thought through.
-|Related Patterns|other patterns this one builds on or complements.
-|Connection to Claims|the specific Claim(s) this pattern supports, by reference ID (e.g. UC01-F1-CL1). Required, not optional.
-|Validation path|either multiple known uses, or a literature-grounded rationale connected explicitly to those Claims. Neither present makes it a Proto-Pattern, labeled as such.
+|ID|TDP-01
+|Name|Graduated activity support with human handover
+|Status|In Progress
+|Evidence basis|(((
+Literature and group reasoning only. No residents or care workers have been interviewed or observed by this project, and the pattern has not yet been evaluated.
+
+Rogers et al. (1999) found that systematic graduated prompting during nursing-home morning care increased independent task performance and reduced physical assistance. The prompts in that study were delivered by care staff, so it supports the graduated-assistance structure but not the allocation of the lower prompt levels to a robot.
+
+Mihailidis et al. (2008) evaluated COACH, an automated prompting system for a comparable stepwise activity, handwashing, with older adults with moderate-to-severe dementia. It supports assigning activity tracking and routine prompts to the System as a way to reduce direct caregiver involvement, while its mistimed prompts and tracking failures show why a care-worker fallback is required. It did not test Pepper, tooth brushing, item sensors, or the TECH-03 handover channel.
+
+Peters et al. (2014) evaluated TEBRA, an automated system for supporting tooth brushing through task recognition and a hierarchy of prompts. This is a direct precedent for assigning routine tooth-brushing support and graduated prompting to the System. Its participants had moderate cognitive disabilities rather than dementia, and TEBRA did not use Pepper or the proposed item sensors and handover channel.
+
+Wang et al. (2017) studied robot-delivered stepwise prompts for handwashing and tea making with ten older adults with mild-to-moderate Alzheimer's disease and their caregivers. The study makes robot-delivered activity support plausible, but participants' views of having a robot were mixed. It therefore supports investigating this allocation rather than assuming acceptance.
+
+Braley et al. (2019) found that some people with dementia, especially participants with moderate dementia, showed confusion or frustration during repeated automated prompting and benefited from communication with the researchers. This supports a human handover when prompting becomes unresolved or stressful; it does not establish the proposed System's handover thresholds.
+
+The project instantiation is derived from SA-01, SA-03, PS-01 and UC01. The resident retains the activity tasks, the System receives F1-F4, and the care worker retains reassurance, physical assistance and exception handling. This allocation remains provisional until it is evaluated through the Claims listed below.
+)))
+|Problem|A resident with dementia may lose their place in a familiar activity, while a care worker cannot continuously guide every step. If the System takes over too soon, it removes an opportunity to act independently; if it waits or prompts indefinitely, the resident may become distressed or the activity may remain incomplete. The team needs an explicit rule for what the resident attempts, what the System may prompt, and when a care worker assumes responsibility.
+|Solution Structure|(((
+Resident performs the activity → System monitors task state (F1) and provides graduated assistance according to IDP-01 (F2) → System requests care-worker support (F3) when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed → care worker assesses the situation and provides the appropriate support.
+
+If F1 cannot reliably determine progress, the System reports a degraded state and the care worker uses the existing SA-01 workarounds. If there is no sensor change and no response for the configured safety interval, the System follows UC01's agreed safety branch and calls the care worker. This is a conservative inference rather than direct emergency detection: TECH-02 cannot see distress or a collapse.
+)))
+|Solution Description|The resident remains the primary performer of the activity. Item sensors (TECH-02) track activity progress without filming the resident. The System provides graduated assistance according to IDP-01. The System hands responsibility to the care worker when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed. TECH-03 sends the handover and stores a minimal record for care continuity. TDP-01 defines who is responsible; IDP-01 defines how System prompting escalates.
+|Per-Actor allocation|(((
+**Resident (ST-01):**
+
+1. Initiate and carry out the activity steps they can still perform (SA-01 tasks 1-9).
+2. Continue after a prompt when able; no explicit response to the System is required for ordinary step tracking.
+
+**Care worker (ST-02):**
+
+1. Perform the wider morning-care round (SA-03) while the resident attempts SA-01.
+2. Acknowledge an F3 message on the work phone; assess the resident and provide the next appropriate support, including reassurance or physical assistance when needed.
+3. Review F4's three-item session record for care continuity and handover.
+4. Use the existing care process if tracking, Pepper, or the notification channel fails.
+
+**System:**
+
+1. F1 through TECH-02: infer the current activity step and whether progress has stalled, limited to item events from this activity.
+2. F2 through TECH-01: provide graduated assistance according to IDP-01.
+3. F3 through TECH-03: request care-worker assistance when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed, passing only activity, step reached and reason.
+4. F4 through TECH-03: store completion, highest prompt level, and whether a care worker was called; retain no step-by-step trace.
+)))
+|Consequences: benefits|Gives the resident a chance to complete steps independently; may resolve a stall without immediately requiring a care worker; provides a route to human assistance when System support is insufficient; may direct care-worker time toward residents who need it; provides a minimal handover record. These are expected effects, not observed outcomes (UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6, UC01-F3-CL9, UC01-F4-CL8).
+|Consequences: risks|(((
+An incorrect item-sensor inference may interrupt a resident who was progressing. Waiting too long or escalating the wrong prompt may increase frustration (UC01-F2-CL4). Pepper's humanoid presence and visible cameras may still feel supervisory even though its cameras are disabled (UC01-F1-CL7). A separate phone channel can create alert burden, and its policy currently lacks an alert-fatigue Human Factors Concept (O-22). TECH-02 cannot directly see distress or danger. The premise thresholds are unset (O-20), and Pepper may not fit safely at a bathroom doorway (O-21).
+)))
+|Related Patterns|IDP-01 Respectful graduated prompting shapes F2's interaction. The existing Human-Robot Group Game Management pattern concerns a different activity and does not validate this allocation.
+|Connection to Claims|Supports the design rationale for UC01-F2-CL1 (independent steps), UC01-F2-CL2 (lower assistance level), UC01-F3-CL6 (completion after handover), UC01-F3-CL9 (care-worker prompting time), and UC01-F4-CL8 (useful but proportionate record). UC01-F2-CL4 tests an adverse effect of waiting; UC01-F1-CL7 tests whether the tracking allocation preserves privacy as intended.
+|Validation path|Literature-grounded through HFC-03, Rogers et al. (1999), Mihailidis et al. (2008), Peters et al. (2014), Wang et al. (2017), and Braley et al. (2019). The linked Claims are operationalized by M-02, M-03, M-04, M-06 and M-07 through EM-02 and EM-03. Only one project instantiation is currently specified. UC02 will show whether the allocation recurs or whether medication confirmation and safety require a different pattern.
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Why it matters
+|Premise thresholds (O-20)|Pilot EM-01 at a mock sink, then set acceptable step-identification accuracy, stall-detection latency, prompt-stop latency and handover latency with care-worker input.|Until these limits exist, responsibility has been allocated to Functions whose dependable operating range is unknown.
+|Pepper placement (O-21)|Test whether Pepper can stand within earshot and sight of the sink without entering the wet area or blocking the resident. Use TECH-05 if it cannot.|May change which device performs F2 and the resident-facing part of F3.
+|Alert policy (O-22)|Add and source HFC-06 on alert fatigue; define acknowledgement, repeat and escalation rules with care workers.|Needed to justify TECH-03 and to avoid moving workload from prompting to notification management.
+|Research: transfer and recurrence|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors; complete UC02 far enough to compare actor responsibilities.|Tests the evidence transfer, acceptance assumptions and whether this is reusable beyond UC01.
+|Stakeholder validation|Review the allocation, fallback and record with residents and care staff if ethically feasible; otherwise retain the explicit literature-only limitation.|HP-01, HP-02, SA-03 and the alert assumptions are provisional.
 
 == Graph edges ==
 
-allocates → Task (§1.1), Function; supports → Claim.
+allocates → SA-01 tasks to ST-01 and SA-03 tasks to ST-02, F1-F4 to System; supports → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6, UC01-F3-CL9, UC01-F4-CL8; tested against → UC01-F2-CL4, UC01-F1-CL7.
+
+== References ==
+
+* Braley, R., Fritz, R., Van Son, C. R., & Schmitter-Edgecombe, M. (2019). Prompting Technology and Persons With Dementia: The Significance of Context and Communication. //The Gerontologist, 59//(1), 101-111. DOI: 10.1093/geront/gny071.
+* Mihailidis, A., Boger, J. N., Craig, T., & Hoey, J. (2008). The COACH prompting system to assist older adults with dementia through handwashing: An efficacy study. //BMC Geriatrics, 8//, 28. DOI: 10.1186/1471-2318-8-28.
+* Peters, C., Hermann, T., Wachsmuth, S., & Hoey, J. (2014). Automatic Task Assistance for People with Cognitive Disabilities in Brushing Teeth: A User Study with the TEBRA System. //ACM Transactions on Accessible Computing, 5//(4), 1-34. DOI: 10.1145/2579700.
+* Wang, R. H., Sudhama, A., Begum, M., Huq, R., & Mihailidis, A. (2017). Robots to assist daily activities: Views of older adults with Alzheimer's disease and their caregivers. //International Psychogeriatrics, 29//(1), 67-79. DOI: 10.1017/S1041610216001435.

@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/Stakeholders/pages/WebHome
 title: 2. Stakeholders
 syntax: xwiki/2.1
-version: 13.1
-hash: 7845216c3ef6709cc3e51747dbd646200fdf1414719b1dbfdfd193697824bc35
+version: 14.1
+hash: 2fe61b0c26288ea5ad2df41cbe3c8845f471a51a913faa06b56f164a439b68f5
 %%WIKI-SYNC-META%%
 = Stakeholder - Resident with dementia [ST-01] =
 
@@ -17,7 +17,7 @@ hash: 7845216c3ef6709cc3e51747dbd646200fdf1414719b1dbfdfd193697824bc35
 |ID|ST-01
 |Name|Resident with dementia
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
 |Type|Direct - interacts with the System during the activity
 |Values and motivations|(((
 - HV-02: Dignity (high)
@@ -48,7 +48,7 @@ performs → SA-01, SA-02; holds → HV-01, HV-02, HV-03, HV-04, HV-05; appears-
 |ID|ST-02
 |Name|Care home staff member
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
 |Type|Direct - receives handover requests and reviews the session record
 |Values and motivations|(((
 - HV-05: Well-being (high)
@@ -81,7 +81,7 @@ performs → SA-03; supports → SA-01, SA-02; holds → HV-01 to HV-06; appears
 |ID|ST-03
 |Name|Family members of Resident
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
 |Type|Indirect - affected by outcomes, does not interact with the System and does not receive its records
 |Values and motivations|(((
 - HV-05: Well-being (high)
@@ -112,7 +112,7 @@ holds → HV-01, HV-02, HV-03, HV-05, HV-06.
 |ID|ST-04
 |Name|Management or the Owners of the care home
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
 |Type|Indirect - decides on adopting the System, does not interact with it
 |Values and motivations|(((
 - HV-06: Attentive care (high) - staffing and workload
@@ -141,7 +141,7 @@ holds → HV-02, HV-03, HV-05, HV-06.
 |ID|ST-05
 |Name|Medical staff: GP, Nurse
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only - no stakeholders have been interviewed or observed by this project, so this is provisional. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-01 to SA-03. Values and priorities are the group's reasoning, to be checked in the planned interviews.
 |Type|Indirect - responsible for care plans and medication, does not interact with the System
 |Values and motivations|(((
 - HV-05: Well-being (high)

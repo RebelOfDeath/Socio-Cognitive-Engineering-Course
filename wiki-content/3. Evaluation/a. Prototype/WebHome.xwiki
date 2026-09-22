@@ -1,7 +1,32 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3.%20Evaluation/spaces/a.%20Prototype/pages/WebHome
-title: a. Prototype
+title: a. Artifacts
 syntax: xwiki/2.1
-version: 1.1
-hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+version: 1.3
+hash: 96020e787d67771e7f49a868ce03941db32b02f0b55e5f8eb41bf997fe0b19ba
 %%WIKI-SYNC-META%%
+= Artifact [AT-nn] =
+
+//The Prototype, Simulation, or other tangible Implementation evaluated this cycle. It instantiates a specific set of Use Cases and, through them, the Functions, Premises, and Claims those Use Cases carry, so they can be evaluated in a controlled Evaluation.//
+
+**How to use this page:** Duplicate it once per Artifact you build (usually just one per project, revised across Builds rather than replaced). Fill in every field below; write “not applicable” rather than leaving a field blank. Rename the page title to a short, human-readable name for this Artifact and record its ID (AT-01, AT-02…) in the table.
+
+|**ID**|Stable identifier, unique within this entity type (e.g. AT-01, AT-02…).
+\\[ fill in ]
+|**Name**|A short, human-readable label for this instance.
+\\[ fill in ]
+|**Status**|Not Started / In Progress / Under Review / In Evaluation / Finalized.
+\\[ fill in ]
+|**Scope**|Which Functions it implements, and which are deliberately out of scope.
+\\[ fill in ]
+|**Simulation notice**|If a Simulation substitutes for part of the interaction, what it does and does not simulate. Write “not applicable” where no Simulation is used.
+\\[ fill in ]
+|**Premises verifiable**|Which Premises this build makes verifiable, and which are assumed rather than testable with it.
+\\[ fill in ]
+|**Builds**|One row per build evaluated this cycle: a short label, and what changed from the previous build. Evaluation Reports cite a build by this label, so the Verification and Validation Summary can tell which Evidence speaks to the current version.(((
+|=Build|=What changed
+|[ e.g. Build A ]|[ fill in ]
+|[ e.g. Build B ]|[ fill in ]
+)))
+
+**Graph edges:** //instantiates → Use Case; used-by ← Evaluation Report.//

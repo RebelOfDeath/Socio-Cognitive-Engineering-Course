@@ -2,8 +2,8 @@
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/sdf/spaces/Environments/pages/WebHome
 title: 1. Situated Activities
 syntax: xwiki/2.1
-version: 14.1
-hash: 1e9600b0cd4429920e90e43fd6d7ba750aae695369e9037ba70d66014405a586
+version: 17.3
+hash: 5263493dd972283c5430d60241279c5b89a5048e918ede826f89b3ecfcf5edbc
 %%WIKI-SYNC-META%%
 = Situated Activity  [SA-01] =
 
@@ -73,11 +73,11 @@ ST-02: Care home staff member (supports and prompts when needed)
 
 - Losing track of the sequence
 
-- Not recognising an object
-
 - Performing a single step over and over again
 
 - Stopping before completing the whole activity
+
+- An unexpected medical issue happens
 )))
 
 == Graph edges ==
@@ -107,19 +107,19 @@ Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm
 
 Scope note: this activity is carried by UC02, deferred to a later cycle (see §2.3 Open item O-13).
 )))
-|Goal|Take the right medication at the right time, understanding what it is for, without needing to be reminded repeatedly
+|Goal|Take the right medication at the right time; have information about the medication and why it needs to be taken
 |Performing Actor(s)|(((
 ST-01: Resident with dementia (performs the activity)
 
 ST-02: Care home employee (prepares the medication and reminds the resident)
 )))
-|Trigger|Morning routine, after waking, washing and/or breakfast - depending on the needs of the patient/type of medication
+|Trigger|Morning routine, after waking, washing or breakfast: depending on the needs of the patient and the type of medication
 |Constituent Tasks|(((
 ~1. Recognize that it is time to take medication
 
-2. Identify which medicine/s should be taken
+2. Identify which medicine should be taken
 
-3. Go to where the medicines are stored/located 
+3. Go to where the medicines are stored
 
 4. Locate the medicine container
 
@@ -168,7 +168,7 @@ performed-by → ST-01 (supported by ST-02); illustrated-by → PS-02. Goal fiel
 |Evidence basis|(((
 Literature and group reasoning only - no residents, care staff or family have been interviewed or observed by this project, so this is provisional.
 
-Constructed from the care worker's part in PS-01 and PS-02 and from HP-02. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
+Constructed from the care home worker's part in PS-01 and PS-02 and from HP-02. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
 )))
 |Goal|Get every resident on the round through their morning care safely and in time, giving each the support they actually need, and know afterwards what each resident needed so care can continue at handover
 |Performing Actor(s)|ST-02: Care home staff member
