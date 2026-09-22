@@ -1,6 +1,7 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Menu/spaces/Menu/pages/WebHome
 title: Menu
+synced_title: Menu
 syntax: xwiki/2.1
 version: 1.1
 hash: e087264736e37a899da8734d323aa01473ce96ccee2bddbd52d1062696ae641a
@@ -30,8 +31,6 @@ hash: e087264736e37a899da8734d323aa01473ce96ccee2bddbd52d1062696ae641a
 ** [[SCE Guide>>doc:Documentation.SCE Guide.WebHome||rel="noopener noreferrer" target="_blank"]]
 ** [[SCE FAQ>>doc:Documentation.SCE FAQ.WebHome||rel="noopener noreferrer" target="_blank"]]
 ** [[SCE Glossary>>doc:Documentation.SCE Glossary.WebHome||rel="noopener noreferrer" target="_blank"]]
-*** [[General SCE Vocabulary>>doc.General SCE Vocabularly.WebHome||rel="noopener noreferrer" target="_blank"]]
-*** [[Team Design Pattern Vocabulary>>doc.Team Design Pattern Vocabularly.WebHome||rel="noopener noreferrer" target="_blank"]]
 ** [[XWiki User Guide>>https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/||rel="noopener noreferrer" target="_blank"]]
 ** [[XWiki documentation>>https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/]]
 ** [[XWiki Syntax Guide>>XWiki.XWikiSyntax||queryString="xpage=print" rel="noopener noreferrer" target="_blank"]]

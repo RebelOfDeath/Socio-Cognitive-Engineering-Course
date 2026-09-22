@@ -37,13 +37,25 @@ Each page becomes one `.xwiki` file, in a folder structure that mirrors the wiki
 ```
 %%WIKI-SYNC-META%%
 href: <REST API URL for this page>
-title: <page title>
+title: <page title — edit this to rename the page>
+synced_title: <title at last sync; don't hand-edit>
 syntax: xwiki/2.1
 version: <last-synced version, e.g. 3.1>
 hash: <sha256 of the content below, at last sync>
 %%WIKI-SYNC-META%%
 <page content in XWiki 2.1 syntax — edit this part>
 ```
+
+To **rename a page**, edit its `title:` line and `push`. `status` and `push` compare
+`title` against `synced_title`, so a retitle is picked up even though the page content
+is untouched.
+
+Renaming a *folder* is a different matter: folder names are XWiki space keys, baked
+into each page's `href:`. The REST API has no move, so `push` would write the page back
+under its old key. Renaming a space means creating pages under the new key and deleting
+the old ones — which loses page history, breaks inbound links, and leaves attachments
+behind. Use the wiki's own Page Actions → Rename (with "update links") instead, then
+`pull`.
 
 Content stays in native XWiki syntax (`**bold**`, `= Heading =`, `{{macro}}...{{/macro}}`, etc.) rather than being converted to Markdown, so nothing gets mangled on push. See [XWiki Syntax](https://xwiki.ewi.tudelft.nl/xwiki/wiki/sce2026group04/view/XWiki/XWikiSyntax) for a reference.
 
@@ -67,6 +79,20 @@ Multiple people edit this wiki, so the tool checks versions before overwriting a
 - **`pull`** won't clobber local edits: if you've changed something locally and the wiki hasn't changed, your local copy is left alone. If *both* changed, the wiki's version is saved as `<PageName>.remote.xwiki` (or `<name>.remote.<ext>` for attachments) next to yours so you can merge by hand.
 
 Deleting a local attachment file does **not** delete it from the wiki — `push` only adds/updates attachments, it never removes them.
+
+## Deleting pages
+
+`push` never deletes either: removing an `.xwiki` file locally just makes `push` ignore it, leaving the page live on the wiki. `wiki-sync/delete.py` does the removal:
+
+```
+python3 wiki-sync/delete.py --dry-run <target>    # list what would go, delete nothing
+python3 wiki-sync/delete.py <target>              # delete one page
+python3 wiki-sync/delete.py --space <target>      # delete a page and everything under it
+```
+
+A `<target>` is either a local `.xwiki` file or the REST URL from that file's `href:` line (use the URL if you already deleted the file — `git show HEAD:<path>` will show you the old one). `--space` removes children before their parent. Deletion is permanent, so every run prints the full list and asks for confirmation; pass `--yes` to skip the prompt.
+
+Afterwards, delete the matching files under `wiki-content/` and run `python3 wiki-sync/sync.py outline` to refresh `OUTLINE.md`.
 
 ## Excluding spaces
 

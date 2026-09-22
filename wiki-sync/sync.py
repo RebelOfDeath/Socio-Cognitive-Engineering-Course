@@ -251,7 +251,7 @@ def split_front_matter(text: str):
 
 def render_file(meta: dict, content: str) -> str:
     lines = [META_MARK]
-    for k in ("href", "title", "syntax", "version", "hash"):
+    for k in ("href", "title", "synced_title", "syntax", "version", "hash"):
         if k in meta:
             lines.append(f"{k}: {meta[k]}")
     lines.append(META_MARK)
@@ -335,6 +335,7 @@ def cmd_pull(cfg: Config):
             new_meta = {
                 "href": page["href"],
                 "title": page["title"],
+                "synced_title": page["title"],
                 "syntax": page["syntax"],
                 "version": page["version"],
                 "hash": new_hash,
@@ -405,7 +406,8 @@ def cmd_status(cfg: Config):
     dirty = []
     for path in iter_local_files(cfg):
         meta, content = split_front_matter(path.read_text(encoding="utf-8"))
-        if meta.get("hash") != sha256(content):
+        retitled = "synced_title" in meta and meta.get("title") != meta["synced_title"]
+        if meta.get("hash") != sha256(content) or retitled:
             dirty.append(path)
 
     for att_dir in iter_attachment_dirs(cfg):
@@ -431,10 +433,14 @@ def push_file(cfg: Config, path: Path) -> bool:
         return False
 
     local_hash = sha256(content)
-    if meta.get("hash") == local_hash:
+    content_changed = meta.get("hash") != local_hash
+
+    # A retitle leaves the content hash alone, so check the title against the
+    # wiki too -- otherwise renames never get pushed.
+    remote = get_page(cfg, meta["href"])
+    if not content_changed and meta.get("title", remote["title"]) == remote["title"]:
         return False  # nothing changed
 
-    remote = get_page(cfg, meta["href"])
     if remote["version"] != meta.get("version"):
         print(
             f"CONFLICT {path}: wiki version is {remote['version']}, "
@@ -442,9 +448,11 @@ def push_file(cfg: Config, path: Path) -> bool:
         )
         return False
 
-    new_version = put_page(cfg, meta["href"], meta.get("title", remote["title"]), content)
+    title = meta.get("title", remote["title"])
+    new_version = put_page(cfg, meta["href"], title, content)
     meta["version"] = new_version
     meta["hash"] = local_hash
+    meta["synced_title"] = title
     write_local_file(path, meta, content)
     print(f"PUSHED {path.relative_to(cfg.content_dir)} -> version {new_version}")
     return True
