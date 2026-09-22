@@ -5,18 +5,11 @@ Titles are the wiki's display names; links point at the local files,
 whose directories are named after XWiki spaces.
 
 - [0. Medim Bot](wiki-content/0.%20Introduction/WebHome.xwiki)
-  - a. Quickstart
-    - [Step 1: Use Case](wiki-content/0.%20Introduction/a.%20Quickstart/Step%201-%20Use%20Case/WebHome.xwiki)
-    - [Step 2: Functions](wiki-content/0.%20Introduction/a.%20Quickstart/Step%202-%20Functions/WebHome.xwiki)
-    - [Step 3: Effects](wiki-content/0.%20Introduction/a.%20Quickstart/Step%203-%20Effects/WebHome.xwiki)
-    - [Step 4: Claims](wiki-content/0.%20Introduction/a.%20Quickstart/Step%204-%20Claims/WebHome.xwiki)
-    - [Storyboard and Personas](wiki-content/0.%20Introduction/a.%20Quickstart/Storyboard/WebHome.xwiki)
   - [Project Information](wiki-content/0.%20Introduction/Project%20Information/WebHome.xwiki)
     - [\[Student Name\] Reflection](wiki-content/0.%20Introduction/Project%20Information/-name-/WebHome.xwiki)
 - [1. Foundation](wiki-content/Main/WebHome.xwiki)
   - [a. Operational Demands](wiki-content/Main/sdf/WebHome.xwiki)
     - [1. Situated Activities](wiki-content/Main/sdf/Environments/WebHome.xwiki)
-      - [1. Situated Activities](wiki-content/Main/sdf/Environments/WebHome.remote.xwiki)
     - [2. Stakeholders](wiki-content/Main/sdf/Stakeholders/WebHome.xwiki)
     - [3. Problem Scenario](wiki-content/Main/sdf/3.%20Problem%20Scenario/WebHome.xwiki)
   - [b. Human Values and Human Factors](wiki-content/Main/b.%20Human%20Factors/WebHome.xwiki)
