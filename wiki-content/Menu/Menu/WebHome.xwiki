@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Menu/s
 title: Menu
 synced_title: Menu
 syntax: xwiki/2.1
-version: 1.1
-hash: e087264736e37a899da8734d323aa01473ce96ccee2bddbd52d1062696ae641a
+version: 2.1
+hash: 20b74ec57fb3d971c531b55da95a3e51e9e958a89e858de101137ee6a96b1105
 %%WIKI-SYNC-META%%
 * [[~[~[image:icon:house~]~] Project home>>doc:Main.WebHome||rel="noopener noreferrer" target="_blank"]] 
 * [[Design Patterns >>doc:Design Patterns.WebHome||rel="noopener noreferrer" target="_blank"]]
