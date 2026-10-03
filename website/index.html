@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The wait is the design · SCE 2026 Group 04</title>
+  <meta name="description" content="Final design presentation, Socio-Cognitive Engineering 2026, Group 04: graduated, robot-supported tooth brushing for people with dementia in a care home.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230D1017%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%226%22 fill=%22%23F4B740%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2211%22 fill=%22none%22 stroke=%22%238F8CFF%22 stroke-width=%222.5%22 stroke-dasharray=%2218 52%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Scroll length lives here; the stage itself is fixed and scrubbed by scroll position. -->
+  <div id="scroller" aria-hidden="true"></div>
+
+  <main id="stage" aria-live="polite">
+    <svg id="art" viewBox="0 0 1920 1080" width="1920" height="1080" aria-hidden="true">
+      <defs>
+        <marker id="arrow-paper" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#F3EEE4"/>
+        </marker>
+        <marker id="arrow-alert" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#FF5E3A"/>
+        </marker>
+        <marker id="arrow-sys" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#8F8CFF"/>
+        </marker>
+        <marker id="arrow-myra" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#3FD8B0"/>
+        </marker>
+        <marker id="arrow-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#8A92A3"/>
+        </marker>
+        <radialGradient id="glow-mary">
+          <stop offset="0" stop-color="#F4B740" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#F4B740" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="glow-sys">
+          <stop offset="0" stop-color="#8F8CFF" stop-opacity=".6"/>
+          <stop offset="1" stop-color="#8F8CFF" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+    </svg>
+    <div id="layer"></div>
+    <div id="hud"></div>
+  </main>
+
+  <div id="index" hidden></div>
+  <noscript><p class="noscript">This presentation needs JavaScript.</p></noscript>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/lib.js"></script>
+  <script src="js/scenes-a.js"></script>
+  <script src="js/scenes-b.js"></script>
+  <script src="js/scenes-c.js"></script>
+  <script src="js/scenes-d.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

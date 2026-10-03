@@ -3,11 +3,20 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/s
 title: c1. Technology Options
 synced_title: c1. Technology Options
 syntax: xwiki/2.1
-version: 3.1
-hash: 23046e193782781661d4d6e9d52d5b341e06bc2db360da3af3a3aa1abdccfb13
+version: 4.1
+hash: 06e32b9b871663ccf580f6cdff2e540981855466ca03b0aa522b91aa863d25d3
 %%WIKI-SYNC-META%%
 {{box title="Status of this page"}}
-Selection for UC01 (tooth brushing), the activity chosen as this cycle's spine (§2.3 Open item O-13). The System combines three selected options: Pepper for interaction and prompting (TECH-01), sensors on the tooth-brushing items for tracking the activity (TECH-02), and a care-staff notification channel (TECH-03). Three options are rejected or deferred and kept here as Foundation knowledge.
+Selection for UC01 (tooth brushing), the activity chosen as this cycle's spine (§2.3 Open item O-13). The System combines three selected options: Pepper for interaction and prompting (TECH-01), sensors on the tooth-brushing items for tracking the activity (TECH-02), and a care-staff notification channel (TECH-03). Five options are rejected or deferred and kept here as Foundation knowledge.
+
+Brushing quality (§2.3 Open item O-23). The midterm feedback asked how well the teeth were actually brushed. Three ways of sensing it were compared:
+
+|=Option|=What it can tell about brushing|=What it observes|=Decision
+|Brushing time from the toothbrush motion sensor (TECH-02)|How long the brush was in brushing motion; not which teeth|Brush motion only|Selected. Used within the session only (VT-08).
+|Position-sensing connected toothbrush (TECH-07)|Which region of the mouth was brushed, and for how long|Brush motion and orientation, per mouth region|Deferred until EM-02 shows whether brushing time is enough.
+|Smart mirror or camera (TECH-08)|Coverage and technique|Video of the resident's face during personal care|Rejected. Fails UC01-F1-CL7 by design.
+
+None of these judges whether the teeth are clean. That stays with people: M-08 during evaluation, and the home's oral-care routines otherwise.
 
 Pepper is the project's robot platform. The group's own evidence (HFC-05, §2.3 Open items O-10 and O-11) favours a less humanlike, tool-like form for personal care, so choosing Pepper creates a tension. It is recorded below with mitigations, and tested by UC01-F2-CL5 and UC01-F1-CL7, rather than argued away.
 
@@ -16,7 +25,7 @@ No hands-on testing has been done yet. Hardware details come from vendor documen
 
 = Pepper humanoid robot (selected)  [TECH-01] =
 
-//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
 
 **Report Format:** §1.3 Technology
 
@@ -58,7 +67,7 @@ enables → F2, F3 (resident-facing part); addresses → Goal (SA-01), HV-04, HV
 
 = Sensors on the tooth-brushing items (selected)  [TECH-02] =
 
-//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
 
 **Report Format:** §1.3 Technology
 
@@ -70,13 +79,13 @@ enables → F2, F3 (resident-facing part); addresses → Goal (SA-01), HV-04, HV
 |Status|In Progress
 |Evidence basis|Group reasoning. Connected toothbrushes with built-in motion sensors are commercially available; weight and flow sensors are standard, off-the-shelf components. COACH (Mihailidis et al., 2008) tracked a comparable stepwise ADL, but with a camera (TECH-04).
 |Category|Sensing / AI-ICT
-|Capabilities|Tracks the SA-01 sequence from the items themselves rather than the person: a motion sensor in or clipped to the toothbrush (picked up, brushing motion, put down), a weight pad under the toothbrush cup and toothpaste (lifted, returned), and a flow sensor on the tap (rinsing). From these, F1 infers the current step and detects a stall when no expected change follows within the configured interval. Requires nothing from the resident, and observes the activity, not the resident.
+|Capabilities|Tracks the SA-01 sequence from the items themselves rather than the person: a motion sensor in or clipped to the toothbrush (picked up, brushing motion, put down), a weight pad under the toothbrush cup and toothpaste (lifted, returned), and a flow sensor on the tap (rinsing). From these, F1 infers the current step and detects a stall when no expected change follows within the configured interval. The toothbrush sensor also gives the total time spent brushing, which F2 uses within the session to offer once to keep brushing (§2.3 Escalation specification). Requires nothing from the resident, and observes the activity, not the resident.
 |Limitations|(((
 - It cannot sense steps that do not involve a sensed item - recognising that it is time (step 1) and walking to the bathroom (step 2). Initiation can only be inferred from the time window running down with no toothbrush pick-up.
 
 - It cannot see distress or a collapse. Distress is only detected if the resident says so or touches Pepper. A possible emergency is inferred when there is no sensor change and no response to prompts for a configured time, and is then treated as safety-critical (F3) - the same rule the manual's example uses for non-response.
 
-- It cannot tell whether all teeth were brushed well, only that brushing motion occurred.
+- It cannot tell whether all teeth were brushed well, only that brushing motion occurred and for how long. Coverage would need TECH-07; plaque is measured by people (M-08).
 
 - Sensors can be moved, get wet, or be confused by a staff member handling the items.
 )))
@@ -88,11 +97,11 @@ enables → F2, F3 (resident-facing part); addresses → Goal (SA-01), HV-04, HV
 
 == Graph edges ==
 
-enables → F1, F4 (session data); addresses → Goal (SA-01), HV-03; strains → VT-05.
+enables → F1, F2 (early-stop rule), F4 (session data); addresses → Goal (SA-01), HV-03; strains → VT-05.
 
 = Care-staff notification and session record (selected)  [TECH-03] =
 
-//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
 
 **Report Format:** §1.3 Technology
 
@@ -104,21 +113,21 @@ enables → F1, F4 (session data); addresses → Goal (SA-01), HV-03; strains �
 |Status|In Progress
 |Evidence basis|Group reasoning; care homes commonly already have a nurse-call system and work phones for staff. HP-02 requires alerts to be rare and meaningful.
 |Category|AI/ICT
-|Capabilities|Sends a handover request to the care worker's work phone - activity, step reached, reason (F3) - and stores the three-item session record (F4) on a local server for the care record.
-|Limitations|Integration with the home's existing nurse-call system depends on the vendor and is probably not feasible in this project, so the prototype uses a separate phone app. A second channel could add to staff workload if it alerts too often.
+|Capabilities|Sends a handover request to the care worker's work phone - room, activity, step reached, reason (F3) - and stores the three-item session record (F4) on a local server for the care record.
+|Limitations|Integration with the home's existing nurse-call system depends on the vendor and is probably not feasible in this project, so the prototype uses a separate phone app. A second channel could add to staff workload if it alerts too often, and frequent low-value alerts are what HFC-06 (alert fatigue) warns against.
 |Maturity and feasibility|High - standard messaging and storage.
-|Failure and fallback behaviour|If a handover request is not acknowledged within a configured time, it is re-sent and escalated to a second care worker; failures are logged. If the record cannot be stored, the session is flagged as unrecorded rather than silently lost.
+|Failure and fallback behaviour|Alerting follows the handover rules in the §2.3 Escalation specification: four message types (routine, priority, urgent, information), each with its own acknowledgement time, one re-send, and escalation to a second care worker; urgent messages also go through the nurse-call system where it can be connected. Failures are logged. If the record cannot be stored, the session is flagged as unrecorded rather than silently lost.
 |Benefits|Serves HV-06 Attentive care (the care worker is only called when needed) and HV-05 Well-being (help arrives when prompting fails or there is a safety risk).
 |Drawbacks|Strains VT-02: the session record is data about a personal-care activity, so what it holds is limited to three items (UC01-F4-PR4) and it is not shared with ST-03.
 |Selected or rejected|Selected.
 
 == Graph edges ==
 
-enables → F3, F4; addresses → HV-05, HV-06; strains → VT-02.
+enables → F3, F4; addresses → HV-05, HV-06; strains → VT-02; alerting policy grounded on → HFC-06.
 
 = Camera-based activity recognition (rejected)  [TECH-04] =
 
-//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
 
 **Report Format:** §1.3 Technology
 
@@ -144,7 +153,7 @@ enables → F3, F4; addresses → HV-05, HV-06; strains → VT-02.
 
 = Tool-like sink-side prompting device (rejected)  [TECH-05] =
 
-//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
 
 **Report Format:** §1.3 Technology
 
@@ -154,23 +163,23 @@ enables → F3, F4; addresses → HV-05, HV-06; strains → VT-02.
 |ID|TECH-05
 |Name|Tool-like sink-side prompting device (rejected)
 |Status|In Progress
-|Evidence basis|HFC-05: older adults prefer mechanical-looking, tool-like devices that keep emotional distance in private contexts (Pemberton et al., 2026, reporting Prakash & Rogers, 2015). COACH delivered prompts through a screen and speaker at the sink (Mihailidis et al., 2008).
+|Evidence basis|HFC-05: older adults prefer tool-like framings that keep emotional distance (Pemberton et al., 2026). For personal care specifically the evidence is mixed: Prakash & Rogers (2015) found a robotic face rated more likeable than a human one, but not more trusted or more useful, and interviewees were split. COACH delivered prompts through a screen and speaker at the sink (Mihailidis et al., 2008).
 |Category|AI/ICT
 |Capabilities|A small speaker, light and screen mounted by the sink that gives the same F2 prompts, without a humanoid body.
 |Limitations|No social presence; cannot be the course's robot platform.
 |Maturity and feasibility|High - simple hardware.
 |Failure and fallback behaviour|Same as TECH-01.
-|Benefits|Best supported by the evidence for VT-04 (Dignity) and VT-02 (Privacy): less risk of being read as a supervisor or of talking down to the resident. Fits inside a bathroom.
+|Benefits|Would serve HV-02 Dignity and HV-03 Privacy. Best supported by the evidence for VT-04 (Dignity) and VT-02 (Privacy): less risk of being read as a supervisor or of talking down to the resident. Fits inside a bathroom.
 |Drawbacks|Does not use the project's robot platform.
 |Selected or rejected|Rejected - project constraint: the project uses Pepper. Retained because the evidence favours it for personal care, and it is the fallback if UC01-F2-CL5 or UC01-F1-CL7 hold for Pepper.
 
 == Graph edges ==
 
-(no outgoing edges to Specification - rejected option, retained as Foundation knowledge).
+(no outgoing edges to Specification: rejected option, retained as Foundation knowledge); would ease → VT-04, VT-02; fallback for → TECH-01 if UC01-F2-CL5 or UC01-F1-CL7 hold, or if O-21 fails.
 
 = Medication tray or dispenser with sensors (deferred)  [TECH-06] =
 
-//An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
 
 **Report Format:** §1.3 Technology
 
@@ -193,3 +202,61 @@ enables → F3, F4; addresses → HV-05, HV-06; strains → VT-02.
 == Graph edges ==
 
 (none this cycle - deferred with UC02).
+
+= Position-sensing connected toothbrush (deferred)  [TECH-07] =
+
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-07
+|Name|Position-sensing connected toothbrush (deferred)
+|Status|In Progress
+|Evidence basis|Group knowledge of commercially available connected electric toothbrushes, which report brushing coverage in a companion app. Vendor claims only; no accuracy study has been read, and none with older adults or people with dementia is known to the group (§2.3 Open item O-23).
+|Category|Sensing / AI-ICT
+|Capabilities|Estimates from motion and orientation sensors which region of the mouth is being brushed, and for how long, so it could report coverage without any image.
+|Limitations|(((
+- Requires an electric toothbrush. Replacing a resident's familiar manual brush may itself disrupt a routine they still manage (group reasoning).
+
+- Region estimates assume a fairly standard brushing posture and grip, which may not hold for residents with dementia.
+
+- Consumer apps send data to the vendor's cloud. That link would have to be cut, and the data read locally.
+)))
+|Maturity and feasibility|Commercially available, but reading its data outside the vendor app is uncertain. Not needed for F1, which only needs brushing motion.
+|Failure and fallback behaviour|Same as TECH-02.
+|Benefits|Would serve HV-05 by showing whether all of the mouth was brushed, which brushing time cannot.
+|Drawbacks|Strains VT-08: it produces a per-region record of how a personal-care activity was performed. Coverage feedback would invite more specific prompts ("the left side"), which raises the infantilisation risk tested by UC01-F2-CL5.
+|Selected or rejected|Deferred. Revisit if UC01-F3-CL11 holds or UC01-F2-CL10 fails, that is, if brushing time turns out not to be enough.
+
+== Graph edges ==
+
+(no outgoing edges to Specification this cycle, deferred); would strain → VT-08.
+
+= Smart mirror or camera-based brushing analysis (rejected)  [TECH-08] =
+
+//An available or emerging capability considered for the System, including options considered and rejected, so the rationale is a selection and not a justification.//
+
+**Report Format:** §1.3 Technology
+
+== Fields ==
+
+|=Field|=Description
+|ID|TECH-08
+|Name|Smart mirror or camera-based brushing analysis (rejected)
+|Status|In Progress
+|Evidence basis|Group knowledge that research prototypes and consumer products of this kind exist; none has been reviewed. Rejected on the same grounds as TECH-04, so the comparison does not depend on their accuracy.
+|Category|Sensing / AI-ICT
+|Capabilities|A camera in or behind the bathroom mirror tracks the brush against the face, giving coverage and technique.
+|Limitations|Continuous video of the resident's face during a personal-care activity in their bathroom.
+|Maturity and feasibility|Prototypes and consumer products exist.
+|Failure and fallback behaviour|Not applicable, rejected.
+|Benefits|Would serve HV-05 Well-being, with the most complete picture of how well the resident brushed.
+|Drawbacks|Violates HV-03 Privacy and strains VT-02 and VT-08 more than any other brushing-quality option. It is the continuous monitoring HFC-02 describes, and it would make UC01-F1-CL7 fail by design. It also conflicts with covering Pepper's cameras: the System would hide one camera and add another.
+|Selected or rejected|Rejected. Retained because it is the option the midterm feedback points toward, and the reason brushing quality is measured by people (M-08) instead.
+
+== Graph edges ==
+
+(no outgoing edges to Specification: rejected option, retained as Foundation knowledge); would strain → VT-02, VT-08.

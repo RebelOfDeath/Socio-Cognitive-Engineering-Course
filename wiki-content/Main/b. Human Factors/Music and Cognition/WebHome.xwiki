@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/s
 title: b3. Human Factors Concepts
 synced_title: b3. Human Factors Concepts
 syntax: xwiki/2.1
-version: 5.1
-hash: fbbeb0ca38197edf7f11059f656d76ab09e923f646d9b7c67caa6c9a36dac5b1
+version: 6.1
+hash: 8cb1715b8c53f09d479bc979f3a09cd17cad376ac2ef868562e3162c7bd9d365
 %%WIKI-SYNC-META%%
 = Perceived Autonomy and Technology Acceptance  [HFC-01] =
 
@@ -27,7 +27,7 @@ Peek et al. (2014), a systematic review of factors influencing acceptance of tec
 |Human factor addressed|Perceived autonomy; motivation to engage with and continue using assistive technology.
 |Proposed mechanism|When assistance is provided automatically or without giving the resident an opportunity to act, the interaction may be experienced as controlling. This can reduce the resident's sense of autonomy and willingness to engage with the support. Giving the resident a meaningful opportunity to initiate an activity, choose, or respond before assistance is increased preserves perceived control and may increase acceptance of the support.
 |Source|(((
-Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
+Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78. doi:10.1037/0003-066X.55.1.68.
 
 Peek, S. T. M., Wouters, E. J. M., van Hoof, J., Luijkx, K. G., Boeije, H. R., & Vrijhoef, H. J. M. (2014). Factors influencing acceptance of technology for aging in place: a systematic review. //International Journal of Medical Informatics//, 83(4), 235-248. PMID 24529817.
 
@@ -62,7 +62,7 @@ Niemeijer et al. (2010) is a systematic review of 79 papers on the ethical and p
 |Human factor addressed|Perceived surveillance; privacy perception; technology acceptance.
 |Proposed mechanism|Increasing the amount or visibility of monitoring can provide caregivers or technology with more information about whether assistance is needed. However, when the resident becomes aware of being continuously observed or believes that more personal information is being collected than necessary, the support may be experienced as surveillance. This may reduce perceived privacy and willingness to accept the system.
 |Source|(((
-Niemeijer, A. R., Frederiks, B. J. M., Riphagen, I. I., Legemaate, J., Eefsting, J. A., & Hertogh, C. M. P. M. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//. PMID 20199699.
+Niemeijer, A. R., Frederiks, B. J. M., Riphagen, I. I., Legemaate, J., Eefsting, J. A., & Hertogh, C. M. P. M. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//, 22(7), 1129-1142. doi:10.1017/S1041610210000037. PMID 20199699.
 
 Niemeijer, A. R., Depla, M. F. I. A., Frederiks, B. J. M., & Hertogh, C. M. P. M. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320. PMID 24913545. - the key finding for us: surveillance technology can support autonomy, but only when embedded in a person-centred approach.
 
@@ -97,7 +97,7 @@ Caveat on direction. This concept says assistance should match ability, but it d
 |Source|(((
 Rogers, J. C., Holm, M. B., Burgio, L. D., Granieri, E., Hsu, C., Hardin, J. M., & McDowell, B. J. (1999). Improving morning care routines of nursing home residents with dementia. //Journal of the American Geriatrics Society//, 47(9), 1049-1057. PMID 10484245.
 
-de Werd, M. M. E., Boelen, D., Olde Rikkert, M. G. M., & Kessels, R. P. C. (2013). Errorless learning of everyday tasks in people with dementia. //Clinical Interventions in Aging//. PMID 24049443.
+de Werd, M. M. E., Boelen, D., Olde Rikkert, M. G. M., & Kessels, R. P. C. (2013). Errorless learning of everyday tasks in people with dementia. //Clinical Interventions in Aging//, 8, 1177-1190. doi:10.2147/CIA.S46809. PMID 24049443.
 
 Voigt-Radloff, S., de Werd, M. M. E., Leonhart, R., Boelen, D. H. E., Olde Rikkert, M. G. M., Fliessbach, K., Klöppel, S., Heimbach, B., Fellgiebel, A., Dodel, R., Eschweiler, G. W., Hausner, L., Kessels, R. P. C., & Hüll, M. (2017). Structured relearning of activities of daily living in dementia: the randomized controlled REDALI-DEM trial on errorless learning. //Alzheimer's Research & Therapy//, 9, 22. doi:10.1186/s13195-017-0247-9. - participants lived at home rather than in care homes, so this transfers to our population only cautiously.
 
@@ -151,17 +151,52 @@ M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney e
 |Evidence basis|Literature only. No interviews or observations have been carried out by this project. Pemberton et al. (2026) is a qualitative interview study (n = 13); Furlanis et al. (2026) is explicitly conceptual. Both are summarised in §2.3 Open item O-10.
 |Concept statement|The physical form and behaviour of an assistive robot shape the role older adults assign to it. A humanoid, expressive robot tends to be read as a supervisor ("Warden"), while a more mechanical, tool-like robot is read as an aid; and a robot's gaze, timing and tone can come across as condescending even when meant to be gentle.
 |Human factor addressed|Perceived role of the robot; perceived surveillance; experienced dignity; technology acceptance.
-|Proposed mechanism|People interpret robots as social actors through posture, timing, tone and spatial behaviour. A human-like body invites human-like role attributions, and oversight by a human-like figure without a relationship is experienced as being watched. Exaggerated slowness or gentleness toward older adults is read as condescension. A tool-like framing and restrained expressivity preserve emotional distance, which older adults prefer in private contexts such as bathing (Prakash & Rogers, 2015, as reported in Pemberton et al., 2026).
+|Proposed mechanism|People interpret robots as social actors through posture, timing, tone and spatial behaviour. A human-like body invites human-like role attributions, and oversight by a human-like figure without a relationship is experienced as being watched. Exaggerated slowness or gentleness toward older adults is read as condescension. A tool-like framing and restrained expressivity preserve emotional distance, which Pemberton et al. (2026) report older adults prefer in private contexts. The original source for the private-context point is mixed: for a personal-care task, Prakash & Rogers (2015) found a robotic face rated more likeable than a human face, but not more trusted or more useful, and their interviewees were split between wanting a human-looking carer and an impersonal one. Older adults also call robots "patronizing" when they are toy-like or imitate human companionship (Coghlan et al., 2021).
 |Source|(((
 Pemberton, L., Mehandjiev, N., & Carter, M. (2026). The Tool, the Pet, the Carer & the Warden: A Conceptual Framework of How Older Adults Perceive Socially Assistive Robots. //Information Systems Frontiers//, 28, 1039-1059. doi:10.1007/s10796-026-10699-2.
 
 Furlanis, T., Brščić, D., & Kanda, T. (2026). Robotic Bias and Its Dimensions. //Proceedings of HRI '26//, 562-571. doi:10.1145/3757279.3785613.
 
-Lee, H. R., Tan, H., & Šabanović, S. (2016). That robot is not for me: Addressing stereotypes of aging in assistive robot design. //RO-MAN '16//, 708-713. doi:10.1109/ROMAN.2016.7745148. - cited via Furlanis et al.; not yet read.
+Lee, H. R., Tan, H., & Šabanović, S. (2016). That robot is not for me: Addressing stereotypes of aging in assistive robot design. //RO-MAN '16//, 312-317. doi:10.1109/ROMAN.2016.7745148. Read: interviews with 7 independently living older adults (57 to 72), who rejected robots designed around a disability stereotype of ageing.
+
+Prakash, A., & Rogers, W. A. (2015). Why some humanoid faces are perceived more positively than others: effects of human-likeness and task. //International Journal of Social Robotics//, 7(2), 309-331. doi:10.1007/s12369-014-0269-4.
+
+Coghlan, S., Waycott, J., Lazar, A., & Barbosa Neves, B. (2021). Dignity, autonomy, and style of company: dimensions older adults consider for robot companions. //Proceedings of the ACM on Human-Computer Interaction//, 5(CSCW1). doi:10.1145/3449178.
 )))
 |Conditions and population of validity|Pemberton et al. studied cognitively intact older adults ageing in place, in a VR home setup - not care-home residents with dementia. Whether residents with moderate dementia attribute roles to a robot in the same way is uncertain and must not be assumed. Furlanis et al. provide a framework, not measurements.
 |Predicted Effect type|Perceived surveillance; experienced infantilisation; acceptance or rejection of the robot, depending on form and behaviour.
 |Associated Measures|M-06 (perceived privacy and monitoring - including descriptions of the robot as watching or supervising); M-04 (resistance during the activity).
+
+= Alert fatigue  [HFC-06] =
+
+//A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-06
+|Name|Alert fatigue
+|Status|In Progress
+|Evidence basis|(((
+Literature only. No interviews or observations have been carried out by this project. Added to close §2.3 Open item O-22.
+
+Cvach (2012) has been read. It is an integrative review of 72 articles on physiologic monitor alarms published from 2000 to 2011, appraised with the Johns Hopkins Nursing Evidence-Based Practice model. It reports that 80% to 99% of monitor alarms are false or clinically insignificant, and that a single patient can generate up to 700 alarms a day. Citing Bliss and colleagues, it describes nurses matching their response rate to how reliable they believe an alarm source to be: a source perceived as 10% reliable gets a response about 10% of the time. Response also worsens as workload and task complexity rise. Its recommendations include sending alarms only at actionable limits, giving them high, medium and low priorities, and routing them through notification systems that can delay and escalate. Cvach also notes that the evidence is mostly observational and single-site, with few randomised trials.
+
+Sendelbach & Funk (2013): only the abstract has been read, because the full text could not be obtained. It defines alarm fatigue as sensory overload from excessive alarms, which leads to desensitisation and missed alarms, and reports that 72% to 99% of clinical alarms are false. Cite it for the definition only.
+)))
+|Concept statement|When staff receive many alerts, and many of them need no action, they become desensitised: they respond more slowly, ignore alerts or switch them off, and so may miss the ones that matter.
+|Human factor addressed|Attention and vigilance of care staff; workload; trust in an alerting system.
+|Proposed mechanism|Each alert interrupts the care worker and has to be judged. If most alerts turn out to need nothing, responding stops paying off, and the care worker learns to treat alerts from that source as low value. Response slows for all of them, including the rare urgent one. Fewer alerts, clear priorities, and alerts sent only when the recipient can and should act keep each alert informative. Cvach (2012) reports the learning step as nurses matching their response rate to the perceived reliability of the alert source.
+|Source|(((
+Cvach, M. (2012). Monitor alarm fatigue: an integrative review. //Biomedical Instrumentation & Technology//, 46(4), 268-277. doi:10.2345/0899-8205-46.4.268. PMID 22839984.
+
+Sendelbach, S., & Funk, M. (2013). Alarm fatigue: a patient safety concern. //AACN Advanced Critical Care//, 24(4), 378-386. doi:10.1097/NCI.0b013e3182a903f9. PMID 24153215.
+)))
+|Conditions and population of validity|Established for nurses in hospital and critical-care monitoring, where alarm volumes are far higher than one System per resident would produce (up to 700 a patient a day; Cvach, 2012). Transfer to care-home staff on a morning round is plausible but unconfirmed. HP-02's need for calls to be rare and meaningful is the same concern, stated by the group without data.
+|Predicted Effect type|Slower acknowledgement of handover requests; care workers ignoring or muting the notification channel; time saved on prompting being spent on notifications instead.
+|Associated Measures|M-07 (care-worker load, extended to count F3 notifications and those judged unnecessary); M-01 (handover timing and re-escalation in EM-01).
 
 == Graph edges ==
 
@@ -169,8 +204,10 @@ HFC-01: grounds → UC01-F2-CL3; explains → HV-01; associated-measure → M-05
 
 HFC-02: grounds → UC01-F1-CL7; explains → HV-03; associated-measure → M-06.
 
-HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL4, UC01-F3-CL6, UC01-F3-CL9; explains → HV-04, HV-05; associated-measure → M-02, M-03, M-04.
+HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL4, UC01-F3-CL6, UC01-F3-CL9, UC01-F2-CL10; explains → HV-04, HV-05; associated-measure → M-02, M-03, M-04.
 
 HFC-04: grounds → UC01-F2-CL5; explains → HV-02; associated-measure → M-04, M-06.
 
 HFC-05: grounds → UC01-F2-CL5, UC01-F1-CL7; explains → HV-02, HV-03; informs → TECH-01 selection rationale; associated-measure → M-06, M-04.
+
+HFC-06: grounds → UC01 handover rules (F3), TECH-03 alerting policy, UC01-F3-CL9; explains → HV-06; associated-measure → M-07, M-01.

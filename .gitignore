@@ -4,3 +4,8 @@ __pycache__/
 
 # Local copies of the course manuals and cited papers, not ours to redistribute
 tmp-pdfs/
+
+# Local editor/OS/tool files
+.DS_Store
+.idea/
+.acadus/

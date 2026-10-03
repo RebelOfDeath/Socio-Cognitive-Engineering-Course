@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20S
 title: c. Team Design Pattern
 synced_title: c. Team Design Pattern
 syntax: xwiki/2.1
-version: 2.1
-hash: 1cd4c4aa73d4fba31eb83be9f104ca8ad9e738207b770f04828049b6705e88f6
+version: 3.1
+hash: a78ca4c5533885df582f88dbc991d6a38abdc72dbdbd73f62c67df54c7d4b7c8
 %%WIKI-SYNC-META%%
 = Graduated activity support with human handover [TDP-01] =
 
@@ -57,12 +57,12 @@ If F1 cannot reliably determine progress, the System reports a degraded state an
 
 1. F1 through TECH-02: infer the current activity step and whether progress has stalled, limited to item events from this activity.
 2. F2 through TECH-01: provide graduated assistance according to IDP-01.
-3. F3 through TECH-03: request care-worker assistance when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed, passing only activity, step reached and reason.
+3. F3 through TECH-03: request care-worker assistance when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed, passing only room, activity, step reached and reason.
 4. F4 through TECH-03: store completion, highest prompt level, and whether a care worker was called; retain no step-by-step trace.
 )))
 |Consequences: benefits|Gives the resident a chance to complete steps independently; may resolve a stall without immediately requiring a care worker; provides a route to human assistance when System support is insufficient; may direct care-worker time toward residents who need it; provides a minimal handover record. These are expected effects, not observed outcomes (UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6, UC01-F3-CL9, UC01-F4-CL8).
 |Consequences: risks|(((
-An incorrect item-sensor inference may interrupt a resident who was progressing. Waiting too long or escalating the wrong prompt may increase frustration (UC01-F2-CL4). Pepper's humanoid presence and visible cameras may still feel supervisory even though its cameras are disabled (UC01-F1-CL7). A separate phone channel can create alert burden, and its policy currently lacks an alert-fatigue Human Factors Concept (O-22). TECH-02 cannot directly see distress or danger. The premise thresholds are unset (O-20), and Pepper may not fit safely at a bathroom doorway (O-21).
+An incorrect item-sensor inference may interrupt a resident who was progressing. Waiting too long or escalating the wrong prompt may increase frustration (UC01-F2-CL4). Pepper's humanoid presence, and camera lenses that are covered but still visible, may feel supervisory (UC01-F1-CL7). A separate phone channel can create alert burden; the handover rules in UC01's Escalation specification limit it, grounded on HFC-06 (alert fatigue). Because the care worker is absent for most of the routine, brushing quality may fall even when steps are completed (UC01-F3-CL11). TECH-02 cannot directly see distress or danger. The escalation values and premise thresholds are proposals awaiting the EM-01 pilot (O-20), and Pepper may not fit safely at a bathroom doorway (O-21).
 )))
 |Related Patterns|IDP-01 Respectful graduated prompting shapes F2's interaction. The existing Human-Robot Group Game Management pattern concerns a different activity and does not validate this allocation.
 |Connection to Claims|Supports the design rationale for UC01-F2-CL1 (independent steps), UC01-F2-CL2 (lower assistance level), UC01-F3-CL6 (completion after handover), UC01-F3-CL9 (care-worker prompting time), and UC01-F4-CL8 (useful but proportionate record). UC01-F2-CL4 tests an adverse effect of waiting; UC01-F1-CL7 tests whether the tracking allocation preserves privacy as intended.
@@ -71,15 +71,15 @@ An incorrect item-sensor inference may interrupt a resident who was progressing.
 == Open items to check or research ==
 
 |=Item|=What is needed|=Why it matters
-|Premise thresholds (O-20)|Pilot EM-01 at a mock sink, then set acceptable step-identification accuracy, stall-detection latency, prompt-stop latency and handover latency with care-worker input.|Until these limits exist, responsibility has been allocated to Functions whose dependable operating range is unknown.
+|Premise thresholds (O-20)|Proposed values are now in UC01's Escalation specification and Premises. Pilot EM-01 at a mock sink and review the values with care workers.|Until the pilot confirms them, responsibility has been allocated to Functions whose dependable operating range is only estimated.
 |Pepper placement (O-21)|Test whether Pepper can stand within earshot and sight of the sink without entering the wet area or blocking the resident. Use TECH-05 if it cannot.|May change which device performs F2 and the resident-facing part of F3.
-|Alert policy (O-22)|Add and source HFC-06 on alert fatigue; define acknowledgement, repeat and escalation rules with care workers.|Needed to justify TECH-03 and to avoid moving workload from prompting to notification management.
+|Alert policy (O-22)|HFC-06 and the handover rules are added, and HFC-06's sources are verified (O-24). Review acknowledgement times with care workers.|Needed to justify TECH-03 and to avoid moving workload from prompting to notification management.
 |Research: transfer and recurrence|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors; complete UC02 far enough to compare actor responsibilities.|Tests the evidence transfer, acceptance assumptions and whether this is reusable beyond UC01.
 |Stakeholder validation|Review the allocation, fallback and record with residents and care staff if ethically feasible; otherwise retain the explicit literature-only limitation.|HP-01, HP-02, SA-03 and the alert assumptions are provisional.
 
 == Graph edges ==
 
-allocates → SA-01 tasks to ST-01 and SA-03 tasks to ST-02, F1-F4 to System; supports → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6, UC01-F3-CL9, UC01-F4-CL8; tested against → UC01-F2-CL4, UC01-F1-CL7.
+allocates → SA-01 tasks to ST-01 and SA-03 tasks to ST-02, F1-F4 to System; supports → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6, UC01-F3-CL9, UC01-F4-CL8; tested against → UC01-F2-CL4, UC01-F1-CL7, UC01-F3-CL11.
 
 == References ==
 

@@ -20,6 +20,7 @@ whose directories are named after XWiki spaces.
     - [b5. Evaluation Methods](wiki-content/Main/b.%20Human%20Factors/Measuring%20Instruments/WebHome.xwiki)
   - [c. Technology](wiki-content/Main/c.%20Technology/WebHome.xwiki)
     - [c1. Technology Options](wiki-content/Main/c.%20Technology/Music%20Management/WebHome.xwiki)
+  - [d. Foundation Coherence](wiki-content/Main/d.%20Foundation%20Coherence/WebHome.xwiki)
 - [2. Specification](wiki-content/2.%20Specification/WebHome.xwiki)
   - [a1. Design Scenario](wiki-content/2.%20Specification/b.%20Design%20Scenario/WebHome.xwiki)
   - [a2. Personas and Profiles](wiki-content/2.%20Specification/a2.%20Personas/WebHome.xwiki)

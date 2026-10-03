@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/s
 title: b2. Value Tensions
 synced_title: b2. Value Tensions
 syntax: xwiki/2.1
-version: 5.1
-hash: 9b4b0457e4f16e0b0addf4075dadc08f99bc1206865a51310606d99ca31c486b
+version: 6.1
+hash: 55360c40eac13b0cb857d7b6184773c175395c454f75e057b55be059c14c3be5
 %%WIKI-SYNC-META%%
 = Autonomy vs Well-being  [VT-01] =
 
@@ -165,7 +165,7 @@ HV-05 Well-being: pulls toward the medication being taken on time, as prescribed
 )))
 |Domain area|time-criticality
 |Nature of the conflict|The longer the resident is left to take medication in their own time, the greater the risk it is taken late or not at all; the more firmly timing is enforced, the less the resident decides.
-|Non-negotiable floor|For time-critical medication, yes: PS-02 records that the care home requires a care worker to be present for residents on critical medication such as heart medication, so those residents are excluded. TODO: cite the care home's protocol or the applicable guideline. For the remaining medication, none identified.
+|Non-negotiable floor|For time-critical medication, yes: PS-02 records that the care home requires a care worker to be present for residents on critical medication such as heart medication, so those residents are excluded. Ramos et al. (2026), a scoping review of 33 studies on medication management in Alzheimer's disease, report polypharmacy, potentially inappropriate medications and transitions of care as recurring safety risks, which is consistent with such a floor. It does not supply the floor itself: its regulatory discussion maps onto US Joint Commission hospital goals, not Dutch care-home rules. It also reports that technology-based supports such as automated dispensers and apps have mostly been evaluated in small usability or pilot studies, which matters for TECH-06. TODO: cite the care home's protocol or the applicable Dutch guideline. For the remaining medication, none identified.
 |Current resolution|Deferred with UC02 (later cycle). DS-02 sketches a resolution: the resident may take the medication when ready, with a gentle reminder after a few minutes and a care worker notified if reminders go unanswered.
 |Alternatives considered|Not yet considered - to be done when UC02 is specified.
 |Status of the tension|Open, deferred to UC02.
@@ -197,13 +197,44 @@ Care worker prompts as now: not preferred, because it is the SA-03 breakdown thi
 
 System completes the activity quickly for the resident: not possible for tooth brushing, and would sacrifice competence anyway.
 )))
-|Status of the tension|Open. Tested by UC01-F3-CL9, which asks whether care-worker time actually falls (M-07).
+|Status of the tension|Open. Tested by UC01-F3-CL9, which asks whether care-worker time actually falls (M-07), and by UC01-F3-CL11, which asks whether brushing quality falls while the care worker is away.
+
+= Privacy vs Well-being (brushing quality)  [VT-08] =
+
+//Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-08
+|Name|Privacy vs Well-being (brushing quality)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Raised by the midterm feedback, which asked how well the teeth were actually brushed.
+|Values in tension|(((
+HV-03 Privacy: pulls toward the System knowing only where the resident is in the sequence, and keeping nothing about how they brushed their teeth, as HP-01 asks.
+
+HV-05 Well-being: pulls toward knowing whether the teeth were actually cleaned, since oral hygiene is the Goal of SA-01 and step completion alone does not show it.
+)))
+|Domain area|privacy and health
+|Nature of the conflict|The more precisely the System measures how well a resident brushes, the more closely it observes a personal-care activity. A camera or smart mirror would show coverage best, but that is the being-watched experience UC01-F1-CL7 says must not happen, and the reason TECH-04 was rejected. A position-sensing toothbrush (TECH-07) gives coverage without images, but produces a record of how each part of the mouth was brushed. Brushing time is the coarsest signal and reveals least, and it is only a proxy for plaque.
+|Non-negotiable floor|None identified.
+|Current resolution|The System uses brushing time only, within the session, to decide whether to offer once that the resident keep brushing (F2 early-stop rule, §2.3 Escalation specification), and stores none of it: F4 keeps its three items. Whether the teeth are actually clean is judged by people. During evaluation a trained assessor scores plaque (M-08); outside evaluation the home's existing oral-care and dental routines judge it (ST-05). The System does not, because dental health assessment is out of scope for it (PS-01).
+|Alternatives considered|(((
+Smart mirror or camera analysis of brushing (TECH-08): rejected, because it would make UC01-F1-CL7 fail by design.
+
+Position-sensing toothbrush with coverage feedback (TECH-07): deferred until EM-02 shows whether brushing time is enough (UC01-F2-CL10, UC01-F3-CL11). Coverage feedback would also invite more specific prompts about which teeth were missed, which raises the infantilisation risk tested by UC01-F2-CL5.
+
+Adding brushing time to the F4 record: not preferred, because it conflicts with HP-01's constraint and with UC01-F4-PR4. To be reconsidered only if care staff say in EM-03 that they need it and residents agree.
+)))
+|Status of the tension|Open. Tested by UC01-F1-CL7 (whether toothbrush sensing is experienced as being watched) and UC01-F3-CL11 (whether keeping quality data out of the System costs oral health).
 
 == Graph edges ==
 
 VT-01: involves → HV-01, HV-05; bounds → F2, F3; tested-by → UC01-F2-CL4.
 
-VT-02: involves → HV-03, HV-05; bounds → F1, F3, F4; strained-by → TECH-01, TECH-03 (TECH-04 rejected for straining it most); tested-by → UC01-F1-CL7, UC01-F4-CL8.
+VT-02: involves → HV-03, HV-05; bounds → F1, F3, F4; strained-by → TECH-01, TECH-03 (TECH-04 rejected for straining it most; TECH-08 rejected); tested-by → UC01-F1-CL7, UC01-F4-CL8.
 
 VT-03: involves → HV-04, HV-05; bounds → F2; tested-by → UC01-F2-CL1, UC01-F2-CL4.
 
@@ -213,4 +244,6 @@ VT-05: involves → HV-01, HV-05; bounds → F1, F2; strained-by → TECH-02; te
 
 VT-06: involves → HV-01, HV-05; bounds → UC02 (later cycle).
 
-VT-07: involves → HV-04, HV-06; bounds → F2, F3; tested-by → UC01-F3-CL9.
+VT-07: involves → HV-04, HV-06; bounds → F2, F3; tested-by → UC01-F3-CL9, UC01-F3-CL11.
+
+VT-08: involves → HV-03, HV-05; bounds → F1, F2, F4; strained-by → TECH-07 (deferred), TECH-08 (rejected for straining it most); tested-by → UC01-F1-CL7, UC01-F3-CL11.

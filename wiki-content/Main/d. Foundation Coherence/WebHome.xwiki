@@ -1,0 +1,276 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/spaces/d.%20Foundation%20Coherence/pages/WebHome
+title: d. Foundation Coherence
+synced_title: d. Foundation Coherence
+syntax: xwiki/2.1
+version: 1.1
+hash: 6568751ebc068f3edd40e7a3dd6f50e919868a73975be2071d8eff62317efa5c
+%%WIKI-SYNC-META%%
+{{box title="Status of this page"}}
+Status: In Progress.
+
+This page answers §2.3 Open item O-18. It adds no new entity. It collects the typed edges already recorded on the §1.1 to §1.3 pages (each page's //Graph edges// lines), the Value Tensions that are still open with the stance currently taken on each, and the completeness check the Foundation phase allows.
+
+It is built from the Foundation pages only. No primary data has been collected by this project: every Foundation entity rests on literature and group reasoning and is flagged provisional, so every edge below carries the same status. Edges that two pages recorded differently have been fixed on the source pages; //One-sided and inconsistent edges// lists what was changed.
+{{/box}}
+
+= Foundation Coherence =
+
+//No new entity here. The edge inventory over everything documented in §1.1 to §1.3, plus the completeness check available at this stage.//
+
+**Report Format:** §1.4 Foundation Coherence
+
+= Edge inventory =
+
+Edges are listed by source ID, with the relation named as it appears on the source page. Targets outside §1.1 to §1.3 (Functions F1 to F4, OBJ, DS, HP, RP, and the UC01 Premises and Claims) are forward edges into the Specification and are included so the inventory is complete.
+
+== a1. Situated Activities ==
+
+|=Source|=Relation|=Target(s)
+|SA-01|performed-by|ST-01 (supported by ST-02)
+|SA-01|illustrated-by|PS-01
+|SA-02|performed-by|ST-01 (supported by ST-02)
+|SA-02|illustrated-by|PS-02
+|SA-03|performed-by|ST-02
+|SA-03|illustrated-by|PS-01, PS-02
+
+== a2. Stakeholders ==
+
+|=Source|=Relation|=Target(s)
+|ST-01|performs|SA-01, SA-02
+|ST-01|holds|HV-01, HV-02, HV-03, HV-04, HV-05
+|ST-01|appears-in|PS-01, PS-02
+|ST-01|elaborated-as|HP-01 (§2.2)
+|ST-02|performs|SA-03
+|ST-02|supports|SA-01, SA-02
+|ST-02|holds|HV-01 to HV-06
+|ST-02|appears-in|PS-01, PS-02
+|ST-02|elaborated-as|HP-02 (§2.2)
+|ST-03|holds|HV-01, HV-02, HV-03, HV-05, HV-06
+|ST-04|holds|HV-02, HV-03, HV-05, HV-06
+|ST-05|holds|HV-01, HV-03, HV-05
+
+== a3. Problem Scenarios ==
+
+|=Source|=Relation|=Target(s)
+|PS-01|involves|ST-01, ST-02, SA-01, SA-03
+|PS-01|motivates|OBJ-01
+|PS-01|reimagined-as|DS-01 (§2.1)
+|PS-02|involves|ST-01, ST-02, SA-02, SA-03
+|PS-02|motivates|UC02 (later cycle)
+|PS-02|reimagined-as|DS-02 (§2.1)
+
+== b1. Human Values ==
+
+|=Source|=Relation|=Target(s)
+|HV-01|held-by|ST-01, ST-02, ST-03, ST-05
+|HV-01|party-to|VT-01, VT-05, VT-06
+|HV-01|operationalized-by|M-02, M-05
+|HV-01|explained-by|HFC-01
+|HV-02|held-by|ST-01, ST-02, ST-03, ST-04
+|HV-02|party-to|VT-04
+|HV-02|operationalized-by|M-04, M-06
+|HV-02|explained-by|HFC-04, HFC-05
+|HV-03|held-by|ST-01, ST-02, ST-03, ST-04, ST-05
+|HV-03|party-to|VT-02, VT-08
+|HV-03|operationalized-by|M-06
+|HV-03|explained-by|HFC-02, HFC-05
+|HV-04|held-by|ST-01, ST-02
+|HV-04|party-to|VT-03, VT-04, VT-07
+|HV-04|operationalized-by|M-02, M-03
+|HV-04|explained-by|HFC-03
+|HV-05|held-by|ST-01 to ST-05
+|HV-05|party-to|VT-01, VT-02, VT-03, VT-05, VT-06, VT-08
+|HV-05|operationalized-by|M-04, M-08
+|HV-05|explained-by|HFC-03
+|HV-06|held-by|ST-02, ST-03, ST-04
+|HV-06|party-to|VT-07
+|HV-06|operationalized-by|M-07
+|HV-06|explained-by|HFC-06
+
+The "held-by" edges agree with the "holds" edges on the Stakeholders page for all six values.
+
+== b2. Value Tensions ==
+
+|=Source|=Relation|=Target(s)
+|VT-01|involves|HV-01, HV-05
+|VT-01|bounds|F2, F3
+|VT-01|tested-by|UC01-F2-CL4
+|VT-02|involves|HV-03, HV-05
+|VT-02|bounds|F1, F3, F4
+|VT-02|strained-by|TECH-01, TECH-03 (TECH-04 rejected for straining it most; TECH-08 rejected)
+|VT-02|tested-by|UC01-F1-CL7, UC01-F4-CL8
+|VT-03|involves|HV-04, HV-05
+|VT-03|bounds|F2
+|VT-03|tested-by|UC01-F2-CL1, UC01-F2-CL4
+|VT-04|involves|HV-02, HV-04
+|VT-04|bounds|F2
+|VT-04|strained-by|TECH-01
+|VT-04|tested-by|UC01-F2-CL5
+|VT-05|involves|HV-01, HV-05
+|VT-05|bounds|F1, F2
+|VT-05|strained-by|TECH-02
+|VT-05|tested-by|UC01-F2-PR2, UC01-F2-CL4
+|VT-06|involves|HV-01, HV-05
+|VT-06|bounds|UC02 (later cycle)
+|VT-07|involves|HV-04, HV-06
+|VT-07|bounds|F2, F3
+|VT-07|tested-by|UC01-F3-CL9, UC01-F3-CL11
+|VT-08|involves|HV-03, HV-05
+|VT-08|bounds|F1, F2, F4
+|VT-08|strained-by|TECH-07 (deferred), TECH-08 (rejected for straining it most)
+|VT-08|tested-by|UC01-F1-CL7, UC01-F3-CL11
+
+== b3. Human Factors Concepts ==
+
+|=Source|=Relation|=Target(s)
+|HFC-01|explains|HV-01
+|HFC-01|associated-measure|M-05
+|HFC-01|grounds|UC01-F2-CL3
+|HFC-02|explains|HV-03
+|HFC-02|associated-measure|M-06
+|HFC-02|grounds|UC01-F1-CL7
+|HFC-03|explains|HV-04, HV-05
+|HFC-03|associated-measure|M-02, M-03, M-04
+|HFC-03|grounds|UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL4, UC01-F3-CL6, UC01-F3-CL9, UC01-F2-CL10
+|HFC-04|explains|HV-02
+|HFC-04|associated-measure|M-04, M-06
+|HFC-04|grounds|UC01-F2-CL5
+|HFC-05|explains|HV-02, HV-03
+|HFC-05|associated-measure|M-06, M-04
+|HFC-05|informs|TECH-01 selection rationale
+|HFC-05|grounds|UC01-F2-CL5, UC01-F1-CL7
+|HFC-06|explains|HV-06
+|HFC-06|associated-measure|M-07, M-01
+|HFC-06|grounds|UC01 handover rules (F3), TECH-03 alerting policy, UC01-F3-CL9
+
+== b4. Measures ==
+
+|=Source|=Relation|=Target(s)
+|M-01|used-by|EM-01
+|M-01|operationalizes|UC01-F1-PR1, UC01-F2-PR2 (timing component), UC01-F3-PR3
+|M-01|associated with|HFC-06
+|M-02|operationalizes|HV-04, HV-01; UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6, UC01-F3-CL11
+|M-02|used-by|EM-02
+|M-02|associated with|HFC-03
+|M-03|operationalizes|HV-04; UC01-F2-CL2, UC01-F2-CL4
+|M-03|used-by|EM-02
+|M-03|associated with|HFC-03
+|M-04|operationalizes|HV-05, HV-02; UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5, UC01-F2-CL10
+|M-04|used-by|EM-02
+|M-04|associated with|HFC-03, HFC-04, HFC-05
+|M-05|operationalizes|HV-01; UC01-F2-CL3
+|M-05|used-by|EM-02
+|M-05|associated with|HFC-01
+|M-06|operationalizes|HV-03, HV-02; UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8, UC01-F2-CL10
+|M-06|used-by|EM-01, EM-02 (resident interview), EM-03
+|M-06|associated with|HFC-02, HFC-04, HFC-05
+|M-07|operationalizes|HV-06; UC01-F3-CL9
+|M-07|used-by|EM-02, EM-03
+|M-07|associated with|HFC-06
+|M-08|operationalizes|HV-05; UC01-F2-CL10, UC01-F3-CL11, UC01-F1-PR1 (brushing-time component)
+|M-08|used-by|EM-01 (part b), EM-02
+|M-08|associated with|VT-08
+
+== b5. Evaluation Methods ==
+
+|=Source|=Relation|=Target(s)
+|EM-01|applies|M-01, M-06, M-08
+|EM-01|produces Evidence for|UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC01-F4-PR4
+|EM-02|applies|M-02, M-03, M-04, M-05, M-06, M-07, M-08
+|EM-02|produces Evidence for|UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3, UC01-F2-CL4, UC01-F2-CL5, UC01-F3-CL6, UC01-F1-CL7, UC01-F3-CL9, UC01-F2-CL10, UC01-F3-CL11
+|EM-03|applies|M-06, M-07
+|EM-03|produces Evidence for|UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8, UC01-F3-CL9
+
+The "used-by" edges on the Measures page and the "applies" edges on the Evaluation Methods page agree for all eight Measures.
+
+== c1. Technology Options ==
+
+|=Source|=Relation|=Target(s)
+|TECH-01 (selected)|enables|F2, F3 (resident-facing part)
+|TECH-01|addresses|Goal (SA-01), HV-04, HV-06
+|TECH-01|strains|VT-04, VT-02
+|TECH-01|realized-in|RP-01 (§2.2)
+|TECH-02 (selected)|enables|F1, F2 (early-stop rule), F4 (session data)
+|TECH-02|addresses|Goal (SA-01), HV-03
+|TECH-02|strains|VT-05
+|TECH-03 (selected)|enables|F3, F4
+|TECH-03|addresses|HV-05, HV-06
+|TECH-03|strains|VT-02
+|TECH-03|alerting policy grounded on|HFC-06
+|TECH-04 (rejected)|would strain|VT-02 (no outgoing edges to the Specification)
+|TECH-05 (rejected)|would ease; fallback for|VT-04, VT-02; TECH-01 if UC01-F2-CL5 or UC01-F1-CL7 hold, or if O-21 fails
+|TECH-06 (deferred)|none|No edges this cycle, deferred with UC02
+|TECH-07 (deferred)|would strain|VT-08 (no outgoing edges to the Specification this cycle)
+|TECH-08 (rejected)|would strain|VT-02, VT-08 (no outgoing edges to the Specification)
+
+== Dangling references and orphans ==
+
+**Dangling references** (an ID cited that is defined nowhere): none found. Every SA, ST, PS, HV, VT, HFC, M, EM and TECH ID cited on the Foundation pages is defined on its own page, and every forward reference resolves: F1 to F4, OBJ-01, UC01, UC02, UC01-F1-PR1 to UC01-F4-PR4 and UC01-F2-CL1 to UC01-F3-CL11 on the §2.3 page, DS-01 and DS-02 on the §2.1 page, and HP-01, HP-02 and RP-01 on the §2.2 Personas and Profiles page.
+
+**Orphans** (an entity no Graph edges line connects to anything):
+
+|=Entity|=Where it is mentioned|=Stance
+|TECH-06 Medication tray or dispenser with sensors (deferred)|In prose only: VT-06's floor discussion and UC02's scope decision.|Deferred with UC02. Its edges (addresses Goal (SA-02), strains VT-06) are to be drawn when UC02 is specified.
+
+TECH-05 was an orphan in the first draft; its Graph edges now record that it would ease VT-04 and VT-02 and is the fallback for TECH-01. No other entity is an orphan. ST-03, ST-04 and ST-05 are connected only through "holds" edges, consistent with their Indirect type.
+
+== One-sided and inconsistent edges ==
+
+When this page was first drafted, 13 edges or fields were recorded on one page and missing or different on the page at the other end. None changed the design, and all have been fixed on the named pages, so the tables above show the corrected edges.
+
+|=Edge or field|=Was missing or different on|=Fix made
+|VT-08 involves HV-03, HV-05|b1: HV-03 and HV-05 party-to|VT-08 added to both
+|HFC-03 explains HV-05|b1: HV-05 had no explained-by edge|explained-by → HFC-03 added
+|HFC-06 explains HV-06|b1: HV-06 had no explained-by edge|explained-by → HFC-06 added
+|HFC-05 explains HV-03|b1: HV-03 listed only HFC-02|HFC-05 added
+|HV-02 operationalized-by M-04|b4: M-04 listed only HV-05|HV-02 added to M-04, since HFC-04 and HFC-05 also name M-04
+|M-08 operationalizes HV-05|b1: HV-05 listed only M-04|M-08 added
+|HFC associated-measure → M-01, M-03, M-04|b4: no associated HFC on M-01, M-03, M-04|M-01 → HFC-06; M-03 → HFC-03; M-04 → HFC-03, HFC-04, HFC-05
+|TECH-08 would strain VT-02|b2: VT-02 strained-by|TECH-08 (rejected) added
+|UC01-F2-CL10 grounds on HFC-03, uses M-04 and M-06|b3 HFC-03 grounds; b4 M-04, M-06|CL10 added to all three
+|UC01-F3-CL11 uses M-02|b4: M-02|CL11 added
+|VT-07 tested-by CL9 and CL11|b2: VT-07 Status named CL9 only|CL11 named in the Status field
+|PS-01 involves SA-03|a3: PS-01 Activities involved listed SA-01 only|SA-03 added (also to PS-02)
+|PS-02 "SA-02: Remind to take medication"|a1: SA-02 is "Taking prescribed medication"|PS-02 now uses the a1 name
+
+= Open tensions =
+
+No Value Tension has been tested yet, since no Evaluation Method has been run. The table gives each tension's status as recorded on the b2 page, the design stance taken pending evidence, and what is meant to test it.
+
+|=Tension|=Values|=Recorded status|=Stance taken pending evidence|=Tested by
+|VT-01 Autonomy vs Well-being|HV-01, HV-05|Provisionally resolved|Graduated support: no assistance while the resident can continue, increasingly supportive prompting when difficulty is detected, and immediate notification of a care worker on an immediate risk of serious harm (group decision, §2.3 Open item O-2). No regulatory floor identified.|UC01-F2-CL4
+|VT-02 Privacy vs Well-being|HV-03, HV-05|Provisionally resolved|Monitor only what is needed to decide whether support is needed; share nothing sensitive unless the agreed conditions for caregiver involvement are met. No camera (TECH-04 rejected); Pepper's cameras disabled and covered; the session record is limited to three items and not shared with ST-03.|UC01-F1-CL7, UC01-F4-CL8; record content verified by UC01-F4-PR4 (M-06)
+|VT-03 Competence vs Well-being|HV-04, HV-05|Provisionally resolved|Allow time to complete a step, give a supportive prompt on repeated difficulty, and increase assistance if the resident still cannot continue or shows distress.|UC01-F2-CL1, UC01-F2-CL4
+|VT-04 Dignity vs Competence|HV-02, HV-04|Open|Prompts phrased as offers in an adult register, addressing the resident by name, stopping as soon as the resident resumes; the robot is framed as a tool with low expressivity. Strained by the choice of Pepper (TECH-01) over the tool-like device (TECH-05), which HFC-05 favours; TECH-05 is the named fallback (§2.3 Open items O-10, O-11).|UC01-F2-CL5 (adverse Claim)
+|VT-05 Autonomy vs Well-being (detection reliability)|HV-01, HV-05|Provisionally resolved, open until EM-01 shows an acceptable false-prompt rate|Favour fewer false prompts: F2 waits a configured interval and starts at the least intrusive prompt level. Accepted as the cost of item sensing (TECH-02) without a camera. Timing values are proposals awaiting the first EM-01 pilot (§2.3 Open item O-20).|UC01-F2-PR2 (M-01), UC01-F2-CL4
+|VT-06 Autonomy vs Well-being (medication timing)|HV-01, HV-05|Open, deferred to UC02|Deferred with UC02. A floor exists for time-critical medication: residents on such medication are excluded (PS-02), and the source for that floor is still a TODO on the b2 page. DS-02 sketches a resolution for the remaining medication.|No Claim yet; to be written with UC02
+|VT-07 Competence vs Attentive care|HV-04, HV-06|Open|The System carries the waiting and the lower prompt levels; the care worker is called only when prompting is exhausted, the resident is distressed, or there is a safety risk (F3). Alert volume is limited by the handover rules grounded on HFC-06 (§2.3 Open item O-22).|UC01-F3-CL9 (M-07), UC01-F3-CL11
+|VT-08 Privacy vs Well-being (brushing quality)|HV-03, HV-05|Open|Brushing time is used within the session only and stored nowhere; whether teeth are clean is judged by people (M-08 during evaluation, the home's oral-care routines and ST-05 otherwise). TECH-08 rejected; TECH-07 deferred until EM-02 shows whether brushing time is enough. Part of §2.3 Open item O-23 is still open (per-resident targets, confirming the plaque instrument).|UC01-F1-CL7, UC01-F3-CL11; TECH-07 decision also depends on UC01-F2-CL10
+
+= Completeness check =
+
+== Checks the manual names ==
+
+|=Check|=Result|=Stance
+|Any Situated Activity with no Goal stated|None. SA-01, SA-02 and SA-03 each state a Goal.|SA-02's Goal is addressed only by TECH-06, which is deferred with UC02 (§2.3 Open item O-13). Recorded as a scope decision for this cycle.
+|Any Human Value with no recognition criteria|None. HV-01 to HV-06 each state served and violated criteria.|No action.
+|Any Human Factors Concept with no associated Measure|None. HFC-01 to HFC-06 each name at least one Measure.|No action. The reverse links on the Measures page have been completed (see //One-sided and inconsistent edges//).
+|Any Technology Option addressing nothing|The three selected options (TECH-01 to TECH-03) each address a Goal or Human Value. The five rejected or deferred options (TECH-04 to TECH-08) have no "addresses" edge, which follows from their status. In their Benefits fields, TECH-04 names Goal (SA-01), TECH-06 names Goal (SA-02) and TECH-07 names HV-05; TECH-05 now names HV-02 and HV-03, and TECH-08 names HV-05.|Fixed on the c1 page, so that every option, rejected or not, states what it would have served.
+
+== Further gaps ==
+
+|=Gap|=Stance
+|SA-02, PS-02, VT-06 and TECH-06 form one cluster with no Claim, no Measure and no Evaluation Method.|Deferred with UC02 (§2.3 Open item O-13). New Measures for it start at M-09 and new Evaluation Methods at EM-04 (§2.3 Open item O-1).
+|VT-06 has no testing Claim.|Deferred with UC02, as above. Every other tension has at least one testing Claim or Premise.
+|HV-01 Autonomy and HV-02 Dignity are not addressed by any selected Technology Option.|Both are carried by Function behaviour: F2's wait and offer-style prompts follow the VT-01, VT-03 and VT-04 resolutions. They are tested by UC01-F2-CL3 (HV-01) and UC01-F2-CL5 (HV-02).
+|No Technology Option addresses the Goal on SA-03 directly.|SA-03's Goal reaches the design through HV-06 (addressed by TECH-01 and TECH-03) and OBJ-06. Recorded.
+|ST-03, ST-04 and ST-05 have no Persona and perform no Situated Activity.|All three are Indirect Stakeholders. A Persona is built for Direct Stakeholders only, and both Direct Stakeholders have one (ST-01 → HP-01, ST-02 → HP-02). No action.
+|M-08 Brushing quality has no associated Human Factors Concept.|M-08 is justified through VT-08 and HV-05, and was added for the midterm feedback (§2.3 Open item O-23). Recorded; no HFC is proposed for this cycle.
+|Every Foundation entity is provisional: no resident, care worker or manager has been observed or interviewed.|Recorded on every Evidence basis field (§2.3 Open item O-17). The edges on this page inherit that status.
+|Premise thresholds and escalation timing are proposals.|Pending the first EM-01 pilot (§2.3 Open item O-20). Affects VT-05's stance.
+|Whether Pepper (TECH-01) fits at a care-home bathroom doorway is unchecked.|§2.3 Open item O-21; fallback is TECH-05. Affects TECH-01's feasibility and the VT-04 stance.
+
+= Status of these edges =
+
+These edges are a hypothesis about fit between the operational demands, the human values and human factors, and the technology. They are to be confirmed or revised once the System and its Use Cases are evaluated: the forward edges into UC01 name the Premises and Claims that will do so, and the UC02 cluster stays unconnected until UC02 is specified.
