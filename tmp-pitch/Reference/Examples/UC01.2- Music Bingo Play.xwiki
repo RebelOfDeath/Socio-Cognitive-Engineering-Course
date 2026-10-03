@@ -1,0 +1,31 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/Reference/spaces/Examples/spaces/UC01.2%3A%20Music%20Bingo%20Play/pages/WebHome
+title: UC01.2: Music Bingo Play
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+|(% style="width:147px" %)**Objective**|(% style="width:752px" %)[[OB01: Entertain and stimulate PwD>>doc:tmp\: Pitch.2 Specification.Objectives.OB01\: Entertain and stimulate PwD.WebHome]]
+|(% style="width:147px" %)**TDP**|(% style="width:752px" %)[[TDP: Human-Robot Group Game Management>>doc:tmp\: Pitch.Reference.Design Patterns.Team Design Patterns.TDP\: Human-Robot Group Game Management.WebHome]]
+|(% style="width:147px" %)**Actors**|(% style="width:752px" %)[[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]], [[Activity Coordinator>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Activity Coordinator.WebHome]], [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]]
+|(% style="width:147px" %)**Pre-condition**|(% style="width:752px" %)(((
+[[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]] are sitting in semicircle, waiting for the group activity to start;
+
+[[Activity Coordinator>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Activity Coordinator.WebHome]] set up the game and handed out Bingo cards to [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]];
+
+[[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] is ready to start the game, right in front of the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]].
+)))
+|(% style="width:147px" %)**Post-condition**|(% style="width:752px" %)The game ended.
+|(% style="width:147px" %)**Action sequence**|(% style="width:752px" %)(((
+1. The [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] plays a 30-second clip of a song from the playlist provided by the [[Activity Coordinator>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Activity Coordinator.WebHome]]. 
+1. The [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] initiates a conversation among the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]], asking if they recognise the artist of the song last played and to share memories they may associate with the song.
+1. The [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] encourages the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]] to mark the artist on their Bingo cards if they recognize the song. 
+1. If a song is not recognized by the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]], the [[Humanoid Robot>>path:Humanoid-Robot_126287881.html]] shares fun facts about the song obtained from the knowledge base.
+1. If a [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]] shouts "Bingo!":
+11. The [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] will engage with the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]] who shouted "Bingo!" and check if all songs of his or her bingo card have been check-marked
+11. If not all songs in the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]]'s list have been played yet, the [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] will remind the player that there is still a song left. The [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] then continues the game.
+11. Otherwise, the [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] will identify the player who shouted "Bingo!". If the [[Person with Dementia>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]]'s songs have indeed all been played and the [[Activity Coordinator>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.Activity Coordinator.WebHome]] confirms this, the [[Humanoid Robot>>doc:tmp\: Pitch.1 Foundation.Humanoid Robot.WebHome]] marks the winner of the game. 
+)))
+
+|**UC Step**|**Requirements**|**Claims**|**IDP**
+|...|...|...|...
+|7|[[RQ03.2: Fill voids with fun facts>>doc:tmp\: Pitch.2 Specification.c Team Design Pattern.RQ03\.0\: Reflect on game performance.RQ03\.2\: Fill voids with fun facts.WebHome]]|[[CL001: Improved affect of PwD>>doc:tmp\: Pitch.Reference.Ontologies.Child-Robot Interaction.Affect.WebHome]]|[[IDP: Title>>doc:tmp\: Pitch.Reference.Design Patterns.Interaction Design Patterns.IDP\: Title.WebHome]]
+|...|...|...|...

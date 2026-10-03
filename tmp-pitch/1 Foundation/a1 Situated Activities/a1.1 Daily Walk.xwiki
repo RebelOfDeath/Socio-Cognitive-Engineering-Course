@@ -1,0 +1,221 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a1%20Situated%20Activities/spaces/a1.1%20Daily%20Walk/pages/WebHome
+title: a1.1 Daily Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** A daily walk keeps residents with dementia physically active, with benefits to physical and mental health, and takes them out of their room into daylight and company. It covers four activities: the resident's accompanied walk (SA-01), the care worker fitting walks between care tasks (SA-02), indoor exercise when weather prevents walking outside (SA-03), and walks with a fellow resident (SA-04). A walk breaks down when the resident loses track of place or purpose, turns back early, tries to leave the care home, loses motivation or has no companion, or when the weather prevents going outside.
+
+= Situated Activity - Accompanied daily walk [SA-01] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-01
+|Name|Accompanied daily walk
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Forbes et al. (2015), Cochrane review: exercise may improve ADL ability in dementia; effect on cognition unclear
+* Härlein et al. (2009): fall risk factors in older people with dementia
+* Lai & Arthur (2003): wandering behaviour in people with dementia
+)))
+|Goal|Walk outside daily, accompanied; stay oriented; return safely
+|Performing Actor(s)|(((
+* ST-01: Resident - walks
+* ST-02: Care worker - accompanies or supervises
+* ST-03: Family member - accompanies occasionally
+* ST-07: Volunteer - accompanies one-to-one
+)))
+|Trigger|Scheduled slot (often after lunch); resident restless or asks to go out
+|Constituent Tasks|(((
+1. Agree to go
+1. Toilet, weather-appropriate clothes, shoes
+1. Take rollator or wheelchair, if used
+1. Leave building with companion
+1. Follow route (garden or nearby)
+1. Keep pace; rest when tired
+1. Return to building
+1. Change, back to room or common area
+)))
+|Context|Resident cannot walk alone: the companion keeps them oriented, motivated and safe. Garden circuit, park or nearby streets. Mobility ranges from independent walking to wheelchair, pushed by the companion. Stamina and orientation vary per resident and per day. Depends on staff availability.
+|Frequency and duration|Daily (target); 15-45 min. Often shortened or skipped.
+|Tools and artifacts|Clothing, shoes, rollator/wheelchair, ID card with home address, coded exits, garden benches
+|Existing workarounds|(((
+* Fixed daily walking time
+* Closed garden loop leading back to entrance
+* Group walks with one care worker
+* Family or volunteers take resident out
+* Coded exits, door alarms
+* Redirection when resident wants to "go home"
+)))
+|Observed breakdowns|(((
+* Forgets where they are or why → distracted, stops
+* Returns to room early; walk abandoned
+* Exit-seeking: heads for former home address
+* No motivation: bored, lonely, refuses
+* Walk cancelled: no staff
+* Walk cancelled: bad weather
+* Fatigue, fall or near-fall
+* Toilet need mid-walk
+* Anxiety outside familiar surroundings
+* Late-afternoon restlessness (sundowning)
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (supported by ST-02, ST-03, ST-07); enabled-by → SA-02; replaced-by → SA-03 (no outdoor walk); extended-by → SA-04; illustrated-by → PS-01, PS-02, PS-03.
+
+= Situated Activity - Fitting walks between care tasks [SA-02] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-02
+|Name|Fitting walks between care tasks
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Mirrors the care worker's role in SA-07 (time pressure, one worker for several residents).
+|Goal|Every resident who can walk gets a safe daily walk, within staff time
+|Performing Actor(s)|ST-02: Care worker or activity coordinator
+|Trigger|Scheduled activity slot; gap between care tasks
+|Constituent Tasks|(((
+1. Choose who walks today (mobility, mood, weather)
+1. Prepare residents (toilet, clothing, aids)
+1. Walk with one resident or a small group
+1. Watch for fatigue, disorientation, falls
+1. Redirect residents who wander or try to leave
+1. Return; count residents
+1. Note incidents in care record
+)))
+|Context|Walks compete with care tasks for the same staff time. Afternoon; fewer care tasks, fewer staff. One worker, 1-4 residents. Ward is short-staffed while worker is out.
+|Frequency and duration|Daily; 30-60 min incl. preparation
+|Tools and artifacts|Care record, walking aids, phone, spare wheelchair for return
+|Existing workarounds|(((
+* Group walks to save time
+* Volunteers or family for one-to-one walks
+* Garden only when understaffed
+* Shorter walks
+)))
+|Observed breakdowns|(((
+* No time → walk skipped
+* Preparation takes longer than the walk
+* Group pace set by slowest resident
+* One resident turns back → whole group returns
+* Cannot follow two residents at once
+* Ward understaffed meanwhile
+)))
+
+== Graph edges ==
+
+performed-by → ST-02; enables → SA-01, SA-04; supervises → SA-03; contributes-to → PS-01, PS-02, PS-03.
+
+= Situated Activity - Bad-weather indoor exercise [SA-03] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-03
+|Name|Bad-weather indoor exercise
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Forbes et al. (2015): see SA-01
+* Anderson-Hanley et al. (2012): stationary cycling with a virtual route gave cognitive benefit over plain cycling (older adults, not dementia-specific)
+)))
+|Goal|Keep moving when an outdoor walk is not possible
+|Performing Actor(s)|(((
+* ST-01: Resident - exercises
+* ST-02: Care worker - sets up, supervises
+* ST-06: Physiotherapist - sets exercise programme
+)))
+|Trigger|Rain, ice, heat or darkness; resident unable to go outside
+|Constituent Tasks|(((
+1. Agree to exercise
+1. Go to exercise area
+1. Get onto device (pedal exerciser, stationary bike), or start corridor walk
+1. Exercise for set time
+1. Stop, rest, return
+)))
+|Context|Stand-in for the walk: the exercise remains, but the destination and the company are gone. Common room, corridor or exercise room. Shared device. Supervision needed to get on and off.
+|Frequency and duration|Days without outdoor walk; 10-20 min
+|Tools and artifacts|Pedal exerciser or stationary bike, screen with route video, music, handrails, chairs
+|Existing workarounds|(((
+* Corridor walks
+* Group chair exercises
+* Route video or music during cycling
+)))
+|Observed breakdowns|(((
+* Boring: no destination, no company
+* Stops after a few minutes; forgets purpose
+* No staff to help on/off device
+* Device occupied or unfamiliar
+* Skipped entirely → no exercise that day
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (supported by ST-02, ST-06); substitutes → SA-01; illustrated-by → PS-03.
+
+= Situated Activity - Walking with a fellow resident [SA-04] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-04
+|Name|Walking with a fellow resident
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Victor (2012): loneliness in care homes is common and under-researched
+)))
+|Goal|Company as the reason to go out; social contact on the way
+|Performing Actor(s)|(((
+* ST-01: Resident - walks
+* ST-04: Walking partner - walks along
+* ST-02: Care worker - matches and supervises
+)))
+|Trigger|Resident unwilling to walk alone; staff see two residents who get along
+|Constituent Tasks|(((
+1. Find a willing partner
+1. Match on pace, mobility, mood
+1. Introduce, or re-introduce, the partners
+1. Walk together, accompanied
+1. Return together
+)))
+|Context|The match makes or breaks the walk. Residents often forget each other's names. Rapport varies day to day. Pairs still need supervision.
+|Frequency and duration|Occasional, when staff notice a match; 15-30 min
+|Tools and artifacts|Staff knowledge of residents, care record, garden
+|Existing workarounds|(((
+* Pairing residents who sit together
+* Group walks
+* Family walks with two residents
+)))
+|Observed breakdowns|(((
+* No partner available → resident stays in
+* Mismatch in pace, mobility or cognition
+* Conflict or agitation between partners
+* One partner wants to turn back
+* Both disoriented → no one leads back
+)))
+
+== Graph edges ==
+
+performed-by → ST-01, ST-04 (supported by ST-02, ST-07); extends → SA-01; enabled-by → SA-02; illustrated-by → PS-02.
+
+= References =
+
+* Anderson-Hanley, C. et al. (2012). Exergaming and older adult cognition: a cluster randomized clinical trial. //American Journal of Preventive Medicine//, 42(2), 109-119.
+* Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
+* Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment: a systematic review. //Journal of Advanced Nursing//, 65(5), 922-933.
+* Lai, C. K. Y. & Arthur, D. G. (2003). Wandering behaviour in people with dementia. //Journal of Advanced Nursing//, 44(2), 173-182.
+* Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.

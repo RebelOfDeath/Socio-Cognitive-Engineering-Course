@@ -1,0 +1,12 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a1%20Situated%20Activities/spaces/0%20Index/pages/WebHome
+title: 0 Index
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Situated Activities record what stakeholders do today, under the conditions they actually do it in. The current concept is the resident's daily walk, where a robot could take the place of a walking dog or an accompanying care worker. The earlier morning-care concept is kept for traceability. It is superseded and no longer drives the design.
+
+= Concepts =
+
+|=Page|=Activities|=Status
+|[[a1.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Daily Walk.WebHome]]|SA-01 Accompanied daily walk; SA-02 Fitting walks between care tasks; SA-03 Bad-weather indoor exercise; SA-04 Walking with a fellow resident|**Current**
+|[[a1.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Morning Care (previous concept).WebHome]]|SA-05 Brushing teeth; SA-06 Taking medication; SA-07 Morning care round|Superseded

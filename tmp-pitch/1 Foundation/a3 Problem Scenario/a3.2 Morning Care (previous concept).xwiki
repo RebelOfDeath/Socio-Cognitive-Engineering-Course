@@ -1,0 +1,132 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a3%20Problem%20Scenario/spaces/a3.2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
+title: a3.2 Morning Care (previous concept)
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Problem Scenarios of the project's first concept, morning personal care: losing track of the tooth-brushing routine (PS-04) and difficulty completing the medication routine (PS-05). It has been superseded by the Daily Walk concept ([[a3.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.1 Daily Walk.WebHome]]). The page is kept for traceability, because the current Specification pages still reference these scenarios.
+
+= Losing track of the tooth brushing routine [PS-04] =
+
+//A narrative locating the Problem in a concrete moment, plus the analysis of why it happens.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-04
+|Name|Losing track of the tooth brushing routine
+|Status|In Progress
+|Evidence basis|Provisional. Constructed from SA-05 and the ST-08/ST-09 records, which rest on literature and group reasoning only. The pattern of stalling mid-sequence and needing repeated prompts matches Rogers et al. (1999) and the COACH study (Mihailidis et al., 2008). No resident or care worker has confirmed it.
+|Narrative|It is morning in the dementia care home. The resident has finished their breakfast and returns to their room to perform their normal morning routine. A care worker reminds the resident that it is time to brush their teeth. The resident goes into the bathroom and stands in front of the sink. The toothbrush and toothpaste are visible next to the sink. The resident picks up the toothbrush but then pauses and appears unsure of what to do next. After some thought, they put the toothbrush back down. The care worker notices this and verbally prompts the resident to pick up the toothpaste. However, after putting the toothpaste on the toothbrush they again pause and are unsure of what to do next. The resident requires another verbal prompt from the care worker to eventually successfully finish this activity.
+|Stakeholders involved|(((
+- ST-08: Resident with dementia
+
+- ST-09: Care worker
+)))
+|Activities involved|SA-05: Brushing teeth
+|Breakdown point|The activity breaks down when the resident is unable to determine their next action independently in the tooth brushing sequence without the help of verbal prompts from for example the care worker
+|Causes|(((
+Root causes:
+
+- Difficulty remembering the correct sequence of actions
+
+- Difficulty recognizing what an object is for
+
+Contributing causes:
+
+- Instructions being too complex
+
+- Environmental distractions
+)))
+|Sub-problems|(((
+~1. Initiation: Resident may have difficulty with recognizing that it is time to start brushing their teeth
+
+2. Sequencing: Resident may begin the activity but lose track of which action comes next
+
+3. Completion: Resident may stop too early with brushing their teeth
+)))
+|Out of scope|(((
+- Medication routines - a separate activity (SA-06) with its own Problem Scenario (PS-05) and Use Case (UC02), deferred to a later cycle so this cycle can specify one activity properly.
+
+- Other personal-care activities such as dressing, washing and toileting - they share the initiation, sequencing and completion sub-problems, but involve more intimate exposure and physical assistance. Extending the approach to them is a later decision, if it works for tooth brushing.
+
+- Physically assisting the resident (for example guiding their hand) - the robot cannot do this safely; it stays with the care worker, who is called in via handover.
+
+- Dental health assessment - a clinical judgement for ST-12 or a dental professional, not something the System should infer.
+)))
+
+= Problem Scenario  [PS-05] =
+
+//A narrative locating the Problem in a concrete moment, plus the analysis of why it happens.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-05
+|Name|Difficulty completing the medication routine
+|Status|In Progress
+|Evidence basis|Provisional. Constructed from SA-06 and the ST-08/ST-09 records, which rest on literature (While et al., 2013) and group reasoning only. No resident or care worker has confirmed it.
+|Narrative|(((
+A resident with dementia needs to take prescribed medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it is time to take it. At first the resident agrees to take the medicine.
+
+The care worker places the medication and a glass of water in front of the resident. However, the resident becomes distracted by activity elsewhere in the room and does not take the medication. After some time, the resident appears to have forgotten why the medication and water are in front of them.
+
+The care worker returns their attention to the medication and reminds them that they need to take it. The resident is not sure and asks what the tablets are for. The care worker explains again and provides reassurance. Following some more prompts, the resident takes the medication.
+)))
+|Stakeholders involved|(((
+- ST-08: Resident with dementia
+
+- ST-09: Care worker
+)))
+|Activities involved|SA-06: Remind to take medication
+|Breakdown point|The activity breaks down when the resident does not independently continue with taking the medication after it has been presented and requires repeated prompting and reassurance from the care worker.
+|Causes|(((
+Root causes:
+
+- Difficulty remembering the purpose of the medication after it has been presented
+
+- Difficulty remembering and doing the care worker's instruction
+
+- Difficulty independently starting the next action in the medication-taking sequence.
+
+Contributing causes:
+
+- Instructions being too complex
+
+- Environmental distractions
+)))
+|Sub-problems|(((
+~1. Initiation - Resident may have difficulty with recognizing that it is time to take their medication
+
+2. Sequencing - Resident may begin the activity but lose track of which action comes next or what the purpose is of the action/medicine
+
+3. Completion - The Resident only takes some of the medication but not all.
+
+4. Communication - The resident fails to confirm that they have taken the medication, risking taking the same medication a second time.
+)))
+|Out of scope|(((
+- Medication prescribing and dosage decisions, changing medication - decided by the primary care practitioner.
+
+- Determining whether a medication is appropriate - primary care practitioner.
+
+- Diagnosing medical conditions - not handled by the robot (such as when the resident does not talk for an extended period of time).
+
+- Physically administering medication - would require a dedicated product involving computer vision and is very error-prone and time-consuming.
+
+- Emergency medical treatment - out of scope. Notifying a care worker when there is an immediate risk of serious harm during the activity is in scope (group decision, §2.3 Open item O-2); treating or assessing the emergency is not.
+
+- Residents who have to take critical medication such as heart medication - the care home blacklists these residents to require a care home employee to be present.
+
+- Residents who only have to take vitamin C daily or anti-congestion meds preventively are permitted - they may get confused or suddenly not know where they can find the medication, but little harm follows.
+
+- General monitoring of the resident - we only report a failure to complete the task, or an immediate risk of harm during it, and avoid surveilling the patient in general. This excludes fall detection outside the activity and general failure to respond to a query.
+)))
+
+== Graph edges ==
+
+PS-04: illustrates → Problem; involves → ST-08, ST-09, SA-05, SA-07; motivates → OBJ-01; reimagined-as → DS-01 (§2.1).
+
+PS-05: illustrates → Problem; involves → ST-08, ST-09, SA-06, SA-07; motivates → UC02 (later cycle); reimagined-as → DS-02 (§2.1).

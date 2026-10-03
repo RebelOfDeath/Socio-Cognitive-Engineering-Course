@@ -7,6 +7,7 @@ Tools to edit the group's [XWiki](https://xwiki.ewi.tudelft.nl/xwiki/wiki/sce202
 - `wiki-sync/sync.py` — the sync tool (stdlib-only Python, no install needed beyond `certifi`).
 - `wiki-sync/.env` — your credentials (gitignored, never committed). Copy `wiki-sync/.env.example` to create it.
 - `wiki-content/` — the actual wiki pages, mirrored as local files. This is what you edit and commit.
+- `tmp-pitch/` and `wiki-sync/sync_pitch.py` — the `tmp: Pitch` tree, with its own layout and sync script (see the end of this file).
 
 ## Setup
 
@@ -97,3 +98,33 @@ Afterwards, delete the matching files under `wiki-content/` and run `python3 wik
 ## Excluding spaces
 
 `wiki-sync/.env` has `XWIKI_EXCLUDE_SPACES` (comma-separated top-level space names) for spaces you don't want mirrored locally — defaults to `XWiki` (the built-in user/account space, not group content).
+
+## The `tmp: Pitch` tree (`tmp-pitch/`)
+
+The `tmp: Pitch` page and everything below it are kept in `tmp-pitch/` and synced by their own script. `sync.py` skips that space, so `XWIKI_EXCLUDE_SPACES` in your `.env` must include `tmp: Pitch` (see `.env.example`); `sync_pitch.py` refuses to run otherwise.
+
+```
+python3 wiki-sync/sync_pitch.py pull            # download the tree into tmp-pitch/
+python3 wiki-sync/sync_pitch.py status          # list local changes (no network)
+python3 wiki-sync/sync_pitch.py push            # create, update and retitle pages
+python3 wiki-sync/sync_pitch.py push <file>     # just one page
+python3 wiki-sync/sync_pitch.py layout          # re-file pages under their titles (no network)
+```
+
+The local tree mirrors the wiki's. A page without children is a file named after its title; a page with children is a folder named after its title, and `tmp-pitch/` itself is the `tmp: Pitch` page:
+
+```
+tmp-pitch/                            ← page "tmp: Pitch"
+└─ 1 Foundation/                      ← page "1 Foundation"
+   ├─ a1 Situated Activities/         ← page "a1 Situated Activities"
+   │  ├─ 0 Index.xwiki                ← what a1 has to say itself
+   │  ├─ a1.1 Daily Walk.xwiki
+   │  └─ a1.2 Morning Care (previous concept).xwiki
+   └─ a3 Problem Scenario.xwiki
+```
+
+- **A page with children has no content of its own.** Anything it has to say goes into a `0 Index` child, which sorts first. The folder's own page is a hidden `.page.xwiki` holding only its metadata; the repo's VS Code settings hide it. `push` enforces this: content found in a `.page.xwiki` (e.g. after an edit on the wiki) moves into a new `0 Index` child, attachments included. `status` and `pull` list such pages.
+- **Titles are names.** Titles follow (number)(space)(name), without a full stop after the number: `1 Foundation`, `a1.1 Daily Walk`. Characters Windows can't put in a file name become `-` in the name only (`IDP: Title` → `IDP- Title.xwiki`); the `title:` line keeps the exact title.
+- **Renaming** a file or folder retitles the page on `push`; a retitle on the wiki renames it on `pull`. Editing the `title:` line works too. The space key, and so the URL, keeps the name the page was created with.
+- **New pages** need no metadata: add `<title>.xwiki` in the folder of the page it belongs under, or a new folder for a page with children, and `push`. To give a page its first child, make a folder with the page's exact file name (without `.xwiki`) next to it and put the new file inside; `push` turns the page into that folder and moves its content into `0 Index`.
+- **Moving** a page to another parent needs the wiki's own Page Actions → Move/Rename, then `pull`: the REST API has no move.

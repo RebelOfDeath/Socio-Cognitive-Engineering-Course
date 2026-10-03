@@ -1,0 +1,12 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a2%20Stakeholders/spaces/0%20Index/pages/WebHome
+title: 0 Index
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Stakeholders are everyone affected by an activity, recorded by the values they hold and their relationship to each other. The current concept is the resident's daily walk. The stakeholders of the earlier morning-care concept are kept for traceability. That concept is superseded and no longer drives the design.
+
+= Concepts =
+
+|=Page|=Stakeholders|=Status
+|[[a2.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.a2\.1 Daily Walk.WebHome]]|ST-01 Resident with dementia; ST-02 Care worker; ST-03 Family member; ST-04 Walking partner; ST-05 Care home management; ST-06 Medical and therapy staff; ST-07 Volunteer|**Current**
+|[[a2.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.a2\.2 Morning Care (previous concept).WebHome]]|ST-08 Resident with dementia; ST-09 Care home staff member; ST-10 Family members; ST-11 Management or owners; ST-12 Medical staff|Superseded

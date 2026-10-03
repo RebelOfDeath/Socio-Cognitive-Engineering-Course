@@ -1,0 +1,6 @@
+{
+  // In tmp-pitch/, a page with children is a folder; its own (empty) page is this hidden file.
+  "files.exclude": {
+    "tmp-pitch/**/.page.xwiki": true
+  }
+}

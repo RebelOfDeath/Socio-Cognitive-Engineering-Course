@@ -1,0 +1,157 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a2%20Stakeholders/spaces/a2.2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
+title: a2.2 Morning Care (previous concept)
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Stakeholders of the project's first concept, morning personal care (SA-05 to SA-07): the resident (ST-08), the care worker (ST-09), family (ST-10), management (ST-11) and medical staff (ST-12). It has been superseded by the Daily Walk concept ([[a2.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.a2\.1 Daily Walk.WebHome]]). The page is kept for traceability, because the current Specification pages still reference these stakeholders.
+
+= Stakeholder - Resident with dementia [ST-08] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-08
+|Name|Resident with dementia
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
+|Type|Direct - interacts with the System during the activity
+|Values and motivations|(((
+- HV-02: Dignity (high)
+
+- HV-01: Autonomy (high)
+
+- HV-05: Well-being (high)
+
+- HV-04: Competence (medium)
+
+- HV-03: Privacy (medium)
+)))
+|Relationship to other Stakeholders|Receives day-to-day support from ST-09 care workers. ST-10 family members may visit and be involved in care decisions, including consent. Receives medical care from ST-12, and lives in a home run by ST-11.
+
+== Graph edges ==
+
+performs → SA-05, SA-06; holds → HV-01, HV-02, HV-03, HV-04, HV-05; appears-in → PS-04, PS-05; elaborated-as → HP-01 (§2.2).
+
+= Stakeholder - Care home staff member [ST-09] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-09
+|Name|Care home staff member
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
+|Type|Direct - receives handover requests and reviews the session record
+|Values and motivations|(((
+- HV-05: Well-being (high)
+
+- HV-06: Attentive care (high)
+
+- HV-02: Dignity (medium)
+
+- HV-01: Autonomy (medium) - endorses it for residents, but weighs it against the time available
+
+- HV-04: Competence (medium)
+
+- HV-03: Privacy (medium) - for residents, and against surveillance of their own work
+)))
+|Relationship to other Stakeholders|Supports several ST-08 residents per shift. Employed by ST-11. Keeps ST-10 informed about their relative, and coordinates with ST-12 on medication and health.
+
+== Graph edges ==
+
+performs → SA-07; supports → SA-05, SA-06; holds → HV-01 to HV-06; appears-in → PS-04, PS-05; elaborated-as → HP-02 (§2.2).
+
+= Stakeholder - Family members of Resident [ST-10] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-10
+|Name|Family members of Resident
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
+|Type|Indirect - affected by outcomes, does not interact with the System and does not receive its records
+|Values and motivations|(((
+- HV-05: Well-being (high)
+
+- HV-02: Dignity (high)
+
+- HV-01: Autonomy (medium)
+
+- HV-06: Attentive care (medium)
+
+- HV-03: Privacy (low) - may want more information about their relative than the resident would choose to share
+)))
+|Relationship to other Stakeholders|Relatives of ST-08. In contact with ST-09 about their relative's care, and may be involved in consent decisions on ST-08's behalf.
+
+== Graph edges ==
+
+holds → HV-01, HV-02, HV-03, HV-05, HV-06.
+
+= Stakeholder - Management or the Owners of the care home [ST-11] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-11
+|Name|Management or the Owners of the care home
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
+|Type|Indirect - decides on adopting the System, does not interact with it
+|Values and motivations|(((
+- HV-06: Attentive care (high) - staffing and workload
+
+- HV-05: Well-being (high) - quality of care
+
+- HV-03: Privacy (medium) - data-protection obligations for residents and staff
+
+- HV-02: Dignity (medium)
+)))
+|Relationship to other Stakeholders|Employs ST-09. Responsible for the home's quality of care, staffing and data protection, and for the living environment of ST-08.
+
+== Graph edges ==
+
+holds → HV-02, HV-03, HV-05, HV-06.
+
+= Stakeholder - Medical staff: GP, Nurse [ST-12] =
+
+//Who is affected. In the Foundation, captured by exactly two things: the values they hold, and their relationship to other Stakeholders. A full behavioral Persona is built later, in the Specification, for Direct Stakeholders only.//
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-12
+|Name|Medical staff: GP, Nurse
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
+|Type|Indirect - responsible for care plans and medication, does not interact with the System
+|Values and motivations|(((
+- HV-05: Well-being (high)
+
+- HV-03: Privacy (medium) - medical confidentiality
+
+- HV-01: Autonomy (medium)
+)))
+|Relationship to other Stakeholders|Prescribes and reviews ST-08's medication and health. Relies on ST-09 to carry out care plans day to day.
+
+== Graph edges ==
+
+holds → HV-01, HV-03, HV-05.

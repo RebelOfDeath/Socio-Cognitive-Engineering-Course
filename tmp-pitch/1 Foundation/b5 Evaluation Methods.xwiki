@@ -1,0 +1,82 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b5%20Evaluation%20Methods/pages/WebHome
+title: b5 Evaluation Methods
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+{{box title="Status of this page"}}
+EM-01 to EM-03 were first drafted in §2.3 (Use Case with Claims/Premises) and have been moved here as Foundation entities. §2.3 now points here. Anyone adding an Evaluation Method should start at EM-04. The Measures they apply are on the §1.2 [[b4 Measures>>tmp\: Pitch.1 Foundation.b4 Measures.WebHome]] page.
+
+No primary data has been collected by this project. Cost and feasibility entries are the group's own estimates, not measured.
+{{/box}}
+
+= Staged-session verification  [EM-01] =
+
+//A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-01
+|Name|Staged-session verification
+|Status|In Progress
+|Evidence basis|Staged-event testing against a ground-truth log follows the system-performance evaluation of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
+|Procedure summary|Scripted steps, stalls, resumptions and confounders are performed at a mock sink against a timestamped ground-truth log. The System's step identification, stall detection, prompting and handover requests are compared with the log. Stored session records are inspected for their content.
+|Purpose|Verification
+|Human subjects required|No
+|Measures used|M-01; M-06 (record-content component only)
+|Cost and feasibility|Low. Needs a mock sink set-up, the prototype and experimenter time; no ethics approval for human subjects. Can run as soon as a prototype exists.
+|Known limitations|Cannot establish real-world accuracy with an actual resident in an actual bathroom. Scripted stalls may not resemble real hesitation.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC01-F4-PR4; applies → M-01, M-06.
+
+= Within-resident baseline comparison  [EM-02] =
+
+//A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-02
+|Name|Within-resident baseline comparison
+|Status|In Progress
+|Evidence basis|Design follows the single-subject alternating baseline-intervention structure used in COACH (Mihailidis et al., 2008) with older adults with moderate-to-severe dementia.
+|Procedure summary|Residents are observed during the real morning routine, first without the System to establish each resident's own baseline, then with it, alternating between the two phases. Trained observers score the activity during each session. After each System session the resident is asked the M-05 autonomy items and M-06's three short, verbally administered interview questions, only if they are willing and not distressed.
+|Purpose|Validation
+|Human subjects required|Yes - residents with dementia (supported consent) and the care staff working with them.
+|Measures used|M-02, M-03, M-04, M-05, M-06 (resident post-session interview), M-07
+|Cost and feasibility|High. Needs access to a care home, ethics approval, supported consent, trained observers present during a personal-care activity, and enough sessions per resident for both phases.
+|Known limitations|Small n and no control group. Cannot separate novelty effects from the design. The observer's presence during a personal-care activity may itself change behaviour. Post-session interview answers from residents with dementia may be brief or unreliable (see M-05's ceiling effect), so they are read alongside the observer measures, never alone.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3, UC01-F2-CL4, UC01-F2-CL5, UC01-F3-CL6, UC01-F1-CL7, UC01-F3-CL9; applies → M-02, M-03, M-04, M-05, M-06, M-07.
+
+= Care-staff interview  [EM-03] =
+
+//A candidate procedure for producing evidence. Surveyed in the Foundation; selected during Evaluation.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-03
+|Name|Care-staff interview
+|Status|In Progress
+|Evidence basis|Bespoke. The interview's concern set is drawn from Niemeijer et al. (2010, 2015) on the acceptability of surveillance technology in residential dementia care.
+|Procedure summary|Care staff are interviewed about the handover record the System produces and about whether they perceive the System as intrusive, for residents or for themselves. Interviews are coded with M-06's coding scheme, including whether staff describe the prompting as talking down to residents.
+|Purpose|Validation
+|Human subjects required|Yes - care staff.
+|Measures used|M-06, M-07
+|Cost and feasibility|Moderate. Needs informed consent and staff time during working hours; lower ethics load than EM-02 because residents are not participants.
+|Known limitations|Cannot establish the resident's own privacy experience - only how staff read it. Staff accounts of their own prompting load are self-reports, not observations.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8, UC01-F3-CL9; applies → M-06, M-07.

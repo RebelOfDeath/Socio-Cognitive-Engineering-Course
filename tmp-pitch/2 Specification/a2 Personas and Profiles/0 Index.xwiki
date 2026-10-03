@@ -1,0 +1,72 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/a2%20Personas%20and%20Profiles/spaces/0%20Index/pages/WebHome
+title: 0 Index
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+
+**Report Format:** §2.2 Personas and Profiles
+
+//Built on DS-01 (tooth brushing), this cycle's spine (§2.3 Open item O-13). Medication details are kept where they still describe the person, for UC02 later.//
+
+= Human Persona: Mary =
+
+|ID| HP-01
+|Name| Resident with dementia
+|Status| In Progress
+|Evidence basis| Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this Persona is provisional. Built on ST-08/ST-09 (§1.1), PS-04 and PS-05, and the literature cited in §1.2.
+|Elaborates| ST-08
+|Role in Scenario| The person whose morning routine it is (DS-01). Instead of being a passive recipient, they are given time to do each step themselves, and are prompted only when they stall, at the lowest level that gets them going again.
+|Task Demands| 1. Recognizing that it is time to brush their teeth, and starting.
+2. Keeping track of which step comes next once they have started, without the care worker coming back each time.
+3. Finishing the whole routine rather than stopping part-way.
+|Specific Capabilities and Needs| Can still carry out each step of tooth brushing and respond to a short spoken cue, and can say yes or no. Cannot reliably remember the next step once distracted, may not recognise an object for what it is, and may repeat a step. Needs calm, short, simple cues, time to act before being prompted, and nothing said to them in a way they would find childish.
+|Values and Motivations| (((
+- HV-01: Autonomy - The resident wants to feel that the routine is within their own control, and that they can carry it out themselves.
+- HV-02: Dignity - The resident wants to be spoken to as a capable adult, not talked through a basic activity like a child.
+- HV-03: Privacy - The resident does not want to be watched or recorded in their bathroom.
+- HV-04: Competence - The resident wants to experience that they can still brush their own teeth once reminded, rather than having it done for them.
+- HV-05: Well-being - The resident wants their mornings to be calm, and to avoid the frustration of getting stuck and not knowing what comes next.
+)))
+|Social Network and Relationships| Receives support from ST-09 (the care worker) and may have ST-10 (family) involved in their care. DS-01 does not remove their reliance on the care worker; it reduces how often they need them during the routine, because the System holds the sequence steady when the care worker is with another resident.
+|History and Experiences| No prior technology rejection recorded. Previous experiences include stalling part-way through tooth brushing (PS-04) and needing repeated reminders and redirection to complete tasks (PS-05). Being approached repeatedly and having everything re-explained can be confusing and tiring, which is why smaller, gentler cues are desirable.
+|Constraints and Privacy Considerations| Will not accept being filmed in their bathroom. Monitoring should go no further than knowing where they are in the routine, and nothing about how they brushed their teeth should be kept.
+
+
+= Human Persona: Myra =
+
+|ID| HP-02
+|Name| Care home staff member
+|Status| In Progress
+|Evidence basis| Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this Persona is provisional. Built on ST-08/ST-09 (§1.1), PS-04 and PS-05, and the literature cited in §1.2.
+|Elaborates| ST-09
+|Role in Scenario| Responsible for several residents on the morning round (SA-07). In DS-01 their role shifts from walking each resident through their routine step by step to being called in only when prompting has run out, the resident is distressed, or there is a safety risk.
+|Task Demands| 1. Being able to help another resident while one completes their routine.
+2. Receiving a short, meaningful message when they are actually needed, and responding to it.
+3. Knowing afterwards what support each resident needed, without constant double-checking.
+|Specific Capabilities and Needs| Can talk to the resident, reassure them, demonstrate and physically help. Can intervene when something is wrong. Needs calls from the System to be rare and meaningful rather than many low-value alerts, and needs the session record to be short enough to read on their phone during the round.
+|Values and Motivations| (((
+- HV-01: Autonomy - Wants the resident to complete the routine themselves with the help of the device, rather than having to walk them through it every time.
+- HV-02: Dignity - Wants the resident to be treated respectfully even when they cannot be there to assist in person.
+- HV-03: Privacy - Wants to limit surveillance of residents, and of their own work.
+- HV-04: Competence - Wants the resident to keep using the abilities they still have, so prefers gentle prompts that let the resident do it themselves over stepping in and doing it for them.
+- HV-05: Well-being - Has the resident's best interest in mind, and wants the routine to go calmly.
+- HV-06: Attentive care - Wants the time to give each resident the attention they need, instead of being pulled back to the same resident again and again.
+)))
+|Social Network and Relationships| Supports several residents per shift, is employed by ST-11, keeps ST-10 informed, and coordinates with ST-12 on health and medication. In DS-01 they remain the person who explains, reassures and physically helps; the System only takes over the waiting and the low-level prompting.
+|History and Experiences| No prior technology rejection recorded. Previous experiences include the burden of repeatedly returning to one resident during the routine (SA-07), and having to choose between waiting for a resident and moving on to the next.
+|Constraints and Privacy Considerations| Will not accept a device that collects and stores data in a way that could function as workplace surveillance. Will not accept a system that cannot flag genuine problems, or that sends too many non-critical alerts, as this would defeat the purpose of not having to check on residents constantly.
+
+
+= Robot Profile: Pepper as tooth-brushing aid =
+
+|ID| RP-01
+|Name| Pepper as tooth-brushing aid
+|Status| In Progress
+|Evidence basis| Vendor documentation for Pepper (TECH-01); design choices follow HFC-05 and VT-04 (tool-like framing, low expressivity) and VT-02 (no cameras). Not yet tested with residents.
+|Role in Scenario| Stands at the bathroom doorway during the tooth-brushing routine (DS-01). Stays quiet while the resident manages, prompts at the lowest sufficient level when they stall (F2), and calls the care worker when prompting runs out, the resident is distressed, or there is a safety risk (F3).
+|Social Competencies| Slow, non-interruptive turn-taking. Waits and holds silence before prompting, and stops as soon as the resident resumes. Responds to a simple yes/no or a touch on its head or hand, but does not depend on understanding speech. Does not initiate conversation beyond the routine.
+|Embodiment| Pepper humanoid robot (TECH-01), about 1.2 m tall, on a wheeled base, with a chest tablet, speakers, microphones, touch sensors and LED eyes. Positioned at the bathroom doorway, never blocking the resident's path, kept away from water. Cameras disabled and lenses visibly covered; activity tracking comes from sensors on the tooth-brushing items (TECH-02), not from the robot. Arm gestures and head movement kept minimal during the activity, and no gaze-following of the resident.
+|Narrative and Identity Framing| Presented to residents and staff as a helper for the morning routine - a tool, not a carer, companion or supervisor. Avoids anything that suggests it is watching or checking on the resident, and avoids the exaggerated gentleness and praise that would read as treating the resident like a child (HFC-04, HFC-05).
+|Communication Strategies| Short spoken sentences, addressing the resident by name, in an ordinary adult register, phrased as offers ("Would you like...") rather than instructions. Prompt levels: orienting, then naming the next action, then a picture or short video of the step on the chest tablet (demonstration). Soft eye lights instead of alarms or beeping. Tells the resident when a care worker has been called. Sends handover requests and the session record to the care worker's phone (TECH-03).
+|Privacy and Data Handling| Processes only the item-sensor events (TECH-02) and the resident's simple responses. No video. No audio stored beyond the moment of the interaction. Keeps a three-item session record (completed or not, highest prompt level, whether a care worker was called) for the care record; no step-by-step trace, and nothing is shared with family (ST-10).
+|Context-Aware Capabilities| Adapts when it prompts to the time since the last sensor event, and escalates according to the sensor state and the resident's responses. The wait interval is configured per resident (a per-resident adaptive interval is the planned response if UC01-F2-CL4 holds). Does not build a behavioural profile of the resident over time.
