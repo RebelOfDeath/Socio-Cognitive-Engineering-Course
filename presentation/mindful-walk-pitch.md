@@ -50,12 +50,24 @@ style: |
   section.kept > ul { columns: 2; column-gap: 60px; }
   section.kept > ul > li { font-size: 34px; color: #2f5d50; font-weight: 600; break-inside: avoid; margin: 0 0 26px; }
   section.kept ul ul li { font-size: 21px; color: #5b6b66; font-weight: 400; margin: 4px 0 0; }
-  section.sa { justify-content: flex-start; padding-top: 64px; }
-  section.sa h2 { font-size: 44px; margin-bottom: 28px; }
-  section.sa table { display: table; width: 100%; font-size: 26px; border-collapse: collapse; }
-  section.sa th { background: #2f5d50; color: #fff; text-align: left; font-size: 22px; padding: 10px 18px; }
-  section.sa td { vertical-align: top; padding: 18px; line-height: 1.45; background: #fff; width: 22%; }
-  section.sa td:nth-child(4) { color: #8a4f12; width: 34%; }
+  section.sa { justify-content: flex-start; padding-top: 70px; }
+  section.sa h2 { font-size: 46px; margin-bottom: 30px; }
+  section.sa table { display: table; width: 100%; font-size: 30px; border-collapse: collapse; }
+  section.sa thead { display: none; }
+  section.sa table tr td { background: transparent; border: none; border-bottom: 1px solid #e3e0d8; padding: 16px 18px; vertical-align: top; line-height: 1.4; }
+  section.sa table tr td:first-child { width: 24%; font-size: 20px; font-weight: 600; color: #2f5d50; text-transform: uppercase; letter-spacing: .05em; padding-top: 24px; }
+  section.sa table tr:last-child td:last-child { color: #8a4f12; }
+  section.glance { justify-content: flex-start; padding-top: 56px; }
+  section.glance h2 { font-size: 42px; margin-bottom: 18px; }
+  section.glance table { display: table; width: 100%; font-size: 26px; border-collapse: collapse; }
+  section.glance thead { display: none; }
+  section.glance table tr td { background: transparent; border: none; border-bottom: 1px solid #e3e0d8; padding: 10px 16px; }
+  section.glance table tr td:first-child { width: 13%; color: #2f5d50; font-weight: 600; font-size: 21px; }
+  section.glance table tr td:nth-child(2) { width: 40%; font-weight: 600; }
+  section.glance table tr td:nth-child(3) { color: #5b6b66; }
+  section.glance.dense table { font-size: 20px; }
+  section.glance.dense table tr td { padding: 3px 16px; }
+  section.glance.dense table tr td:first-child { font-size: 18px; }
   section.diagram, section.table { justify-content: flex-start; padding-top: 44px; }
   section.diagram h2, section.table h2 { font-size: 40px; margin-bottom: 14px; }
   section.diagram p { text-align: center; margin: 0; }
@@ -160,9 +172,12 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Resident<br>with care worker, volunteer or family | Daily, after lunch<br>15-45 min<br>often skipped | Move, get daylight, stay oriented, return safely | Loses place or purpose<br>Heads for the old home<br>No staff, bad weather |
+| | |
+|---|---|
+| Who | Resident, with a care worker, volunteer or family |
+| When | Daily after lunch · 15-45 min · often skipped |
+| Goal | Move, get daylight, stay oriented, return safely |
+| What breaks down | Loses place or purpose<br>Heads for the old home<br>Cancelled: no staff, bad weather |
 
 <!--
 - Today's fix: closed garden loop, coded exits, family and volunteers
@@ -174,9 +189,12 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Care worker<br>activity coordinator | Daily activity slot<br>30-60 min with preparation | Every resident who can walk gets a safe walk | No time: walk skipped<br>Group follows the slowest<br>One turns back, all return |
+| | |
+|---|---|
+| Who | Care worker or activity coordinator |
+| When | Daily activity slot · 30-60 min with preparation |
+| Goal | Every resident who can walk gets a safe walk |
+| What breaks down | No time, so the walk is skipped<br>The group follows the slowest walker<br>One turns back, all return |
 
 <!--
 - Walks compete with care tasks for the same staff time
@@ -187,9 +205,12 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Resident<br>care worker sets up<br>physiotherapist plans | Rain, ice, heat, dark<br>10-20 min | Keep moving when going out is not possible | No destination, no company<br>Stops after minutes<br>Often skipped |
+| | |
+|---|---|
+| Who | Resident; care worker sets up; physiotherapist plans |
+| When | Rain, ice, heat or darkness · 10-20 min |
+| Goal | Keep moving when going out is not possible |
+| What breaks down | No destination, no company<br>Stops after a few minutes<br>Often skipped |
 
 <!--
 - The exercise stays; daylight, sights and company go
@@ -200,9 +221,12 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Resident and walking partner<br>care worker matches them | When staff spot a match<br>15-30 min | Company as the reason to go out | No partner available<br>Mismatch in pace<br>Talk dries up |
+| | |
+|---|---|
+| Who | Resident and walking partner, matched by a care worker |
+| When | When staff spot a match · 15-30 min |
+| Goal | Company as the reason to go out |
+| What breaks down | No partner available<br>Mismatch in pace<br>Talk dries up |
 
 <!--
 - The match decides whether the walk works
@@ -213,9 +237,12 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Residents<br>activity coordinator leads | Weekly or less<br>20-45 min | Calm and rest, seated or lying | Recording too abstract, too fast<br>Drift goes unnoticed<br>Calm fades within the hour |
+| | |
+|---|---|
+| Who | Residents, led by the activity coordinator |
+| When | Weekly or less · 20-45 min |
+| Goal | Calm and rest, seated or lying |
+| What breaks down | Recording too abstract and too fast<br>Drift goes unnoticed<br>Calm fades within the hour |
 
 <!--
 - Recordings are made for general audiences
@@ -226,9 +253,12 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Resident<br>care worker calms | Afternoon rest, evening<br>5-30 min | A calm evening; medication only as last resort | No time at handover<br>Up again once staff leave<br>Evening news upsets |
+| | |
+|---|---|
+| Who | Resident, calmed by a care worker |
+| When | Afternoon rest and evening · 5-30 min |
+| Goal | A calm evening; medication only as a last resort |
+| What breaks down | No time at handover<br>Up again once staff leave<br>Evening news upsets |
 
 <!--
 - Restlessness peaks when staff time is lowest
@@ -239,13 +269,165 @@ style: |
 
 <!-- _class: sa -->
 
-| Who | When | Goal | What breaks down |
-|---|---|---|---|
-| Resident<br>staff switch on<br>family knows the tastes | Daily, at rest<br>minutes to hours | Chosen listening; keep in touch with the world | Cannot work the device<br>Station picked by staff<br>Plot lost between days |
+| | |
+|---|---|
+| Who | Resident; staff switch on; family knows the tastes |
+| When | Daily, at rest · minutes to hours |
+| Goal | Chosen listening; keep in touch with the world |
+| What breaks down | Cannot work the device<br>Station picked by staff<br>Plot lost between days |
 
 <!--
 - Preferences known to family, not to whoever switches on
 - Addressed by: two-option offers from the life story
+-->
+
+## Stakeholders
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| ST-01 | Resident with dementia | walks, rests, listens |
+| ST-02 | Care worker | escorts, calms, gets alerts |
+| ST-03 | Family member | keeper of the life story |
+| ST-04 | Walking partner | fellow resident, shared past |
+| ST-05 | Care home management | exits, staffing, data |
+| ST-06 | Medical and therapy staff | mobility, relaxation, PRN |
+| ST-07 | Volunteer | walks one-to-one |
+| ST-08 | Activity coordinator | profiles, pairs, sessions |
+
+<!--
+- Eight stakeholders; ST-08 is new for this concept
+-->
+
+## Problem scenarios
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| PS-01 | Losing the thread mid-walk | place and purpose gone |
+| PS-02 | No reason to go out | no purpose, no company |
+| PS-03 | Rain cancels the walk | indoor exercise bores |
+| PS-04 | Lost in the recording | too abstract, too fast |
+| PS-05 | Restless at dusk | nobody can stay |
+| PS-06 | Radio on, nobody listening | nobody asked the resident |
+
+<!--
+- Three on the walk, three at rest
+-->
+
+## Human values
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| HV-01 | Autonomy | whether, where, how long |
+| HV-02 | Dignity | spoken to as an adult |
+| HV-03 | Privacy | no route, no listening log |
+| HV-04 | Safety | help arrives quickly |
+| HV-05 | Well-being | body, daylight, calm |
+| HV-06 | Attentive care | staff time where needed |
+| HV-07 | Social connectedness | company on the walk |
+| HV-08 | Identity | who you were |
+
+<!--
+- Five carried over from morning care; Safety, Social connectedness and Identity are new
+-->
+
+## Value tensions
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| VT-01 | Autonomy vs Safety | garden with a partner; gate alert, no lock |
+| VT-02 | Privacy vs Safety | beacons, no GPS |
+| VT-03 | Identity vs Well-being | curated topics; never test |
+| VT-04 | Autonomy vs Well-being | news on request, never hidden |
+| VT-05 | Dignity vs Well-being | plain, adult voice |
+| VT-06 | Privacy vs Identity | profile written with family |
+| VT-07 | Attentive care vs Social connectedness | never the voice alone |
+
+<!--
+- Right column: how the design resolves each tension
+-->
+
+## Human factors concepts
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| HFC-01 | Walking, place and memory | on foot, remembered better |
+| HFC-02 | Present-moment attention | the present asks little of memory |
+| HFC-03 | Attention restoration | nature draws attention |
+| HFC-04 | Reminiscence and personhood | old memories last longest |
+| HFC-05 | Personalised listening | the familiar calms |
+| HFC-06 | Elderspeak | sing-song talks down |
+| HFC-07 | Perceived surveillance | tracked feels supervised |
+| HFC-08 | Robot embodiment | form decides the role |
+
+<!--
+- HFC-01 is the vacation question; the recall task tests it
+-->
+
+## Measures
+
+<!-- _class: glance dense -->
+
+| | | |
+|---|---|---|
+| M-01 | Guide performance | staged events, latency |
+| M-02 | Walking | minutes, early terminations |
+| M-03 | Same-day recall | free recall, three pictures |
+| M-04 | Observed affect | OERS |
+| M-05 | Engagement | OME |
+| M-06 | Agitation | CMAI |
+| M-07 | Perceived autonomy | self-report and observer |
+| M-08 | Privacy and tone | interview codes |
+| M-09 | Care-worker time | minutes per walk |
+| M-10 | Human company | minutes per week |
+| M-11 | Listening uptake | accepted, minutes listened |
+
+<!--
+- Validated instruments where they exist: OERS, OME, CMAI
+-->
+
+## Evaluation methods
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| EM-01 | Staged garden and room verification | no participants |
+| EM-02 | Within-resident comparison | ABAB, residents |
+| EM-03 | Staff and family interview | acceptance in practice |
+| EM-04 | Human-operated prototype test | cue wording and timing |
+
+<!--
+- Detailed in the Evaluation section
+-->
+
+## Technology options
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| TECH-01 | Pepper as indoor host | selected |
+| TECH-02 | Pocket guide | selected |
+| TECH-03 | Garden beacons | selected |
+| TECH-04 | Staff alerts and session record | selected |
+| TECH-05 | Listening library and recommender | selected |
+| TECH-06 | GPS tracker | rejected: route trace |
+| TECH-07 | Pepper on the walk | rejected: terrain |
+| TECH-08 | Headphones | rejected: shuts out the garden |
+| TECH-09 | Stress wristband | rejected: body data |
+
+<!--
+- Five selected, four rejected; the rejections are part of the rationale
 -->
 
 ## What we keep from morning care
@@ -368,6 +550,132 @@ style: |
 - The robot may feel like being watched
 - Calm evenings may feel like censorship
 - Each one tested; if true, the design changes
+-->
+
+## Design scenarios
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| DS-01 | Back on the round | garden walk with Kees |
+| DS-02 | Rain at the window | seated practice, then music |
+| DS-03 | Winding down at dusk | lying practice, news, a story |
+
+<!--
+- Same resident, Jan, in all three
+-->
+
+## Personas and robot profiles
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| HP-01 | Jan | resident, former postal worker |
+| HP-02 | Myra | care worker |
+| HP-03 | Sanne | activity coordinator |
+| HP-04 | Kees | walking partner |
+| RP-01 | Pepper | indoor host |
+| RP-02 | Pocket guide | the outdoor voice |
+
+<!--
+- Four people, two devices, one voice
+-->
+
+## Objective stories
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| OS-01 | The walk itself | F2 · Well-being |
+| OS-02 | Ask, don't test | F2 · Dignity, Identity |
+| OS-03 | My station | F6 · Autonomy, Identity |
+
+<!--
+- Each ties a Function to a value, in a stakeholder's words
+-->
+
+## Objectives
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| OBJ-01 | Walk more | Must |
+| OBJ-02 | Stay in the moment | Must |
+| OBJ-03 | Welcome memories | Should |
+| OBJ-04 | Calm at rest | Should |
+| OBJ-05 | Own choice | Must |
+| OBJ-06 | Adult voice | Should |
+| OBJ-07 | Help without tracking | Must |
+| OBJ-08 | Time freed, company kept | Should |
+| OBJ-09 | Listening that fits | Could |
+
+<!--
+- Four Musts; walking comes first
+-->
+
+## Use cases and functions
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| UC01 | Guided garden walk | F1, F2, F4, F5 |
+| UC02 | Seated or lying practice | F1, F3, F5 |
+| UC03 | Listening | F5, F6 |
+| F1 | Invite | two options; no is final |
+| F2 | Guide the walk | cues, memories, the way back |
+| F3 | Guide practice | body, breath, sound |
+| F4 | Call a person | gate, cord, fall, silence |
+| F5 | Keep a short record | four items |
+| F6 | Recommend listening | two options; news on request |
+
+<!--
+- Three use cases share six functions
+-->
+
+## Claims
+
+<!-- _class: glance dense -->
+
+| | | |
+|---|---|---|
+| CL1 | Invitation | more walks started |
+| CL2 | Present-moment cues | fewer turn-backs, longer walks |
+| CL3 | Walking and recall | walk remembered better than the chair |
+| CL4 | Memory prompts | more engagement |
+| CL5 | Memory prompts (adverse) | stir "I must go home" |
+| CL6 | Voice (adverse) | sounds childish |
+| CL7 | Alerts | in time, not felt as tracking |
+| CL8 | Staff time | less time, same company |
+| CL9 | Paced practice | longer engagement |
+| CL10 | Dusk practice | less evening agitation |
+| CL11 | Robot in the room (adverse) | feels like being watched |
+| CL12 | Personal offers | accepted more often |
+| CL13 | Calm evenings | less distress |
+| CL14 | Evening default (adverse) | kept from the news |
+
+<!--
+- Fourteen claims, four adverse
+- Success criteria in the Evaluation section
+-->
+
+## Design patterns
+
+<!-- _class: glance -->
+
+| | | |
+|---|---|---|
+| TDP-01 | Voice in the pocket, person in reach | System anchors; a person keeps company; staff keep safety |
+| IDP-01 | Present-moment cue | mention what is here, then silence |
+| IDP-02 | Memory invitation | state, never ask |
+| IDP-03 | Two-option offer | two concrete options; no is fine |
+
+<!--
+- One team pattern, three interaction patterns
 -->
 
 ## Evaluation
