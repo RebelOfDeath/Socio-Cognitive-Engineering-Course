@@ -1,59 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <defs>
     <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M0,0 L10,5 L0,10 z" fill="#2f5d50"/>
     </marker>
   </defs>
-  <rect width="1160" height="430" fill="#fbfaf7"/>
+  <rect width="1160" height="440" fill="#fbfaf7"/>
 
-  <!-- Row labels -->
-  <rect x="20" y="50" width="150" height="110" rx="14" fill="#2f5d50"/>
-  <text x="95" y="113" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Walk day</text>
-  <rect x="20" y="220" width="150" height="110" rx="14" fill="#e6e3dc"/>
-  <text x="95" y="283" font-size="26" font-weight="600" fill="#2f5d50" text-anchor="middle">Chair day</text>
+  <!-- Condition labels -->
+  <rect x="20" y="40" width="160" height="120" rx="14" fill="#2f5d50"/>
+  <text x="100" y="94" font-size="24" font-weight="600" fill="#ffffff" text-anchor="middle">Ambulatory</text>
+  <text x="100" y="122" font-size="17" fill="#cfe0d8" text-anchor="middle">condition</text>
+  <rect x="20" y="220" width="160" height="120" rx="14" fill="#e6e3dc"/>
+  <text x="100" y="274" font-size="24" font-weight="600" fill="#2f5d50" text-anchor="middle">Seated</text>
+  <text x="100" y="302" font-size="17" fill="#5b6b66" text-anchor="middle">condition</text>
 
-  <!-- Walk row -->
-  <rect x="210" y="50" width="240" height="110" rx="14" fill="#dfe9e4"/>
-  <text x="330" y="98" font-size="21" fill="#1f2a2e" text-anchor="middle">Guided walk,</text>
-  <text x="330" y="126" font-size="21" fill="#1f2a2e" text-anchor="middle">garden loop</text>
+  <!-- Encoding -->
+  <rect x="215" y="40" width="230" height="120" rx="14" fill="#dfe9e4"/>
+  <text x="330" y="94" font-size="20" fill="#1f2a2e" text-anchor="middle">Guided walk</text>
+  <text x="330" y="122" font-size="18" fill="#5b6b66" text-anchor="middle">garden loop</text>
+  <rect x="215" y="220" width="230" height="120" rx="14" fill="#dfe9e4"/>
+  <text x="330" y="274" font-size="20" fill="#1f2a2e" text-anchor="middle">Guided session</text>
+  <text x="330" y="302" font-size="18" fill="#5b6b66" text-anchor="middle">lounge window</text>
 
-  <rect x="490" y="50" width="200" height="110" rx="14" fill="#eee6d5"/>
-  <text x="590" y="98" font-size="21" fill="#1f2a2e" text-anchor="middle">A bell rings</text>
-  <text x="590" y="126" font-size="21" fill="#1f2a2e" text-anchor="middle">at the pond</text>
+  <!-- Target event -->
+  <rect x="480" y="40" width="210" height="120" rx="14" fill="#eee6d5"/>
+  <text x="585" y="88" font-size="17" fill="#5b6b66" text-anchor="middle">Target event</text>
+  <text x="585" y="118" font-size="20" fill="#1f2a2e" text-anchor="middle">bell at the pond</text>
+  <rect x="480" y="220" width="210" height="120" rx="14" fill="#eee6d5"/>
+  <text x="585" y="268" font-size="17" fill="#5b6b66" text-anchor="middle">Target event</text>
+  <text x="585" y="298" font-size="20" fill="#1f2a2e" text-anchor="middle">bell by the window</text>
 
-  <!-- Chair row -->
-  <rect x="210" y="220" width="240" height="110" rx="14" fill="#dfe9e4"/>
-  <text x="330" y="268" font-size="21" fill="#1f2a2e" text-anchor="middle">Guided seated</text>
-  <text x="330" y="296" font-size="21" fill="#1f2a2e" text-anchor="middle">session</text>
-
-  <rect x="490" y="220" width="200" height="110" rx="14" fill="#eee6d5"/>
-  <text x="590" y="268" font-size="21" fill="#1f2a2e" text-anchor="middle">A bell rings</text>
-  <text x="590" y="296" font-size="21" fill="#1f2a2e" text-anchor="middle">by the window</text>
-
-  <!-- One hour later (shared) -->
+  <!-- Delay -->
   <circle cx="790" cy="190" r="58" fill="#ffffff" stroke="#2f5d50" stroke-width="3"/>
   <text x="790" y="186" font-size="22" font-weight="600" fill="#2f5d50" text-anchor="middle">1 hour</text>
-  <text x="790" y="212" font-size="18" fill="#5b6b66" text-anchor="middle">later</text>
+  <text x="790" y="212" font-size="17" fill="#5b6b66" text-anchor="middle">delay</text>
 
-  <!-- Questions (shared) -->
-  <rect x="890" y="80" width="250" height="220" rx="14" fill="#2f5d50"/>
-  <text x="1015" y="128" font-size="20" fill="#cfe0d8" text-anchor="middle">Asked as a chat:</text>
-  <text x="1015" y="162" font-size="21" fill="#ffffff" text-anchor="middle">"What was there</text>
-  <text x="1015" y="190" font-size="21" fill="#ffffff" text-anchor="middle">today?"</text>
-  <text x="1015" y="238" font-size="20" fill="#cfe0d8" text-anchor="middle">Then: pick 1 of</text>
-  <text x="1015" y="264" font-size="20" fill="#cfe0d8" text-anchor="middle">3 pictures</text>
+  <!-- Retrieval -->
+  <rect x="885" y="60" width="255" height="260" rx="14" fill="#2f5d50"/>
+  <text x="1012" y="102" font-size="18" fill="#cfe0d8" text-anchor="middle">Free recall</text>
+  <text x="1012" y="132" font-size="19" fill="#ffffff" text-anchor="middle">"What was there</text>
+  <text x="1012" y="158" font-size="19" fill="#ffffff" text-anchor="middle">today?"</text>
+  <line x1="915" y1="188" x2="1110" y2="188" stroke="#7fa596" stroke-width="1"/>
+  <text x="1012" y="224" font-size="18" fill="#cfe0d8" text-anchor="middle">Recognition</text>
+  <text x="1012" y="254" font-size="19" fill="#ffffff" text-anchor="middle">3-alternative</text>
+  <text x="1012" y="280" font-size="19" fill="#ffffff" text-anchor="middle">forced choice</text>
 
   <!-- Connectors -->
   <g stroke="#2f5d50" stroke-width="3" fill="none" marker-end="url(#tip)">
-    <line x1="170" y1="105" x2="205" y2="105"/>
-    <line x1="450" y1="105" x2="485" y2="105"/>
-    <line x1="170" y1="275" x2="205" y2="275"/>
-    <line x1="450" y1="275" x2="485" y2="275"/>
-    <path d="M690,105 C720,105 730,150 742,160"/>
-    <path d="M690,275 C720,275 730,230 742,220"/>
-    <line x1="848" y1="190" x2="885" y2="190"/>
+    <line x1="180" y1="100" x2="210" y2="100"/>
+    <line x1="445" y1="100" x2="475" y2="100"/>
+    <line x1="180" y1="280" x2="210" y2="280"/>
+    <line x1="445" y1="280" x2="475" y2="280"/>
+    <path d="M690,100 C720,100 728,148 742,160"/>
+    <path d="M690,280 C720,280 728,232 742,220"/>
+    <line x1="848" y1="190" x2="880" y2="190"/>
   </g>
 
-  <text x="20" y="395" font-size="20" fill="#1f2a2e">Per resident: walk score minus chair score, over the B weeks.</text>
-  <text x="20" y="420" font-size="18" fill="#5b6b66">Any discomfort ends the question. Research sessions only; never part of daily use.</text>
+  <text x="20" y="395" font-size="19" fill="#1f2a2e">Outcome: within-participant difference in recall (ambulatory minus seated), intervention phases only.</text>
+  <text x="20" y="424" font-size="17" fill="#5b6b66">Stopping rule: any sign of discomfort. Research sessions only; not part of daily use.</text>
 </svg>

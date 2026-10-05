@@ -101,17 +101,57 @@
 - Calm evenings may feel like censorship
 - Each one tested; if true, the design changes
 
-**15. How we find out**
+**15. Evaluation**
 
-- Wizard-of-Oz first: a person voices the guide
-- Staged garden walks
-- Residents: weeks with and without
-- Same-day recall: the vacation question, tested
+- Verification: do the Functions work as specified (Premises)
+- Validation: do they have the intended effect (Claims)
+- Four phases, thirteen weeks
 
-**16. Next steps**
+**16. Evaluation plan**
+
+- Phase 1: technical checks, no residents
+- Phase 2: human-operated prototype, tune the voice
+- Phase 3: ABAB validation of the Claims
+- Phase 4: interviews with staff and family
+- Ethics approval before any resident takes part
+
+**17. Phase 1: technical verification**
+
+- Staged events against a timestamped reference log
+- Premises PR1-PR6
+- Numbers are proposals; care workers set the final ones
+
+**18. Phase 2: human-operated prototype test**
+
+- Formative: before anything is automated
+- Each factor varied across short walks and sessions
+- The wording residents respond to best goes into the script
+
+**19. Phase 3: summative validation**
+
+- Single-case ABAB: baseline, intervention, baseline, intervention
+- 8-12 residents, each their own control
+- Walk data every walk; observer on sample walks
+- Agitation rated by staff at the end of each phase
+- Recall task and interview in intervention phases only
+
+**20. Recall task: ambulatory versus seated encoding**
+
+- The vacation question, tested on residents (CL3)
+- Same target event: a bell, walking or seated
+- One hour later: free recall, then a choice of three pictures
+- Stop at any sign of discomfort
+
+**21. Success criteria**
+
+- Each criterion is set before the study starts
+- Staffing counts only if human company stays the same
+- A null result on recall weakens the walking-first argument; we report it either way
+
+**22. Next steps**
 
 - Garden policy with management
 - Evidence pass on the references
 - First cue script with one family
-- Wizard-of-Oz trial
+- Human-operated prototype test on the garden loop
 - Open for questions

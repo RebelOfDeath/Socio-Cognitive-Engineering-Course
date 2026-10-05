@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b5.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four methods. Does the System work: staged verification in the garden and the room (EM-01). Does it help: within-resident comparison over alternating weeks (EM-02). How staff and family see it: interviews (EM-03). Does the voice sound right: a Wizard-of-Oz trial of the cues before anything is automated (EM-04). No primary data yet; costs are the group's estimates.
+**Abstract.** Four methods. Does the System work: staged verification in the garden and the room (EM-01). Does it help: within-resident comparison over alternating weeks (EM-02). How staff and family see it: interviews (EM-03). Does the voice sound right: a human-operated prototype test of the cues before anything is automated (EM-04). No primary data yet; costs are the group's estimates.
 
 = Evaluation Method - Staged garden and room verification [EM-01] =
 
@@ -81,7 +81,7 @@ produces → Evidence for UC01-F1-CL1 to UC01-F2-CL6, UC01-F2-CL8, UC02-F3-CL9 t
 
 produces → Evidence for UC01-F2-CL6, UC01-F4-CL7, UC01-F2-CL8, UC02-F3-CL11, UC03-F6-CL14, UC03-F6-PR6 (profile view); applies → M-08, M-09, M-10.
 
-= Evaluation Method - Wizard-of-Oz cue trial [EM-04] =
+= Evaluation Method - Human-operated prototype test [EM-04] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -89,9 +89,9 @@ produces → Evidence for UC01-F2-CL6, UC01-F4-CL7, UC01-F2-CL8, UC02-F3-CL11, U
 
 |=Field|=Description
 |ID|EM-04
-|Name|Wizard-of-Oz cue trial
+|Name|Human-operated prototype test
 |Status|In Progress
-|Evidence basis|Wizard-of-Oz: a person operates the robot unseen, a standard way to test interaction in HRI before automating it (Riek, 2012).
+|Evidence basis|A researcher operates the guide unseen. Known in HRI as the Wizard-of-Oz method: a standard way to test interaction before automating it (Riek, 2012).
 |Procedure summary|(((
 An experimenter voices the guide remotely from a script of candidate cues (IDP-01 to IDP-03), during short walks and seated sessions.
 

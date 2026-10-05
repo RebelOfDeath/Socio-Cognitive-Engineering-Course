@@ -30,6 +30,12 @@ style: |
     color: #2f5d50;
   }
   footer { font-size: 15px; color: rgba(255, 255, 255, .9); text-shadow: 0 1px 3px rgba(0, 0, 0, .9); }
+  section.diagram, section.table { justify-content: flex-start; padding-top: 44px; }
+  section.diagram h2, section.table h2 { font-size: 40px; margin-bottom: 14px; }
+  section.diagram p { text-align: center; margin: 0; }
+  section.table table { display: table; width: 100%; font-size: 23px; }
+  section.table th { background: #2f5d50; color: #fff; }
+  section.table p { font-size: 20px; color: #5b6b66; margin-top: 14px; }
 ---
 
 # Mindful Walk
@@ -239,17 +245,117 @@ style: |
 - Each one tested; if true, the design changes
 -->
 
-## How we find out
+## Evaluation
 
 <!-- _class: split -->
 
 ![bg left:42%](img/pepper-b.jpg)
 
+### Verification and validation
+
 <!--
-- Wizard-of-Oz first: a person voices the guide
-- Staged garden walks
-- Residents: weeks with and without
-- Same-day recall: the vacation question, tested
+- Verification: do the Functions work as specified (Premises)
+- Validation: do they have the intended effect (Claims)
+- Four phases, thirteen weeks
+-->
+
+## Evaluation plan
+
+<!-- _class: diagram -->
+
+![w:1110](img/study-plan.svg)
+
+<!--
+- Phase 1: technical checks, no residents
+- Phase 2: human-operated prototype, tune the voice
+- Phase 3: ABAB validation of the Claims
+- Phase 4: interviews with staff and family
+- Ethics approval before any resident takes part
+-->
+
+## Phase 1: technical verification
+
+<!-- _class: table -->
+
+| Test event | Required behaviour | Acceptance criterion (proposed) |
+|---|---|---|
+| Walker passes the gate beacon | Alert on the care worker's phone | ≤ 10 s, in 19 of 20 trials |
+| Pull-cord | Alert; "Someone is coming" | ≤ 10 s, in 20 of 20 trials |
+| Device dropped, no response | Two check-ins, then an alert | ≤ 2 min |
+| Stop at a bench | Wait, then offer seated practice | after 60-90 s |
+| Resident declines an offer | No repeat offer | for ≥ 30 min |
+| Session ends | Record contains four items, nothing else | 100% of records |
+
+20 trials per event · no human participants · criteria to be agreed with care staff
+
+<!--
+- Staged events against a timestamped reference log
+- Premises PR1-PR6
+- Numbers are proposals; care workers set the final ones
+-->
+
+## Phase 2: human-operated prototype test
+
+<!-- _class: table -->
+
+| Factor | Condition A | Condition B |
+|---|---|---|
+| Memory cue | Question: "Do you remember your round?" | Statement: "Every front garden had roses." |
+| Silence between cues | 30 s | 90 s |
+| Form of address | First name | No name |
+
+A researcher voices the guide from a script · 4-6 residents · outcomes: observed affect (M-04), engagement (M-05), "talked down" codes (M-08)
+
+<!--
+- Formative: before anything is automated
+- Each factor varied across short walks and sessions
+- The wording residents respond to best goes into the script
+-->
+
+## Phase 3: summative validation
+
+<!-- _class: diagram -->
+
+![w:1110](img/abab.svg)
+
+<!--
+- Single-case ABAB: baseline, intervention, baseline, intervention
+- 8-12 residents, each their own control
+- Walk data every walk; observer on sample walks
+- Agitation rated by staff at the end of each phase
+- Recall task and interview in intervention phases only
+-->
+
+## Recall task: ambulatory versus seated encoding
+
+<!-- _class: diagram -->
+
+![w:1110](img/recall.svg)
+
+<!--
+- The vacation question, tested on residents (CL3)
+- Same target event: a bell, walking or seated
+- One hour later: free recall, then a choice of three pictures
+- Stop at any sign of discomfort
+-->
+
+## Success criteria
+
+<!-- _class: table -->
+
+| Claim | Confirmed if |
+|---|---|
+| Walking (CL1, CL2) | More walks per week; longer walks; fewer early terminations |
+| Recall (CL3) | Ambulatory recall above seated recall, within participants |
+| Reminiscence (CL4, CL5) | Higher engagement; no rise in gate alerts or sadness |
+| Dignity (CL6) | No "talked down" codes from residents or staff |
+| Staffing (CL8) | Fewer staff minutes per walk; human company not reduced |
+| Evenings (CL10, CL13) | Lower evening agitation (CMAI) |
+
+<!--
+- Each criterion is set before the study starts
+- Staffing counts only if human company stays the same
+- A null result on recall weakens the walking-first argument; we report it either way
 -->
 
 ## Next steps
@@ -264,6 +370,6 @@ style: |
 - Garden policy with management
 - Evidence pass on the references
 - First cue script with one family
-- Wizard-of-Oz trial
+- Human-operated prototype test on the garden loop
 - Open for questions
 -->
