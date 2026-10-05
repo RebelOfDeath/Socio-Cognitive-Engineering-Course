@@ -42,7 +42,8 @@ style: |
 ### From the bathroom sink to the garden path
 
 <!--
-Our new pitch. Straight on to where we started.
+- New pitch: from tooth brushing to walks
+- Walking, noticing, remembering, listening
 -->
 
 ## Where we started
@@ -54,10 +55,10 @@ Our new pitch. Straight on to where we started.
 ### Tooth brushing
 
 <!--
-- The bathroom: two minutes, twice a day.
-- What the robot says is instruction: "Toothpaste next." "Now rinse."
-- Little room for theory of mind: what the resident thinks, feels or remembers rarely comes up.
-- The task needs a steady grip. If the hands fail, the concept fails.
+- Bathroom; two minutes, twice a day
+- Robot only instructs: "Toothpaste next"
+- No room for theory of mind
+- Needs a steady grip; if the hands fail, the concept fails
 -->
 
 ## Think of your last vacation
@@ -69,7 +70,9 @@ Our new pitch. Straight on to where we started.
 ### What do you remember?
 
 <!--
-Ask the room. Twenty seconds; let two or three people share.
+- Ask the room
+- Wait twenty seconds
+- Two or three people share
 -->
 
 ## Hands up if you were moving
@@ -80,9 +83,10 @@ Ask the room. Twenty seconds; let two or three people share.
 ![bg brightness:.6](img/hands-a.jpg)
 
 <!--
-Walking, hiking, swimming, cycling: hands up. Count them.
-
-The study: people who walked a museum tour (AR) remembered which face appeared where far better than people who took the same tour seated (VR). Large effect, d = 1.31; 28 adults; tested straight after and 48 hours later.
+- Hands up: walking, hiking, swimming, cycling
+- Count the hands
+- Study: same museum tour, walked or seated
+- Walkers remembered far better (d = 1.31)
 -->
 
 ## More to talk about
@@ -92,10 +96,9 @@ The study: people who walked a museum tour (AR) remembered which face appeared w
 ![bg brightness:.6](img/bench-c.jpg)
 
 <!--
-- Walks bring residents together: a fellow resident, a volunteer, family.
-- Every walk differs: season, weather, birds, stories.
-- Less repetition in our final presentation. Tooth brushing gets old after one slide.
-- More of the course in play: memory, attention, identity, company, safety.
+- Walks bring residents together: partner, volunteer, family
+- Every walk differs: season, weather, stories
+- Less repetition in the final presentation
 -->
 
 ## What a walk can serve
@@ -110,13 +113,11 @@ The study: people who walked a museum tour (AR) remembered which face appeared w
 - Safety
 
 <!--
-All six are Human Values in our Foundation chapter.
-- Company: a partner with a shared past.
-- Identity: the harbour, the trade, the old songs.
-- Autonomy: whether, where and how long; "no" is fine.
-- Well-being: exercise, daylight, a calmer evening.
-- Dignity: spoken to as an adult, never quizzed.
-- Safety: help within reach, without tracking.
+- Six Human Values from our Foundation
+- Company: a partner with a shared past
+- Identity: the old round, the old songs
+- Autonomy: whether, where, how long
+- Well-being, dignity, safety
 -->
 
 ## Mindful Walk
@@ -128,42 +129,42 @@ All six are Human Values in our Foundation chapter.
 ### Walk · Notice · Remember · Rest · Listen
 
 <!--
-- Walk daily, outdoors, with company. Walking comes first.
-- Notice the feet, the air, the birdsong.
-- Remember the harbour, the trade, the old songs.
-- Rest on a bench, at the rainy window, in bed at dusk.
-- Listen to radio, news or a story the resident chose.
+- Walk: daily, outdoors, with company
+- Notice: feet, air, birdsong
+- Remember: the life story along the route
+- Rest and listen: rain days, dusk
+- Walking comes first
 -->
 
 ## Jan
 
 <!-- _class: photo -->
 
-![bg brightness:.55](img/harbour-a.jpg)
+![bg brightness:.55](img/post-slot.jpg)
 
-### Thirty years at the harbour
+### Thirty years on the post round
 
 <!--
-- Foreman for the last ten of those years.
-- Walked the dog twice a day, until moving in.
-- Moderate dementia: this morning is gone; the harbour years are vivid.
-- Refused a GPS watch: "I'm not a parcel."
-- Lives two doors from Kees, who crewed the pilot boat at the same harbour.
+- Our persona
+- Postal worker: thirty years, on foot and by bike
+- Moderate dementia: today is gone, the round is vivid
+- Refused a GPS watch: "I'm not a parcel"
+- Kees, two doors down, sorted the post at the same depot
 -->
 
-## "The ropes at the harbour smelled of tar."
+## "Every front garden on the round had roses like these."
 
 <!-- _class: photo -->
 
-![bg brightness:.55](img/harbour-b.jpg)
+![bg brightness:.55](img/roses-house.jpg)
 
 <!--
-The harbour walk (DS-01):
-1. Pepper at the door: "A walk with Kees, or a sit by the window?"
-2. On the path, from the rollator: "Feel your feet on the path."
-3. At the pond, this line. Jan and Kees talk harbour for ten minutes on the bench.
-4. Near the gate, one cue: "The roses are behind you." Myra's phone buzzes; Myra checks from the window.
-5. At the door: "The blackbird was singing in the beech." That evening Jan tells their daughter about it.
+- Pepper at the door: a walk with Kees?
+- Pocket guide on the rollator
+- Rose bed: this line, from Jan's life story
+- Jan and Kees talk for ten minutes
+- Gate: one cue back; Myra gets an alert
+- Evening: Jan tells their daughter
 -->
 
 ## Voice in the pocket, person in reach
@@ -173,11 +174,11 @@ The harbour walk (DS-01):
 ![bg brightness:.55](img/pepper-a.jpg)
 
 <!--
-- Pepper cannot cross grass or gravel, so it stays indoors: the invitation at the door, sessions at the window, the welcome back.
-- A pocket guide with the same voice goes outside: a speaker on the rollator, one big pause button, a pull-cord for help.
-- Beacons at the pond, the roses and the gate. No GPS, no route stored.
-- Microphone off outdoors: the conversation is for the walkers only.
-- Nobody walks with the voice alone: always a partner, volunteer, relative or care worker.
+- Pepper indoors only: no grass, no gravel
+- Pocket guide outside, same voice
+- Beacons, no GPS, no route stored
+- Microphone off outdoors
+- A person always walks along
 -->
 
 ## "Feel your feet on the path."
@@ -189,11 +190,10 @@ The harbour walk (DS-01):
 ### How the voice speaks
 
 <!--
-Three rules:
-- Mention what is here, then stay silent.
-- State a memory; never ask for one. "Do you remember the harbour?" is a test; "The ropes smelled of tar" invites a story.
-- Offer two things: "A walk with Kees, or a sit by the window?"
-Adult words at normal pitch, without endearments or praise for breathing.
+- Mention what is here, then silence
+- State a memory; never "Do you remember?"
+- Offer two options
+- Adult words, no praise
 -->
 
 ## When it rains, and at dusk
@@ -204,10 +204,10 @@ Adult words at normal pitch, without endearments or praise for breathing.
 ![bg brightness:.6](img/bed-b.jpg)
 
 <!--
-- Rain day: Pepper by the lounge window. "Rain on the glass." Its shoulder lights fade in and out like breathing.
-- Dusk: the pocket guide docks at the bedside. "Lie back. Feel the pillow under your head."
-- Concrete cues instead of "imagine a beach": nothing to remember, only something to notice.
-- Rest supports the walk; on most days the walk comes first.
+- Rain: Pepper at the window, "Rain on the glass"
+- Breathing light on Pepper's shoulders
+- Dusk: guide at the bedside, lying practice
+- Concrete cues: nothing to remember
 -->
 
 ## Listening that fits
@@ -219,11 +219,10 @@ Adult words at normal pitch, without endearments or praise for breathing.
 ### Brass band, football, the morning news
 
 <!--
-- Two options, drawn from the life story: "Brass band on the radio, or a short story?"
-- Morning: the news. Evening: calm content first.
-- News on request at any hour, never hidden.
-- Short stories over long novels; a one-line recap when a book runs over several days.
-- Rule-based. Learns only what was liked or skipped; keeps no listening log.
+- Two options from the life story
+- News in the morning, calm in the evening
+- News always on request, never hidden
+- Short stories; a recap for long books
 -->
 
 ## What could go wrong
@@ -233,11 +232,11 @@ Adult words at normal pitch, without endearments or praise for breathing.
 ![bg brightness:.5](img/rain-a.jpg)
 
 <!--
-Each is an adverse claim with its own measure. If one comes true, we change the design.
-- Memories can hurt: the harbour can also bring back "I must go home."
-- The voice may sound childish.
-- A robot in the room may feel like being watched.
-- A calm evening may feel like being kept from the news.
+- Memories can hurt: "I must go home"
+- The voice may sound childish
+- The robot may feel like being watched
+- Calm evenings may feel like censorship
+- Each one tested; if true, the design changes
 -->
 
 ## How we find out
@@ -247,10 +246,10 @@ Each is an adverse claim with its own measure. If one comes true, we change the 
 ![bg left:42%](img/pepper-b.jpg)
 
 <!--
-1. Wizard-of-Oz: a person voices the guide, so we tune the wording before building anything.
-2. Staged garden walks: does the guide react on time, every time?
-3. With residents, alternating weeks with and without: walk minutes, mood, evening agitation, human company.
-4. Same-day recall: is the walk remembered better than the chair? The vacation question, tested on our residents.
+- Wizard-of-Oz first: a person voices the guide
+- Staged garden walks
+- Residents: weeks with and without
+- Same-day recall: the vacation question, tested
 -->
 
 ## Next steps
@@ -262,8 +261,9 @@ Each is an adverse claim with its own measure. If one comes true, we change the 
 ### Questions and ideas welcome
 
 <!--
-- Agree the garden policy with management: who may walk with a partner instead of staff.
-- Check every reference in an evidence pass.
-- Write a first cue script with one family.
-- Try it as Wizard-of-Oz on the garden loop.
+- Garden policy with management
+- Evidence pass on the references
+- First cue script with one family
+- Wizard-of-Oz trial
+- Open for questions
 -->

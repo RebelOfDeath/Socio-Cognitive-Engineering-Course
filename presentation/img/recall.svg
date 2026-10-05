@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f5d50"/>
+    </marker>
+  </defs>
+  <rect width="1160" height="430" fill="#fbfaf7"/>
+
+  <!-- Row labels -->
+  <rect x="20" y="50" width="150" height="110" rx="14" fill="#2f5d50"/>
+  <text x="95" y="113" font-size="26" font-weight="600" fill="#ffffff" text-anchor="middle">Walk day</text>
+  <rect x="20" y="220" width="150" height="110" rx="14" fill="#e6e3dc"/>
+  <text x="95" y="283" font-size="26" font-weight="600" fill="#2f5d50" text-anchor="middle">Chair day</text>
+
+  <!-- Walk row -->
+  <rect x="210" y="50" width="240" height="110" rx="14" fill="#dfe9e4"/>
+  <text x="330" y="98" font-size="21" fill="#1f2a2e" text-anchor="middle">Guided walk,</text>
+  <text x="330" y="126" font-size="21" fill="#1f2a2e" text-anchor="middle">garden loop</text>
+
+  <rect x="490" y="50" width="200" height="110" rx="14" fill="#eee6d5"/>
+  <text x="590" y="98" font-size="21" fill="#1f2a2e" text-anchor="middle">A bell rings</text>
+  <text x="590" y="126" font-size="21" fill="#1f2a2e" text-anchor="middle">at the pond</text>
+
+  <!-- Chair row -->
+  <rect x="210" y="220" width="240" height="110" rx="14" fill="#dfe9e4"/>
+  <text x="330" y="268" font-size="21" fill="#1f2a2e" text-anchor="middle">Guided seated</text>
+  <text x="330" y="296" font-size="21" fill="#1f2a2e" text-anchor="middle">session</text>
+
+  <rect x="490" y="220" width="200" height="110" rx="14" fill="#eee6d5"/>
+  <text x="590" y="268" font-size="21" fill="#1f2a2e" text-anchor="middle">A bell rings</text>
+  <text x="590" y="296" font-size="21" fill="#1f2a2e" text-anchor="middle">by the window</text>
+
+  <!-- One hour later (shared) -->
+  <circle cx="790" cy="190" r="58" fill="#ffffff" stroke="#2f5d50" stroke-width="3"/>
+  <text x="790" y="186" font-size="22" font-weight="600" fill="#2f5d50" text-anchor="middle">1 hour</text>
+  <text x="790" y="212" font-size="18" fill="#5b6b66" text-anchor="middle">later</text>
+
+  <!-- Questions (shared) -->
+  <rect x="890" y="80" width="250" height="220" rx="14" fill="#2f5d50"/>
+  <text x="1015" y="128" font-size="20" fill="#cfe0d8" text-anchor="middle">Asked as a chat:</text>
+  <text x="1015" y="162" font-size="21" fill="#ffffff" text-anchor="middle">"What was there</text>
+  <text x="1015" y="190" font-size="21" fill="#ffffff" text-anchor="middle">today?"</text>
+  <text x="1015" y="238" font-size="20" fill="#cfe0d8" text-anchor="middle">Then: pick 1 of</text>
+  <text x="1015" y="264" font-size="20" fill="#cfe0d8" text-anchor="middle">3 pictures</text>
+
+  <!-- Connectors -->
+  <g stroke="#2f5d50" stroke-width="3" fill="none" marker-end="url(#tip)">
+    <line x1="170" y1="105" x2="205" y2="105"/>
+    <line x1="450" y1="105" x2="485" y2="105"/>
+    <line x1="170" y1="275" x2="205" y2="275"/>
+    <line x1="450" y1="275" x2="485" y2="275"/>
+    <path d="M690,105 C720,105 730,150 742,160"/>
+    <path d="M690,275 C720,275 730,230 742,220"/>
+    <line x1="848" y1="190" x2="885" y2="190"/>
+  </g>
+
+  <text x="20" y="395" font-size="20" fill="#1f2a2e">Per resident: walk score minus chair score, over the B weeks.</text>
+  <text x="20" y="420" font-size="18" fill="#5b6b66">Any discomfort ends the question. Research sessions only; never part of daily use.</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 480" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1160" height="480" fill="#fbfaf7"/>
+
+  <!-- Week labels -->
+  <g font-size="17" fill="#5b6b66">
+    <text x="360" y="28">Weeks 5-6</text>
+    <text x="558" y="28">Weeks 7-8</text>
+    <text x="756" y="28">Weeks 9-10</text>
+    <text x="954" y="28">Weeks 11-12</text>
+  </g>
+
+  <!-- Phases: A = baseline, B = intervention -->
+  <rect x="350" y="40" width="190" height="84" rx="12" fill="#e6e3dc"/>
+  <rect x="548" y="40" width="190" height="84" rx="12" fill="#2f5d50"/>
+  <rect x="746" y="40" width="190" height="84" rx="12" fill="#e6e3dc"/>
+  <rect x="944" y="40" width="190" height="84" rx="12" fill="#2f5d50"/>
+  <g font-size="22" font-weight="600">
+    <text x="364" y="74" fill="#2f5d50">A · Baseline</text>
+    <text x="364" y="104" font-size="17" font-weight="400" fill="#1f2a2e">care as usual</text>
+    <text x="562" y="74" fill="#ffffff">B · Intervention</text>
+    <text x="562" y="104" font-size="17" font-weight="400" fill="#ffffff">Mindful Walk</text>
+    <text x="760" y="74" fill="#2f5d50">A · Baseline</text>
+    <text x="760" y="104" font-size="17" font-weight="400" fill="#1f2a2e">care as usual</text>
+    <text x="958" y="74" fill="#ffffff">B · Intervention</text>
+    <text x="958" y="104" font-size="17" font-weight="400" fill="#ffffff">Mindful Walk</text>
+  </g>
+
+  <!-- Lane labels -->
+  <g font-size="19" fill="#1f2a2e">
+    <text x="20" y="180">Continuous</text>
+    <text x="20" y="202" font-size="15" fill="#5b6b66">walk duration, early terminations (M-02)</text>
+    <text x="20" y="252">Sampled walks</text>
+    <text x="20" y="274" font-size="15" fill="#5b6b66">observed affect, engagement (M-04, M-05)</text>
+    <text x="20" y="324">End of phase</text>
+    <text x="20" y="346" font-size="15" fill="#5b6b66">evening agitation, staff-rated (M-06)</text>
+    <text x="20" y="396">Intervention phases</text>
+    <text x="20" y="418" font-size="15" fill="#5b6b66">recall task (M-03); interview (M-07, M-08)</text>
+  </g>
+
+  <!-- Lane guides -->
+  <g stroke="#dcd8cf" stroke-width="1">
+    <line x1="350" y1="190" x2="1134" y2="190"/>
+    <line x1="350" y1="262" x2="1134" y2="262"/>
+    <line x1="350" y1="334" x2="1134" y2="334"/>
+    <line x1="350" y1="406" x2="1134" y2="406"/>
+  </g>
+
+  <!-- Continuous measurement -->
+  <rect x="350" y="184" width="784" height="12" rx="6" fill="#7fa596"/>
+
+  <!-- Sampled walks -->
+  <g fill="#2f5d50">
+    <circle cx="390" cy="262" r="8"/><circle cx="445" cy="262" r="8"/><circle cx="500" cy="262" r="8"/>
+    <circle cx="588" cy="262" r="8"/><circle cx="643" cy="262" r="8"/><circle cx="698" cy="262" r="8"/>
+    <circle cx="786" cy="262" r="8"/><circle cx="841" cy="262" r="8"/><circle cx="896" cy="262" r="8"/>
+    <circle cx="984" cy="262" r="8"/><circle cx="1039" cy="262" r="8"/><circle cx="1094" cy="262" r="8"/>
+  </g>
+
+  <!-- End of phase -->
+  <g fill="#c9873a">
+    <polygon points="530,324 540,334 530,344 520,334"/>
+    <polygon points="728,324 738,334 728,344 718,334"/>
+    <polygon points="926,324 936,334 926,344 916,334"/>
+    <polygon points="1124,324 1134,334 1124,344 1114,334"/>
+  </g>
+
+  <!-- Intervention phases only -->
+  <g fill="#9a5f1e">
+    <rect x="600" y="398" width="16" height="16" rx="3"/>
+    <rect x="670" y="398" width="16" height="16" rx="3"/>
+    <rect x="996" y="398" width="16" height="16" rx="3"/>
+    <rect x="1066" y="398" width="16" height="16" rx="3"/>
+  </g>
+
+  <text x="350" y="462" font-size="17" fill="#5b6b66">Within-participant design: each participant is their own control. Rain days logged as a covariate.</text>
+</svg>

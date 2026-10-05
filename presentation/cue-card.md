@@ -1,0 +1,117 @@
+# Mindful Walk: cue card
+
+**1. Mindful Walk**
+
+- New pitch: from tooth brushing to walks
+- Walking, noticing, remembering, listening
+
+**2. Where we started**
+
+- Bathroom; two minutes, twice a day
+- Robot only instructs: "Toothpaste next"
+- No room for theory of mind
+- Needs a steady grip; if the hands fail, the concept fails
+
+**3. Think of your last vacation**
+
+- Ask the room
+- Wait twenty seconds
+- Two or three people share
+
+**4. Hands up if you were moving**
+
+- Hands up: walking, hiking, swimming, cycling
+- Count the hands
+- Study: same museum tour, walked or seated
+- Walkers remembered far better (d = 1.31)
+
+**5. More to talk about**
+
+- Walks bring residents together: partner, volunteer, family
+- Every walk differs: season, weather, stories
+- Less repetition in the final presentation
+
+**6. What a walk can serve**
+
+- Six Human Values from our Foundation
+- Company: a partner with a shared past
+- Identity: the old round, the old songs
+- Autonomy: whether, where, how long
+- Well-being, dignity, safety
+
+**7. Mindful Walk**
+
+- Walk: daily, outdoors, with company
+- Notice: feet, air, birdsong
+- Remember: the life story along the route
+- Rest and listen: rain days, dusk
+- Walking comes first
+
+**8. Jan**
+
+- Our persona
+- Postal worker: thirty years, on foot and by bike
+- Moderate dementia: today is gone, the round is vivid
+- Refused a GPS watch: "I'm not a parcel"
+- Kees, two doors down, sorted the post at the same depot
+
+**9. "Every front garden on the round had roses like these."**
+
+- Pepper at the door: a walk with Kees?
+- Pocket guide on the rollator
+- Rose bed: this line, from Jan's life story
+- Jan and Kees talk for ten minutes
+- Gate: one cue back; Myra gets an alert
+- Evening: Jan tells their daughter
+
+**10. Voice in the pocket, person in reach**
+
+- Pepper indoors only: no grass, no gravel
+- Pocket guide outside, same voice
+- Beacons, no GPS, no route stored
+- Microphone off outdoors
+- A person always walks along
+
+**11. "Feel your feet on the path."**
+
+- Mention what is here, then silence
+- State a memory; never "Do you remember?"
+- Offer two options
+- Adult words, no praise
+
+**12. When it rains, and at dusk**
+
+- Rain: Pepper at the window, "Rain on the glass"
+- Breathing light on Pepper's shoulders
+- Dusk: guide at the bedside, lying practice
+- Concrete cues: nothing to remember
+
+**13. Listening that fits**
+
+- Two options from the life story
+- News in the morning, calm in the evening
+- News always on request, never hidden
+- Short stories; a recap for long books
+
+**14. What could go wrong**
+
+- Memories can hurt: "I must go home"
+- The voice may sound childish
+- The robot may feel like being watched
+- Calm evenings may feel like censorship
+- Each one tested; if true, the design changes
+
+**15. How we find out**
+
+- Wizard-of-Oz first: a person voices the guide
+- Staged garden walks
+- Residents: weeks with and without
+- Same-day recall: the vacation question, tested
+
+**16. Next steps**
+
+- Garden policy with management
+- Evidence pass on the references
+- First cue script with one family
+- Wizard-of-Oz trial
+- Open for questions

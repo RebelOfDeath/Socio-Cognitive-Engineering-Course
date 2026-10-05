@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1160" height="440" fill="#fbfaf7"/>
+
+  <!-- Phase 1 -->
+  <rect x="20" y="20" width="260" height="290" rx="18" fill="#dfe9e4"/>
+  <text x="42" y="56" font-size="17" fill="#5b6b66">Phase 1 · Weeks 1-2</text>
+  <text x="42" y="94" font-size="26" font-weight="600" fill="#2f5d50">Technical</text>
+  <text x="42" y="124" font-size="26" font-weight="600" fill="#2f5d50">verification</text>
+  <text x="42" y="168" font-size="18" fill="#1f2a2e">Staged-event test (EM-01)</text>
+  <text x="42" y="194" font-size="18" fill="#1f2a2e">Premises PR1-PR6</text>
+  <text x="42" y="220" font-size="18" fill="#1f2a2e">No human participants</text>
+  <text x="42" y="262" font-size="18" font-style="italic" fill="#2f5d50">Does each Function meet</text>
+  <text x="42" y="286" font-size="18" font-style="italic" fill="#2f5d50">its specification?</text>
+
+  <polygon points="284,155 296,165 284,175" fill="#2f5d50"/>
+
+  <!-- Phase 2 -->
+  <rect x="300" y="20" width="260" height="290" rx="18" fill="#eee6d5"/>
+  <text x="322" y="56" font-size="17" fill="#5b6b66">Phase 2 · Weeks 3-4</text>
+  <text x="322" y="94" font-size="26" font-weight="600" fill="#2f5d50">Formative</text>
+  <text x="322" y="124" font-size="26" font-weight="600" fill="#2f5d50">evaluation</text>
+  <text x="322" y="168" font-size="18" fill="#1f2a2e">Wizard-of-Oz study (EM-04)</text>
+  <text x="322" y="194" font-size="18" fill="#1f2a2e">n = 4-6 residents</text>
+  <text x="322" y="220" font-size="18" fill="#1f2a2e">Cue wording and timing</text>
+  <text x="322" y="262" font-size="18" font-style="italic" fill="#2f5d50">Is the interaction design</text>
+  <text x="322" y="286" font-size="18" font-style="italic" fill="#2f5d50">acceptable?</text>
+
+  <polygon points="564,155 576,165 564,175" fill="#2f5d50"/>
+
+  <!-- Phase 3 -->
+  <rect x="580" y="20" width="330" height="290" rx="18" fill="#2f5d50"/>
+  <text x="602" y="56" font-size="17" fill="#cfe0d8">Phase 3 · Weeks 5-12</text>
+  <text x="602" y="94" font-size="26" font-weight="600" fill="#ffffff">Summative</text>
+  <text x="602" y="124" font-size="26" font-weight="600" fill="#ffffff">validation</text>
+  <text x="602" y="168" font-size="18" fill="#ffffff">Single-case ABAB design (EM-02)</text>
+  <text x="602" y="194" font-size="18" fill="#ffffff">n = 8-12 residents, with partners</text>
+  <text x="602" y="220" font-size="18" fill="#ffffff">Claims CL1-CL14</text>
+  <text x="602" y="262" font-size="18" font-style="italic" fill="#ffffff">Are the Claims confirmed?</text>
+
+  <polygon points="914,155 926,165 914,175" fill="#2f5d50"/>
+
+  <!-- Phase 4 -->
+  <rect x="930" y="20" width="210" height="290" rx="18" fill="#e6e3dc"/>
+  <text x="950" y="56" font-size="17" fill="#5b6b66">Phase 4 · Week 13</text>
+  <text x="950" y="94" font-size="26" font-weight="600" fill="#2f5d50">Stakeholder</text>
+  <text x="950" y="124" font-size="26" font-weight="600" fill="#2f5d50">evaluation</text>
+  <text x="950" y="168" font-size="18" fill="#1f2a2e">Interviews (EM-03)</text>
+  <text x="950" y="194" font-size="18" fill="#1f2a2e">Care staff, family</text>
+  <text x="950" y="262" font-size="18" font-style="italic" fill="#2f5d50">Acceptable in daily</text>
+  <text x="950" y="286" font-size="18" font-style="italic" fill="#2f5d50">practice?</text>
+
+  <!-- Ethics prerequisite -->
+  <rect x="300" y="342" width="840" height="78" rx="14" fill="none" stroke="#c9873a" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="326" y="374" font-size="21" font-weight="600" fill="#9a5f1e">Prerequisite for phases 2-4: ethics approval</text>
+  <text x="326" y="402" font-size="18" fill="#5b4a33">Supported informed consent with a representative; stop on any sign of distress.</text>
+</svg>
