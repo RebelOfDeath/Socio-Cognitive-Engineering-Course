@@ -1,9 +1,11 @@
 %%WIKI-SYNC-META%%
-href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b1%20Human%20Values/pages/WebHome
-title: b1 Human Values
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b1%20Human%20Values/spaces/b1.2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
+title: b1.2 Morning Care (previous concept)
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-= Autonomy [HV-01] =
+**Abstract.** Superseded. Human Values HV-09 to HV-14 of the first concept, morning personal care. Replaced by [[b1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.b1 Human Values.b1\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Mindful Walk set.
+
+= Autonomy [HV-09] =
 
 //An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
 
@@ -12,12 +14,12 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|HV-01
+|ID|HV-09
 |Name|Autonomy
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Autonomy means being able to participate in everyday activities and make choices for themselves, rather than having tasks automatically taken over by caregivers or technology. In daily activities such as brushing teeth or taking medication, this means allowing the person to initiate and perform the steps they are still capable of doing, while providing assistance or prompting only when needed.
-|Held by|ST-08 (high); ST-09 (medium - endorses it for residents, but weighs it against the time available); ST-10 (medium); ST-12 (medium)
+|Held by|ST-09 (high); ST-10 (medium - endorses it for residents, but weighs it against the time available); ST-11 (medium); ST-13 (medium)
 |Intrinsic or instrumental|It is an intrinsic value because having choice and control over one's own everyday activities is valuable in itself. It can also instrumentally support related values such as dignity and wellbeing.
 |Recognition criteria|(((
 Served: the person is given meaningful opportunities to make choices, initiate actions and perform steps independently. assistance or prompting is provided when needed rather than automatically taking over. 
@@ -26,7 +28,7 @@ Violated: choices are unnecessarily overridden, the resident is not given an opp
 )))
 |Source|Self-determination theory: Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
 
-= Dignity [HV-02] =
+= Dignity [HV-10] =
 
 //An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
 
@@ -35,12 +37,12 @@ Violated: choices are unnecessarily overridden, the resident is not given an opp
 == Fields ==
 
 |=Field|=Description
-|ID|HV-02
+|ID|HV-10
 |Name|Dignity
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Dignity means treating people as individuals with individual preferences, abilities, and personal histories, rather than reducing them to their diagnosis or level of dependency. During everyday care activities, this means communicating respectfully, involving the resident in what is happening, avoiding unnecessary exposure or embarrassment, and providing assistance in a way that preserves the person's sense of self-worth.
-|Held by|ST-08 (high); ST-10 (high); ST-09 (medium); ST-11 (medium)
+|Held by|ST-09 (high); ST-11 (high); ST-10 (medium); ST-12 (medium)
 |Intrinsic or instrumental|It is an intrinsic value because being treated with respect and as a person of equal worth is valuable in itself. It can also instrumentally support related values such as autonomy and well-being.
 |Recognition criteria|(((
 Served: the resident is addressed respectfully, included in decisions concerning them, and supported in ways that preserve their sense of identity and self-worth. Care is provided discretely and without unnecessary infantilisation, embarrassment, or exposure.
@@ -48,7 +50,7 @@ Violated: the resident is spoken about or treated as though they are not present
 )))
 |Source|Value Sensitive Design: Friedman, B., Kahn, P. H., Jr., & Borning, A. (2008). Value Sensitive Design and Information Systems. In K. E. Himma & H. T. Tavani (Eds.), //The Handbook of Information and Computer Ethics//. Personhood in dementia care: Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press.
 
-= Privacy [HV-03] =
+= Privacy [HV-11] =
 
 //An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
 
@@ -57,16 +59,16 @@ Violated: the resident is spoken about or treated as though they are not present
 == Fields ==
 
 |=Field|=Description
-|ID|HV-03
+|ID|HV-11
 |Name|Privacy
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|(((
 Privacy means that people retain appropriate control over access to their body, personal space, belongings, activities, and personal information, even when they require assistance or monitoring. In everyday care, this means that observation, reminders, sensors, or caregiver involvement should not be more intrusive than necessary and that sensitive activities such as dressing, toileting, medication use, or personal hygiene should be handled discretely.
 
-The care home employee (ST-09) should not face surveillance at their workplace besides what is necessary.
+The care home employee (ST-10) should not face surveillance at their workplace besides what is necessary.
 )))
-|Held by|ST-08 (medium); ST-09 (medium - for residents, and against surveillance of their own work); ST-11 (medium - data-protection obligations); ST-12 (medium - medical confidentiality); ST-10 (low - may want more information than the resident would share)
+|Held by|ST-09 (medium); ST-10 (medium - for residents, and against surveillance of their own work); ST-12 (medium - data-protection obligations); ST-13 (medium - medical confidentiality); ST-11 (low - may want more information than the resident would share)
 |Intrinsic or instrumental|It is primarily an intrinsic value because having personal boundaries and control over access to oneself is valuable in itself. It also instrumentally supports dignity, autonomy, and trust.
 |Recognition criteria|(((
 Served: personal information, spaces, and care activities are accessed only when necessary and by appropriate people. Residents are given private space where possible, and monitoring or assistance is limited to what is required for safe and effective care.
@@ -74,7 +76,7 @@ Violated: residents are unnecessarily watched, exposed, interrupted, or monitore
 )))
 |Source|Value Sensitive Design (Friedman et al., 2008). Surveillance in residential dementia care: Niemeijer et al. (2010), //International Psychogeriatrics//, PMID 20199699.
 
-= Competence [HV-04] =
+= Competence [HV-12] =
 
 //An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
 
@@ -83,12 +85,12 @@ Violated: residents are unnecessarily watched, exposed, interrupted, or monitore
 == Fields ==
 
 |=Field|=Description
-|ID|HV-04
+|ID|HV-12
 |Name|Competence
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Competence means enabling residents to experience that they are still capable of successfully carrying out meaningful parts of everyday activities despite cognitive decline. In activities such as brushing teeth, dressing, preparing for bed, or taking medication, this means adapting tasks and providing suitable prompts so that residents can use the abilities they still have instead of immediately having the activity completed for them.
-|Held by|ST-08 (medium); ST-09 (medium)
+|Held by|ST-09 (medium); ST-10 (medium)
 |Intrinsic or instrumental|It is primarily an instrumental value because maintaining and supporting the resident's ability to perform everyday activities helps preserve autonomy, dignity, and well-being. Experiencing oneself as capable may also have intrinsic value for the resident.
 |Recognition criteria|(((
 Served: activities are matched to the resident's remaining abilities, instructions or prompts are understandable, and the resident is given opportunities to successfully complete steps themselves. Assistance increases only when the resident needs it.
@@ -96,7 +98,7 @@ Violated: tasks are made unnecessarily difficult or confusing, the resident repe
 )))
 |Source|Self-determination theory, competence need (Ryan & Deci, 2000).
 
-= Well-being [HV-05] =
+= Well-being [HV-13] =
 
 //An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
 
@@ -105,12 +107,12 @@ Violated: tasks are made unnecessarily difficult or confusing, the resident repe
 == Fields ==
 
 |=Field|=Description
-|ID|HV-05
+|ID|HV-13
 |Name|Well-being
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Well-being means supporting the resident's emotional and physical comfort and helping everyday life remain calm, meaningful, and pleasant. In the context of dementia care, this includes reducing avoidable stress, confusion, frustration, discomfort, and anxiety while supporting positive experiences such as familiarity, confidence, social connection, enjoyment, and a sense of security during daily activities.
-|Held by|ST-08 (high); ST-09 (high); ST-10 (high); ST-11 (high); ST-12 (high)
+|Held by|ST-09 (high); ST-10 (high); ST-11 (high); ST-12 (high); ST-13 (high)
 |Intrinsic or instrumental|It is an intrinsic value because the resident's physical and emotional quality of life is valuable in itself. It can also be supported instrumentally by values such as autonomy, dignity, competence, privacy, and social connection.
 |Recognition criteria|(((
 Served: the resident is generally comfortable and calm during the activity, assistance reduces rather than increases confusion or distress, and the activity supports positive experiences such as satisfaction, familiarity, enjoyment, or social connection.
@@ -118,7 +120,7 @@ Violated: an activity, care practice, or technology causes avoidable anxiety, fr
 )))
 |Source|Value Sensitive Design (Friedman et al., 2008).
 
-= Attentive care [HV-06] =
+= Attentive care [HV-14] =
 
 //An enduring conception of a desirable state that matters to Stakeholders. A first-class grounding node.//
 
@@ -127,30 +129,30 @@ Violated: an activity, care practice, or technology causes avoidable anxiety, fr
 == Fields ==
 
 |=Field|=Description
-|ID|HV-06
+|ID|HV-14
 |Name|Attentive care
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Attentive care means care staff having enough time and attention to give each resident the support they actually need during the morning round, without being pulled back to the same resident repeatedly or having to rush other residents. For the care worker it is about being able to do the job well; for management it is about staffing and the quality of care the home provides.
-|Held by|ST-09 (high); ST-11 (high); ST-10 (medium - wants their relative to be attended to)
-|Intrinsic or instrumental|Instrumental. It serves the residents' Well-being (HV-05) and Dignity (HV-02), because rushed staff tend to take over activities or skip them, and it serves the care worker's own well-being at work. Because it is instrumental, it should not be traded against the values it serves: saving staff time by taking over activities the resident could do would defeat its purpose.
+|Held by|ST-10 (high); ST-12 (high); ST-11 (medium - wants their relative to be attended to)
+|Intrinsic or instrumental|Instrumental. It serves the residents' Well-being (HV-13) and Dignity (HV-10), because rushed staff tend to take over activities or skip them, and it serves the care worker's own well-being at work. Because it is instrumental, it should not be traded against the values it serves: saving staff time by taking over activities the resident could do would defeat its purpose.
 |Recognition criteria|(((
 Served: a care worker can attend to another resident while one completes an activity; they return to the same resident less often; prompting time per resident falls without completion falling.
 
 Violated: residents are left waiting; staff take over activities to save time; the System adds work, for example through frequent low-value alerts that have to be checked.
 )))
-|Source|Value Sensitive Design (Friedman et al., 2008). Caregiver time in graduated prompting: Rogers et al. (1999), //Journal of the American Geriatrics Society//, 47(9), 1049-1057. Derived from SA-07 and HP-02.
+|Source|Value Sensitive Design (Friedman et al., 2008). Caregiver time in graduated prompting: Rogers et al. (1999), //Journal of the American Geriatrics Society//, 47(9), 1049-1057. Derived from SA-10 and HP-06.
 
 == **Graph edges** ==
 
-HV-01: held-by → ST-08, ST-09, ST-10, ST-12; party-to → VT-01, VT-05, VT-06; operationalized-by → M-02, M-05; explained-by → HFC-01.
+HV-09: held-by → ST-09, ST-10, ST-11, ST-13; party-to → VT-08, VT-12, VT-13; operationalized-by → M-13, M-16; explained-by → HFC-09.
 
-HV-02: held-by → ST-08, ST-09, ST-10, ST-11; party-to → VT-04; operationalized-by → M-04, M-06; explained-by → HFC-04, HFC-05.
+HV-10: held-by → ST-09, ST-10, ST-11, ST-12; party-to → VT-11; operationalized-by → M-15, M-17; explained-by → HFC-12, HFC-13.
 
-HV-03: held-by → ST-08, ST-09, ST-10, ST-11, ST-12; party-to → VT-02; operationalized-by → M-06; explained-by → HFC-02.
+HV-11: held-by → ST-09, ST-10, ST-11, ST-12, ST-13; party-to → VT-09; operationalized-by → M-17; explained-by → HFC-10.
 
-HV-04: held-by → ST-08, ST-09; party-to → VT-03, VT-04, VT-07; operationalized-by → M-02, M-03; explained-by → HFC-03.
+HV-12: held-by → ST-09, ST-10; party-to → VT-10, VT-11, VT-14; operationalized-by → M-13, M-14; explained-by → HFC-11.
 
-HV-05: held-by → ST-08 to ST-12; party-to → VT-01, VT-02, VT-03, VT-05, VT-06; operationalized-by → M-04.
+HV-13: held-by → ST-09 to ST-13; party-to → VT-08, VT-09, VT-10, VT-12, VT-13; operationalized-by → M-15.
 
-HV-06: held-by → ST-09, ST-10, ST-11; party-to → VT-07; operationalized-by → M-07.
+HV-14: held-by → ST-10, ST-11, ST-12; party-to → VT-14; operationalized-by → M-18.

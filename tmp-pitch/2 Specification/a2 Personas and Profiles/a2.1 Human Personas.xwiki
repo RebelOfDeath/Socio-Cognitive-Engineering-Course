@@ -3,28 +3,150 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Human Personas
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-= Human Persona  [HP-nn] =
+**Abstract.** Four personas, one per direct stakeholder in the Design Scenarios: Jan, the resident (HP-01); Myra, the care worker (HP-02); Sanne, the activity coordinator (HP-03); Kees, the walking partner (HP-04). All provisional: built from literature and group reasoning, not from interviews.
 
-//One per Direct Stakeholder (§1.1) who appears as a human Actor in the Design Scenario. Elaborates the values and relationship to other Stakeholders already captured in the Foundation into the behavioral detail a Foundation-level Stakeholder record deliberately leaves out. Indirect Stakeholders are not given a Persona; their role is carried by their relationship to a Direct one.//
+= Human Persona - Jan [HP-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. HP-01, HP-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Elaborates|the Stakeholder ID (§1.1) this Persona builds on. A Persona without one is a new Stakeholder that should have been documented in the Foundation first.
-|Role in Scenario|their position in the Design Scenario.
-|Task Demands|which Tasks require System support or collaboration.
-|Specific Capabilities and Needs|what they can and cannot do, relevant to this design.
-|Values and Motivations|elaborates the Human Value ID(s) already recorded for this Stakeholder in §1.1.
-|Social Network and Relationships|elaborates the relationship to other Stakeholders already recorded in §1.1.
-|History and Experiences|prior events shaping their stance, including prior technology they rejected, and why.
-|Constraints and Privacy Considerations|what they will not accept, stated as a position rather than a rule.
+|ID|HP-01
+|Name|Jan, resident with dementia
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, PS-01 to PS-06.
+|Elaborates|ST-01
+|Role in Scenario|Walks the garden with Kees and the guide (DS-01). Sits at the window on rain days (DS-02). Rests and listens at dusk (DS-03).
+|Task Demands|(((
+1. Agree to go out
+1. Keep the thread on the walk
+1. Turn back from the gate
+1. Settle at dusk
+1. Choose what to hear
+)))
+|Specific Capabilities and Needs|(((
+Can: walk 20-30 minutes with a rollator, resting on benches; follow short, concrete sentences; answer yes or no; choose between two options.
 
-== Graph edges ==
+Cannot: hold a list of options; recall this morning; find the way back alone.
 
-elaborates → Stakeholder (§1.1); appears-in → Design Scenario; referenced-by → Value Story, Claim.
+Moderate dementia: recent memory poor, harbour years vivid. Hearing aid, left ear.
+
+Needs: a reason to go, a companion, time, plain adult speech.
+)))
+|Values and Motivations|(((
+* HV-01 Autonomy - decides for themself; dislikes being "taken" for a walk
+* HV-02 Dignity - a former foreman; speaks plainly and wants to be spoken to plainly
+* HV-03 Privacy - does not want staff to know every step
+* HV-04 Safety - fell once; uneasy on gravel
+* HV-05 Well-being - restless on days without going out
+* HV-07 Social connectedness - misses the crew
+* HV-08 Identity - the harbour, brass band, football: who Jan is
+)))
+|Social Network and Relationships|Daughter (ST-03) visits on Sundays and wrote the life story with Sanne. Kees (ST-04) lives two doors down. Myra (ST-02) is Jan's care worker most afternoons.
+|History and Experiences|Thirty years at the harbour, the last ten as foreman. Walked the dog, Bram, twice a day until moving in two years ago. Refused a GPS watch: "I'm not a parcel."
+|Constraints and Privacy Considerations|Will not be tracked. Will not wear anything on the head. Will not be quizzed: "I'm not at school."
+
+= Human Persona - Myra [HP-02] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-02
+|Name|Myra, care worker
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-02, SA-02, SA-06, PS-01, PS-05.
+|Elaborates|ST-02
+|Role in Scenario|Starts the walk, clips on the guide, returns to the ward (DS-01). Receives the gate alert and judges it from the window (DS-01). Starts lying practice at handover (DS-03).
+|Task Demands|(((
+1. Get residents out without walking every walk
+1. Know quickly when someone needs help
+1. Settle residents at handover
+1. Read the record in seconds
+)))
+|Specific Capabilities and Needs|(((
+Can: reassure, help physically, redirect; knows the residents well.
+
+Needs: few, meaningful alerts; a phone message readable at a glance; devices that take seconds to set up.
+)))
+|Values and Motivations|(((
+* HV-04 Safety - every resident back, unharmed
+* HV-05 Well-being - residents out daily, calm in the evening
+* HV-06 Attentive care - time for the resident who needs it now
+* HV-01 Autonomy - lets residents choose, within time and safety limits
+* HV-03 Privacy - for residents; and no timing of their own work
+)))
+|Social Network and Relationships|Six to eight residents per shift. Works with Sanne (ST-08). Employed by ST-05. Talks with families at visits.
+|History and Experiences|Has run after residents at the gate. Has handed out the as-needed tablet at dusk when nobody could stay.
+|Constraints and Privacy Considerations|Will not accept frequent low-value alerts. Will not accept a device that times their work.
+
+= Human Persona - Sanne [HP-03] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-03
+|Name|Sanne, activity coordinator
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Built on ST-08, SA-05, SA-07, PS-04, PS-06.
+|Elaborates|ST-08
+|Role in Scenario|Pairs Jan and Kees (DS-01). Sets up the rain-day session with Pepper (DS-02). Writes the life-story profiles with families.
+|Task Demands|(((
+1. Write and update profiles: welcome topics, avoided topics, favourites
+1. Pair residents who will get on
+1. Run sessions for more residents than they can sit with
+1. Keep content fresh
+)))
+|Specific Capabilities and Needs|(((
+Can: talk with families; read a group; run the activity programme.
+
+Not technical. Needs: a profile form that takes 20 minutes, not two hours; sessions that start with one tap.
+)))
+|Values and Motivations|(((
+* HV-05 Well-being - pleasant, meaningful days
+* HV-08 Identity - activities that fit the person
+* HV-07 Social connectedness - pairs and groups
+* HV-06 Attentive care - time per resident
+* HV-03 Privacy - the life stories in their care
+)))
+|Social Network and Relationships|Families (ST-03), volunteers (ST-07), care workers (ST-02), psychologist (ST-06).
+|History and Experiences|Ran snoezel sessions with recorded relaxation, and watched residents get lost in them (PS-04).
+|Constraints and Privacy Considerations|Will not keep a profile that families cannot see. Will not let Pepper replace activities with people.
+
+= Human Persona - Kees [HP-04] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-04
+|Name|Kees, walking partner
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Built on ST-04, SA-04, PS-02.
+|Elaborates|ST-04
+|Role in Scenario|Walks with Jan; talks harbour; presses pause when the talk is good (DS-01).
+|Task Demands|(((
+1. Join the walk
+1. Talk
+1. End the walk when they like
+)))
+|Specific Capabilities and Needs|(((
+Can: walk without aid; talk easily; use one big button.
+
+Mild dementia: forgets names, not faces.
+)))
+|Values and Motivations|(((
+* HV-07 Social connectedness - company, a mate to talk to
+* HV-01 Autonomy - free to say no, free to turn back
+* HV-05 Well-being - own walk, own health
+* HV-08 Identity - pilot-boat crew, forty years
+* HV-02 Dignity - a partner, not Jan's minder
+)))
+|Social Network and Relationships|Lives two doors from Jan. Own family; own care plan.
+|History and Experiences|Pilot-boat crew at the same harbour. Never met Jan there, as far as either remembers.
+|Constraints and Privacy Considerations|Will not be responsible for Jan. If Jan wanders off, that is staff's job.

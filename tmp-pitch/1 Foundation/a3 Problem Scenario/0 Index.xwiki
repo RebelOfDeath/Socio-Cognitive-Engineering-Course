@@ -3,10 +3,10 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Problem Scenarios place a breakdown in a concrete moment and analyse its causes. The current concept is the resident's daily walk. The scenarios of the earlier morning-care concept are kept for traceability. That concept is superseded and no longer drives the design.
+**Abstract.** Problem Scenarios place a breakdown in a concrete moment and analyse its causes. Current concept: Mindful Walk. The morning-care scenarios are kept for traceability; that concept no longer drives the design.
 
 = Concepts =
 
 |=Page|=Scenarios|=Status
-|[[a3.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.1 Daily Walk.WebHome]]|PS-01 Losing the thread mid-walk; PS-02 No reason to go out; PS-03 Rain cancels the walk|**Current**
-|[[a3.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.2 Morning Care (previous concept).WebHome]]|PS-04 Losing track of the tooth brushing routine; PS-05 Difficulty completing the medication routine|Superseded
+|[[a3.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.1 Mindful Walk.WebHome]]|PS-01 Losing the thread mid-walk; PS-02 No reason to go out; PS-03 Rain cancels the walk; PS-04 Lost in the recording; PS-05 Restless at dusk; PS-06 Radio on, nobody listening|**Current**
+|[[a3.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.2 Morning Care (previous concept).WebHome]]|PS-07 Losing track of the tooth brushing routine; PS-08 Difficulty completing the medication routine|Superseded

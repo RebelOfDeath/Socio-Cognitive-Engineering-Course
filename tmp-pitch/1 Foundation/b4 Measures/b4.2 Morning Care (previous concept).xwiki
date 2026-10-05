@@ -1,10 +1,11 @@
 %%WIKI-SYNC-META%%
-href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b4%20Measures/pages/WebHome
-title: b4 Measures
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b4%20Measures/spaces/b4.2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
+title: b4.2 Morning Care (previous concept)
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
+**Abstract.** Superseded. Measures M-12 to M-18 of the first concept, morning personal care. Replaced by [[b4.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.b4 Measures.b4\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Mindful Walk set.
 
-= Step-tracking and stall-detection performance  [M-01] =
+= Step-tracking and stall-detection performance  [M-12] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -13,23 +14,23 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|M-01
+|ID|M-12
 |Name|Step-tracking and stall-detection performance
 |Status|In Progress
 |Evidence basis|The protocol follows the system-performance reporting of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
-|Construct measured|Whether the System correctly identifies which SA-05 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
+|Construct measured|Whether the System correctly identifies which SA-08 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
 |Type|Quantitative
 |Instrument or procedure|Staged-event protocol against a ground-truth log: scripted steps, stalls, resumptions and confounders at a mock sink, with each event timestamped by the experimenter.
-|Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Pass thresholds are still to be set from a first EM-01 pilot with the selected item sensors (TECH-02) - see §2.3 Open item O-20.
+|Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Pass thresholds are still to be set from a first EM-05 pilot with the selected item sensors (TECH-11) - see §2.3 Open item O-29.
 |Validity and reliability|Bespoke. Validity rests on the accuracy of the ground-truth log, not on prior psychometric evidence.
 |Serves|Verification
 |Burden|No human subjects - staged events only. Requires a mock sink set-up and the prototype.
 
 == Graph edges ==
 
-operationalizes → UC01-F1-PR1, UC01-F2-PR2 (timing component), UC01-F3-PR3; used-by → EM-01.
+operationalizes → UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9; used-by → EM-05.
 
-= Independent step completion  [M-02] =
+= Independent step completion  [M-13] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -38,23 +39,23 @@ operationalizes → UC01-F1-PR1, UC01-F2-PR2 (timing component), UC01-F3-PR3; us
 == Fields ==
 
 |=Field|=Description
-|ID|M-02
+|ID|M-13
 |Name|Independent step completion
 |Status|In Progress
 |Evidence basis|Step-level scoring as used in COACH (Mihailidis et al., 2008), which scored older adults with moderate-to-severe dementia on handwashing steps completed without human assistance. Directly reused, not adapted.
-|Construct measured|How many steps of the SA-05 sequence the resident completes with no prompt, per session.
+|Construct measured|How many steps of the SA-08 sequence the resident completes with no prompt, per session.
 |Type|Quantitative
-|Instrument or procedure|Observer scoring of each SA-05 step during the real morning routine.
-|Scoring or coding scheme|One point per SA-05 step completed without any prompt or human assistance; summed per session (0-9 for SA-05's nine steps). Compared against the same resident's pre-System baseline.
+|Instrument or procedure|Observer scoring of each SA-08 step during the real morning routine.
+|Scoring or coding scheme|One point per SA-08 step completed without any prompt or human assistance; summed per session (0-9 for SA-08's nine steps). Compared against the same resident's pre-System baseline.
 |Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers, per step (completed unprompted: yes/no): Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
-|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-03, VT-02).
+|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-11, VT-09).
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6; used-by → EM-02; operationalizes → HV-04 (Competence), HV-01 (Autonomy). Associated with HFC-03.
+operationalizes → UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20; used-by → EM-06; operationalizes → HV-12 (Competence), HV-09 (Autonomy). Associated with HFC-11.
 
-= Prompt level required  [M-03] =
+= Prompt level required  [M-14] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -63,23 +64,23 @@ operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F3-CL6; used-by → EM-02; op
 == Fields ==
 
 |=Field|=Description
-|ID|M-03
+|ID|M-14
 |Name|Prompt level required
 |Status|In Progress
-|Evidence basis|Bespoke ordinal coding. The levels correspond to SA-05's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
+|Evidence basis|Bespoke ordinal coding. The levels correspond to SA-08's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
 |Construct measured|The highest level of assistance needed to get the resident through each step.
 |Type|Quantitative (ordinal)
-|Instrument or procedure|Observer coding per SA-05 step, during the real morning routine.
+|Instrument or procedure|Observer coding per SA-08 step, during the real morning routine.
 |Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
-|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-02, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
+|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-13, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
-|Burden|Human subjects - as M-02, collected in the same observation.
+|Burden|Human subjects - as M-13, collected in the same observation.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL2, UC01-F2-CL4; used-by → EM-02; operationalizes → HV-04 (Competence).
+operationalizes → UC04-F8-CL16, UC04-F8-CL18; used-by → EM-06; operationalizes → HV-12 (Competence).
 
-= Observed distress and resistance  [M-04] =
+= Observed distress and resistance  [M-15] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -88,7 +89,7 @@ operationalizes → UC01-F2-CL2, UC01-F2-CL4; used-by → EM-02; operationalizes
 == Fields ==
 
 |=Field|=Description
-|ID|M-04
+|ID|M-15
 |Name|Observed distress and resistance
 |Status|In Progress
 |Evidence basis|(((
@@ -106,9 +107,9 @@ Optionally paired with the Observed Emotion Rating Scale for affect (Lawton, Van
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5; used-by → EM-02; operationalizes → HV-05 (Well-being).
+operationalizes → UC04-F8-CL15, UC04-F8-CL18, UC04-F8-CL19; used-by → EM-06; operationalizes → HV-13 (Well-being).
 
-= Perceived autonomy and felt control  [M-05] =
+= Perceived autonomy and felt control  [M-16] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -117,7 +118,7 @@ operationalizes → UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5; used-by → EM-02; op
 == Fields ==
 
 |=Field|=Description
-|ID|M-05
+|ID|M-16
 |Name|Perceived autonomy and felt control
 |Status|In Progress
 |Evidence basis|Episode-specific need-fulfilment items from Custers et al. (2013), which measured Dutch nursing-home residents' fulfilment of the needs for autonomy, competence and relatedness during a specific videotaped caregiving episode, with a trained-observer counterpart. Provisional: that sample was physically frail residents (n = 36, mean age 80), not specifically residents with dementia.
@@ -131,15 +132,15 @@ Observer: the 7-point "support of autonomy" scale from the same study, rating ho
 
 Report self-report and observer scores separately; do not combine them.
 )))
-|Validity and reliability|In Custers et al. (2013) the need-fulfilment scale for the videotaped episode had α = .69, and observers agreed within one scale point on 79% of episodes for support of autonomy. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement, so the self-report has a documented ceiling and must not be used alone. Our adaptation to tooth brushing is untested. Observer agreement will be checked as in M-02, using weighted kappa.
+|Validity and reliability|In Custers et al. (2013) the need-fulfilment scale for the videotaped episode had α = .69, and observers agreed within one scale point on 79% of episodes for support of autonomy. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement, so the self-report has a documented ceiling and must not be used alone. Our adaptation to tooth brushing is untested. Observer agreement will be checked as in M-13, using weighted kappa.
 |Serves|Validation
 |Burden|Human subjects - residents with dementia, supported consent. Self-report may be difficult for residents with more advanced dementia; the observer rating also needs a trained observer present.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL3; used-by → EM-02; operationalizes → HV-01 (Autonomy). Associated with HFC-01.
+operationalizes → UC04-F8-CL17; used-by → EM-06; operationalizes → HV-09 (Autonomy). Associated with HFC-09.
 
-= Perceived privacy and monitoring acceptability  [M-06] =
+= Perceived privacy and monitoring acceptability  [M-17] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -148,21 +149,21 @@ operationalizes → UC01-F2-CL3; used-by → EM-02; operationalizes → HV-01 (A
 == Fields ==
 
 |=Field|=Description
-|ID|M-06
+|ID|M-17
 |Name|Perceived privacy and monitoring acceptability
 |Status|In Progress
 |Evidence basis|Bespoke, but the concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
 |Construct measured|Whether residents experience the System as watching them or talking down to them, and whether care staff judge what the session record exposes as proportionate.
 |Type|Mixed (qualitative coding, plus a check of record content)
 |Instrument or procedure|(((
-Validation component, residents: a short, verbally administered post-session interview in EM-02 (bespoke, three open questions: how it felt to have the robot there while brushing their teeth; whether it felt like being watched; whether they liked how it spoke to them).
+Validation component, residents: a short, verbally administered post-session interview in EM-06 (bespoke, three open questions: how it felt to have the robot there while brushing their teeth; whether it felt like being watched; whether they liked how it spoke to them).
 
-Validation component, care staff: the EM-03 interview, including their judgement of what the session record exposes.
+Validation component, care staff: the EM-07 interview, including their judgement of what the session record exposes.
 
 Verification component (record content): inspection of stored session records against the three specified items.
 )))
 |Scoring or coding scheme|(((
-Code each statement into one of: W - the System watches, checks on, or supervises the resident; R - the System records or reports on the resident; T - the System talks down to the resident or treats them like a child (for UC01-F2-CL5); N - neutral or positive about the System's presence. A statement can carry more than one code. Code each record item named by care staff as P (proportionate) or I (intrusive). Report counts per code per resident; any W, R or T code is reported with its quote.
+Code each statement into one of: W - the System watches, checks on, or supervises the resident; R - the System records or reports on the resident; T - the System talks down to the resident or treats them like a child (for UC04-F8-CL19); N - neutral or positive about the System's presence. A statement can carry more than one code. Code each record item named by care staff as P (proportionate) or I (intrusive). Report counts per code per resident; any W, R or T code is reported with its quote.
 
 Record-content check: pass if the record holds exactly the three specified items and no step-level trace.
 )))
@@ -172,9 +173,9 @@ Record-content check: pass if the record holds exactly the three specified items
 
 == Graph edges ==
 
-operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1-CL7, UC01-F4-CL8; used-by → EM-01, EM-02 (resident interview), EM-03; operationalizes → HV-03 (Privacy), HV-02 (Dignity). Associated with HFC-02, HFC-04, HFC-05.
+operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL19, UC04-F7-CL21, UC04-F10-CL22; used-by → EM-05, EM-06 (resident interview), EM-07; operationalizes → HV-11 (Privacy), HV-10 (Dignity). Associated with HFC-10, HFC-12, HFC-13.
 
-= Care-worker prompting load  [M-07] =
+= Care-worker prompting load  [M-18] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -183,7 +184,7 @@ operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1
 == Fields ==
 
 |=Field|=Description
-|ID|M-07
+|ID|M-18
 |Name|Care-worker prompting load
 |Status|In Progress
 |Evidence basis|Time-sampled observation as used in Rogers et al. (1999), which reported the proportion of a morning care session spent on physical assists.
@@ -193,8 +194,8 @@ operationalizes → UC01-F4-PR4 (record-content component), UC01-F2-CL5, UC01-F1
 |Scoring or coding scheme|Count and total duration of care-worker prompting episodes per session. Compared against the pre-System baseline.
 |Validity and reliability|Method follows Rogers et al. (1999); our specific coding is bespoke. Inter-rater reliability: two observers time the same prompting episodes in at least 20% of sessions; agreement on episode counts as Cohen's kappa and on durations as an intraclass correlation, with κ or ICC ≥ .60 treated as acceptable.
 |Serves|Validation
-|Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-09) and residents.
+|Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-10) and residents.
 
 == Graph edges ==
 
-operationalizes → UC01-F3-CL9; used-by → EM-02, EM-03; operationalizes → HV-06 (Attentive care).
+operationalizes → UC04-F9-CL23; used-by → EM-06, EM-07; operationalizes → HV-14 (Attentive care).

@@ -1,0 +1,407 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a1%20Situated%20Activities/spaces/a1.1%20Mindful%20Walk/pages/WebHome
+title: a1.1 Mindful Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Walking is the therapy: exercise, daylight, orientation, memory. Moments on foot are recalled better than moments in a chair (group observation; HFC-01). Seven activities. On foot: the accompanied walk (SA-01), fitting walks between care tasks (SA-02), indoor exercise on rain days (SA-03), walking with a fellow resident (SA-04). At rest: the relaxation session (SA-05), settling to rest (SA-06), listening to radio, news or audiobooks (SA-07). Breakdowns: lost place or purpose, no reason or company to go out, rain, guidance that does not fit, evening restlessness, audio nobody chose.
+
+= Situated Activity - Accompanied walk [SA-01] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-01
+|Name|Accompanied walk
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Forbes et al. (2015), Cochrane review: exercise may improve ADL ability in dementia; effect on cognition unclear
+* Erickson et al. (2011): a year of walking enlarged the hippocampus and improved memory in older adults (not dementia-specific)
+* Härlein et al. (2009): fall risk factors in older people with dementia
+* Lai & Arthur (2003): wandering behaviour in people with dementia
+)))
+|Goal|Walk outside daily, accompanied. Move, get daylight, stay oriented, return safely.
+|Performing Actor(s)|(((
+* ST-01: Resident - walks
+* ST-02: Care worker - accompanies or supervises
+* ST-03: Family member - accompanies occasionally
+* ST-07: Volunteer - accompanies one-to-one
+)))
+|Trigger|Scheduled slot (often after lunch); resident restless or asks to go out
+|Constituent Tasks|(((
+1. Agree to go
+1. Toilet, weather-appropriate clothes, shoes
+1. Take rollator or wheelchair, if used
+1. Leave building with companion
+1. Follow route (garden or nearby)
+1. Look, listen, talk: surroundings, old times
+1. Rest on a bench; keep pace
+1. Return to building
+1. Change, back to room or common area
+)))
+|Context|Resident cannot walk alone: the companion keeps them oriented, motivated and safe. Garden circuit, park or nearby streets. Mobility ranges from independent walking to wheelchair, pushed by the companion. Stamina and orientation vary per resident and per day. Conversation depends on what the companion knows of the resident's life. Depends on staff availability.
+|Frequency and duration|Daily (target); 15-45 min. Often shortened or skipped.
+|Tools and artifacts|Clothing, shoes, rollator/wheelchair, ID card with home address, coded exits, garden benches, life-story book (if any)
+|Existing workarounds|(((
+* Fixed daily walking time
+* Closed garden loop leading back to entrance
+* Group walks with one care worker
+* Family or volunteers take resident out
+* Coded exits, door alarms
+* Redirection when resident wants to "go home"
+* Pointing out flowers, birds, weather
+* Talking about old times, when the companion knows the story
+)))
+|Observed breakdowns|(((
+* Forgets where they are or why; distracted, stops
+* Returns to room early; walk abandoned
+* Exit-seeking: heads for former home address
+* No motivation: bored, lonely, refuses
+* Talk dries up: companion does not know the resident's past
+* Walk cancelled: no staff
+* Walk cancelled: bad weather
+* Fatigue, fall or near-fall
+* Toilet need mid-walk
+* Anxiety outside familiar surroundings
+* Late-afternoon restlessness (sundowning)
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (supported by ST-02, ST-03, ST-07); enabled-by → SA-02; replaced-by → SA-03 (no outdoor walk); extended-by → SA-04; followed-by → SA-05, SA-07 (rest); illustrated-by → PS-01, PS-02, PS-03.
+
+= Situated Activity - Fitting walks between care tasks [SA-02] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-02
+|Name|Fitting walks between care tasks
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only.
+|Goal|Every resident who can walk gets a safe daily walk, within staff time
+|Performing Actor(s)|(((
+* ST-02: Care worker
+* ST-08: Activity coordinator
+)))
+|Trigger|Scheduled activity slot; gap between care tasks
+|Constituent Tasks|(((
+1. Choose who walks today (mobility, mood, weather)
+1. Prepare residents (toilet, clothing, aids)
+1. Walk with one resident or a small group
+1. Watch for fatigue, disorientation, falls
+1. Redirect residents who wander or try to leave
+1. Return; count residents
+1. Note incidents in care record
+)))
+|Context|Walks compete with care tasks for the same staff time. Afternoon; fewer care tasks, fewer staff. One worker, 1-4 residents. Ward is short-staffed while worker is out.
+|Frequency and duration|Daily; 30-60 min incl. preparation
+|Tools and artifacts|Care record, walking aids, phone, spare wheelchair for return
+|Existing workarounds|(((
+* Group walks to save time
+* Volunteers or family for one-to-one walks
+* Garden only when understaffed
+* Shorter walks
+)))
+|Observed breakdowns|(((
+* Walk skipped: no time
+* Preparation takes longer than the walk
+* Group pace set by slowest resident
+* Whole group returns when one resident turns back
+* Cannot follow two residents at once
+* Ward understaffed meanwhile
+)))
+
+== Graph edges ==
+
+performed-by → ST-02, ST-08; enables → SA-01, SA-04; supervises → SA-03; contributes-to → PS-01, PS-02, PS-03.
+
+= Situated Activity - Bad-weather indoor exercise [SA-03] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-03
+|Name|Bad-weather indoor exercise
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Forbes et al. (2015): see SA-01
+* Anderson-Hanley et al. (2012): stationary cycling with a virtual route gave cognitive benefit over plain cycling (older adults, not dementia-specific)
+)))
+|Goal|Keep moving when an outdoor walk is not possible
+|Performing Actor(s)|(((
+* ST-01: Resident - exercises
+* ST-02: Care worker - sets up, supervises
+* ST-06: Physiotherapist - sets exercise programme
+)))
+|Trigger|Rain, ice, heat or darkness; resident unable to go outside
+|Constituent Tasks|(((
+1. Agree to exercise
+1. Go to exercise area
+1. Get onto device (pedal exerciser, stationary bike), or start corridor walk
+1. Exercise for set time
+1. Stop, rest, return
+)))
+|Context|Stand-in for the walk: the exercise remains, but the destination and the company are gone. Common room, corridor or exercise room. Shared device. Supervision needed to get on and off.
+|Frequency and duration|Days without outdoor walk; 10-20 min
+|Tools and artifacts|Pedal exerciser or stationary bike, screen with route video, music, handrails, chairs
+|Existing workarounds|(((
+* Corridor walks
+* Group chair exercises
+* Route video or music during cycling
+* Sitting by the window instead
+)))
+|Observed breakdowns|(((
+* Boring: no destination, no company
+* Stops after a few minutes; forgets purpose
+* No staff to help on/off device
+* Device occupied or unfamiliar
+* Skipped entirely: no exercise that day
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (supported by ST-02, ST-06); substitutes → SA-01; illustrated-by → PS-03.
+
+= Situated Activity - Walking with a fellow resident [SA-04] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-04
+|Name|Walking with a fellow resident
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Victor (2012): loneliness in care homes is common and under-researched
+)))
+|Goal|Company as the reason to go out; social contact and shared memories on the way
+|Performing Actor(s)|(((
+* ST-01: Resident - walks
+* ST-04: Walking partner - walks along
+* ST-02: Care worker - matches and supervises
+)))
+|Trigger|Resident unwilling to walk alone; staff see two residents who get along
+|Constituent Tasks|(((
+1. Find a willing partner
+1. Match on pace, mobility, mood
+1. Introduce, or re-introduce, the partners
+1. Walk together, accompanied
+1. Talk: what they see, what they share (trade, town, era)
+1. Return together
+)))
+|Context|The match makes or breaks the walk. Residents often forget each other's names. A shared past (same trade, same town) gives them something to talk about, if staff know it. Rapport varies day to day. Pairs still need supervision.
+|Frequency and duration|Occasional, when staff notice a match; 15-30 min
+|Tools and artifacts|Staff knowledge of residents, care record, life-story books, garden
+|Existing workarounds|(((
+* Pairing residents who sit together
+* Pairing residents with a shared past
+* Group walks
+* Family walks with two residents
+)))
+|Observed breakdowns|(((
+* Resident stays in: no partner available
+* Mismatch in pace, mobility or cognition
+* Talk dries up: shared past unknown
+* Conflict or agitation between partners
+* One partner wants to turn back
+* Both disoriented; no one leads back
+)))
+
+== Graph edges ==
+
+performed-by → ST-01, ST-04 (supported by ST-02, ST-07); extends → SA-01; enabled-by → SA-02; illustrated-by → PS-02.
+
+= Situated Activity - Relaxation session [SA-05] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-05
+|Name|Relaxation session
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Churcher Clarke et al. (2017): adapted mindfulness groups feasible in care homes
+* Chung et al. (2002), Cochrane review: snoezelen (multi-sensory rooms) for dementia; no clear effect shown
+)))
+|Goal|Calm, rest, pleasant attention; seated or lying
+|Performing Actor(s)|(((
+* ST-01: Resident - takes part
+* ST-08: Activity coordinator - leads
+* ST-06: Psychologist - advises on programme
+)))
+|Trigger|Weekly programme slot; restless resident; rainy afternoon
+|Constituent Tasks|(((
+1. Invite residents
+1. Sit in armchair or recliner; or lie on bed or waterbed (snoezel room)
+1. Dim lights; start music or recorded relaxation
+1. Follow breathing, body or sound instructions
+1. Notice drifting; come back
+1. Close; return to lounge or room
+)))
+|Context|Group of 4-8, or one-to-one. Lounge, quiet room or snoezel room. Leader splits attention across the group. Recordings are made for general audiences: fixed pace, abstract language ("imagine a peaceful place", "let your thoughts go").
+|Frequency and duration|Weekly or less; 20-45 min
+|Tools and artifacts|Armchairs, recliners, snoezel room (lights, sounds, scents, waterbed), music player, recorded relaxation exercises, blankets
+|Existing workarounds|(((
+* Music instead of spoken instructions
+* Hand massage
+* Short sessions
+* Leader repeats instructions per resident
+)))
+|Observed breakdowns|(((
+* Lost, anxious: instruction too abstract
+* Recording too fast; no pause for the resident
+* Drifts off; nobody brings them back
+* Leaves mid-session
+* Cannot follow speech: hearing loss
+* Others drift while the leader helps one
+* Calm fades within the hour
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (led by ST-08, advised by ST-06); complements → SA-01; illustrated-by → PS-04.
+
+= Situated Activity - Settling to rest [SA-06] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-06
+|Name|Settling to rest
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Khachiyants et al. (2011): sundowning - late-day agitation in dementia
+* Schneider et al. (2005): antipsychotics in dementia raise mortality
+* Ancoli-Israel et al. (2003): more daylight consolidated sleep in Alzheimer's disease
+)))
+|Goal|Rest, sleep, a calm evening; sedating medication only as last resort
+|Performing Actor(s)|(((
+* ST-01: Resident - rests
+* ST-02: Care worker - settles
+* ST-03: Family member - sometimes present
+* ST-06: Physician - prescribes as-needed (PRN) medication
+)))
+|Trigger|After lunch (afternoon rest); evening, bedtime; restlessness, pacing, "I want to go home"
+|Constituent Tasks|(((
+1. Notice restlessness
+1. Calm: talk, sit together, hand on shoulder
+1. Offer drink, toilet
+1. Lie down, or sit in armchair
+1. Music, radio, dim light
+1. Stay until calm; leave
+1. Return if resident gets up
+1. Last resort: PRN medication
+)))
+|Context|Late afternoon to night. Evening: fewer staff, dinner and handover. One-to-one, in the resident's room. Lying in bed or sitting in an armchair. Restless evenings follow days without daylight or exercise (group reasoning).
+|Frequency and duration|Daily; 5-30 min; longer on restless days
+|Tools and artifacts|Bed, armchair, radio, music, night light, PRN medication
+|Existing workarounds|(((
+* Familiar music
+* Short corridor walk
+* Phone call with family
+* Fixed evening routine: same order, same time
+)))
+|Observed breakdowns|(((
+* Left alone, restless: no time at handover
+* Leaves room, wanders, tries to exit
+* Calm while staff present; up again after
+* Anxiety after evening news on TV or radio
+* PRN medication instead of attention
+)))
+
+== Graph edges ==
+
+performed-by → ST-02 with ST-01 (supported by ST-03, ST-06); illustrated-by → PS-05.
+
+= Situated Activity - Listening to radio, news or audiobooks [SA-07] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-07
+|Name|Listening to radio, news or audiobooks
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Gerdner (2000): individualised music reduced agitation more than generic "relaxation" music
+* Thomas et al. (2017): personalised music programme in nursing homes; fewer behavioural symptoms, less antipsychotic use
+)))
+|Goal|Chosen, pleasant listening. Stay in touch with the world; keep old interests.
+|Performing Actor(s)|(((
+* ST-01: Resident - listens, chooses
+* ST-02: Care worker - switches on
+* ST-03: Family member - knows preferences, brings music
+* ST-08: Activity coordinator - keeps playlists
+)))
+|Trigger|Resting in room; after a walk; rainy day; evening; resident asks
+|Constituent Tasks|(((
+1. Choose what to hear
+1. Switch on; find station, track or chapter
+1. Set volume
+1. Listen; pick up the thread (audiobook)
+1. Change or switch off
+)))
+|Context|Room radio, lounge TV, tablet, CD player. Devices get harder to operate. Staff pick a station and leave it. Preferences known by family, not always by staff. Audiobook plots hard to follow across days.
+|Frequency and duration|Daily; minutes to hours
+|Tools and artifacts|Radio, TV, CD player, tablet, one-button music player, headphones, family playlists
+|Existing workarounds|(((
+* Staff choose a station
+* Family-made playlists
+* One-button music players
+* Lounge TV on all day
+)))
+|Observed breakdowns|(((
+* Nothing on, or the wrong thing: cannot operate the device
+* Station chosen by staff, not the resident
+* Anxiety after distressing late-evening news
+* Lost the plot: yesterday's chapter forgotten
+* Too loud, too quiet; hearing aids
+* Sleep disturbed: on all night
+* Bored: same content every day
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (supported by ST-02, ST-03, ST-08); follows → SA-01, SA-05, SA-06; illustrated-by → PS-06.
+
+= References =
+
+//Cited from memory; checked in the evidence pass.//
+
+* Ancoli-Israel, S. et al. (2003). Increased light exposure consolidates sleep and strengthens circadian rhythms in severe Alzheimer's disease patients. //Behavioral Sleep Medicine//, 1(1), 22-36.
+* Anderson-Hanley, C. et al. (2012). Exergaming and older adult cognition: a cluster randomized clinical trial. //American Journal of Preventive Medicine//, 42(2), 109-119.
+* Chung, J. C. C., Lai, C. K. Y., Chung, P. M. B. & French, H. P. (2002). Snoezelen for dementia. //Cochrane Database of Systematic Reviews//, (4), CD003152.
+* Churcher Clarke, A., Chan, J. M. Y., Stott, J., Royan, L. & Spector, A. (2017). An adapted mindfulness intervention for people with dementia in care homes: feasibility pilot study. //International Journal of Geriatric Psychiatry//, 32(12), e123-e131.
+* Erickson, K. I. et al. (2011). Exercise training increases size of hippocampus and improves memory. //PNAS//, 108(7), 3017-3022.
+* Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
+* Gerdner, L. A. (2000). Effects of individualized versus classical "relaxation" music on the frequency of agitation in elderly persons with Alzheimer's disease and related disorders. //International Psychogeriatrics//, 12(1), 49-65.
+* Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment: a systematic review. //Journal of Advanced Nursing//, 65(5), 922-933.
+* Khachiyants, N., Trinkle, D., Son, S. J. & Kim, K. Y. (2011). Sundown syndrome in persons with dementia: an update. //Psychiatry Investigation//, 8(4), 275-287.
+* Lai, C. K. Y. & Arthur, D. G. (2003). Wandering behaviour in people with dementia. //Journal of Advanced Nursing//, 44(2), 173-182.
+* Schneider, L. S., Dagerman, K. S. & Insel, P. (2005). Risk of death with atypical antipsychotic drug treatment for dementia. //JAMA//, 294(15), 1934-1943.
+* Thomas, K. S. et al. (2017). Individualized music program is associated with improved outcomes for U.S. nursing home residents with dementia. //American Journal of Geriatric Psychiatry//, 25(9), 931-938.
+* Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.

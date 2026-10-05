@@ -1,0 +1,14 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/c%20Team%20Design%20Pattern/spaces/0%20Index/pages/WebHome
+title: 0 Index
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Team Design Patterns: reusable task allocations between human and System actors. Current concept: Mindful Walk. The morning-care pattern is kept for traceability.
+
+**Report Format:** §2.4 Team Design Patterns (Task Level)
+
+= Concepts =
+
+|=Page|=Patterns|=Status
+|[[c1 Mindful Walk>>doc:tmp\: Pitch.2 Specification.c Team Design Pattern.c1 Mindful Walk.WebHome]]|TDP-01 Voice in the pocket, person in reach|**Current**
+|[[c2 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.c Team Design Pattern.c2 Morning Care (previous concept).WebHome]]|TDP-02 Graduated activity support with human handover|Superseded

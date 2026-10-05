@@ -1,0 +1,54 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/d2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
+title: d2 Morning Care (previous concept)
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Superseded. Interaction Design Pattern IDP-04 of the first concept, morning personal care. Replaced by [[d1 Mindful Walk>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Mindful Walk set.
+
+= Respectful graduated prompting [IDP-04] =
+
+//A reusable solution to a recurring interface or interaction problem: how the System communicates and is controlled.//
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-04
+|Name|Respectful graduated prompting
+|Status|In Progress
+|Evidence basis|(((
+Literature and group reasoning only. No residents or care workers have been interviewed or observed by this project, and the interaction has not yet been evaluated.
+
+The pattern is derived from SA-08's existing reminder and demonstration workarounds, PS-07, DS-04 and UC04 F8. HFC-09, HFC-11, HFC-12 and HFC-13 ground the principles concerning autonomy, adaptive assistance, personhood and robot embodiment. TECH-10 and RP-03 provide the selected modality: Pepper speech and tablet content with restrained movement. The cited literature does not establish that the proposed wording, timing or embodiment works for the intended residents.
+)))
+|Problem|In a stepwise activity, a resident may hesitate because they need time, have forgotten the next action, or are unable to continue. A prompt that arrives too early, repeats, or sounds childlike can remove control and dignity. A prompt that arrives too late or is too vague can leave the resident confused or distressed. The System needs a consistent way to offer help and to stop when help is no longer needed.
+|Principle|Match the specificity and timing of assistance to the person's present ability, while preserving a meaningful opportunity to act independently. Communicate with an adult respectfully and make assistance an offer, not a judgment about failure. The group selected wait-then-escalate, from least to most specific, as a stated design hypothesis. If UC04-F8-CL18 shows increased distress, first adapt the wait per resident and then consider earlier prompting with fading cues.
+|Solution|(((
+1. Remain silent while TECH-11 indicates that the resident is progressing.
+2. After a reliably inferred stall, allow an individualized wait before prompting. Set this interval per resident after the O-29 pilot.
+3. Begin with one short, calm, low-information prompt. Phrase it as an offer in the second person and in an ordinary adult register; do not announce failure or use exaggerated praise. Confirm with residents whether using their name is welcome in this setting.
+4. If needed, move to a more direct prompt and then a simple picture or short video on Pepper's tablet. Avoid indefinite repetition; if there is no response, escalate, reassess, or hand over. Pepper does not mime the action with its arms.
+5. Stop prompting as soon as the item sensors indicate that progress has resumed.
+6. Hand over under F9 if the difficulty remains unresolved, stress or confusion appears, task-state uncertainty is high, or physical or safety help is needed. On unreliable sensor data, do not guess; report the degraded state.
+7. Keep Pepper visibly tool-like during the activity: cameras disabled and covered, minimal head and arm motion, no gaze-following, soft eye lights rather than alarms, and no conversation beyond the routine. Position it at the doorway only if the O-30 mock-up shows that this is audible, visible and physically safe.
+)))
+|Research Link|(((
+HFC-09 links autonomy and perceived control to acceptance, citing Ryan & Deci (2000) and Peek et al. (2014). HFC-11 cites Rogers et al. (1999) for graduated assistance in nursing-home morning care and Mihailidis et al. (2008) for automated prompting during handwashing; it also records mistimed prompts as a possible source of confusion. Peters et al. (2014) provide a direct tooth-brushing precedent in TEBRA, including repeated prompts within a hierarchy of increasingly informative assistance. Wang et al. (2017) show that robot-delivered stepwise prompting is plausible for people with Alzheimer's disease while acceptance of a robot varies. Braley et al. (2019) support leaving automated prompting when confusion or frustration appears and restoring human communication. HFC-12 uses Kitwood (1997) for infantilisation and outpacing. HFC-13 covers how embodiment, gaze, timing and tone affect the role assigned to an assistive robot, drawing on Furlanis et al. (2026), Lee et al. (2016), and Pemberton et al. (2026). De Werd et al. (2013) and Voigt-Radloff et al. (2017) support the competing early-prompt/errorless-learning approach recorded in UC04 O-16.
+
+These works cover different activities and populations. The transfer limits recorded in HFC-11 and HFC-13 still apply; the selected interaction must be evaluated with the intended users rather than presented as established practice.
+)))
+|Connection to Claims|Shapes F8 at UC04 steps 4-8. Supports the design rationale for UC04-F8-CL15 (independent steps), UC04-F8-CL16 (lower prompt level), and UC04-F8-CL17 (felt autonomy). UC04-F8-CL18 (distress caused by waiting) and UC04-F8-CL19 (infantilising prompts) are adverse claims that test whether this pattern actually works as intended. The pattern does not by itself establish any of these effects.
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Why it matters
+|Prompt thresholds (O-29)|Use EM-05 to set stall and prompt-stop timing, then configure the wait per resident with care-worker input.|Needed to verify UC04-F8-PR8 and reduce the risk tested by UC04-F8-CL18.
+|Pepper placement (O-30)|Test doorway audibility, tablet visibility, water clearance and obstruction with the actual robot or a full-size mock-up.|Determines whether strategy 7 and tablet demonstration are feasible; TECH-14 is the fallback.
+|Exact interaction content|Co-design or review the name use, wording, volume, images, acknowledgement and touch input with residents and care staff where ethically feasible.|HP-05 and RP-03 are still provisional and the interaction has not been tested with intended users.
+|Research and evaluation|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors, then apply M-13 to M-17 through EM-06 and EM-07, including both parts of M-16.|Tests independent performance, assistance level, distress, autonomy, privacy and infantilisation.
+|Reuse beyond UC04|Compare the pattern with UC05 after its medication-specific confirmation, reassurance and safety rules are specified.|Shows which parts transfer and which require a separate IDP.
+
+== Graph edges ==
+
+shapes → F8 in UC04 steps 4-8; supports → UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL17; tested against → UC04-F8-CL18, UC04-F8-CL19.

@@ -1,0 +1,54 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/a1%20Design%20Scenario/spaces/a1.1%20Mindful%20Walk/pages/WebHome
+title: a1.1 Mindful Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Three scenarios, one day apart. A garden walk with a partner, a pocket guide and a memory of the harbour (DS-01). A rain day at the window: seated practice, then a brass band (DS-02). Dusk: lying practice, the news on request, a story, sleep (DS-03). Same resident in all three: Jan (HP-01).
+
+= Design Scenario - The harbour walk [DS-01] =
+
+//Reimagines PS-01 and PS-02. Realized by UC01. Technology: Pepper at the door (TECH-01), pocket guide (TECH-02), garden beacons (TECH-03), care worker's phone (TECH-04).//
+
+Two o'clock. Pepper waits by the garden door, eye lights soft. "Jan, the sun is out. A walk round the garden with Kees, or a sit by the window?" Jan shrugs, then: "With Kees, then." Sanne paired the two last week, with both families' agreement; Kees is already putting on a cap.
+
+Myra clips the pocket guide to Jan's rollator and goes back to the ward. For the first minutes the guide is silent. Then: "Feel your feet on the path." Silence. Birdsong. "A blackbird. In the beech." Jan and Kees stop to look.
+
+At the pond the guide picks up a beacon. "Water. Smell the air." A long pause. Then, from Jan's life story: "The ropes at the harbour smelled of tar." Jan laughs: "Tar and fish." Kees: "And diesel! Which quay were you on?" They sit on the bench and talk for ten minutes. Kees presses the button; the guide stays quiet.
+
+Back on the path, Jan drifts towards the gate. At the gate beacon the guide says, once: "The roses are behind you. Feel the sun on your hands." Jan turns. Myra's phone buzzes: //Jan - gate - last landmark: pond.// Myra looks out of the window, sees the two heading for the roses, and stays on the ward.
+
+After twenty-five minutes: "Time to head in. The door is past the roses." At the door Pepper says: "Welcome back. The blackbird was singing in the beech." That evening Jan tells their daughter on the phone about the blackbird and the tar.
+
+The record shows four things: walk, 25 minutes, ended as planned, one gate alert. Not where they walked, nor what they said.
+
+= Design Scenario - Rain at the window [DS-02] =
+
+//Reimagines PS-03, PS-04 and PS-06. Realized by UC02 and UC03. Technology: Pepper (TECH-01), listening library and recommender (TECH-05).//
+
+November. Rain since morning; no walks today. In the lounge, Pepper stands by the big window. Jan and two others sit in armchairs facing the garden. Sanne set up the session and is helping a resident across the room.
+
+"Rain today. We could listen to it." Silence. Pepper's shoulder lights fade in and out, slowly, like breathing. "Feel the chair holding you." Silence. "Rain on the glass." A long silence. Jan's eyes wander to the door. The next cue comes anyway: "Your hands. Warm, or cold?" Jan looks at their hands. "Cold," they say, to nobody in particular, and almost smile.
+
+Ten minutes. "That is all for now." No praise. Then: "Brass band on the radio, or a short story?" Jan: "The band." The Sunday request programme, from Jan's profile. Jan taps the armrest in time. One of the others has fallen asleep; Pepper lets them.
+
+Sanne comes over at the end. Nobody got lost in a beach they could not find.
+
+= Design Scenario - Settling at dusk [DS-03] =
+
+//Reimagines PS-05 and PS-06. Realized by UC02 and UC03. Technology: pocket guide docked at the bedside (TECH-02), listening library and recommender (TECH-05).//
+
+Jan walked in the garden today. Still, at five, Jan reaches for their coat. Dinner is being served and the evening shift is arriving. Myra walks Jan back to their room. "Would you like to lie down for a bit, with the voice?" Jan nods. Myra docks the pocket guide on the bedside table and leaves the door ajar.
+
+"Lie back. Feel the pillow under your head." Silence. "Your feet. Heavy and warm." Silence. "Footsteps in the hall. Far away." The cues grow sparse, then stop.
+
+Jan opens their eyes: "What's in the news?" The guide plays the evening headlines straight away, in plain language. One item is about a flood. "Terrible," says Jan. Then: "A story now, or quiet?" Jan: "Story." A short story about a lighthouse keeper, fifteen minutes, read slowly. It fades out at the end. Jan is asleep.
+
+Myra was not called back. The record: lying practice 12 minutes; listening 22 minutes; no call.
+
+= Graph edges =
+
+DS-01: reimagines → PS-01, PS-02; realized-by → UC01; features → HP-01, HP-02, HP-03, HP-04, RP-01, RP-02.
+
+DS-02: reimagines → PS-03, PS-04, PS-06; realized-by → UC02, UC03; features → HP-01, HP-03, RP-01.
+
+DS-03: reimagines → PS-05, PS-06; realized-by → UC02, UC03; features → HP-01, HP-02, RP-02.

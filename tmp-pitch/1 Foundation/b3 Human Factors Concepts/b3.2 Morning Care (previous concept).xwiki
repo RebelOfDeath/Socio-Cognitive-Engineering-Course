@@ -1,9 +1,11 @@
 %%WIKI-SYNC-META%%
-href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b3%20Human%20Factors%20Concepts/pages/WebHome
-title: b3 Human Factors Concepts
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b3%20Human%20Factors%20Concepts/spaces/b3.2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
+title: b3.2 Morning Care (previous concept)
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-= Perceived Autonomy and Technology Acceptance  [HFC-01] =
+**Abstract.** Superseded. Human Factors Concepts HFC-09 to HFC-13 of the first concept, morning personal care. Replaced by [[b3.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.b3 Human Factors Concepts.b3\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Mindful Walk set.
+
+= Perceived Autonomy and Technology Acceptance  [HFC-09] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -12,7 +14,7 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-01
+|ID|HFC-09
 |Name|Perceived Autonomy and Technology Acceptance
 |Status|In Progress
 |Evidence basis|(((
@@ -33,12 +35,12 @@ Mihailidis, A., Boger, J. N., Craig, T., & Hoey, J. (2008). The COACH prompting 
 |Conditions and population of validity|The mechanism is established more generally and in older-adult populations. Transfer to people with moderate dementia must be treated cautiously because it assumes that the resident can perceive and interpret the choice being offered. The level and presentation of choice may therefore need to be adapted to cognitive ability.
 |Predicted Effect type|Higher perceived autonomy; greater willingness to engage with assistance; sustained use; reduced avoidance or rejection of the technology.
 |Associated Measures|(((
-M-05: Perceived autonomy / felt control during the interaction. Use the episode-specific items from Custers, A. F. J., Westerhof, G. J., Kuin, Y., Gerritsen, D. L., & Riksen-Walraven, J. M. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209. doi:10.1007/s10433-013-0263-y.
+M-16: Perceived autonomy / felt control during the interaction. Use the episode-specific items from Custers, A. F. J., Westerhof, G. J., Kuin, Y., Gerritsen, D. L., & Riksen-Walraven, J. M. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209. doi:10.1007/s10433-013-0263-y.
 
-Caution: in that study residents rated their own need fulfilment //higher// than trained observers did, with only weak-to-moderate agreement. A self-report measure cannot stand alone here - pair it with the observer rating. See §2.3 Open item O-8.
+Caution: in that study residents rated their own need fulfilment //higher// than trained observers did, with only weak-to-moderate agreement. A self-report measure cannot stand alone here - pair it with the observer rating. See §2.3 Open item O-17.
 )))
 
-= Perceived surveillance and technology acceptance  [HFC-02] =
+= Perceived surveillance and technology acceptance  [HFC-10] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -47,7 +49,7 @@ Caution: in that study residents rated their own need fulfilment //higher// than
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-02
+|ID|HFC-10
 |Name|Perceived surveillance and technology acceptance
 |Status|In Progress
 |Evidence basis|(((
@@ -63,13 +65,13 @@ Niemeijer, A. R., Frederiks, B. J. M., Riphagen, I. I., Legemaate, J., Eefsting,
 
 Niemeijer, A. R., Depla, M. F. I. A., Frederiks, B. J. M., & Hertogh, C. M. P. M. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320. PMID 24913545. - the key finding for us: surveillance technology can support autonomy, but only when embedded in a person-centred approach.
 
-Also relevant: Niemeijer et al. (2011), //Journal of Medical Ethics// 37(5), 303-310, which used concept mapping to find an inherent duality in professional views, rooted in the moral conflict between safety and freedom - i.e. our VT-01 and VT-02, found independently.
+Also relevant: Niemeijer et al. (2011), //Journal of Medical Ethics// 37(5), 303-310, which used concept mapping to find an inherent duality in professional views, rooted in the moral conflict between safety and freedom - i.e. our VT-08 and VT-09, found independently.
 )))
 |Conditions and population of validity|Must be established specifically for older adults and, where possible, people with dementia. Cognitive impairment may affect whether and how monitoring is perceived, so findings from general technology users should not automatically be transferred to this population.
 |Predicted Effect type|Perceived privacy; discomfort with monitoring; willingness to accept monitoring; avoidance or rejection behaviour.
-|Associated Measures|M-06: Perceived privacy / monitoring acceptability. Interview coding for expressions of being watched or monitored, plus care-staff judgement of what the session record exposes. Bespoke, but the concern set is drawn from Niemeijer et al. (2010, 2015) rather than invented.
+|Associated Measures|M-17: Perceived privacy / monitoring acceptability. Interview coding for expressions of being watched or monitored, plus care-staff judgement of what the session record exposes. Bespoke, but the concern set is drawn from Niemeijer et al. (2010, 2015) rather than invented.
 
-= Adaptive assistance, competence and distress  [HFC-03] =
+= Adaptive assistance, competence and distress  [HFC-11] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -78,7 +80,7 @@ Also relevant: Niemeijer et al. (2011), //Journal of Medical Ethics// 37(5), 303
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-03
+|ID|HFC-11
 |Name|Adaptive assistance, competence and distress
 |Status|In Progress
 |Evidence basis|(((
@@ -86,7 +88,7 @@ Literature only. No interviews or observations have been carried out by this pro
 
 Rogers et al. (1999) is the strongest support: systematic graduated prompting of nursing-home residents with dementia produced a 26% increase in self-dressing, significantly fewer physical assists, and significantly //fewer// disruptive behaviours than usual care - so matching assistance to ability improved performance and reduced distress together, in a severely impaired cohort (mean MMSE 6.07).
 
-Caveat on direction. This concept says assistance should match ability, but it does not settle //which way// to approach that match. The dementia ADL literature largely favours errorless learning with vanishing cues - prompt early to prevent the error, then fade support (de Werd et al., 2013) - whereas §2.3's F2 waits and escalates. The REDALI-DEM trial (Voigt-Radloff et al., 2017; n = 161) found structured relearning improved ADL performance and held for six months, but that errorless learning gave no additional effect over trial-and-error learning - so neither direction is settled. See §2.3 Open item O-7.
+Caveat on direction. This concept says assistance should match ability, but it does not settle //which way// to approach that match. The dementia ADL literature largely favours errorless learning with vanishing cues - prompt early to prevent the error, then fade support (de Werd et al., 2013) - whereas §2.3's F8 waits and escalates. The REDALI-DEM trial (Voigt-Radloff et al., 2017; n = 161) found structured relearning improved ADL performance and held for six months, but that errorless learning gave no additional effect over trial-and-error learning - so neither direction is settled. See §2.3 Open item O-16.
 )))
 |Concept statement|Assistance should be matched to the person's current ability: providing too much assistance can remove opportunities to exercise competence, while providing too little assistance when a task exceeds the person's current capability can result in repeated failure, confusion, or distress.
 |Human factor addressed|Task performance; cognitive capability; perceived competence; frustration and distress.
@@ -103,16 +105,16 @@ Mihailidis, A., Boger, J. N., Craig, T., & Hoey, J. (2008). The COACH prompting 
 |Conditions and population of validity|The appropriate level and timing of assistance is likely to vary with the resident's cognitive abilities, the familiarity and complexity of the activity, and their momentary condition. Evidence should therefore be selected specifically for people with dementia or closely comparable older-adult populations rather than assumed from general users.
 |Predicted Effect type|Successful independent task steps; perceived competence; frequency of assistance; frustration, confusion, or distress during the activity.
 |Associated Measures|(((
-M-02: Independent task-step completion - the scoring used in Mihailidis et al. (2008), directly reusable.
+M-13: Independent task-step completion - the scoring used in Mihailidis et al. (2008), directly reusable.
 
-M-03: Prompt level required - bespoke ordinal coding, levels matching SA-05's recorded workarounds.
+M-14: Prompt level required - bespoke ordinal coding, levels matching SA-08's recorded workarounds.
 
-M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney et al., 1999), 13 observed behaviours, α .82-.87, built for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017). Validated, not invented. Optionally paired with the Observed Emotion Rating Scale for affect (psychometrics: Lawton, Van Haitsma & Klapper, 1996, //J Gerontol B//, 51(1), P3-P14).
+M-15: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney et al., 1999), 13 observed behaviours, α .82-.87, built for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017). Validated, not invented. Optionally paired with the Observed Emotion Rating Scale for affect (psychometrics: Lawton, Van Haitsma & Klapper, 1996, //J Gerontol B//, 51(1), P3-P14).
 )))
 
 
 
-= Personhood and malignant social psychology  [HFC-04] =
+= Personhood and malignant social psychology  [HFC-12] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -121,7 +123,7 @@ M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney e
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-04
+|ID|HFC-12
 |Name|Personhood and malignant social psychology
 |Status|In Progress
 |Evidence basis|Literature only. No interviews or observations have been carried out by this project. Kitwood (1997) is the founding text of person-centred dementia care.
@@ -131,9 +133,9 @@ M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney e
 |Source|Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Buckingham: Open University Press. The list of detractors (including infantilisation and outpacing) is reported consistently in secondary sources; check page numbers against the book before quoting.
 |Conditions and population of validity|Developed for people with dementia in care settings, so it transfers directly to our population. It is a conceptual framework drawn from care practice rather than an experimentally tested mechanism.
 |Predicted Effect type|Experienced infantilisation; resistance or withdrawal during care; resident and staff descriptions of the System as talking down to the resident.
-|Associated Measures|M-04 (Resistiveness to Care Scale, for resistance during the activity); M-06 (interview coding, extended to code descriptions of being talked down to - see UC01-F2-CL5).
+|Associated Measures|M-15 (Resistiveness to Care Scale, for resistance during the activity); M-17 (interview coding, extended to code descriptions of being talked down to - see UC04-F8-CL19).
 
-= Embodiment and perceived role of assistive robots  [HFC-05] =
+= Embodiment and perceived role of assistive robots  [HFC-13] =
 
 //A specific principle or finding from human-factors literature, selected because it explains something in this Problem.//
 
@@ -142,10 +144,10 @@ M-04: Observed frustration/distress - the Resistiveness to Care Scale (Mahoney e
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-05
+|ID|HFC-13
 |Name|Embodiment and perceived role of assistive robots
 |Status|In Progress
-|Evidence basis|Literature only. No interviews or observations have been carried out by this project. Pemberton et al. (2026) is a qualitative interview study (n = 13); Furlanis et al. (2026) is explicitly conceptual. Both are summarised in §2.3 Open item O-10.
+|Evidence basis|Literature only. No interviews or observations have been carried out by this project. Pemberton et al. (2026) is a qualitative interview study (n = 13); Furlanis et al. (2026) is explicitly conceptual. Both are summarised in §2.3 Open item O-19.
 |Concept statement|The physical form and behaviour of an assistive robot shape the role older adults assign to it. A humanoid, expressive robot tends to be read as a supervisor ("Warden"), while a more mechanical, tool-like robot is read as an aid; and a robot's gaze, timing and tone can come across as condescending even when meant to be gentle.
 |Human factor addressed|Perceived role of the robot; perceived surveillance; experienced dignity; technology acceptance.
 |Proposed mechanism|People interpret robots as social actors through posture, timing, tone and spatial behaviour. A human-like body invites human-like role attributions, and oversight by a human-like figure without a relationship is experienced as being watched. Exaggerated slowness or gentleness toward older adults is read as condescension. A tool-like framing and restrained expressivity preserve emotional distance, which older adults prefer in private contexts such as bathing (Prakash & Rogers, 2015, as reported in Pemberton et al., 2026).
@@ -158,16 +160,16 @@ Lee, H. R., Tan, H., & Šabanović, S. (2016). That robot is not for me: Address
 )))
 |Conditions and population of validity|Pemberton et al. studied cognitively intact older adults ageing in place, in a VR home setup - not care-home residents with dementia. Whether residents with moderate dementia attribute roles to a robot in the same way is uncertain and must not be assumed. Furlanis et al. provide a framework, not measurements.
 |Predicted Effect type|Perceived surveillance; experienced infantilisation; acceptance or rejection of the robot, depending on form and behaviour.
-|Associated Measures|M-06 (perceived privacy and monitoring - including descriptions of the robot as watching or supervising); M-04 (resistance during the activity).
+|Associated Measures|M-17 (perceived privacy and monitoring - including descriptions of the robot as watching or supervising); M-15 (resistance during the activity).
 
 == Graph edges ==
 
-HFC-01: grounds → UC01-F2-CL3; explains → HV-01; associated-measure → M-05.
+HFC-09: grounds → UC04-F8-CL17; explains → HV-09; associated-measure → M-16.
 
-HFC-02: grounds → UC01-F1-CL7; explains → HV-03; associated-measure → M-06.
+HFC-10: grounds → UC04-F7-CL21; explains → HV-11; associated-measure → M-17.
 
-HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL4, UC01-F3-CL6, UC01-F3-CL9; explains → HV-04, HV-05; associated-measure → M-02, M-03, M-04.
+HFC-11: grounds → UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL18, UC04-F9-CL20, UC04-F9-CL23; explains → HV-12, HV-13; associated-measure → M-13, M-14, M-15.
 
-HFC-04: grounds → UC01-F2-CL5; explains → HV-02; associated-measure → M-04, M-06.
+HFC-12: grounds → UC04-F8-CL19; explains → HV-10; associated-measure → M-15, M-17.
 
-HFC-05: grounds → UC01-F2-CL5, UC01-F1-CL7; explains → HV-02, HV-03; informs → TECH-01 selection rationale; associated-measure → M-06, M-04.
+HFC-13: grounds → UC04-F8-CL19, UC04-F7-CL21; explains → HV-10, HV-11; informs → TECH-10 selection rationale; associated-measure → M-17, M-15.

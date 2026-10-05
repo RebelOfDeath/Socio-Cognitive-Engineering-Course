@@ -3,27 +3,64 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.2 Robot Profile
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-= Profile, Robot  [RP-nn] =
+**Abstract.** One System, two bodies, one voice. Pepper hosts indoors: invitations, seated practice, listening (RP-01). The pocket guide goes outside and to the bedside (RP-02). Both are guides, not carers or supervisors: they lead, then fall silent.
 
-//For the System itself, not a “Persona.” Covers the equivalent ground as a Human Persona, describing machine capabilities and design intent rather than human-like traits.//
+= Robot Profile - Pepper as indoor host [RP-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. RP-01, RP-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Role in Scenario|its position in the Design Scenario.
-|Social Competencies|what kind of exchange it conducts: turn-taking, responsiveness, adaptivity.
-|Embodiment|physical form, mobility, sensors, expressive capabilities, and their limits.
-|Narrative and Identity Framing|what story or identity it presents to users, and what it deliberately avoids presenting as.
-|Communication Strategies|modalities, style, tone, and pacing.
-|Privacy and Data Handling|what is processed where, what is retained, and for how long.
-|Context-Aware Capabilities|how its behaviour adapts to context, and what is not yet implemented.
+|ID|RP-01
+|Name|Pepper as indoor host
+|Status|In Progress
+|Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, HFC-08, VT-05 and VT-02. Not yet tested with residents.
+|Role in Scenario|At the garden door: invites, and welcomes back (DS-01). In the lounge on rain days: leads seated practice, then offers listening (DS-02).
+|Social Competencies|(((
+* Offers two options; accepts any answer, including no
+* Leads, then holds long silences
+* Pauses on speech or touch; ends on "stop"
+* No small talk beyond the session
+)))
+|Embodiment|Pepper (TECH-01). Stands by the door or the window, never in the path. Cameras disabled and visibly covered. Minimal arm and head movement; no gaze-following. Shoulder lights as a breathing light.
+|Narrative and Identity Framing|"The voice that goes walking." A guide for noticing - not a carer, companion or supervisor. Shares a name and voice with the pocket guide, so indoors and outdoors feel like one thing.
+|Communication Strategies|(((
+* Short, concrete sentences; normal pitch; adult words (IDP-01)
+* First name only if the resident wants it
+* No praise, no endearments
+* Two-option offers (IDP-03)
+* Breathing light instead of breathing instructions
+* Welcome back with one statement about the walk, never a question
+)))
+|Privacy and Data Handling|Hears speech only for a few keywords, during a session; no audio stored. Receives the landmarks of the walk just ended, for the welcome back; discards them after. Writes the four-item session record (F5).
+|Context-Aware Capabilities|Adapts the offer to hour, weather and profile. Does not learn the resident's behaviour over time. Does not sense mood.
 
-== Graph edges ==
+= Robot Profile - Pocket guide [RP-02] =
 
-realizes → Technology Option (§1.3); addresses → Human Value (§1.2); enables → Function; referenced-by → Value Story.
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|RP-02
+|Name|Pocket guide
+|Status|In Progress
+|Evidence basis|Group reasoning (TECH-02, TECH-03). Not yet built or tested.
+|Role in Scenario|On the rollator in the garden: cues, memory invitations, the way back, the gate (DS-01). Docked at the bedside: lying practice, news, a story (DS-03).
+|Social Competencies|(((
+* Speaks rarely; silence is the default
+* Pause on the button; quiet until pressed again
+* One orienting cue at a hesitation or the gate; never repeats it
+* Tells the resident when someone is coming
+)))
+|Embodiment|Palm-sized speaker; one big button; pull-cord. Clips to rollator or wheelchair, or hangs on a lanyard. Docks on the bedside table. No screen, no camera.
+|Narrative and Identity Framing|The same voice as Pepper, in the pocket. Something you carry, like a radio - not something that watches.
+|Communication Strategies|(((
+* Present-moment cues, then long silence (IDP-01)
+* Memory invitations as statements, never questions (IDP-02)
+* At most two memory invitations per walk
+* Low volume outdoors; no names or sensitive topics within earshot of others
+)))
+|Privacy and Data Handling|Outdoors: microphone off; hears only beacons. Bedside: listens for a few keywords, on the device; no audio stored or sent. Knows the nearest landmark in the moment; sends it only inside an alert. No route stored.
+|Context-Aware Capabilities|Walking or stopped, landmark nearby, time elapsed. Nothing more: it cannot see distress, so distress is left to the companion and the care worker.

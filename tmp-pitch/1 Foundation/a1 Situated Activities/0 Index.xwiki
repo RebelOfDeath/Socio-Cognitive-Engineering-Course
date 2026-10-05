@@ -3,10 +3,19 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Situated Activities record what stakeholders do today, under the conditions they actually do it in. The current concept is the resident's daily walk, where a robot could take the place of a walking dog or an accompanying care worker. The earlier morning-care concept is kept for traceability. It is superseded and no longer drives the design.
+**Abstract.** Situated Activities record what stakeholders do today, under the conditions they actually do it in. Current concept: **Mindful Walk**. The earlier morning-care concept is kept for traceability; it no longer drives the design.
+
+= Mindful Walk in brief =
+
+* **Walk.** Daily, outdoors, accompanied. Walking is the therapy: body, daylight, orientation, memory.
+* **Notice.** Short present-moment cues - feet, air, birdsong - anchor attention where memory fails.
+* **Remember.** Places on the route open memories of times gone by; the guide invites, never quizzes.
+* **Rest.** Seated or lying practice: on a bench, at the window on rain days, in bed at dusk.
+* **Listen.** Radio, news or audiobook, matched to the person, the hour and the mood.
+* **Who guides.** Pepper indoors; a pocket guide with the same voice outdoors. A person is always within reach.
 
 = Concepts =
 
 |=Page|=Activities|=Status
-|[[a1.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Daily Walk.WebHome]]|SA-01 Accompanied daily walk; SA-02 Fitting walks between care tasks; SA-03 Bad-weather indoor exercise; SA-04 Walking with a fellow resident|**Current**
-|[[a1.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Morning Care (previous concept).WebHome]]|SA-05 Brushing teeth; SA-06 Taking medication; SA-07 Morning care round|Superseded
+|[[a1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Mindful Walk.WebHome]]|SA-01 Accompanied walk; SA-02 Fitting walks between care tasks; SA-03 Bad-weather indoor exercise; SA-04 Walking with a fellow resident; SA-05 Relaxation session; SA-06 Settling to rest; SA-07 Listening to radio, news or audiobooks|**Current**
+|[[a1.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Morning Care (previous concept).WebHome]]|SA-08 Brushing teeth; SA-09 Taking medication; SA-10 Morning care round|Superseded

@@ -1,0 +1,116 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b5%20Evaluation%20Methods/spaces/b5.1%20Mindful%20Walk/pages/WebHome
+title: b5.1 Mindful Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Four methods. Does the System work: staged verification in the garden and the room (EM-01). Does it help: within-resident comparison over alternating weeks (EM-02). How staff and family see it: interviews (EM-03). Does the voice sound right: a Wizard-of-Oz trial of the cues before anything is automated (EM-04). No primary data yet; costs are the group's estimates.
+
+= Evaluation Method - Staged garden and room verification [EM-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-01
+|Name|Staged garden and room verification
+|Status|In Progress
+|Evidence basis|Staged-event testing against a ground-truth log, as for the COACH prompting system (Mihailidis et al., 2008).
+|Procedure summary|(((
+Garden: experimenter walks the loop with the pocket guide and performs scripted events - stops, bench rests, landmark passes, gate pass, help press, device drop, no-response period.
+
+Indoors: refusals, speech and button presses during practice, "stop", evening request for news, listening offers.
+
+Compare with the ground-truth log. Inspect session record and profile.
+)))
+|Purpose|Verification
+|Human subjects required|No
+|Measures used|M-01; M-08 (content check only)
+|Cost and feasibility|Low. Beacons, prototype, experimenter. Runs as soon as a prototype exists.
+|Known limitations|Scripted events are not residents. Weather and garden layout vary.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC01-F5-PR5, UC03-F6-PR6; applies → M-01, M-08.
+
+= Evaluation Method - Within-resident comparison [EM-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-02
+|Name|Within-resident comparison
+|Status|In Progress
+|Evidence basis|Alternating baseline and System phases, as in COACH (Mihailidis et al., 2008).
+|Procedure summary|(((
+Per resident: baseline weeks (current practice) and System weeks, alternating.
+
+Observer on sample walks and sessions. Matched recall events (M-03). Short interview after System sessions, only if willing and not distressed.
+)))
+|Purpose|Validation
+|Human subjects required|Yes. Residents (supported consent), walking partners, staff.
+|Measures used|M-02 to M-07; M-08 (resident interview); M-09; M-10; M-11
+|Cost and feasibility|High. Care-home access, ethics approval, supported consent, trained observers, several weeks per phase.
+|Known limitations|Small n; no control group; novelty effects. Weather and season drive walking: phases must be balanced across both. An observer on the walk changes the walk.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F1-CL1 to UC01-F2-CL6, UC01-F2-CL8, UC02-F3-CL9 to UC02-F3-CL11, UC03-F6-CL12 to UC03-F6-CL14; applies → M-02 to M-11.
+
+= Evaluation Method - Staff and family interview [EM-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-03
+|Name|Staff and family interview
+|Status|In Progress
+|Evidence basis|Bespoke. Concern set drawn from Niemeijer et al. (2010, 2015).
+|Procedure summary|Semi-structured interviews with care workers, activity coordinators and family: alerts, session record, life-story profile, tone of the voice, human contact, the evening news default.
+|Purpose|Validation
+|Human subjects required|Yes. Staff and family.
+|Measures used|M-08, M-09, M-10
+|Cost and feasibility|Moderate. Consent; staff time in working hours. Lower ethics load than EM-02.
+|Known limitations|A second-hand view of the resident's experience. Time spent is self-reported.
+
+== Graph edges ==
+
+produces → Evidence for UC01-F2-CL6, UC01-F4-CL7, UC01-F2-CL8, UC02-F3-CL11, UC03-F6-CL14, UC03-F6-PR6 (profile view); applies → M-08, M-09, M-10.
+
+= Evaluation Method - Wizard-of-Oz cue trial [EM-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-04
+|Name|Wizard-of-Oz cue trial
+|Status|In Progress
+|Evidence basis|Wizard-of-Oz: a person operates the robot unseen, a standard way to test interaction in HRI before automating it (Riek, 2012).
+|Procedure summary|(((
+An experimenter voices the guide remotely from a script of candidate cues (IDP-01 to IDP-03), during short walks and seated sessions.
+
+Vary: wording, pace, length of silence, name use, form of memory invitation.
+
+Observe; ask residents and staff which wording felt right.
+)))
+|Purpose|Validation (formative)
+|Human subjects required|Yes. A few residents; staff present.
+|Measures used|M-04, M-05, M-08 (code T)
+|Cost and feasibility|Low to moderate. No working System needed.
+|Known limitations|A human wizard adapts better than the System will. Small sample. Formative only.
+
+== Graph edges ==
+
+informs → IDP-01, IDP-02, IDP-03; produces → formative findings for UC01-F2-CL6; applies → M-04, M-05, M-08.
+
+= References =
+
+* Mihailidis, A. et al. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28.
+* Niemeijer, A. R. et al. (2010, 2015). See b3.1 References.
+* Riek, L. D. (2012). Wizard of Oz studies in HRI: a systematic review and new reporting guidelines. //Journal of Human-Robot Interaction//, 1(1), 119-136. (check)

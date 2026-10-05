@@ -1,0 +1,99 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/d1%20Mindful%20Walk/pages/WebHome
+title: d1 Mindful Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Three patterns for how the voice speaks. Point at what is here, then fall silent (IDP-01). State a memory, never ask for one (IDP-02). Offer two things, and take no for an answer (IDP-03). Wording and timing are hypotheses until EM-04.
+
+= Interaction Design Pattern - Present-moment cue [IDP-01] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-01
+|Name|Present-moment cue
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only. Derived from SA-05 breakdowns, PS-01, PS-04, DS-01, DS-02. Grounded in HFC-02, HFC-03, HFC-06. Not yet evaluated.
+|Problem|Attention drifts. Abstract guidance loses the listener. Constant talk crowds out the walk and the company.
+|Principle|Point at what is here. One sense, one thing, short. Then silence.
+|Solution|(((
+1. Start quiet: first cue after a minute or two.
+1. One cue, under eight words, concrete, sensory: "Feel your feet on the path."
+1. Silence longer than the cue: 30-90 s (Open item O-3).
+1. Rotate senses: feet, air, sound, colour, breath.
+1. No imagery ("imagine..."); no instructions about thoughts ("let them go").
+1. No praise, no endearments; normal pitch.
+1. At a stop or hesitation: one cue about something near.
+1. Pause on the button. Never talk over a conversation.
+)))
+|Research Link|HFC-02: present-moment attention asks little of memory (Churcher Clarke et al., 2017; Berk et al., 2018). HFC-03: nature holds attention (Kaplan, 1995). HFC-06: elderspeak provokes resistance (Williams et al., 2009). Transfer from adapted group programmes to a walking voice: untested.
+|Connection to Claims|Shapes F2 (UC01 steps 3, 6, 7) and F3 (UC02 step 3). Rationale for UC01-F2-CL2, UC02-F3-CL9. Tested against UC01-F2-CL6.
+
+== Graph edges ==
+
+shapes → F2, F3; supports → UC01-F2-CL2, UC02-F3-CL9; tested-against → UC01-F2-CL6; informed-by → EM-04.
+
+= Interaction Design Pattern - Memory invitation [IDP-02] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-02
+|Name|Memory invitation
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only. Derived from SA-01, SA-04, PS-02, DS-01. Grounded in HFC-04, HFC-06; bounded by VT-03. Not yet evaluated.
+|Problem|Memories give the walk meaning and the pair something to talk about. Questions about memory feel like tests and expose gaps. Some memories hurt.
+|Principle|State, don't ask. Open a door; let the resident walk through it.
+|Solution|(((
+1. Trigger: a landmark, or a sensory match - water, harbour.
+1. Form: a statement from the resident's world. "The ropes at the harbour smelled of tar." Never "Do you remember...?"
+1. Source: the profile, welcome topics only. Never avoided topics; never the former home address.
+1. Then silence. The talk belongs to resident and companion.
+1. No follow-up question.
+1. At most two per walk.
+1. Sadness or "I must go home": the companion responds; the next cue returns to the present.
+)))
+|Research Link|HFC-04: remote memories outlast recent ones; reminiscence shows small, setting-dependent benefits (Woods et al., 2018); early-adult memories are recalled best (Rubin et al., 1998). HFC-06 and Kitwood (1997): testing memory diminishes the person. VT-03: memories that hurt.
+|Connection to Claims|Shapes F2 (UC01 step 4). Rationale for UC01-F2-CL4. Tested against UC01-F2-CL5.
+
+== Graph edges ==
+
+shapes → F2; supports → UC01-F2-CL4; tested-against → UC01-F2-CL5; informed-by → EM-04.
+
+= Interaction Design Pattern - Two-option offer [IDP-03] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-03
+|Name|Two-option offer
+|Status|In Progress
+|Evidence basis|Group reasoning. Derived from PS-02, PS-06, DS-01 to DS-03. Grounded in HV-01 and Ryan & Deci (2000). Limited, concrete choices are common advice in dementia communication; source to find (Open item O-1).
+|Problem|Open questions ("What would you like?") overwhelm. Lists cannot be held in memory. No choice at all removes autonomy.
+|Principle|Two concrete options. "No" is always fine.
+|Solution|(((
+1. Name two concrete options: "A walk with Kees, or a sit by the window?"
+1. Wait.
+1. Accept any answer: one of the two, something else, or no.
+1. After a no: no new offer within the configured interval.
+1. Options drawn from the profile, the hour and the weather.
+)))
+|Research Link|Self-determination theory: choice supports motivation (Ryan & Deci, 2000). HFC-05: familiar options are recognised with little effort.
+|Connection to Claims|Shapes F1 and F6. Rationale for UC01-F1-CL1, UC03-F6-CL12. Tested against UC03-F6-CL14.
+
+== Graph edges ==
+
+shapes → F1, F6; supports → UC01-F1-CL1, UC03-F6-CL12; tested-against → UC03-F6-CL14.
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Why it matters
+|Wording and timing (O-3)|EM-04 Wizard-of-Oz trial of cue wording, silence length, name use and invitation form.|Every pattern here is a hypothesis about how a voice should sound.
+|Life-story content (O-5)|Form and review routine for welcome and avoided topics.|IDP-02 is only as safe as the profile behind it.
+|Two-option source (O-1)|Find dementia-communication guidance on limited choices.|IDP-03 currently rests on group reasoning.

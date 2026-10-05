@@ -1,0 +1,200 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b1%20Human%20Values/spaces/b1.1%20Mindful%20Walk/pages/WebHome
+title: b1.1 Mindful Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Eight values. Five carry over from the earlier concept: Autonomy (HV-01), Dignity (HV-02), Privacy (HV-03), Well-being (HV-05), Attentive care (HV-06). Three are new: Safety (HV-04), Social connectedness (HV-07), Identity (HV-08), the value behind recalling the past and choosing what to hear. Well-being leads: walking first, for body and mind.
+
+= Human Value - Autonomy [HV-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-01
+|Name|Autonomy
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|Choose whether, when, where and how long. Walk, sit, lie, listen, or none of these. Stop at any moment. Pick what to hear.
+|Held by|ST-01 (high); ST-04 (high); ST-02, ST-03, ST-05, ST-06, ST-07 (medium)
+|Intrinsic or instrumental|Intrinsic. Also supports Dignity and Well-being.
+|Recognition criteria|(((
+Served: resident starts, pauses, ends and chooses; a "no" ends the offer.
+
+Violated: walk or practice continues after a refusal; repeated persuasion; content picked without asking.
+)))
+|Source|Ryan, R. M. & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
+
+= Human Value - Dignity [HV-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-02
+|Name|Dignity
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|Addressed as an adult with a history. Accompanied, not guarded. Guidance plain, never childish: no sing-song, no praise for breathing, no memory tests.
+|Held by|ST-03 (high); ST-01 (medium); ST-04 (medium)
+|Intrinsic or instrumental|Intrinsic.
+|Recognition criteria|(((
+Served: adult register, normal pitch; invitations, not tests; resident included in what happens.
+
+Violated: elderspeak ("well done, dear"); "Do you remember...?" as a test; spoken about in their presence.
+)))
+|Source|Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press. Williams, K. N. et al. (2009). Elderspeak communication: impact on dementia care. //American Journal of Alzheimer's Disease & Other Dementias//, 24(1), 11-20.
+
+= Human Value - Privacy [HV-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-03
+|Name|Privacy
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|(((
+Control over whereabouts, life story, listening habits and own room. Monitoring no more than needed for help to arrive.
+
+Staff: no surveillance of their own work.
+)))
+|Held by|ST-01, ST-04, ST-07, ST-08 (medium); ST-02 (medium - for residents, and against surveillance of own work); ST-05 (medium - data protection); ST-06 (medium - confidentiality); ST-03 (low - may want more than the resident would share)
+|Intrinsic or instrumental|Intrinsic. Also supports Dignity and Autonomy.
+|Recognition criteria|(((
+Served: no route trace; life story seen only by those who need it; resident and family can see and correct it.
+
+Violated: route logged; memories or listening history passed on; robot in the bedroom uninvited.
+)))
+|Source|Friedman, B., Kahn, P. H., Jr. & Borning, A. (2008). Value Sensitive Design and Information Systems. Niemeijer, A. R. et al. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities. //International Psychogeriatrics//.
+
+= Human Value - Safety [HV-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-04
+|Name|Safety
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|No falls, no getting lost, back in time. When something goes wrong, a person arrives quickly.
+|Held by|ST-01, ST-02, ST-03, ST-05, ST-06, ST-07 (high)
+|Intrinsic or instrumental|Mainly instrumental: the condition for walking at all. Without trust in safety, walks are cancelled. Bounded so it does not swallow Autonomy (VT-01).
+|Recognition criteria|(((
+Served: falls, exits and distress reach a person fast; routes match ability.
+
+Violated: resident leaves unnoticed; fall without help; route beyond ability.
+)))
+|Source|Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment. //Journal of Advanced Nursing//, 65(5), 922-933. Lai, C. K. Y. & Arthur, D. G. (2003). Wandering behaviour in people with dementia. //Journal of Advanced Nursing//, 44(2), 173-182.
+
+= Human Value - Well-being [HV-05] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-05
+|Name|Well-being
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|(((
+Body: move daily, daylight, sleep. Mind: calm, pleasure, less agitation.
+
+Walking first. Rest and listening support the walk; they do not replace it.
+)))
+|Held by|ST-01 to ST-08 (high)
+|Intrinsic or instrumental|Intrinsic. Supported by every other value here.
+|Recognition criteria|(((
+Served: more minutes walked; calmer afternoons and evenings; pleasure observed.
+
+Violated: walks skipped; distress during practice or listening; restlessness met with medication by default.
+)))
+|Source|Value Sensitive Design (Friedman et al., 2008). Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
+
+= Human Value - Attentive care [HV-06] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-06
+|Name|Attentive care
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-02, SA-06.
+|Situated meaning|Staff time goes where it matters: walking with, settling, being there. Not lost to set-up, searching or low-value alerts.
+|Held by|ST-02 (high); ST-05 (high); ST-08 (medium)
+|Intrinsic or instrumental|Instrumental: serves Well-being and Social connectedness. Not to be traded against them: time saved must not mean fewer human contacts (VT-07).
+|Recognition criteria|(((
+Served: fewer walks cancelled for lack of staff; fewer, meaningful calls.
+
+Violated: System adds set-up or alert work; device replaces company instead of freeing staff for it.
+)))
+|Source|Value Sensitive Design (Friedman et al., 2008). Derived from SA-02 and SA-06.
+
+= Human Value - Social connectedness [HV-07] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-07
+|Name|Social connectedness
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|Company on the walk. Talk with a partner, volunteer or relative. Belonging.
+|Held by|ST-04, ST-07, ST-08 (high); ST-01 (medium)
+|Intrinsic or instrumental|Both. Valued in itself; also the reason to go out (PS-02) and a buffer against loneliness.
+|Recognition criteria|(((
+Served: walks in pairs; conversation started; human company per week stable or rising.
+
+Violated: device instead of people; resident walks with the voice only.
+)))
+|Source|Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.
+
+= Human Value - Identity [HV-08] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HV-08
+|Name|Identity
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only.
+|Situated meaning|Remain who you were: trade, places, music, tastes, stories. The past as a resource; the present as the anchor.
+|Held by|ST-01, ST-03, ST-08 (high); ST-04 (medium)
+|Intrinsic or instrumental|Intrinsic: continuity of self, central to personhood. Also serves Well-being and Social connectedness.
+|Recognition criteria|(((
+Served: cues and content drawn from the resident's own life; memories welcomed, never tested.
+
+Violated: generic content; wrong facts about their life; painful memories pressed; person reduced to a diagnosis.
+)))
+|Source|Kitwood (1997). Woods, B. et al. (2018). Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, (3), CD001120.
+
+== Graph edges ==
+
+HV-01: held-by → ST-01 to ST-07; party-to → VT-01, VT-04; operationalized-by → M-07, M-11.
+
+HV-02: held-by → ST-01, ST-03, ST-04; party-to → VT-05; operationalized-by → M-08; explained-by → HFC-06, HFC-08.
+
+HV-03: held-by → ST-01 to ST-08; party-to → VT-02, VT-06; operationalized-by → M-08; explained-by → HFC-07, HFC-08.
+
+HV-04: held-by → ST-01 to ST-03, ST-05 to ST-07; party-to → VT-01, VT-02; operationalized-by → M-01.
+
+HV-05: held-by → ST-01 to ST-08; party-to → VT-03, VT-04, VT-05; operationalized-by → M-02 to M-06; explained-by → HFC-01, HFC-02, HFC-03, HFC-05.
+
+HV-06: held-by → ST-02, ST-05, ST-08; party-to → VT-07; operationalized-by → M-09.
+
+HV-07: held-by → ST-01, ST-04, ST-07, ST-08; party-to → VT-07; operationalized-by → M-05, M-10; explained-by → HFC-04.
+
+HV-08: held-by → ST-01, ST-03, ST-04, ST-08; party-to → VT-03, VT-06; operationalized-by → M-11; explained-by → HFC-04, HFC-05.

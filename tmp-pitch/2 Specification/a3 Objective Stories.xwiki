@@ -3,20 +3,54 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a3 Objective Stories
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-= Objective Story  [OS-nn] =
+**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why the walk itself matters (OS-01). Why the guide states and never asks (OS-02). Why listening starts from the resident's own station (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
 
-//A short narrative connecting a Function to the Human Value it serves, where a design choice needs that justification made explicit. The narrative form of what §2.6 records formally as a Grounding link.//
+= Objective Story - The walk is the point [OS-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
 == Fields ==
 
 |=Field|=Description
-|ID|Stable identifier, unique within this entity type (e.g. VS-01, VS-02…).
-|Name|A short, human-readable label for this instance.
-|Status|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-|Evidence basis|How this knowledge was obtained (direct observation, interview, literature, secondary data, or proxy informant), flagged as provisional where it rests on anything other than direct contact with the Stakeholder group it describes. For a Design Pattern, cite known uses in other projects or the literature grounding its Principle instead.
-|Narrative|names the Function, names the value it serves, and states the connection in language a Stakeholder would recognize as true to what they said.
-|Concerns|the Function ID and the Human Value ID (§1.2) it connects.
+|ID|OS-01
+|Name|The walk is the point
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning; HFC-01 (hypothesis), HFC-02.
+|Narrative|//Myra:// "On days Jan walks, Jan talks about it at dinner - the blackbird, the pond. On days Jan sits in the lounge, the day is just gone. The guide doesn't take Jan anywhere. It gives the walk something to notice, so the walk isn't a trip to somewhere Jan can't remember."
+|Concerns|F2 Guide the walk; HV-05 Well-being
+
+= Objective Story - Ask, don't test [OS-02] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|OS-02
+|Name|Ask, don't test
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning; HFC-04, HFC-06; IDP-02.
+|Narrative|//Jan's daughter, to Sanne:// "Ask Jan whether they remember the harbour and you get 'Of course I do', and then nothing. When the voice just says the ropes smelled of tar, Jan starts talking and won't stop. Same memory. One is a test; the other is an invitation."
+|Concerns|F2 Guide the walk (memory invitations); HV-02 Dignity, HV-08 Identity
+
+= Objective Story - My station [OS-03] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|OS-03
+|Name|My station
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning; HFC-05; PS-06.
+|Narrative|//Jan:// "Brass band on Sunday. Football on Saturday. The news with my coffee - not at night, unless I ask. And not that pop station. Ask me. Two things, not twenty."
+|Concerns|F6 Recommend listening; HV-01 Autonomy, HV-08 Identity
 
 == Graph edges ==
+
+OS-01: narrates → F2, HV-05; serves → OBJ-01.
+
+OS-02: narrates → F2, HV-02, HV-08; serves → OBJ-03, OBJ-06.
+
+OS-03: narrates → F6, HV-01, HV-08; serves → OBJ-05, OBJ-09.

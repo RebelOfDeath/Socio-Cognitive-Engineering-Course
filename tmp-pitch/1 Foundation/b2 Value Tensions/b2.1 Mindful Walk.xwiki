@@ -1,0 +1,243 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b2%20Value%20Tensions/spaces/b2.1%20Mindful%20Walk/pages/WebHome
+title: b2.1 Mindful Walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Seven tensions. On the walk: freedom against safety (VT-01), knowing whereabouts against privacy (VT-02), memories that warm against memories that hurt (VT-03). In the guidance: plain against childish (VT-05). In listening: the news against a calm evening (VT-04). In the data: a rich life story against holding little (VT-06). In staffing: time saved against company kept (VT-07).
+
+= Value Tension - Autonomy vs Safety [VT-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-01
+|Name|Autonomy vs Safety (where and with whom to walk)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Härlein et al. (2009) on falls; Lai & Arthur (2003) on wandering.
+|Values in tension|(((
+HV-01 Autonomy: walk where, when and with whom the resident wants.
+
+HV-04 Safety: supervision, short routes, closed garden.
+)))
+|Domain area|safety/physical-environmental
+|Nature of the conflict|More freedom (wider routes, lighter supervision): more falls, more exit risk. More supervision: fewer, shorter walks, and a guarded feeling.
+|Non-negotiable floor|Exit policy is ST-05's. The System never locks, blocks or restrains.
+|Current resolution|(((
+* Closed garden: walk with a partner and the pocket guide, staff within reach. Only residents assessed fit by ST-06.
+* Beyond the garden: always with a person (staff, volunteer, family).
+* At the gate: guide orients back once; care worker alerted (F4). No barrier.
+)))
+|Alternatives considered|(((
+Staff on every walk: not preferred. The walks do not happen (PS-01, SA-02).
+
+GPS-tracked free walking: rejected (VT-02, TECH-06).
+)))
+|Status of the tension|Provisionally resolved. Tested by UC01-F4-CL7 and UC01-F2-CL5.
+
+= Value Tension - Privacy vs Safety [VT-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-02
+|Name|Privacy vs Safety (knowing where the resident is)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Niemeijer et al. (2010, 2015) on surveillance technology in residential dementia care.
+|Values in tension|(((
+HV-03 Privacy: no location data.
+
+HV-04 Safety: know where the resident is, to reach them.
+)))
+|Domain area|privacy and safety
+|Nature of the conflict|Continuous location lets help find the resident. It is also a route trace: surveillance of a walk.
+|Non-negotiable floor|Data minimisation (GDPR art. 5). Lawful basis and consent arrangement to confirm with ST-05 (Open item O-8).
+|Current resolution|(((
+* No GPS, no trace.
+* Beacons at landmarks and at the gate (TECH-03). The guide knows the nearest landmark, in the moment only.
+* Alert carries trigger and last landmark. The session record holds no route.
+)))
+|Alternatives considered|(((
+GPS tracker (TECH-06): rejected - continuous trace.
+
+No sensing at all: rejected - exits and falls go unanswered.
+)))
+|Status of the tension|Provisionally resolved. Verified by UC01-F4-PR4; tested by UC01-F4-CL7.
+
+= Value Tension - Identity vs Well-being [VT-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-03
+|Name|Identity vs Well-being (memories that hurt)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Woods et al. (2018): reminiscence benefits are small and vary by setting.
+|Values in tension|(((
+HV-08 Identity: invite the resident's past - trade, home, people.
+
+HV-05 Well-being: avoid memories that bring grief or longing.
+)))
+|Domain area|psychological safety
+|Nature of the conflict|The richest memories are the most charged. A cue that opens the harbour can also open "my wife waited for me at the quay". Longing for the former home can turn into exit-seeking (PS-01).
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Life-story profile lists welcome and avoided topics, written with family (ST-03, ST-08).
+* Invite, never test (IDP-02).
+* On sadness or "I must go home": the companion responds; the guide's next cue returns to the present - feet, breath, what is here.
+* Avoided topics never used. The former home address never used on the walk.
+)))
+|Alternatives considered|(((
+No reminiscence: not preferred. Loses identity and conversation (PS-02).
+
+Free reminiscence, no curation: not preferred. Risk unmanaged.
+)))
+|Status of the tension|Open. Tested by UC01-F2-CL4 and adverse UC01-F2-CL5.
+
+= Value Tension - Autonomy vs Well-being [VT-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-04
+|Name|Autonomy vs Well-being (the news)
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-07, PS-05, PS-06.
+|Values in tension|(((
+HV-01 Autonomy: hear the news - all of it, any time.
+
+HV-05 Well-being: a calm evening, without distressing news at dusk.
+)))
+|Domain area|information; psychological safety
+|Nature of the conflict|The news keeps the resident part of the world. It also unsettles, more so in the evening and without context. Filtering protects calm, and makes the System a censor.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Offer, never hide.
+* Evening default: calm content. News offered in the morning, and always on request, in one step.
+* No silent filtering of news items.
+)))
+|Alternatives considered|(((
+Filter distressing news: rejected. Paternalistic; violates HV-01 and HV-02.
+
+No news at all: rejected. Same as today: rejected (PS-05, PS-06).
+)))
+|Status of the tension|Open. Tested by UC03-F6-CL13 and adverse UC03-F6-CL14.
+
+= Value Tension - Dignity vs Well-being [VT-05] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-05
+|Name|Dignity vs Well-being (plain guidance)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Williams et al. (2009) on elderspeak; Kitwood (1997) on infantilisation.
+|Values in tension|(((
+HV-05 Well-being: guidance simple enough to follow - short, slow, concrete, repeated.
+
+HV-02 Dignity: nothing that sounds like talking to a child.
+)))
+|Domain area|psychological safety (personhood)
+|Nature of the conflict|What makes guidance easy to follow (slower, simpler, repeated) is also what marks elderspeak. Meditation scripts add a soothing, praising tone on top.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Short, concrete sentences at normal pitch; adult words.
+* No endearments; no praise for breathing or walking.
+* Silence instead of repetition.
+* First name only if the resident wants it.
+)))
+|Alternatives considered|(((
+Standard recorded meditation: rejected (PS-04).
+
+Soothing "therapy voice": rejected. Elderspeak.
+)))
+|Status of the tension|Open. Wording piloted in EM-04; tested by adverse UC01-F2-CL6.
+
+= Value Tension - Privacy vs Identity [VT-06] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-06
+|Name|Privacy vs Identity (the life-story profile)
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only.
+|Values in tension|(((
+HV-08 Identity: a rich profile - places, people, music, programmes, topics to avoid.
+
+HV-03 Privacy: hold as little as possible.
+)))
+|Domain area|privacy
+|Nature of the conflict|Personal cues and recommendations need a life story and a memory of what was liked. That profile is intimate data about a person who cannot fully oversee it.
+|Non-negotiable floor|Data minimisation (GDPR art. 5). Consent through resident and representative; to confirm with ST-05 (Open item O-8).
+|Current resolution|(((
+* Profile written with resident and family; kept by ST-08, stored on site.
+* Resident and family can see and correct it.
+* Learns only liked or skipped, per item.
+* No listening log. Nothing said on a walk is kept.
+)))
+|Alternatives considered|(((
+Profile learned from all listening and speech: rejected.
+
+Generic content only: rejected (PS-06).
+)))
+|Status of the tension|Provisionally resolved. Verified by UC03-F6-PR6; staff and family view in EM-03.
+
+= Value Tension - Attentive care vs Social connectedness [VT-07] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-07
+|Name|Attentive care vs Social connectedness
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Victor (2012) on loneliness in care homes.
+|Values in tension|(((
+HV-06 Attentive care: let the System take walks and sessions off staff.
+
+HV-07 Social connectedness: people, not devices, as company.
+)))
+|Domain area|social
+|Nature of the conflict|Every walk the guide carries without staff frees time. It may also remove the only human contact of the day.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* The guide replaces the anchoring, not the company.
+* No walk with the voice alone: always a partner, volunteer, relative or staff member.
+* Freed staff time goes to walks beyond the garden and to settling (SA-06).
+* Human company tracked (M-10).
+)))
+|Alternatives considered|(((
+Solo walks with the guide: rejected.
+
+Staff-only walks: not preferred (PS-02).
+)))
+|Status of the tension|Open. Tested by UC01-F2-CL8.
+
+== Graph edges ==
+
+VT-01: involves → HV-01, HV-04; bounds → F2, F4; tested-by → UC01-F4-CL7, UC01-F2-CL5.
+
+VT-02: involves → HV-03, HV-04; bounds → F4, F5; strained-by → TECH-03 (TECH-06 rejected for straining it most); tested-by → UC01-F4-PR4, UC01-F4-CL7.
+
+VT-03: involves → HV-08, HV-05; bounds → F2; tested-by → UC01-F2-CL4, UC01-F2-CL5.
+
+VT-04: involves → HV-01, HV-05; bounds → F6; strained-by → TECH-05; tested-by → UC03-F6-CL13, UC03-F6-CL14.
+
+VT-05: involves → HV-02, HV-05; bounds → F2, F3; strained-by → TECH-01; tested-by → UC01-F2-CL6.
+
+VT-06: involves → HV-03, HV-08; bounds → F2, F5, F6; strained-by → TECH-02, TECH-05; tested-by → UC03-F6-PR6.
+
+VT-07: involves → HV-06, HV-07; bounds → F1, F2; tested-by → UC01-F2-CL8.

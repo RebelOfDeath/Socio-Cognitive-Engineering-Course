@@ -1,0 +1,14 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/0%20Index/pages/WebHome
+title: 0 Index
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Interaction Design Patterns: reusable solutions for how the System communicates and is controlled. Current concept: Mindful Walk. The morning-care pattern is kept for traceability.
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+= Concepts =
+
+|=Page|=Patterns|=Status
+|[[d1 Mindful Walk>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d1 Mindful Walk.WebHome]]|IDP-01 Present-moment cue; IDP-02 Memory invitation; IDP-03 Two-option offer|**Current**
+|[[d2 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d2 Morning Care (previous concept).WebHome]]|IDP-04 Respectful graduated prompting|Superseded

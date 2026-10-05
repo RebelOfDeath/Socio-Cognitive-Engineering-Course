@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a1.2 Morning Care (previous concept)
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** The project's first concept: a robot supporting residents with dementia through morning personal care. It covers tooth brushing (SA-05), taking medication (SA-06) and the care worker's morning round (SA-07). It has been superseded by the Daily Walk concept ([[a1.1 Daily Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Daily Walk.WebHome]]). The page is kept for traceability, because the current Specification pages still reference these activities.
+**Abstract.** Superseded. Situated Activities SA-08 to SA-10 of the first concept, morning personal care. Replaced by [[a1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Mindful Walk set.
 
-= Situated Activity  [SA-05] =
+= Situated Activity  [SA-08] =
 
 //What a Stakeholder currently does, in the conditions they actually do it in. The empirical base everything else rests on.//
 
@@ -14,7 +14,7 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|SA-05
+|ID|SA-08
 |Name|Brushing teeth
 |Status|In Progress
 |Evidence basis|(((
@@ -28,9 +28,9 @@ Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm
 )))
 |Goal|Maintain oral hygiene as part of the resident's normal morning routine, with as much independence as possible
 |Performing Actor(s)|(((
-ST-08: Resident with dementia (performs the activity)
+ST-09: Resident with dementia (performs the activity)
 
-ST-09: Care home staff member (supports and prompts when needed)
+ST-10: Care home staff member (supports and prompts when needed)
 )))
 |Trigger|Morning routine, after waking, washing and/or breakfast
 |Constituent Tasks|(((
@@ -82,9 +82,9 @@ ST-09: Care home staff member (supports and prompts when needed)
 
 == Graph edges ==
 
-performed-by → ST-08 (supported by ST-09); illustrated-by → PS-04.
+performed-by → ST-09 (supported by ST-10); illustrated-by → PS-07.
 
-= Situated Activity  [SA-06] =
+= Situated Activity  [SA-09] =
 
 //What a Stakeholder currently does, in the conditions they actually do it in. The empirical base everything else rests on.//
 
@@ -93,7 +93,7 @@ performed-by → ST-08 (supported by ST-09); illustrated-by → PS-04.
 == Fields ==
 
 |=Field|=Description
-|ID|SA-06
+|ID|SA-09
 |Name|Taking prescribed medication
 |Status|In Progress
 |Evidence basis|(((
@@ -107,9 +107,9 @@ Analysis of logical memory recall with Alzheimer's [[https:~~/~~/pubmed.ncbi.nlm
 )))
 |Goal|Take the right medication at the right time; have information about the medication and why it needs to be taken
 |Performing Actor(s)|(((
-ST-08: Resident with dementia (performs the activity)
+ST-09: Resident with dementia (performs the activity)
 
-ST-09: Care home employee (prepares the medication and reminds the resident)
+ST-10: Care home employee (prepares the medication and reminds the resident)
 )))
 |Trigger|Morning routine, after waking, washing or breakfast: depending on the needs of the patient and the type of medication
 |Constituent Tasks|(((
@@ -149,9 +149,9 @@ ST-09: Care home employee (prepares the medication and reminds the resident)
 
 == Graph edges ==
 
-performed-by → ST-08 (supported by ST-09); illustrated-by → PS-05.
+performed-by → ST-09 (supported by ST-10); illustrated-by → PS-08.
 
-= Situated Activity  [SA-07] =
+= Situated Activity  [SA-10] =
 
 //What a Stakeholder currently does, in the conditions they actually do it in. The empirical base everything else rests on.//
 
@@ -160,25 +160,25 @@ performed-by → ST-08 (supported by ST-09); illustrated-by → PS-05.
 == Fields ==
 
 |=Field|=Description
-|ID|SA-07
+|ID|SA-10
 |Name|Morning care round
 |Status|In Progress
 |Evidence basis|(((
 Provisional. Literature and group reasoning only.
 
-Constructed from the care home worker's part in PS-04 and PS-05 and from HP-02. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
+Constructed from the care home worker's part in PS-07 and PS-08 and from HP-06. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
 )))
 |Goal|Get every resident on the round through their morning care safely and in time, giving each the support they actually need, and know afterwards what each resident needed so care can continue at handover
-|Performing Actor(s)|ST-09: Care home staff member
+|Performing Actor(s)|ST-10: Care home staff member
 |Trigger|Start of the morning shift
 |Constituent Tasks|(((
 ~1. Read the handover notes from the previous shift
 
 2. Go from resident to resident: wake them, and assist with washing and dressing where needed
 
-3. Prompt each resident through personal-care activities such as tooth brushing (SA-05)
+3. Prompt each resident through personal-care activities such as tooth brushing (SA-08)
 
-4. Hand out medication and remind residents to take it (SA-06)
+4. Hand out medication and remind residents to take it (SA-09)
 
 5. Return to residents who stalled or did not finish
 
@@ -188,22 +188,22 @@ Constructed from the care home worker's part in PS-04 and PS-05 and from HP-02. 
 |Frequency and duration|Every morning shift. 5 - 8 residents per care worker, 30 - 60 minutes per round.
 |Tools and artifacts|Handover notes and care record, medication list or trolley, residents' own personal-care items
 |Existing workarounds|(((
-- Preparing items in advance, such as putting toothpaste on the toothbrush (SA-05)
+- Preparing items in advance, such as putting toothpaste on the toothbrush (SA-08)
 
 - Verbal reminders given in passing while attending to another resident
 
-- Delegating one employee to handle medication for the whole round (SA-06)
+- Delegating one employee to handle medication for the whole round (SA-09)
 )))
 |Observed breakdowns|(((
-- Having to return repeatedly to the same resident to prompt the next step (PS-04, PS-05)
+- Having to return repeatedly to the same resident to prompt the next step (PS-07, PS-08)
 
 - Being unable to attend to two residents at once, so one of them waits
 
 - Prompting step by step takes considerable caregiver time (Rogers et al., 1999)
 
-- Checking in on a resident too late because the care worker is overloaded (SA-06)
+- Checking in on a resident too late because the care worker is overloaded (SA-09)
 )))
 
 == Graph edges ==
 
-performed-by → ST-09; illustrated-by → PS-04, PS-05.
+performed-by → ST-10; illustrated-by → PS-07, PS-08.

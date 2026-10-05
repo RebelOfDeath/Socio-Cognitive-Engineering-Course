@@ -124,13 +124,13 @@ tmp-pitch/                            ← page "tmp: Pitch"
 └─ 1 Foundation/                      ← page "1 Foundation"
    ├─ a1 Situated Activities/         ← page "a1 Situated Activities"
    │  ├─ 0 Index.xwiki                ← what a1 has to say itself
-   │  ├─ a1.1 Daily Walk.xwiki
+   │  ├─ a1.1 Mindful Walk.xwiki
    │  └─ a1.2 Morning Care (previous concept).xwiki
    └─ a3 Problem Scenario.xwiki
 ```
 
 - **A page with children has no content of its own.** Anything it has to say goes into a `0 Index` child, which sorts first. The folder's own page is a hidden `.page.xwiki` holding only its metadata; the repo's VS Code settings hide it. `push` enforces this: content found in a `.page.xwiki` (e.g. after an edit on the wiki) moves into a new `0 Index` child, attachments included. `status` and `pull` list such pages.
-- **Titles are names.** Titles follow (number)(space)(name), without a full stop after the number: `1 Foundation`, `a1.1 Daily Walk`. Characters Windows can't put in a file name become `-` in the name only (`IDP: Title` → `IDP- Title.xwiki`); the `title:` line keeps the exact title.
+- **Titles are names.** Titles follow (number)(space)(name), without a full stop after the number: `1 Foundation`, `a1.1 Mindful Walk`. Characters Windows can't put in a file name become `-` in the name only (`IDP: Title` → `IDP- Title.xwiki`); the `title:` line keeps the exact title.
 - **Renaming** a file or folder retitles the page on `push`; a retitle on the wiki renames it on `pull`. Editing the `title:` line works too. The space key, and so the URL, keeps the name the page was created with.
 - **New pages** need no metadata: add `<title>.xwiki` in the folder of the page it belongs under, or a new folder for a page with children, and `push`. To give a page its first child, make a folder with the page's exact file name (without `.xwiki`) next to it and put the new file inside; `push` turns the page into that folder and moves its content into `0 Index`.
 - **Moving** a page to another parent needs the wiki's own Page Actions → Move/Rename, then `pull`: the REST API has no move.
