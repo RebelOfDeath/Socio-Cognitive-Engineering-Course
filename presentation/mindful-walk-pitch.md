@@ -10,6 +10,7 @@ style: |
     background: #fbfaf7;
   }
   h1, h2, h3 { color: #2f5d50; }
+  footer { font-size: 15px; color: #5b6b66; }
   section.photo {
     color: #fff;
     justify-content: flex-end;
@@ -19,17 +20,31 @@ style: |
   section.photo h1 { font-size: 84px; margin: 0; }
   section.photo h2 { font-size: 60px; margin: 0; }
   section.photo h3 { font-size: 34px; font-weight: 400; margin-top: 10px; }
-  section.split h2 { font-size: 56px; }
-  section.split h3 { font-size: 32px; font-weight: 400; }
+  section.green { background: #2f5d50; color: #fff; justify-content: center; }
+  section.green h2 { color: #fff; font-size: 72px; margin: 0; }
+  section.green h3 { color: #cfe0d8; font-size: 36px; font-weight: 400; }
+  section.statement { justify-content: center; }
+  section.statement h2 { font-size: 64px; margin: 0 0 20px; }
+  section.statement h3 { font-size: 36px; font-weight: 400; color: #1f2a2e; max-width: 980px; line-height: 1.35; }
+  section.voice h2, section.pair h2, section.words h2 { font-size: 40px; }
+  section.voice ul { list-style: none; padding: 0; }
+  section.voice > ul > li { font-size: 46px; color: #2f5d50; margin: 26px 0 0; }
+  section.voice ul ul li { font-size: 22px; color: #5b6b66; margin: 4px 0 0; }
+  section.verbs { justify-content: center; }
+  section.verbs h2 { font-size: 40px; }
+  section.verbs ul { list-style: none; padding: 0; display: flex; gap: 52px; margin: 0; }
+  section.verbs li { font-size: 56px; font-weight: 600; color: #2f5d50; margin: 0; line-height: 1.2; }
+  section.pair ul { list-style: none; padding: 0; display: flex; gap: 70px; }
+  section.pair > ul > li { flex: 1; font-size: 24px; color: #5b6b66; }
+  section.pair ul ul li { font-size: 44px; color: #2f5d50; margin-top: 12px; line-height: 1.25; }
   section.words ul {
     list-style: none;
     padding: 0;
     columns: 2;
-    font-size: 54px;
+    font-size: 50px;
     line-height: 1.7;
     color: #2f5d50;
   }
-  footer { font-size: 15px; color: rgba(255, 255, 255, .9); text-shadow: 0 1px 3px rgba(0, 0, 0, .9); }
   section.diagram, section.table { justify-content: flex-start; padding-top: 44px; }
   section.diagram h2, section.table h2 { font-size: 40px; margin-bottom: 14px; }
   section.diagram p { text-align: center; margin: 0; }
@@ -52,47 +67,46 @@ style: |
 - Walking, noticing, remembering, listening
 -->
 
-## Where we started
+## Where we started: tooth brushing
 
-<!-- _class: photo -->
+<!-- _class: voice -->
 
-![bg brightness:.55](img/teeth-a.jpg)
-
-### Tooth brushing
+- "Toothpaste next."
+- "Now brush the back teeth."
+- "Now rinse."
 
 <!--
 - Bathroom; two minutes, twice a day
-- Robot only instructs: "Toothpaste next"
+- This is all the robot said: instructions
 - No room for theory of mind
 - Needs a steady grip; if the hands fail, the concept fails
 -->
 
-## Think of your last vacation
+## Think of your last vacation.
 
-<!-- _class: photo -->
-
-![bg brightness:.55](img/harbour-d.jpg)
+<!-- _class: green -->
 
 ### What do you remember?
 
 <!--
-- Ask the room
-- Wait twenty seconds
+- Ask the room; wait twenty seconds
 - Two or three people share
+- Then, out loud: "Hands up if you were moving: walking, hiking, swimming, cycling"
+- Count the hands
 -->
 
-## Hands up if you were moving
+## Moving helps memory
 
-<!-- _class: photo -->
-<!-- _footer: "Pastor & Bourdin-Kreitz (2024). Comparing episodic memory outcomes from walking augmented reality and stationary virtual reality encoding experiences. Scientific Reports, 14, 7580." -->
+<!-- _class: statement -->
+<!-- _footer: "Pastor & Bourdin-Kreitz (2024), Scientific Reports 14, 7580" -->
 
-![bg brightness:.6](img/hands-a.jpg)
+### The same museum tour, walked or seated: the walkers remembered far more of who was where.
 
 <!--
-- Hands up: walking, hiking, swimming, cycling
-- Count the hands
-- Study: same museum tour, walked or seated
-- Walkers remembered far better (d = 1.31)
+- Link back to the hands
+- Walking AR tour against a seated VR tour of the same museum
+- Large effect: d = 1.31, 28 adults
+- Tested straight after and 48 hours later
 -->
 
 ## More to talk about
@@ -128,11 +142,13 @@ style: |
 
 ## Mindful Walk
 
-<!-- _class: photo -->
+<!-- _class: verbs -->
 
-![bg brightness:.55](img/walk-flowers.jpg)
-
-### Walk · Notice · Remember · Rest · Listen
+- Walk
+- Notice
+- Remember
+- Rest
+- Listen
 
 <!--
 - Walk: daily, outdoors, with company
@@ -158,16 +174,18 @@ style: |
 - Kees, two doors down, sorted the post at the same depot
 -->
 
-## "Every front garden on the round had roses like these."
+## At the rose bed, a prompt plays
 
 <!-- _class: photo -->
 
 ![bg brightness:.55](img/roses-house.jpg)
 
+### A memory from Jan's own round
+
 <!--
 - Pepper at the door: a walk with Kees?
 - Pocket guide on the rollator
-- Rose bed: this line, from Jan's life story
+- Rose bed beacon: a memory prompt plays now, from Jan's life story
 - Jan and Kees talk for ten minutes
 - Gate: one cue back; Myra gets an alert
 - Evening: Jan tells their daughter
@@ -175,44 +193,48 @@ style: |
 
 ## Voice in the pocket, person in reach
 
-<!-- _class: photo -->
+<!-- _class: diagram -->
 
-![bg brightness:.55](img/pepper-a.jpg)
+![w:1110](img/garden.svg)
 
 <!--
 - Pepper indoors only: no grass, no gravel
 - Pocket guide outside, same voice
-- Beacons, no GPS, no route stored
-- Microphone off outdoors
+- Beacons at pond, roses, bench and gate
+- No GPS, no route stored; microphone off outdoors
 - A person always walks along
 -->
 
-## "Feel your feet on the path."
+## How the voice speaks
 
-<!-- _class: split -->
+<!-- _class: voice -->
 
-![bg right:42%](img/walk-man.jpg)
-
-### How the voice speaks
+- "Feel your feet on the path."
+  - Mention what is here, then silence
+- A memory, stated from the life story
+  - Never "Do you remember?"
+- "A walk with Kees, or a sit by the window?"
+  - Two options; "no" is fine
 
 <!--
-- Mention what is here, then silence
-- State a memory; never "Do you remember?"
-- Offer two options
-- Adult words, no praise
+- Three rules
+- Adult words, normal pitch
+- No praise, no endearments
 -->
 
-## When it rains, and at dusk
+## Rest, seated or lying
 
-<!-- _class: photo -->
+<!-- _class: pair -->
 
-![bg brightness:.6](img/rain-b.jpg)
-![bg brightness:.6](img/bed-b.jpg)
+- On rain days, at the window
+  - "Rain on the glass."
+- At dusk, in bed
+  - "Lie back. Feel the pillow under your head."
 
 <!--
-- Rain: Pepper at the window, "Rain on the glass"
+- Rain: Pepper at the window
 - Breathing light on Pepper's shoulders
-- Dusk: guide at the bedside, lying practice
+- Dusk: guide docked at the bedside
 - Concrete cues: nothing to remember
 -->
 
@@ -233,9 +255,12 @@ style: |
 
 ## What could go wrong
 
-<!-- _class: photo -->
+<!-- _class: words -->
 
-![bg brightness:.5](img/rain-a.jpg)
+- Memories that hurt
+- A childish voice
+- Feeling watched
+- Kept from the news
 
 <!--
 - Memories can hurt: "I must go home"
@@ -247,9 +272,7 @@ style: |
 
 ## Evaluation
 
-<!-- _class: split -->
-
-![bg left:42%](img/pepper-b.jpg)
+<!-- _class: green -->
 
 ### Verification and validation
 
@@ -300,7 +323,7 @@ style: |
 
 | Factor | Condition A | Condition B |
 |---|---|---|
-| Memory cue | Question: "Do you remember your round?" | Statement: "Every front garden had roses." |
+| Memory cue | Question: "Do you remember your round?" | Statement from the life story |
 | Silence between cues | 30 s | 90 s |
 | Form of address | First name | No name |
 
@@ -360,11 +383,12 @@ A researcher voices the guide from a script · 4-6 residents · outcomes: observ
 
 ## Next steps
 
-<!-- _class: photo -->
+<!-- _class: words -->
 
-![bg brightness:.5](img/beach-a.jpg)
-
-### Questions and ideas welcome
+- Garden policy
+- Evidence check
+- Cue script
+- Prototype test
 
 <!--
 - Garden policy with management

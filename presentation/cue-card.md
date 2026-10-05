@@ -5,25 +5,26 @@
 - New pitch: from tooth brushing to walks
 - Walking, noticing, remembering, listening
 
-**2. Where we started**
+**2. Where we started: tooth brushing**
 
 - Bathroom; two minutes, twice a day
-- Robot only instructs: "Toothpaste next"
+- This is all the robot said: instructions
 - No room for theory of mind
 - Needs a steady grip; if the hands fail, the concept fails
 
-**3. Think of your last vacation**
+**3. Think of your last vacation.**
 
-- Ask the room
-- Wait twenty seconds
+- Ask the room; wait twenty seconds
 - Two or three people share
-
-**4. Hands up if you were moving**
-
-- Hands up: walking, hiking, swimming, cycling
+- Then, out loud: "Hands up if you were moving: walking, hiking, swimming, cycling"
 - Count the hands
-- Study: same museum tour, walked or seated
-- Walkers remembered far better (d = 1.31)
+
+**4. Moving helps memory**
+
+- Link back to the hands
+- Walking AR tour against a seated VR tour of the same museum
+- Large effect: d = 1.31, 28 adults
+- Tested straight after and 48 hours later
 
 **5. More to talk about**
 
@@ -55,11 +56,11 @@
 - Refused a GPS watch: "I'm not a parcel"
 - Kees, two doors down, sorted the post at the same depot
 
-**9. "Every front garden on the round had roses like these."**
+**9. At the rose bed, a prompt plays**
 
 - Pepper at the door: a walk with Kees?
 - Pocket guide on the rollator
-- Rose bed: this line, from Jan's life story
+- Rose bed beacon: a memory prompt plays now, from Jan's life story
 - Jan and Kees talk for ten minutes
 - Gate: one cue back; Myra gets an alert
 - Evening: Jan tells their daughter
@@ -68,22 +69,21 @@
 
 - Pepper indoors only: no grass, no gravel
 - Pocket guide outside, same voice
-- Beacons, no GPS, no route stored
-- Microphone off outdoors
+- Beacons at pond, roses, bench and gate
+- No GPS, no route stored; microphone off outdoors
 - A person always walks along
 
-**11. "Feel your feet on the path."**
+**11. How the voice speaks**
 
-- Mention what is here, then silence
-- State a memory; never "Do you remember?"
-- Offer two options
-- Adult words, no praise
+- Three rules
+- Adult words, normal pitch
+- No praise, no endearments
 
-**12. When it rains, and at dusk**
+**12. Rest, seated or lying**
 
-- Rain: Pepper at the window, "Rain on the glass"
+- Rain: Pepper at the window
 - Breathing light on Pepper's shoulders
-- Dusk: guide at the bedside, lying practice
+- Dusk: guide docked at the bedside
 - Concrete cues: nothing to remember
 
 **13. Listening that fits**
