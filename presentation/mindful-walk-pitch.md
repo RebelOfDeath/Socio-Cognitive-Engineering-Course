@@ -45,6 +45,17 @@ style: |
     line-height: 1.7;
     color: #2f5d50;
   }
+  section.kept h2 { font-size: 40px; }
+  section.kept ul { list-style: none; padding: 0; }
+  section.kept > ul { columns: 2; column-gap: 60px; }
+  section.kept > ul > li { font-size: 34px; color: #2f5d50; font-weight: 600; break-inside: avoid; margin: 0 0 26px; }
+  section.kept ul ul li { font-size: 21px; color: #5b6b66; font-weight: 400; margin: 4px 0 0; }
+  section.sa { justify-content: flex-start; padding-top: 64px; }
+  section.sa h2 { font-size: 44px; margin-bottom: 28px; }
+  section.sa table { display: table; width: 100%; font-size: 26px; border-collapse: collapse; }
+  section.sa th { background: #2f5d50; color: #fff; text-align: left; font-size: 22px; padding: 10px 18px; }
+  section.sa td { vertical-align: top; padding: 18px; line-height: 1.45; background: #fff; width: 22%; }
+  section.sa td:nth-child(4) { color: #8a4f12; width: 34%; }
   section.diagram, section.table { justify-content: flex-start; padding-top: 44px; }
   section.diagram h2, section.table h2 { font-size: 40px; margin-bottom: 14px; }
   section.diagram p { text-align: center; margin: 0; }
@@ -53,21 +64,7 @@ style: |
   section.table p { font-size: 20px; color: #5b6b66; margin-top: 14px; }
 ---
 
-# Mindful Walk
-
-<!-- _class: photo -->
-<!-- _paginate: false -->
-
-![bg brightness:.6](img/walk-couple.jpg)
-
-### From the bathroom sink to the garden path
-
-<!--
-- New pitch: from tooth brushing to walks
-- Walking, noticing, remembering, listening
--->
-
-## Where we started: tooth brushing
+## Original concept: Tooth brushing
 
 <!-- _class: voice -->
 
@@ -158,6 +155,125 @@ style: |
 - Walking comes first
 -->
 
+
+## SA-01 · Accompanied walk
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Resident<br>with care worker, volunteer or family | Daily, after lunch<br>15-45 min<br>often skipped | Move, get daylight, stay oriented, return safely | Loses place or purpose<br>Heads for the old home<br>No staff, bad weather |
+
+<!--
+- Today's fix: closed garden loop, coded exits, family and volunteers
+- The companion is the resident's anchor
+- Addressed by: present-moment cues, gate alert
+-->
+
+## SA-02 · Fitting walks between care tasks
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Care worker<br>activity coordinator | Daily activity slot<br>30-60 min with preparation | Every resident who can walk gets a safe walk | No time: walk skipped<br>Group follows the slowest<br>One turns back, all return |
+
+<!--
+- Walks compete with care tasks for the same staff time
+- Addressed by: walks with a partner and the guide; staff in reach
+-->
+
+## SA-03 · Bad-weather indoor exercise
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Resident<br>care worker sets up<br>physiotherapist plans | Rain, ice, heat, dark<br>10-20 min | Keep moving when going out is not possible | No destination, no company<br>Stops after minutes<br>Often skipped |
+
+<!--
+- The exercise stays; daylight, sights and company go
+- Addressed by: seated practice at the window
+-->
+
+## SA-04 · Walking with a fellow resident
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Resident and walking partner<br>care worker matches them | When staff spot a match<br>15-30 min | Company as the reason to go out | No partner available<br>Mismatch in pace<br>Talk dries up |
+
+<!--
+- The match decides whether the walk works
+- Addressed by: pairing on a shared past; memory prompts
+-->
+
+## SA-05 · Relaxation session
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Residents<br>activity coordinator leads | Weekly or less<br>20-45 min | Calm and rest, seated or lying | Recording too abstract, too fast<br>Drift goes unnoticed<br>Calm fades within the hour |
+
+<!--
+- Recordings are made for general audiences
+- Addressed by: concrete cues, paced to the resident
+-->
+
+## SA-06 · Winding down to rest
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Resident<br>care worker calms | Afternoon rest, evening<br>5-30 min | A calm evening; medication only as last resort | No time at handover<br>Up again once staff leave<br>Evening news upsets |
+
+<!--
+- Restlessness peaks when staff time is lowest
+- Addressed by: lying practice with the docked guide
+-->
+
+## SA-07 · Listening to radio, news or audiobooks
+
+<!-- _class: sa -->
+
+| Who | When | Goal | What breaks down |
+|---|---|---|---|
+| Resident<br>staff switch on<br>family knows the tastes | Daily, at rest<br>minutes to hours | Chosen listening; keep in touch with the world | Cannot work the device<br>Station picked by staff<br>Plot lost between days |
+
+<!--
+- Preferences known to family, not to whoever switches on
+- Addressed by: two-option offers from the life story
+-->
+
+## What we keep from morning care
+
+<!-- _class: kept -->
+
+- Wait before helping
+  - Silence first; one cue at a time
+- A person in reach
+  - The System calls a care worker when its help runs out
+- A minimal record
+  - Four items; no step-by-step trace, no route
+- No cameras
+  - Item sensors then, beacons now
+- An adult voice
+  - Phrased as offers; no praise, no endearments
+- A safe fallback
+  - If the System fails, care goes on as today
+
+<!--
+- New activity, same principles
+- Graduated prompting became cue, then silence
+- The care-worker handover became the alert
+- Three-item record then, four items now
+- Also kept: staged tests, the within-resident comparison, adverse claims
+-->
+
+
 ## Jan
 
 <!-- _class: photo -->
@@ -172,23 +288,7 @@ style: |
 - Moderate dementia: today is gone, the round is vivid
 - Refused a GPS watch: "I'm not a parcel"
 - Kees, two doors down, sorted the post at the same depot
--->
-
-## At the rose bed, a prompt plays
-
-<!-- _class: photo -->
-
-![bg brightness:.55](img/roses-house.jpg)
-
-### A memory from Jan's own round
-
-<!--
-- Pepper at the door: a walk with Kees?
-- Pocket guide on the rollator
-- Rose bed beacon: a memory prompt plays now, from Jan's life story
-- Jan and Kees talk for ten minutes
-- Gate: one cue back; Myra gets an alert
-- Evening: Jan tells their daughter
+- On the walk: a memory prompt at the rose bed; they talk for ten minutes
 -->
 
 ## Voice in the pocket, person in reach
@@ -381,14 +481,14 @@ A researcher voices the guide from a script · 4-6 residents · outcomes: observ
 - A null result on recall weakens the walking-first argument; we report it either way
 -->
 
-## Next steps
+<!-- ## Next steps -->
 
 <!-- _class: words -->
-
+<!-- 
 - Garden policy
 - Evidence check
 - Cue script
-- Prototype test
+- Prototype test -->
 
 <!--
 - Garden policy with management
