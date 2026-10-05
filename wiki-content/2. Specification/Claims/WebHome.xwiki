@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20S
 title: d. Interaction Design Pattern
 synced_title: d. Interaction Design Pattern
 syntax: xwiki/2.1
-version: 3.1
-hash: 631dbe4024a8cc7986d13c703f42cb1414e0ce680259f73bd185725c02a842d5
+version: 4.1
+hash: ae2a36fe3205e6add313fb818be556dbc463f54ac92ea7c4ae07b6a3cbcc4963
 %%WIKI-SYNC-META%%
 = Respectful graduated prompting [IDP-01] =
 
@@ -27,9 +27,9 @@ The pattern is derived from SA-01's existing reminder and demonstration workarou
 |Principle|Match the specificity and timing of assistance to the person's present ability, while preserving a meaningful opportunity to act independently. Communicate with an adult respectfully and make assistance an offer, not a judgment about failure. The group selected wait-then-escalate, from least to most specific, as a stated design hypothesis. If UC01-F2-CL4 shows increased distress, first adapt the wait per resident and then consider earlier prompting with fading cues.
 |Solution|(((
 1. Remain silent while TECH-02 indicates that the resident is progressing.
-2. After a reliably inferred stall, allow an individualized wait before prompting. Set this interval per resident after the O-20 pilot.
+2. After a reliably inferred stall, allow an individualized wait before prompting. UC01's Escalation specification proposes 15 s by default, adjusted per resident after the O-20 pilot.
 3. Begin with one short, calm, low-information prompt. Phrase it as an offer in the second person and in an ordinary adult register; do not announce failure or use exaggerated praise. Confirm with residents whether using their name is welcome in this setting.
-4. If needed, move to a more direct prompt and then a simple picture or short video on Pepper's tablet. Avoid indefinite repetition; if there is no response, escalate, reassess, or hand over. Pepper does not mime the action with its arms.
+4. If needed, move to a more direct prompt and then a simple picture or short video on Pepper's tablet, one level at a time with a response window between them (UC01 Escalation specification). Avoid indefinite repetition; if there is no response, escalate, reassess, or hand over. If the resident declines twice, stop. Pepper does not mime the action with its arms.
 5. Stop prompting as soon as the item sensors indicate that progress has resumed.
 6. Hand over under F3 if the difficulty remains unresolved, stress or confusion appears, task-state uncertainty is high, or physical or safety help is needed. On unreliable sensor data, do not guess; report the degraded state.
 7. Keep Pepper visibly tool-like during the activity: cameras disabled and covered, minimal head and arm motion, no gaze-following, soft eye lights rather than alarms, and no conversation beyond the routine. Position it at the doorway only if the O-21 mock-up shows that this is audible, visible and physically safe.
@@ -44,7 +44,7 @@ These works cover different activities and populations. The transfer limits reco
 == Open items to check or research ==
 
 |=Item|=What is needed|=Why it matters
-|Prompt thresholds (O-20)|Use EM-01 to set stall and prompt-stop timing, then configure the wait per resident with care-worker input.|Needed to verify UC01-F2-PR2 and reduce the risk tested by UC01-F2-CL4.
+|Prompt thresholds (O-20)|Proposed timing is in UC01's Escalation specification. Use the EM-01 pilot to confirm it, then configure the wait per resident with care-worker input.|Needed to verify UC01-F2-PR2 and reduce the risk tested by UC01-F2-CL4.
 |Pepper placement (O-21)|Test doorway audibility, tablet visibility, water clearance and obstruction with the actual robot or a full-size mock-up.|Determines whether strategy 7 and tablet demonstration are feasible; TECH-05 is the fallback.
 |Exact interaction content|Co-design or review the name use, wording, volume, images, acknowledgement and touch input with residents and care staff where ethically feasible.|HP-01 and RP-01 are still provisional and the interaction has not been tested with intended users.
 |Research and evaluation|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors, then apply M-02 to M-06 through EM-02 and EM-03, including both parts of M-05.|Tests independent performance, assistance level, distress, autonomy, privacy and infantilisation.

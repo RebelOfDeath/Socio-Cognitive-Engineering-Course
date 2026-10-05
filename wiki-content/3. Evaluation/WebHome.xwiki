@@ -3,6 +3,36 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3.%20E
 title: 3. Evaluation
 synced_title: 3. Evaluation
 syntax: xwiki/2.1
-version: 1.2
-hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+version: 2.1
+hash: 2726256f6e6ed13ea3288bbc1077549e79c9899c0fcfdf5fd6d72ff698d74253
 %%WIKI-SYNC-META%%
+{{box title="Status of this section"}}
+One Artifact (AT-01) with one evaluated build, a paper build of the UC01 specification. Two Evaluation Reports: ER-01, a formative cognitive walkthrough with one evaluator pass done, and ER-02, the summative design for EM-02, designed and not run. Seven Evidence entries, all from ER-01 and all resting on reviewer judgement. No primary data has been collected.
+{{/box}}
+
+* [[a. Artifacts>>3\. Evaluation.a\. Prototype.WebHome]]: AT-01 Pepper tooth-brushing aid
+* [[b. Evaluation Reports>>3\. Evaluation.b\. Test.WebHome]]: ER-01 cognitive walkthrough of UC01; ER-02 within-resident baseline comparison (study design)
+* [[c. Evidence>>3\. Evaluation.Evidence.WebHome]]: EV-01 to EV-07
+
+= Verification and validation summary =
+
+Where each UC01 Premise and Claim stands. "Planned" means the Evaluation Method is designed but has not produced Evidence.
+
+|=Premise or Claim|=Planned method|=Report so far|=Evidence so far|=Verdict so far
+|UC01-F1-PR1|EM-01|none (needs Build A)|none|none
+|UC01-F2-PR2|EM-01|none (needs Build A)|none|none
+|UC01-F3-PR3|EM-01|none (needs Build A)|none|none
+|UC01-F4-PR4|EM-01|none (needs Build A)|none|none
+|UC01-F2-CL1|EM-02|ER-01; ER-02 designed|EV-01|Qualifies (walkthrough only)
+|UC01-F2-CL2|EM-02|ER-02 designed|none|none
+|UC01-F2-CL3|EM-02|ER-02 designed|none|none
+|UC01-F2-CL4 (adverse)|EM-02|ER-01; ER-02 designed|EV-02|Qualifies (walkthrough only)
+|UC01-F2-CL5 (adverse)|EM-02, EM-03|ER-01; ER-02 designed|EV-03|Qualifies (walkthrough only)
+|UC01-F3-CL6|EM-02|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; the cause (WF-07) is fixed and needs walking again
+|UC01-F1-CL7|EM-02, EM-03|ER-01; ER-02 designed|EV-07|Qualifies (walkthrough only)
+|UC01-F4-CL8|EM-03|ER-01|EV-05|Challenges (walkthrough only; O-29)
+|UC01-F3-CL9|EM-02, EM-03|ER-02 designed|none|none
+|UC01-F2-CL10|EM-02|ER-01; ER-02 designed|EV-06|Qualifies (walkthrough only)
+|UC01-F3-CL11 (adverse)|EM-02|ER-02 designed|none|none
+
+No Claim has yet been tested on a verified Premise, because EM-01 has not run.

@@ -58,6 +58,12 @@ the old ones — which loses page history, breaks inbound links, and leaves atta
 behind. Use the wiki's own Page Actions → Rename (with "update links") instead, then
 `pull`.
 
+To **create a page**, make a new `WebHome.xwiki` in a new folder, with a metadata block
+that has `href:`, `title:` and `syntax:` but no `version:` or `hash:`. The `href:` is the
+parent's REST URL with `/spaces/<new folder name, URL-encoded>` inserted before
+`/pages/WebHome`. `push` sees the missing version, checks that nothing exists at that
+URL yet (and refuses if something does), then creates the page.
+
 Content stays in native XWiki syntax (`**bold**`, `= Heading =`, `{{macro}}...{{/macro}}`, etc.) rather than being converted to Markdown, so nothing gets mangled on push. See [XWiki Syntax](https://xwiki.ewi.tudelft.nl/xwiki/wiki/sce2026group04/view/XWiki/XWikiSyntax) for a reference.
 
 ## Attachments (images, PDFs, etc.)

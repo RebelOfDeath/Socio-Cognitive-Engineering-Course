@@ -3,81 +3,215 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3.%20E
 title: b. Evaluation Reports
 synced_title: b. Evaluation Reports
 syntax: xwiki/2.1
-version: 4.2
-hash: 1e1f207246b46ca17d19f624ea636407c315de5318aa82a35a94e3bb163eb31b
+version: 5.1
+hash: 76adc634bc693a165506c86efa5c3b55416633e914eb55b607f9757f2f854615
 %%WIKI-SYNC-META%%
-= Evaluation Report [ER-nn] =
+{{box title="Status of this page"}}
+Two reports. ER-01 is a formative cognitive walkthrough of UC01 on the paper build of AT-01. One evaluator pass has been done; the procedure asks for 3 to 5 independent passes and a joint session (§2.3 Open item O-30). ER-02 is the summative study design for EM-02. It has been designed and not run, and the course does not require running it this cycle.
 
-//What one Formative pass or Summative Test set out to establish and how: the Artifact and build evaluated, the ethics and consent basis for doing so, the Evaluation Method applied, and what was found. Formative and Summative reports share this one template, distinguished by the Mode field below; the Verification and Validation Summary records what each Evidence entity, in turn, draws from here.//
+No primary data has been collected by this project. Nothing on this page comes from a resident or a care worker.
+{{/box}}
 
-**How to use this page:** Duplicate it once per Formative pass or Summative Test. 
+//What one Formative pass or Summative Test set out to establish and how: the Artifact and build evaluated, the ethics and consent basis for doing so, the Evaluation Method applied, and what was found. Formative and Summative reports share one template, distinguished by the Mode field.//
+
+= Evaluation Report [ER-01] =
 
 == Shared fields ==
 
-|**ID**|Stable identifier, unique within this entity type (e.g. ER-01, ER-02…).
-\\[ fill in ]
-|**Name**|A short, human-readable label for this instance.
-\\[ fill in ]
-|**Status**|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-\\[ fill in ]
-|**Mode**|Formative / Summative. Decides which field group below you fill in.
-\\[ Formative  or  Summative ]
-|**Artifact used**|The Artifact this report evaluated, by ID, and which build.
-\\[ fill in ]
-|**Evaluation Method(s) applied**|By Foundation ID where the method was one of those surveyed, or stated as ad hoc where it was not, and whether it addressed a Premise, a Claim, or both. Evidence entries this report produces cite this report rather than repeating the method.
-\\[ fill in ]
-|**Ethics**|Evidence of ethics review/approval and the informed-consent procedure used, including any special protections for vulnerable groups; or, where this report involved no human participants, an explicit statement that no ethics review was required and why.
-\\[ fill in ]
-|**Introduction**|Which Premise(s) or Claim(s) this report addresses, named explicitly where it covers more than one; for a Summative report, also why an early (Formative) check was not enough.
-\\[ fill in ]
-|**Method**|(((
-**If Formative:** what was done, informally — a few sentences on the walkthrough, inspection, or informal session. No Participants/Procedure formality required.
+|=Field|=Description
+|ID|ER-01
+|Name|Cognitive walkthrough of UC01 with Mary and Myra
+|Status|In Progress
+|Mode|Formative
+|Artifact used|AT-01, build Spec-1 (paper): the UC01 specification, DS-01, HP-01, HP-02 and RP-01, as they stood when the walkthrough was done.
+|Evaluation Method(s) applied|(((
+Ad hoc, not one of EM-01 to EM-03. A cognitive walkthrough is an inspection method with no end users involved. It addressed Claims, since it asks whether Mary and Myra can plausibly get the intended effect from the Functions. It also touched the Premises, but only for whether they are specified coherently: a paper build cannot verify timing or accuracy.
 
-**If Summative:** in full, using the structure below. Where the Test involves no human subjects, mark Participants and Procedure “not applicable” and describe the protocol, ground truth, and confounders tested in their place; Measures and Material still apply.
+Variant: the baseline procedure from usabilitybok.org, with its four questions asked at each step. (Q1) Will the user try to achieve the right effect? (Q2) Will the user notice that the correct action is available? (Q3) Will the user associate the correct action with the effect they are trying to achieve? (Q4) If the correct action is performed, will the user see that progress is being made?
+)))
+|Ethics|No ethics review was required. The walkthrough involved no participants and no personal data: the evaluator worked from the specification and the Personas only.
+|Introduction|(((
+Addresses the Claims attached to the human-facing steps of UC01: UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5, UC01-F3-CL6, UC01-F1-CL7, UC01-F4-CL8 and UC01-F2-CL10. CL2, CL3, CL9 and CL11 depend on outcomes (prompt levels reached, felt autonomy, time saved, plaque) that a walkthrough cannot estimate, so they are left to ER-02.
 
-**Participants:** who, how recruited.
-[ fill in, or “not applicable” ]
+Why now: the //Escalation specification// was added to answer the midterm feedback on how and when support escalates. A walkthrough is the cheapest check of whether that ladder makes sense to the people it is meant for, before a build is made. SCE supplies the walkthrough material: the Action Sequence, the Personas, and Premises and Claims tied to steps.
+)))
+|Method|(((
+**What was done.** One evaluator walked UC01's Action Sequence twice: as Mary (HP-01) for the resident-facing steps, and as Myra (HP-02) for the handover and record steps. Steps that only the System performs (step 1, the start of tracking, and the inside of F1) were not walked, because nobody has to act on them. For each step that was walked, the evaluator tried to tell a credible story for each of the four questions, using what HP-01 and HP-02 say the person can and cannot do. Each failure story became a finding (WF-nn), with a design suggestion where one was obvious.
 
-**Experimental design:** within-subject, between-subject, or single-case.
-[ fill in, or “not applicable” ]
+**Steps walked.** 2-alt (not started), 2 and 3 (arriving and starting), 4 to 8 at each SA-01 step from the //Ladder per step//, 3-alt (early stop during brushing), 8-alt (distress), the ladder rule on declining, 9 (handover, from both sides), 10 (safety path, Myra's side), and 11 (session record, Myra's side).
 
-**Tasks:** what participants actually did.
-[ fill in ]
-
-**Measures:** from the Foundation, precisely defined.
-[ fill in ]
-
-**Procedure:** the session script.
-[ fill in, or “not applicable” ]
-
-**Material:** what was shown, given, or used.
-[ fill in ]
+**Limits.** This is one pass by one evaluator. The procedure asks for 3 to 5 independent evaluators and a joint session, so the findings below are a first list, not an aggregate (O-30). The evaluator is not a person with dementia, and simulating one is the known weak point of the method; HP-01 is itself provisional. A walkthrough also says nothing about how often a problem would occur or how severe it would be for real residents.
 )))
 
 == Formative-only fields ==
 
-//Fill in if Mode is Formative; otherwise write “not applicable (Mode is Summative)” below each.//
-
-|**Finding(s)**|One entry per Premise or Claim addressed: what was observed, as observed, before interpretation. Include any unexpected findings outside the stated Premises and Claims — these produce no Evidence entity, but should still be recorded here.
-\\[ fill in ]
-|**Implications**|What changes as a result, or what it tells you before running a Summative Test, for the Foundation, the Specification, or an upcoming Summative Test.
-\\[ fill in ]
+|=Field|=Description
+|Finding(s)|See //Walkthrough findings// below: a step-by-step table, then findings WF-01 to WF-12, grouped by the Claim they bear on.
+|Implications|See //Implications// below. One finding, WF-07, was a clear specification defect and has been fixed in §2.3 (O-25). The others are recorded as §2.3 Open items O-26 to O-29 for a group decision before Build A. One case, WF-10, is added to the EM-01 pilot (O-20).
 
 == Summative-only fields ==
 
-//Fill in if Mode is Summative; otherwise write “not applicable (Mode is Formative)” below each.//
+|=Field|=Description
+|Result(s)|not applicable (Mode is Formative)
+|Discussion|not applicable (Mode is Formative)
+|Conclusions|not applicable (Mode is Formative)
 
-|**Result(s)**|One entry per Premise or Claim addressed: what each Measure showed, as observed, before interpretation, plus any finding the stated criteria do not speak to. If a Claim was tested on an unverified Premise, state that limitation here too.
-\\[ fill in ]
-|**Discussion**|What the Result(s) mean — this report’s own reading of its own Result(s). Project-level interpretation across all reports belongs on the Discussion and Limitations page, not here.
-\\[ fill in ]
-|**Conclusions**|The verdict this report itself reaches, before the Verification and Validation Summary roll-up.
-\\[ fill in ]
+== Walkthrough findings ==
 
-**Graph edges:** //uses → Artifact; applies → Evaluation Method; produces → Evidence.//
+=== Step by step ===
+
+Answers are Yes, Partly or No; a No or Partly points to the finding that explains it.
+
+|=UC01 step|=Persona|=Q1 right effect|=Q2 notices action|=Q3 links action and effect|=Q4 sees progress|=Story
+|2-alt Not started|Mary|Partly (WF-01)|Partly|Partly|Yes|At 10 minutes before the window closes, Pepper says "Good morning Mary, it is time for your teeth." If Mary is in the bathroom or near it, this is a credible success. If she is elsewhere in the room, she may not hear a voice from the bathroom doorway (O-21).
+|2 and 3 Arrives, has not started|Mary|Yes|No (WF-01)|n/a|No|Mary stands at the sink and does not pick anything up. No item event happens, so no stall rule runs: step 4's T-stall starts only after the first lift, and the initiation path only acts at 10 minutes before the window closes. She can stand there unsupported for most of the window.
+|4 Pick up toothbrush|Mary|Yes|Yes|Yes|Yes|She has lifted the cup and stalls. Pepper waits 15 s, then gives L1 and L2 ("Would you like to pick up your toothbrush?"). HP-01 says she can act on a short spoken cue, so this is a credible success. The silent wait fits HP-01's need for time before being prompted.
+|5 and 6 Toothpaste|Mary|Yes|Partly (WF-04)|Yes|Partly|L2 is credible. If the blocker is opening the tube, L2 and L3 must show opening, which the merged step does not say. TECH-02 counts a lift and return as done, so she gets no sign if no paste reached the brush; the cost of that is small.
+|7 Brush|Mary|Yes|Partly (WF-04)|Yes|Yes|L2 "You could brush your teeth now." is credible. At L3 the picture is on Pepper's chest tablet, at the doorway behind her, while she faces the sink and mirror. The L3 sentence repeats L2 and does not tell her to look at the screen.
+|3-alt Early stop|Mary|Partly|Yes|Yes|Partly (WF-10)|"Would you like to brush a little longer?" is a single offer, with no call if she declines. Credible success. Unclear case: spitting or rinsing mid-brushing produces a tap or cup event, and the ladder does not say whether that is a pause in step 7 or the start of step 8.
+|8 Rinse|Mary|Partly (WF-02)|Yes|No (WF-02)|Yes|L1 at this step is still "Mary, you are brushing your teeth this morning." After she has brushed, that can be heard as an instruction to brush again. If she picks up the brush, that is not the expected tap or cup event, so the ladder carries on as if she had not responded.
+|9 Put away|Mary|Yes|Yes|Yes|Partly (WF-12)|L2 is credible. If the ladder runs out here nobody is called, which suits HV-06. The specification has no closing line; DS-01 has Pepper say "All done", the only point where Mary would hear that she has finished.
+|Declining (ladder rule 3)|Mary|n/a|n/a|Partly (WF-03)|n/a|Every L2 is a yes/no question. Two quick "no"s, which a person may give before thinking about the question, end prompting with a routine call, reason "declined", even if she would have gone on.
+|8-alt Distress|Mary|Yes|No (WF-05)|Partly|Partly|To get help she must say something the System recognises as asking for help, or touch Pepper's head or hand. Nothing tells her that touching the robot does anything, and the rule that F2 must not depend on speech recognition conflicts with recognising "help", "no" or "stop".
+|9 Handover, resident side|Mary|n/a|n/a|n/a|No (WF-06)|Pepper says that someone is coming. Under H1 a routine call can wait 5 minutes for a re-send and 10 for a second care worker. Nothing is specified for Mary during that time, and she is not told when someone has answered.
+|9 Handover, care-worker side|Myra|Yes|No (WF-07)|Partly (WF-08)|No (WF-08)|Myra is dressing another resident. The message gives the activity, step and reason, with a priority, but not which resident or which room. With several residents on the round (SA-03) she cannot tell where to go. The specification also times her acknowledgement without saying how she acknowledges.
+|10 Safety path|Myra|Yes|No (WF-07)|Yes|Partly|An urgent message is distinct from a routine one and is re-sent every 60 s, which is credible. The missing room matters most here.
+|11 Session record|Myra|Yes|Yes|No (WF-09)|n/a|The record says completed, highest level "demonstration", no call. Myra wants to know what support Mary needs (HP-02 task 3), but the record does not say at which step the demonstration was needed, so she cannot target her help next time.
+
+=== Findings by Claim ===
+
+|=ID|=Finding|=Suggestion|=Bears on
+|WF-01|No stall rule covers a resident who has reached the sink but not lifted anything. The System cannot tell this apart from not having come in at all.|A presence signal at the sink that is not a camera, for example a floor or door sensor added to TECH-02, so that T-stall can start on arrival. Interacts with O-21.|UC01-F2-CL1, UC01-F2-CL4
+|WF-02|The L1 orienting sentence is the same at every step. At steps 8 and 9 it can be heard as an instruction to brush again, and at step 4 it describes brushing that has not started.|Make L1 step-aware while keeping it at the orienting level, for example "Mary, you have nearly finished your teeth" at steps 8 and 9.|UC01-F2-CL1, UC01-F2-CL5
+|WF-03|Phrasing every L2 as a yes/no offer makes "no" an easy answer, and two of them end prompting. Offers serve OBJ-05, so this is a trade-off with OBJ-01.|Count a "no" as declining only if no item event follows within the response window; keep L2 as an offer.|UC01-F2-CL1, UC01-F2-CL5
+|WF-04|At L3 the picture is behind the resident, and the spoken part does not point to it. The toothpaste step merges opening and applying, so the picture may show the wrong part.|Add a pointer to the L3 sentence ("There is a picture on my screen"), or show the picture where the resident is looking, depending on O-21. Give steps 5 and 6 their own L3 pictures.|UC01-F2-CL1
+|WF-05|Ladder rules 3 and 4 need the System to recognise "no", "stop" and requests for help, which conflicts with the rule that F2 must not depend on speech recognition. The touch input in RP-01 cannot be discovered by the resident.|Recognise a small fixed set of words only (yes, no, stop, help), treat everything else as no reply, and verify the recognition rate in EM-01. Drop touch as a help input, or tell the resident about it.|UC01-F2-CL4, UC01-F2-PR2
+|WF-06|After "someone is coming" the resident hears nothing more, for up to 10 minutes on a routine call.|Pepper says once more that someone is coming at the re-send time, and tells the resident when the care worker has acknowledged.|UC01-F2-CL4, UC01-F3-CL6
+|WF-07|The handover message does not say which resident or which room.|Fixed: the room is now a fourth item of every handover message (O-25).|UC01-F3-CL6, UC01-F3-PR3
+|WF-08|The handover rules time an acknowledgement, but no acknowledgement action is specified, and the resident is not told when one happens.|One-tap acknowledgement on the TECH-03 message, which also triggers WF-06's "Myra is on her way".|UC01-F3-CL6, UC01-F3-CL9
+|WF-09|The three-item record does not say at which step the highest prompt level was needed, so it may not be enough for the care worker to adjust support. Adding the step would add detail about how a personal-care activity was performed.|Group decision between privacy (VT-02, HP-01's constraint) and usefulness at handover (HP-02).|UC01-F4-CL8
+|WF-10|It is not specified whether a tap or cup event during brushing ends step 7 or is a pause inside it.|Add rinsing mid-brushing as a scripted case in the EM-01 pilot and settle the rule from it.|UC01-F2-CL10, UC01-F1-PR1
+|WF-11|Prompts arrive just when the resident stops and name the step they are on, which shows that something follows what they do at the sink, even with Pepper's cameras covered.|Explain the item sensors when consent is sought, and in RP-01's framing. Whether residents remember this is unknown.|UC01-F1-CL7
+|WF-12|Unexpected, outside the Claims: DS-01 ends with "All done", which the specification does not contain. Without it, the end of the routine gives the resident no sign of having finished.|Add a closing line to the prompt levels, in an ordinary adult register and without praise.|none (no Evidence)
+
+== Implications ==
+
+* **Applied.** WF-07: the room is added to every handover message in F3, the handover rules, UC01-F3-PR3, DS-01 and TDP-01 (§2.3 O-25). The walkthrough of steps 9 and 10 from Myra's side should be repeated on the revised text.
+* **For a group decision before Build A.** WF-01, WF-02, WF-04, WF-06 and WF-12 change the resident-facing prompt script (O-26). WF-03 and WF-05 change how the System hears the resident (O-27). WF-08 adds an acknowledgement action to TECH-03 (O-28). WF-09 is a trade-off between the record's privacy and its usefulness (O-29).
+* **For EM-01.** WF-05's word recognition and WF-10's rinse-or-pause rule become scripted cases in the first pilot (O-20).
+* **For ER-02.** The walkthrough found ways UC01-F2-CL4's adverse effect could arise that do not depend on the wait W: standing unsupported at the sink (WF-01), missing the picture (WF-04), and waiting after a handover (WF-06). ER-02 therefore codes M-04 per step and records which ladder rule fired, so that a rise in distress can be traced to its step.
+* **For the method.** Repeat the walkthrough with 3 to 5 independent evaluators, at least one with care experience if the group can find one, and compare their lists before merging them (O-30).
+
+== Evidence produced by this report ==
+
+* EV-01: walkthrough on independent step completion (UC01-F2-CL1)
+* EV-02: walkthrough on frustration from waiting (UC01-F2-CL4)
+* EV-03: walkthrough on infantilising prompts (UC01-F2-CL5)
+* EV-04: walkthrough on completion after handover (UC01-F3-CL6)
+* EV-05: walkthrough on the session record (UC01-F4-CL8)
+* EV-06: walkthrough on the early-stop offer (UC01-F2-CL10)
+* EV-07: walkthrough on feeling watched (UC01-F1-CL7)
+
+**Graph edges:** //uses → AT-01 (Spec-1); applies → cognitive walkthrough (ad hoc); produces → EV-01 to EV-07.//
 
 ----
 
-**Evidence produced by this report** — list each Evidence page this report produced, by ID and name, e.g.:
+= Evaluation Report [ER-02] =
 
-* [ EV-nn — short name ]
+== Shared fields ==
+
+|=Field|=Description
+|ID|ER-02
+|Name|Within-resident baseline comparison of the tooth-brushing aid (study design)
+|Status|In Progress (designed, not run)
+|Mode|Summative
+|Artifact used|AT-01, Build A (planned). The study may only start once EM-01 has verified UC01-F1-PR1 to UC01-F4-PR4 on that build. Any Premise that is only partly met has to be named in the Results of every Claim that rests on it.
+|Evaluation Method(s) applied|EM-02 (Within-resident baseline comparison), addressing Claims only. EM-03 (care-staff interview) runs alongside on the same ward but is a separate report, because it has different participants and a different consent basis. UC01-F4-CL8, and the care-staff halves of CL5, CL7 and CL9, belong to that report.
+|Ethics|(((
+**Review.** Residents with dementia are vulnerable participants who mostly cannot give informed consent themselves. On the TU Delft HREC checklist that, and the collection of health data, rule out the light procedure: the group needs a full HREC application with a Data Management Plan. The study also adds a plaque examination to residents' care and changes their routine. The group has not yet checked whether that makes it research under the Dutch WMO (Medical Research Involving Human Subjects Act). If it does, an accredited medical research ethics committee (METC) has to review it as well, and research with adults who cannot consent is then allowed only under strict conditions. Asking the HREC this is the first step (O-31).
+
+**Consent.** Written informed consent from each resident's legal representative, after an information meeting and a plain-language leaflet with pictures. On every study morning the care worker also checks the resident's own assent. Any sign of objection, in words or behaviour, means no observation that morning, and the resident can leave the study at any time without any effect on their care. Care staff give their own written consent for being observed (M-07) and interviewed (EM-03).
+
+**Protections.** No video or audio recording, in line with HV-03 and RP-01. Observers code on paper, from the doorway. Data are pseudonymised, and health data are handled as special-category personal data under the GDPR. The brushing-time log (M-08 part b) exists only for the study and is deleted after analysis. Care workers' timing data (M-07) are not shared with the care home (ST-04) for any judgement of their work. Residents, representatives and staff are told that the robot is an automated system that follows a script. The plaque check is skipped if the resident is unwilling or distressed on the day.
+)))
+|Introduction|(((
+Addresses the EM-02 Claims for the resident: UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3, UC01-F2-CL4, UC01-F2-CL5 (resident interview part), UC01-F3-CL6, UC01-F1-CL7 (resident interview part), UC01-F3-CL9 (observed time part), UC01-F2-CL10 and UC01-F3-CL11.
+
+Why a formative check is not enough: ER-01 found where the design could fail, but a walkthrough cannot say how often a problem occurs or how bad it is for residents. Its evaluator also could not simulate a person with dementia reliably. Every Claim here is about an effect on residents or care workers in the real routine, so only observing that routine can support, qualify or challenge it.
+)))
+|Method|(((
+**Participants.** Residents of one psychogeriatric ward in a Dutch care home, recruited through the care team and their legal representatives. Inclusion: a diagnosis of dementia; currently brushing their own teeth with verbal prompting from care staff (SA-01's existing workarounds); able to stand or sit at their own sink; own teeth or dentures. Exclusion: needs full physical help to brush; hearing that a hearing aid cannot correct to understand Pepper's speech; an oral condition for which the dentist advises against a plaque check; previous strong distress around robots or new devices. Target: 8 to 10 residents, so that at least 8 complete (see the analysis plan for why 8). This is close to the six residents in COACH (Mihailidis et al., 2008). Also the care workers on that ward's morning round, typically 4 to 8.
+
+**Experimental design.** Within-subject single-case A-B-A-B design per resident, following the alternating baseline-intervention structure of COACH. A is usual care: the care worker prompts as they do now, and Pepper stands at the doorway switched to standby. B is the System: F1 to F4 are active, and the care worker continues the round and answers F3 messages. Starts are staggered by one week across residents, so that a change in all residents at the same calendar week can be told apart from the System's effect. One acclimatisation week comes first, with Pepper present and silent and nothing scored.
+
+Keeping Pepper present in A means that A and B differ only in whether the Functions run, which is what the Claims are about. It also hides the phase from the plaque assessor (see Procedure).
+
+Each phase lasts at least five scored mornings and until the resident's M-02 baseline shows no clear trend, planned as two weeks of weekday mornings (about 10 sessions). With acclimatisation, that is about nine weeks on the ward per resident.
+
+**Variables.** Independent variable: condition, nominal with two levels (A usual care, B System), manipulated by phase. Grouping variable for UC01-F2-CL4, not manipulated: ability, coded per resident and step as lower-ability where the resident's baseline M-03 at that step is 3 (demonstration) or higher. Dependent variables are the Measures in //Hypotheses// below, with their measurement levels.
+
+**Tasks.** The resident's own morning tooth brushing in their own bathroom, SA-01 steps 1 to 9, at their usual time. Nothing is added to the task.
+
+**Measures.** M-02, M-03, M-04, M-05, M-06 (resident interview), M-07 and M-08, as defined on the §1.2 Measures page, plus two counts from the System log in B: which ladder rule ended each episode, and the F3 messages by type. M-05 is asked after sessions in both phases, because UC01-F2-CL3 compares it with baseline. M-06's three questions are about the robot and are asked after B sessions only.
+
+**Procedure.** One study morning, in both phases unless marked:
+~1. The care worker checks that the resident is well and assents. Otherwise there is no session that morning.
+2. The care worker gives the usual reminder that it is time to brush, as at the start of DS-01.
+3. A: the care worker prompts as usual. B: the System runs; the care worker goes on with the round and answers F3 messages.
+4. One observer stands at the bathroom doorway next to Pepper and codes each SA-01 step live: unprompted completion (M-02), highest prompt level (M-03), and Resistiveness to Care behaviours with duration and intensity (M-04). In at least 20% of sessions a second observer codes independently. A third person time-samples the care worker's prompting episodes (M-07).
+5. Within 10 minutes after the session, if the resident is willing and calm, the observer asks the three M-05 items, and in B also the three M-06 questions, taking no more than five minutes. Answers are written down, not recorded.
+6. Twice a week, on fixed days, a trained assessor scores plaque (M-08 part a) within 30 minutes of brushing. The assessor is not told the phase and does not see the session; since Pepper is present in both phases, its presence does not reveal the phase.
+7. Stopping rules: an H3 message, an observed M-04 behaviour at extreme intensity, or any objection ends the session and the care worker takes over. If two B sessions in a row end in distress, that resident leaves B, and the care team reviews W and the response windows, which is the fallback UC01-F2-CL4 names.
+
+**Material.** AT-01 Build A: Pepper with the prompt script and tablet pictures, item sensors on the toothbrush, toothpaste and cup (TECH-02), the care worker's phone app with the handover message and session record (TECH-03). Paper coding sheets for M-02, M-03 and M-04, and an M-07 time-sampling sheet. A large-print card with the M-05 items and the M-06 questions. The MPS kit (two dental mirrors, a head torch) and its calibration manual (O-23). Leaflets and consent forms.
+)))
+
+== Formative-only fields ==
+
+|=Field|=Description
+|Finding(s)|not applicable (Mode is Summative)
+|Implications|not applicable (Mode is Summative)
+
+== Summative-only fields ==
+
+|=Field|=Description
+|Result(s)|Not run. The study is designed only, so there are no results and no Evidence yet.
+|Discussion|Not run.
+|Conclusions|Not run.
+
+== Hypotheses and analysis plan ==
+
+Each Claim becomes a yes/no question about the same residents in B compared with A. Unless the row says otherwise, the test uses one value per resident per phase type: the mean over that resident's A sessions and the mean over their B sessions. The confirmatory test is then a Wilcoxon signed-rank test across residents on those pairs, one-sided in the predicted direction, at α = .05. Holm's correction is applied across the six confirmatory tests marked with an asterisk. Effect sizes are reported with every test. Each resident's sessions are also plotted by phase, and judged for level, trend and overlap, as single-case designs are read.
+
+|=Claim|=Question (yes/no)|=Dependent variable and level|=Analysis and decision rule
+|UC01-F2-CL1 *|Do residents complete more SA-01 steps unprompted in B than in A, without more distress?|M-02, count of steps 0 to 9 per session (ratio). M-04, total 0 to 156 (treated as interval).|M-02: Wilcoxon, B greater than A. M-04 must not rise: the upper end of the confidence interval for the B minus A difference stays below 5 points, a margin the group has to confirm (O-31).
+|UC01-F2-CL2 *|On steps where the resident stalls, is the highest prompt level lower in B than in A, with completion no worse?|M-03 per stalled step, 0 to 4 (ordinal). M-02 as above.|Per resident, the median M-03 over stalled steps; Wilcoxon, B lower than A. M-02 no worse, as in CL1.
+|UC01-F2-CL3 *|Do observers rate support of autonomy higher in B, while residents rate their own autonomy no lower?|M-05 observer, 7-point (ordinal). M-05 self-report, mean of three 5-point items (ordinal, treated as interval).|Observer: Wilcoxon, B greater than A. Self-report: lower end of the confidence interval above −0.5 points, a margin to confirm (O-31). If the two disagree the Claim stays unresolved, as CL3 already states.
+|UC01-F2-CL4|For lower-ability steps, does distress rise in B while unprompted completion does not improve?|M-04 and M-02, restricted to lower-ability steps; plus which ladder rule fired.|Too few residents are expected in this group for a test, so it is judged per resident from the plots. It holds for a resident if their M-04 on lower-ability steps is higher in both B phases than in both A phases, and their M-02 on those steps is not. The ladder log shows whether the rise follows the wait W or WF-01, WF-04 or WF-06 from ER-01.
+|UC01-F2-CL5 (resident part)|Do residents say the robot talks down to them?|M-06 code T (nominal counts), from B interviews.|No test. Holds if any resident's answer is coded T, reported with the quote, or if M-04 during prompting rises above baseline (from CL1's data). Read together with EM-03.
+|UC01-F3-CL6 *|Do fewer sessions end incomplete in B than in A?|Session outcome, complete or incomplete (nominal); per resident, the proportion incomplete (ratio).|Wilcoxon on the per-resident proportions, B lower than A.
+|UC01-F1-CL7 (resident part)|Do residents say they feel watched?|M-06 code W (nominal counts), from B interviews.|No test. The Claim is supported for residents if no answer is coded W; every W is reported with its quote.
+|UC01-F3-CL9 * (observed part)|Is the care worker's prompting time per session lower in B, with completion no worse?|M-07, seconds of prompting per session (ratio); notifications per round by type (count).|Wilcoxon, B lower than A. Completion no worse: the B minus A difference in the proportion incomplete stays below 10 percentage points, a margin to confirm (O-31). Notification counts are reported alongside, so that time saved on prompting is not just moved to messages (HFC-06).
+|UC01-F2-CL10 * and UC01-F3-CL11|Do residents brush longer in B, and is there less plaque in B, or more?|M-08 part b, seconds of brushing per session (ratio), and the share of sessions reaching B-target. M-08 part a, Plaque Score 1 to 4 (ordinal).|Brushing time: Wilcoxon, B greater than A. Plaque: Wilcoxon on the per-resident mean Plaque Score, two-sided, because the two Claims predict opposite directions. Lower in B with longer brushing supports CL10. Higher in B means CL11 holds. Reported across residents only, since MPS was built for groups.
+
+**Why 8 residents.** With Holm's correction over six tests, the smallest p-value must fall below .05 / 6 ≈ .008. A one-sided Wilcoxon test on n residents can reach at best p = 1/2^n, which is .016 for 6 residents and .004 for 8. So with fewer than 8 completing residents no confirmatory test could succeed, whatever the data. Even with 8, a test only succeeds if almost all residents move in the predicted direction. The single-case plots therefore carry as much weight as the tests, and a non-significant result is reported as "not shown", never as "no effect".
+
+**Reliability.** Inter-observer agreement on the 20% double-coded sessions as each Measure's page states: Cohen's kappa for M-02, weighted kappa for M-03 and M-05 observer, ICC for M-04 and M-07 durations, with .60 as the minimum (Landis & Koch, 1977). Observers train on acclimatisation-week sessions until they reach it.
+
+**Preregistration.** Hypotheses, margins, tests and stopping rules are registered (for example on OSF) before the first A phase. Anything decided after seeing data is reported as exploratory.
+
+== Quality and logistics ==
+
+|=Concern|=How this design deals with it|=What remains
+|Reliability|Double coding of 20% of sessions, agreement thresholds per Measure, observer training before scoring.|M-03 and the tooth-brushing version of M-05 are untested scales.
+|Validity|The real routine in the resident's own bathroom, with their usual care worker, so ecological validity is high. Pepper is present in both phases, so the comparison isolates the Functions.|The observer at the door is a presence the resident does not normally have, in both phases. M-08 part b measures time spent, not which teeth were cleaned.
+|Bias|The plaque assessor does not know the phase. Return to A after B shows whether an effect lasts beyond the first exposure. Staggered starts separate the System from calendar events. Preregistration fixes the analysis in advance.|Observers cannot be blind, because Pepper speaks only in B. Novelty is reduced by the acclimatisation week, not removed.
+|Scope|Inclusion criteria match HP-01.|One care home, one robot, residents who can still brush their own teeth with verbal cues. Results do not transfer to TECH-05 or to UC02.
+|Budget and equipment|Pepper on loan, item sensors, a phone app, coding sheets, the MPS kit.|A dental hygienist's time for calibration and twice-weekly plaque checks needs funding.
+|Time and location|About nine weeks per resident on one ward, after an EM-01 pilot, with staggered starts adding a few weeks.|Approval time for the HREC (and a METC, if needed) comes before all of this.
+
+**Graph edges:** //uses → AT-01 (Build A, planned); applies → EM-02; produces → Evidence for the Claims listed in the Introduction, once run.//
+
+== Evidence produced by this report ==
+
+None yet: the study has not been run.

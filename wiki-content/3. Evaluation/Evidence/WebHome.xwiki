@@ -3,34 +3,111 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3.%20E
 title: c. Evidence
 synced_title: c. Evidence
 syntax: xwiki/2.1
-version: 2.1
-hash: 2c328bca85a1bd2d99ff2604b0953607878190b1ae5446259c21240cdb46d9f9
+version: 3.1
+hash: cdfa94d494c238c40c46d0540f2161e6fe63552f82338a1de72fe3e827cb09e3
 %%WIKI-SYNC-META%%
-= Evidence [EV-nn] =
+{{box title="Status of this page"}}
+All seven Evidence entries come from ER-01, a single-evaluator cognitive walkthrough of the paper build. None comes from a resident, a care worker or a working build, so every entry is "Not assessed" against its Claim's Validation Criteria and rests on reviewer judgement. They show where the design could fail, and say nothing about how often it would. ER-02 has produced no Evidence, because it has not been run.
+{{/box}}
 
-//What one Evaluation Report established about one Premise or one Claim. This is the entity the Evaluation Report page points at with its “produces → Evidence” edge.//
+//What one Evaluation Report established about one Premise or one Claim. One entry per Claim per report; findings are not averaged across Claims.//
 
-**How to use this page:** Duplicate it once per Premise or Claim addressed by an Evaluation Report. A report that addressed three Claims produces three separate Evidence pages, each with its own criteria assessment and verdict — do not average several findings into one Evidence entry.
+= Evidence [EV-01] =
 
-|**ID**|Stable identifier, unique within this entity type (e.g. EV-01, EV-02…).
-\\[ fill in ]
-|**Name**|A short, human-readable label for this instance.
-\\[ fill in ]
-|**Status**|Not Started / In Progress / Under Review / In Evaluation / Finalized.
-\\[ fill in ]
-|**Bears on**|The Premise or Claim ID this Evidence addresses. Exactly one.
-\\[ fill in ]
-|**Source**|The Evaluation Report that produced it, by ID. The Evaluation Method applied and the ethics basis are recorded once on that report, not repeated here.
-\\[ fill in, e.g. ER-01 (report name) ]
-|**Assessed against criteria**|Met / Partly met / Not met / Not assessed. Whether the Premise’s Verification Criteria or the Claim’s Validation Criteria was actually applied, and with what result. Use “Not assessed” where the named Measure(s) were not applied against their stated threshold.
-\\[ fill in ]
-|**Result observed**|What the cited Evaluation Report’s Finding(s) or Result(s) showed for this Premise/Claim, stated before interpretation. A short restatement, not a copy — the full account lives on the Evaluation Report.
-\\[ fill in ]
-|**Verdict**|Supports / Qualifies / Challenges the Premise or Claim named in Bears on.
-\\[ fill in ]
-|**Basis for verdict**|Required whenever Assessed against criteria is “Not assessed”: what grounded the verdict instead (reviewer judgment, an unresolved disagreement between reviewers, an observed but unmeasured behaviour). Otherwise, state “criteria assessment.”
-\\[ fill in ]
-|**Limitations**|What this Evidence cannot establish: sample size, an unverified Premise the Claim was tested on, a Measure applied outside its validated population, a method used ad hoc, or a build that has since changed.
-\\[ fill in ]
+|=Field|=Description
+|ID|EV-01
+|Name|Walkthrough on independent step completion
+|Status|In Progress
+|Bears on|UC01-F2-CL1
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL1's criterion needs M-02 and M-04 from residents.
+|Result observed|At steps 4 to 7 the wait and the L1 and L2 prompts gave credible success stories for Mary. Four places gave failure stories: a resident at the sink who has not lifted anything gets no support (WF-01); the L1 sentence can send her back to brushing at steps 8 and 9 (WF-02); two quick "no"s end prompting (WF-03); and the L3 picture is behind her (WF-04).
+|Verdict|Qualifies
+|Basis for verdict|Reviewer judgement from one walkthrough pass. The Claim's mechanism is credible on the steps where the resident faces the cue and has already started; the four findings name conditions under which it would not hold as specified.
+|Limitations|One evaluator, who is not a person with dementia, on a provisional Persona. A walkthrough cannot say how often these failures would happen. The verdict applies to Spec-1; WF-01 to WF-04 are not yet fixed (O-26, O-27).
 
-**Graph edges:** //produced-by ← Evaluation Report; verifies → Premise / validates → Claim.//
+= Evidence [EV-02] =
+
+|=Field|=Description
+|ID|EV-02
+|Name|Walkthrough on frustration from waiting
+|Status|In Progress
+|Bears on|UC01-F2-CL4 (adverse)
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL4's criterion needs M-04 and M-02 from lower-ability residents.
+|Result observed|The 15 s wait itself gave a credible success story, since HP-01 needs time before being prompted. Three other waits gave failure stories, none of them caused by W: standing at the sink with no stall rule running (WF-01), waiting after "someone is coming" with no further word for up to 10 minutes (WF-06), and having no discoverable way to ask for help (WF-05).
+|Verdict|Qualifies
+|Basis for verdict|Reviewer judgement. The walkthrough widens the conditions under which CL4's adverse effect is plausible beyond the configured wait. If CL4 holds in ER-02, changing W alone may therefore not be enough, which is why ER-02 records which ladder rule fired.
+|Limitations|As EV-01. Frustration is exactly what an evaluator without dementia is least able to simulate.
+
+= Evidence [EV-03] =
+
+|=Field|=Description
+|ID|EV-03
+|Name|Walkthrough on infantilising prompts
+|Status|In Progress
+|Bears on|UC01-F2-CL5 (adverse)
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL5's criterion needs M-06 codes from residents or staff and M-04.
+|Result observed|The L2 and L3 wording is in an ordinary adult register, phrased as offers, with no praise, and the closing line in DS-01 avoids praise as well. Two points could read as talking down: an L1 sentence that narrates brushing the resident is not doing (WF-02), and a help input that consists of touching the robot's head (WF-05).
+|Verdict|Qualifies
+|Basis for verdict|Reviewer judgement on the wording only. No failure story suggested the prompt script as a whole is infantilising; two specific lines could be.
+|Limitations|As EV-01. Whether a prompt feels condescending depends on voice, timing and the relationship, which a paper build leaves out (HFC-05).
+
+= Evidence [EV-04] =
+
+|=Field|=Description
+|ID|EV-04
+|Name|Walkthrough on completion after handover
+|Status|In Progress
+|Bears on|UC01-F3-CL6
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL6's criterion needs session outcomes from residents.
+|Result observed|From Myra's side, the handover message did not say which resident or room it was about (WF-07), and no acknowledgement action was specified (WF-08). From Mary's side, nothing was said to her after "someone is coming" (WF-06).
+|Verdict|Challenges
+|Basis for verdict|Reviewer judgement. As specified in Spec-1, a care worker with several residents on the round could not reliably get to the right resident, so the handover could not deliver the completion effect CL6 claims. WF-07 has since been fixed (O-25); WF-06 and WF-08 are open (O-26, O-28).
+|Limitations|Speaks to Spec-1, not to the revised specification. The revised steps 9 and 10 need walking again.
+
+= Evidence [EV-05] =
+
+|=Field|=Description
+|ID|EV-05
+|Name|Walkthrough on the session record
+|Status|In Progress
+|Bears on|UC01-F4-CL8
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL8's criterion needs care staff's judgement in EM-03.
+|Result observed|Myra can read the three-item record, but "highest level: demonstration" does not say at which step, so it does not tell her where Mary needs help next time (WF-09).
+|Verdict|Challenges
+|Basis for verdict|Reviewer judgement against HP-02's third task demand. The privacy half of CL8 is met by design, while the sufficiency half is in doubt.
+|Limitations|Care workers may already know a resident well enough that the record only needs to flag that something changed. Only EM-03 can settle this. A fix would trade against VT-02 (O-29).
+
+= Evidence [EV-06] =
+
+|=Field|=Description
+|ID|EV-06
+|Name|Walkthrough on the early-stop offer
+|Status|In Progress
+|Bears on|UC01-F2-CL10
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL10's criterion needs M-08 brushing time and plaque from residents.
+|Result observed|A single offer to keep brushing, with no call if declined, gave a credible success story. The rule is unclear when the resident rinses or spits during brushing, which could skip the offer or make it at the wrong moment (WF-10).
+|Verdict|Qualifies
+|Basis for verdict|Reviewer judgement. The interaction is credible; the claimed effect on plaque cannot be judged by a walkthrough.
+|Limitations|As EV-01. Whether a resident with dementia takes up the offer, and whether longer brushing leaves less plaque in this population, are outside what a walkthrough can show (O-23).
+
+= Evidence [EV-07] =
+
+|=Field|=Description
+|ID|EV-07
+|Name|Walkthrough on feeling watched
+|Status|In Progress
+|Bears on|UC01-F1-CL7
+|Source|ER-01 (Cognitive walkthrough of UC01 with Mary and Myra)
+|Assessed against criteria|Not assessed. CL7's criterion needs M-06 codes from residents and staff.
+|Result observed|Pepper stays silent with dimmed lights while Mary manages, and its cameras are covered. But each prompt arrives just as she stops and names the step she is on, which shows her that something follows what she does at the sink (WF-11).
+|Verdict|Qualifies
+|Basis for verdict|Reviewer judgement. Item sensors avoid filming, but a well-timed prompt makes tracking evident to the person tracked. Whether that is felt as being watched or as being helped is the open question CL7 states.
+|Limitations|As EV-01. Explaining the sensors at consent may change this, but whether residents remember the explanation is unknown.
+
+**Graph edges:** //produced-by ← ER-01; validates → UC01-F2-CL1, UC01-F2-CL4, UC01-F2-CL5, UC01-F3-CL6, UC01-F4-CL8, UC01-F2-CL10, UC01-F1-CL7.//

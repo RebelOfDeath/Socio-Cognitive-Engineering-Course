@@ -3,6 +3,12 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Design
 title: 5. Design Patterns
 synced_title: 5. Design Patterns
 syntax: xwiki/2.1
-version: 1.1
-hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+version: 2.1
+hash: f7811c0ffe13373da82600fb8cdedb434609d12725e62e8f5844e58140dafc6d
 %%WIKI-SYNC-META%%
+This project's own patterns are written next to the Use Case they were abstracted from, in §2 Specification:
+
+* [[TDP-01 Graduated activity support with human handover>>2\. Specification.Requirements.WebHome]] (§2.4, task level)
+* [[IDP-01 Respectful graduated prompting>>2\. Specification.Claims.WebHome]] (§2.5, interaction level)
+
+Both are drafted from UC01 alone and stay In Progress until UC02 shows whether they recur (§2.3, UC02 scope decision). The pages listed under this section are examples from the course template; nothing in this project rests on them.

@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2.%20S
 title: a1. Design Scenario
 synced_title: a1. Design Scenario
 syntax: xwiki/2.1
-version: 3.1
-hash: 7776fc93321893ea0c257f6c7ab87850114ff7f2479343fc546a2d9142883991
+version: 4.1
+hash: 92738439aad58d9e3d161dd6a3935db9bd9819356c2819472a1a22b5cc715c99
 %%WIKI-SYNC-META%%
 
 
@@ -26,15 +26,17 @@ It is morning in the dementia care home. The resident has finished breakfast and
 
 The resident goes into the bathroom and stands in front of the sink. Pepper stands quietly just outside the bathroom door, its camera lenses covered and its eye lights dimmed. The resident picks up the toothbrush. The sensor in the toothbrush registers the pick-up, and the System notes that the resident has reached that step. Pepper says nothing.
 
-The resident pauses, toothbrush in hand, and seems unsure what comes next. Pepper waits. After the configured interval nothing has changed, so Pepper gives the lightest prompt, calmly and by name: "Mary, would you like some toothpaste on your brush?" The resident picks up the toothpaste, and the weight pad under it registers the lift. Pepper goes quiet again.
+The resident pauses, toothbrush in hand, and seems unsure what comes next. Pepper waits. After the configured interval nothing has changed, so Pepper gives the lightest prompt, an orienting one, calmly and by name: "Mary, you are brushing your teeth this morning." Nothing changes, so after a short pause Pepper names the next action as an offer: "Would you like some toothpaste on your brush?" The resident picks up the toothpaste, and the weight pad under it registers the lift. Pepper goes quiet again.
 
-The resident puts toothpaste on the brush but then stops again. This time the orienting prompt is not enough, so after another wait Pepper names the next action: "You could brush your teeth now." Its chest tablet shows a short, simple picture of someone brushing. The resident starts brushing; the toothbrush sensor registers the motion and Pepper stops prompting at once.
+The resident puts toothpaste on the brush but then stops again. This time neither the orienting prompt nor the naming prompt ("You could brush your teeth now.") is enough, so Pepper repeats the sentence once and its chest tablet shows a short, simple picture of someone brushing. The resident starts brushing; the toothbrush sensor registers the motion and Pepper stops prompting at once.
+
+After about half a minute the resident stops brushing and lowers the brush. Pepper waits, then offers once: "Would you like to brush a little longer?" The resident brushes for another minute. Had they put the brush down instead, Pepper would have let it go and nobody would have been called.
 
 The resident rinses and puts the toothbrush back in the cup. Pepper says "All done," once, in an ordinary adult tone - no praise that would suit a child - and nothing more.
 
-Meanwhile Myra has been helping another resident get dressed. They were not called back, because the resident finished with Pepper's prompts. On their phone the session record shows three things only: tooth brushing completed, highest prompt level "naming", no care worker needed. Nothing about how the resident brushed their teeth is stored.
+Meanwhile Myra has been helping another resident get dressed. They were not called back, because the resident finished with Pepper's prompts. On their phone the session record shows three things only: tooth brushing completed, highest prompt level "demonstration", no care worker needed. Nothing about how the resident brushed their teeth is stored.
 
-If the resident had stopped responding and nothing had moved for several minutes, Pepper would have told the resident that someone was coming, and Myra's phone would have received a short message: tooth brushing, step reached, reason for the call.
+If the resident had stopped responding and nothing had moved for several minutes, Pepper would have told the resident that someone was coming, and Myra's phone would have received a short message: the resident's room, tooth brushing, step reached, reason for the call.
 
 = Design Scenario [DS-02] =
 //Medication - kept for UC02, deferred to a later cycle (§2.3 Open item O-13). The tray-based device described here corresponds to TECH-06 (§1.3), not to the Pepper-based System selected for UC01.//

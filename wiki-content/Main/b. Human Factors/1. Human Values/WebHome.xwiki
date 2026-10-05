@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/s
 title: b1. Human Values
 synced_title: b1. Human Values
 syntax: xwiki/2.1
-version: 19.1
-hash: 8c6b887874ee01fb5ead09912e14689402ad3a16ac427b5043acd15e862ac95d
+version: 20.1
+hash: 98a60c693299ff6f16146441a72f19783907c77aa7acc7fc422976f0838f83e4
 %%WIKI-SYNC-META%%
 = Autonomy [HV-01] =
 
@@ -75,7 +75,7 @@ The care home employee (ST-02) should not face surveillance at their workplace b
 Served: personal information, spaces, and care activities are accessed only when necessary and by appropriate people. Residents are given private space where possible, and monitoring or assistance is limited to what is required for safe and effective care.
 Violated: residents are unnecessarily watched, exposed, interrupted, or monitored; personal information is accessible to people who do not need it; or technology collects or communicates more information than is necessary for the care activity.
 )))
-|Source|Value Sensitive Design (Friedman et al., 2008). Surveillance in residential dementia care: Niemeijer et al. (2010), //International Psychogeriatrics//, PMID 20199699.
+|Source|Value Sensitive Design (Friedman et al., 2008). Surveillance in residential dementia care: Niemeijer et al. (2010), //International Psychogeriatrics//, 22(7), 1129-1142, PMID 20199699.
 
 = Competence [HV-04] =
 
@@ -150,10 +150,10 @@ HV-01: held-by → ST-01, ST-02, ST-03, ST-05; party-to → VT-01, VT-05, VT-06;
 
 HV-02: held-by → ST-01, ST-02, ST-03, ST-04; party-to → VT-04; operationalized-by → M-04, M-06; explained-by → HFC-04, HFC-05.
 
-HV-03: held-by → ST-01, ST-02, ST-03, ST-04, ST-05; party-to → VT-02; operationalized-by → M-06; explained-by → HFC-02.
+HV-03: held-by → ST-01, ST-02, ST-03, ST-04, ST-05; party-to → VT-02, VT-08; operationalized-by → M-06; explained-by → HFC-02, HFC-05.
 
 HV-04: held-by → ST-01, ST-02; party-to → VT-03, VT-04, VT-07; operationalized-by → M-02, M-03; explained-by → HFC-03.
 
-HV-05: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-03, VT-05, VT-06; operationalized-by → M-04.
+HV-05: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-03, VT-05, VT-06, VT-08; operationalized-by → M-04, M-08; explained-by → HFC-03.
 
-HV-06: held-by → ST-02, ST-03, ST-04; party-to → VT-07; operationalized-by → M-07.
+HV-06: held-by → ST-02, ST-03, ST-04; party-to → VT-07; operationalized-by → M-07; explained-by → HFC-06.

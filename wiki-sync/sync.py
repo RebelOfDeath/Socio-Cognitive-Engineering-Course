@@ -98,7 +98,13 @@ def _request(cfg: Config, method: str, url: str, body: bytes = None, content_typ
             return resp.status, resp.read()
     except urllib.error.HTTPError as e:
         detail = e.read().decode(errors="replace")[:500]
-        raise RuntimeError(f"{method} {url} -> HTTP {e.code} {e.reason}\n{detail}") from None
+        raise HTTPStatusError(e.code, f"{method} {url} -> HTTP {e.code} {e.reason}\n{detail}") from None
+
+
+class HTTPStatusError(RuntimeError):
+    def __init__(self, code: int, message: str):
+        super().__init__(message)
+        self.code = code
 
 
 def rest_root(cfg: Config) -> str:
@@ -319,13 +325,20 @@ def pull_attachments(cfg: Config, page: dict, file_path: Path, stats: dict):
 
 def cmd_pull(cfg: Config):
     stats = {
-        "pulled": 0, "kept_local": 0, "conflicts": 0, "skipped": 0,
+        "pulled": 0, "kept_local": 0, "conflicts": 0, "skipped": 0, "missing": 0,
         "attachments_pulled": 0, "attachments_skipped": 0,
         "attachments_kept_local": 0, "attachments_conflicts": 0,
     }
     for pages_href in list_spaces(cfg):
         for page_href in list_pages(cfg, pages_href):
-            page = get_page(cfg, page_href)
+            try:
+                page = get_page(cfg, page_href)
+            except HTTPStatusError as e:
+                if e.code != 404:
+                    raise
+                # space listings can lag behind deletions; skip pages that are already gone
+                stats["missing"] += 1
+                continue
             if page["hierarchy_spaces"] and page["hierarchy_spaces"][0] in cfg.exclude_spaces:
                 stats["skipped"] += 1
                 continue
@@ -365,7 +378,8 @@ def cmd_pull(cfg: Config):
     print(
         f"Pulled {stats['pulled']} page(s) into {cfg.content_dir}. "
         f"{stats['kept_local']} kept local edits, {stats['conflicts']} conflict(s), "
-        f"{stats['skipped']} skipped (excluded spaces)."
+        f"{stats['skipped']} skipped (excluded spaces), "
+        f"{stats['missing']} listed but already deleted."
     )
     print(
         f"Attachments: {stats['attachments_pulled']} downloaded, "
@@ -434,6 +448,24 @@ def push_file(cfg: Config, path: Path) -> bool:
 
     local_hash = sha256(content)
     content_changed = meta.get("hash") != local_hash
+
+    # A file with an href but no version is a new page: create it, but only
+    # if nobody has created a page at that href in the meantime.
+    if not meta.get("version"):
+        try:
+            get_page(cfg, meta["href"])
+        except HTTPStatusError as e:
+            if e.code != 404:
+                raise
+        else:
+            print(f"CONFLICT {path}: a page already exists at its href. Run 'pull' first.")
+            return False
+        title = meta.get("title") or path.parent.name
+        new_version = put_page(cfg, meta["href"], title, content)
+        meta.update(version=new_version, hash=local_hash, synced_title=title)
+        write_local_file(path, meta, content)
+        print(f"CREATED {path.relative_to(cfg.content_dir)} -> version {new_version}")
+        return True
 
     # A retitle leaves the content hash alone, so check the title against the
     # wiki too -- otherwise renames never get pushed.

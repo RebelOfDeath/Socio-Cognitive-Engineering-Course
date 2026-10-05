@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Main/s
 title: a3. Problem Scenario
 synced_title: a3. Problem Scenario
 syntax: xwiki/2.1
-version: 11.1
-hash: 0ee4adc780ed76e3c42775d9fc463e12330c5531e42ca75c9aad44ed4e7035c3
+version: 12.1
+hash: e1c28f738120fae1c8960c6130f639b2ff8e929a3774e3f0be3f1d0209c22490
 %%WIKI-SYNC-META%%
 = Losing track of the tooth brushing routine [PS-01] =
 
@@ -25,7 +25,7 @@ hash: 0ee4adc780ed76e3c42775d9fc463e12330c5531e42ca75c9aad44ed4e7035c3
 
 - ST-02: Care worker
 )))
-|Activities involved|SA-01: Brushing teeth
+|Activities involved|SA-01: Brushing teeth; SA-03: Morning care round (the care worker's side)
 |Breakdown point|The activity breaks down when the resident is unable to determine their next action independently in the tooth brushing sequence without the help of verbal prompts from for example the care worker
 |Causes|(((
 Root causes:
@@ -82,7 +82,7 @@ The care worker returns their attention to the medication and reminds them that 
 
 - ST-02: Care worker
 )))
-|Activities involved|SA-02: Remind to take medication
+|Activities involved|SA-02: Taking prescribed medication; SA-03: Morning care round (the care worker's side)
 |Breakdown point|The activity breaks down when the resident does not independently continue with taking the medication after it has been presented and requires repeated prompting and reassurance from the care worker.
 |Causes|(((
 Root causes:
