@@ -18,9 +18,9 @@ syntax: xwiki/2.1
 |Evidence basis|Bespoke. Staged-event protocol, as used for prompting systems (Mihailidis et al., 2008).
 |Construct measured|Whether the System does what F1 to F6 specify, on time.
 |Type|Quantitative
-|Instrument or procedure|Staged walks and sessions against a timestamped ground-truth log (EM-01): stops, landmark passes, gate passes, help presses, fall-like drops (device only, onto a mat), no-response periods, refusals, evening requests for news.
+|Instrument or procedure|Staged walks and sessions against a timestamped reference log (EM-01): stops, landmark passes, gate passes, help presses, fall-like drops (device only, onto a mat), no-response periods, refusals, evening requests for news.
 |Scoring or coding scheme|Per event: detected (yes/no); latency (s). False triggers per hour. Alert delivery latency (s). Pass thresholds: Open item O-3.
-|Validity and reliability|Bespoke. Rests on the accuracy of the ground-truth log.
+|Validity and reliability|Bespoke. Depends on the accuracy of the reference log.
 |Serves|Verification
 |Burden|No human subjects. Garden with beacons, prototype, experimenter.
 
@@ -88,7 +88,7 @@ operationalizes → UC01-F2-CL3; used-by → EM-02. Associated with HFC-01.
 |ID|M-04
 |Name|Observed affect
 |Status|In Progress
-|Evidence basis|Observed Emotion Rating Scale (Lawton, Van Haitsma & Klapper, 1996), built for residents with Alzheimer's disease. Validated, not invented.
+|Evidence basis|Observed Emotion Rating Scale (Lawton, Van Haitsma & Klapper, 1996), built for residents with Alzheimer's disease. Validated instrument.
 |Construct measured|Pleasure, anxiety, sadness, anger, alertness during the activity.
 |Type|Quantitative (observational)
 |Instrument or procedure|OERS, rated by a trained observer on the walk or at the session.
@@ -134,7 +134,7 @@ operationalizes → UC01-F2-CL2, UC01-F2-CL4, UC02-F3-CL9; used-by → EM-02, EM
 |ID|M-06
 |Name|Agitation
 |Status|In Progress
-|Evidence basis|Cohen-Mansfield Agitation Inventory (Cohen-Mansfield, Marx & Rosenthal, 1989). Widely used in nursing homes. Validated, not invented.
+|Evidence basis|Cohen-Mansfield Agitation Inventory (Cohen-Mansfield, Marx & Rosenthal, 1989). Widely used in nursing homes. Validated instrument.
 |Construct measured|Frequency of agitated behaviour, late afternoon and evening in particular.
 |Type|Quantitative (staff-rated)
 |Instrument or procedure|CMAI, 29 behaviours, rated by staff over two weeks. Secondary: PRN doses from the care record.
@@ -162,7 +162,7 @@ operationalizes → UC02-F3-CL10, UC03-F6-CL13; used-by → EM-02; operationaliz
 |Type|Quantitative, with observer counterpart
 |Instrument or procedure|Three autonomy items after the session, 5-point scale. Observer: 7-point "support of autonomy" scale for the same episode.
 |Scoring or coding scheme|Self-report: mean of three items. Observer: separate. Never combined.
-|Validity and reliability|α = .69 in the source. Residents rate higher than observers: the observer score carries the Claim.
+|Validity and reliability|α = .69 in the source. Residents rate higher than observers: the Claim is judged on the observer score.
 |Serves|Validation
 |Burden|Short interview; only if willing and not distressed.
 
@@ -184,14 +184,14 @@ operationalizes → UC01-F1-CL1, UC03-F6-CL14; used-by → EM-02; operationalize
 |Construct measured|Whether residents feel watched, recorded, talked down to, or kept from the news. Whether staff and family judge the record and profile proportionate.
 |Type|Mixed: qualitative coding plus a content check
 |Instrument or procedure|(((
-Residents (EM-02): three open questions after a session - how it was to walk or sit with the voice; whether it felt like being watched; how it spoke to you.
+Residents (EM-02): three open questions after a session - how it was to walk or sit while the voice guided; whether it felt like being watched; how it spoke to you.
 
-Staff and family (EM-03): interview, including what record and profile hold.
+Staff and family (EM-03): interview, including what record and profile contain.
 
 Content check (EM-01): session record and profile against their specification.
 )))
 |Scoring or coding scheme|(((
-Codes: W watched; R recorded or reported on; T talked down to; K kept from news or information; N neutral or positive. A statement can carry more than one code.
+Codes: W watched; R recorded or reported on; T talked down to; K kept from news or information; N neutral or positive. A statement can have more than one code.
 
 Record and profile items named by staff or family: P proportionate, I intrusive.
 
@@ -216,10 +216,10 @@ operationalizes → UC01-F2-CL6, UC01-F4-CL7, UC02-F3-CL11, UC03-F6-CL14, UC01-F
 |Name|Care-worker time
 |Status|In Progress
 |Evidence basis|Time-sampled observation, method as in Rogers et al. (1999). Our coding is bespoke.
-|Construct measured|Staff minutes per walk and per settling episode; calls received.
+|Construct measured|Staff minutes per walk and per calming episode; calls received.
 |Type|Quantitative
 |Instrument or procedure|Observer or staff time log.
-|Scoring or coding scheme|Minutes per walk, preparation included; minutes per settling episode; calls per day. Against baseline.
+|Scoring or coding scheme|Minutes per walk, preparation included; minutes per calming episode; calls per day. Against baseline.
 |Validity and reliability|Two observers on 20% of episodes; ICC ≥ .60.
 |Serves|Validation
 |Burden|Staff observed at work: a workplace-surveillance concern (HV-03).
@@ -266,7 +266,7 @@ operationalizes → UC01-F2-CL8; used-by → EM-02, EM-03; operationalizes → H
 |Type|Quantitative
 |Instrument or procedure|Per offer: accepted, declined, or other choice; minutes listened; stopped early. Baseline: same counts for the default station, observed on sample days.
 |Scoring or coding scheme|Acceptance rate; median minutes; early stops.
-|Validity and reliability|Counts. Listening is not liking: read alongside M-04.
+|Validity and reliability|Counts. Time spent listening does not show enjoyment: read alongside M-04.
 |Serves|Validation
 |Burden|Low. Counted during the study only; not kept in the profile (VT-06).
 

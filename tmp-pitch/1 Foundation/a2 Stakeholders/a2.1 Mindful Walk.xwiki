@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eight stakeholders. Four walk: the resident with dementia (ST-01), the care worker (ST-02), a fellow resident as walking partner (ST-04), a volunteer (ST-07). One runs the resting and listening side: the activity coordinator (ST-08). Three shape the walk without walking: family (ST-03), management (ST-05), medical and therapy staff (ST-06). Shared: the resident's health and calm. Divided on: freedom of movement versus safety, and how much of the resident's life story the System may hold.
+**Abstract.** Eight stakeholders. Four walk: the resident with dementia (ST-01), the care worker (ST-02), a fellow resident as walking partner (ST-04), a volunteer (ST-07). One runs the resting and listening side: the activity coordinator (ST-08). Three influence the walk without walking: family (ST-03), management (ST-05), medical and therapy staff (ST-06). Shared: the resident's health and calm. Divided on: freedom of movement versus safety, and how much of the resident's life story the System may store.
 
 = Stakeholder - Resident with dementia [ST-01] =
 
@@ -23,7 +23,7 @@ syntax: xwiki/2.1
 * HV-04 Safety (high) - no falls, no getting lost
 * HV-08 Identity (high) - own past, interests, tastes
 * HV-07 Social connectedness (medium) - company on the walk
-* HV-02 Dignity (medium) - accompanied, not guarded; addressed as an adult
+* HV-02 Dignity (medium) - accompanied without being guarded; addressed as an adult
 * HV-03 Privacy (medium) - whereabouts, life story, listening habits
 )))
 |Relationship to other Stakeholders|Escorted by ST-02 or ST-07, sometimes by ST-03. Walks with ST-04. Relaxes and listens with ST-08. Lives under ST-05's exit rules. Mobility and fall risk assessed by ST-06.
@@ -43,7 +43,7 @@ performs → SA-01, SA-03 to SA-07; holds → HV-01 to HV-08; appears-in → PS-
 |Name|Care worker
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-04, SA-06.
-|Type|Direct - escorts walks, settles residents, handles incidents
+|Type|Direct - escorts walks, calms residents, handles incidents
 |Values and motivations|(((
 * HV-04 Safety (high) - every resident back, unharmed
 * HV-05 Well-being (high) - daily exercise; calm evenings
@@ -100,8 +100,8 @@ supports → SA-01, SA-06, SA-07; holds → HV-01 to HV-05, HV-08.
 * HV-05 Well-being (high) - own physical and mental health
 * HV-01 Autonomy (high) - free to decline or end a joint walk
 * HV-08 Identity (medium) - a shared past to talk about
-* HV-02 Dignity (medium) - partner, not helper
-* HV-03 Privacy (medium) - shares the walk, not personal information
+* HV-02 Dignity (medium) - walks as a partner, without a helper's duties
+* HV-03 Privacy (medium) - shares the walk; keeps personal information private
 )))
 |Relationship to other Stakeholders|Fellow resident of ST-01, often with dementia too. Matched by ST-02. Has own family (ST-03) and care plan (ST-06).
 

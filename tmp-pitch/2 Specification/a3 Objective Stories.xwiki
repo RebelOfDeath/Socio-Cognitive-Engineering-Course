@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a3 Objective Stories
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why the walk itself matters (OS-01). Why the guide states and never asks (OS-02). Why listening starts from the resident's own station (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
+**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why walking comes first (OS-01). Why the guide states and never asks (OS-02). Why listening starts from the resident's own station (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
 
-= Objective Story - The walk is the point [OS-01] =
+= Objective Story - The walk itself [OS-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -13,10 +13,10 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|OS-01
-|Name|The walk is the point
+|Name|The walk itself
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-01 (hypothesis), HFC-02.
-|Narrative|//Myra:// "On days Jan walks, Jan talks about it at dinner - the blackbird, the pond. On days Jan sits in the lounge, the day is just gone. The guide doesn't take Jan anywhere. It gives the walk something to notice, so the walk isn't a trip to somewhere Jan can't remember."
+|Narrative|//Myra:// "On days Jan walks, Jan talks about it at dinner - the blackbird, the pond. On days Jan sits in the lounge, Jan has nothing to tell. The guide gives the walk something to notice along the way, so Jan does not need to remember where they were going."
 |Concerns|F2 Guide the walk; HV-05 Well-being
 
 = Objective Story - Ask, don't test [OS-02] =
@@ -30,7 +30,7 @@ syntax: xwiki/2.1
 |Name|Ask, don't test
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-04, HFC-06; IDP-02.
-|Narrative|//Jan's daughter, to Sanne:// "Ask Jan whether they remember the harbour and you get 'Of course I do', and then nothing. When the voice just says the ropes smelled of tar, Jan starts talking and won't stop. Same memory. One is a test; the other is an invitation."
+|Narrative|//Jan's daughter, to Sanne:// "Ask Jan whether they remember the harbour and you get 'Of course I do', and then nothing. When the voice says the ropes smelled of tar, Jan starts talking and goes on for ten minutes."
 |Concerns|F2 Guide the walk (memory invitations); HV-02 Dignity, HV-08 Identity
 
 = Objective Story - My station [OS-03] =
@@ -44,7 +44,7 @@ syntax: xwiki/2.1
 |Name|My station
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-05; PS-06.
-|Narrative|//Jan:// "Brass band on Sunday. Football on Saturday. The news with my coffee - not at night, unless I ask. And not that pop station. Ask me. Two things, not twenty."
+|Narrative|//Jan:// "Brass band on Sunday, football on Saturday, and the news with my morning coffee. In the evening I want the news only if I ask for it. Give me a choice of two things, and leave that pop station off."
 |Concerns|F6 Recommend listening; HV-01 Autonomy, HV-08 Identity
 
 == Graph edges ==

@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Walking is the therapy: exercise, daylight, orientation, memory. Moments on foot are recalled better than moments in a chair (group observation; HFC-01). Seven activities. On foot: the accompanied walk (SA-01), fitting walks between care tasks (SA-02), indoor exercise on rain days (SA-03), walking with a fellow resident (SA-04). At rest: the relaxation session (SA-05), settling to rest (SA-06), listening to radio, news or audiobooks (SA-07). Breakdowns: lost place or purpose, no reason or company to go out, rain, guidance that does not fit, evening restlessness, audio nobody chose.
+**Abstract.** Walking is therapeutic in itself: exercise, daylight, orientation, memory. Moments on foot are recalled better than moments in a chair (group observation; HFC-01). Seven activities. On foot: the accompanied walk (SA-01), fitting walks between care tasks (SA-02), indoor exercise on rain days (SA-03), walking with a fellow resident (SA-04). At rest: the relaxation session (SA-05), winding down to rest (SA-06), listening to radio, news or audiobooks (SA-07). Breakdowns: lost place or purpose, no reason or company to go out, rain, guidance that does not fit, evening restlessness, audio nobody chose.
 
 = Situated Activity - Accompanied walk [SA-01] =
 
@@ -278,7 +278,7 @@ Provisional. Literature and group reasoning only.
 
 performed-by → ST-01 (led by ST-08, advised by ST-06); complements → SA-01; illustrated-by → PS-04.
 
-= Situated Activity - Settling to rest [SA-06] =
+= Situated Activity - Winding down to rest [SA-06] =
 
 **Report Format:** §1.1 Operational Demands
 
@@ -286,7 +286,7 @@ performed-by → ST-01 (led by ST-08, advised by ST-06); complements → SA-01; 
 
 |=Field|=Description
 |ID|SA-06
-|Name|Settling to rest
+|Name|Winding down to rest
 |Status|In Progress
 |Evidence basis|(((
 Provisional. Literature and group reasoning only.
@@ -298,7 +298,7 @@ Provisional. Literature and group reasoning only.
 |Goal|Rest, sleep, a calm evening; sedating medication only as last resort
 |Performing Actor(s)|(((
 * ST-01: Resident - rests
-* ST-02: Care worker - settles
+* ST-02: Care worker - calms, stays
 * ST-03: Family member - sometimes present
 * ST-06: Physician - prescribes as-needed (PRN) medication
 )))

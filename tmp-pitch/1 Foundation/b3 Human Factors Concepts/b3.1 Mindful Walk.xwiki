@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b3.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eight concepts. Why walk: experiences on foot stick (HFC-01). Why guide attention: the present asks little of memory (HFC-02), and nature holds attention without effort (HFC-03). Why recall the past: remote memories outlast recent ones (HFC-04). Why personalise listening: the familiar calms (HFC-05). What to avoid: elderspeak (HFC-06), surveillance (HFC-07), a robot read as supervisor (HFC-08).
+**Abstract.** Eight concepts. Why walk: experiences on foot stick (HFC-01). Why guide attention: the present asks little of memory (HFC-02), and nature draws attention without effort (HFC-03). Why recall the past: remote memories outlast recent ones (HFC-04). Why personalise listening: the familiar calms (HFC-05). What to avoid: elderspeak (HFC-06), surveillance (HFC-07), a robot read as supervisor (HFC-08).
 
 = Human Factors Concept - Walking, place and memory [HFC-01] =
 
@@ -25,7 +25,7 @@ Candidate mechanisms from the literature:
 * Actions performed are remembered better than actions heard or seen: the enactment effect (Engelkamp, 1998)
 * Walking interviews draw out more place-bound talk than seated ones (Evans & Jones, 2011)
 )))
-|Concept statement|Experiences on foot are encoded with place, movement and effort, and are recalled better than experiences sitting down. The walk is therapy in itself, not transport to a view.
+|Concept statement|Experiences on foot are encoded with place, movement and effort, and are recalled better than experiences sitting down. The walk is therapeutic in itself, wherever it leads.
 |Human factor addressed|Episodic and spatial memory; orientation; engagement
 |Proposed mechanism|Walking binds an experience to a place and to the body's own action. Each extra cue (location, effort, sequence) is another route back to the memory. Physical activity also supports the hippocampus, on which both spatial and episodic memory depend. Side by side, on the move, talk comes easier.
 |Source|Chrastil & Warren (2012); Erickson et al. (2011); Engelkamp (1998); Evans & Jones (2011). See References.
@@ -75,9 +75,9 @@ Literature only.
 * Kaplan (1995): attention restoration theory - nature's "soft fascination" lets tired attention recover
 * Gonzalez & Kirkevold (2014): sensory gardens in dementia care; possible reduction in agitation; weak study designs
 )))
-|Concept statement|Natural settings hold attention without effort, so tired attention recovers.
+|Concept statement|Natural settings draw attention without effort, so tired attention recovers.
 |Human factor addressed|Attention fatigue; stress; agitation
-|Proposed mechanism|Directed attention tires. Birdsong, moving leaves and water draw attention involuntarily, at no cost. The garden supplies what the cues point at.
+|Proposed mechanism|Directed attention tires. Birdsong, moving leaves and water draw attention involuntarily, at no cost. The garden supplies the birdsong, leaves and water the cues mention.
 |Source|Kaplan (1995); Gonzalez & Kirkevold (2014). See References.
 |Conditions and population of validity|Theory from general populations; dementia evidence of low quality.
 |Predicted Effect type|Calmer during and after the walk; more noticing
@@ -175,7 +175,7 @@ Literature only.
 )))
 |Concept statement|Monitoring felt as continuous, or as more than needed, reads as surveillance and is rejected.
 |Human factor addressed|Perceived privacy; acceptance
-|Proposed mechanism|Awareness of being tracked turns support into supervision.
+|Proposed mechanism|Awareness of being tracked makes support feel like supervision.
 |Source|Niemeijer et al. (2010, 2015). See References.
 |Conditions and population of validity|Residential dementia care; transfers directly.
 |Predicted Effect type|Discomfort, avoidance, rejection of the device
@@ -200,7 +200,7 @@ Literature only.
 )))
 |Concept statement|Form and behaviour decide the role a robot is given. A humanoid leading meditation can be read as a coach, or as a supervisor.
 |Human factor addressed|Perceived role; perceived surveillance; dignity; acceptance
-|Proposed mechanism|Bodies invite roles. Gaze that follows and pacing that checks read as watching. A voice that leads, then falls silent, reads as a guide.
+|Proposed mechanism|People assign roles to a robot from its body. Gaze that follows and pacing that checks read as watching. A voice that leads, then falls silent, reads as a guide.
 |Source|Pemberton et al. (2026); Furlanis et al. (2026); Bodala et al. (2021); Alimardani et al. (2020). See References.
 |Conditions and population of validity|Cognitively intact adults; no dementia data.
 |Predicted Effect type|Acceptance or rejection; feeling watched

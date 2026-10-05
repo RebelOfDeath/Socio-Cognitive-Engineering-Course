@@ -35,7 +35,7 @@ Humanoid, about 1.2 m, wheeled base. Speech, chest tablet, touch sensors, eye an
 )))
 |Maturity and feasibility|Commercially available; supplied by the course; documented SDK.
 |Failure and fallback behaviour|Pepper unavailable: the pocket guide runs seated practice, voice only; the activity coordinator leads as today.
-|Benefits|HV-05: a rain-day stand-in that brings back calm and attention, not only exercise (PS-03). HV-06: sessions without a leader for each resident. HV-07: small-group sessions.
+|Benefits|HV-05: on rain days, a stand-in for the calm and attention a walk gives (PS-03). HV-06: sessions without a leader for each resident. HV-07: small-group sessions.
 |Drawbacks|(((
 Strains VT-05: a humanoid adds to the risk of talking down.
 

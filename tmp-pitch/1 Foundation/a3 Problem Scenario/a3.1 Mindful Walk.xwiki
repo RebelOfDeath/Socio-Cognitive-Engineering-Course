@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a3.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Six breakdowns. On the walk: the resident loses place and purpose and turns back or heads for a former home (PS-01); sees no reason to go out and has no one to go with (PS-02); loses the walk to rain (PS-03). At rest: recorded relaxation runs past the resident (PS-04); restlessness peaks at dusk, when staff time is lowest (PS-05); audio plays that nobody chose (PS-06). Common thread: purpose and attention that depend on memory or on a person who is not there.
+**Abstract.** Six breakdowns. On the walk: the resident loses place and purpose and turns back or heads for a former home (PS-01); sees no reason to go out and has no one to go with (PS-02); loses the walk to rain (PS-03). At rest: recorded relaxation runs past the resident (PS-04); restlessness peaks at dusk, when staff time is lowest (PS-05); audio plays that nobody chose (PS-06). In each, purpose and attention depend on memory, or on a person who is not there.
 
 = Problem Scenario - Losing the thread mid-walk [PS-01] =
 
@@ -114,7 +114,7 @@ Contributing causes:
 )))
 |Sub-problems|(((
 1. Initiation: resident sees no reason to start
-1. Company: no partner available at the right time
+1. Company: no partner available when the resident is willing to go
 1. Matching: suitable partner unknown to staff
 1. Engagement: walk is dull, talk dries up; resident turns back early
 )))
@@ -142,7 +142,7 @@ illustrates → Problem; involves → ST-01, ST-02, ST-04, ST-07, SA-01, SA-02, 
 Provisional. Constructed from SA-01, SA-02, SA-03 and the a2.1 stakeholder records; literature and group reasoning only. No resident or care worker has confirmed it.
 
 * Forbes et al. (2015): exercise may improve ADL ability in dementia
-* Anderson-Hanley et al. (2012): cycling with a virtual route holds attention better than plain cycling (older adults, not dementia-specific)
+* Anderson-Hanley et al. (2012): cycling with a virtual route keeps attention better than plain cycling (older adults, not dementia-specific)
 )))
 |Narrative|(((
 It rains for a week in November, and the daily walks are cancelled. The resident uses a wheelchair. A care worker wheels them to the pedal exerciser in the common room and starts it. After three minutes the resident stops pedalling and asks where they are going. The care worker is called away, and the exerciser is not used again that week. In the evenings the resident is restless.
@@ -157,7 +157,7 @@ It rains for a week in November, and the daily walks are cancelled. The resident
 * SA-02: Fitting walks between care tasks
 * SA-03: Bad-weather indoor exercise
 )))
-|Breakdown point|Indoor exercise without destination or company does not hold the resident's attention
+|Breakdown point|Indoor exercise without destination or company does not keep the resident's attention
 |Causes|(((
 Root causes:
 
@@ -204,7 +204,7 @@ Provisional. Constructed from SA-05 and the a2.1 stakeholder records; literature
 * Churcher Clarke et al. (2017): mindfulness for people with dementia needs adapting - shorter, more concrete, more repetition
 )))
 |Narrative|(((
-Wednesday afternoon, relaxation session in the snoezel room. Six residents in recliners. The activity coordinator plays a recorded exercise: "Imagine you are walking on a beach. Let your thoughts drift away." The resident frowns: "Which beach? Where are we going?" The voice has moved on to the breath; the resident is still on the beach. They try to get up.
+Wednesday afternoon, relaxation session in the snoezel room. Six residents in recliners. The activity coordinator plays a recorded exercise: "Imagine you are walking on a beach. Let your thoughts drift away." The resident frowns: "Which beach? Where are we going?" The recording is already on the breath; the resident is still on the beach. They try to get up.
 
 The coordinator is tucking a blanket around another resident. When they turn round, the resident is at the door, asking for their coat.
 )))
@@ -224,13 +224,13 @@ Root causes:
 Contributing causes:
 
 * Hearing loss
-* Dim, unfamiliar room can unsettle
+* Dim, unfamiliar room can upset
 )))
 |Sub-problems|(((
 1. Comprehension: wording too abstract
 1. Pacing: fixed tempo
-1. Re-anchoring: drift unnoticed, not met
-1. Carry-over: calm ends with the session
+1. Re-anchoring: drift goes unnoticed and unanswered
+1. Lasting effect: calm ends with the session
 )))
 |Out of scope|(((
 * Treating anxiety disorders - ST-06
@@ -269,10 +269,10 @@ A care worker walks them back to their room and switches on the radio - the news
 * ST-06: Nurse, physician (PRN prescription)
 )))
 |Activities involved|(((
-* SA-06: Settling to rest
+* SA-06: Winding down to rest
 * SA-07: Listening to radio, news or audiobooks
 )))
-|Breakdown point|Restlessness peaks when staff time is lowest; settling needs a person who is not there
+|Breakdown point|Restlessness peaks when staff time is lowest; calming down needs a person who is not there
 |Causes|(((
 Root causes:
 
@@ -287,7 +287,7 @@ Contributing causes:
 )))
 |Sub-problems|(((
 1. Prevention: no walk, so a restless evening
-1. Settling: no one to stay
+1. Calming: no one to stay
 1. Content: distressing audio
 1. Escalation: medication as default
 )))

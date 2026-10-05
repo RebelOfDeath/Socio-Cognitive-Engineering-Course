@@ -15,13 +15,13 @@ syntax: xwiki/2.1
 |ID|EM-01
 |Name|Staged garden and room verification
 |Status|In Progress
-|Evidence basis|Staged-event testing against a ground-truth log, as for the COACH prompting system (Mihailidis et al., 2008).
+|Evidence basis|Staged-event testing against a timestamped reference log, as for the COACH prompting system (Mihailidis et al., 2008).
 |Procedure summary|(((
 Garden: experimenter walks the loop with the pocket guide and performs scripted events - stops, bench rests, landmark passes, gate pass, help press, device drop, no-response period.
 
 Indoors: refusals, speech and button presses during practice, "stop", evening request for news, listening offers.
 
-Compare with the ground-truth log. Inspect session record and profile.
+Compare with the reference log. Inspect session record and profile.
 )))
 |Purpose|Verification
 |Human subjects required|No

@@ -11,7 +11,7 @@ Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Fo
 * Cells marked [threshold - O-3] still need numbers.
 {{/box}}
 
-**Abstract.** Nine objectives, three use cases, six functions. UC01: the guided garden walk - the core. UC02: seated or lying practice - the rain-day and dusk complement. UC03: listening - radio, news, audiobooks. Six Premises verify that the Functions work; fourteen Claims, four of them adverse, test whether they help.
+**Abstract.** Nine objectives, three use cases, six functions. UC01: the guided garden walk, the main use case. UC02: seated or lying practice - the rain-day and dusk complement. UC03: listening - radio, news, audiobooks. Six Premises verify that the Functions work; fourteen Claims, four of them adverse, test whether they help.
 
 = Objectives =
 
@@ -25,7 +25,7 @@ Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Fo
 |Statement|Residents walk outdoors more often and for longer, and finish the walks they start.
 |Type|Operational
 |Derived from|Goal on SA-01; HV-05
-|Priority|Must. Walking is the therapy; everything else supports it.
+|Priority|Must. Walking comes first; practice and listening support it.
 
 == Objective - Stay in the moment [OBJ-02] ==
 
@@ -166,14 +166,14 @@ OBJ-09: derived-from → HV-08, HV-01; served-by → F6; referenced-by → UC03-
 |Trigger|Walk slot opens; or the resident asks to go out.
 |Pre-condition|(((
 * Resident assessed fit for the garden loop with a partner (ST-06); wider routes only with staff, volunteer or family
-* Guide charged; beacons up; profile holds welcome and avoided topics
+* Guide charged; beacons up; profile lists welcome and avoided topics
 * Care worker reachable
 * Consent arrangements in place (Open item O-8)
 )))
 |Post-condition|(((
 Resident back inside, or a care worker has taken over after F4.
 
-Record holds four items. No route, no words.
+Record contains four items, and nothing about the route or the conversation.
 )))
 |Action Sequence|(((
 ~1. Slot opens. Pepper at the door offers two options (F1, IDP-03).
@@ -291,19 +291,15 @@ Record holds four items. No route, no words.
 
 = Functions =
 
-**F1 Invite.** At the slot, or on request: offer two options; accept any answer. "No" ends the offer; no new offer within the configured interval. Serves OBJ-01, OBJ-05, OBJ-08. Bounded by VT-07. Enabled by TECH-01 (door, lounge), TECH-02 (bedside).
+|=Function|=Behaviour|=Serves|=Bounded by|=Enabled by
+|F1 Invite|At the slot, or on request: offer two options; accept any answer. "No" ends the offer; no new offer within the configured interval.|OBJ-01, OBJ-05, OBJ-08|VT-07|TECH-01 (door, lounge), TECH-02 (bedside)
+|F2 Guide the walk|Present-moment cues with long silences (IDP-01). Place-bound cues and memory invitations at landmarks (IDP-02), from a prepared script and the life-story profile. Short seated practice at a bench. One orienting cue at a hesitation or the gate. Head-back cue at the set time. Welcome back at the door. Pause on the button.|OBJ-01, OBJ-02, OBJ-03, OBJ-06, OBJ-08|VT-01, VT-03, VT-05, VT-06, VT-07|TECH-02, TECH-03; TECH-01 at the door
+|F3 Guide seated and lying practice|Body, breath, sound. Concrete; no imagery. Long silences; breathing light. Pauses on speech, touch or button; ends on "stop" or at the set time.|OBJ-02, OBJ-04, OBJ-05, OBJ-06|VT-05|TECH-01 (lounge), TECH-02 (docked)
+|F4 Call a person|Alert the care worker on pull-cord, gate, fall-like impact, or no movement and no press after two check-ins. Send resident, trigger and last landmark only. Tell the resident someone is coming. Report a degraded state at the start of a walk.|OBJ-07, OBJ-08|VT-01, VT-02|TECH-02, TECH-03, TECH-04
+|F5 Keep a short record|Per session: type, minutes, ended early, person called and reason. Nothing about the route, the conversation or the titles played.|OBJ-07, OBJ-08|VT-02, VT-06|TECH-04
+|F6 Recommend listening|Offer two items by hour, state and profile. One-line recap for long books. Evening default: calm content. News on request, at any hour, in one step; never hidden. Learns only liked or skipped.|OBJ-04, OBJ-05, OBJ-09|VT-04, VT-06|TECH-05, through TECH-01 or TECH-02
 
-**F2 Guide the walk.** Present-moment cues with long silences (IDP-01). Place-bound cues and memory invitations at landmarks (IDP-02), from a prepared script and the life-story profile - never generated on the spot. Short seated practice at a bench. One orienting cue at a hesitation or the gate. Head-back cue at the set time. Welcome back at the door. Pause on the button. Serves OBJ-01, OBJ-02, OBJ-03, OBJ-06, OBJ-08. Bounded by VT-01, VT-03, VT-05, VT-06, VT-07. Enabled by TECH-02, TECH-03; TECH-01 at the door.
-
-**F3 Guide seated and lying practice.** Body, breath, sound. Concrete; no imagery. Long silences; breathing light. Pauses on speech, touch or button; ends on "stop" or at the set time. Serves OBJ-02, OBJ-04, OBJ-05, OBJ-06. Bounded by VT-05. Enabled by TECH-01 (lounge), TECH-02 (docked).
-
-**F4 Call a person.** Alert the care worker on pull-cord, gate, fall-like impact, or no movement and no press after two check-ins. Send resident, trigger, last landmark - nothing more. Tell the resident someone is coming. Report a degraded state at the start of a walk. Serves OBJ-07, OBJ-08. Bounded by VT-01, VT-02. Enabled by TECH-02, TECH-03, TECH-04.
-
-**F5 Keep a short record.** Per session: type, minutes, ended early, person called and reason. No route, no words, no titles. Serves OBJ-07, OBJ-08. Bounded by VT-02, VT-06. Enabled by TECH-04.
-
-**F6 Recommend listening.** Offer two items by hour, state and profile. One-line recap for long books. Evening default: calm content. News on request, any hour, in one step - never hidden. Learns only liked or skipped. Serves OBJ-04, OBJ-05, OBJ-09. Bounded by VT-04, VT-06. Enabled by TECH-05, through TECH-01 or TECH-02.
-
-//Why memory invitations are prepared, not generated. A generated line can state a wrong fact about a person's own life, which violates HV-08 more than silence would. Prepared lines are checked by family and ST-08 (Open item O-5).//
+//Why memory invitations are prepared in advance. A generated line can state a wrong fact about a person's own life, which violates HV-08 more than silence would. Family and ST-08 check the prepared lines (Open item O-5).//
 
 = Premises =
 
@@ -313,9 +309,9 @@ Verification only: does the Function work as specified.
 |UC01-F1-PR1|F1|EM-01; M-01. No human subjects.|Takes no for an answer. No new offer within [threshold - O-3] of a "no". Never more than two options. Nothing starts before a yes.|UC01 1, 1-alt; UC02 1
 |UC01-F2-PR2|F2|EM-01; M-01. No human subjects.|Silence share at least [threshold - O-3]. Landmark cue within [threshold - O-3] s of the beacon; stop detected within [threshold - O-3] s. At most two memory invitations per walk; none from avoided topics. Pause takes effect within 1 s.|UC01 3-7, 10
 |UC02-F3-PR3|F3|EM-01; M-01. No human subjects.|Pauses within [threshold - O-3] s of speech, press or touch. "Stop" ends the session. Never runs past the set time. Script contains no imagery (script check).|UC02 2-6
-|UC01-F4-PR4|F4|EM-01; M-01. No human subjects.|Gate, pull-cord, impact and no-response events reach the phone within [threshold - O-3] s. Alert carries resident, trigger, last landmark only. No location stored. Unacknowledged alerts escalate. Degraded state reported at start.|UC01 2, 8, 9
-|UC01-F5-PR5|F5|EM-01; M-08 (content check). No human subjects.|Record holds exactly: type, minutes, ended early, person called and reason. No route, no words, no titles.|UC01 12; UC02 7; UC03 7
-|UC03-F6-PR6|F6|EM-01; M-01, M-08 (content check). No human subjects.|Never plays without a choice. Two options per offer. Evening rule applied. "News" plays within one step at any hour. Profile holds only its listed fields and liked/skipped; resident and family can see and correct it (via ST-08).|UC03 1-5
+|UC01-F4-PR4|F4|EM-01; M-01. No human subjects.|Gate, pull-cord, impact and no-response events reach the phone within [threshold - O-3] s. Alert contains only resident, trigger and last landmark. No location stored. Unacknowledged alerts escalate. Degraded state reported at start.|UC01 2, 8, 9
+|UC01-F5-PR5|F5|EM-01; M-08 (content check). No human subjects.|Record contains exactly: type, minutes, ended early, person called and reason. Nothing about the route, the conversation or the titles played.|UC01 12; UC02 7; UC03 7
+|UC03-F6-PR6|F6|EM-01; M-01, M-08 (content check). No human subjects.|Never plays without a choice. Two options per offer. Evening rule applied. "News" plays within one step at any hour. Profile contains only its listed fields and liked/skipped; resident and family can see and correct it (via ST-08).|UC03 1-5
 
 = Claims =
 
@@ -326,16 +322,16 @@ Validation: does the Function have the intended effect. Claim numbers are projec
 |UC01-F2-CL2|F2|OBJ-01, OBJ-02|Positive. Present-moment cues reduce early turn-backs and lengthen walks, without more distress. Concerns ST-01, SA-01, PS-01.|HFC-02, HFC-03; Churcher Clarke et al. (2017); Kaplan (1995).|EM-02; M-02, M-05, M-04|Fewer walks ended early; more minutes per walk; M-04 negative affect no higher.|3, 6, 7
 |UC01-F2-CL3|F2|OBJ-01|Positive. Events on a guided walk are recalled better the same day than matched events in a seated session. Concerns ST-01.|HFC-01 (hypothesis); Chrastil & Warren (2012); Erickson et al. (2011); Engelkamp (1998).|EM-02; M-03|Recall and recognition higher for walk events, within resident. A null result weakens the walking-first argument and is reported as such.|3, 4, 11
 |UC01-F2-CL4|F2|OBJ-03|Positive. Memory invitations at landmarks raise engagement, pleasure and talk between partners. Concerns ST-01, ST-04, SA-04, PS-02.|HFC-04; Woods et al. (2018).|EM-02; M-05, M-04|M-05 and M-04 pleasure higher on walks with invitations than without.|4
-|UC01-F2-CL5|F2|OBJ-03, OBJ-07|**Adverse.** Memory invitations stir longing for the former home: more gate alerts, more sadness. Concerns ST-01, PS-01.|HFC-04; VT-03.|EM-02; M-04; gate alerts (F5 record)|Holds if gate alerts per walk or M-04 sadness rise on walks with invitations. If it holds: invitations only at the bench, or only for residents they suit.|4, 8
-|UC01-F2-CL6|F2, F3|OBJ-06|**Adverse.** The guide's voice is heard as talking down. Concerns ST-01, HV-02.|HFC-06, HFC-08; VT-05; Williams et al. (2009).|EM-04, EM-02, EM-03; M-08 (code T), M-04|Holds if residents or staff call the voice childish or condescending (code T), or M-04 anger rises. If it holds: rewrite in EM-04 before EM-02 goes on.|3, 4; UC02 3
-|UC01-F4-CL7|F4|OBJ-07|Positive. Alerts bring a person in time, and the resident does not feel tracked. Concerns ST-01, ST-02, HV-03, HV-04.|HFC-07; VT-02; Niemeijer et al. (2015).|EM-01, EM-02, EM-03; M-01, M-08 (W, R)|Alert latency within PR4's threshold in real use; no W or R codes from residents; staff judge alerts proportionate.|8, 9
+|UC01-F2-CL5|F2|OBJ-03, OBJ-07|**Adverse.** Memory invitations stir longing for the former home: more gate alerts, more sadness. Concerns ST-01, PS-01.|HFC-04; VT-03.|EM-02; M-04; gate alerts (F5 record)|Confirmed if gate alerts per walk or M-04 sadness rise on walks with invitations. If confirmed: invitations only at the bench, or only for residents they suit.|4, 8
+|UC01-F2-CL6|F2, F3|OBJ-06|**Adverse.** The guide's voice is heard as talking down. Concerns ST-01, HV-02.|HFC-06, HFC-08; VT-05; Williams et al. (2009).|EM-04, EM-02, EM-03; M-08 (code T), M-04|Confirmed if residents or staff call the voice childish or condescending (code T), or M-04 anger rises. If confirmed: rewrite in EM-04 before EM-02 goes on.|3, 4; UC02 3
+|UC01-F4-CL7|F4|OBJ-07|Positive. Alerts bring a person in time, and the resident does not feel tracked. Concerns ST-01, ST-02, HV-03, HV-04.|HFC-07; VT-02; Niemeijer et al. (2015).|EM-01, EM-02, EM-03; M-01, M-08 (W, R)|Alert latency within PR4's threshold in use with residents; no W or R codes from residents; staff judge alerts proportionate.|8, 9
 |UC01-F2-CL8|F2|OBJ-08|Positive. Staff minutes per walk fall, and human company does not. Concerns ST-02, ST-01, HV-06, HV-07.|VT-07.|EM-02, EM-03; M-09, M-10, M-02|M-09 below baseline, and M-10 not below baseline, and walks (M-02) not fewer. Time saved by cutting company does not count.|2
-|UC02-F3-CL9|F3|OBJ-02, OBJ-04|Positive. Concrete, paced practice holds engagement longer than a recorded relaxation exercise. Concerns ST-01, ST-08, SA-05, PS-04.|HFC-02; Churcher Clarke et al. (2017).|EM-02; M-05, M-04|M-05 engagement longer than with the home's usual recording; M-04 anxiety no higher.|UC02 2-5
-|UC02-F3-CL10|F3|OBJ-04|Positive. Lying practice at dusk lowers evening agitation. Concerns ST-01, ST-02, SA-06, PS-05.|HFC-02; Khachiyants et al. (2011).|EM-02; M-06; PRN doses (secondary)|CMAI evening behaviours below baseline. PRN doses reported, not a criterion: ST-06 decides on medication.|UC02 1-6
-|UC02-F3-CL11|F3|OBJ-07|**Adverse.** A device leading practice in the room is felt as being watched. Concerns ST-01, HV-03.|HFC-07, HFC-08; Pemberton et al. (2026).|EM-02, EM-03; M-08 (W)|Holds if residents describe Pepper or the docked guide as watching or checking (code W). If it holds for Pepper: guide alone, voice only.|UC02 2-5
+|UC02-F3-CL9|F3|OBJ-02, OBJ-04|Positive. Concrete, paced practice keeps the resident engaged longer than a recorded relaxation exercise. Concerns ST-01, ST-08, SA-05, PS-04.|HFC-02; Churcher Clarke et al. (2017).|EM-02; M-05, M-04|M-05 engagement longer than with the home's usual recording; M-04 anxiety no higher.|UC02 2-5
+|UC02-F3-CL10|F3|OBJ-04|Positive. Lying practice at dusk lowers evening agitation. Concerns ST-01, ST-02, SA-06, PS-05.|HFC-02; Khachiyants et al. (2011).|EM-02; M-06; PRN doses (secondary)|CMAI evening behaviours below baseline. PRN doses reported as context; ST-06 decides on medication.|UC02 1-6
+|UC02-F3-CL11|F3|OBJ-07|**Adverse.** A device leading practice in the room is felt as being watched. Concerns ST-01, HV-03.|HFC-07, HFC-08; Pemberton et al. (2026).|EM-02, EM-03; M-08 (W)|Confirmed if residents describe Pepper or the docked guide as watching or checking (code W). If confirmed for Pepper: guide alone, voice only.|UC02 2-5
 |UC03-F6-CL12|F6|OBJ-09|Positive. Personalised two-option offers are accepted more often, and kept on longer, than the default station. Concerns ST-01, SA-07, PS-06.|HFC-05, HFC-04; Gerdner (2000); Thomas et al. (2017).|EM-02; M-11, M-04|Acceptance and minutes above the default-station baseline; M-04 pleasure no lower.|UC03 1-2
 |UC03-F6-CL13|F6|OBJ-04, OBJ-09|Positive. Calm content as the evening default lowers evening distress. Concerns ST-01, SA-06, PS-05.|HFC-05; VT-04.|EM-02; M-06, M-04|CMAI evening behaviours and M-04 anxiety below baseline.|UC03 1, 4
-|UC03-F6-CL14|F6|OBJ-05, OBJ-09|**Adverse.** The evening default is felt as being kept from the news. Concerns ST-01, ST-03, HV-01.|VT-04; HV-01, HV-02.|EM-02, EM-03; M-08 (code K), M-07|Holds if residents or family describe being kept from the news (code K), or M-07 falls. If it holds: news offered first, at every hour.|UC03 4
+|UC03-F6-CL14|F6|OBJ-05, OBJ-09|**Adverse.** The evening default is felt as being kept from the news. Concerns ST-01, ST-03, HV-01.|VT-04; HV-01, HV-02.|EM-02, EM-03; M-08 (code K), M-07|Confirmed if residents or family describe being kept from the news (code K), or M-07 falls. If confirmed: news offered first, at every hour.|UC03 4
 
 == Graph edges ==
 

@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.2 Robot Profile
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** One System, two bodies, one voice. Pepper hosts indoors: invitations, seated practice, listening (RP-01). The pocket guide goes outside and to the bedside (RP-02). Both are guides, not carers or supervisors: they lead, then fall silent.
+**Abstract.** One System with two devices and one voice. Pepper hosts indoors: invitations, seated practice, listening (RP-01). The pocket guide goes outside and to the bedside (RP-02). Both act as guides (HFC-08): they lead, then fall silent.
 
 = Robot Profile - Pepper as indoor host [RP-01] =
 
@@ -19,12 +19,12 @@ syntax: xwiki/2.1
 |Role in Scenario|At the garden door: invites, and welcomes back (DS-01). In the lounge on rain days: leads seated practice, then offers listening (DS-02).
 |Social Competencies|(((
 * Offers two options; accepts any answer, including no
-* Leads, then holds long silences
+* Leads, then stays silent for long stretches
 * Pauses on speech or touch; ends on "stop"
 * No small talk beyond the session
 )))
 |Embodiment|Pepper (TECH-01). Stands by the door or the window, never in the path. Cameras disabled and visibly covered. Minimal arm and head movement; no gaze-following. Shoulder lights as a breathing light.
-|Narrative and Identity Framing|"The voice that goes walking." A guide for noticing - not a carer, companion or supervisor. Shares a name and voice with the pocket guide, so indoors and outdoors feel like one thing.
+|Narrative and Identity Framing|"The voice that goes walking." Presented as a guide for noticing; avoids the carer, companion and supervisor roles (HFC-08). Shares a name and voice with the pocket guide, so indoors and outdoors feel like one thing.
 |Communication Strategies|(((
 * Short, concrete sentences; normal pitch; adult words (IDP-01)
 * First name only if the resident wants it
@@ -55,7 +55,7 @@ syntax: xwiki/2.1
 * Tells the resident when someone is coming
 )))
 |Embodiment|Palm-sized speaker; one big button; pull-cord. Clips to rollator or wheelchair, or hangs on a lanyard. Docks on the bedside table. No screen, no camera.
-|Narrative and Identity Framing|The same voice as Pepper, in the pocket. Something you carry, like a radio - not something that watches.
+|Narrative and Identity Framing|The same voice as Pepper, in the pocket. Something you carry, like a radio. No camera, no screen.
 |Communication Strategies|(((
 * Present-moment cues, then long silence (IDP-01)
 * Memory invitations as statements, never questions (IDP-02)

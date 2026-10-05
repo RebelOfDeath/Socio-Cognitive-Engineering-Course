@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b2.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Seven tensions. On the walk: freedom against safety (VT-01), knowing whereabouts against privacy (VT-02), memories that warm against memories that hurt (VT-03). In the guidance: plain against childish (VT-05). In listening: the news against a calm evening (VT-04). In the data: a rich life story against holding little (VT-06). In staffing: time saved against company kept (VT-07).
+**Abstract.** Seven tensions. On the walk: freedom against safety (VT-01), knowing whereabouts against privacy (VT-02), memories that warm against memories that hurt (VT-03). In the guidance: plain against childish (VT-05). In listening: the news against a calm evening (VT-04). In the data: a rich life story against keeping little (VT-06). In staffing: time saved against company kept (VT-07).
 
 = Value Tension - Autonomy vs Safety [VT-01] =
 
@@ -56,9 +56,9 @@ HV-04 Safety: know where the resident is, to reach them.
 |Nature of the conflict|Continuous location lets help find the resident. It is also a route trace: surveillance of a walk.
 |Non-negotiable floor|Data minimisation (GDPR art. 5). Lawful basis and consent arrangement to confirm with ST-05 (Open item O-8).
 |Current resolution|(((
-* No GPS, no trace.
+* No GPS and no route trace.
 * Beacons at landmarks and at the gate (TECH-03). The guide knows the nearest landmark, in the moment only.
-* Alert carries trigger and last landmark. The session record holds no route.
+* Alert contains trigger and last landmark. The session record contains no route.
 )))
 |Alternatives considered|(((
 GPS tracker (TECH-06): rejected - continuous trace.
@@ -84,7 +84,7 @@ HV-08 Identity: invite the resident's past - trade, home, people.
 HV-05 Well-being: avoid memories that bring grief or longing.
 )))
 |Domain area|psychological safety
-|Nature of the conflict|The richest memories are the most charged. A cue that opens the harbour can also open "my wife waited for me at the quay". Longing for the former home can turn into exit-seeking (PS-01).
+|Nature of the conflict|Rich memories are often charged ones. A cue that opens the harbour can also open "my wife waited for me at the quay". Longing for the former home can turn into exit-seeking (PS-01).
 |Non-negotiable floor|None identified.
 |Current resolution|(((
 * Life-story profile lists welcome and avoided topics, written with family (ST-03, ST-08).
@@ -116,7 +116,7 @@ HV-01 Autonomy: hear the news - all of it, any time.
 HV-05 Well-being: a calm evening, without distressing news at dusk.
 )))
 |Domain area|information; psychological safety
-|Nature of the conflict|The news keeps the resident part of the world. It also unsettles, more so in the evening and without context. Filtering protects calm, and makes the System a censor.
+|Nature of the conflict|The news keeps the resident part of the world. It also upsets, more so in the evening and without context. Filtering protects calm, and makes the System a censor.
 |Non-negotiable floor|None identified.
 |Current resolution|(((
 * Offer, never hide.
@@ -176,7 +176,7 @@ Soothing "therapy voice": rejected. Elderspeak.
 |Values in tension|(((
 HV-08 Identity: a rich profile - places, people, music, programmes, topics to avoid.
 
-HV-03 Privacy: hold as little as possible.
+HV-03 Privacy: keep as little as possible.
 )))
 |Domain area|privacy
 |Nature of the conflict|Personal cues and recommendations need a life story and a memory of what was liked. That profile is intimate data about a person who cannot fully oversee it.
@@ -208,15 +208,15 @@ Generic content only: rejected (PS-06).
 |Values in tension|(((
 HV-06 Attentive care: let the System take walks and sessions off staff.
 
-HV-07 Social connectedness: people, not devices, as company.
+HV-07 Social connectedness: people as company.
 )))
 |Domain area|social
-|Nature of the conflict|Every walk the guide carries without staff frees time. It may also remove the only human contact of the day.
+|Nature of the conflict|Every walk the guide supports without staff frees staff time. It may also leave the resident without human contact that day.
 |Non-negotiable floor|None identified.
 |Current resolution|(((
-* The guide replaces the anchoring, not the company.
+* The guide takes over anchoring; a person still provides company.
 * No walk with the voice alone: always a partner, volunteer, relative or staff member.
-* Freed staff time goes to walks beyond the garden and to settling (SA-06).
+* Freed staff time goes to walks beyond the garden and to evening calming (SA-06).
 * Human company tracked (M-10).
 )))
 |Alternatives considered|(((

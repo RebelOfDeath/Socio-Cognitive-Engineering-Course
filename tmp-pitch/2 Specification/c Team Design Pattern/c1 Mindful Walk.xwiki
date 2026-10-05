@@ -23,14 +23,14 @@ Literature and group reasoning only. Not yet evaluated.
 * Company as the reason to go out: SA-04, Victor (2012)
 * Human handover when automated support runs out: the earlier concept's TDP-02, and Braley et al. (2019) on people with dementia needing human contact when automated prompting confuses
 )))
-|Problem|A resident with dementia needs an anchor to walk: someone who keeps place and purpose. Staff cannot walk every walk. Partners and volunteers can walk, but cannot anchor a confused resident or handle an emergency alone. Who carries what?
+|Problem|A resident with dementia needs an anchor to walk: someone who keeps place and purpose. Staff cannot walk every walk. Partners and volunteers can walk, but cannot anchor a confused resident or handle an emergency alone. Who does what?
 |Solution Structure|(((
 1. Resident walks, chooses, stops.
 1. Companion walks along and talks.
 1. System anchors attention, invites memories, guides back, calls help.
 1. Care worker stays in reach: alerts, physical help, distress, exits.
 )))
-|Solution Description|The companion's job, split. Anchoring - noticing, re-orienting, the way back - goes to the System (F2). Company stays with a person: partner, volunteer, relative. Safety stays with staff, called by the System (F4). Activity coordinator prepares the ground: profile, pairs, script.
+|Solution Description|The companion's job, split. Anchoring - noticing, re-orienting, the way back - goes to the System (F2). Company stays with a person: partner, volunteer, relative. Safety stays with staff, called by the System (F4). The activity coordinator prepares profiles, pairs and the script.
 |Per-Actor allocation|(((
 **Resident (ST-01):**
 
@@ -62,7 +62,7 @@ Literature and group reasoning only. Not yet evaluated.
 1. F4: alert on gate, cord, impact, no response.
 1. F5: four-item record.
 )))
-|Consequences: benefits|Walks with lighter staffing; walks with partners and volunteers become possible; an anchor that needs no memory; staff called when needed. Expected, not observed: UC01-F1-CL1, UC01-F2-CL2, UC01-F4-CL7, UC01-F2-CL8.
+|Consequences: benefits|Walks with lighter staffing; walks with partners and volunteers become possible; an anchor that needs no memory; staff called when needed. Expected effects, still to be tested: UC01-F1-CL1, UC01-F2-CL2, UC01-F4-CL7, UC01-F2-CL8.
 |Consequences: risks|(((
 * Companions lean on the guide and stop watching
 * Walks drift towards voice-only (VT-07); M-10 guards against it
@@ -71,11 +71,11 @@ Literature and group reasoning only. Not yet evaluated.
 )))
 |Related Patterns|IDP-01 Present-moment cue; IDP-02 Memory invitation; IDP-03 Two-option offer. TDP-02 (previous concept) shares the human handover.
 |Connection to Claims|Rationale for UC01-F1-CL1, UC01-F2-CL2, UC01-F4-CL7, UC01-F2-CL8. Tested against UC01-F2-CL5.
-|Validation path|EM-01 (does the hand-off work), EM-02 (does walking rise), EM-03 (do staff and companions accept the split). Second instance: UC02 at dusk, with the care worker starting and the System carrying the practice.
+|Validation path|EM-01 (does the hand-off work), EM-02 (does walking rise), EM-03 (do staff and companions accept the split). Second instance: UC02 at dusk, with the care worker starting and the System leading the practice.
 
 == Open items to check or research ==
 
-|=Item|=What is needed|=Why it matters
+|=Item|=What is needed|=Reason
 |Garden policy (O-7)|Agree with ST-05 and ST-06 who may walk with a partner instead of staff.|Without it, the allocation has no permission.
 |Alert thresholds (O-3)|Pilot EM-01; set gate and no-response timing with care workers.|Too late is unsafe; too often is ignored.
 |Companion briefing|Short instruction for partners, volunteers and families: pause button, cord, what the guide does not do.|Companions must not assume the guide watches over the resident.
