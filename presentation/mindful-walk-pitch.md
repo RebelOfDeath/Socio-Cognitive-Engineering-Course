@@ -6,11 +6,14 @@ headingDivider: 2
 style: |
   section {
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    color: #1f2a2e;
-    background: #fbfaf7;
+    color: #222624;
+    background: #ffffff;
   }
-  h1, h2, h3 { color: #2f5d50; }
-  footer { font-size: 15px; color: #5b6b66; }
+  h1, h2, h3 { color: #2c4a34; }
+  footer { font-size: 15px; color: #66706b; }
+  section table tr { background-color: transparent; border-top: none; }
+  section table tr:nth-child(2n) { background-color: #f2f5f2; }
+  section table th, section table td { border-color: #dde3de; }
   section.photo {
     color: #fff;
     justify-content: flex-end;
@@ -20,51 +23,51 @@ style: |
   section.photo h1 { font-size: 84px; margin: 0; }
   section.photo h2 { font-size: 60px; margin: 0; }
   section.photo h3 { font-size: 34px; font-weight: 400; margin-top: 10px; }
-  section.green { background: #2f5d50; color: #fff; justify-content: center; }
-  section.green h2 { color: #fff; font-size: 72px; margin: 0; }
-  section.green h3 { color: #cfe0d8; font-size: 36px; font-weight: 400; }
+  section.dark { background: #1f3a2b; color: #fff; justify-content: center; }
+  section.dark h2 { color: #fff; font-size: 72px; margin: 0; }
+  section.dark h3 { color: #cfe0d3; font-size: 36px; font-weight: 400; }
   section.statement { justify-content: center; }
   section.statement h2 { font-size: 64px; margin: 0 0 20px; }
-  section.statement h3 { font-size: 36px; font-weight: 400; color: #1f2a2e; max-width: 980px; line-height: 1.35; }
+  section.statement h3 { font-size: 36px; font-weight: 400; color: #222624; max-width: 980px; line-height: 1.35; }
   section.voice h2, section.pair h2, section.words h2 { font-size: 40px; }
   section.voice ul { list-style: none; padding: 0; }
-  section.voice > ul > li { font-size: 46px; color: #2f5d50; margin: 26px 0 0; }
-  section.voice ul ul li { font-size: 22px; color: #5b6b66; margin: 4px 0 0; }
+  section.voice > ul > li { font-size: 46px; color: #1f3a2b; margin: 26px 0 0; }
+  section.voice ul ul li { font-size: 22px; color: #66706b; margin: 4px 0 0; }
   section.verbs { justify-content: center; }
   section.verbs h2 { font-size: 40px; }
   section.verbs ul { list-style: none; padding: 0; display: flex; gap: 52px; margin: 0; }
-  section.verbs li { font-size: 56px; font-weight: 600; color: #2f5d50; margin: 0; line-height: 1.2; }
+  section.verbs li { font-size: 56px; font-weight: 600; color: #1f3a2b; margin: 0; line-height: 1.2; }
   section.pair ul { list-style: none; padding: 0; display: flex; gap: 70px; }
-  section.pair > ul > li { flex: 1; font-size: 24px; color: #5b6b66; }
-  section.pair ul ul li { font-size: 44px; color: #2f5d50; margin-top: 12px; line-height: 1.25; }
+  section.pair > ul > li { flex: 1; font-size: 24px; color: #66706b; }
+  section.pair ul ul li { font-size: 44px; color: #1f3a2b; margin-top: 12px; line-height: 1.25; }
   section.words ul {
     list-style: none;
     padding: 0;
     columns: 2;
     font-size: 50px;
     line-height: 1.7;
-    color: #2f5d50;
+    color: #1f3a2b;
   }
   section.kept h2 { font-size: 40px; }
   section.kept ul { list-style: none; padding: 0; }
   section.kept > ul { columns: 2; column-gap: 60px; }
-  section.kept > ul > li { font-size: 34px; color: #2f5d50; font-weight: 600; break-inside: avoid; margin: 0 0 26px; }
-  section.kept ul ul li { font-size: 21px; color: #5b6b66; font-weight: 400; margin: 4px 0 0; }
+  section.kept > ul > li { font-size: 34px; color: #1f3a2b; font-weight: 600; break-inside: avoid; margin: 0 0 26px; }
+  section.kept ul ul li { font-size: 21px; color: #66706b; font-weight: 400; margin: 4px 0 0; }
   section.sa { justify-content: flex-start; padding-top: 70px; }
   section.sa h2 { font-size: 46px; margin-bottom: 30px; }
   section.sa table { display: table; width: 100%; font-size: 30px; border-collapse: collapse; }
   section.sa thead { display: none; }
-  section.sa table tr td { background: transparent; border: none; border-bottom: 1px solid #e3e0d8; padding: 16px 18px; vertical-align: top; line-height: 1.4; }
-  section.sa table tr td:first-child { width: 24%; font-size: 20px; font-weight: 600; color: #2f5d50; text-transform: uppercase; letter-spacing: .05em; padding-top: 24px; }
-  section.sa table tr:last-child td:last-child { color: #8a4f12; }
+  section.sa table tr td { background: transparent; border: none; border-bottom: 1px solid #dde3de; padding: 16px 18px; vertical-align: top; line-height: 1.4; }
+  section.sa table tr td:first-child { width: 24%; font-size: 20px; font-weight: 600; color: #1f3a2b; text-transform: uppercase; letter-spacing: .05em; padding-top: 24px; }
+  section.sa table tr:last-child td:last-child { color: #8c6512; }
   section.glance { justify-content: flex-start; padding-top: 56px; }
   section.glance h2 { font-size: 42px; margin-bottom: 18px; }
   section.glance table { display: table; width: 100%; font-size: 26px; border-collapse: collapse; }
   section.glance thead { display: none; }
-  section.glance table tr td { background: transparent; border: none; border-bottom: 1px solid #e3e0d8; padding: 10px 16px; }
-  section.glance table tr td:first-child { width: 13%; color: #2f5d50; font-weight: 600; font-size: 21px; }
+  section.glance table tr td { background: transparent; border: none; border-bottom: 1px solid #dde3de; padding: 10px 16px; }
+  section.glance table tr td:first-child { width: 13%; color: #1f3a2b; font-weight: 600; font-size: 21px; }
   section.glance table tr td:nth-child(2) { width: 40%; font-weight: 600; }
-  section.glance table tr td:nth-child(3) { color: #5b6b66; }
+  section.glance table tr td:nth-child(3) { color: #66706b; }
   section.glance.dense table { font-size: 20px; }
   section.glance.dense table tr td { padding: 3px 16px; }
   section.glance.dense table tr td:first-child { font-size: 18px; }
@@ -72,8 +75,8 @@ style: |
   section.diagram h2, section.table h2 { font-size: 40px; margin-bottom: 14px; }
   section.diagram p { text-align: center; margin: 0; }
   section.table table { display: table; width: 100%; font-size: 23px; }
-  section.table th { background: #2f5d50; color: #fff; }
-  section.table p { font-size: 20px; color: #5b6b66; margin-top: 14px; }
+  section.table th { background: #1f3a2b; color: #fff; }
+  section.table p { font-size: 20px; color: #66706b; margin-top: 14px; }
 ---
 
 ## Original concept: Tooth brushing
@@ -93,7 +96,7 @@ style: |
 
 ## Think of your last vacation.
 
-<!-- _class: green -->
+<!-- _class: dark -->
 
 ### What do you remember?
 
@@ -680,7 +683,7 @@ style: |
 
 ## Evaluation
 
-<!-- _class: green -->
+<!-- _class: dark -->
 
 ### Verification and validation
 
