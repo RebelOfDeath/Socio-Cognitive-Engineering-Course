@@ -239,10 +239,10 @@ operationalizes → UC01-F1-CL10; used-by → EM-03; operationalizes → HV-06.
 |Name|Privacy, tone and trust codes
 |Status|In Progress
 |Evidence basis|Bespoke code set from Niemeijer et al. (2010, 2015), Kitwood (1997), Williams et al. (2009) and the Mental Health Foundation (2016).
-|Construct measured|Whether residents, partners, relatives and staff experience the System as watching, listening in, talking down, serving staff, revealing, or untruthful.
+|Construct measured|Whether residents, partners, relatives and staff experience the System as watching, listening in, talking down, serving staff, revealing, or misleading.
 |Type|Qualitative coding
 |Instrument or procedure|Short interviews (EM-04).
-|Scoring or coding scheme|W watched; L listened in on; T talked down to; D walked for others' sake ("taken out like a dog"); S secret revealed; U untrue; N neutral or positive. A statement can have more than one code.
+|Scoring or coding scheme|W watched; L listened in on; T talked down to; D walked for others' sake ("taken out like a dog"); S secret revealed; U misled or fobbed off; N neutral or positive. A statement can have more than one code.
 |Validity and reliability|Two coders on all interviews; κ ≥ .60.
 |Serves|Validation
 |Burden|Interviews; residents only if willing.
@@ -251,7 +251,7 @@ operationalizes → UC01-F1-CL10; used-by → EM-03; operationalizes → HV-06.
 
 operationalizes → UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8, UC01-F2-CL9; used-by → EM-04; operationalizes → HV-01 to HV-03, HV-08.
 
-= Measure - Sensitive topics and disclosure [M-10] =
+= Measure - Sensitive topics, errors and disclosure [M-10] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -259,14 +259,28 @@ operationalizes → UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8, UC01-F2-CL9; used-by 
 
 |=Field|=Description
 |ID|M-10
-|Name|Sensitive topics and disclosure
+|Name|Sensitive topics, errors and disclosure
 |Status|In Progress
 |Evidence basis|Bespoke count. Safeguard for VT-03 and VT-04.
-|Construct measured|Whether painful questions reach the trusted person, and whether the System ever says something untrue or reveals what it should not.
+|Construct measured|Whether painful questions reach the trusted person; how often the System gets a fact wrong, and whether it corrects itself; whether it reveals what it should not.
 |Type|Quantitative
-|Instrument or procedure|Session record (F6), listener-observer (S slips in M-04), staged trials (EM-01).
-|Scoring or coding scheme|Sensitive questions; deferred to the listed person (yes/no); minutes until they arrive. Untrue statements by the System (target 0). Items spoken without consent or against the map (target 0).
-|Validity and reliability|Counts. Any non-zero target count stops the B phase (EM-03).
+|Instrument or procedure|(((
+Script check: every prepared line and template, before use (EM-01).
+
+Staged trials with known facts, including a wrong profile entry and a misheard topic (EM-01).
+
+In use: session record (F6); listener-observer (S slips in M-04; System errors noticed by a walker, a relative or the listener).
+)))
+|Scoring or coding scheme|(((
+Deception by design: untruths, denials or playing along in the script (target 0).
+
+Errors: wrong facts per 100 System statements; share corrected when contradicted; time to correct. Threshold: O-2.
+
+Sensitive questions: deferred to the listed person (yes/no); minutes until they arrive.
+
+Disclosure: items spoken without consent or against the map (target 0).
+)))
+|Validity and reliability|Staged error rates are exact. In use, only noticed errors are counted: an undercount. A disclosure, or an error that causes distress, stops the B phase for review (EM-03).
 |Serves|Both: Verification (staged) and Validation (in use)
 |Burden|None beyond EM-02.
 

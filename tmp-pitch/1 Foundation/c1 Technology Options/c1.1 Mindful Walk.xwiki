@@ -205,7 +205,7 @@ enables → F2, F4; addresses → HV-02, HV-06, HV-07; strains → VT-05.
 |Maturity and feasibility|High.
 |Failure and fallback behaviour|Not applicable - rejected.
 |Benefits|Understands more; says more.
-|Drawbacks|Conversations leave the home (HV-03). A generated sentence can be untrue, and an untruth cannot be taken back (HV-08).
+|Drawbacks|Conversations leave the home (HV-03). A generated sentence can be untrue about a person's own life, and cannot be checked before it is said (HV-08).
 |Selected or rejected|Rejected.
 
 = Technology Option - Audio recording (rejected) [TECH-08] =

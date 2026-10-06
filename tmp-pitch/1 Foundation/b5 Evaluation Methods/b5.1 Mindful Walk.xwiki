@@ -65,6 +65,8 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 |Item blocked by the map for this pair|Never spoken|0/50
 |Question on a listed sensitive topic|Truthful deferral; trusted person alerted|alert ≤ 10 s, 20/20; the listed fact never stated, 0/50
 |Starter due while walking|Delayed until a stop|0/20 played while moving
+|Walker contradicts a System statement (wrong profile entry; misheard topic)|Plain correction, no argument; error flagged for ST-05|≤ 3 s; 20/20
+|Script and templates|No untruth, denial or playing along|0 lines
 |Stumble while talking|Offer to sit; second within 10 min: alert|≤ 3 s; ≤ 10 s
 |Set length reached mid-talk|Head-back cue|≤ 30 s
 |Gate; pull-cord; drop with no response; relative presses 9|Alert|≤ 10 s; 20/20
@@ -157,7 +159,7 @@ At least 5 observed walks (EM-02) per case per phase. A phase is extended by up 
 |Safety while talking|M-06|Observed walks; device events
 |Own view; pressure; relative's rating|M-07|After observed walks and calls
 |Loneliness|M-08|End of each phase
-|Sensitive questions; untruths; disclosures|M-10|Throughout
+|Sensitive questions; System errors and corrections; disclosures|M-10|Throughout
 
 == Analysis and decision rules ==
 
@@ -168,7 +170,8 @@ Set before the study starts:
 * UC01-F2-CL1 and UC02-F2-CL2 are supported if NAP ≥ .70 at all three phase changes in at least 3 of 4 cases in the track, with face signs (M-04) no higher in B
 * Any fall: walks paused for that case and reviewed with ST-06 before going on
 * Stumbles per walk-hour higher in B than in A in 2 or more cases: adverse UC01-F3-CL5 confirmed; starters only when seated before any further B phase
-* Any untrue statement or disclosure by the System (M-10): B stopped for all cases until the cause is found and fixed
+* Any disclosure, or a System error that causes distress (M-10): B stopped for all cases until the cause is found and fixed
+* Other System errors: counted; above [threshold - O-2] per 100 statements, or left uncorrected, the source is fixed before B continues
 
 == Ethics ==
 

@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eight values. Social connectedness leads: company is the reason to walk and to talk. Dignity includes face: a slip is not exposed. Truthfulness: everything the System says is true, and painful truths come from a trusted person. Privacy covers other people's secrets as well as one's own.
+**Abstract.** Eight values. Social connectedness leads: company is the reason to walk and to talk. Dignity includes face: a slip is not exposed. Truthfulness: the System does not deceive, corrects its own errors, and leaves painful truths to a trusted person. Privacy covers other people's secrets as well as one's own.
 
 = Human Value - Autonomy [HV-01] =
 
@@ -167,13 +167,19 @@ Violated: wrong facts about one's life; generic content.
 |Name|Truthfulness
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Everything the System says is true. No lies, kind ones included: trust once lost is rarely regained. Painful truths (a death, a diagnosis) come from a trusted person, never from the System.
+|Situated meaning|(((
+No deception by design: no lies, kind ones included; no denials; no playing along with an untrue belief. Trust once lost is rarely regained.
+
+Errors cannot be ruled out: the System mishears, a profile can be out of date, a resident's own words can be mistaken. So it states facts only from checked sources, attributes what others said ("[Name] was telling you..."), says less when unsure, and corrects itself plainly when contradicted.
+
+Painful truths (a death, a diagnosis) come from a trusted person, never from the System.
+)))
 |Held by|ST-01, ST-03, ST-04, ST-06 (high)
 |Intrinsic or instrumental|Intrinsic. Also instrumental: trust is the condition for accepting any help.
 |Recognition criteria|(((
-Served: no untrue statement; sensitive questions passed to the trusted person; one agreed answer across staff.
+Served: no untruth, denial or playing along in the script; errors corrected at once and fixed at their source; sensitive questions passed to the trusted person; one agreed answer across staff.
 
-Violated: "He's at work"; the guide states a death; different answers from different people.
+Violated: "He's at work"; an error left standing; the guide states a death; different answers from different people.
 )))
 |Source|Mental Health Foundation (2016). //What Is Truth?// James et al. (2006).
 

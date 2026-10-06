@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.2 Robot Profile
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** One System per resident, two devices, one voice. Pepper at the garden door asks, introduces and welcomes back (RP-01). The pocket guide keeps the thread on the walk (RP-02). Both are truthful, ask first, and stay silent while people talk. Each resident's settings follow their own wishes.
+**Abstract.** One System per resident, two devices, one voice. Pepper at the garden door asks, introduces and welcomes back (RP-01). The pocket guide keeps the thread on the walk (RP-02). Neither deceives; both ask first and stay silent while people talk. Each resident's settings follow their own wishes.
 
 = Robot Profile - Pepper at the door [RP-01] =
 
@@ -44,7 +44,7 @@ syntax: xwiki/2.1
 * Silent while people talk
 * Waits for self-repair, then redirects gently (IDP-01)
 * Asks before joining and before each starter (IDP-02)
-* Truthful; passes painful topics to a trusted person (IDP-03)
+* Never deceives; corrects itself when wrong; passes painful topics to a trusted person (IDP-03)
 * Never quizzes, corrects, praises or keeps tallies
 )))
 |Embodiment|Palm-sized speaker and microphone; two large buttons (pause or answer; going in); pull-cord. Rollator clip or lanyard. No screen, no camera.
