@@ -2,8 +2,8 @@
   <rect width="1160" height="470" fill="#ffffff"/>
 
   <!-- Panel -->
-  <rect x="20" y="20" width="1120" height="430" rx="16" fill="#ffffff" stroke="#dde3de" stroke-width="2"/>
-  <path d="M20,36 a16,16 0 0 1 16,-16 h1088 a16,16 0 0 1 16,16 v38 h-1120 z" fill="#1f3a2b"/>
+  <rect x="20" y="20" width="1120" height="430" fill="#ffffff" stroke="#dde3de" stroke-width="2"/>
+  <rect x="20" y="20" width="1120" height="54" fill="#1f3a2b"/>
   <text x="44" y="55" font-size="22" font-weight="600" fill="#ffffff">Pair walk · Jan and Elena · minute 12</text>
   <text x="1116" y="55" font-size="17" fill="#cfe0d3" text-anchor="end">kept for this walk only</text>
 

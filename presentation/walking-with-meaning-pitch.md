@@ -509,7 +509,6 @@ style: |
 | Conversation starters | off · own life · shared with listed partners | resident; each one asked per walk |
 | Word help | off · after a wait | resident |
 | Form of address | first name · surname · none | resident |
-| Learn own words and dialect | off · on | resident and representative |
 | Walk length | minutes | physiotherapist; the resident can shorten it |
 
 Safety alerts always on · sensitive topics agreed with family and staff
