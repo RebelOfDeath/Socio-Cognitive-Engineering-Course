@@ -19,7 +19,7 @@ syntax: xwiki/2.1
 |Construct measured|Whether the System does what F1 to F6 specify, on time, and nothing more.
 |Type|Quantitative
 |Instrument or procedure|(((
-Staged events against a timestamped reference log (EM-01): pauses, slips, repeated stories, starters with and without consent, blocked items, sensitive questions, stops, stumbles, gate, pull-cord, drops, relative's help key.
+Staged events against a timestamped reference log (EM-01): pauses, slips, repeated stories, starters with and without consent, blocked items, sensitive questions, stops, stumbles, gate, pull-cord, drops.
 
 Checks on a full test day: network capture at the router; file-system search of all devices for audio.
 
@@ -48,14 +48,14 @@ operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC01-F5-
 |Construct measured|How often and how long the resident walks, and with whom.
 |Type|Quantitative
 |Instrument or procedure|Session record (F6), every walk. Baseline: the same record in A phases (EM-03), plus the care record.
-|Scoring or coding scheme|Per week: walks; minutes; walks alone, with a partner, on the phone; walks ended early. Phone track: calls per week.
+|Scoring or coding scheme|Per week: walks; minutes; walks alone or with a partner; walks ended early.
 |Validity and reliability|Counts. Record checked against the observer on observed walks.
 |Serves|Validation
 |Burden|None for residents.
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL6, UC02-F2-CL2; used-by → EM-03; operationalizes → HV-06.
+operationalizes → UC01-F1-CL6; used-by → EM-03; operationalizes → HV-06.
 
 = Measure - Observed emotion [M-03] =
 
@@ -75,7 +75,7 @@ OERS, rated live by the listener-observer (EM-02). No video, no audio stored.
 
 Windows per walk: at the door (5 min before); on the walk (each 10 min); after (10 min, in the lounge).
 
-Each walker rated separately. Phone walks: the resident only.
+Each walker rated separately.
 )))
 |Scoring or coding scheme|(((
 Five affects: pleasure, alertness, anxiety, sadness, anger. Each rated by duration within the window: 1 never; 2 under 16 s; 3 16-59 s; 4 1-5 min; 5 over 5 min.
@@ -112,7 +112,7 @@ operationalizes → UC01-F1-CL6, UC01-F2-CL1 (no lower); used-by → EM-01 (Buil
 Per slip:
 
 * Type: T thread lost; W word not found; R story repeated; B belief from another time; N person not recognised; S sensitive question
-* Repaired by: self; partner; relative; System; staff; nobody
+* Repaired by: self; partner; System; staff; nobody
 * Step used (IDP-01): wait; place; thread; shared topic; feeling; deferral
 * Seconds from slip to repair
 * Outcome: resumed; new topic; ended
@@ -120,7 +120,7 @@ Per slip:
 
 Recovered: talk resumes, on the topic or a new one, within 30 s, without face signs or distress.
 
-Per walk: recovery rate (recovered / slips); self-repair share; median seconds to repair; face signs per slip. Phone walks: R slips exposed by the relative ("You told me").
+Per walk: recovery rate (recovered / slips); self-repair share; median seconds to repair; face signs per slip. R slips exposed by the partner ("You told me already").
 )))
 |Validity and reliability|Bespoke. Nothing is recorded, so nothing can be re-coded: a second listener codes 20% of walks, live and independently; κ ≥ .60 for type and repairer (Landis & Koch, 1977). Disagreements are discussed after the walk and logged, never merged into one code.
 |Serves|Validation
@@ -128,7 +128,7 @@ Per walk: recovery rate (recovered / slips); self-repair share; median seconds t
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL3, UC01-F2-CL4; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-02, HV-06.
+operationalizes → UC01-F2-CL1, UC01-F2-CL3, UC01-F2-CL4; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-02, HV-06.
 
 = Measure - Conversation [M-05] =
 
@@ -140,7 +140,7 @@ operationalizes → UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL3, UC01-F2-CL4; used-by 
 |ID|M-05
 |Name|Conversation
 |Status|In Progress
-|Evidence basis|Interval coding adapted from the Quality of Interactions Schedule (QUIS; Dean, Proudfoot & Lindesay, 1993), developed for staff-resident interaction. The adaptation to resident-resident and resident-relative talk is bespoke.
+|Evidence basis|Interval coding adapted from the Quality of Interactions Schedule (QUIS; Dean, Proudfoot & Lindesay, 1993), developed for staff-resident interaction. The adaptation to talk between residents is bespoke.
 |Construct measured|How much the walkers talk, and how well.
 |Type|Quantitative (observational)
 |Instrument or procedure|Listener-observer, 2-minute intervals (EM-02).
@@ -151,7 +151,7 @@ operationalizes → UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL3, UC01-F2-CL4; used-by 
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL6, UC02-F2-CL2; used-by → EM-02, EM-03; operationalizes → HV-06, HV-07.
+operationalizes → UC01-F1-CL6; used-by → EM-02, EM-03; operationalizes → HV-06, HV-07.
 
 = Measure - Safety while talking [M-06] =
 
@@ -187,23 +187,21 @@ operationalizes → UC01-F3-CL5; used-by → EM-02, EM-03; operationalizes → H
 |Name|The walkers' own view
 |Status|In Progress
 |Evidence basis|Bespoke. Self-report read alongside observation, never alone: residents rate their own experience higher than observers do (Custers et al., 2013).
-|Construct measured|Whether the resident valued the walk, felt free to go or not, and wants to go again. On calls: the relative's view.
+|Construct measured|Whether the resident valued the walk, felt free to go or not, and wants to go again.
 |Type|Mixed
 |Instrument or procedure|(((
 Resident, after each observed walk, only if willing and not distressed: three faces, "How was the walk?"; "Again?" (yes/no); "What was good about it?"
 
 Listener-observer, before and at the start: pressure signs (agrees reluctantly; looks to partner or staff before answering; "if I must").
-
-Relative, after each call: three items, 1-5: how the call went; how your relative seemed; would you call this way again.
 )))
-|Scoring or coding scheme|Faces 1-3; "Again?" share of yes; "What was good" coded: company, place, talk, being out, nothing. Pressure signs per walk. Relative's items: mean.
+|Scoring or coding scheme|Faces 1-3; "Again?" share of yes; "What was good" coded: company, place, talk, being out, nothing. Pressure signs per walk.
 |Validity and reliability|Bespoke. Ceiling effects expected in self-report.
 |Serves|Validation
 |Burden|Low; one minute after the walk.
 
 == Graph edges ==
 
-operationalizes → UC02-F2-CL2, UC01-F1-CL8; used-by → EM-02, EM-03; operationalizes → HV-01, HV-07.
+operationalizes → UC01-F1-CL8; used-by → EM-02, EM-03; operationalizes → HV-01, HV-07.
 
 = Measure - Loneliness [M-08] =
 
@@ -269,7 +267,7 @@ Script check: every prepared line and template, before use (EM-01).
 
 Staged trials with known facts, including a wrong profile entry and a misheard topic (EM-01).
 
-In use: session record (F6); listener-observer (S slips in M-04; System errors noticed by a walker, a relative or the listener).
+In use: session record (F6); listener-observer (S slips in M-04; System errors noticed by a walker, staff or the listener).
 )))
 |Scoring or coding scheme|(((
 Deception by design: untruths, denials or playing along in the script (target 0).

@@ -165,7 +165,7 @@ HFC-02: grounds → UC01-F3-CL5; explains → HV-04; associated-measure → M-06
 
 HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL4; explains → HV-02, HV-06; associated-measure → M-04.
 
-HFC-04: grounds → UC01-F2-CL1, UC02-F2-CL2; explains → HV-06, HV-07; associated-measure → M-04, M-05.
+HFC-04: grounds → UC01-F2-CL1; explains → HV-06, HV-07; associated-measure → M-04, M-05.
 
 HFC-05: grounds → UC01-F2-CL1; explains → HV-06; associated-measure → M-01, M-04.
 

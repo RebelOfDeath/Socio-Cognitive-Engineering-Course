@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b5.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four methods. A prototype that shows every Function and is verified against staged events (EM-01). A protocol for observing walks live, without recording: emotion, slips and recovery, conversation, safety (EM-02). An ABAB test per case, on pair walks and phone walks (EM-03). Short interviews on privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates.
+**Abstract.** Four methods. A prototype that shows every Function and is verified against staged events (EM-01). A protocol for observing walks live, without recording: emotion, slips and recovery, conversation, safety (EM-02). An ABAB test per pair of residents (EM-03). Short interviews on privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates.
 
 = Evaluation Method - Prototype: demonstration and staged verification [EM-01] =
 
@@ -19,7 +19,7 @@ syntax: xwiki/2.1
 |Procedure summary|(((
 One Artifact (AT-01) in three builds:
 
-* Build A, operator-voiced: a researcher triggers every utterance from a console. Formative use with 2 resident pairs and 2 phone pairs who do not take part in EM-03: wait length, wording, whisper hints. Observed under EM-02.
+* Build A, operator-voiced: a researcher triggers every utterance from a console. Formative use with 4 resident pairs who do not take part in EM-03: wait length, wording. Observed under EM-02.
 * Build B, automated: sensing, walker model and alerts run on the devices. The operator approves each starter and each deferral before it plays.
 * Build C, demonstration: role-players; sensor events can be injected; the mind panel on a screen.
 
@@ -39,7 +39,6 @@ Staged verification on Build B: 20 trials per event (50 for disclosure events), 
 |Server|Laptop on a Wi-Fi router with no internet uplink; one encrypted store per resident|TECH-04, TECH-05
 |Landmarks|Five Bluetooth beacons: door, pond, roses, bench, gate|TECH-03
 |Door|Pepper; tablet for photos and yes/no|TECH-01
-|Calls|Softphone on the guide through a local phone exchange; the "relative" on a second handset|TECH-02 telephony
 |Staff|Second phone with the alert app|TECH-04
 |Operator|Console and mind panel on a laptop|Build A voice; Build B approvals
 
@@ -51,8 +50,7 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 
 |=Scene|=Events|=What the System shows
 |1 Pair walk (UC01)|Private consent at the door; re-introduction; a mid-story slip; a slip near a blocked topic; a stumble while talking; one walker presses "going in"|Waits, then echoes the thread to both; the blocked topic never offered; "Bench on your left"; the other walker offered a choice
-|2 Phone walk (UC02)|Call at the agreed time; a story repeated; the call passes 15 min; the relative presses the help key|A whispered hint to the relative only; a bench offered; alert on the staff phone
-|3 Walk alone (UC03)|Guide as conversation partner; "Is Thomas coming today?"; gate beacon|Truthful deferral; the trusted worker alerted; one orienting cue at the gate
+|2 Walk alone (UC03)|Guide as conversation partner; "Is Thomas coming today?"; gate beacon|Truthful deferral; the trusted worker alerted; one orienting cue at the gate
 |Close|Record and devices inspected|Six items in the record; no audio file; no traffic outside the home network
 
 == Staged verification ==
@@ -60,7 +58,6 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 |=Event|=Required behaviour|=Criterion (proposed; O-2)
 |Mid-sentence stop, 3-15 s|No System speech before the wait ends|8 s; 20/20
 |No resumption after the wait|Thread echoed to both, as a statement|≤ 3 s; 19/20
-|Story repeated on a call|Whisper to the relative only|≤ 5 s; never audible on the resident's side; 20/20
 |Starter without this walk's consent|Not used|0/50
 |Item blocked by the map for this pair|Never spoken|0/50
 |Question on a listed sensitive topic|Truthful deferral; trusted person alerted|alert ≤ 10 s, 20/20; the listed fact never stated, 0/50
@@ -69,7 +66,7 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 |Script and templates|No untruth, denial or playing along|0 lines
 |Stumble while talking|Offer to sit; second within 10 min: alert|≤ 3 s; ≤ 10 s
 |Set length reached mid-talk|Head-back cue|≤ 30 s
-|Gate; pull-cord; drop with no response; relative's help key|Alert|≤ 10 s; 20/20
+|Gate; pull-cord; drop with no response|Alert|≤ 10 s; 20/20
 |Walk ends|Thread and transcript deleted; record holds six items|100%
 |Network capture, full test day|No packet leaves the home network|0
 |File-system search, all devices|No audio file|0
@@ -91,14 +88,14 @@ produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC
 |Evidence basis|OERS (Lawton et al., 1996); slip coding from conversation analysis (Schegloff et al., 1977; Orange et al., 1996); process consent in dementia research (Dewing, 2007).
 |Procedure summary|(((
 1. Before the walk, each walker is asked whether the researcher may listen today. No, or signs of unease: no observation that day.
-1. The listener walks about 10 m behind and hears the walk through a headset, streamed live from the guide over the home network. Nothing is recorded or stored. Phone walks: the resident's side only.
+1. The listener walks about 10 m behind and hears the walk through a headset, streamed live from the guide over the home network. Nothing is recorded or stored.
 1. At the door: OERS, 5 min (M-03).
 1. On the walk: OERS every 10 min (M-03); one row per slip (M-04); talk and its quality every 2 min (M-05); safety and pressure checklist (M-06, M-07).
 1. After: the resident's view, if willing (M-07); OERS for 10 min in the lounge.
 1. Stop rule: anxiety, sadness or anger rated 4 or more, or any sign of dissent: observation ends; ST-04 is called.
 )))
 |Purpose|Validation; formative in EM-01 Build A
-|Human subjects required|Yes. Residents with supported consent and a representative; partners; relatives on calls.
+|Human subjects required|Yes. Residents with supported consent and a representative; their partners.
 |Measures used|M-03 to M-07, M-10
 |Cost and feasibility|One researcher, about 40 min per walk including door and lounge windows; two on reliability walks.
 |Known limitations|(((
@@ -131,23 +128,23 @@ used-by → EM-01 (Build A), EM-03; applies → M-03 to M-07, M-10.
 |Status|In Progress
 |Evidence basis|Single-case withdrawal design. Standards: at least three phase changes and five data points per phase (Kratochwill et al., 2010). Effect size: non-overlap of all pairs, NAP (Parker & Vannest, 2009).
 |Procedure summary|(((
-Two tracks of four cases: 4 resident pairs (8 residents); 4 resident-relative pairs (4 residents, 4 relatives). 12 residents. Each case is its own control. Walks alone are not tested here: no conversation to measure in most settings.
+Six cases, each a pair of residents: 12 residents. Each pair is its own control. Walks alone are not tested here: no conversation to measure in most settings.
 
-Inclusion: mild to moderate dementia; walks 15 min with or without a rollator; ST-06 agrees; the pair agrees to walk together; the relative calls at least weekly.
+Inclusion: mild to moderate dementia; walks 15 min with or without a rollator; ST-06 agrees; the pair agrees to walk together.
 
 Phases: familiarisation (1 week), A1 (2 weeks), B1 (3 weeks), A2 (2 weeks), B2 (3 weeks): 11 weeks. Each phase change falls on a day drawn at random, before the study, from a five-day window around its planned date.
 
-A: walks as today. The guide is carried and keeps the record; alerts (F5) on for safety; everything else off. Calls run through the guide on speaker, without hints.
+A: walks as today. The guide is carried and keeps the record; alerts (F5) on for safety; everything else off.
 
 B: the full System, with each resident's settings.
 
 At least 5 observed walks (EM-02) per case per phase. A phase is extended by up to one week to reach 5.
 )))
 |Purpose|Validation
-|Human subjects required|Yes. 12 residents, 4 relatives, care staff.
+|Human subjects required|Yes. 12 residents, care staff.
 |Measures used|M-02 to M-08, M-10
 |Cost and feasibility|High. Care-home access, ethics approval, supported consent, one listener per observed walk, 11 weeks.
-|Known limitations|Small n; no control group; no blinding; novelty; carry-over: relatives keep habits learnt from hints in A2.
+|Known limitations|Small n; no control group; no blinding; novelty; carry-over: pairs keep habits learnt in B1 during A2.
 
 == Outcomes ==
 
@@ -157,7 +154,7 @@ At least 5 observed walks (EM-02) per case per phase. A phase is extended by up 
 |Walks with company; minutes|M-02|Every walk, from the record
 |Conversation|M-05|Observed walks
 |Safety while talking|M-06|Observed walks; device events
-|Own view; pressure; relative's rating|M-07|After observed walks and calls
+|Own view; pressure|M-07|After observed walks
 |Loneliness|M-08|End of each phase
 |Sensitive questions; System errors and corrections; disclosures|M-10|Throughout
 
@@ -166,17 +163,17 @@ At least 5 observed walks (EM-02) per case per phase. A phase is extended by up 
 Set before the study starts:
 
 * Per case: visual analysis of level, trend, variability, immediacy, overlap and consistency across like phases (Kratochwill et al., 2010); NAP at each phase change (A1-B1, B1-A2, A2-B2); a randomisation test using the drawn change days
-* Across cases: median NAP per track; no pooling across tracks
-* UC01-F2-CL1 and UC02-F2-CL2 are supported if NAP ≥ .70 at all three phase changes in at least 3 of 4 cases in the track, with face signs (M-04) no higher in B
+* Across pairs: median NAP
+* UC01-F2-CL1 is supported if NAP ≥ .70 at all three phase changes in at least 4 of 6 pairs, with face signs (M-04) no higher in B
 * Any fall: walks paused for that case and reviewed with ST-06 before going on
-* Stumbles per walk-hour higher in B than in A in 2 or more cases: adverse UC01-F3-CL5 confirmed; starters only when seated before any further B phase
+* Stumbles per walk-hour higher in B than in A in 2 or more pairs: adverse UC01-F3-CL5 confirmed; starters only when seated before any further B phase
 * Any disclosure, or a System error that causes distress (M-10): B stopped for all cases until the cause is found and fixed
 * Other System errors: counted; above [threshold - O-2] per 100 statements, or left uncorrected, the source is fixed before B continues
 
 == Ethics ==
 
 * Approval by the university's research ethics committee. A medical ethics committee checks whether the local law on medical research with human subjects applies: participants lack capacity to consent.
-* Consent from the representative, plus the resident's own assent; process consent at every walk (Dewing, 2007); both residents in a pair; relatives for their calls.
+* Consent from the representative, plus the resident's own assent; process consent at every walk (Dewing, 2007); both residents in a pair.
 * Live listening agreed per walk (EM-02).
 * A2 removes help a resident may like: kept short; families told in advance.
 
@@ -188,7 +185,7 @@ Set before the study starts:
 
 == Graph edges ==
 
-produces → Evidence for UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL4, UC01-F3-CL5, UC01-F1-CL6, UC01-F1-CL10, and in part UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8; applies → M-02 to M-08, M-10.
+produces → Evidence for UC01-F2-CL1, UC01-F2-CL4, UC01-F3-CL5, UC01-F1-CL6, UC01-F1-CL10, and in part UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8; applies → M-02 to M-08, M-10.
 
 = Evaluation Method - Interviews [EM-04] =
 
@@ -201,7 +198,7 @@ produces → Evidence for UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL4, UC01-F3-CL5, UC
 |Name|Interviews: residents, relatives, staff
 |Status|In Progress
 |Evidence basis|Bespoke. Concern set from Niemeijer et al. (2010, 2015) and the Mental Health Foundation (2016).
-|Procedure summary|After A2 and after B2. Residents, if willing: three open questions. Relatives, care workers, coordinator: 20 minutes, semi-structured. Topics: help after slips, whispered hints, consent questions, the relationship map, truthful deferrals, feeling watched, listened in on or walked.
+|Procedure summary|After A2 and after B2. Residents, if willing: three open questions. Relatives, care workers, coordinator: 20 minutes, semi-structured. Topics: help after slips, consent questions, the relationship map, truthful deferrals, feeling watched, listened in on or walked.
 |Purpose|Validation
 |Human subjects required|Yes. Residents, relatives, staff.
 |Measures used|M-09

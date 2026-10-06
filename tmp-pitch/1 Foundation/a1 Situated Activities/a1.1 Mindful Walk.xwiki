@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Five activities. Three walks, by company: alone (SA-01), with a fellow resident (SA-02), with a relative on the phone (SA-03). Two occur in all three: losing and finding the thread of a conversation (SA-04), and answering a painful question (SA-05). Fresh air and movement stimulate memory and steady emotions; company gives a reason to go. Breakdowns: nobody to talk to, a partner who does not fit, a voice that cannot see, slips that cost face, answers that are untrue or come from the wrong person.
+**Abstract.** Two activities, both walks: alone (SA-01) and with a fellow resident (SA-02). Fresh air and movement stimulate memory and steady emotions; company gives a reason to go. Two breakdowns run through both: conversations that go off track, and painful questions asked of whoever is near. Others: nobody to talk to, a partner who does not fit, stumbles while talking.
 
 = Situated Activity - A walk on your own [SA-01] =
 
@@ -22,11 +22,13 @@ Provisional. Literature and group reasoning only.
 * Bratman et al. (2015): a walk in nature lowered rumination (healthy adults)
 * Detweiler et al. (2008): an enclosed garden on a dementia unit; fewer agitated behaviours (one unit, before-after)
 * Victor (2012): loneliness in care homes is common
+* Mental Health Foundation (2016): truth-telling and lying are both common in dementia care; practice is inconsistent
+* James et al. (2006): staff lie to residents, mostly to spare distress
 )))
 |Goal|Go out when you like: fresh air, movement, a change of scene. Back safely.
 |Performing Actor(s)|(((
 * ST-01: Resident - walks alone
-* ST-04: Care worker - opens the door; notices who is out
+* ST-04: Care worker - opens the door; notices who is out; answers painful questions
 * ST-06: Physiotherapist - assesses walking unaccompanied
 )))
 |Trigger|Restless; fine weather; garden door open; an old habit
@@ -38,25 +40,28 @@ Provisional. Literature and group reasoning only.
 1. Notice when to turn back: tired, cold
 1. Find the door; let staff know
 )))
-|Context|Only residents assessed fit (ST-06). Enclosed garden loop, one coded gate. Nobody to talk to; staff glance out of the window.
+|Context|Only residents assessed fit (ST-06). Enclosed garden loop, one coded gate. Nobody to talk to; staff glance out of the window. Questions go to whoever passes: a new worker, another resident. What to say about a death or a diagnosis is agreed in care plans or in staff heads, and not always passed on.
 |Frequency and duration|Varies widely; 5-30 min; mostly in fine weather
-|Tools and artifacts|Garden door, loop path, benches, rollator, a window onto the garden
+|Tools and artifacts|Garden door, loop path, benches, rollator, a window onto the garden, care plan
 |Existing workarounds|(((
 * Loop that leads back to the door
 * Door open in fine weather; staff keep an eye out
 * Accompanied walk when walking alone is not allowed
+* An agreed answer to painful questions, in the care plan
+* A kind lie ("He's at work")
 )))
 |Observed breakdowns|(((
 * Forgets where or why; back inside after a few minutes
 * Nobody to talk to: lonely; stops going out
-* Asks a passing worker a painful question (SA-05)
-* Fall, unseen
-* Tired, far from the door
+* A painful question to a passing worker: told bluntly, grief as if new (PS-03)
+* A kind lie, found out: trust lost
+* Different answers from different staff
+* Fall, unseen; tired, far from the door
 )))
 
 == Graph edges ==
 
-performed-by → ST-01 (supported by ST-04, ST-06); extended-by → SA-02, SA-03; includes → SA-05; illustrated-by → PS-03.
+performed-by → ST-01 (supported by ST-04, ST-06); extended-by → SA-02; illustrated-by → PS-03.
 
 = Situated Activity - A walk with a fellow resident [SA-02] =
 
@@ -72,7 +77,12 @@ performed-by → ST-01 (supported by ST-04, ST-06); extended-by → SA-02, SA-03
 Provisional. Literature and group reasoning only.
 
 * de Medeiros et al. (2012): residents with dementia form and keep friendships
+* Orange et al. (1996): in Alzheimer's disease, trouble in conversation grows and repair succeeds less often
+* Schegloff et al. (1977): speakers prefer to fix their own slips
+* Bora et al. (2015), meta-analysis: theory of mind is impaired in Alzheimer's disease
+* Clare (2003): people aware of decline protect themselves, or face it
 * Lundin-Olsson et al. (1997): older people who stop walking when they talk fall more often
+* Montero-Odasso et al. (2012): with cognitive impairment, walking slows and grows unsteady under a second task
 )))
 |Goal|Company as the reason to go out; a conversation both enjoy
 |Performing Actor(s)|(((
@@ -88,10 +98,11 @@ Provisional. Literature and group reasoning only.
 1. Introduce, or re-introduce
 1. Walk side by side, at one pace
 1. Talk: what they see, what they share
+1. After a slip: give time; then the last topic, a new one, or the surroundings
 1. Rest on a bench
 1. One wants to go back: both turn
 )))
-|Context|The match makes or breaks the walk. Staff know some shared pasts, and who dislikes whom, informally. Names are forgotten. Both may have dementia: neither notices the other's slips (SA-04). The more able partner can slip into minding the other. Talking slows walking and raises fall risk.
+|Context|The match makes or breaks the walk. Staff know some shared pasts, and who dislikes whom, informally. Names are forgotten. Slips grow more frequent as dementia progresses: a lost thread, a missing word, a story told twice, a belief from another time ("My mother is waiting"). Speakers prefer to repair their own slips; a partner with dementia often misses them. Many residents know they slipped, and feel it. Talking slows walking and raises fall risk.
 |Frequency and duration|Occasional; 15-30 min
 |Tools and artifacts|Staff knowledge, care record, life-story book, garden, benches
 |Existing workarounds|(((
@@ -99,187 +110,29 @@ Provisional. Literature and group reasoning only.
 * Re-introduce them at each walk
 * Same pair, same time, same route
 * Care worker walks along
+* Gentle redirection by staff: to the present, to the feeling, to a new topic
 )))
 |Observed breakdowns|(((
 * No partner; mismatch in pace or mood
 * Two residents who dislike each other, paired by someone who did not know
 * Agrees to please staff or the partner: "I suppose so"
-* Talk dries up; a slip goes unnoticed
+* A slip nobody notices: silence; the walk ends (PS-01)
+* Helped too fast, corrected or quizzed ("You told me already", "Do you remember...?"): embarrassed
+* After repeated slips: avoids the next walk
 * Stumbles while talking; tiredness missed while the talk is good
-* One wants to go back; the other's walk ends too
 )))
 
 == Graph edges ==
 
-performed-by → ST-01, ST-02 (supported by ST-04, ST-05); extends → SA-01; includes → SA-04; illustrated-by → PS-01.
+performed-by → ST-01, ST-02 (supported by ST-04, ST-05); extends → SA-01; illustrated-by → PS-01.
 
-= Situated Activity - A walk "on the phone" with a relative [SA-03] =
+= The two walks compared =
 
-**Report Format:** §1.1 Operational Demands
-
-== Fields ==
-
-|=Field|=Description
-|ID|SA-03
-|Name|A walk "on the phone" with a relative
-|Status|In Progress
-|Evidence basis|(((
-Provisional. Literature and group reasoning only. No study found of residents walking while on the phone.
-
-* Zamir et al. (2018): video calls in care homes; staff time, hearing and equipment stood in the way
-* Montero-Odasso et al. (2012): with cognitive impairment, walking slows and grows unsteady under a second task
-)))
-|Goal|Stay in touch between visits; company from someone who knows your life
-|Performing Actor(s)|(((
-* ST-01: Resident - walks, talks
-* ST-03: Relative - calls, talks
-* ST-04: Care worker - dials; keeps an eye out
-)))
-|Trigger|Agreed call time; the relative calls; the resident asks for them
-|Constituent Tasks|(((
-1. Agree a time
-1. Phone charged; hearing aid in
-1. Answer, or staff dial
-1. Recognise the voice
-1. Walk and talk at once
-1. Say what is around; hear the news
-1. End; agree the next call
-)))
-|Context|Relatives often live far away; visits weekly or less. Voice only: no face, no gesture; hearing loss, wind. A rollator needs both hands: speaker on, others hear. The relative cannot see a stumble, tiredness or a wrong turn. The relative knows the life story, yet "What did you do today?" fails.
-|Frequency and duration|Calls weekly or more, 5-20 min; on a walk, rare
-|Tools and artifacts|Mobile or ward phone, speaker, hearing aid, call times on the ward board
-|Existing workarounds|(((
-* Staff dial, then pass the phone
-* Fixed call time
-* Relative says who they are at once; asks about old times
-* Call during an accompanied walk
-)))
-|Observed breakdowns|(((
-* Missed call; voice not recognised; cannot hear
-* Story repeated; relative says "You told me" (SA-04)
-* "Come and get me": no answer that helps
-* Stumbles while talking; the relative cannot see or help
-* Calls grow rarer
-)))
-
-== Graph edges ==
-
-performed-by → ST-01, ST-03 (supported by ST-04); extends → SA-01; includes → SA-04; illustrated-by → PS-02.
-
-= Situated Activity - Losing and finding the thread [SA-04] =
-
-**Report Format:** §1.1 Operational Demands
-
-== Fields ==
-
-|=Field|=Description
-|ID|SA-04
-|Name|Losing and finding the thread
-|Status|In Progress
-|Evidence basis|(((
-Provisional. Literature and group reasoning only.
-
-* Orange et al. (1996): in Alzheimer's disease, trouble in conversation grows and repair succeeds less often
-* Schegloff et al. (1977): speakers prefer to fix their own slips
-* Bora et al. (2015), meta-analysis: theory of mind is impaired in Alzheimer's disease
-* Clare (2003): people aware of decline protect themselves, or face it
-)))
-|Goal|Keep talking after a slip, without losing face
-|Performing Actor(s)|(((
-* ST-01: Resident - slips, tries again
-* ST-02 or ST-03: Partner or relative - waits, helps
-* ST-04: Care worker - helps in passing
-)))
-|Trigger|A slip: thread lost mid-story; a word that will not come; a story told again; a belief from another time ("My mother is waiting"); someone not recognised
-|Constituent Tasks|(((
-1. Notice the slip
-1. Give time
-1. Speaker tries again
-1. Partner helps: the last topic, a new one, the surroundings
-1. Talk resumes, changes topic, or stops
-)))
-|Context|Slips grow more frequent, and repair less successful, as dementia progresses. A partner with dementia often misses the slip. Many residents know they slipped and feel it. Relatives repair best, but tire of repetition. Walking gives pauses and things to look at.
-|Frequency and duration|Many times per conversation; more when tired, later in the day
-|Tools and artifacts|Shared knowledge, life-story book, the surroundings
-|Existing workarounds|(((
-* Gentle redirection: to the present, to the feeling, to a new topic
-* Finish the sentence for them
-* "Do you remember...?"
-* "You told me that already"
-* Play along with an untrue belief
-)))
-|Observed breakdowns|(((
-* Nobody notices: silence; the walk ends
-* Helped too fast: the speaker loses the turn
-* Corrected or quizzed: embarrassed ("My head's no good any more")
-* Played along: trust lost when found out
-* After repeated slips: avoids talk and company
-)))
-
-== Graph edges ==
-
-performed-by → ST-01 with ST-02 or ST-03; occurs-in → SA-01 to SA-03; illustrated-by → PS-01, PS-02.
-
-= Situated Activity - Answering a painful question [SA-05] =
-
-**Report Format:** §1.1 Operational Demands
-
-== Fields ==
-
-|=Field|=Description
-|ID|SA-05
-|Name|Answering a painful question
-|Status|In Progress
-|Evidence basis|(((
-Provisional. Literature and group reasoning only.
-
-* Mental Health Foundation (2016): truth-telling and lying are both common in dementia care; practice is inconsistent
-* James et al. (2006): staff lie to residents, mostly to spare distress
-)))
-|Goal|A truthful answer, from someone the resident trusts, without new harm
-|Performing Actor(s)|(((
-* ST-01: Resident - asks
-* ST-04: Care worker - answers, stays
-* ST-03: Relative - agrees what is said; sometimes answers
-* ST-06: Physician - tells medical news
-)))
-|Trigger|"Where is my husband?"; "When can I go home?"; "What is wrong with me?"; a death or a diagnosis
-|Constituent Tasks|(((
-1. Recognise the question as sensitive
-1. Check what was agreed, and with whom
-1. Find the person who should answer
-1. Answer: truthful, short, kind
-1. Stay; comfort
-1. Note it for the next shift
-)))
-|Context|Asked of whoever is near: a new worker, a fellow resident, a voice on the phone. Agreements are in care plans or in staff heads, not always passed on. A death may be news each time it is told. Residents know things about each other, true or not.
-|Frequency and duration|Daily on a ward; some residents several times a day
-|Tools and artifacts|Care plan, handover notes, agreements with family
-|Existing workarounds|(((
-* An agreed answer in the care plan
-* Call the key worker
-* Change the subject
-* A kind lie ("He's at work")
-)))
-|Observed breakdowns|(((
-* Told bluntly by someone who did not know: grief as if new
-* A kind lie found out: trust lost
-* Different answers from different staff
-* A fellow resident or relative says too much
-* No answer: the question returns
-)))
-
-== Graph edges ==
-
-performed-by → ST-04 with ST-01 (supported by ST-03, ST-06); occurs-in → SA-01 to SA-03; illustrated-by → PS-03.
-
-= The three walks compared =
-
-|=Aspect|=SA-01 Alone|=SA-02 Fellow resident|=SA-03 Relative on the phone
-|Company|None|Present; often has dementia too|Remote; knows the life story
-|Notices a slip|Nobody|The partner, often not|The relative, by ear
-|Notices a stumble|Whoever looks out|The partner, if able|Nobody: voice only
-|Hears a painful question|Whoever passes|The partner, unprepared|The relative, if agreed
+|=Aspect|=SA-01 Alone|=SA-02 With a fellow resident
+|Company|None|Present; often has dementia too
+|Notices a slip|Nobody|The partner, often not
+|Notices a stumble|Whoever looks out|The partner, if able
+|Hears a painful question|Whoever passes|The partner, unprepared
 
 = References =
 
@@ -298,4 +151,3 @@ performed-by → ST-04 with ST-01 (supported by ST-03, ST-06); occurs-in → SA-
 * Orange, J. B., Lubinski, R. B. & Higginbotham, D. J. (1996). Conversational repair by individuals with dementia of the Alzheimer's type. //Journal of Speech and Hearing Research//, 39(4), 881-895.
 * Schegloff, E. A., Jefferson, G. & Sacks, H. (1977). The preference for self-correction in the organization of repair in conversation. //Language//, 53(2), 361-382.
 * Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.
-* Zamir, S., Hennessy, C. H., Taylor, A. H. & Jones, R. B. (2018). Video-calls to reduce loneliness and social isolation within care environments for older people: an implementation study using collaborative action research. //BMC Geriatrics//, 18, 62.

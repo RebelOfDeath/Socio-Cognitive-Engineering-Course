@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three scenarios, one per walk. Jan and Elena on the garden loop: a lost thread found again (DS-01). Jan on the phone with Anne: a repeated story, a bench, "Come and get me" (DS-02). Elena alone: "Is Thomas coming today?" (DS-03).
+**Abstract.** Two scenarios, one per walk. Jan and Elena on the garden loop: a lost thread found again, and a stumble while talking (DS-01). Elena alone: "Is Thomas coming today?" (DS-03).
 
 = Design Scenario - Pension day [DS-01] =
 
@@ -16,18 +16,6 @@ Myra clips on both guides and goes back to the ward. Pepper shows two photos: "J
 Later Elena says: "My head's no good any more." Jan: "Mine neither. Still got legs, though." They laugh; the guide says nothing. Talking, Jan catches the rollator on the kerb. "Bench on your left." They sit. At twenty-five minutes: "Time to head in. The door is past the roses."
 
 At the door Pepper says: "Welcome back. Pension day, and a queue to the bakery." The record: pair walk, 27 minutes, one stumble, nobody called. Nothing about the conversation.
-
-= Design Scenario - Anne on the line [DS-02] =
-
-//Reimagines PS-02. Realized by UC02. Technology: pocket guide with phone (TECH-02), local server (TECH-04), walker model (TECH-06).//
-
-Anne calls at the agreed time. Jan agreed to walk during calls, and to hints for Anne. The guide: "Anne's calling. Answer?" Jan presses the big button. "It's Anne."
-
-Jan walks the loop and tells the story of the dog that bit the postman. Ten minutes later it starts again. Only Anne hears the guide, a short whisper on the line: "Told before. The roses are out." Anne laughs at the ending, then asks: "Are the roses out yet?" "Red ones, by the bench."
-
-At fifteen minutes Jan has slowed. The guide, to Jan: "Bench on your left. Sit and talk?" Jan sits. "Come and get me, Anne." Anne answers the feeling: "You miss home. I miss you too. I'm coming on Sunday." The guide stays silent.
-
-They say goodbye at twenty minutes. The record: phone walk, 20 minutes, nobody called. Anne calls again that week.
 
 = Design Scenario - Is Thomas coming? [DS-03] =
 
@@ -44,7 +32,5 @@ The guide does not raise Thomas again. The record: walk alone, 24 minutes, sensi
 = Graph edges =
 
 DS-01: reimagines → PS-01; realized-by → UC01; features → HP-01, HP-02, HP-04, RP-01, RP-02.
-
-DS-02: reimagines → PS-02; realized-by → UC02; features → HP-01, HP-03, RP-02.
 
 DS-03: reimagines → PS-03; realized-by → UC03; features → HP-02, HP-04, RP-02.

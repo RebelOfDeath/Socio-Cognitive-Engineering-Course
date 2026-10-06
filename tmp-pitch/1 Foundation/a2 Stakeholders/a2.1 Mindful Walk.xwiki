@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Seven stakeholders. Three talk on the walk: the resident (ST-01), a fellow resident (ST-02), a relative on the phone (ST-03). Two support it: the care worker, who answers alerts and painful questions (ST-04), and the activity coordinator, who keeps pairs, settings and the relationship map (ST-05). Two set limits: medical and therapy staff (ST-06) and management (ST-07). Shared: the resident's well-being and trust. Divided on: freedom against safety, and how much the System may know and pass on.
+**Abstract.** Seven stakeholders. Two walk and talk: the resident (ST-01) and a fellow resident (ST-02). Three support the walk: the relative, who tells the life story and agrees what may be said (ST-03); the care worker, who answers alerts and painful questions (ST-04); the activity coordinator, who keeps pairs, settings and the relationship map (ST-05). Two set limits: medical and therapy staff (ST-06) and management (ST-07). Shared: the resident's well-being and trust. Divided on: freedom against safety, and how much the System may know and pass on.
 
 = Stakeholder - Resident with dementia [ST-01] =
 
@@ -15,7 +15,7 @@ syntax: xwiki/2.1
 |ID|ST-01
 |Name|Resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-05.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-02.
 |Type|Direct - walks, talks, consents, sets own preferences
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - company, a chat
@@ -27,11 +27,11 @@ syntax: xwiki/2.1
 * HV-05 Well-being (high) - fresh air, calm
 * HV-04 Safety (medium) - no falls, no getting lost
 )))
-|Relationship to other Stakeholders|Walks with ST-02, or talks with ST-03 on the phone. Helped by ST-04. Agrees settings with ST-05. Walking assessed by ST-06.
+|Relationship to other Stakeholders|Walks alone, or with ST-02. Family (ST-03) tells the life story. Helped by ST-04. Agrees settings with ST-05. Walking assessed by ST-06.
 
 == Graph edges ==
 
-performs → SA-01 to SA-04; asks-in → SA-05; holds → HV-01 to HV-08; appears-in → PS-01 to PS-03; elaborated-as → HP-01, HP-02 (§2.2).
+performs → SA-01, SA-02; holds → HV-01 to HV-08; appears-in → PS-01, PS-03; elaborated-as → HP-01, HP-02 (§2.2).
 
 = Stakeholder - Fellow resident [ST-02] =
 
@@ -43,7 +43,7 @@ performs → SA-01 to SA-04; asks-in → SA-05; holds → HV-01 to HV-08; appear
 |ID|ST-02
 |Name|Fellow resident (walking partner)
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-02, SA-04.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-02.
 |Type|Direct - walks and talks with ST-01; often has dementia too
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - a mate to talk to
@@ -56,7 +56,7 @@ performs → SA-01 to SA-04; asks-in → SA-05; holds → HV-01 to HV-08; appear
 
 == Graph edges ==
 
-performs → SA-02, SA-04; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01; elaborated-as → HP-01, HP-02 (§2.2).
+performs → SA-02; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01; elaborated-as → HP-01, HP-02 (§2.2).
 
 = Stakeholder - Relative [ST-03] =
 
@@ -68,20 +68,20 @@ performs → SA-02, SA-04; holds → HV-01 to HV-03, HV-05, HV-06; appears-in �
 |ID|ST-03
 |Name|Relative
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-03 to SA-05.
-|Type|Direct on calls - talks, receives hints. Indirect - tells the life story; agrees settings and answers.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-02.
+|Type|Indirect - tells the life story; agrees sensitive topics, answers and settings; may consent on the resident's behalf
 |Values and motivations|(((
-* HV-06 Social connectedness (high) - contact between visits
+* HV-06 Social connectedness (high) - their relative has company
 * HV-08 Truthfulness (high) - no lies told to their relative
-* HV-05 Well-being (high) - their relative calm after a call
+* HV-05 Well-being (high) - their relative calm
 * HV-07 Identity (high) - their relative stays the person they knew
 * HV-03 Privacy (low) - may want to know more than the resident would share
 )))
-|Relationship to other Stakeholders|Calls ST-01. Gives life story and sensitive topics to ST-05. Agrees with ST-04 who answers what. May consent on ST-01's behalf.
+|Relationship to other Stakeholders|Relative of ST-01. Gives life story and sensitive topics to ST-05. Agrees with ST-04 who answers what. May consent on ST-01's behalf.
 
 == Graph edges ==
 
-performs → SA-03; supports → SA-04, SA-05; holds → HV-03, HV-05 to HV-08; appears-in → PS-02, PS-03; elaborated-as → HP-03 (§2.2).
+supports → SA-01, SA-02; holds → HV-03, HV-05 to HV-08; appears-in → PS-03.
 
 = Stakeholder - Care worker [ST-04] =
 
@@ -93,7 +93,7 @@ performs → SA-03; supports → SA-04, SA-05; holds → HV-03, HV-05 to HV-08; 
 |ID|ST-04
 |Name|Care worker
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-05.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-02.
 |Type|Direct - starts walks, answers alerts; trusted person for named sensitive topics
 |Values and motivations|(((
 * HV-04 Safety (high) - every resident back, unharmed
@@ -105,7 +105,7 @@ performs → SA-03; supports → SA-04, SA-05; holds → HV-03, HV-05 to HV-08; 
 
 == Graph edges ==
 
-performs → SA-05; supports → SA-01 to SA-04; holds → HV-03 to HV-05, HV-08; appears-in → PS-01, PS-03; elaborated-as → HP-04 (§2.2).
+supports → SA-01, SA-02; holds → HV-03 to HV-05, HV-08; appears-in → PS-01, PS-03; elaborated-as → HP-04 (§2.2).
 
 = Stakeholder - Activity coordinator [ST-05] =
 
@@ -117,7 +117,7 @@ performs → SA-05; supports → SA-01 to SA-04; holds → HV-03 to HV-05, HV-08
 |ID|ST-05
 |Name|Activity coordinator
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-02, SA-05.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-02.
 |Type|Direct - keeps profiles, pairs, per-person settings and the relationship map
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - pairs that work
@@ -129,7 +129,7 @@ performs → SA-05; supports → SA-01 to SA-04; holds → HV-03 to HV-05, HV-08
 
 == Graph edges ==
 
-supports → SA-02, SA-05; holds → HV-01, HV-03, HV-06, HV-07.
+supports → SA-01, SA-02; holds → HV-01, HV-03, HV-06, HV-07.
 
 = Stakeholder - Medical and therapy staff [ST-06] =
 
@@ -141,7 +141,7 @@ supports → SA-02, SA-05; holds → HV-01, HV-03, HV-06, HV-07.
 |ID|ST-06
 |Name|Medical and therapy staff: physician, nurse, physiotherapist, psychologist
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-05.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-02.
 |Type|Indirect - assess fall risk and walking alone; set walk length; tell medical news
 |Values and motivations|(((
 * HV-04 Safety (high) - fall risk
@@ -153,7 +153,7 @@ supports → SA-02, SA-05; holds → HV-01, HV-03, HV-06, HV-07.
 
 == Graph edges ==
 
-supports → SA-01, SA-05; holds → HV-03 to HV-05, HV-08.
+supports → SA-01, SA-02; holds → HV-03 to HV-05, HV-08.
 
 = Stakeholder - Care home management [ST-07] =
 

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1160" height="470" fill="#ffffff"/>
+
+  <!-- Panel -->
+  <rect x="20" y="20" width="1120" height="430" rx="16" fill="#ffffff" stroke="#dde3de" stroke-width="2"/>
+  <path d="M20,36 a16,16 0 0 1 16,-16 h1088 a16,16 0 0 1 16,16 v38 h-1120 z" fill="#1f3a2b"/>
+  <text x="44" y="55" font-size="22" font-weight="600" fill="#ffffff">Pair walk · Jan and Elena · minute 12</text>
+  <text x="1116" y="55" font-size="17" fill="#cfe0d3" text-anchor="end">kept for this walk only</text>
+
+  <!-- Column headers -->
+  <text x="270" y="108" font-size="22" font-weight="600" fill="#1f3a2b">Elena</text>
+  <text x="720" y="108" font-size="22" font-weight="600" fill="#1f3a2b">Jan</text>
+
+  <!-- Row separators -->
+  <g stroke="#dde3de" stroke-width="1">
+    <line x1="36" y1="124" x2="1124" y2="124"/>
+    <line x1="36" y1="174" x2="1124" y2="174"/>
+    <line x1="36" y1="224" x2="1124" y2="224"/>
+    <line x1="36" y1="274" x2="1124" y2="274"/>
+    <line x1="36" y1="324" x2="1124" y2="324"/>
+    <line x1="36" y1="374" x2="1124" y2="374"/>
+  </g>
+
+  <!-- Row labels -->
+  <g font-size="18" font-weight="600" fill="#1f3a2b">
+    <text x="44" y="155">Common ground</text>
+    <text x="44" y="205">Thread</text>
+    <text x="44" y="255">Said already</text>
+    <text x="44" y="305">Belief now</text>
+    <text x="44" y="355">State</text>
+  </g>
+
+  <!-- Common ground -->
+  <circle cx="278" cy="149" r="6" fill="#7b9472"/>
+  <text x="292" y="155" font-size="19" fill="#222624">counter: may mention</text>
+  <circle cx="500" cy="149" r="6" fill="#8c6512"/>
+  <text x="514" y="155" font-size="19" fill="#222624">diagnosis: off-limits</text>
+  <circle cx="728" cy="149" r="6" fill="#7b9472"/>
+  <text x="742" y="155" font-size="19" fill="#222624">post round: may mention</text>
+
+  <!-- Thread, said already, belief -->
+  <g font-size="19" fill="#222624">
+    <text x="270" y="205">pension day, the queue</text>
+    <text x="720" y="205">the pond, the weather</text>
+    <text x="270" y="255">pension day, once</text>
+    <text x="720" y="255">the dog that bit the postman, once</text>
+    <text x="270" y="305" fill="#66706b">nothing flagged</text>
+    <text x="720" y="305" fill="#66706b">nothing flagged</text>
+  </g>
+
+  <!-- State -->
+  <rect x="262" y="331" width="330" height="34" rx="8" fill="#f3ead4"/>
+  <text x="274" y="355" font-size="19" font-weight="600" fill="#8c6512">searching · 6 s, mid-sentence</text>
+  <text x="720" y="355" font-size="19" fill="#222624">listening; has not noticed</text>
+
+  <!-- Next step -->
+  <rect x="36" y="388" width="1088" height="48" rx="10" fill="#e6ede7"/>
+  <text x="56" y="419" font-size="19" fill="#1f3a2b"><tspan font-weight="600">Next step:</tspan> wait 2 s more, then to both: "Elena was telling you about pension day."</text>
+</svg>

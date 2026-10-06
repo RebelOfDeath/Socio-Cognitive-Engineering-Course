@@ -54,7 +54,6 @@ Palm-sized; clips to a rollator or hangs on a lanyard. Same voice as Pepper.
 * Two large buttons: pause or answer; "going in". Pull-cord for help
 * Accelerometer: walking, stopped, pace, stumble
 * Beacon receiver (TECH-03)
-* Phone: calls through the home's own exchange. During a call, short hints mixed into the line towards the relative only
 )))
 |Limitations|A speaker is public; wind; hearing aids; battery. Recognition outdoors and in dialect untested (O-3). Cannot see faces or distress.
 |Maturity and feasibility|Prototype on a phone (EM-01); feasible within the project.

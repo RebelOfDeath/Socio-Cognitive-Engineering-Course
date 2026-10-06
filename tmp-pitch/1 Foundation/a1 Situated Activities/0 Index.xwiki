@@ -7,7 +7,7 @@ syntax: xwiki/2.1
 
 = Mindful Walk in brief =
 
-* A walk with company: a fellow resident, a relative on the phone, or the guide where agreed. Fresh air and movement stimulate memory and steady emotions.
+* A walk with company: a fellow resident, or the guide where agreed. Fresh air and movement stimulate memory and steady emotions.
 * Dementia breaks conversations: the thread goes, a word will not come, a story repeats. Each slip costs face; people withdraw and grow lonely.
 * The System follows the conversation and keeps a model of each walker: what they share, the thread, what was said, what they believe now, how they are.
 * After a slip it waits, then redirects gently: the place, the thread, a shared topic. It never quizzes or corrects.
@@ -18,5 +18,5 @@ syntax: xwiki/2.1
 = Concepts =
 
 |=Page|=Activities|=Status
-|[[a1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Mindful Walk.WebHome]]|SA-01 A walk on your own; SA-02 A walk with a fellow resident; SA-03 A walk "on the phone" with a relative; SA-04 Losing and finding the thread; SA-05 Answering a painful question|**Current**
+|[[a1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Mindful Walk.WebHome]]|SA-01 A walk on your own; SA-02 A walk with a fellow resident|**Current**
 |[[a1.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Morning Care (previous concept).WebHome]]|SA-08 Brushing teeth; SA-09 Taking medication; SA-10 Morning care round|Superseded

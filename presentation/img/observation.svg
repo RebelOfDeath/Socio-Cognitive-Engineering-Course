@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1160" height="440" fill="#ffffff"/>
+
+  <!-- Windows of one observed walk -->
+  <rect x="20" y="30" width="210" height="110" rx="14" fill="#eceeeb"/>
+  <text x="42" y="70" font-size="22" font-weight="600" fill="#1f3a2b">At the door</text>
+  <text x="42" y="98" font-size="17" fill="#66706b">5 min before</text>
+  <text x="42" y="122" font-size="17" fill="#66706b">emotion (OERS)</text>
+
+  <rect x="240" y="30" width="680" height="110" rx="14" fill="#1f3a2b"/>
+  <text x="262" y="70" font-size="22" font-weight="600" fill="#ffffff">On the walk</text>
+  <text x="262" y="98" font-size="17" fill="#cfe0d3">emotion in 10-minute windows · talk and safety every 2 minutes</text>
+  <text x="262" y="122" font-size="17" fill="#cfe0d3">every slip, as it happens</text>
+
+  <rect x="930" y="30" width="210" height="110" rx="14" fill="#eceeeb"/>
+  <text x="952" y="70" font-size="22" font-weight="600" fill="#1f3a2b">In the lounge</text>
+  <text x="952" y="98" font-size="17" fill="#66706b">10 min after</text>
+  <text x="952" y="122" font-size="17" fill="#66706b">emotion; own view</text>
+
+  <!-- Timeline of the walk -->
+  <rect x="240" y="176" width="222" height="28" rx="6" fill="#e6ede7"/>
+  <rect x="469" y="176" width="222" height="28" rx="6" fill="#e6ede7"/>
+  <rect x="698" y="176" width="222" height="28" rx="6" fill="#e6ede7"/>
+  <line x1="240" y1="190" x2="920" y2="190" stroke="#7b9472" stroke-width="3"/>
+  <g stroke="#7b9472" stroke-width="2">
+    <line x1="285" y1="183" x2="285" y2="197"/><line x1="331" y1="183" x2="331" y2="197"/><line x1="376" y1="183" x2="376" y2="197"/>
+    <line x1="421" y1="183" x2="421" y2="197"/><line x1="467" y1="183" x2="467" y2="197"/><line x1="512" y1="183" x2="512" y2="197"/>
+    <line x1="557" y1="183" x2="557" y2="197"/><line x1="603" y1="183" x2="603" y2="197"/><line x1="648" y1="183" x2="648" y2="197"/>
+    <line x1="693" y1="183" x2="693" y2="197"/><line x1="739" y1="183" x2="739" y2="197"/><line x1="784" y1="183" x2="784" y2="197"/>
+    <line x1="829" y1="183" x2="829" y2="197"/><line x1="875" y1="183" x2="875" y2="197"/>
+  </g>
+
+  <!-- Slips -->
+  <g fill="#c9962f">
+    <polygon points="380,178 392,190 380,202 368,190"/>
+    <polygon points="610,178 622,190 610,202 598,190"/>
+    <polygon points="805,178 817,190 805,202 793,190"/>
+  </g>
+  <g font-size="15" fill="#8c6512" text-anchor="middle">
+    <text x="380" y="170">slip</text>
+    <text x="610" y="170">slip</text>
+    <text x="805" y="170">slip</text>
+  </g>
+  <g stroke="#c9962f" stroke-width="2" stroke-dasharray="4 4">
+    <line x1="380" y1="204" x2="380" y2="244"/>
+    <line x1="610" y1="204" x2="610" y2="244"/>
+    <line x1="805" y1="204" x2="805" y2="244"/>
+  </g>
+
+  <!-- What is coded per slip -->
+  <rect x="20" y="246" width="1120" height="130" rx="14" fill="#f3ead4"/>
+  <text x="44" y="280" font-size="20" font-weight="600" fill="#8c6512">Each slip, coded live</text>
+  <g font-size="17" fill="#222624">
+    <text x="44" y="310">Type: lost thread · missing word · repeated story · belief from another time · not recognised · sensitive question</text>
+    <text x="44" y="336">Repaired by: self · partner · relative · System · staff · nobody</text>
+    <text x="44" y="362">Then: seconds to repair · did the talk resume? · signs of embarrassment within 30 s</text>
+  </g>
+
+  <text x="20" y="414" font-size="17" fill="#66706b">Asked before each walk: may the researcher listen? · Codes only, never words · Second listener on 20% of walks · Stop on distress</text>
+</svg>
