@@ -45,7 +45,7 @@ Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Fo
 |ID|OBJ-03
 |Name|Safe while talking
 |Status|In Progress
-|Evidence basis|VT-01; HFC-02. Lundin-Olsson et al. (1997).
+|Evidence basis|VT-01; HFC-02; PS-04. Lundin-Olsson et al. (1997).
 |Statement|Talk on the walk does not raise falls or let tiredness pass unnoticed.
 |Type|Value-derived
 |Derived from|HV-04 Safety; bounded by VT-01
@@ -69,7 +69,7 @@ Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Fo
 |ID|OBJ-05
 |Name|No secret revealed
 |Status|In Progress
-|Evidence basis|VT-04, VT-05.
+|Evidence basis|VT-04, VT-05; PS-05.
 |Statement|Nothing about a resident reaches another person without that resident's consent. Nothing leaves the care home.
 |Type|Value-derived
 |Derived from|HV-03 Privacy
@@ -81,7 +81,7 @@ Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Fo
 |ID|OBJ-06
 |Name|The resident's own walk
 |Status|In Progress
-|Evidence basis|VT-07; HV-01. Ryan & Deci (2000).
+|Evidence basis|VT-07; HV-01; PS-03. Ryan & Deci (2000).
 |Statement|Walks happen for the resident's own reasons, with the resident's own settings; never as a routine run for staff.
 |Type|Value-derived
 |Derived from|HV-01 Autonomy; bounded by VT-07
@@ -105,7 +105,7 @@ Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Fo
 |ID|OBJ-08
 |Name|Less lonely
 |Status|In Progress
-|Evidence basis|HFC-07. Victor (2012); Holwerda et al. (2014).
+|Evidence basis|HFC-07; PS-06. Victor (2012); Holwerda et al. (2014).
 |Statement|Over weeks, residents feel less lonely.
 |Type|Human-factors
 |Derived from|HV-06 Social connectedness; HFC-07
@@ -139,7 +139,7 @@ OBJ-08: derived-from → HV-06, HFC-07; served-by → F1, F2; referenced-by → 
 |ID|UC01
 |Name|A walk with a fellow resident
 |Status|In Progress
-|Evidence basis|Formalizes SA-02, PS-01 and DS-01. No primary data.
+|Evidence basis|Formalizes SA-02, PS-01, PS-03 to PS-05 and DS-01. No primary data.
 |Objective(s) served|OBJ-01 to OBJ-08
 |TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02, IDP-03
 |Actors|(((
@@ -199,7 +199,7 @@ Record: six items. Thread, transcript and exchanged items deleted.
 |ID|UC02
 |Name|A walk on your own
 |Status|In Progress
-|Evidence basis|Formalizes SA-01, PS-02 and DS-02. No primary data.
+|Evidence basis|Formalizes SA-01, PS-02, PS-06 and DS-02. No primary data.
 |Objective(s) served|OBJ-02 to OBJ-08
 |TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02, IDP-03
 |Actors|(((
@@ -257,12 +257,12 @@ Validation: does the Function have the intended effect.
 |UC01-F2-CL1|F2|OBJ-01|Positive. Wait-then-redirect raises the share of slips recovered on pair walks, compared with walks as today. Concerns ST-01, ST-02, SA-02, PS-01.|HFC-03, HFC-04, HFC-05; Schegloff et al. (1977); Orange et al. (1996).|EM-03; M-04, M-03|NAP ≥ .70 at all three phase changes in 4 of 6 pairs; face signs (M-04) and negative emotion (M-03) no higher in B.|5
 |UC01-F2-CL2|F2|OBJ-07|**Adverse.** Help after a slip is felt as being corrected or exposed. Concerns ST-01, HV-02.|HFC-06, HFC-07; Goffman (1967).|EM-03, EM-04; M-04 (face signs), M-09 (T)|Confirmed if face signs per slip rise in B, or residents describe the help as talking down (code T). If confirmed: "wait only" for that person.|5
 |UC01-F2-CL3|F2|OBJ-01|**Adverse.** The guide cuts in before the speaker can repair. Concerns ST-01, SA-02.|HFC-03; Schegloff et al. (1977).|EM-03; M-04 (self-repair share)|Confirmed if the self-repair share falls in B. If confirmed: a longer wait, per person.|5
-|UC01-F3-CL4|F3|OBJ-03|**Adverse.** Talk kept going on the walk raises stumbles, or lets walks run past tiredness. Concerns ST-01, HV-04.|HFC-02; Lundin-Olsson et al. (1997).|EM-03; M-06|Confirmed if stumbles per walk-hour are higher in B than in A in 2 or more pairs, or overruns rise. If confirmed: starters only when seated.|5, 7, 9
+|UC01-F3-CL4|F3|OBJ-03|**Adverse.** Talk kept going on the walk raises stumbles, or lets walks run past tiredness. Concerns ST-01, HV-04, PS-04.|HFC-02; Lundin-Olsson et al. (1997).|EM-03; M-06|Confirmed if stumbles per walk-hour are higher in B than in A in 2 or more pairs, or overruns rise. If confirmed: starters only when seated.|5, 7, 9
 |UC01-F1-CL5|F1|OBJ-02|Positive. Asking first, with introductions, leads to more walks with company and more pleasure on them. Concerns ST-01, ST-02, SA-02.|HFC-01; Ryan & Deci (2000).|EM-03; M-02, M-03|Walks with company per week, and the positive emotion score, higher in B in 4 of 6 pairs.|1, 3
 |UC02-F4-CL6|F4|OBJ-04|Positive. Painful questions are answered by the trusted person, and trust is kept: no complaint of being misled or fobbed off. Concerns ST-01, ST-04, SA-01, PS-02.|HFC-08; Mental Health Foundation (2016).|EM-03, EM-04; M-10, M-09 (U)|All listed questions deferred; trusted person arrives within [threshold - O-2]; System errors below [threshold - O-2] per 100 statements, all corrected; no U codes.|UC01 6; UC02 4
-|UC01-F1-CL7|F1|OBJ-06|**Adverse.** The walk is felt as being "taken out", for staff's sake. Concerns ST-01, ST-03, VT-07.|VT-07; Kitwood (1997).|EM-03, EM-04; M-09 (D), M-07 ("Again?")|Confirmed if residents or relatives use code D, or the "Again?" share falls in B. If confirmed: offers only at the resident's request.|1
+|UC01-F1-CL7|F1|OBJ-06|**Adverse.** The walk is felt as being "taken out", for staff's sake. Concerns ST-01, ST-03, VT-07, PS-03.|VT-07; Kitwood (1997).|EM-03, EM-04; M-09 (D), M-07 ("Again?")|Confirmed if residents or relatives use code D, or the "Again?" share falls in B. If confirmed: offers only at the resident's request.|1
 |UC01-F2-CL8|F2|OBJ-05|**Adverse.** A guide that listens is felt as being listened in on. Concerns ST-01, ST-02, HV-03, VT-05.|VT-05; Niemeijer et al. (2015).|EM-04; M-09 (L, W)|Confirmed if residents or partners use codes L or W. If confirmed: thread-keeping off by default, on at the resident's request.|4
-|UC01-F1-CL9|F1, F2|OBJ-08|Positive, exploratory. Loneliness is lower at the end of B phases than of A phases. Concerns ST-01, HV-06.|HFC-07; Holwerda et al. (2014).|EM-03; M-08|Lower in B in 4 of 6 pairs. Phases are short: a null result is likely and reported as such.|-
+|UC01-F1-CL9|F1, F2|OBJ-08|Positive, exploratory. Loneliness is lower at the end of B phases than of A phases. Concerns ST-01, HV-06, PS-06.|HFC-07; Holwerda et al. (2014).|EM-03; M-08|Lower in B in 4 of 6 pairs. Phases are short: a null result is likely and reported as such.|-
 
 == Graph edges ==
 

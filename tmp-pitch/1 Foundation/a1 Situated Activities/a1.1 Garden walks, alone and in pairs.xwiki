@@ -52,7 +52,7 @@ Provisional. Literature and group reasoning only.
 )))
 |Observed breakdowns|(((
 * Forgets where or why; back inside after a few minutes
-* Nobody to talk to: lonely; stops going out
+* Nobody to talk to: lonely; stops going out (PS-06)
 * A painful question to a passing worker: told bluntly, grief as if new (PS-02)
 * A kind lie, found out: trust lost
 * Different answers from different staff
@@ -61,7 +61,7 @@ Provisional. Literature and group reasoning only.
 
 == Graph edges ==
 
-performed-by → ST-01 (supported by ST-04, ST-06); extended-by → SA-02; illustrated-by → PS-02.
+performed-by → ST-01 (supported by ST-04, ST-06); extended-by → SA-02; illustrated-by → PS-02, PS-06.
 
 = Situated Activity - A walk with a fellow resident [SA-02] =
 
@@ -114,17 +114,18 @@ Provisional. Literature and group reasoning only.
 )))
 |Observed breakdowns|(((
 * No partner; mismatch in pace or mood
-* Two residents who dislike each other, paired by someone who did not know
-* Agrees to please staff or the partner: "I suppose so"
+* Two residents who dislike each other, paired by someone who did not know (PS-03)
+* Agrees to please staff or the partner: "I suppose so" (PS-03)
 * A slip nobody notices: silence; the walk ends (PS-01)
 * Helped too fast, corrected or quizzed ("You told me already", "Do you remember...?"): embarrassed
 * After repeated slips: avoids the next walk
-* Stumbles while talking; tiredness missed while the talk is good
+* A personal fact, used by staff to start a conversation, passed on (PS-05)
+* Stumbles while talking; tiredness missed while the talk is good (PS-01, PS-04)
 )))
 
 == Graph edges ==
 
-performed-by → ST-01, ST-02 (supported by ST-04, ST-05); extends → SA-01; illustrated-by → PS-01.
+performed-by → ST-01, ST-02 (supported by ST-04, ST-05); extends → SA-01; illustrated-by → PS-01, PS-03 to PS-05.
 
 = The two walks compared =
 

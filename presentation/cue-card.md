@@ -1,4 +1,4 @@
-# Mindful Walk: cue card
+# Walking with meaning: cue card
 
 **1. Original concept: Tooth brushing**
 
@@ -19,223 +19,250 @@
 - Link back to the hands
 - Walking AR tour against a seated VR tour of the same museum
 - Large effect: d = 1.31, 28 adults
-- Tested straight after and 48 hours later
+- Fresh air and movement also steady emotions
 
 **4. More to talk about**
 
-- Walks bring residents together: partner, volunteer, family
-- Every walk differs: season, weather, stories
+- Walks bring residents together
+- Side by side, a pause costs less: no face to watch, things to look at
 - Less repetition in the final presentation
 
 **5. What a walk can serve**
 
-- Six Human Values from our Foundation
-- Company: a partner with a shared past
-- Identity: the old round, the old songs
-- Autonomy: whether, where, how long
-- Well-being, dignity, safety
+- Eight Human Values from our Foundation
+- Company: a chat, a mate, less loneliness
+- Dignity: a slip is not remarked on
+- Truthfulness: no deception; painful news from a trusted person
+- Privacy: no secret passed on; nothing leaves the care home
+- Identity: the old trade, the old town
 
-**6. Mindful Walk**
+**6. Walking with meaning**
 
-- Walk: daily, outdoors, with company
-- Notice: feet, air, birdsong
-- Remember: the life story along the route
-- Rest and listen: rain days, dusk
-- Walking comes first
+- Walk: fresh air and movement stimulate memory and steady emotions
+- Talk: with a fellow resident, or with the guide where agreed
+- Ask: consent before joining someone, and before every conversation starter
+- Wait: the speaker gets the first chance to fix a slip
+- Redirect: gently, to the place, the thread, or a shared topic
 
-**7. SA-01 · Accompanied walk**
+**7. SA-01 · A walk on your own**
 
-- Today's fix: closed garden loop, coded exits, family and volunteers
-- The companion is the resident's anchor
-- Addressed by: present-moment cues, gate alert
+- Only residents assessed fit; enclosed garden loop
+- Loneliness: some stop going out
+- "Is my husband coming?": told bluntly by someone who did not know, or told "He's at work"
+- Addressed by: the guide as company or a bridge to a person; painful questions passed to a trusted person
 
-**8. SA-02 · Fitting walks between care tasks**
+**8. SA-02 · A walk with a fellow resident**
 
-- Walks compete with care tasks for the same staff time
-- Addressed by: walks with a partner and the guide; staff in reach
+- Slips: a lost thread, a missing word, a story told twice, a belief from another time
+- Both often have dementia: neither notices the other's slips
+- Also: two who dislike each other; "I suppose so", going along to please
+- Addressed by: asking each alone; a relationship map; the guide keeps the thread
 
-**9. SA-03 · Bad-weather indoor exercise**
+**9. Stakeholders**
 
-- The exercise stays; daylight, sights and company go
-- Addressed by: seated practice at the window
+- Seven stakeholders; two walk, three support, two set limits
+- The family agrees what may be said, and by whom
 
-**10. SA-04 · Walking with a fellow resident**
+**10. Problem scenarios**
 
-- The match decides whether the walk works
-- Addressed by: pairing on a shared past; memory prompts
+- Four on pair walks, two on walks alone
+- In each, something the walk depends on is left to chance: memory, consent, attention, company, trust
+- PS-05: a care worker introduces two widows by their grief; it is repeated in front of others
 
-**11. SA-05 · Relaxation session**
+**11. Human values**
 
-- Recordings are made for general audiences
-- Addressed by: concrete cues, paced to the resident
+- Social connectedness leads: company is the reason to walk
+- Truthfulness: no deception by design; errors corrected; painful truths from a trusted person
 
-**12. SA-06 · Winding down to rest**
-
-- Restlessness peaks when staff time is lowest
-- Addressed by: lying practice with the docked guide
-
-**13. SA-07 · Listening to radio, news or audiobooks**
-
-- Preferences known to family, not to whoever switches on
-- Addressed by: two-option offers from the life story
-
-**14. Stakeholders**
-
-- Eight stakeholders; ST-08 is new for this concept
-
-**15. Problem scenarios**
-
-- Three on the walk, three at rest
-
-**16. Human values**
-
-- Five carried over from morning care; Safety, Social connectedness and Identity are new
-
-**17. Value tensions**
+**12. Value tensions**
 
 - Right column: how the design resolves each tension
 
-**18. Human factors concepts**
+**13. Human factors concepts**
 
-- HFC-01 is the vacation question; the recall task tests it
+- HFC-01 is the vacation question
+- HFC-05: theory of mind weakens in dementia; the System keeps a simple model of each walker
 
-**19. Measures**
+**14. Measures**
 
-- Validated instruments where they exist: OERS, OME, CMAI
+- Validated instruments where they exist: OERS, the De Jong Gierveld loneliness scale
+- Nothing is recorded: observers code live
 
-**20. Evaluation methods**
+**15. Evaluation methods**
 
 - Detailed in the Evaluation section
 
-**21. Technology options**
+**16. Technology options**
 
-- Five selected, four rejected; the rejections are part of the rationale
+- Six selected, three rejected; the rejections are part of the rationale
+- No internet connection: nothing leaves the care home
 
-**22. What we keep from morning care**
+**17. What we keep from morning care**
 
 - New activity, same principles
-- Graduated prompting became cue, then silence
-- The care-worker handover became the alert
-- Three-item record then, four items now
+- Graduated prompting became wait, then redirect gently
+- The care-worker handover became the trusted person
+- Three-item record then, six items now
 - Also kept: staged tests, the within-resident comparison, adverse claims
 
-**23. Jan**
+**18. Jan**
 
-- Our persona
-- Postal worker: thirty years, on foot and by bike
+- Our first resident persona
+- Postal worker for thirty years, on foot and by bike
 - Moderate dementia: today is gone, the round is vivid
-- Refused a GPS watch: "I'm not a parcel"
-- Kees, two doors down, sorted the post at the same depot
-- On the walk: a memory prompt at the rose bed; they talk for ten minutes
+- Repeats stories; misses a partner's slip; laughs their own off
+- "I'm not a dog to be walked"
 
-**24. Voice in the pocket, person in reach**
+**19. Elena**
 
-- Pepper indoors only: no grass, no gravel
-- Pocket guide outside, same voice
-- Beacons at pond, roses, bench and gate
-- No GPS, no route stored; microphone off outdoors
-- A person always walks along
+- Our second resident persona
+- Mild Alzheimer's disease; notices her own slips, and is embarrassed by them
+- Widowed last year; lonely since
+- Lives two doors from Jan; both worked for the post in the same town
+- "Give me a moment first"
 
-**25. How the voice speaks**
+**20. Thread in the pocket, person in reach**
+
+- Pepper at the door: asks each walker alone, introduces, welcomes back
+- A pocket guide each; a copy of the System per resident, on a local server
+- Beacons at the pond, roses, bench and gate
+- Listens on the device; no GPS, no route; nothing leaves the home
+- The speaker repairs first, the companion second, the System third
+
+**21. What the guide keeps track of**
+
+- Theory of mind, kept simple: one model per walker, for one walk
+- Common ground: what they share, and what may be mentioned
+- The thread, what was said already, a belief from another time, the walker's state
+- It decides when to wait, redirect or pass on
+- Deleted at the end of the walk
+
+**22. How the voice speaks**
 
 - Three rules
-- Adult words, normal pitch
-- No praise, no endearments
+- Statements, not questions, while walking
+- Never "What were you saying?", "You told me", "Do you remember?"
 
-**26. Rest, seated or lying**
+**23. Talking on the move**
 
-- Rain: Pepper at the window
-- Breathing light on Pepper's shoulders
-- Dusk: guide docked at the bedside
-- Concrete cues: nothing to remember
+- Talking takes attention from the path; good talk hides tiredness
+- Starters only at a stop; no questions while walking
+- A second stumble alerts the care worker
+- The physiotherapist sets the walk length; the resident can shorten it
 
-**27. Listening that fits**
+**24. Is Thomas coming today?**
 
-- Two options from the life story
-- News in the morning, calm in the evening
-- News always on request, never hidden
-- Short stories; a recap for long books
+- Elena walks alone; Thomas died last year
+- The relationship map lists his death, the trusted person, and the approach agreed with her son
+- The guide never lies and never denies: it calls Myra
+- Myra comes, sits down, and answers as agreed
 
-**28. What could go wrong**
+**25. Settings follow the resident**
 
-- Memories can hurt: "I must go home"
-- The voice may sound childish
-- The robot may feel like being watched
-- Calm evenings may feel like censorship
+- The answer to "a dog being walked": the walk serves the resident's own reasons
+- Each resident decides how much help, and what may be shared
+- Jan: bridge only, no word help. Elena: company on walks alone, word help after a wait
+
+**26. What could go wrong**
+
+- Help can expose the slip it means to hide
+- The guide may cut in before the speaker repairs
+- Talking on the move: more stumbles, tiredness missed
+- The walk may feel like being walked, for staff's sake
+- A listening guide may feel like eavesdropping
+- An out-of-date map may let a secret through
 - Each one tested; if true, the design changes
 
-**29. Design scenarios**
+**27. Design scenarios**
 
-- Same resident, Jan, in all three
+- One per walk
 
-**30. Personas and robot profiles**
+**28. Personas and robot profiles**
 
-- Four people, two devices, one voice
+- Three people, two devices, one voice
+- Settings per resident
 
-**31. Objective stories**
+**29. Objective stories**
 
 - Each ties a Function to a value, in a stakeholder's words
+- OS-02 is Myra's: "I want the guide to fetch me, not to answer her"
 
-**32. Objectives**
+**30. Objectives**
 
-- Four Musts; walking comes first
+- Six Musts; talk that recovers comes first
 
-**33. Use cases and functions**
+**31. Use cases and functions**
 
-- Three use cases share six functions
+- Two use cases share six functions
+- UC01, the pair walk, is the main use case
 
-**34. Claims**
+**32. Claims**
 
-- Fourteen claims, four adverse
+- Nine claims, five adverse
 - Success criteria in the Evaluation section
 
-**35. Design patterns**
+**33. Design patterns**
 
 - One team pattern, three interaction patterns
 
-**36. Evaluation**
+**34. Evaluation**
 
 - Verification: do the Functions work as specified (Premises)
 - Validation: do they have the intended effect (Claims)
-- Four phases, thirteen weeks
+- Four phases, sixteen weeks
 
-**37. Evaluation plan**
+**35. Evaluation plan**
 
-- Phase 1: technical checks, no residents
-- Phase 2: human-operated prototype, tune the voice
-- Phase 3: ABAB validation of the Claims
-- Phase 4: interviews with staff and family
+- Phase 1: prototype and staged checks, no residents
+- Phase 2: operator-voiced pilot; tune the wait and the wording
+- Phase 3: ABAB validation of the Claims, six pairs
+- Phase 4: interviews with residents, relatives and staff
 - Ethics approval before any resident takes part
 
-**38. Phase 1: technical verification**
+**36. The prototype: three builds**
+
+- Shows every Function end to end
+- The screen shows each walker's model live, and why the guide chose each step
+- The demo ends by showing what is not kept: no audio file, no traffic outside the home
+
+**37. Phase 1: staged verification**
 
 - Staged events against a timestamped reference log
 - Premises PR1-PR6
 - Numbers are proposals; care workers set the final ones
 
-**39. Phase 2: human-operated prototype test**
+**38. Phase 2: operator-voiced pilot**
 
 - Formative: before anything is automated
-- Each factor varied across short walks and sessions
-- The wording residents respond to best goes into the script
+- Each factor varied across short walks
+- What residents respond to best becomes the default
 
-**40. Phase 3: summative validation**
+**39. Phase 3: summative validation**
 
 - Single-case ABAB: baseline, intervention, baseline, intervention
-- 8-12 residents, each their own control
-- Walk data every walk; observer on sample walks
-- Agitation rated by staff at the end of each phase
-- Recall task and interview in intervention phases only
+- Six pairs of residents, 12 in all; each pair is its own control
+- Phase changes on randomly drawn days
+- At least 5 observed walks per phase
+- Safety alerts stay on in every phase
 
-**41. Recall task: ambulatory versus seated encoding**
+**40. Observed walks: live listening, no recording**
 
-- The vacation question, tested on residents (CL3)
-- Same target event: a bell, walking or seated
-- One hour later: free recall, then a choice of three pictures
-- Stop at any sign of discomfort
+- One researcher per walk, about 10 m behind, listening through a headset
+- Asked before each walk: may the researcher listen today?
+- Emotion rated live (OERS); every slip coded: type, who repaired, how fast, at what cost to face
+- Codes only, never words
+- Stop at any sign of distress
 
-**42. Success criteria**
+**41. Success criteria**
 
 - Each criterion is set before the study starts
-- Staffing counts only if human company stays the same
-- A null result on recall weakens the walking-first argument; we report it either way
+- Any disclosure, or an error that causes distress, stops the B phase
+- A null result on loneliness is likely; we report it either way
+
+**Closing, if time: next steps**
+
+- Relationship map and consent forms with care staff
+- Evidence pass on the references
+- Build A of the prototype on the garden loop
+- Ethics approval before any resident takes part
+- Open for questions

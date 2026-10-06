@@ -1,0 +1,338 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a3%20Problem%20Scenario/spaces/a3.1%20Mindful%20Walk/pages/WebHome
+title: a3.1 What goes wrong on a walk
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Six scenarios. On pair walks: a slip nobody noticed (PS-01), a pairing nobody wanted (PS-03), talk that hides tiredness (PS-04), a secret used to start a conversation (PS-05). On walks alone: a painful question answered by the wrong person (PS-02), and nobody to talk to (PS-06). In each, something the walk depends on (memory, consent, attention, company, trust) is left to chance.
+
+= Problem Scenario - A slip nobody noticed [PS-01] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-01
+|Name|A slip nobody noticed
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-02 and the a2.1 records. No resident or care worker has confirmed it.
+
+* Orange et al. (1996): repair succeeds less often in Alzheimer's disease
+* Bora et al. (2015): theory of mind impaired in Alzheimer's disease
+* Lundin-Olsson et al. (1997): stopping to talk predicts falls
+)))
+|Narrative|(((
+After lunch two residents walk the garden loop; a care worker paired them. She ran a post office counter and is telling him about pension day. Mid-sentence the word goes, then the story. He has dementia too, does not notice, and talks about the weather.
+
+She falls silent. Pointing at the pond, he catches his foot on the edge of the path; she grabs his arm. At the bench she says: "My head's no good any more," and asks to go in. The next day she is "too tired" to walk.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+* ST-04: Care worker
+)))
+|Activities involved|SA-02: A walk with a fellow resident
+|Breakdown point|A slip that nobody repairs, and that costs face
+|Causes|(((
+Root causes:
+
+* Memory and word-finding loss
+* The partner's weakened theory of mind: the slip goes unnoticed
+* Nobody keeps the thread
+
+Contributing causes:
+
+* Walking and talking at once
+* Fatigue
+* Awareness of decline
+)))
+|Sub-problems|(((
+1. Detection: nobody notices the slip
+1. Recovery: no way back into the story
+1. Face: the slip exposes her
+1. Safety: talking on the move, a stumble
+1. Withdrawal: she avoids the next walk
+)))
+|Out of scope|(((
+* Speech and language therapy - ST-06
+* Pairing without staff and without both residents' consent
+* Treating low mood - ST-06
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-02, ST-04, SA-02; reimagined-as → DS-01 (§2.1).
+
+= Problem Scenario - The wrong answer [PS-02] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-02
+|Name|The wrong answer
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-01 and the a2.1 records. No resident or care worker has confirmed it.
+
+* Mental Health Foundation (2016): truth and lies in dementia care
+)))
+|Narrative|(((
+A resident walks the garden alone. Her husband died last year. A new care worker passes, and she asks: "Is Thomas coming today?" Nobody told the worker, who says: "Your husband passed away, didn't you know?" She weeps as if hearing it for the first time.
+
+Last week another worker said: "He's at work." She now trusts neither.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-04: Care worker
+* ST-03: Relative (agreement not passed on)
+)))
+|Activities involved|SA-01: A walk on your own
+|Breakdown point|A painful question answered by someone uninformed; earlier, an untrue answer
+|Causes|(((
+Root causes:
+
+* The death is not retained
+* The question goes to whoever is near
+* Agreements kept in staff heads
+
+Contributing causes:
+
+* Staff turnover
+* No shared rule on truth
+* Loneliness on walks alone
+)))
+|Sub-problems|(((
+1. Detection: the question is sensitive
+1. Routing: who should answer
+1. Truth: one truthful answer, from a trusted person
+1. Trust: the same answer from all staff
+)))
+|Out of scope|(((
+* Grief counselling - ST-06
+* Deciding what is told - care team with family
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-03, ST-04, SA-01; reimagined-as → DS-02 (§2.1).
+
+= Problem Scenario - A pairing nobody wanted [PS-03] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-03
+|Name|A pairing nobody wanted
+|Status|In Progress
+|Evidence basis|Provisional. Constructed from SA-02 and the a2.1 records. Group reasoning only; no resident or care worker has confirmed it.
+|Narrative|(((
+A new care worker sees two residents sitting alone and suggests, in front of both, that they walk together. He says "I suppose so"; she does not answer, and goes along. Last month they argued over a chair in the lounge. The regular staff know; the new worker does not.
+
+On the loop he corrects her twice. She walks faster, then sits on a bench and refuses to go on. The care worker is called from the ward to bring them in, one at a time.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+* ST-04: Care worker
+* ST-05: Activity coordinator (pairs not recorded)
+)))
+|Activities involved|SA-02: A walk with a fellow resident
+|Breakdown point|A pairing made by someone who did not know their history, agreed to under pressure
+|Causes|(((
+Root causes:
+
+* Who dislikes whom is known informally, not recorded
+* Asked together, "no" is hard to say
+* The feeling of a quarrel outlasts the memory of its cause
+
+Contributing causes:
+
+* Staff turnover
+* The wish to get residents out
+* No easy way to end a pair walk
+)))
+|Sub-problems|(((
+1. Knowledge: the history between two residents is not recorded
+1. Consent: asked together, one goes along to please
+1. Conflict: correction and irritation on the walk
+1. Exit: no graceful way to end the walk
+)))
+|Out of scope|(((
+* Resolving conflicts between residents - ST-04, ST-05
+* Where residents live and sit
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-02, ST-04, ST-05, SA-02; addressed-by → F1, IDP-02, TECH-05.
+
+= Problem Scenario - One more story [PS-04] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-04
+|Name|One more story
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-02 and the a2.1 records. No resident or physiotherapist has confirmed it.
+
+* Lundin-Olsson et al. (1997): stopping to talk predicts falls
+* Montero-Odasso et al. (2012): walking slows and grows unsteady under a second task
+)))
+|Narrative|(((
+Two residents are on their third loop, deep in stories about the town's old dance hall. His physiotherapist set twenty minutes; they are at forty. He slows and leans on his rollator, but keeps talking.
+
+Turning to her mid-sentence, he misses the edge of the path and goes down on one knee. Nobody is near. Back inside he is exhausted and sleeps through dinner.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+* ST-04: Care worker
+* ST-06: Physiotherapist
+)))
+|Activities involved|SA-02: A walk with a fellow resident
+|Breakdown point|Good talk hides tiredness and draws attention from the path
+|Causes|(((
+Root causes:
+
+* Walking and talking share limited attention
+* Engaged talk masks fatigue
+* Nobody on the walk keeps time or watches pace
+
+Contributing causes:
+
+* The walk length is in the care plan, not on the walk
+* Turning to face the partner while walking
+* A rollator in one hand, gestures with the other
+)))
+|Sub-problems|(((
+1. Attention: talk takes it from the path
+1. Fatigue: not noticed in time
+1. Time: the walk overruns
+1. Help: a fall, out of sight of staff
+)))
+|Out of scope|(((
+* Fall-risk assessment and training - ST-06
+* Changes to paths and benches - ST-07
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-02, ST-04, ST-06, SA-02; addressed-by → F3, F5; reimagined-as → DS-01 (in part: the bench, the head-back cue).
+
+= Problem Scenario - A secret passed on [PS-05] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-05
+|Name|A secret passed on
+|Status|In Progress
+|Evidence basis|Provisional. Constructed from SA-02 and the a2.1 records. Group reasoning only; no resident or care worker has confirmed it.
+|Narrative|(((
+To get two residents talking, a care worker introduces them: "You have something in common: you both lost your husbands this year." One of them had told only her daughter how hard that was, and wanted it kept that way.
+
+On the next walk, with a third resident nearby, the other asks her whether she still cries at night. She goes inside, and stops walking with anyone.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+* ST-04: Care worker
+* ST-03: Relative (told in confidence)
+)))
+|Activities involved|SA-02: A walk with a fellow resident
+|Breakdown point|A personal fact used to start a conversation, without its owner's consent
+|Causes|(((
+Root causes:
+
+* Staff use what they know to connect residents
+* No rule on what may be shared, and with whom
+* A partner with dementia repeats what she hears, without a sense of what is private
+
+Contributing causes:
+
+* The wish to find common ground quickly
+* Weakened theory of mind: the partner does not see the hurt
+)))
+|Sub-problems|(((
+1. Consent: nobody asked the owner
+1. Scope: told to one person, repeated to others
+1. Trust: she withdraws from company
+)))
+|Out of scope|(((
+* What residents choose to tell each other themselves
+* Confidentiality of care records - ST-07
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-02, ST-03, ST-04, SA-02; addressed-by → F1, IDP-02, TECH-05.
+
+= Problem Scenario - Nobody to talk to [PS-06] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-06
+|Name|Nobody to talk to
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-01 and the a2.1 records. No resident or care worker has confirmed it.
+
+* Victor (2012): loneliness in care homes is common
+)))
+|Narrative|(((
+For years he walked his dog twice a day and chatted at every gate. In the care home he walks the garden loop alone. Nobody to talk to; he tells the bench the same story twice. The walks get shorter.
+
+By winter he no longer goes out, and sits by the window. Staff notice only when his mood drops and his legs weaken.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-04: Care worker
+* ST-05: Activity coordinator
+)))
+|Activities involved|SA-01: A walk on your own
+|Breakdown point|Without company the walk loses its reason, and the resident withdraws
+|Causes|(((
+Root causes:
+
+* Loneliness
+* No partner who fits; family far away
+* The walk had a purpose (the dog, the neighbours) that is gone
+
+Contributing causes:
+
+* Staff time
+* Gradual withdrawal is hard to see
+* Fear of slips in company
+)))
+|Sub-problems|(((
+1. Company: nobody to talk to
+1. Reason: the walk loses its purpose
+1. Notice: withdrawal is seen late
+1. Bridge: no route from walking alone to walking with someone
+)))
+|Out of scope|(((
+* Treating low mood - ST-06
+* Visiting arrangements of families
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-04, ST-05, SA-01; addressed-by → F1 (bridge), F2 (conversation partner, where agreed); reimagined-as → DS-02 (in part: the guide as company).
+
+= References =
+
+* Bora et al. (2015); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Montero-Odasso et al. (2012); Orange et al. (1996); Victor (2012). See a1.1 References.

@@ -20,7 +20,7 @@
   <text x="322" y="94" font-size="26" font-weight="600" fill="#1f3a2b">Operator-voiced</text>
   <text x="322" y="124" font-size="26" font-weight="600" fill="#1f3a2b">pilot</text>
   <text x="322" y="168" font-size="18" fill="#222624">Build A (EM-01)</text>
-  <text x="322" y="194" font-size="18" fill="#222624">2 pairs, 2 phone pairs</text>
+  <text x="322" y="194" font-size="18" fill="#222624">4 resident pairs</text>
   <text x="322" y="220" font-size="18" fill="#222624">Observed walks (EM-02)</text>
   <text x="322" y="262" font-size="18" font-style="italic" fill="#1f3a2b">Do the wait and the</text>
   <text x="322" y="286" font-size="18" font-style="italic" fill="#1f3a2b">wording feel right?</text>
@@ -32,9 +32,9 @@
   <text x="602" y="56" font-size="17" fill="#cfe0d3">Phase 3 · Weeks 5-15</text>
   <text x="602" y="94" font-size="26" font-weight="600" fill="#ffffff">Summative</text>
   <text x="602" y="124" font-size="26" font-weight="600" fill="#ffffff">validation</text>
-  <text x="602" y="168" font-size="18" fill="#ffffff">ABAB per case (EM-03)</text>
-  <text x="602" y="194" font-size="18" fill="#ffffff">12 residents, 4 relatives</text>
-  <text x="602" y="220" font-size="18" fill="#ffffff">Claims CL1-CL10</text>
+  <text x="602" y="168" font-size="18" fill="#ffffff">ABAB per pair (EM-03)</text>
+  <text x="602" y="194" font-size="18" fill="#ffffff">6 pairs, 12 residents</text>
+  <text x="602" y="220" font-size="18" fill="#ffffff">Claims CL1-CL9</text>
   <text x="602" y="262" font-size="18" font-style="italic" fill="#ffffff">Are the Claims confirmed?</text>
 
   <polygon points="914,155 926,165 914,175" fill="#1f3a2b"/>

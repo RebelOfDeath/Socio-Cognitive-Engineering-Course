@@ -71,12 +71,6 @@
   <text x="340" y="62" font-size="20" font-weight="600" fill="#222624">Jan and Elena</text>
   <text x="340" y="86" font-size="16" fill="#66706b">a pocket guide each</text>
 
-  <!-- Relative on the phone -->
-  <rect x="862" y="44" width="24" height="40" rx="5" fill="none" stroke="#1f3a2b" stroke-width="3"/>
-  <circle cx="874" cy="77" r="2.5" fill="#1f3a2b"/>
-  <text x="1120" y="62" font-size="20" font-weight="600" fill="#222624" text-anchor="end">Or a relative, by phone</text>
-  <text x="1120" y="86" font-size="16" fill="#66706b" text-anchor="end">hints reach the relative only</text>
-
   <!-- Legend -->
   <circle cx="348" cy="420" r="7" fill="#c9962f"/>
   <text x="364" y="426" font-size="17" fill="#66706b">Beacon: a place to talk about, or a gate alert · no GPS · nothing leaves the home</text>

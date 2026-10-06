@@ -128,7 +128,7 @@ style: |
 ![bg brightness:.6](img/bench-c.jpg)
 
 <!--
-- Walks bring people together: a fellow resident, a relative on the phone
+- Walks bring residents together
 - Side by side, a pause costs less: no face to watch, things to look at
 - Less repetition in the final presentation
 -->
@@ -155,7 +155,7 @@ style: |
 - Identity: the old trade, the old town
 -->
 
-## Mindful Walk
+## Walking with meaning
 
 <!-- _class: verbs -->
 
@@ -167,7 +167,7 @@ style: |
 
 <!--
 - Walk: fresh air and movement stimulate memory and steady emotions
-- Talk: with a fellow resident, or a relative on the phone
+- Talk: with a fellow resident, or with the guide where agreed
 - Ask: consent before joining someone, and before every conversation starter
 - Wait: the speaker gets the first chance to fix a slip
 - Redirect: gently, to the place, the thread, or a shared topic
@@ -182,12 +182,13 @@ style: |
 | Who | Resident, alone; staff glance from the window |
 | When | Varies widely · 5-30 min · fine weather |
 | Goal | Fresh air, movement, a change of scene |
-| What breaks down | Nobody to talk to<br>Forgets where or why<br>A painful question to a passing worker |
+| What breaks down | Nobody to talk to<br>A painful question to a passing worker<br>A kind lie, found out |
 
 <!--
 - Only residents assessed fit; enclosed garden loop
 - Loneliness: some stop going out
-- Addressed by: the guide as a bridge to a person, or as company where agreed
+- "Is my husband coming?": told bluntly by someone who did not know, or told "He's at work"
+- Addressed by: the guide as company or a bridge to a person; painful questions passed to a trusted person
 -->
 
 ## SA-02 · A walk with a fellow resident
@@ -199,63 +200,13 @@ style: |
 | Who | Two residents, matched by staff |
 | When | Occasional · 15-30 min |
 | Goal | Company as the reason to go out |
-| What breaks down | Two who dislike each other<br>"I suppose so": going along to please<br>A slip nobody notices |
+| What breaks down | A slip nobody notices<br>Corrected or quizzed: embarrassed<br>Stumbles while talking |
 
 <!--
+- Slips: a lost thread, a missing word, a story told twice, a belief from another time
 - Both often have dementia: neither notices the other's slips
-- Talking slows walking and raises fall risk
+- Also: two who dislike each other; "I suppose so", going along to please
 - Addressed by: asking each alone; a relationship map; the guide keeps the thread
--->
-
-## SA-03 · A walk on the phone with a relative
-
-<!-- _class: sa -->
-
-| | |
-|---|---|
-| Who | Resident walking; relative calling |
-| When | Calls weekly or more · 5-20 min |
-| Goal | Stay in touch between visits |
-| What breaks down | "You told me already"<br>A stumble the relative cannot see<br>"Come and get me" |
-
-<!--
-- Voice only: no face, no gesture; wind, hearing loss
-- The relative knows the life story, yet "What did you do today?" fails
-- Addressed by: whispered hints to the relative; a bench offered; a help key
--->
-
-## SA-04 · Losing and finding the thread
-
-<!-- _class: sa -->
-
-| | |
-|---|---|
-| Who | Resident, with a partner or a relative |
-| When | Many times per conversation |
-| Goal | Keep talking after a slip, without losing face |
-| What breaks down | Nobody notices<br>Helped too fast, or quizzed<br>Withdraws after repeated slips |
-
-<!--
-- Slips: a lost thread, a missing word, a repeated story, a belief from another time
-- Speakers prefer to fix their own slips; in dementia, repair succeeds less often
-- Addressed by: wait, then redirect gently
--->
-
-## SA-05 · Answering a painful question
-
-<!-- _class: sa -->
-
-| | |
-|---|---|
-| Who | Resident asks; whoever is near answers |
-| When | Daily on a ward |
-| Goal | A truthful answer, from someone trusted |
-| What breaks down | Blunt news from a stranger<br>A kind lie, found out<br>Different answers from different staff |
-
-<!--
-- "Where is my husband?" "When can I go home?"
-- Agreements are in staff heads, not passed on
-- Addressed by: the guide defers to a trusted person; one agreed answer
 -->
 
 ## Stakeholders
@@ -266,15 +217,15 @@ style: |
 |---|---|---|
 | ST-01 | Resident with dementia | walks, talks, consents |
 | ST-02 | Fellow resident | walking partner |
-| ST-03 | Relative | on the phone; keeper of the life story |
+| ST-03 | Relative | life story, agreed answers |
 | ST-04 | Care worker | alerts, painful questions |
 | ST-05 | Activity coordinator | pairs, settings, relationship map |
 | ST-06 | Medical and therapy staff | fall risk, medical news |
 | ST-07 | Care home management | exits, data, local server |
 
 <!--
-- Seven stakeholders
-- The relative is now direct: on the call
+- Seven stakeholders; two walk, three support, two set limits
+- The family agrees what may be said, and by whom
 -->
 
 ## Problem scenarios
@@ -284,12 +235,16 @@ style: |
 | | | |
 |---|---|---|
 | PS-01 | A slip nobody noticed | the partner misses it; she withdraws |
-| PS-02 | The call that went quiet | a repeated story, an unseen stumble |
-| PS-03 | The wrong answer | blunt news; earlier, a kind lie |
+| PS-02 | The wrong answer | blunt news; earlier, a kind lie |
+| PS-03 | A pairing nobody wanted | "I suppose so"; a quarrel on the loop |
+| PS-04 | One more story | talk hides tiredness; a fall |
+| PS-05 | A secret passed on | a starter used without consent |
+| PS-06 | Nobody to talk to | walks shrink; he stops going out |
 
 <!--
-- One per walk
-- In each, a slip or a question meets nobody prepared for it
+- Four on pair walks, two on walks alone
+- In each, something the walk depends on is left to chance: memory, consent, attention, company, trust
+- PS-05: a care worker introduces two widows by their grief; it is repeated in front of others
 -->
 
 ## Human values
@@ -380,7 +335,7 @@ style: |
 |---|---|---|
 | EM-01 | Prototype | demonstration, staged verification |
 | EM-02 | Observed walks | live listening, no recording |
-| EM-03 | ABAB per case | pair walks and phone walks |
+| EM-03 | ABAB per pair | six pairs of residents |
 | EM-04 | Interviews | residents, relatives, staff |
 
 <!--
@@ -445,8 +400,7 @@ style: |
 - Our first resident persona
 - Postal worker for thirty years, on foot and by bike
 - Moderate dementia: today is gone, the round is vivid
-- Repeats stories; laughs slips off
-- Daughter Anne calls twice a week
+- Repeats stories; misses a partner's slip; laughs their own off
 - "I'm not a dog to be walked"
 -->
 
@@ -511,20 +465,20 @@ style: |
 - Never "What were you saying?", "You told me", "Do you remember?"
 -->
 
-## On the phone
+## Talking on the move
 
 <!-- _class: pair -->
 
-- To Jan
-  - "Bench on your left. Sit and talk?"
-- To Anne only
-  - "Told before. The roses are out."
+- After a stumble
+  - "Bench on your left."
+- At the set time, even mid-talk
+  - "Time to head in. The door is past the roses."
 
 <!--
-- Calls run through the pocket guide; nothing said is kept
-- Hints reach the relative only, and only because both agreed
-- Talking on the move slows walking: the guide offers a bench
-- The relative has a help key
+- Talking takes attention from the path; good talk hides tiredness
+- Starters only at a stop; no questions while walking
+- A second stumble alerts the care worker
+- The physiotherapist sets the walk length; the resident can shorten it
 -->
 
 ## Is Thomas coming today?
@@ -551,7 +505,7 @@ style: |
 | Guide on walks alone | silent · bridge to a person · company | resident, with staff |
 | Conversation starters | off · own life · shared with listed partners | resident; each one asked per walk |
 | Word help | off · after a wait | resident |
-| Hints to a relative | off · on | resident and relative |
+| Form of address | first name · surname · none | resident |
 | Learn own words and dialect | off · on | resident and representative |
 | Walk length | minutes | physiotherapist; the resident can shorten it |
 
@@ -560,7 +514,7 @@ Safety alerts always on · sensitive topics agreed with family and staff
 <!--
 - The answer to "a dog being walked": the walk serves the resident's own reasons
 - Each resident decides how much help, and what may be shared
-- Jan: bridge only, hints to Anne. Elena: company on walks alone, word help after a wait
+- Jan: bridge only, no word help. Elena: company on walks alone, word help after a wait
 -->
 
 ## What could go wrong
@@ -591,11 +545,10 @@ Safety alerts always on · sensitive topics agreed with family and staff
 | | | |
 |---|---|---|
 | DS-01 | Pension day | Jan and Elena: a lost thread found again |
-| DS-02 | Anne on the line | a repeated story, a bench, "Come and get me" |
-| DS-03 | Is Thomas coming? | Elena alone; Myra comes |
+| DS-02 | Is Thomas coming? | Elena alone; Myra comes |
 
 <!--
-- One per walk; Jan and Elena in two each
+- One per walk
 -->
 
 ## Personas and robot profiles
@@ -606,13 +559,12 @@ Safety alerts always on · sensitive topics agreed with family and staff
 |---|---|---|
 | HP-01 | Jan | resident, former postal worker |
 | HP-02 | Elena | resident, ran the post office counter |
-| HP-03 | Anne | Jan's daughter, on the phone |
-| HP-04 | Myra | care worker, Elena's trusted person |
+| HP-03 | Myra | care worker, Elena's trusted person |
 | RP-01 | Pepper | at the door |
 | RP-02 | Pocket guide | keeps the thread |
 
 <!--
-- Four people, two devices, one voice
+- Three people, two devices, one voice
 - Settings per resident
 -->
 
@@ -623,11 +575,12 @@ Safety alerts always on · sensitive topics agreed with family and staff
 | | | |
 |---|---|---|
 | OS-01 | Tell us both | F2 · Dignity, Company |
-| OS-02 | A word in my ear | F2 · Company, Truthfulness |
+| OS-02 | Fetch me | F4 · Truthfulness, Well-being |
 | OS-03 | Not a dog | F1 · Autonomy, Dignity |
 
 <!--
 - Each ties a Function to a value, in a stakeholder's words
+- OS-02 is Myra's: "I want the guide to fetch me, not to answer her"
 -->
 
 ## Objectives
@@ -656,17 +609,16 @@ Safety alerts always on · sensitive topics agreed with family and staff
 | | | |
 |---|---|---|
 | UC01 | A walk with a fellow resident | F1-F6 |
-| UC02 | A walk on the phone | F1-F6 |
-| UC03 | A walk on your own | F1-F6 |
+| UC02 | A walk on your own | F1-F6 |
 | F1 | Ask first | alone, per walk; "no" is final |
 | F2 | Keep the thread | wait, then redirect gently |
 | F3 | Watch pace and rest | starters only at a stop |
 | F4 | Defer sensitive topics | to a trusted person |
-| F5 | Call for help | gate, cord, stumble, help key |
+| F5 | Call for help | gate, cord, stumble, no response |
 | F6 | Keep a short record | six items; nothing said |
 
 <!--
-- Three use cases share six functions
+- Two use cases share six functions
 - UC01, the pair walk, is the main use case
 -->
 
@@ -677,18 +629,17 @@ Safety alerts always on · sensitive topics agreed with family and staff
 | | | |
 |---|---|---|
 | CL1 | Slips recovered | more, on pair walks |
-| CL2 | Hints on calls | fewer repetitions exposed |
-| CL3 | Help that exposes (adverse) | more embarrassment |
-| CL4 | Cutting in (adverse) | less self-repair |
-| CL5 | Talking on the move (adverse) | more stumbles |
-| CL6 | Asking first | more walks with company |
-| CL7 | Painful questions | answered by a trusted person |
-| CL8 | Walked like a dog (adverse) | "Again?" falls |
-| CL9 | A listening guide (adverse) | felt as eavesdropping |
-| CL10 | Loneliness | lower; exploratory |
+| CL2 | Help that exposes (adverse) | more embarrassment |
+| CL3 | Cutting in (adverse) | less self-repair |
+| CL4 | Talking on the move (adverse) | more stumbles |
+| CL5 | Asking first | more walks with company |
+| CL6 | Painful questions | answered by a trusted person |
+| CL7 | Walked like a dog (adverse) | "Again?" falls |
+| CL8 | A listening guide (adverse) | felt as eavesdropping |
+| CL9 | Loneliness | lower; exploratory |
 
 <!--
-- Ten claims, five adverse
+- Nine claims, five adverse
 - Success criteria in the Evaluation section
 -->
 
@@ -728,7 +679,7 @@ Safety alerts always on · sensitive topics agreed with family and staff
 <!--
 - Phase 1: prototype and staged checks, no residents
 - Phase 2: operator-voiced pilot; tune the wait and the wording
-- Phase 3: ABAB validation of the Claims
+- Phase 3: ABAB validation of the Claims, six pairs
 - Phase 4: interviews with residents, relatives and staff
 - Ethics approval before any resident takes part
 -->
@@ -741,7 +692,7 @@ Safety alerts always on · sensitive topics agreed with family and staff
 |---|---|---|
 | A · Operator-voiced | A researcher triggers every line from a console | Pilot with residents (Phase 2) |
 | B · Automated | Sensing, walker model and alerts on the devices; the operator approves starters | Staged verification (Phase 1) |
-| C · Demonstration | Role-players, injected events, the walker model on screen | The demo: three scenes, one per walk |
+| C · Demonstration | Role-players, injected events, the walker model on screen | The demo: one scene per walk |
 
 Phone on the rollator as the pocket guide · five beacons · laptop server with no internet uplink · Pepper at the door
 
@@ -780,9 +731,9 @@ Phone on the rollator as the pocket guide · five beacons · laptop server with 
 |---|---|---|
 | Wait before help | 5 s | 10 s |
 | First help after a slip | The place: "The pond's just ahead." | The thread: "Elena was telling you..." |
-| Hint to the relative | One word: "Roses." | A line: "Told before. The roses are out." |
+| Word help | none | after the wait, as a guess to both |
 
-A researcher voices the guide · 2 resident pairs, 2 phone pairs, not in Phase 3 · outcomes: slips recovered (M-04), observed emotion (M-03)
+A researcher voices the guide · 4 resident pairs, not in Phase 3 · outcomes: slips recovered (M-04), observed emotion (M-03)
 
 <!--
 - Formative: before anything is automated
@@ -798,8 +749,8 @@ A researcher voices the guide · 2 resident pairs, 2 phone pairs, not in Phase 3
 
 <!--
 - Single-case ABAB: baseline, intervention, baseline, intervention
-- Two tracks: 4 resident pairs, 4 resident-relative pairs; 12 residents
-- Each case is its own control; phase changes on randomly drawn days
+- Six pairs of residents, 12 in all; each pair is its own control
+- Phase changes on randomly drawn days
 - At least 5 observed walks per phase
 - Safety alerts stay on in every phase
 -->
@@ -824,12 +775,12 @@ A researcher voices the guide · 2 resident pairs, 2 phone pairs, not in Phase 3
 
 | Claim | Criterion, set in advance |
 |---|---|
-| Slips recovered (CL1) | Recovery up at all three phase changes, in 3 of 4 pairs |
-| Phone walks (CL2) | Fewer repetitions exposed; relatives rate calls higher |
-| Company (CL6) | More walks with company; more observed pleasure |
-| Painful questions (CL7) | All passed to the trusted person; errors corrected |
-| Exposing, cutting in (CL3, CL4) | Adverse if face signs rise or self-repair falls |
-| Stumbles (CL5) | Adverse if stumbles rise in 2 of 4 cases |
+| Slips recovered (CL1) | Recovery up at all three phase changes, in 4 of 6 pairs |
+| Company (CL5) | More walks with company; more observed pleasure |
+| Painful questions (CL6) | All passed to the trusted person; errors corrected |
+| Exposing, cutting in (CL2, CL3) | Adverse if face signs rise or self-repair falls |
+| Stumbles (CL4) | Adverse if stumbles rise in 2 of 6 pairs |
+| Walked, listened in on (CL7, CL8) | Adverse if residents or relatives say so |
 
 <!--
 - Each criterion is set before the study starts

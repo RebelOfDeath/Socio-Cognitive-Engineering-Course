@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: c1.2 Morning Care (previous concept)
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Superseded. Technology Options TECH-10 to TECH-15 of the first concept, morning personal care. Replaced by [[c1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.c1 Technology Options.c1\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Mindful Walk set.
+**Abstract.** Superseded. Technology Options TECH-10 to TECH-15 of the first concept, morning personal care. Replaced by [[c1.1 Pepper, pocket guide and local server>>doc:tmp\: Pitch.1 Foundation.c1 Technology Options.c1\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Walking with meaning set.
 
 {{box title="Status of this page"}}
 Selection for UC04 (tooth brushing), the activity chosen as this cycle's spine (§2.3 Open item O-22). The System combines three selected options: Pepper for interaction and prompting (TECH-10), sensors on the tooth-brushing items for tracking the activity (TECH-11), and a care-staff notification channel (TECH-12). Three options are rejected or deferred and kept here as Foundation knowledge.
