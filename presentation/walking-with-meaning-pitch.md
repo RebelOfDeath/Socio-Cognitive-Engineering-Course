@@ -182,13 +182,14 @@ style: |
 | Who | Resident, alone; staff glance from the window |
 | When | Varies widely · 5-30 min · fine weather |
 | Goal | Fresh air, movement, a change of scene |
-| What breaks down | Nobody to talk to<br>A painful question to a passing worker<br>A kind lie, found out |
+| What breaks down | Nobody to talk to<br>Staff unavailable<br>Confused and attempts to go home |
 
 <!--
 - Only residents assessed fit; enclosed garden loop
 - Loneliness: some stop going out
-- "Is my husband coming?": told bluntly by someone who did not know, or told "He's at work"
-- Addressed by: the guide as company or a bridge to a person; painful questions passed to a trusted person
+- Staff unavailable: the door stays closed, nobody keeps an eye out
+- Confused: forgets where or why; heads for the gate to go home
+- Addressed by: the guide as company or a bridge to a person; one orienting cue and an alert at the gate
 -->
 
 ## SA-02 · A walk with a fellow resident
@@ -200,13 +201,15 @@ style: |
 | Who | Two residents, matched by staff |
 | When | Occasional · 15-30 min |
 | Goal | Company as the reason to go out |
-| What breaks down | A slip nobody notices<br>Corrected or quizzed: embarrassed<br>Stumbles while talking |
+| What breaks down | Loses the thread; the partner doesn't notice<br>Corrected or quizzed: embarrassed<br>Overexertion: distracted by the partner |
 
 <!--
 - Slips: a lost thread, a missing word, a story told twice, a belief from another time
 - Both often have dementia: neither notices the other's slips
+- Good talk hides tiredness; the walk runs past its set time
+- Say aloud: stumbles while talking happen on both walks
 - Also: two who dislike each other; "I suppose so", going along to please
-- Addressed by: asking each alone; a relationship map; the guide keeps the thread
+- Addressed by: asking each alone; a relationship map; the guide keeps the thread and the time
 -->
 
 ## Stakeholders

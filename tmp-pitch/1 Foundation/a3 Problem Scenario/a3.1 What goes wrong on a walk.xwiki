@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a3.1 What goes wrong on a walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Six scenarios. On pair walks: a slip nobody noticed (PS-01), a pairing nobody wanted (PS-03), talk that hides tiredness (PS-04), a secret used to start a conversation (PS-05). On walks alone: a painful question answered by the wrong person (PS-02), and nobody to talk to (PS-06). In each, something the walk depends on (memory, consent, attention, company, trust) is left to chance.
+**Abstract.** Six scenarios. On pair walks: a slip nobody noticed (PS-01), a pairing nobody wanted (PS-03), talk that hides tiredness (PS-04), a secret used to start a conversation (PS-05). On walks alone: nobody to talk to (PS-06). On any walk, a consideration rather than a breakdown: a painful question, answered by the wrong person (PS-02). In each, something the walk depends on (memory, consent, attention, company, trust) is left to chance.
 
 = Problem Scenario - A slip nobody noticed [PS-01] =
 
@@ -75,7 +75,7 @@ illustrates → Problem; involves → ST-01, ST-02, ST-04, SA-02; reimagined-as 
 |Name|The wrong answer
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-01 and the a2.1 records. No resident or care worker has confirmed it.
+Provisional. Set on a walk alone (SA-01): a consideration for the design, not a breakdown of the walk. No resident or care worker has confirmed it.
 
 * Mental Health Foundation (2016): truth and lies in dementia care
 )))
@@ -101,14 +101,13 @@ Root causes:
 Contributing causes:
 
 * Staff turnover
-* No shared rule on truth
 * Loneliness on walks alone
 )))
 |Sub-problems|(((
 1. Detection: the question is sensitive
 1. Routing: who should answer
-1. Truth: one truthful answer, from a trusted person
-1. Trust: the same answer from all staff
+1. Truth: a truthful answer, from a trusted person
+1. Trust: a kind lie, once found out, costs it
 )))
 |Out of scope|(((
 * Grief counselling - ST-06
