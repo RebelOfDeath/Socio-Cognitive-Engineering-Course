@@ -3,13 +3,6 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b1 Pair walk and walk alone
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-{{box title="Status of this page"}}
-Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Foundation.
-
-* No primary data: no resident, relative or care worker observed or interviewed.
-* Cells marked [threshold - O-2] still need numbers.
-{{/box}}
-
 **Abstract.** Eight objectives, two use cases, six functions. UC01: a walk with a fellow resident, the main use case. UC02: a walk on your own. Six Premises verify that the Functions work; nine Claims, five of them adverse, test whether they help.
 
 = Objectives =

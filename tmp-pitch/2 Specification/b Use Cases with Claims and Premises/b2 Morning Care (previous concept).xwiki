@@ -5,14 +5,6 @@ syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Superseded. Objectives, Use Cases UC04 and UC05, Premises and Claims of the first concept, morning personal care. Replaced by [[b1 Pair walk and walk alone>>doc:tmp\: Pitch.2 Specification.b Use Cases with Claims and Premises.b1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Walking with meaning set.
 
-{{box title="Status of this page"}}
-Objectives and Functions are drafted and traceable to the Foundation.
-
-On evidence. This project has collected no primary data: no resident or care worker has been observed or interviewed. Each Evidence basis field below says so, and cites published literature instead. Where nothing could be found the field says TODO. Full citations are in the References section at the bottom, each marked with how confident we are in it.
-
-Technology Options are selected in §1.3 (Pepper, TECH-10, with item sensors, TECH-11, and a staff notification channel, TECH-12). Cells marked [threshold - O-29] still need numeric targets. Measures and Evaluation Methods cited below are documented on their §1.2 Foundation pages. See //Open items//.
-{{/box}}
-
 = Objective  [OBJ-10] =
 
 //The bridge between Foundation and Specification. Per the verbatim Function definition, a Function is specified to contribute to an operational objective, a human-factors objective, or a Human Value, so this is where Foundation knowledge becomes something a Function can be traced to.//

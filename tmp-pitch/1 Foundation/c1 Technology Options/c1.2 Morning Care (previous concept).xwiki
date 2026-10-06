@@ -5,14 +5,6 @@ syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Superseded. Technology Options TECH-10 to TECH-15 of the first concept, morning personal care. Replaced by [[c1.1 Pepper, pocket guide and local server>>doc:tmp\: Pitch.1 Foundation.c1 Technology Options.c1\.1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Walking with meaning set.
 
-{{box title="Status of this page"}}
-Selection for UC04 (tooth brushing), the activity chosen as this cycle's spine (§2.3 Open item O-22). The System combines three selected options: Pepper for interaction and prompting (TECH-10), sensors on the tooth-brushing items for tracking the activity (TECH-11), and a care-staff notification channel (TECH-12). Three options are rejected or deferred and kept here as Foundation knowledge.
-
-Pepper is the project's robot platform. The group's own evidence (HFC-13, §2.3 Open items O-19 and O-20) favours a less humanlike, tool-like form for personal care, so choosing Pepper creates a tension. It is recorded below with mitigations, and tested by UC04-F8-CL19 and UC04-F7-CL21, rather than argued away.
-
-No hands-on testing has been done yet. Hardware details come from vendor documentation and should be checked against the unit the course provides.
-{{/box}}
-
 = Pepper humanoid robot (selected)  [TECH-10] =
 
 //An available or emerging capability considered for the System — including options considered and rejected, so the rationale is a selection rather than a justification.//
