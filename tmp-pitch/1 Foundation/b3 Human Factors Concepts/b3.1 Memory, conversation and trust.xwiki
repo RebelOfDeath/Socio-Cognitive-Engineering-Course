@@ -95,7 +95,7 @@ syntax: xwiki/2.1
 |Concept statement|Understanding what others know, believe and feel weakens in dementia: two residents often miss each other's slips. A System can keep a simple model of each walker.
 |Human factor addressed|Social cognition; conversation
 |Proposed mechanism|Per walker, for one walk: common ground, the thread, what was said already, current beliefs, state (speaking, searching, finished, upset, tuned out). The model decides when to wait, redirect or defer.
-|Source|Bora et al. (2015), meta-analysis: theory of mind impaired in Alzheimer's disease. Moreau et al. (2016): impairment shown in social interaction. Scassellati (2002): theory of mind for a humanoid robot.
+|Source|Bora et al. (2015), meta-analysis: theory of mind impaired in Alzheimer's disease. Scassellati (2002): theory of mind for a humanoid robot.
 |Conditions and population of validity|The walker model is a design construct; machine theory of mind shown only in narrow tasks.
 |Predicted Effect type|Slips noticed that the partner missed
 |Associated Measures|M-01 (model against listener codes), M-04
@@ -133,7 +133,7 @@ syntax: xwiki/2.1
 |Concept statement|Aware of decline, people protect themselves: some keep going as before, some face it openly. Avoiding talk protects face and leads to loneliness. Compensation lets a person keep doing what they value.
 |Human factor addressed|Coping with ageing and cognitive loss; loneliness
 |Proposed mechanism|The System keeps the thread outside the person's head: compensation. How openly it helps follows the person's coping style.
-|Source|Clare (2003): coping in early Alzheimer's disease. Baltes & Baltes (1990): selection, optimisation and compensation. Victor (2012): loneliness in care homes. Holwerda et al. (2014): loneliness predicted dementia onset. Holt-Lunstad et al. (2015): loneliness and mortality.
+|Source|Clare (2003): coping in early Alzheimer's disease. Baltes & Baltes (1990): selection, optimisation and compensation. Victor (2012): loneliness in care homes. Holwerda et al. (2014): loneliness predicted dementia onset.
 |Conditions and population of validity|Coping studied in early dementia, at home. Loneliness measures in dementia of uncertain validity.
 |Predicted Effect type|More willingness to walk with others; less loneliness over weeks
 |Associated Measures|M-07, M-08
@@ -177,18 +177,14 @@ HFC-08: grounds → UC02-F4-CL6; explains → HV-08; associated-measure → M-09
 
 = References =
 
-//Cited from memory; checked in the evidence pass.//
-
 * Baltes, P. B. & Baltes, M. M. (1990). Psychological perspectives on successful aging: the model of selective optimization with compensation. In P. B. Baltes & M. M. Baltes (Eds.), //Successful Aging: Perspectives from the Behavioral Sciences// (pp. 1-34). Cambridge University Press.
 * Bora et al. (2015); Bratman et al. (2015); Clare (2003); Forbes et al. (2015); James et al. (2006); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Montero-Odasso et al. (2012); Orange et al. (1996); Schegloff et al. (1977); Victor (2012). See a1.1 References.
 * Clark, H. H. & Brennan, S. E. (1991). Grounding in communication. In L. B. Resnick, J. M. Levine & S. D. Teasley (Eds.), //Perspectives on Socially Shared Cognition// (pp. 127-149). American Psychological Association.
 * Erickson, K. I. et al. (2011). Exercise training increases size of hippocampus and improves memory. //PNAS//, 108(7), 3017-3022.
 * Evans, J. & Jones, P. (2011). The walking interview: methodology, mobility and place. //Applied Geography//, 31(2), 849-858.
 * Goffman, E. (1967). //Interaction Ritual: Essays on Face-to-Face Behavior//. Anchor Books.
-* Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T. & Stephenson, D. (2015). Loneliness and social isolation as risk factors for mortality: a meta-analytic review. //Perspectives on Psychological Science//, 10(2), 227-237.
 * Holwerda, T. J. et al. (2014). Feelings of loneliness, but not social isolation, predict dementia onset: results from the Amsterdam Study of the Elderly (AMSTEL). //Journal of Neurology, Neurosurgery & Psychiatry//, 85(2), 135-142.
 * Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press.
-* Moreau, N. et al. (2016). Theory of mind in Alzheimer disease: evidence of authentic impairment during social interaction. //Neuropsychology//, 30(3), 312-321.
 * Rubin, D. C., Rahhal, T. A. & Poon, L. W. (1998). Things learned in early adulthood are remembered best. //Memory & Cognition//, 26(1), 3-19.
 * Sabat, S. R. (2001). //The Experience of Alzheimer's Disease: Life Through a Tangled Veil//. Blackwell.
 * Scassellati, B. (2002). Theory of mind for a humanoid robot. //Autonomous Robots//, 12(1), 13-24.

@@ -7,7 +7,6 @@ syntax: xwiki/2.1
 Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Foundation.
 
 * No primary data: no resident, relative or care worker observed or interviewed.
-* References cited from memory; checked in the evidence pass (Open item O-1).
 * Cells marked [threshold - O-2] still need numbers.
 {{/box}}
 
@@ -273,7 +272,7 @@ UC02: realizes → DS-02; serves → OBJ-02 to OBJ-08; uses → TDP-01, IDP-01 t
 = Open items =
 
 |=ID|=Item|=Blocks|=Owner
-|O-1|Evidence pass: all references cited from memory. The group observation behind HFC-01 needs a direct source.|Every Evidence basis|Group
+|O-1|The group observation behind HFC-01 needs a direct source.|HFC-01|Group
 |O-2|Thresholds: wait length, echo latency, stumble response, alert latency, trusted person's arrival, System error rate. Set from an EM-01 pilot and with care workers.|PR2 to PR5; CL6|Group
 |O-3|Offline speech recognition of older speakers, in their own language and dialect, in wind. Test in EM-01.|TECH-06; F2, F4|Group
 |O-4|Relationship map and prepared lines: form, owner, review after events; how staff learn of conflicts between residents.|F1, F2, F4; VT-04|ST-05 with group
@@ -284,4 +283,4 @@ UC02: realizes → DS-02; serves → OBJ-02 to OBJ-08; uses → TDP-01, IDP-01 t
 
 = References =
 
-Cited on this page: Forbes et al. (2015); Goffman (1967); Holwerda et al. (2014); Kitwood (1997); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Niemeijer et al. (2015); Orange et al. (1996); Ryan & Deci (2000); Schegloff et al. (1977); Victor (2012); Williams et al. (2009). Full entries in the a1.1, b1.1, b3.1 and b4.1 References. All from memory; to check (O-1).
+Cited on this page: Forbes et al. (2015); Goffman (1967); Holwerda et al. (2014); Kitwood (1997); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Niemeijer et al. (2015); Orange et al. (1996); Ryan & Deci (2000); Schegloff et al. (1977); Victor (2012); Williams et al. (2009). Full entries on pages a1.1, b1.1, b3.1 and b4.1.
