@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Human Personas
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four personas, one per direct stakeholder role in the Design Scenarios. Two residents: Jan, a former postman (HP-01), and Riet, a woman who ran the post office counter (HP-02). Anne, Jan's daughter on the phone (HP-03). Myra, the care worker Riet trusts (HP-04). All provisional: built from literature and group reasoning, not from interviews.
+**Abstract.** Four personas, one per direct stakeholder role in the Design Scenarios. Two residents: Jan, a former postman (HP-01), and Elena, a woman who ran the post office counter (HP-02). Anne, Jan's daughter on the phone (HP-03). Myra, the care worker Elena trusts (HP-04). All provisional: built from literature and group reasoning, not from interviews.
 
 = Human Persona - Jan [HP-01] =
 
@@ -16,8 +16,8 @@ syntax: xwiki/2.1
 |Name|Jan, resident with dementia
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-02.
-|Elaborates|ST-01; ST-02 on Riet's walks
-|Role in Scenario|Walks with Riet (DS-01). Walks while on the phone with Anne (DS-02).
+|Elaborates|ST-01; ST-02 on Elena's walks
+|Role in Scenario|Walks with Elena (DS-01). Walks while on the phone with Anne (DS-02).
 |Task Demands|(((
 1. Agree to go
 1. Keep a story going
@@ -36,13 +36,13 @@ Moderate dementia. Hearing aid, left ear. Copes by laughing slips off and going 
 * HV-06 Social connectedness - misses the chats on the doorsteps
 * HV-07 Identity - the post round
 * HV-02 Dignity - plain talk, no fuss
-* HV-03 Privacy - "What I tell Riet is between us"
+* HV-03 Privacy - "What I tell Elena is between us"
 )))
-|Social Network and Relationships|Daughter Anne (ST-03) calls twice a week, visits monthly. Riet (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
-|History and Experiences|Thirty years delivering post in Delft, on foot and by bike. Walked the dog twice a day until moving in, two years ago.
+|Social Network and Relationships|Daughter Anne (ST-03) calls twice a week, visits monthly. Elena (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
+|History and Experiences|Thirty years delivering post in a small town, on foot and by bike. Walked the dog twice a day until moving in, two years ago.
 |Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, bridge only; hints to Anne, on; word help, off; starters, the post round and football. Will not be tracked.
 
-= Human Persona - Riet [HP-02] =
+= Human Persona - Elena [HP-02] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -50,34 +50,34 @@ Moderate dementia. Hearing aid, left ear. Copes by laughing slips off and going 
 
 |=Field|=Description
 |ID|HP-02
-|Name|Riet, resident with dementia
+|Name|Elena, resident with dementia
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01, PS-03.
 |Elaborates|ST-01; ST-02 on Jan's walks
-|Role in Scenario|Walks with Jan; loses the thread and finds it again (DS-01). Walks alone with the guide as conversation partner; asks for Henk (DS-03).
+|Role in Scenario|Walks with Jan; loses the thread and finds it again (DS-01). Walks alone with the guide as conversation partner; asks for Thomas (DS-03).
 |Task Demands|(((
 1. Find words; keep the thread
 1. Recover from a slip without embarrassment
-1. Live with the loss of Henk
+1. Live with the loss of Thomas
 1. Keep going out
 )))
 |Specific Capabilities and Needs|(((
 Can: walk 30 minutes without aid; talk easily; notice her own slips.
 
-Cannot: always find a word; retain that Henk has died.
+Cannot: always find a word; retain that Thomas has died.
 
 Woman, 81. Mild Alzheimer's disease. Copes by facing it ("My head's no good any more"), and is embarrassed by slips in company.
 )))
 |Values and Motivations|(((
 * HV-02 Dignity - slips not remarked on
-* HV-06 Social connectedness - lonely since Henk died
+* HV-06 Social connectedness - lonely since Thomas died
 * HV-08 Truthfulness - "Don't fob me off"
 * HV-03 Privacy - keeps her diagnosis to herself
 * HV-07 Identity - twenty-five years behind the counter
 )))
-|Social Network and Relationships|Widowed last year. Son Peter lives abroad and calls on Sundays. Jan (ST-02) lives two doors down. Myra (ST-04) is her trusted person for Henk.
-|History and Experiences|Ran the post office counter in Delft and knew half the town by name. Moved in eight months ago.
-|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, conversation partner; word help, after a wait ("give me a moment first"); starters, the counter and her garden. Off-limits with every partner: her diagnosis. Henk's death: Myra only, as agreed with Peter.
+|Social Network and Relationships|Widowed last year. Son Peter lives abroad and calls on Sundays. Jan (ST-02) lives two doors down. Myra (ST-04) is her trusted person for Thomas.
+|History and Experiences|Ran the post office counter in the same town as Jan, and knew half the town by name. Moved in eight months ago.
+|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, conversation partner; word help, after a wait ("give me a moment first"); starters, the counter and her garden. Off-limits with every partner: her diagnosis. Thomas's death: Myra only, as agreed with Peter.
 
 = Human Persona - Anne [HP-03] =
 
@@ -98,7 +98,7 @@ Woman, 81. Mild Alzheimer's disease. Copes by facing it ("My head's no good any 
 1. Answer the wish to come home, truthfully
 1. Get help when she cannot see
 )))
-|Specific Capabilities and Needs|Knows Jan's life in detail. Works full-time; calls during her own lunch walk. Lives in Groningen, 250 km away. Needs hints only she hears, and only because Jan agreed.
+|Specific Capabilities and Needs|Knows Jan's life in detail. Works full-time; calls during her own lunch walk. Lives 250 km away. Needs hints only she hears, and only because Jan agreed.
 |Values and Motivations|(((
 * HV-06 Social connectedness - contact between monthly visits
 * HV-08 Truthfulness - will not lie to Jan
@@ -121,7 +121,7 @@ Woman, 81. Mild Alzheimer's disease. Copes by facing it ("My head's no good any 
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning only. Built on ST-04, PS-03.
 |Elaborates|ST-04
-|Role in Scenario|Clips on the guides (DS-01). Answers Riet's question about Henk (DS-03).
+|Role in Scenario|Clips on the guides (DS-01). Answers Elena's question about Thomas (DS-03).
 |Task Demands|(((
 1. Start walks without walking each one
 1. Come quickly when called
@@ -136,5 +136,5 @@ Woman, 81. Mild Alzheimer's disease. Copes by facing it ("My head's no good any 
 * HV-03 Privacy - no timing of her own work
 )))
 |Social Network and Relationships|Six to eight residents per shift. Works with the coordinator. Talks with families at visits.
-|History and Experiences|Heard a colleague tell Riet "He's at work".
+|History and Experiences|Heard a colleague tell Elena "He's at work".
 |Constraints and Privacy Considerations|Will not pass on news she has not agreed with the family. Will not accept frequent low-value alerts.

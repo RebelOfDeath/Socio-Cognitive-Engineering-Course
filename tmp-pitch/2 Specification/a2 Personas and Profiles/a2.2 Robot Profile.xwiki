@@ -16,7 +16,7 @@ syntax: xwiki/2.1
 |Name|Pepper at the door
 |Status|In Progress
 |Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, VT-04 and VT-07. Not yet tested with residents.
-|Role in Scenario|Asks Jan's consent; introduces Jan and Riet; welcomes them back (DS-01).
+|Role in Scenario|Asks Jan's consent; introduces Jan and Elena; welcomes them back (DS-01).
 |Social Competencies|(((
 * Asks each walker alone; two options; no is final
 * Introduces walkers by name and photo
@@ -39,7 +39,7 @@ syntax: xwiki/2.1
 |Name|Pocket guide, with the resident's own instance
 |Status|In Progress
 |Evidence basis|Group reasoning (TECH-02 to TECH-06). Not yet built or tested.
-|Role in Scenario|Keeps the thread for Jan and Riet (DS-01). Whispers hints to Anne (DS-02). Talks with Riet; passes her question to Myra (DS-03).
+|Role in Scenario|Keeps the thread for Jan and Elena (DS-01). Whispers hints to Anne (DS-02). Talks with Elena; passes her question to Myra (DS-03).
 |Social Competencies|(((
 * Silent while people talk
 * Waits for self-repair, then redirects gently (IDP-01)

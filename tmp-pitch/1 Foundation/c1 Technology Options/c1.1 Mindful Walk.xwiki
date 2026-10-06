@@ -165,7 +165,7 @@ enables → F1, F2, F4; addresses → HV-03, HV-06; strains → VT-04.
 |ID|TECH-06
 |Name|Walker model and starters (selected)
 |Status|In Progress
-|Evidence basis|Group reasoning; HFC-03 to HFC-05. Offline speech recognition exists for Dutch (e.g. Vosk, whisper.cpp); accuracy for older speakers is lower (Vipperla et al., 2010).
+|Evidence basis|Group reasoning; HFC-03 to HFC-05. Offline speech recognition exists for many languages (e.g. Vosk, whisper.cpp); accuracy for older speakers is lower (Vipperla et al., 2010).
 |Category|AI/ICT
 |Capabilities|(((
 Per walker, for one walk:

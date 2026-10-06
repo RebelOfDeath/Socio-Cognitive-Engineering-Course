@@ -3,17 +3,17 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three scenarios, one per walk. Jan and Riet on the garden loop: a lost thread found again (DS-01). Jan on the phone with Anne: a repeated story, a bench, "Come and get me" (DS-02). Riet alone: "Is Henk coming today?" (DS-03).
+**Abstract.** Three scenarios, one per walk. Jan and Elena on the garden loop: a lost thread found again (DS-01). Jan on the phone with Anne: a repeated story, a bench, "Come and get me" (DS-02). Elena alone: "Is Thomas coming today?" (DS-03).
 
 = Design Scenario - Pension day [DS-01] =
 
 //Reimagines PS-01. Realized by UC01. Technology: Pepper at the door (TECH-01), pocket guides (TECH-02), beacons (TECH-03), local server and exchange (TECH-04, TECH-05), walker model (TECH-06).//
 
-Two o'clock. In her room, Riet's guide asks: "A walk with Jan today, or not today?" "With Jan." "May I mention the post office counter to him?" "Yes." At the garden door, Pepper asks Jan alone: "Riet would like a walk with you. Join her, or not today?" "Go on then." "May I mention your post round to Riet?" "Everyone knows that." The map lists nothing off-limits between them; Riet's diagnosis is off-limits with everyone.
+Two o'clock. In her room, Elena's guide asks: "A walk with Jan today, or not today?" "With Jan." "May I mention the post office counter to him?" "Yes." At the garden door, Pepper asks Jan alone: "Elena would like a walk with you. Join her, or not today?" "Go on then." "May I mention your post round to Elena?" "Everyone knows that." The map lists nothing off-limits between them; Elena's diagnosis is off-limits with everyone.
 
-Myra clips on both guides and goes back to the ward. Pepper shows two photos: "Jan, this is Riet. Riet, this is Jan." On the path the guides are silent. At the bench: "You both worked for the post in Delft." Riet: "I had the counter!" She talks about pension day and the queue out of the door, then stops mid-sentence. The guide waits. Jan looks at the pond. After eight seconds, to both: "Riet was telling you about pension day." "The queue! All the way to the bakery." She goes on.
+Myra clips on both guides and goes back to the ward. Pepper shows two photos: "Jan, this is Elena. Elena, this is Jan." On the path the guides are silent. At the bench: "You both worked for the post, in the same town." Elena: "I had the counter!" She talks about pension day and the queue out of the door, then stops mid-sentence. The guide waits. Jan looks at the pond. After eight seconds, to both: "Elena was telling you about pension day." "The queue! All the way to the bakery." She goes on.
 
-Later Riet says: "My head's no good any more." Jan: "Mine neither. Still got legs, though." They laugh; the guide says nothing. Talking, Jan catches the rollator on the kerb. "Bench on your left." They sit. At twenty-five minutes: "Time to head in. The door is past the roses."
+Later Elena says: "My head's no good any more." Jan: "Mine neither. Still got legs, though." They laugh; the guide says nothing. Talking, Jan catches the rollator on the kerb. "Bench on your left." They sit. At twenty-five minutes: "Time to head in. The door is past the roses."
 
 At the door Pepper says: "Welcome back. Pension day, and a queue to the bakery." The record: pair walk, 27 minutes, one stumble, nobody called, two item IDs exchanged. Nothing about the conversation.
 
@@ -29,17 +29,17 @@ At fifteen minutes Jan has slowed. The guide, to Jan: "Bench on your left. Sit a
 
 They say goodbye at twenty minutes. The record: phone walk, 20 minutes, nobody called. Anne calls again on Thursday.
 
-= Design Scenario - Is Henk coming? [DS-03] =
+= Design Scenario - Is Thomas coming? [DS-03] =
 
 //Reimagines PS-03. Realized by UC03. Technology: pocket guide (TECH-02), beacons (TECH-03), local server and map (TECH-04, TECH-05), walker model (TECH-06).//
 
-Riet walks the loop alone. She agreed with the coordinator that the guide may talk with her on walks alone. At the door it asked: "May I talk about your garden today?" "Yes."
+Elena walks the loop alone. She agreed with the coordinator that the guide may talk with her on walks alone. At the door it asked: "May I talk about your garden today?" "Yes."
 
-At the pond: "Ducks on the water." Riet: "Henk always brought bread for them. Is Henk coming today?" The map lists Henk's death as sensitive for Riet: trusted person Myra, approach agreed with her son Peter. The guide: "That's one for Myra. Shall I ask her to come?" "Yes."
+At the pond: "Ducks on the water." Elena: "Thomas always brought bread for them. Is Thomas coming today?" The map lists Thomas's death as sensitive for Elena: trusted person Myra, approach agreed with her son Peter. The guide: "That's one for Myra. Shall I ask her to come?" "Yes."
 
-Myra's phone: //Riet - asks for Henk - pond bench.// Myra arrives within five minutes, sits down and answers as agreed with Peter: truthfully, gently, and she stays. Riet cries, then talks about Henk's bicycle. The guide is silent until Myra leaves, then: "The ducks are still there."
+Myra's phone: //Elena - asks for Thomas - pond bench.// Myra arrives within five minutes, sits down and answers as agreed with Peter: truthfully, gently, and she stays. Elena cries, then talks about Thomas's bicycle. The guide is silent until Myra leaves, then: "The ducks are still there."
 
-The guide does not raise Henk again. The record: walk alone, 24 minutes, sensitive question, Myra called.
+The guide does not raise Thomas again. The record: walk alone, 24 minutes, sensitive question, Myra called.
 
 = Graph edges =
 

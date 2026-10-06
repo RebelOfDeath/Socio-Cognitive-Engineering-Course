@@ -321,9 +321,9 @@ UC03: realizes → DS-03; serves → OBJ-02 to OBJ-08; uses → TDP-01, IDP-01 t
 |=ID|=Item|=Blocks|=Owner
 |O-1|Evidence pass: all references cited from memory. The group observation behind HFC-01 needs a direct source.|Every Evidence basis|Group
 |O-2|Thresholds: wait length, echo latency, stumble response, alert latency, trusted person's arrival, System error rate. Set from an EM-01 pilot and with care workers.|PR2 to PR5; CL7|Group
-|O-3|Offline speech recognition of older Dutch speakers, dialect and wind. Test in EM-01.|TECH-06; F2, F4|Group
+|O-3|Offline speech recognition of older speakers, in their own language and dialect, in wind. Test in EM-01.|TECH-06; F2, F4|Group
 |O-4|Relationship map and prepared lines: form, owner, review after events; how staff learn of conflicts between residents.|F1, F2, F4; VT-04|ST-05 with group
-|O-5|Consent and data: GDPR art. 6 and 9; representative; process consent per walk; WMO check.|All pre-conditions; EM-02, EM-03|ST-07
+|O-5|Consent and data: GDPR art. 6 and 9; representative; process consent per walk; check of the local medical-research law.|All pre-conditions; EM-02, EM-03|ST-07
 |O-6|Telephony: calls through the home's exchange; hints mixed into the line towards the relative only.|UC02; TECH-02|Group
 |O-7|Garden policy with ST-07 and ST-06: who may walk alone or in pairs; who answers alerts.|UC01, UC03 pre-conditions; VT-06|ST-07, ST-06
 |O-8|Research use of own-word lists: anonymisation; re-identification risk in a small home with a local dialect; ethics review.|EM-02 language notes; VT-05|Group
