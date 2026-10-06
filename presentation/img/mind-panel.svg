@@ -4,7 +4,7 @@
   <!-- Panel -->
   <rect x="20" y="20" width="1120" height="430" fill="#ffffff" stroke="#dde3de" stroke-width="2"/>
   <rect x="20" y="20" width="1120" height="54" fill="#1f3a2b"/>
-  <text x="44" y="55" font-size="22" font-weight="600" fill="#ffffff">Pair walk · Jan and Elena · minute 12</text>
+  <text x="44" y="55" font-size="22" font-weight="600" fill="#ffffff">Pair walk · Elena and Jan · minute 12</text>
   <text x="1116" y="55" font-size="17" fill="#cfe0d3" text-anchor="end">kept for this walk only</text>
 
   <!-- Column headers -->
@@ -36,14 +36,14 @@
   <circle cx="500" cy="149" r="6" fill="#8c6512"/>
   <text x="514" y="155" font-size="19" fill="#222624">diagnosis: off-limits</text>
   <circle cx="728" cy="149" r="6" fill="#7b9472"/>
-  <text x="742" y="155" font-size="19" fill="#222624">post round: may mention</text>
+  <text x="742" y="155" font-size="19" fill="#222624">bakery: may mention</text>
 
   <!-- Thread, said already, belief -->
   <g font-size="19" fill="#222624">
     <text x="270" y="205">pension day, the queue</text>
     <text x="720" y="205">the pond, the weather</text>
     <text x="270" y="255">pension day, once</text>
-    <text x="720" y="255">the dog that bit the postman, once</text>
+    <text x="720" y="255">the wedding cake that fell, once</text>
     <text x="270" y="305" fill="#66706b">nothing flagged</text>
     <text x="720" y="305" fill="#66706b">nothing flagged</text>
   </g>

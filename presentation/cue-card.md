@@ -109,21 +109,21 @@
 - Three-item record then, six items now
 - Also kept: staged tests, the within-resident comparison, adverse claims
 
-**18. Jan**
+**18. Elena**
 
-- Our first resident persona
-- Postal worker for thirty years, on foot and by bike
-- Moderate dementia: today is gone, the round is vivid
-- Repeats stories; misses a partner's slip; laughs their own off
-- "I'm not a dog to be walked"
-
-**19. Elena**
-
-- Our second resident persona
+- Our main resident persona
 - Mild Alzheimer's disease; notices her own slips, and is embarrassed by them
 - Widowed last year; lonely since
-- Lives two doors from Jan; both worked for the post in the same town
+- Lives two doors from Jan; she had the post office, he had the bakery, in the same town
 - "Give me a moment first"
+
+**19. Jan**
+
+- Our second resident persona, Elena's walking partner
+- Ran the town bakery for thirty years, up at four every morning
+- Moderate dementia: today is gone, the bakery is vivid
+- Repeats stories; misses a partner's slip; laughs their own off
+- "I'm not a dog to be walked"
 
 **20. Thread in the pocket, person in reach**
 

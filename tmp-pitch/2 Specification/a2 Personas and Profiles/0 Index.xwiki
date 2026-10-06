@@ -10,6 +10,6 @@ syntax: xwiki/2.1
 = Pages =
 
 |=Page|=Contents|=Status
-|[[a2.1 Human Personas>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.1 Human Personas.WebHome]]|HP-01 Jan, resident; HP-02 Elena, resident; HP-03 Myra, care worker|**Current**
+|[[a2.1 Human Personas>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.1 Human Personas.WebHome]]|HP-01 Elena, resident; HP-02 Jan, resident; HP-03 Myra, care worker|**Current**
 |[[a2.2 Robot Profile>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.2 Robot Profile.WebHome]]|RP-01 Pepper at the door; RP-02 Pocket guide; per-person settings|**Current**
 |[[a2.3 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.3 Morning Care (previous concept).WebHome]]|HP-05 Mary; HP-06 Myra; RP-03 Pepper as tooth-brushing aid|Superseded

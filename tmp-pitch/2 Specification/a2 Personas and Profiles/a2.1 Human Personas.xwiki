@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Human Personas
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three personas, one per direct stakeholder role in the Design Scenarios. Two residents: Jan, a former postal worker (HP-01), and Elena, who ran the post office counter (HP-02). Myra, the care worker Elena trusts (HP-03). All provisional: built from literature and group reasoning, not from interviews.
+**Abstract.** Three personas, one per direct stakeholder role in the Design Scenarios. Two residents: Elena, our main persona, who ran the post office counter (HP-01), and Jan, her walking partner, who ran the bakery (HP-02). Myra, the care worker Elena trusts (HP-03). All provisional: built from literature and group reasoning, not from interviews.
 
-= Human Persona - Jan [HP-01] =
+= Human Persona - Elena [HP-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -13,43 +13,6 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|HP-01
-|Name|Jan, resident with dementia
-|Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01.
-|Elaborates|ST-01; ST-02 on Elena's walks
-|Role in Scenario|Walks with Elena; misses her slip, stumbles while talking (DS-01).
-|Task Demands|(((
-1. Agree to go
-1. Keep a story going
-1. Talk and watch the path at once
-1. Turn back in time
-)))
-|Specific Capabilities and Needs|(((
-Can: walk 20-30 minutes with a rollator; tell old stories vividly; answer yes or no; choose between two.
-
-Cannot: recall this morning; notice a repeated story, or a partner's slip.
-
-Moderate dementia. Hearing aid. Copes by laughing slips off and going on as before.
-)))
-|Values and Motivations|(((
-* HV-01 Autonomy - goes out for own reasons: "I'm not a dog to be walked"
-* HV-06 Social connectedness - misses the chats on the doorsteps
-* HV-07 Identity - the post round
-* HV-02 Dignity - plain talk, no fuss
-* HV-03 Privacy - "What I tell Elena is between us"
-)))
-|Social Network and Relationships|Their daughter (ST-03) visits monthly and wrote the life story with the coordinator. Elena (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
-|History and Experiences|Thirty years delivering post in a small town, on foot and by bike. Walked the dog twice a day until moving in.
-|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, bridge only; word help, off; starters, the post round and football. Will not be tracked.
-
-= Human Persona - Elena [HP-02] =
-
-**Report Format:** §2.2 Personas and Profiles
-
-== Fields ==
-
-|=Field|=Description
-|ID|HP-02
 |Name|Elena, resident with dementia
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01, PS-02.
@@ -76,8 +39,45 @@ Aged 81; mild Alzheimer's disease. Copes by facing it ("My head's no good any mo
 * HV-07 Identity - twenty-five years behind the counter
 )))
 |Social Network and Relationships|Widowed last year. Her son lives abroad and calls on Sundays. Jan (ST-02) lives two doors down. Myra (ST-04) is her trusted person for Thomas.
-|History and Experiences|Ran the post office counter in the same town as Jan, and knew half the town by name. Moved in this year.
+|History and Experiences|Ran the post office counter in the same town where Jan had the bakery, and knew half the town by name. Moved in this year.
 |Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, conversation partner; word help, after a wait ("give me a moment first"); starters, the counter and her garden. Off-limits with every partner: her diagnosis. Thomas's death: Myra only, as agreed with her son.
+
+= Human Persona - Jan [HP-02] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-02
+|Name|Jan, resident with dementia
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01.
+|Elaborates|ST-01; ST-02 on Elena's walks
+|Role in Scenario|Walks with Elena; misses her slip, stumbles while talking (DS-01).
+|Task Demands|(((
+1. Agree to go
+1. Keep a story going
+1. Talk and watch the path at once
+1. Turn back in time
+)))
+|Specific Capabilities and Needs|(((
+Can: walk 20-30 minutes with a rollator; tell old stories vividly; answer yes or no; choose between two.
+
+Cannot: recall this morning; notice a repeated story, or a partner's slip.
+
+Moderate dementia. Hearing aid. Copes by laughing slips off and going on as before.
+)))
+|Values and Motivations|(((
+* HV-01 Autonomy - goes out for own reasons: "I'm not a dog to be walked"
+* HV-06 Social connectedness - misses the chat with the morning customers
+* HV-07 Identity - the bakery
+* HV-02 Dignity - plain talk, no fuss
+* HV-03 Privacy - "What I tell Elena is between us"
+)))
+|Social Network and Relationships|Their daughter (ST-03) visits monthly and wrote the life story with the coordinator. Elena (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
+|History and Experiences|Thirty years running the bakery in a small town, up at four every morning. Walked the dog twice a day until moving in.
+|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, bridge only; word help, off; starters, the bakery and football. Will not be tracked.
 
 = Human Persona - Myra [HP-03] =
 

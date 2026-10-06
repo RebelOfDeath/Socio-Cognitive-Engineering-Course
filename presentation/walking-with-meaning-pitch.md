@@ -391,22 +391,6 @@ style: |
 - Also kept: staged tests, the within-resident comparison, adverse claims
 -->
 
-## Jan
-
-<!-- _class: photo -->
-
-![bg brightness:.55](img/post-slot.jpg)
-
-### Thirty years on the post round
-
-<!--
-- Our first resident persona
-- Postal worker for thirty years, on foot and by bike
-- Moderate dementia: today is gone, the round is vivid
-- Repeats stories; misses a partner's slip; laughs their own off
-- "I'm not a dog to be walked"
--->
-
 ## Elena
 
 <!-- _class: photo -->
@@ -416,11 +400,27 @@ style: |
 ### Twenty-five years behind the post office counter
 
 <!--
-- Our second resident persona
+- Our main resident persona
 - Mild Alzheimer's disease; notices her own slips, and is embarrassed by them
 - Widowed last year; lonely since
-- Lives two doors from Jan; both worked for the post in the same town
+- Lives two doors from Jan; she had the post office, he had the bakery, in the same town
 - "Give me a moment first"
+-->
+
+## Jan
+
+<!-- _class: photo -->
+
+![bg brightness:.55](img/post-slot.jpg)
+
+### Thirty years at the bakery
+
+<!--
+- Our second resident persona, Elena's walking partner
+- Ran the town bakery for thirty years, up at four every morning
+- Moderate dementia: today is gone, the bakery is vivid
+- Repeats stories; misses a partner's slip; laughs their own off
+- "I'm not a dog to be walked"
 -->
 
 ## Thread in the pocket, person in reach
@@ -546,7 +546,7 @@ Safety alerts always on · sensitive topics agreed with family and staff
 
 | | | |
 |---|---|---|
-| DS-01 | Pension day | Jan and Elena: a lost thread found again |
+| DS-01 | Pension day | Elena and Jan: a lost thread found again |
 | DS-02 | Is Thomas coming? | Elena alone; Myra comes |
 
 <!--
@@ -559,8 +559,8 @@ Safety alerts always on · sensitive topics agreed with family and staff
 
 | | | |
 |---|---|---|
-| HP-01 | Jan | resident, former postal worker |
-| HP-02 | Elena | resident, ran the post office counter |
+| HP-01 | Elena | resident, ran the post office counter |
+| HP-02 | Jan | resident, ran the bakery |
 | HP-03 | Myra | care worker, Elena's trusted person |
 | RP-01 | Pepper | at the door |
 | RP-02 | Pocket guide | keeps the thread |
