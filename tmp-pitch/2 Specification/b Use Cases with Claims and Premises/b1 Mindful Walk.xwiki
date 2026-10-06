@@ -226,7 +226,7 @@ Record: six items. Thread, transcript and exchanged items deleted.
 
 ~6. Question on a listed topic: if the relative is the listed person, they answer; if not, they hear "Listed for [trusted person]", who is alerted (F4).
 
-~7. Relative presses 9: alert; the guide tells the resident someone is coming (F5).
+~7. Relative presses the help key: alert; the guide tells the resident someone is coming (F5).
 
 ~8. Call ends; record kept (F6).
 )))
@@ -275,7 +275,7 @@ Record: six items. Thread, transcript and exchanged items deleted.
 |F2 Keep the thread|Walker model: common ground, thread, said already, current belief, state. After a slip: wait, then place, thread or a consented shared topic, as a statement to both (IDP-01). Belief from another time: the feeling, then the present. On calls: whispered hints to the relative, if agreed. Silent while people talk. Contradicted: a plain correction ("I had that wrong"); the error flagged for ST-05.|OBJ-01, OBJ-02, OBJ-04, OBJ-07|VT-02, VT-05|TECH-02, TECH-03, TECH-06
 |F3 Watch pace and rest|Starters only at a stop. No questions while walking. Stumble: offer to sit; second: F5. Pace drop or set length: rest offer; head-back cue, even mid-talk.|OBJ-03|VT-01|TECH-02, TECH-03
 |F4 Defer sensitive topics|Question on a listed topic: "That's one for [trusted person]. Shall I ask them to come?" Trusted person alerted. Never states the fact; never denies it.|OBJ-04|VT-03|TECH-04, TECH-05, TECH-06
-|F5 Call for help|Alert on pull-cord, gate, fall-like impact, second stumble, no response, relative's key. Tells the resident someone is coming. Reports a degraded state at the start.|OBJ-03|VT-06|TECH-02 to TECH-04
+|F5 Call for help|Alert on pull-cord, gate, fall-like impact, second stumble, no response, the relative's help key. Tells the resident someone is coming. Reports a degraded state at the start.|OBJ-03|VT-06|TECH-02 to TECH-04
 |F6 Keep a short record|Per walk: type, minutes, ended early, stumbles, person called and reason, exchanged item IDs. Deletes thread, transcript and exchanged items at the end. Nothing leaves the home.|OBJ-05|VT-04, VT-05|TECH-04
 
 //Why sentences are prepared, never generated. A generated sentence can state something untrue about a person's life, and cannot be checked before it is said (HV-08). The coordinator and family check the prepared lines (O-4).//
@@ -289,7 +289,7 @@ Verification only: does the Function work as specified.
 |UC01-F2-PR2|F2|EM-01; M-01. No human subjects.|No System speech within [8 s - O-2] of a mid-sentence stop; echo within [3 s - O-2] after. Script check: statements only; no untruth, denial or playing along; none of "What were you saying", "You told", "Do you remember". Hints audible to the relative only. Contradicted: plain correction ≤ 3 s, error flagged.|UC01 3-6, 10; UC02 2-3; UC03 2
 |UC01-F3-PR3|F3|EM-01; M-01. No human subjects.|No starter while moving: 0/20. Stumble response ≤ 3 s. Head-back cue ≤ 30 s after the set length.|UC01 5, 7, 9; UC02 4; UC03 5
 |UC03-F4-PR4|F4|EM-01; M-01, M-10. No human subjects.|Listed sensitive questions detected in 19/20. Response is a truthful deferral; trusted person alerted ≤ 10 s. Listed fact never stated or denied: 0/50.|UC01 6; UC02 6; UC03 4
-|UC01-F5-PR5|F5|EM-01; M-01. No human subjects.|Gate, pull-cord, second stumble, drop with no response, relative's key: alert ≤ 10 s, 20/20. Unacknowledged alerts escalate. Degraded state reported at the start.|UC01 2, 7; UC02 7; UC03 5
+|UC01-F5-PR5|F5|EM-01; M-01. No human subjects.|Gate, pull-cord, second stumble, drop with no response, relative's help key: alert ≤ 10 s, 20/20. Unacknowledged alerts escalate. Degraded state reported at the start.|UC01 2, 7; UC02 7; UC03 5
 |UC01-F6-PR6|F6|EM-01; M-01 (content, network and file checks). No human subjects.|Record holds exactly six items. Thread, transcript and exchanged items deleted at the end. No packet leaves the home network; no audio file on any device.|UC01 11; UC02 8; UC03 6
 
 = Claims =

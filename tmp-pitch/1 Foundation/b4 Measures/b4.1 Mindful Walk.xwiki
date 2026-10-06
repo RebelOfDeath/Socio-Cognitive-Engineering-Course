@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b4.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Ten measures. System behaviour: M-01. The walk: M-02 (how often, with whom). The person on the walk, rated live by a listener-observer: M-03 emotion, M-04 slips and recovery, M-05 conversation, M-06 safety while talking. The walkers' own view: M-07. Over weeks: M-08 loneliness. Values at risk: M-09 privacy, tone and trust codes; M-10 sensitive topics and disclosure. Nothing is recorded: every observer measure is coded live (EM-02).
+**Abstract.** Ten measures. System behaviour: M-01. The walk: M-02 (how often, with whom). The person on the walk, rated live by a listener-observer: M-03 emotion, M-04 slips and recovery, M-05 conversation, M-06 safety while talking. The walkers' own view: M-07. Over weeks: M-08 loneliness. Values at risk: M-09 privacy, tone and trust codes; M-10 sensitive topics, errors and disclosure. Nothing is recorded: every observer measure is coded live (EM-02).
 
 = Measure - System performance [M-01] =
 
@@ -19,7 +19,7 @@ syntax: xwiki/2.1
 |Construct measured|Whether the System does what F1 to F6 specify, on time, and nothing more.
 |Type|Quantitative
 |Instrument or procedure|(((
-Staged events against a timestamped reference log (EM-01): pauses, slips, repeated stories, starters with and without consent, blocked items, sensitive questions, stops, stumbles, gate, pull-cord, drops, relative's key.
+Staged events against a timestamped reference log (EM-01): pauses, slips, repeated stories, starters with and without consent, blocked items, sensitive questions, stops, stumbles, gate, pull-cord, drops, relative's help key.
 
 Checks on a full test day: network capture at the router; file-system search of all devices for audio.
 
@@ -73,7 +73,7 @@ operationalizes → UC01-F1-CL6, UC02-F2-CL2; used-by → EM-03; operationalizes
 |Instrument or procedure|(((
 OERS, rated live by the listener-observer (EM-02). No video, no audio stored.
 
-Windows per walk: at the door (5 min before); on the walk (each 10 min); after (10 min, in the lounge). A 25-minute walk gives five windows.
+Windows per walk: at the door (5 min before); on the walk (each 10 min); after (10 min, in the lounge).
 
 Each walker rated separately. Phone walks: the resident only.
 )))
@@ -85,7 +85,7 @@ Per walk: positive score = mean of pleasure and alertness over the walk windows;
 |Validity and reliability|(((
 Psychometrics in Lawton et al. (1996). Less reliable when rated by care staff than by trained researchers (Lawton et al., 1999): researchers only.
 
-Training: OERS manual, then 10 practice walks until ICC ≥ .70 with a trained rater. Study: a second observer on 20% of walks, rating independently; ICC(2,1) ≥ .60.
+A second observer on 20% of walks, rating independently; ICC(2,1) ≥ .60. Training: EM-02.
 )))
 |Serves|Validation
 |Burden|Human subjects; an observer walks behind.

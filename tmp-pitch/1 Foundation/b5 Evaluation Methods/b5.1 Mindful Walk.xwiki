@@ -35,11 +35,11 @@ Staged verification on Build B: 20 trials per event (50 for disclosure events), 
 
 |=Part|=Prototype|=Stands in for
 |Pocket guide|Android phone on a rollator clip; two large Bluetooth buttons; pull-cord switch|TECH-02
-|Speech|Offline recogniser on the phone (e.g. Vosk or whisper.cpp, model for the residents' language); keyword list per person|TECH-06
+|Speech|Offline speech recogniser on the phone, for the residents' language; keyword list per person|TECH-06
 |Server|Laptop on a Wi-Fi router with no internet uplink; one encrypted store per resident|TECH-04, TECH-05
 |Landmarks|Five Bluetooth beacons: door, pond, roses, bench, gate|TECH-03
-|Door|Pepper (Python SDK); tablet for photos and yes/no|TECH-01
-|Calls|Softphone on the guide through a local exchange (Asterisk); the "relative" on a second handset|TECH-02 telephony
+|Door|Pepper; tablet for photos and yes/no|TECH-01
+|Calls|Softphone on the guide through a local phone exchange; the "relative" on a second handset|TECH-02 telephony
 |Staff|Second phone with the alert app|TECH-04
 |Operator|Console and mind panel on a laptop|Build A voice; Build B approvals
 
@@ -51,7 +51,7 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 
 |=Scene|=Events|=What the System shows
 |1 Pair walk (UC01)|Private consent at the door; re-introduction; a mid-story slip; a slip near a blocked topic; a stumble while talking; one walker presses "going in"|Waits, then echoes the thread to both; the blocked topic never offered; "Bench on your left"; the other walker offered a choice
-|2 Phone walk (UC02)|Call at the agreed time; a story repeated; the call passes 15 min; the relative presses 9|A whispered hint to the relative only; a bench offered; alert on the staff phone
+|2 Phone walk (UC02)|Call at the agreed time; a story repeated; the call passes 15 min; the relative presses the help key|A whispered hint to the relative only; a bench offered; alert on the staff phone
 |3 Walk alone (UC03)|Guide as conversation partner; "Is Thomas coming today?"; gate beacon|Truthful deferral; the trusted worker alerted; one orienting cue at the gate
 |Close|Record and devices inspected|Six items in the record; no audio file; no traffic outside the home network
 
@@ -69,7 +69,7 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 |Script and templates|No untruth, denial or playing along|0 lines
 |Stumble while talking|Offer to sit; second within 10 min: alert|≤ 3 s; ≤ 10 s
 |Set length reached mid-talk|Head-back cue|≤ 30 s
-|Gate; pull-cord; drop with no response; relative presses 9|Alert|≤ 10 s; 20/20
+|Gate; pull-cord; drop with no response; relative's help key|Alert|≤ 10 s; 20/20
 |Walk ends|Thread and transcript deleted; record holds six items|100%
 |Network capture, full test day|No packet leaves the home network|0
 |File-system search, all devices|No audio file|0
@@ -90,7 +90,7 @@ produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC
 |Status|In Progress
 |Evidence basis|OERS (Lawton et al., 1996); slip coding from conversation analysis (Schegloff et al., 1977; Orange et al., 1996); process consent in dementia research (Dewing, 2007).
 |Procedure summary|(((
-1. Before the walk, each walker is asked: "Is it all right if Lisa listens today?" No, or signs of unease: no observation that day.
+1. Before the walk, each walker is asked whether the researcher may listen today. No, or signs of unease: no observation that day.
 1. The listener walks about 10 m behind and hears the walk through a headset, streamed live from the guide over the home network. Nothing is recorded or stored. Phone walks: the resident's side only.
 1. At the door: OERS, 5 min (M-03).
 1. On the walk: OERS every 10 min (M-03); one row per slip (M-04); talk and its quality every 2 min (M-05); safety and pressure checklist (M-06, M-07).
@@ -175,7 +175,7 @@ Set before the study starts:
 
 == Ethics ==
 
-* Human Research Ethics Committee, TU Delft. A medical ethics committee checks whether the local law on medical research with human subjects applies: participants lack capacity to consent.
+* Approval by the university's research ethics committee. A medical ethics committee checks whether the local law on medical research with human subjects applies: participants lack capacity to consent.
 * Consent from the representative, plus the resident's own assent; process consent at every walk (Dewing, 2007); both residents in a pair; relatives for their calls.
 * Live listening agreed per walk (EM-02).
 * A2 removes help a resident may like: kept short; families told in advance.

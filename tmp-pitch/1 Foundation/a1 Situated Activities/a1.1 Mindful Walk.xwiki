@@ -29,7 +29,7 @@ Provisional. Literature and group reasoning only.
 * ST-04: Care worker - opens the door; notices who is out
 * ST-06: Physiotherapist - assesses walking unaccompanied
 )))
-|Trigger|Restless; fine weather; garden door open; an old habit (the dog's walk)
+|Trigger|Restless; fine weather; garden door open; an old habit
 |Constituent Tasks|(((
 1. Decide to go
 1. Find the door; coat, shoes, rollator
@@ -38,7 +38,7 @@ Provisional. Literature and group reasoning only.
 1. Notice when to turn back: tired, cold
 1. Find the door; let staff know
 )))
-|Context|Only residents assessed fit (ST-06). Enclosed garden loop, one coded gate. Nobody to talk to; staff glance out of the window. Some residents talk to passers-by, or to themselves.
+|Context|Only residents assessed fit (ST-06). Enclosed garden loop, one coded gate. Nobody to talk to; staff glance out of the window.
 |Frequency and duration|Varies widely; 5-30 min; mostly in fine weather
 |Tools and artifacts|Garden door, loop path, benches, rollator, a window onto the garden
 |Existing workarounds|(((

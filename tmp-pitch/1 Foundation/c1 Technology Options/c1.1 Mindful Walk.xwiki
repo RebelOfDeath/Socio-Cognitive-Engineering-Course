@@ -18,7 +18,7 @@ syntax: xwiki/2.1
 |Evidence basis|Vendor documentation; the course platform. No hands-on testing by this project.
 |Category|Social Robot
 |Capabilities|(((
-Humanoid, about 1.2 m, wheeled base; speech, chest tablet, touch sensors.
+Humanoid; speech and a chest tablet.
 
 * Before a walk: asks each walker alone, by voice with yes/no on the tablet (F1)
 * Re-introduces walkers by name and photo (F2)
@@ -79,7 +79,7 @@ enables → F1 to F5; addresses → HV-03, HV-04, HV-06; strains → VT-01, VT-0
 |Status|In Progress
 |Evidence basis|Group reasoning. Bluetooth beacons are standard in museum audio guides.
 |Category|Sensing
-|Capabilities|Small battery beacons at the pond, roses, benches and gate. The guide hears the nearest: a place for redirection (F2); the gate for an alert (F5). No positions stored.
+|Capabilities|Small battery beacons at landmarks and at the gate. The guide hears the nearest: a place for redirection (F2); the gate for an alert (F5). No positions stored.
 |Limitations|Proximity only, within metres. Batteries. Garden only.
 |Maturity and feasibility|High.
 |Failure and fallback behaviour|Silent beacon: redirection uses the thread only; door alarms still apply.
@@ -165,7 +165,7 @@ enables → F1, F2, F4; addresses → HV-03, HV-06; strains → VT-04.
 |ID|TECH-06
 |Name|Walker model and starters (selected)
 |Status|In Progress
-|Evidence basis|Group reasoning; HFC-03 to HFC-05. Offline speech recognition exists for many languages (e.g. Vosk, whisper.cpp); accuracy for older speakers is lower (Vipperla et al., 2010).
+|Evidence basis|Group reasoning; HFC-03 to HFC-05. Offline speech recognition exists for many languages; accuracy for older speakers is lower (Vipperla et al., 2010).
 |Category|AI/ICT
 |Capabilities|(((
 Per walker, for one walk:
