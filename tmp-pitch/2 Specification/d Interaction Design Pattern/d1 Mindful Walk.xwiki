@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: d1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three patterns for how the voice speaks. Mention what is here, then fall silent (IDP-01). State a memory, never ask for one (IDP-02). Offer two things, and take no for an answer (IDP-03). Wording and timing are hypotheses until EM-04.
+**Abstract.** Three patterns for how the guide speaks. After a slip, wait, then redirect gently (IDP-01). Ask the owner, alone, before joining or using a starter (IDP-02). Say only what is true, and pass painful truths to a trusted person (IDP-03). Wording and timing are hypotheses until EM-01 Build A.
 
-= Interaction Design Pattern - Present-moment cue [IDP-01] =
+= Interaction Design Pattern - Wait, then redirect gently [IDP-01] =
 
 **Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
 
@@ -13,29 +13,29 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|IDP-01
-|Name|Present-moment cue
+|Name|Wait, then redirect gently
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only. Derived from SA-05 breakdowns, PS-01, PS-04, DS-01, DS-02. Grounded in HFC-02, HFC-03, HFC-06. Not yet evaluated.
-|Problem|Attention drifts. Abstract guidance loses the listener. Constant talk crowds out the walk and the company.
-|Principle|Mention one thing that is here, through one sense, in a few words. Then stay silent.
+|Evidence basis|Literature and group reasoning only. Derived from SA-04, PS-01, PS-02, DS-01, DS-02. Grounded in HFC-01, HFC-03, HFC-04, HFC-06. Not yet evaluated.
+|Problem|After a slip, help too soon takes the turn; help too late lets the talk die. A correction or a quiz exposes the slip.
+|Principle|The speaker gets the first chance. Then offer both walkers a way back, as a statement.
 |Solution|(((
-1. Start quiet: first cue after a minute or two.
-1. One cue, under eight words, concrete, sensory: "Feel your feet on the path."
-1. Silence longer than the cue: 30-90 s (Open item O-3).
-1. Rotate senses: feet, air, sound, colour, breath.
-1. No imagery ("imagine..."); no instructions about thoughts ("let them go").
-1. No praise, no endearments; normal pitch.
-1. At a stop or hesitation: one cue about something near.
-1. Pause on the button. Never talk over a conversation.
+1. Wait: about 8 s after a mid-sentence stop (O-2); keep walking.
+1. Place: something here and now. "The pond's just ahead."
+1. Thread, to both: "Riet was telling you about pension day."
+1. Shared topic, consented this walk: "You both worked for the post."
+1. Belief from another time: the feeling, then the present. "You're thinking of your mother. The sun is on the bench." No correction; no confirmation of what is untrue.
+1. Word help only if the person's setting allows it, after the wait, as a guess to both: "The sorting office?"
+1. Never: "What were you saying?", "You told us that already", "Do you remember...?"
+1. Silent again as soon as the talk resumes.
 )))
-|Research Link|HFC-02: present-moment attention asks little of memory (Churcher Clarke et al., 2017; Berk et al., 2018). HFC-03: nature draws attention (Kaplan, 1995). HFC-06: elderspeak provokes resistance (Williams et al., 2009). Transfer from adapted group programmes to a walking voice: untested.
-|Connection to Claims|Shapes F2 (UC01 steps 3, 6, 7) and F3 (UC02 step 3). Rationale for UC01-F2-CL2, UC02-F3-CL9. Tested against UC01-F2-CL6.
+|Research Link|HFC-03: speakers prefer self-repair (Schegloff et al., 1977); repair fails more often in dementia (Orange et al., 1996). HFC-04: common ground. HFC-06: face. HFC-01: the place as a topic that asks nothing of memory.
+|Connection to Claims|Shapes F2 (UC01 steps 5, 6; UC02 step 3; UC03 step 2). Rationale for UC01-F2-CL1, UC02-F2-CL2. Tested against UC01-F2-CL3, UC01-F2-CL4.
 
 == Graph edges ==
 
-shapes → F2, F3; supports → UC01-F2-CL2, UC02-F3-CL9; tested-against → UC01-F2-CL6; informed-by → EM-04.
+shapes → F2; supports → UC01-F2-CL1, UC02-F2-CL2; tested-against → UC01-F2-CL3, UC01-F2-CL4; informed-by → EM-01 (Build A).
 
-= Interaction Design Pattern - Memory invitation [IDP-02] =
+= Interaction Design Pattern - Ask first [IDP-02] =
 
 **Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
 
@@ -43,28 +43,27 @@ shapes → F2, F3; supports → UC01-F2-CL2, UC02-F3-CL9; tested-against → UC0
 
 |=Field|=Description
 |ID|IDP-02
-|Name|Memory invitation
+|Name|Ask first
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only. Derived from SA-01, SA-04, PS-02, DS-01. Grounded in HFC-04, HFC-06; bounded by VT-03. Not yet evaluated.
-|Problem|Memories give the walk meaning and the pair something to talk about. Questions about memory feel like tests and expose gaps. Some memories hurt.
-|Principle|State a memory; do not ask for one. The resident decides whether to take it up.
+|Evidence basis|Group reasoning. Derived from SA-02, VT-04, VT-07, DS-01. Grounded in HV-01, HV-03; Ryan & Deci (2000); process consent (Dewing, 2007). Not yet evaluated.
+|Problem|A personal starter reveals something about its owner. A partner who asks is hard to refuse. Asked in front of the other walker, "no" is hard to say.
+|Principle|Ask the owner, alone, before. Two options. "No" is final.
 |Solution|(((
-1. Trigger: a landmark, or a sensory match - roses, front gardens.
-1. Form: a statement from the resident's world. "Every front garden on the round had roses like these." Never "Do you remember...?"
-1. Source: the profile, welcome topics only. Never avoided topics; never the former home address.
-1. Then silence. The talk belongs to resident and companion.
-1. No follow-up question.
-1. At most two per walk.
-1. Sadness or "I must go home": the companion responds; the next cue returns to the present.
+1. Ask each walker alone, before the walk: "Riet would like a walk with you. Join her, or not today?"
+1. Ask the owner of each starter, alone: "May I mention the post office counter to Jan?"
+1. Consent lasts one walk.
+1. After a no: no reason asked. The other walker hears only "Not today."
+1. Never ask in front of the other walker.
+1. No reminders of missed walks; no tallies.
 )))
-|Research Link|HFC-04: remote memories outlast recent ones; reminiscence shows small, setting-dependent benefits (Woods et al., 2018); early-adult memories are recalled best (Rubin et al., 1998). HFC-06 and Kitwood (1997): testing memory diminishes the person. VT-03: memories that hurt.
-|Connection to Claims|Shapes F2 (UC01 step 4). Rationale for UC01-F2-CL4. Tested against UC01-F2-CL5.
+|Research Link|Self-determination theory: choice supports motivation (Ryan & Deci, 2000). Process consent: consent in dementia is renewed at each contact (Dewing, 2007).
+|Connection to Claims|Shapes F1. Rationale for UC01-F1-CL6. Tested against UC01-F1-CL8. Verified by UC01-F1-PR1.
 
 == Graph edges ==
 
-shapes → F2; supports → UC01-F2-CL4; tested-against → UC01-F2-CL5; informed-by → EM-04.
+shapes → F1; supports → UC01-F1-CL6; tested-against → UC01-F1-CL8; verified-by → UC01-F1-PR1.
 
-= Interaction Design Pattern - Two-option offer [IDP-03] =
+= Interaction Design Pattern - Truthful deferral [IDP-03] =
 
 **Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
 
@@ -72,28 +71,29 @@ shapes → F2; supports → UC01-F2-CL4; tested-against → UC01-F2-CL5; informe
 
 |=Field|=Description
 |ID|IDP-03
-|Name|Two-option offer
+|Name|Truthful deferral
 |Status|In Progress
-|Evidence basis|Group reasoning. Derived from PS-02, PS-06, DS-01 to DS-03. Grounded in HV-01 and Ryan & Deci (2000). Limited, concrete choices are common advice in dementia communication; source to find (Open item O-1).
-|Problem|Open questions ("What would you like?") overwhelm. People with dementia cannot remember a list. No choice at all removes autonomy.
-|Principle|Two concrete options. "No" is always fine.
+|Evidence basis|Literature and group reasoning only. Derived from SA-05, PS-03, DS-03. Grounded in HV-08, HFC-08. Not yet evaluated.
+|Problem|Painful questions come anywhere. A kind lie costs trust. A blunt truth from a stranger, or a machine, causes grief.
+|Principle|Say only what is true. Pass painful truths to the trusted person.
 |Solution|(((
-1. Offer two concrete options: "A walk with Kees, or a sit by the window?"
-1. Wait.
-1. Accept any answer: one of the two, something else, or no.
-1. After a no: no new offer within the configured interval.
-1. Options drawn from the profile, the hour and the weather.
+1. Listed topic (relationship map): "That's one for Myra. Shall I ask her to come?"
+1. Alert the trusted person: resident, topic, place.
+1. No answer to the question itself; no denial.
+1. If the resident declines: the trusted person is told after the walk.
+1. The guide does not raise the topic again.
+1. Unlisted but possibly painful (a death, an illness, going home): treated as listed; the trusted person is the key worker.
+1. The trusted person decides what is said, as agreed with family and ST-06.
 )))
-|Research Link|Self-determination theory: choice supports motivation (Ryan & Deci, 2000). HFC-05: familiar options are recognised with little effort.
-|Connection to Claims|Shapes F1 and F6. Rationale for UC01-F1-CL1, UC03-F6-CL12. Tested against UC03-F6-CL14.
+|Research Link|HFC-08: lies found out cost trust (Mental Health Foundation, 2016; James et al., 2006).
+|Connection to Claims|Shapes F4. Rationale for UC03-F4-CL7. Verified by UC03-F4-PR4.
 
 == Graph edges ==
 
-shapes → F1, F6; supports → UC01-F1-CL1, UC03-F6-CL12; tested-against → UC03-F6-CL14.
+shapes → F4; supports → UC03-F4-CL7; verified-by → UC03-F4-PR4.
 
 == Open items to check or research ==
 
 |=Item|=What is needed|=Reason
-|Wording and timing (O-3)|EM-04 human-operated prototype test of cue wording, silence length, name use and invitation form.|Every pattern here is a hypothesis about how a voice should sound.
-|Life-story content (O-5)|Form and review routine for welcome and avoided topics.|IDP-02 is only as safe as the profile behind it.
-|Two-option source (O-1)|Find dementia-communication guidance on limited choices.|IDP-03 currently rests on group reasoning.
+|Wait and wording (O-2)|EM-01 Build A: wait length, thread wording, word-help form, whisper wording.|Every pattern here is a hypothesis about how a voice should sound.
+|Relationship map (O-4)|Form and review routine for listed topics and trusted persons.|IDP-02 and IDP-03 are only as safe as the map behind them.

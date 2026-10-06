@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a3.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Six breakdowns. On the walk: the resident loses place and purpose and turns back or heads for a former home (PS-01); sees no reason to go out and has no one to go with (PS-02); loses the walk to rain (PS-03). At rest: recorded relaxation runs past the resident (PS-04); restlessness peaks at dusk, when staff time is lowest (PS-05); audio plays that nobody chose (PS-06). In each, purpose and attention depend on memory, or on a person who is not there.
+**Abstract.** Three scenarios, one per walk. On a pair walk, a slip goes unnoticed and costs face (PS-01). On a phone walk, a repeated story and a stumble end the call (PS-02). On a walk alone, a painful question gets the wrong answer from the wrong person (PS-03). In each, a slip or a question meets nobody prepared for it.
 
-= Problem Scenario - Losing the thread mid-walk [PS-01] =
+= Problem Scenario - A slip nobody noticed [PS-01] =
 
 **Report Format:** §1.1 Operational Demands
 
@@ -13,60 +13,59 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|PS-01
-|Name|Losing the thread mid-walk
+|Name|A slip nobody noticed
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-01, SA-02 and the a2.1 stakeholder records; literature and group reasoning only. No resident or care worker has confirmed it.
+Provisional. Constructed from SA-02, SA-04 and the a2.1 records. No resident or care worker has confirmed it.
 
-* Lai & Arthur (2003): wandering behaviour in people with dementia
+* Orange et al. (1996): repair succeeds less often in Alzheimer's disease
+* Bora et al. (2015): theory of mind impaired in Alzheimer's disease
 )))
 |Narrative|(((
-After lunch, a care worker takes three residents on the garden circuit. One of them walks with a rollator. Halfway round, another resident needs the toilet, and the care worker steps away. The resident with the rollator stops at a bench and looks around. They no longer know where they are or why they are outside. They ask to go back to their room, and the walk ends after five minutes.
+After lunch two residents walk the garden loop; a care worker paired them last week. She ran a post office counter for twenty-five years and is telling him about pension day. Mid-sentence the word goes, then the story. He has dementia too, does not notice, and talks about the weather.
 
-A week later the same moment goes differently. The resident walks to the garden gate, saying they must go home and naming the street where they lived twenty years ago. The care worker catches up at the gate and talks them back inside.
+She falls silent. At the bench she says: "My head's no good any more," and asks to go in. The next day she is "too tired" to walk.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
-* ST-02: Care worker
+* ST-02: Fellow resident
+* ST-04: Care worker
 )))
 |Activities involved|(((
-* SA-01: Accompanied walk
-* SA-02: Fitting walks between care tasks
+* SA-02: A walk with a fellow resident
+* SA-04: Losing and finding the thread
 )))
-|Breakdown point|Companion's attention lapses; resident loses place and purpose of the walk
+|Breakdown point|A slip that nobody repairs, and that costs face
 |Causes|(((
 Root causes:
 
-* Impaired spatial orientation and short-term memory
-* Purpose tied to a destination or a companion - both need memory
-* Nothing anchors attention to the here and now
-* Long-term memory of the former home outweighs the present
+* Memory and word-finding loss
+* The partner's weakened theory of mind: the slip goes unnoticed
+* Nobody keeps the thread
 
 Contributing causes:
 
-* One care worker for several residents
-* Late-afternoon restlessness (sundowning)
+* Walking and talking at once
 * Fatigue
+* Awareness of decline
 )))
 |Sub-problems|(((
-1. Orientation: resident no longer knows where they are
-1. Purpose: resident no longer knows why they are walking
-1. Anchoring: nothing brings attention back to the walk
-1. Continuation: resident turns back instead of finishing the walk
-1. Exit-seeking: resident sets out for the former home
+1. Detection: nobody notices the slip
+1. Recovery: no way back into the story
+1. Face: the slip exposes her
+1. Withdrawal: she avoids the next walk
 )))
 |Out of scope|(((
-* Physically stopping or restraining the resident - stays with ST-02
-* Locking or securing exits - ST-05 policy
-* Tracking whereabouts outside the walk - general surveillance
-* Routes beyond the garden - garden by default; wider routes only where the resident's needs and abilities allow (ST-06 assessment)
+* Speech and language therapy - ST-06
+* Pairing without staff and without both residents' consent
+* Treating low mood - ST-06
 )))
 
 == Graph edges ==
 
-illustrates → Problem; involves → ST-01, ST-02, SA-01, SA-02; reimagined-as → DS-01 (§2.1).
+illustrates → Problem; involves → ST-01, ST-02, ST-04, SA-02, SA-04; reimagined-as → DS-01 (§2.1).
 
-= Problem Scenario - No reason to go out [PS-02] =
+= Problem Scenario - The call that went quiet [PS-02] =
 
 **Report Format:** §1.1 Operational Demands
 
@@ -74,61 +73,56 @@ illustrates → Problem; involves → ST-01, ST-02, SA-01, SA-02; reimagined-as 
 
 |=Field|=Description
 |ID|PS-02
-|Name|No reason to go out
+|Name|The call that went quiet
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-01, SA-02, SA-04 and the a2.1 stakeholder records; literature and group reasoning only. No resident or care worker has confirmed it.
+Provisional. Constructed from SA-03, SA-04 and the a2.1 records. No resident or relative has confirmed it.
 
-* Lyketsos et al. (2002): apathy is among the most common neuropsychiatric symptoms in dementia
-* Victor (2012): loneliness in care homes
+* Lundin-Olsson et al. (1997): stopping to talk predicts falls
 )))
 |Narrative|(((
-At home, the resident walked their dog twice a day. In the care home there is no dog and no errand to run. A care worker suggests a walk, and the resident answers: "What for?" They spend the afternoon in their chair.
+A resident walks the loop while their daughter calls from 250 km away, on speaker. They tell the story of the dog that bit the postman. Ten minutes later they tell it again. "You told me already." Silence.
 
-Two doors down lives another resident who also sits alone most afternoons. Both worked for the post in the same town and love to talk about it. Nobody has had the time to bring them together, and the staff do not know their shared past. A volunteer comes once a week. Between visits the resident rarely goes out, and over the weeks they become less steady on their feet and lower in mood.
+Talking, they miss the edge of the path and stumble. The daughter hears a gasp and sees nothing. "I'm fine. Come and get me." She has no answer. The call ends, and she calls less often.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
-* ST-02: Care worker
-* ST-04: Walking partner (potential)
-* ST-07: Volunteer
+* ST-03: Relative
 )))
 |Activities involved|(((
-* SA-01: Accompanied walk
-* SA-02: Fitting walks between care tasks
-* SA-04: Walking with a fellow resident
+* SA-03: A walk "on the phone" with a relative
+* SA-04: Losing and finding the thread
 )))
-|Breakdown point|Resident declines the walk: no purpose, no company
+|Breakdown point|The relative cannot see the walk and has no way back into the talk
 |Causes|(((
 Root causes:
 
-* Apathy, a common symptom of dementia
-* Loss of the routines that gave walking a purpose (dog, errands)
-* Loneliness
+* Repetition from memory loss
+* Voice only: the relative cannot see
+* Walking and talking at once
 
 Contributing causes:
 
-* No staff time to motivate one-to-one
-* Life stories unknown to staff: no match, no topic
-* Volunteers available only occasionally
+* The relative's frustration and guilt
+* Distance
+* No help on the line
 )))
 |Sub-problems|(((
-1. Initiation: resident sees no reason to start
-1. Company: no partner available when the resident is willing to go
-1. Matching: suitable partner unknown to staff
-1. Engagement: walk is dull, talk dries up; resident turns back early
+1. Repetition: exposed by the relative
+1. Unseen risk: stumble, tiredness
+1. Longing: "Come and get me"
+1. Contact: fewer calls
 )))
 |Out of scope|(((
-* Treating depression or apathy - ST-06
-* Persuading a resident who clearly declines - resident's own choice
-* Pairing residents without the consent of both
+* Video calls
+* Support for relatives' own grief - ST-06
 )))
 
 == Graph edges ==
 
-illustrates → Problem; involves → ST-01, ST-02, ST-04, ST-07, SA-01, SA-02, SA-04; reimagined-as → DS-01 (§2.1).
+illustrates → Problem; involves → ST-01, ST-03, SA-03, SA-04; reimagined-as → DS-02 (§2.1).
 
-= Problem Scenario - Rain cancels the walk [PS-03] =
+= Problem Scenario - The wrong answer [PS-03] =
 
 **Report Format:** §1.1 Operational Demands
 
@@ -136,238 +130,56 @@ illustrates → Problem; involves → ST-01, ST-02, ST-04, ST-07, SA-01, SA-02, 
 
 |=Field|=Description
 |ID|PS-03
-|Name|Rain cancels the walk
+|Name|The wrong answer
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-01, SA-02, SA-03 and the a2.1 stakeholder records; literature and group reasoning only. No resident or care worker has confirmed it.
+Provisional. Constructed from SA-01, SA-05 and the a2.1 records. No resident or care worker has confirmed it.
 
-* Forbes et al. (2015): exercise may improve ADL ability in dementia
-* Anderson-Hanley et al. (2012): cycling with a virtual route keeps attention better than plain cycling (older adults, not dementia-specific)
+* Mental Health Foundation (2016): truth and lies in dementia care
 )))
 |Narrative|(((
-It rains for a week in November, and the daily walks are cancelled. The resident uses a wheelchair. A care worker wheels them to the pedal exerciser in the common room and starts it. After three minutes the resident stops pedalling and asks where they are going. The care worker is called away, and the exerciser is not used again that week. In the evenings the resident is restless.
+A resident walks the garden alone. Her husband died last year. A new care worker passes, and she asks: "Is Henk coming today?" Nobody told the worker, who says: "Your husband passed away, didn't you know?" She weeps as if hearing it for the first time.
+
+Last week another worker said: "He's at work." She now trusts neither.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
-* ST-02: Care worker
-* ST-06: Physiotherapist
+* ST-04: Care worker
+* ST-03: Relative (agreement not passed on)
 )))
 |Activities involved|(((
-* SA-01: Accompanied walk
-* SA-02: Fitting walks between care tasks
-* SA-03: Bad-weather indoor exercise
+* SA-01: A walk on your own
+* SA-05: Answering a painful question
 )))
-|Breakdown point|Indoor exercise without destination or company does not keep the resident's attention
+|Breakdown point|A painful question answered by someone uninformed; earlier, an untrue answer
 |Causes|(((
 Root causes:
 
-* Exercise without destination: no route, nothing to see
-* The walk's company and conversation are missing
-* Only the exercise is replaced; not the daylight, sights, sounds or calm
+* The death is not retained
+* The question goes to whoever is near
+* Agreements kept in staff heads
 
 Contributing causes:
 
-* Staff needed to set up and start each session
-* Shared device, occupied or unfamiliar
-* Short, dark winter days limit outdoor walks further
+* Staff turnover
+* No shared rule on truth
+* Loneliness on walks alone
 )))
 |Sub-problems|(((
-1. Substitution: nothing replaces the cancelled walk
-1. Engagement: resident stops after a few minutes
-1. Calm: no quiet, attentive stand-in for the walk
-1. Set-up: each session needs a care worker to start it
-1. Accessibility: must work from a wheelchair
+1. Detection: the question is sensitive
+1. Routing: who should answer
+1. Truth: one truthful answer, from a trusted person
+1. Trust: the same answer from all staff
 )))
 |Out of scope|(((
-* Prescribing exercise intensity - ST-06
-* Walking outside in unsafe weather (ice, storm)
-* Building changes such as a covered walkway - ST-05
+* Grief counselling - ST-06
+* Deciding what is told - care team with family
 )))
 
 == Graph edges ==
 
-illustrates → Problem; involves → ST-01, ST-02, ST-06, SA-01, SA-02, SA-03; reimagined-as → DS-02 (§2.1).
-
-= Problem Scenario - Lost in the recording [PS-04] =
-
-**Report Format:** §1.1 Operational Demands
-
-== Fields ==
-
-|=Field|=Description
-|ID|PS-04
-|Name|Lost in the recording
-|Status|In Progress
-|Evidence basis|(((
-Provisional. Constructed from SA-05 and the a2.1 stakeholder records; literature and group reasoning only. No resident or activity coordinator has confirmed it.
-
-* Churcher Clarke et al. (2017): mindfulness for people with dementia needs adapting - shorter, more concrete, more repetition
-)))
-|Narrative|(((
-Wednesday afternoon, relaxation session in the snoezel room. Six residents in recliners. The activity coordinator plays a recorded exercise: "Imagine you are walking on a beach. Let your thoughts drift away." The resident frowns: "Which beach? Where are we going?" The recording is already on the breath; the resident is still on the beach. They try to get up.
-
-The coordinator is tucking a blanket around another resident. When they turn round, the resident is at the door, asking for their coat.
-)))
-|Stakeholders involved|(((
-* ST-01: Resident with dementia
-* ST-08: Activity coordinator
-)))
-|Activities involved|SA-05: Relaxation session
-|Breakdown point|Guidance runs at its own pace, in abstract language; nobody notices the drift
-|Causes|(((
-Root causes:
-
-* Abstract, imaginative instructions need working memory and imagination
-* Fixed recording: no pause, no adjustment to the listener
-* One leader for many residents
-
-Contributing causes:
-
-* Hearing loss
-* Dim, unfamiliar room can upset
-)))
-|Sub-problems|(((
-1. Comprehension: wording too abstract
-1. Pacing: fixed tempo
-1. Re-anchoring: drift goes unnoticed and unanswered
-1. Lasting effect: calm ends with the session
-)))
-|Out of scope|(((
-* Treating anxiety disorders - ST-06
-* Designing the home's activity programme - ST-08, ST-06
-)))
-
-== Graph edges ==
-
-illustrates → Problem; involves → ST-01, ST-08, SA-05; reimagined-as → DS-02 (§2.1).
-
-= Problem Scenario - Restless at dusk [PS-05] =
-
-**Report Format:** §1.1 Operational Demands
-
-== Fields ==
-
-|=Field|=Description
-|ID|PS-05
-|Name|Restless at dusk
-|Status|In Progress
-|Evidence basis|(((
-Provisional. Constructed from SA-06, SA-07 and the a2.1 stakeholder records; literature and group reasoning only. No resident or care worker has confirmed it.
-
-* Khachiyants et al. (2011): sundowning
-* Ancoli-Israel et al. (2003): daylight and sleep in Alzheimer's disease
-* Schneider et al. (2005): antipsychotic risk in dementia
-)))
-|Narrative|(((
-It has rained all day; the resident has not been outside. At five they start pacing the corridor with their coat on: "My mother is waiting." Dinner is being served and the evening shift is arriving.
-
-A care worker walks them back to their room and switches on the radio - the news, about a flood - and is called away. Twenty minutes later the resident is at the exit door. The night nurse gives the as-needed tablet.
-)))
-|Stakeholders involved|(((
-* ST-01: Resident with dementia
-* ST-02: Care worker
-* ST-06: Nurse, physician (PRN prescription)
-)))
-|Activities involved|(((
-* SA-06: Winding down to rest
-* SA-07: Listening to radio, news or audiobooks
-)))
-|Breakdown point|Restlessness peaks when staff time is lowest; calming down needs a person who is not there
-|Causes|(((
-Root causes:
-
-* Sundowning
-* No walk, no daylight that day
-
-Contributing causes:
-
-* Dinner and shift handover
-* Distressing news at the wrong hour
-* Medication as the quickest answer
-)))
-|Sub-problems|(((
-1. Prevention: no walk, so a restless evening
-1. Calming: no one to stay
-1. Content: distressing audio
-1. Escalation: medication as default
-)))
-|Out of scope|(((
-* Prescribing or withholding medication - ST-06
-* Physical restraint
-* Monitoring sleep or night-time movement in the bedroom
-)))
-
-== Graph edges ==
-
-illustrates → Problem; involves → ST-01, ST-02, ST-06, SA-06, SA-07; reimagined-as → DS-03 (§2.1).
-
-= Problem Scenario - Radio on, nobody listening [PS-06] =
-
-**Report Format:** §1.1 Operational Demands
-
-== Fields ==
-
-|=Field|=Description
-|ID|PS-06
-|Name|Radio on, nobody listening
-|Status|In Progress
-|Evidence basis|(((
-Provisional. Constructed from SA-07 and the a2.1 stakeholder records; literature and group reasoning only. No resident or family member has confirmed it.
-
-* Gerdner (2000): individualised music outperformed generic "relaxation" music on agitation
-)))
-|Narrative|(((
-The resident loved brass band music and football, and read the morning paper front to back. In the care home, the radio in their room is tuned to a pop station; a care worker switched it on months ago. The resident cannot work the buttons.
-
-On Sunday their daughter puts on an audiobook - chapter seven of a detective story. The resident asks who all these people are, then pulls the plug. The daughter's list of favourite programmes is in a drawer.
-)))
-|Stakeholders involved|(((
-* ST-01: Resident with dementia
-* ST-02: Care worker
-* ST-03: Family member
-* ST-08: Activity coordinator
-)))
-|Activities involved|SA-07: Listening to radio, news or audiobooks
-|Breakdown point|What plays is chosen by whoever was there last, not by the resident; content fits neither the person, the hour nor the memory span
-|Causes|(((
-Root causes:
-
-* Devices too complex to operate
-* Preferences known to family, not to whoever switches on
-* Audiobooks and serials assume memory across days
-
-Contributing causes:
-
-* No staff time to ask
-* News not adapted to the listener
-* Hearing loss
-)))
-|Sub-problems|(((
-1. Choice: resident cannot select
-1. Fit: content not matched to the person
-1. Timing: hour and mood ignored (news at night)
-1. Continuity: plot lost between sessions
-1. Overload: always on
-)))
-|Out of scope|(((
-* Producing content
-* Hiding news from the resident - choose what to offer first, never what may be heard
-* Television
-)))
-
-== Graph edges ==
-
-illustrates → Problem; involves → ST-01, ST-02, ST-03, ST-08, SA-07; reimagined-as → DS-02, DS-03 (§2.1).
+illustrates → Problem; involves → ST-01, ST-03, ST-04, SA-01, SA-05; reimagined-as → DS-03 (§2.1).
 
 = References =
 
-* Ancoli-Israel, S. et al. (2003). Increased light exposure consolidates sleep and strengthens circadian rhythms in severe Alzheimer's disease patients. //Behavioral Sleep Medicine//, 1(1), 22-36.
-* Anderson-Hanley, C. et al. (2012). Exergaming and older adult cognition: a cluster randomized clinical trial. //American Journal of Preventive Medicine//, 42(2), 109-119.
-* Churcher Clarke, A. et al. (2017). An adapted mindfulness intervention for people with dementia in care homes: feasibility pilot study. //International Journal of Geriatric Psychiatry//, 32(12), e123-e131.
-* Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
-* Gerdner, L. A. (2000). Effects of individualized versus classical "relaxation" music on the frequency of agitation in elderly persons with Alzheimer's disease and related disorders. //International Psychogeriatrics//, 12(1), 49-65.
-* Khachiyants, N. et al. (2011). Sundown syndrome in persons with dementia: an update. //Psychiatry Investigation//, 8(4), 275-287.
-* Lai, C. K. Y. & Arthur, D. G. (2003). Wandering behaviour in people with dementia. //Journal of Advanced Nursing//, 44(2), 173-182.
-* Lyketsos, C. G. et al. (2002). Prevalence of neuropsychiatric symptoms in dementia and mild cognitive impairment: results from the Cardiovascular Health Study. //JAMA//, 288(12), 1475-1483.
-* Schneider, L. S., Dagerman, K. S. & Insel, P. (2005). Risk of death with atypical antipsychotic drug treatment for dementia. //JAMA//, 294(15), 1934-1943.
-* Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.
+* Bora et al. (2015); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Orange et al. (1996). See a1.1 References.

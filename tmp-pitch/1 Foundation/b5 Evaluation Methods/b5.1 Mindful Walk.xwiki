@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b5.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four methods. Does the System work: staged verification in the garden and the room (EM-01). Does it help: within-resident comparison over alternating weeks (EM-02). How staff and family see it: interviews (EM-03). Does the voice sound right: a human-operated prototype test of the cues before anything is automated (EM-04). No primary data yet; costs are the group's estimates.
+**Abstract.** Four methods. A prototype that shows every Function and is verified against staged events (EM-01). A protocol for observing walks live, without recording: emotion, slips and recovery, conversation, safety (EM-02). An ABAB test per case, on pair walks and phone walks (EM-03). Short interviews on privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates.
 
-= Evaluation Method - Staged garden and room verification [EM-01] =
+= Evaluation Method - Prototype: demonstration and staged verification [EM-01] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -13,27 +13,70 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|EM-01
-|Name|Staged garden and room verification
+|Name|Prototype: demonstration and staged verification
 |Status|In Progress
-|Evidence basis|Staged-event testing against a timestamped reference log, as for the COACH prompting system (Mihailidis et al., 2008).
+|Evidence basis|Staged events against a timestamped reference log, as for the COACH prompting system (Mihailidis et al., 2008). Operator-voiced build: the Wizard-of-Oz method (Riek, 2012).
 |Procedure summary|(((
-Garden: experimenter walks the loop with the pocket guide and performs scripted events - stops, bench rests, landmark passes, gate pass, help press, device drop, no-response period.
+One Artifact (AT-01) in three builds:
 
-Indoors: refusals, speech and button presses during practice, "stop", evening request for news, listening offers.
+* Build A, operator-voiced: a researcher triggers every utterance from a console. Formative use with 2 resident pairs and 2 phone pairs who do not take part in EM-03: wait length, wording, whisper hints. Observed under EM-02.
+* Build B, automated: sensing, walker model and alerts run on the devices. The operator approves each starter and each deferral before it plays.
+* Build C, demonstration: role-players; sensor events can be injected; the mind panel on a screen.
 
-Compare with the reference log. Inspect session record and profile.
+Staged verification on Build B: 20 trials per event (50 for disclosure events), against the reference log. Role-players only.
 )))
-|Purpose|Verification
-|Human subjects required|No
-|Measures used|M-01; M-08 (content check only)
-|Cost and feasibility|Low. Beacons, prototype, experimenter. Runs as soon as a prototype exists.
-|Known limitations|Scripted events are not residents. Weather and garden layout vary.
+|Purpose|Verification; demonstration; formative (Build A)
+|Human subjects required|Builds B and C: no; team members act. Build A: yes, a few residents under EM-02 rules.
+|Measures used|M-01, M-10; M-03, M-04 (Build A)
+|Cost and feasibility|Moderate. Two phones, beacons, a laptop as server, Pepper from the course. About 6-8 weeks to Build B.
+|Known limitations|Role-players do not slip like residents. Offline recognition of older Dutch speakers and dialect is untested (O-3). In Build A the operator adapts better than the System will.
+
+== Kit ==
+
+|=Part|=Prototype|=Stands in for
+|Pocket guide|Android phone on a rollator clip; two large Bluetooth buttons; pull-cord switch|TECH-02
+|Speech|Offline recogniser on the phone (e.g. Vosk or whisper.cpp, Dutch model); keyword list per person|TECH-06
+|Server|Laptop on a Wi-Fi router with no internet uplink; one encrypted store per resident|TECH-04, TECH-05
+|Landmarks|Five Bluetooth beacons: door, pond, roses, bench, gate|TECH-03
+|Door|Pepper (Python SDK); tablet for photos and yes/no|TECH-01
+|Calls|Softphone on the guide through a local exchange (Asterisk); the "relative" on a second handset|TECH-02 telephony
+|Staff|Second phone with the alert app|TECH-04
+|Operator|Console and mind panel on a laptop|Build A voice; Build B approvals
+
+== Mind panel ==
+
+Shown live, per walker: common ground (consented items; blocked items with the reason); the thread (last three topics); stories told this walk; belief flags; state (speaking, searching, finished, upset, tuned out); settings. Below: the step the guide chose, and why. The panel clears at the end of the walk; nothing is kept.
+
+== Demonstration script (Build C) ==
+
+|=Scene|=Events|=What the System shows
+|1 Pair walk (UC01)|Private consent at the door; re-introduction; a mid-story slip; a slip near a blocked topic; a stumble while talking; one walker presses "going in"|Waits, then echoes the thread to both; the blocked topic never offered; "Bench on your left"; the other walker offered a choice
+|2 Phone walk (UC02)|Call at the agreed time; a story repeated; the call passes 15 min; the relative presses 9|A whispered hint to the relative only; a bench offered; alert on the staff phone
+|3 Walk alone (UC03)|Guide as conversation partner; "Is Henk coming today?"; gate beacon|Truthful deferral; the trusted worker alerted; one orienting cue at the gate
+|Close|Record and devices inspected|Six items in the record; no audio file; no traffic outside the home network
+
+== Staged verification ==
+
+|=Event|=Required behaviour|=Criterion (proposed; O-2)
+|Mid-sentence stop, 3-15 s|No System speech before the wait ends|8 s; 20/20
+|No resumption after the wait|Thread echoed to both, as a statement|≤ 3 s; 19/20
+|Story repeated on a call|Whisper to the relative only|≤ 5 s; never audible on the resident's side; 20/20
+|Starter without this walk's consent|Not used|0/50
+|Item blocked by the map for this pair|Never spoken|0/50
+|Question on a listed sensitive topic|Truthful deferral; trusted person alerted|alert ≤ 10 s, 20/20; the listed fact never stated, 0/50
+|Starter due while walking|Delayed until a stop|0/20 played while moving
+|Stumble while talking|Offer to sit; second within 10 min: alert|≤ 3 s; ≤ 10 s
+|Set length reached mid-talk|Head-back cue|≤ 30 s
+|Gate; pull-cord; drop with no response; relative presses 9|Alert|≤ 10 s; 20/20
+|Walk ends|Thread and transcript deleted; record holds six items|100%
+|Network capture, full test day|No packet leaves the home network|0
+|File-system search, all devices|No audio file|0
 
 == Graph edges ==
 
-produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC01-F5-PR5, UC03-F6-PR6; applies → M-01, M-08.
+produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC01-F5-PR5, UC01-F6-PR6; informs → IDP-01 to IDP-03 (Build A); applies → M-01, M-10.
 
-= Evaluation Method - Within-resident comparison [EM-02] =
+= Evaluation Method - Observed walks [EM-02] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -41,25 +84,40 @@ produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC
 
 |=Field|=Description
 |ID|EM-02
-|Name|Within-resident comparison
+|Name|Observed walks: live listening, no recording
 |Status|In Progress
-|Evidence basis|Alternating baseline and System phases, as in COACH (Mihailidis et al., 2008).
+|Evidence basis|OERS (Lawton et al., 1996); slip coding from conversation analysis (Schegloff et al., 1977; Orange et al., 1996); process consent in dementia research (Dewing, 2007).
 |Procedure summary|(((
-Per resident: baseline weeks (current practice) and System weeks, alternating.
-
-Observer on sample walks and sessions. Matched recall events (M-03). Short interview after System sessions, only if willing and not distressed.
+1. Before the walk, each walker is asked: "Is it all right if Lisa listens today?" No, or signs of unease: no observation that day.
+1. The listener walks about 10 m behind and hears the walk through a headset, streamed live from the guide over the home network. Nothing is recorded or stored. Phone walks: the resident's side only.
+1. At the door: OERS, 5 min (M-03).
+1. On the walk: OERS every 10 min (M-03); one row per slip (M-04); talk and its quality every 2 min (M-05); safety and pressure checklist (M-06, M-07).
+1. After: the resident's view, if willing (M-07); OERS for 10 min in the lounge.
+1. Stop rule: anxiety, sadness or anger rated 4 or more, or any sign of dissent: observation ends; ST-04 is called.
 )))
-|Purpose|Validation
-|Human subjects required|Yes. Residents (supported consent), walking partners, staff.
-|Measures used|M-02 to M-07; M-08 (resident interview); M-09; M-10; M-11
-|Cost and feasibility|High. Care-home access, ethics approval, supported consent, trained observers, several weeks per phase.
-|Known limitations|Small n; no control group; novelty effects. Weather and season drive walking: phases must be balanced across both. An observer on the walk changes the walk.
+|Purpose|Validation; formative in EM-01 Build A
+|Human subjects required|Yes. Residents with supported consent and a representative; partners; relatives on calls.
+|Measures used|M-03 to M-07, M-10
+|Cost and feasibility|One researcher, about 40 min per walk including door and lounge windows; two on reliability walks.
+|Known limitations|(((
+* The listener hears the guide: no blinding to condition. Listeners are not told the hypotheses.
+* No recording, so no re-coding; disagreements stay on record as disagreements.
+* Being listened to changes talk. A familiarisation week before baseline lowers the effect; it does not remove it.
+* Live listening hears secrets. Codes-only notes limit the risk; they do not remove it.
+)))
+
+== Listener rules ==
+
+* Training: OERS manual; 10 practice walks with role-players and Build A pilots, until ICC ≥ .70 (OERS) and κ ≥ .70 (slip type) against a trained rater.
+* Reliability: a second listener on 20% of study walks, coding independently (M-03 to M-06).
+* Confidentiality: codes only, never words or content. A signed confidentiality agreement. A risk of harm heard on a walk goes to ST-04 at once, under the home's protocol.
+* Language notes, separate consent only: dialect words and personal expressions for the resident's own-word list (TECH-06), without the context they were said in. Research use of these lists needs a further consent and ethics review (O-8). A word list can identify its speaker, more so in a small home with a local dialect; anonymisation lowers this risk and does not remove it.
 
 == Graph edges ==
 
-produces → Evidence for UC01-F1-CL1 to UC01-F2-CL6, UC01-F2-CL8, UC02-F3-CL9 to UC02-F3-CL11, UC03-F6-CL12 to UC03-F6-CL14; applies → M-02 to M-11.
+used-by → EM-01 (Build A), EM-03; applies → M-03 to M-07, M-10.
 
-= Evaluation Method - Staff and family interview [EM-03] =
+= Evaluation Method - ABAB comparison per case [EM-03] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -67,21 +125,69 @@ produces → Evidence for UC01-F1-CL1 to UC01-F2-CL6, UC01-F2-CL8, UC02-F3-CL9 t
 
 |=Field|=Description
 |ID|EM-03
-|Name|Staff and family interview
+|Name|ABAB comparison per case
 |Status|In Progress
-|Evidence basis|Bespoke. Concern set drawn from Niemeijer et al. (2010, 2015).
-|Procedure summary|Semi-structured interviews with care workers, activity coordinators and family: alerts, session record, life-story profile, tone of the voice, human contact, the evening news default.
+|Evidence basis|Single-case withdrawal design. Standards: at least three phase changes and five data points per phase (Kratochwill et al., 2010). Effect size: non-overlap of all pairs, NAP (Parker & Vannest, 2009).
+|Procedure summary|(((
+Two tracks of four cases: 4 resident pairs (8 residents); 4 resident-relative pairs (4 residents, 4 relatives). 12 residents. Each case is its own control. Walks alone are not tested here: no conversation to measure in most settings.
+
+Inclusion: mild to moderate dementia; walks 15 min with or without a rollator; ST-06 agrees; the pair agrees to walk together; the relative calls at least weekly.
+
+Phases: familiarisation (1 week), A1 (2 weeks), B1 (3 weeks), A2 (2 weeks), B2 (3 weeks): 11 weeks. Each phase change falls on a day drawn at random, before the study, from a five-day window around its planned date.
+
+A: walks as today. The guide is carried and keeps the record; alerts (F5) on for safety; everything else off. Calls run through the guide on speaker, without hints.
+
+B: the full System, with each resident's settings.
+
+At least 5 observed walks (EM-02) per case per phase. A phase is extended by up to one week to reach 5.
+)))
 |Purpose|Validation
-|Human subjects required|Yes. Staff and family.
-|Measures used|M-08, M-09, M-10
-|Cost and feasibility|Moderate. Consent; staff time in working hours. Lower ethics load than EM-02.
-|Known limitations|A second-hand view of the resident's experience. Time spent is self-reported.
+|Human subjects required|Yes. 12 residents, 4 relatives, care staff.
+|Measures used|M-02 to M-08, M-10
+|Cost and feasibility|High. Care-home access, ethics approval, supported consent, one listener per observed walk, 11 weeks.
+|Known limitations|Small n; no control group; no blinding; novelty; carry-over: relatives keep habits learnt from hints in A2.
+
+== Outcomes ==
+
+|=Outcome|=Measure|=When
+|Primary: slips recovered|M-04 recovery rate|Every observed walk
+|Primary: emotional quality|M-03 positive and negative scores|Every observed walk
+|Walks with company; minutes|M-02|Every walk, from the record
+|Conversation|M-05|Observed walks
+|Safety while talking|M-06|Observed walks; device events
+|Own view; pressure; relative's rating|M-07|After observed walks and calls
+|Loneliness|M-08|End of each phase
+|Sensitive questions; untruths; disclosures|M-10|Throughout
+
+== Analysis and decision rules ==
+
+Set before the study starts:
+
+* Per case: visual analysis of level, trend, variability, immediacy, overlap and consistency across like phases (Kratochwill et al., 2010); NAP at each phase change (A1-B1, B1-A2, A2-B2); a randomisation test using the drawn change days
+* Across cases: median NAP per track; no pooling across tracks
+* UC01-F2-CL1 and UC02-F2-CL2 are supported if NAP ≥ .70 at all three phase changes in at least 3 of 4 cases in the track, with face signs (M-04) no higher in B
+* Any fall: walks paused for that case and reviewed with ST-06 before going on
+* Stumbles per walk-hour higher in B than in A in 2 or more cases: adverse UC01-F3-CL5 confirmed; starters only when seated before any further B phase
+* Any untrue statement or disclosure by the System (M-10): B stopped for all cases until the cause is found and fixed
+
+== Ethics ==
+
+* Human Research Ethics Committee, TU Delft. A medical ethics committee checks whether the Dutch WMO applies: participants lack capacity to consent.
+* Consent from the representative, plus the resident's own assent; process consent at every walk (Dewing, 2007); both residents in a pair; relatives for their calls.
+* Live listening agreed per walk (EM-02).
+* A2 removes help a resident may like: kept short; families told in advance.
+
+== Threats ==
+
+* Weather and season: walks count only in walkable weather; rain and temperature logged; spring or early autumn.
+* Novelty and observer presence: the familiarisation week, with device and listener present.
+* Small n, no blinding, no control group: claims are made per case, and replicated across cases.
 
 == Graph edges ==
 
-produces → Evidence for UC01-F2-CL6, UC01-F4-CL7, UC01-F2-CL8, UC02-F3-CL11, UC03-F6-CL14, UC03-F6-PR6 (profile view); applies → M-08, M-09, M-10.
+produces → Evidence for UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL4, UC01-F3-CL5, UC01-F1-CL6, UC01-F1-CL10, and in part UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8; applies → M-02 to M-08, M-10.
 
-= Evaluation Method - Human-operated prototype test [EM-04] =
+= Evaluation Method - Interviews [EM-04] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -89,28 +195,27 @@ produces → Evidence for UC01-F2-CL6, UC01-F4-CL7, UC01-F2-CL8, UC02-F3-CL11, U
 
 |=Field|=Description
 |ID|EM-04
-|Name|Human-operated prototype test
+|Name|Interviews: residents, relatives, staff
 |Status|In Progress
-|Evidence basis|A researcher operates the guide unseen. Known in HRI as the Wizard-of-Oz method: a standard way to test interaction before automating it (Riek, 2012).
-|Procedure summary|(((
-An experimenter voices the guide remotely from a script of candidate cues (IDP-01 to IDP-03), during short walks and seated sessions.
-
-Vary: wording, pace, length of silence, name use, form of memory invitation.
-
-Observe; ask residents and staff which wording felt right.
-)))
-|Purpose|Validation (formative)
-|Human subjects required|Yes. A few residents; staff present.
-|Measures used|M-04, M-05, M-08 (code T)
-|Cost and feasibility|Low to moderate. No working System needed.
-|Known limitations|A human wizard adapts better than the System will. Small sample. Formative only.
+|Evidence basis|Bespoke. Concern set from Niemeijer et al. (2010, 2015) and the Mental Health Foundation (2016).
+|Procedure summary|After A2 and after B2. Residents, if willing: three open questions. Relatives, care workers, coordinator: 20 minutes, semi-structured. Topics: help after slips, whispered hints, consent questions, the relationship map, truthful deferrals, feeling watched, listened in on or walked.
+|Purpose|Validation
+|Human subjects required|Yes. Residents, relatives, staff.
+|Measures used|M-09
+|Cost and feasibility|Moderate. Staff time in working hours.
+|Known limitations|Residents' answers are brief; relatives and staff give a second-hand view.
 
 == Graph edges ==
 
-informs → IDP-01, IDP-02, IDP-03; produces → formative findings for UC01-F2-CL6; applies → M-04, M-05, M-08.
+produces → Evidence for UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8, UC01-F2-CL9; applies → M-09.
 
 = References =
 
-* Mihailidis, A. et al. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28.
-* Niemeijer, A. R. et al. (2010, 2015). See b3.1 References.
-* Riek, L. D. (2012). Wizard of Oz studies in HRI: a systematic review and new reporting guidelines. //Journal of Human-Robot Interaction//, 1(1), 119-136. (check)
+//Cited from memory; checked in the evidence pass.//
+
+* Dewing, J. (2007). Participatory research: a method for process consent with persons who have dementia. //Dementia//, 6(1), 11-25.
+* Kratochwill, T. R. et al. (2010). //Single-case designs technical documentation//. What Works Clearinghouse.
+* Lawton et al. (1996); Mihailidis et al. (2008); Niemeijer et al. (2010, 2015). See b4.1 References.
+* Mental Health Foundation (2016); Orange et al. (1996); Schegloff et al. (1977). See a1.1 References.
+* Parker, R. I. & Vannest, K. (2009). An improved effect size for single-case research: nonoverlap of all pairs. //Behavior Therapy//, 40(4), 357-367.
+* Riek, L. D. (2012). Wizard of Oz studies in HRI: a systematic review and new reporting guidelines. //Journal of Human-Robot Interaction//, 1(1), 119-136.

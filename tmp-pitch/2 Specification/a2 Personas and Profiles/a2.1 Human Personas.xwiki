@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Human Personas
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four personas, one per direct stakeholder in the Design Scenarios: Jan, the resident (HP-01); Myra, the care worker (HP-02); Sanne, the activity coordinator (HP-03); Kees, the walking partner (HP-04). All provisional: built from literature and group reasoning, not from interviews.
+**Abstract.** Four personas, one per direct stakeholder role in the Design Scenarios. Two residents: Jan, a former postman (HP-01), and Riet, a woman who ran the post office counter (HP-02). Anne, Jan's daughter on the phone (HP-03). Myra, the care worker Riet trusts (HP-04). All provisional: built from literature and group reasoning, not from interviews.
 
 = Human Persona - Jan [HP-01] =
 
@@ -15,39 +15,34 @@ syntax: xwiki/2.1
 |ID|HP-01
 |Name|Jan, resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, PS-01 to PS-06.
-|Elaborates|ST-01
-|Role in Scenario|Walks the garden with Kees and the guide (DS-01). Sits at the window on rain days (DS-02). Rests and listens at dusk (DS-03).
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-02.
+|Elaborates|ST-01; ST-02 on Riet's walks
+|Role in Scenario|Walks with Riet (DS-01). Walks while on the phone with Anne (DS-02).
 |Task Demands|(((
-1. Agree to go out
-1. Keep the thread on the walk
-1. Turn back from the gate
-1. Calm down at dusk
-1. Choose what to hear
+1. Agree to go
+1. Keep a story going
+1. Talk and watch the path at once
+1. Turn back in time
 )))
 |Specific Capabilities and Needs|(((
-Can: walk 20-30 minutes with a rollator, resting on benches; follow short, concrete sentences; answer yes or no; choose between two options.
+Can: walk 20-30 minutes with a rollator; tell old stories vividly; answer yes or no; choose between two.
 
-Cannot: remember a list of options; recall this morning; find the way back alone.
+Cannot: recall this morning; notice a repeated story.
 
-Moderate dementia: recent memory poor; the years on the round vivid. Hearing aid, left ear.
-
-Needs: a reason to go, a companion, time, plain adult speech.
+Moderate dementia. Hearing aid, left ear. Copes by laughing slips off and going on as before.
 )))
 |Values and Motivations|(((
-* HV-01 Autonomy - decides for themself; dislikes being "taken" for a walk
-* HV-02 Dignity - thirty years of plain talk at front doors; wants to be spoken to plainly
-* HV-03 Privacy - does not want staff to know every step
-* HV-04 Safety - fell once; uneasy on gravel
-* HV-05 Well-being - restless on days without going out
-* HV-07 Social connectedness - misses the chats on the doorsteps
-* HV-08 Identity - the post round, brass band, football: who Jan is
+* HV-01 Autonomy - goes out for own reasons: "I'm not a dog to be walked"
+* HV-06 Social connectedness - misses the chats on the doorsteps
+* HV-07 Identity - the post round
+* HV-02 Dignity - plain talk, no fuss
+* HV-03 Privacy - "What I tell Riet is between us"
 )))
-|Social Network and Relationships|Daughter (ST-03) visits on Sundays and wrote the life story with Sanne. Kees (ST-04) lives two doors down. Myra (ST-02) is Jan's care worker most afternoons.
-|History and Experiences|Thirty years as a postal worker, the last twenty on the same round, on foot and by bike. Walked the dog, Bram, twice a day until moving in two years ago. Refused a GPS watch: "I'm not a parcel."
-|Constraints and Privacy Considerations|Will not be tracked. Will not wear anything on the head. Will not be quizzed: "I'm not at school."
+|Social Network and Relationships|Daughter Anne (ST-03) calls twice a week, visits monthly. Riet (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
+|History and Experiences|Thirty years delivering post in Delft, on foot and by bike. Walked the dog twice a day until moving in, two years ago.
+|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, bridge only; hints to Anne, on; word help, off; starters, the post round and football. Will not be tracked.
 
-= Human Persona - Myra [HP-02] =
+= Human Persona - Riet [HP-02] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -55,34 +50,36 @@ Needs: a reason to go, a companion, time, plain adult speech.
 
 |=Field|=Description
 |ID|HP-02
-|Name|Myra, care worker
+|Name|Riet, resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-02, SA-02, SA-06, PS-01, PS-05.
-|Elaborates|ST-02
-|Role in Scenario|Starts the walk, clips on the guide, returns to the ward (DS-01). Receives the gate alert and judges it from the window (DS-01). Starts lying practice at handover (DS-03).
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01, PS-03.
+|Elaborates|ST-01; ST-02 on Jan's walks
+|Role in Scenario|Walks with Jan; loses the thread and finds it again (DS-01). Walks alone with the guide as conversation partner; asks for Henk (DS-03).
 |Task Demands|(((
-1. Get residents out without walking every walk
-1. Know quickly when someone needs help
-1. Calm residents at handover
-1. Read the record in seconds
+1. Find words; keep the thread
+1. Recover from a slip without embarrassment
+1. Live with the loss of Henk
+1. Keep going out
 )))
 |Specific Capabilities and Needs|(((
-Can: reassure, help physically, redirect; knows the residents well.
+Can: walk 30 minutes without aid; talk easily; notice her own slips.
 
-Needs: few, meaningful alerts; a phone message readable at a glance; devices that take seconds to set up.
+Cannot: always find a word; retain that Henk has died.
+
+Woman, 81. Mild Alzheimer's disease. Copes by facing it ("My head's no good any more"), and is embarrassed by slips in company.
 )))
 |Values and Motivations|(((
-* HV-04 Safety - every resident back, unharmed
-* HV-05 Well-being - residents out daily, calm in the evening
-* HV-06 Attentive care - time for the resident who needs it now
-* HV-01 Autonomy - lets residents choose, within time and safety limits
-* HV-03 Privacy - for residents; and no timing of their own work
+* HV-02 Dignity - slips not remarked on
+* HV-06 Social connectedness - lonely since Henk died
+* HV-08 Truthfulness - "Don't fob me off"
+* HV-03 Privacy - keeps her diagnosis to herself
+* HV-07 Identity - twenty-five years behind the counter
 )))
-|Social Network and Relationships|Six to eight residents per shift. Works with Sanne (ST-08). Employed by ST-05. Talks with families at visits.
-|History and Experiences|Has run after residents at the gate. Has handed out the as-needed tablet at dusk when nobody could stay.
-|Constraints and Privacy Considerations|Will not accept frequent low-value alerts. Will not accept a device that times their work.
+|Social Network and Relationships|Widowed last year. Son Peter lives abroad and calls on Sundays. Jan (ST-02) lives two doors down. Myra (ST-04) is her trusted person for Henk.
+|History and Experiences|Ran the post office counter in Delft and knew half the town by name. Moved in eight months ago.
+|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, conversation partner; word help, after a wait ("give me a moment first"); starters, the counter and her garden. Off-limits with every partner: her diagnosis. Henk's death: Myra only, as agreed with Peter.
 
-= Human Persona - Sanne [HP-03] =
+= Human Persona - Anne [HP-03] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -90,34 +87,29 @@ Needs: few, meaningful alerts; a phone message readable at a glance; devices tha
 
 |=Field|=Description
 |ID|HP-03
-|Name|Sanne, activity coordinator
+|Name|Anne, Jan's daughter
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Built on ST-08, SA-05, SA-07, PS-04, PS-06.
-|Elaborates|ST-08
-|Role in Scenario|Pairs Jan and Kees (DS-01). Sets up the rain-day session with Pepper (DS-02). Writes the life-story profiles with families.
+|Evidence basis|Provisional. Group reasoning only. Built on ST-03, PS-02.
+|Elaborates|ST-03
+|Role in Scenario|Calls Jan during a walk; hears whispered hints; answers "Come and get me" (DS-02).
 |Task Demands|(((
-1. Write and update profiles: welcome topics, avoided topics, favourites
-1. Pair residents who will get on
-1. Run sessions for more residents than they can sit beside
-1. Keep content fresh
+1. Call at the agreed time
+1. Keep the call warm when a story repeats
+1. Answer the wish to come home, truthfully
+1. Get help when she cannot see
 )))
-|Specific Capabilities and Needs|(((
-Can: talk with families; read a group; run the activity programme.
-
-Not technical. Needs: a profile form that takes at most 20 minutes; sessions that start with one tap.
-)))
+|Specific Capabilities and Needs|Knows Jan's life in detail. Works full-time; calls during her own lunch walk. Lives in Groningen, 250 km away. Needs hints only she hears, and only because Jan agreed.
 |Values and Motivations|(((
-* HV-05 Well-being - pleasant, meaningful days
-* HV-08 Identity - activities that fit the person
-* HV-07 Social connectedness - pairs and groups
-* HV-06 Attentive care - time per resident
-* HV-03 Privacy - the life stories in their care
+* HV-06 Social connectedness - contact between monthly visits
+* HV-08 Truthfulness - will not lie to Jan
+* HV-05 Well-being - Jan calm after the call
+* HV-03 Privacy (low) - would like to know more of Jan's day
 )))
-|Social Network and Relationships|Families (ST-03), volunteers (ST-07), care workers (ST-02), psychologist (ST-06).
-|History and Experiences|Ran snoezel sessions with recorded relaxation, and watched residents get lost in them (PS-04).
-|Constraints and Privacy Considerations|Will not keep a profile that families cannot see. Will not let Pepper replace activities with people.
+|Social Network and Relationships|Jan's only child. Wrote the life story with the coordinator.
+|History and Experiences|Has said "You told me already", and regretted it.
+|Constraints and Privacy Considerations|Will not have Jan's calls recorded.
 
-= Human Persona - Kees [HP-04] =
+= Human Persona - Myra [HP-04] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -125,28 +117,24 @@ Not technical. Needs: a profile form that takes at most 20 minutes; sessions tha
 
 |=Field|=Description
 |ID|HP-04
-|Name|Kees, walking partner
+|Name|Myra, care worker
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Built on ST-04, SA-04, PS-02.
+|Evidence basis|Provisional. Group reasoning only. Built on ST-04, PS-03.
 |Elaborates|ST-04
-|Role in Scenario|Walks with Jan; talks about the post; presses pause when the talk is good (DS-01).
+|Role in Scenario|Clips on the guides (DS-01). Answers Riet's question about Henk (DS-03).
 |Task Demands|(((
-1. Join the walk
-1. Talk
-1. End the walk when they like
+1. Start walks without walking each one
+1. Come quickly when called
+1. Answer sensitive questions as agreed
+1. Keep the relationship map current with the coordinator
 )))
-|Specific Capabilities and Needs|(((
-Can: walk without aid; talk easily; use one big button.
-
-Mild dementia: forgets names; remembers faces.
-)))
+|Specific Capabilities and Needs|Knows the residents; trained in gentle redirection. Needs: few, meaningful alerts; agreed answers in one place.
 |Values and Motivations|(((
-* HV-07 Social connectedness - company, a mate to talk to
-* HV-01 Autonomy - free to say no, free to turn back
-* HV-05 Well-being - own walk, own health
-* HV-08 Identity - forty years sorting the post at the depot
-* HV-02 Dignity - walks as Jan's partner; minding Jan is staff's job
+* HV-08 Truthfulness - one answer from all staff
+* HV-04 Safety - every resident back, unharmed
+* HV-05 Well-being - residents out, and calm
+* HV-03 Privacy - no timing of her own work
 )))
-|Social Network and Relationships|Lives two doors from Jan. Own family; own care plan.
-|History and Experiences|Sorted the post at the depot in the same town. Never met Jan there, as far as either remembers.
-|Constraints and Privacy Considerations|Will not be responsible for Jan. If Jan wanders off, that is staff's job.
+|Social Network and Relationships|Six to eight residents per shift. Works with the coordinator. Talks with families at visits.
+|History and Experiences|Heard a colleague tell Riet "He's at work".
+|Constraints and Privacy Considerations|Will not pass on news she has not agreed with the family. Will not accept frequent low-value alerts.

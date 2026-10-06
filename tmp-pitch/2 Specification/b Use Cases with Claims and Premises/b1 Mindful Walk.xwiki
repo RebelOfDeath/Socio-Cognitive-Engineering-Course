@@ -6,144 +6,130 @@ syntax: xwiki/2.1
 {{box title="Status of this page"}}
 Draft. Objectives, Use Cases, Functions, Premises and Claims traceable to the Foundation.
 
-* No primary data: no resident or care worker observed or interviewed.
+* No primary data: no resident, relative or care worker observed or interviewed.
 * References cited from memory; checked in the evidence pass (Open item O-1).
-* Cells marked [threshold - O-3] still need numbers.
+* Cells marked [threshold - O-2] still need numbers.
 {{/box}}
 
-**Abstract.** Nine objectives, three use cases, six functions. UC01: the guided garden walk, the main use case. UC02: seated or lying practice - the rain-day and dusk complement. UC03: listening - radio, news, audiobooks. Six Premises verify that the Functions work; fourteen Claims, four of them adverse, test whether they help.
+**Abstract.** Eight objectives, three use cases, six functions. UC01: a walk with a fellow resident, the main use case. UC02: a walk on the phone with a relative. UC03: a walk on your own. Six Premises verify that the Functions work; ten Claims, five of them adverse, test whether they help.
 
 = Objectives =
 
-== Objective - Walk more [OBJ-01] ==
+== Objective - Talk recovers [OBJ-01] ==
 
 |=Field|=Description
 |ID|OBJ-01
-|Name|Walk more
+|Name|Talk recovers
 |Status|In Progress
-|Evidence basis|Goal on SA-01; PS-01, PS-02. Forbes et al. (2015); HFC-01 (hypothesis).
-|Statement|Residents walk outdoors more often and for longer, and finish the walks they start.
-|Type|Operational
-|Derived from|Goal on SA-01; HV-05
-|Priority|Must. Walking comes first; practice and listening support it.
+|Evidence basis|Goal on SA-04; PS-01, PS-02. HFC-03, HFC-05.
+|Statement|After a slip, the conversation goes on, without the slip being exposed.
+|Type|Human-factors
+|Derived from|Goal on SA-04; HFC-03 Conversation repair
+|Priority|Must.
 
-== Objective - Stay in the moment [OBJ-02] ==
+== Objective - Walk with company [OBJ-02] ==
 
 |=Field|=Description
 |ID|OBJ-02
-|Name|Stay in the moment
+|Name|Walk with company
 |Status|In Progress
-|Evidence basis|HFC-02, HFC-03. Sub-problems "Anchoring" (PS-01) and "Re-anchoring" (PS-04).
-|Statement|During a walk or practice, the resident keeps place and purpose, or finds them again, without a person re-explaining.
-|Type|Human-factors
-|Derived from|HFC-02 Present-moment attention; HFC-03 Attention restoration
+|Evidence basis|Goals on SA-01 to SA-03. HFC-01. Forbes et al. (2015).
+|Statement|Residents walk more often with a fellow resident, a relative on the phone, or the guide where agreed.
+|Type|Operational
+|Derived from|Goals on SA-01 to SA-03; HV-06
 |Priority|Must.
 
-== Objective - Welcome memories [OBJ-03] ==
+== Objective - Safe while talking [OBJ-03] ==
 
 |=Field|=Description
 |ID|OBJ-03
-|Name|Welcome memories
+|Name|Safe while talking
 |Status|In Progress
-|Evidence basis|HFC-04; VT-03. Woods et al. (2018).
-|Statement|The walk invites memories the resident is glad to tell, and avoids those that hurt.
+|Evidence basis|VT-01; HFC-02. Lundin-Olsson et al. (1997).
+|Statement|Talk on the walk does not raise falls or let tiredness pass unnoticed.
 |Type|Value-derived
-|Derived from|HV-08 Identity; bounded by VT-03
-|Priority|Should.
+|Derived from|HV-04 Safety; bounded by VT-01
+|Priority|Must.
 
-== Objective - Calm at rest [OBJ-04] ==
+== Objective - Always truthful [OBJ-04] ==
 
 |=Field|=Description
 |ID|OBJ-04
-|Name|Calm at rest
+|Name|Always truthful
 |Status|In Progress
-|Evidence basis|HFC-02, HFC-05; PS-04, PS-05; goal on SA-06.
-|Statement|Seated and lying practice, and evening listening, leave the resident calmer - without sedating medication as the default.
-|Type|Human-factors
-|Derived from|Goal on SA-06; HFC-02; HFC-05
-|Priority|Should.
+|Evidence basis|Goal on SA-05; PS-03; VT-03; HFC-08.
+|Statement|The System says nothing untrue. Painful truths come from a trusted person.
+|Type|Value-derived
+|Derived from|HV-08 Truthfulness; goal on SA-05
+|Priority|Must.
 
-== Objective - Own choice [OBJ-05] ==
+== Objective - No secret revealed [OBJ-05] ==
 
 |=Field|=Description
 |ID|OBJ-05
-|Name|Own choice
+|Name|No secret revealed
 |Status|In Progress
-|Evidence basis|HV-01; Ryan & Deci (2000).
-|Statement|The resident decides whether, what and how long. "No" is final for the moment.
+|Evidence basis|VT-04, VT-05.
+|Statement|Nothing about a resident reaches another person without that resident's consent. Nothing leaves the care home.
 |Type|Value-derived
-|Derived from|HV-01 Autonomy
+|Derived from|HV-03 Privacy
 |Priority|Must.
 
-== Objective - Adult voice [OBJ-06] ==
+== Objective - The resident's own walk [OBJ-06] ==
 
 |=Field|=Description
 |ID|OBJ-06
+|Name|The resident's own walk
+|Status|In Progress
+|Evidence basis|VT-07; HV-01. Ryan & Deci (2000).
+|Statement|Walks happen for the resident's own reasons, with the resident's own settings; never as a routine run for staff.
+|Type|Value-derived
+|Derived from|HV-01 Autonomy; bounded by VT-07
+|Priority|Must.
+
+== Objective - Adult voice [OBJ-07] ==
+
+|=Field|=Description
+|ID|OBJ-07
 |Name|Adult voice
 |Status|In Progress
-|Evidence basis|HFC-06; VT-05. Williams et al. (2009); Kitwood (1997).
-|Statement|Guidance never talks down: no elderspeak, no memory tests, no praise for the obvious.
+|Evidence basis|HFC-06. Williams et al. (2009); Kitwood (1997).
+|Statement|No elderspeak, no quizzing, no correcting, no praise for the obvious.
 |Type|Value-derived
 |Derived from|HV-02 Dignity
 |Priority|Should.
 
-== Objective - Help without tracking [OBJ-07] ==
-
-|=Field|=Description
-|ID|OBJ-07
-|Name|Help without tracking
-|Status|In Progress
-|Evidence basis|VT-01, VT-02; HFC-07. Niemeijer et al. (2010, 2015).
-|Statement|When something goes wrong, a person arrives in time. No route or whereabouts are recorded.
-|Type|Value-derived
-|Derived from|HV-04 Safety; HV-03 Privacy
-|Priority|Must.
-
-== Objective - Time freed, company kept [OBJ-08] ==
+== Objective - Less lonely [OBJ-08] ==
 
 |=Field|=Description
 |ID|OBJ-08
-|Name|Time freed, company kept
+|Name|Less lonely
 |Status|In Progress
-|Evidence basis|Goal on SA-02; VT-07.
-|Statement|Staff spend less time per walk, and residents get no less human company.
-|Type|Operational
-|Derived from|Goal on SA-02; HV-06, HV-07
-|Priority|Should. Never at the expense of OBJ-01 or of human company.
-
-== Objective - Listening that fits [OBJ-09] ==
-
-|=Field|=Description
-|ID|OBJ-09
-|Name|Listening that fits
-|Status|In Progress
-|Evidence basis|PS-06; HFC-05. Gerdner (2000).
-|Statement|What plays fits the person, the hour and the mood, and the resident chose it.
-|Type|Value-derived
-|Derived from|HV-08 Identity; HV-01 Autonomy
-|Priority|Could. Valuable, but walking comes first.
+|Evidence basis|HFC-07. Victor (2012); Holwerda et al. (2014).
+|Statement|Over weeks, residents feel less lonely.
+|Type|Human-factors
+|Derived from|HV-06 Social connectedness; HFC-07
+|Priority|Should. Exploratory within this project's time frame.
 
 == Graph edges ==
 
-OBJ-01: derived-from → Goal (SA-01), HV-05; served-by → F1, F2; referenced-by → UC01-F1-CL1, UC01-F2-CL2, UC01-F2-CL3; narrated-by → OS-01.
+OBJ-01: derived-from → Goal (SA-04), HFC-03; served-by → F2; referenced-by → UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL4; narrated-by → OS-01, OS-02.
 
-OBJ-02: derived-from → HFC-02, HFC-03; served-by → F2, F3; referenced-by → UC01-F2-CL2, UC02-F3-CL9.
+OBJ-02: derived-from → Goals (SA-01 to SA-03), HV-06; served-by → F1, F2; referenced-by → UC02-F2-CL2, UC01-F1-CL6; narrated-by → OS-02.
 
-OBJ-03: derived-from → HV-08; served-by → F2; referenced-by → UC01-F2-CL4, UC01-F2-CL5; narrated-by → OS-02.
+OBJ-03: derived-from → HV-04, HFC-02; served-by → F3, F5; referenced-by → UC01-F3-CL5.
 
-OBJ-04: derived-from → Goal (SA-06), HFC-02, HFC-05; served-by → F3, F6; referenced-by → UC02-F3-CL9, UC02-F3-CL10, UC03-F6-CL13.
+OBJ-04: derived-from → HV-08, Goal (SA-05); served-by → F4; referenced-by → UC03-F4-CL7.
 
-OBJ-05: derived-from → HV-01; served-by → F1, F3, F6; referenced-by → UC01-F1-CL1, UC03-F6-CL14; narrated-by → OS-03.
+OBJ-05: derived-from → HV-03; served-by → F1, F6; referenced-by → UC01-F2-CL9.
 
-OBJ-06: derived-from → HV-02; served-by → F2, F3; referenced-by → UC01-F2-CL6; narrated-by → OS-02.
+OBJ-06: derived-from → HV-01; served-by → F1; referenced-by → UC01-F1-CL8; narrated-by → OS-03.
 
-OBJ-07: derived-from → HV-04, HV-03; served-by → F4, F5; referenced-by → UC01-F2-CL5, UC01-F4-CL7, UC02-F3-CL11.
+OBJ-07: derived-from → HV-02; served-by → F2; referenced-by → UC01-F2-CL3; narrated-by → OS-01.
 
-OBJ-08: derived-from → Goal (SA-02), HV-06, HV-07; served-by → F1, F2, F4; referenced-by → UC01-F2-CL8.
+OBJ-08: derived-from → HV-06, HFC-07; served-by → F1, F2; referenced-by → UC01-F1-CL10.
 
-OBJ-09: derived-from → HV-08, HV-01; served-by → F6; referenced-by → UC03-F6-CL12, UC03-F6-CL13, UC03-F6-CL14; narrated-by → OS-03.
-
-= Use Case - Guided garden walk [UC01] =
+= Use Case - A walk with a fellow resident [UC01] =
 
 **Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
 
@@ -151,62 +137,59 @@ OBJ-09: derived-from → HV-08, HV-01; served-by → F6; referenced-by → UC03-
 
 |=Field|=Description
 |ID|UC01
-|Name|Guided garden walk
+|Name|A walk with a fellow resident
 |Status|In Progress
-|Evidence basis|Formalizes SA-01, SA-04, PS-01, PS-02 and DS-01. No primary data.
-|Objective(s) served|OBJ-01, OBJ-02, OBJ-03, OBJ-05, OBJ-06, OBJ-07, OBJ-08
+|Evidence basis|Formalizes SA-02, SA-04, PS-01 and DS-01. No primary data.
+|Objective(s) served|OBJ-01 to OBJ-08
 |TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02, IDP-03
 |Actors|(((
-* ST-01 Resident (Direct) - walks, chooses, pauses
-* ST-04 Walking partner, ST-07 Volunteer or ST-03 Family (Direct) - walks along, talks, presses pause
-* ST-02 Care worker (Direct) - clips on the guide; receives alerts
-* ST-08 Activity coordinator (Indirect) - wrote the profile; paired the walkers
-* System - Pepper at the door (TECH-01), pocket guide (TECH-02), garden beacons (TECH-03), phone and record (TECH-04)
+* ST-01 Resident and ST-02 Fellow resident (Direct) - walk, talk, consent, end the walk
+* ST-04 Care worker (Direct) - clips on the guides; answers alerts and listed topics
+* ST-05 Activity coordinator (Indirect) - pairs, settings, relationship map
+* System - Pepper (TECH-01), a pocket guide each (TECH-02), beacons (TECH-03), server and exchange (TECH-04, TECH-05), walker model (TECH-06)
 )))
-|Trigger|Walk slot opens; or the resident asks to go out.
+|Trigger|A pair's agreed time; or one resident asks for a walk with a listed partner.
 |Pre-condition|(((
-* Resident assessed fit for the garden loop with a partner (ST-06); wider routes only with staff, volunteer or family
-* Guide charged; beacons up; profile lists welcome and avoided topics
-* Care worker reachable
-* Consent arrangements in place (Open item O-8)
+* Both assessed fit for the garden loop with a partner (ST-06)
+* The pair in the map, agreed by both; no map change awaiting review
+* Guides charged; server up; staff reachable
+* Consent arrangements in place (O-5)
 )))
 |Post-condition|(((
-Resident back inside, or a care worker has taken over after F4.
+Both back inside, or a care worker has taken over after F5.
 
-Record contains four items, and nothing about the route or the conversation.
+Record: six items. Thread, transcript and exchanged items deleted.
 )))
 |Action Sequence|(((
-~1. Slot opens. Pepper at the door offers two options (F1, IDP-03).
+~1. Each resident asked alone, by Pepper or by the guide in their room: a walk with this partner; each planned starter (F1, IDP-02).
 
-~1-alt. Resident says no. Offer ends; no new offer within the configured interval.
+~1-alt. Either says no: no pair walk. The other hears "Not today" and is offered a walk alone or a call. No reason given or asked.
 
-~2. Resident agrees. Care worker clips on the guide; companion joins; care worker returns to the ward. Guide reports ready, or degraded (F4).
+~2. Instances exchange consented items the map allows (F1). Guides report ready, or degraded (F5).
 
-~3. Walk. Quiet start; then present-moment cues with long silences (F2, IDP-01).
+~3. Pepper introduces both by name and photo (F2).
 
-~4. Landmark beacon: a place-bound cue, or a memory invitation from the profile; at most two invitations per walk (F2, IDP-02).
+~4. Walk. Guides silent while the pair talks; walker model updated (F2).
 
-~5. Pause pressed by resident or companion: guide silent until pressed again.
+~5. Slip: wait; then place, thread or a consented shared topic, as a statement to both (F2, IDP-01). Starters only at a stop (F3).
 
-~6. Stop at a bench: after a wait, offer of a short seated practice (F2).
+~6. Belief from another time: the feeling, then the present (F2, IDP-01). Question on a listed topic: truthful deferral; trusted person alerted (F4, IDP-03).
 
-~7. Hesitation, or a turn off the path: one orienting cue to something near (F2).
+~7. Stumble while talking: offer to sit. Second within 10 min: alert (F3, F5).
 
-~8. Gate beacon: one orienting cue back; alert to the care worker (F4). **Deliberate addition.**
+~8. One walker presses "going in": the other is offered to go on alone, if assessed fit, or to go in too (F1).
 
-~9. Pull-cord, fall-like impact, or no movement and no press after two check-ins: alert (F4). Guide tells the resident someone is coming.
+~9. Set length reached: head-back cue, even mid-talk (F3).
 
-~10. Set time reached: head-back cue towards the door (F2).
+~10. At the door, Pepper's welcome back: one statement from the walk (F2).
 
-~11. At the door, Pepper welcomes back with one statement about the walk (F2). **Deliberate addition** - re-exposure to the walk (HFC-01).
+~11. Record kept; thread, transcript and exchanged items deleted (F6).
 
-~12. F5 records the session.
-
-**Exception.** Guide silent, flat, or unable to send alerts: the walk goes on as today, with the companion, on the garden loop only. Degraded state shown at step 2. Verified by UC01-F4-PR4.
+**Exception.** Guide, server or map unavailable: the walk goes on as today, without personal starters. Degraded state shown at step 2.
 )))
-|Function(s) realized|F1, F2, F4, F5
+|Function(s) realized|F1 to F6
 
-= Use Case - Seated or lying practice [UC02] =
+= Use Case - A walk on the phone with a relative [UC02] =
 
 **Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
 
@@ -214,42 +197,42 @@ Record contains four items, and nothing about the route or the conversation.
 
 |=Field|=Description
 |ID|UC02
-|Name|Seated or lying practice
+|Name|A walk on the phone with a relative
 |Status|In Progress
-|Evidence basis|Formalizes SA-05, SA-06, PS-03, PS-04, PS-05, DS-02 and DS-03. No primary data.
-|Objective(s) served|OBJ-02, OBJ-04, OBJ-05, OBJ-06, OBJ-07
-|TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-03
+|Evidence basis|Formalizes SA-03, SA-04, PS-02 and DS-02. No primary data.
+|Objective(s) served|OBJ-01 to OBJ-06, OBJ-08
+|TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02, IDP-03
 |Actors|(((
-* ST-01 Resident (Direct) - sits or lies; pauses or stops
-* ST-08 Activity coordinator (Direct) - starts lounge sessions
-* ST-02 Care worker (Direct) - starts bedside practice at dusk
-* System - Pepper in the lounge (TECH-01); pocket guide docked at the bedside (TECH-02)
+* ST-01 Resident (Direct) - walks, talks
+* ST-03 Relative (Direct) - calls, talks, hears hints, can call for help
+* ST-04 Care worker (Direct) - answers alerts and listed topics
+* System - pocket guide with phone (TECH-02), server (TECH-04), walker model (TECH-06)
 )))
-|Trigger|Rain-day slot; after a walk; restlessness at dusk; the resident asks.
-|Pre-condition|Resident agreed. Pepper in the lounge, or guide docked at the bedside. Staff reachable.
-|Post-condition|Practice ended by the resident or at the set time. May continue into listening (UC03). Session recorded.
+|Trigger|Agreed call time; or the relative calls.
+|Pre-condition|Resident assessed fit for the garden loop. Relative listed; hints agreed by resident and relative, or off. Guide charged.
+|Post-condition|Call ended; resident inside or still walking. Record: six items; nothing said is kept.
 |Action Sequence|(((
-~1. Offer (F1): sit or lie with the voice, or not now.
+~1. The guide offers the call, or rings for an incoming one; one button answers (F1).
 
-~1-alt. No: offer ends.
+~1-alt. No: the relative hears "[Name] is not taking calls now." No new offer in this slot.
 
-~2. Opening: posture cue - chair, pillow. Breathing light (Pepper only).
+~2. Walk and talk. Guide silent towards the resident; walker model updated (F2).
 
-~3. Cues: body, breath, sound. Concrete; no imagery. Long silences (F3, IDP-01).
+~3. Repeated story or lost thread: a short hint, whispered to the relative only, if agreed (F2).
 
-~4. Resident speaks, presses or touches: pause. "Stop": end.
+~4. Call runs long, or pace drops: "Bench on your left. Sit and talk?" (F3).
 
-~5. Cues return at intervals; each one is a way back in. No drift sensing.
+~5. A wish to go home: no System response; the relative answers.
 
-~6. Set time: a short close, no praise. Offer of listening (UC03) or quiet (F1).
+~6. Question on a listed topic: if the relative is the listed person, they answer; if not, they hear "Listed for [trusted person]", who is alerted (F4).
 
-~7. F5 records the session.
+~7. Relative presses 9: alert; the guide tells the resident someone is coming (F5).
 
-**Exception.** Pepper unavailable: the docked guide, voice only. No device: as today (SA-05, SA-06).
+~8. Call ends; record kept (F6).
 )))
-|Function(s) realized|F1, F3, F5
+|Function(s) realized|F1 to F6
 
-= Use Case - Listening [UC03] =
+= Use Case - A walk on your own [UC03] =
 
 **Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
 
@@ -257,118 +240,95 @@ Record contains four items, and nothing about the route or the conversation.
 
 |=Field|=Description
 |ID|UC03
-|Name|Listening: radio, news, audiobooks
+|Name|A walk on your own
 |Status|In Progress
-|Evidence basis|Formalizes SA-07, PS-05, PS-06, DS-02 and DS-03. No primary data.
-|Objective(s) served|OBJ-04, OBJ-05, OBJ-09
-|TDP(s) and IDP(s) used|IDP-03
+|Evidence basis|Formalizes SA-01, SA-05, PS-03 and DS-03. No primary data.
+|Objective(s) served|OBJ-02 to OBJ-08
+|TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02, IDP-03
 |Actors|(((
-* ST-01 Resident (Direct) - chooses, changes, stops
-* ST-08 Activity coordinator, ST-03 Family (Indirect) - write and correct the profile
-* System - library and recommender (TECH-05), through Pepper or the docked guide
+* ST-01 Resident (Direct) - walks; talks with the guide where agreed
+* ST-04 Care worker (Direct) - trusted person; answers alerts
+* System - pocket guide (TECH-02), beacons (TECH-03), server and map (TECH-04, TECH-05), walker model (TECH-06)
 )))
-|Trigger|After practice; at rest; the resident asks.
-|Pre-condition|Profile written with family. Library loaded. News source chosen (Open item O-6).
-|Post-condition|Resident listened, changed or stopped. Liked or skipped noted per item. No listening log.
+|Trigger|The resident goes out.
+|Pre-condition|Assessed fit to walk alone (ST-06). Guide setting for walks alone agreed with resident and staff.
+|Post-condition|Resident back inside, or a person has come after F4 or F5. Record: six items.
 |Action Sequence|(((
-~1. Offer two items, by hour, state and profile (F6, IDP-03).
+~1. At the door, the guide asks consent for today's own-life starters (F1).
 
-~2. Resident picks one, asks for something else, or says no.
+~2. Guide follows the setting: silent; bridge; or conversation partner, with short replies on the resident's own topics and place cues with long silences (F2).
 
-~3. Long book: a one-line recap first. Short stories preferred.
+~3. Bridge: at a bench, "A call to [relative], or a walk with [partner] tomorrow?" (F1).
 
-~4. "News", at any hour: the news plays, in one step. Evening: calm content offered first; news never hidden.
+~4. Question on a listed topic: truthful deferral; trusted person alerted (F4, IDP-03). If the resident declines, the trusted person is told after the walk.
 
-~5. "Stop" or "another": stops; item marked skipped.
+~5. Tiredness, a stumble, the gate: rest offer; alert (F3, F5).
 
-~6. Item ends, or set time: fade out in the evening.
-
-~7. F5 records type and minutes; no titles.
-
-**Exception.** Recommender down: the two standing favourites from the profile.
+~6. Record kept (F6).
 )))
-|Function(s) realized|F6, F5
+|Function(s) realized|F1 to F6
 
 = Functions =
 
 |=Function|=Behaviour|=Serves|=Bounded by|=Enabled by
-|F1 Invite|At the slot, or on request: offer two options; accept any answer. "No" ends the offer; no new offer within the configured interval.|OBJ-01, OBJ-05, OBJ-08|VT-07|TECH-01 (door, lounge), TECH-02 (bedside)
-|F2 Guide the walk|Present-moment cues with long silences (IDP-01). Place-bound cues and memory invitations at landmarks (IDP-02), from a prepared script and the life-story profile. Short seated practice at a bench. One orienting cue at a hesitation or the gate. Head-back cue at the set time. Welcome back at the door. Pause on the button.|OBJ-01, OBJ-02, OBJ-03, OBJ-06, OBJ-08|VT-01, VT-03, VT-05, VT-06, VT-07|TECH-02, TECH-03; TECH-01 at the door
-|F3 Guide seated and lying practice|Body, breath, sound. Concrete; no imagery. Long silences; breathing light. Pauses on speech, touch or button; ends on "stop" or at the set time.|OBJ-02, OBJ-04, OBJ-05, OBJ-06|VT-05|TECH-01 (lounge), TECH-02 (docked)
-|F4 Call a person|Alert the care worker on pull-cord, gate, fall-like impact, or no movement and no press after two check-ins. Send resident, trigger and last landmark only. Tell the resident someone is coming. Report a degraded state at the start of a walk.|OBJ-07, OBJ-08|VT-01, VT-02|TECH-02, TECH-03, TECH-04
-|F5 Keep a short record|Per session: type, minutes, ended early, person called and reason. Nothing about the route, the conversation or the titles played.|OBJ-07, OBJ-08|VT-02, VT-06|TECH-04
-|F6 Recommend listening|Offer two items by hour, state and profile. One-line recap for long books. Evening default: calm content. News on request, at any hour, in one step; never hidden. Learns only liked or skipped.|OBJ-04, OBJ-05, OBJ-09|VT-04, VT-06|TECH-05, through TECH-01 or TECH-02
+|F1 Ask first|Before a walk, each walker alone: walk with this person; each starter; listening (study only). Two options; "no" ends the offer for the walk; no reason asked. Offers agreed calls. On walks alone, offers a person (bridge).|OBJ-02, OBJ-05, OBJ-06|VT-04, VT-07|TECH-01, TECH-02, TECH-05
+|F2 Keep the thread|Walker model: common ground, thread, said already, current belief, state. After a slip: wait, then place, thread or a consented shared topic, as a statement to both (IDP-01). Belief from another time: the feeling, then the present. On calls: whispered hints to the relative, if agreed. Silent while people talk.|OBJ-01, OBJ-02, OBJ-07|VT-02, VT-05|TECH-02, TECH-03, TECH-06
+|F3 Watch pace and rest|Starters only at a stop. No questions while walking. Stumble: offer to sit; second: F5. Pace drop or set length: rest offer; head-back cue, even mid-talk.|OBJ-03|VT-01|TECH-02, TECH-03
+|F4 Defer sensitive topics|Question on a listed topic: "That's one for [trusted person]. Shall I ask them to come?" Trusted person alerted. Never states the fact; never denies it.|OBJ-04|VT-03|TECH-04, TECH-05, TECH-06
+|F5 Call for help|Alert on pull-cord, gate, fall-like impact, second stumble, no response, relative's key. Tells the resident someone is coming. Reports a degraded state at the start.|OBJ-03|VT-06|TECH-02 to TECH-04
+|F6 Keep a short record|Per walk: type, minutes, ended early, stumbles, person called and reason, exchanged item IDs. Deletes thread, transcript and exchanged items at the end. Nothing leaves the home.|OBJ-05|VT-04, VT-05|TECH-04
 
-//Why memory invitations are prepared in advance. A generated line can state a wrong fact about a person's own life, which violates HV-08 more than silence would. Family and ST-08 check the prepared lines (Open item O-5).//
+//Why sentences are prepared, never generated. A generated sentence can state something untrue about a person's life, and an untruth cannot be taken back (HV-08). The coordinator and family check the prepared lines (O-4).//
 
 = Premises =
 
 Verification only: does the Function work as specified.
 
 |=Premise ID|=Function|=Evaluation Method(s) / Measure(s)|=Verification Criteria|=Step(s)
-|UC01-F1-PR1|F1|EM-01; M-01. No human subjects.|Takes no for an answer. No new offer within [threshold - O-3] of a "no". Never more than two options. Nothing starts before a yes.|UC01 1, 1-alt; UC02 1
-|UC01-F2-PR2|F2|EM-01; M-01. No human subjects.|Silence share at least [threshold - O-3]. Landmark cue within [threshold - O-3] s of the beacon; stop detected within [threshold - O-3] s. At most two memory invitations per walk; none from avoided topics. Pause takes effect within 1 s.|UC01 3-7, 10
-|UC02-F3-PR3|F3|EM-01; M-01. No human subjects.|Pauses within [threshold - O-3] s of speech, press or touch. "Stop" ends the session. Never runs past the set time. Script contains no imagery (script check).|UC02 2-6
-|UC01-F4-PR4|F4|EM-01; M-01. No human subjects.|Gate, pull-cord, impact and no-response events reach the phone within [threshold - O-3] s. Alert contains only resident, trigger and last landmark. No location stored. Unacknowledged alerts escalate. Degraded state reported at start.|UC01 2, 8, 9
-|UC01-F5-PR5|F5|EM-01; M-08 (content check). No human subjects.|Record contains exactly: type, minutes, ended early, person called and reason. Nothing about the route, the conversation or the titles played.|UC01 12; UC02 7; UC03 7
-|UC03-F6-PR6|F6|EM-01; M-01, M-08 (content check). No human subjects.|Never plays without a choice. Two options per offer. Evening rule applied. "News" plays within one step at any hour. Profile contains only its listed fields and liked/skipped; resident and family can see and correct it (via ST-08).|UC03 1-5
+|UC01-F1-PR1|F1|EM-01; M-01, M-10. No human subjects.|No pair walk, exchange or starter without a yes from its owner, asked alone, this walk. "No" ends the offer for the walk. Blocked or off-limits items never exchanged: 0/50.|UC01 1-2; UC02 1; UC03 1, 3
+|UC01-F2-PR2|F2|EM-01; M-01. No human subjects.|No System speech within [8 s - O-2] of a mid-sentence stop; echo within [3 s - O-2] after. Script check: statements only; none of "What were you saying", "You told", "Do you remember". Hints audible to the relative only.|UC01 3-6, 10; UC02 2-3; UC03 2
+|UC01-F3-PR3|F3|EM-01; M-01. No human subjects.|No starter while moving: 0/20. Stumble response ≤ 3 s. Head-back cue ≤ 30 s after the set length.|UC01 5, 7, 9; UC02 4; UC03 5
+|UC03-F4-PR4|F4|EM-01; M-01, M-10. No human subjects.|Listed sensitive questions detected in 19/20. Response is a truthful deferral; trusted person alerted ≤ 10 s. Listed fact never stated or denied: 0/50.|UC01 6; UC02 6; UC03 4
+|UC01-F5-PR5|F5|EM-01; M-01. No human subjects.|Gate, pull-cord, second stumble, drop with no response, relative's key: alert ≤ 10 s, 20/20. Unacknowledged alerts escalate. Degraded state reported at the start.|UC01 2, 7; UC02 7; UC03 5
+|UC01-F6-PR6|F6|EM-01; M-01 (content, network and file checks). No human subjects.|Record holds exactly six items. Thread, transcript and exchanged items deleted at the end. No packet leaves the home network; no audio file on any device.|UC01 11; UC02 8; UC03 6
 
 = Claims =
 
-Validation: does the Function have the intended effect. Claim numbers are project-wide.
+Validation: does the Function have the intended effect.
 
 |=Claim ID|=Function|=Serves Objective|=Effect|=Grounding|=Evaluation Method(s) / Measure(s)|=Validation Criteria|=Step(s)
-|UC01-F1-CL1|F1|OBJ-01, OBJ-05|Positive. A two-option invitation at the door increases walks started, compared with staff suggestion alone. Concerns ST-01, SA-01, PS-02.|HV-01; Ryan & Deci (2000).|EM-02; M-02, M-07|Walks started per week above the resident's baseline; M-07 observer score no lower.|1
-|UC01-F2-CL2|F2|OBJ-01, OBJ-02|Positive. Present-moment cues reduce early turn-backs and lengthen walks, without more distress. Concerns ST-01, SA-01, PS-01.|HFC-02, HFC-03; Churcher Clarke et al. (2017); Kaplan (1995).|EM-02; M-02, M-05, M-04|Fewer walks ended early; more minutes per walk; M-04 negative affect no higher.|3, 6, 7
-|UC01-F2-CL3|F2|OBJ-01|Positive. Events on a guided walk are recalled better the same day than matched events in a seated session. Concerns ST-01.|HFC-01 (hypothesis); Chrastil & Warren (2012); Erickson et al. (2011); Engelkamp (1998).|EM-02; M-03|Recall and recognition higher for walk events, within resident. A null result weakens the walking-first argument and is reported as such.|3, 4, 11
-|UC01-F2-CL4|F2|OBJ-03|Positive. Memory invitations at landmarks raise engagement, pleasure and talk between partners. Concerns ST-01, ST-04, SA-04, PS-02.|HFC-04; Woods et al. (2018).|EM-02; M-05, M-04|M-05 and M-04 pleasure higher on walks with invitations than without.|4
-|UC01-F2-CL5|F2|OBJ-03, OBJ-07|**Adverse.** Memory invitations stir longing for the former home: more gate alerts, more sadness. Concerns ST-01, PS-01.|HFC-04; VT-03.|EM-02; M-04; gate alerts (F5 record)|Confirmed if gate alerts per walk or M-04 sadness rise on walks with invitations. If confirmed: invitations only at the bench, or only for residents they suit.|4, 8
-|UC01-F2-CL6|F2, F3|OBJ-06|**Adverse.** The guide's voice is heard as talking down. Concerns ST-01, HV-02.|HFC-06, HFC-08; VT-05; Williams et al. (2009).|EM-04, EM-02, EM-03; M-08 (code T), M-04|Confirmed if residents or staff call the voice childish or condescending (code T), or M-04 anger rises. If confirmed: rewrite in EM-04 before EM-02 goes on.|3, 4; UC02 3
-|UC01-F4-CL7|F4|OBJ-07|Positive. Alerts bring a person in time, and the resident does not feel tracked. Concerns ST-01, ST-02, HV-03, HV-04.|HFC-07; VT-02; Niemeijer et al. (2015).|EM-01, EM-02, EM-03; M-01, M-08 (W, R)|Alert latency within PR4's threshold in use with residents; no W or R codes from residents; staff judge alerts proportionate.|8, 9
-|UC01-F2-CL8|F2|OBJ-08|Positive. Staff minutes per walk fall, and human company does not. Concerns ST-02, ST-01, HV-06, HV-07.|VT-07.|EM-02, EM-03; M-09, M-10, M-02|M-09 below baseline, and M-10 not below baseline, and walks (M-02) not fewer. Time saved by cutting company does not count.|2
-|UC02-F3-CL9|F3|OBJ-02, OBJ-04|Positive. Concrete, paced practice keeps the resident engaged longer than a recorded relaxation exercise. Concerns ST-01, ST-08, SA-05, PS-04.|HFC-02; Churcher Clarke et al. (2017).|EM-02; M-05, M-04|M-05 engagement longer than with the home's usual recording; M-04 anxiety no higher.|UC02 2-5
-|UC02-F3-CL10|F3|OBJ-04|Positive. Lying practice at dusk lowers evening agitation. Concerns ST-01, ST-02, SA-06, PS-05.|HFC-02; Khachiyants et al. (2011).|EM-02; M-06; PRN doses (secondary)|CMAI evening behaviours below baseline. PRN doses reported as context; ST-06 decides on medication.|UC02 1-6
-|UC02-F3-CL11|F3|OBJ-07|**Adverse.** A device leading practice in the room is felt as being watched. Concerns ST-01, HV-03.|HFC-07, HFC-08; Pemberton et al. (2026).|EM-02, EM-03; M-08 (W)|Confirmed if residents describe Pepper or the docked guide as watching or checking (code W). If confirmed for Pepper: guide alone, voice only.|UC02 2-5
-|UC03-F6-CL12|F6|OBJ-09|Positive. Personalised two-option offers are accepted more often, and kept on longer, than the default station. Concerns ST-01, SA-07, PS-06.|HFC-05, HFC-04; Gerdner (2000); Thomas et al. (2017).|EM-02; M-11, M-04|Acceptance and minutes above the default-station baseline; M-04 pleasure no lower.|UC03 1-2
-|UC03-F6-CL13|F6|OBJ-04, OBJ-09|Positive. Calm content as the evening default lowers evening distress. Concerns ST-01, SA-06, PS-05.|HFC-05; VT-04.|EM-02; M-06, M-04|CMAI evening behaviours and M-04 anxiety below baseline.|UC03 1, 4
-|UC03-F6-CL14|F6|OBJ-05, OBJ-09|**Adverse.** The evening default is felt as being kept from the news. Concerns ST-01, ST-03, HV-01.|VT-04; HV-01, HV-02.|EM-02, EM-03; M-08 (code K), M-07|Confirmed if residents or family describe being kept from the news (code K), or M-07 falls. If confirmed: news offered first, at every hour.|UC03 4
+|UC01-F2-CL1|F2|OBJ-01|Positive. Wait-then-redirect raises the share of slips recovered on pair walks, compared with walks as today. Concerns ST-01, ST-02, SA-04, PS-01.|HFC-03, HFC-04, HFC-05; Schegloff et al. (1977); Orange et al. (1996).|EM-03; M-04, M-03|NAP ≥ .70 at all three phase changes in 3 of 4 pairs; face signs (M-04) and negative emotion (M-03) no higher in B.|5
+|UC02-F2-CL2|F2|OBJ-01, OBJ-02|Positive. Whispered hints mean fewer repetitions exposed on calls; relatives rate calls higher and call no less. Concerns ST-01, ST-03, SA-03, PS-02.|HFC-04; VT-02.|EM-03; M-04 (R exposed), M-07 (relative), M-02 (calls)|Exposed repetitions lower and relative's rating higher in B, in 3 of 4 cases; calls per week not lower.|UC02 3
+|UC01-F2-CL3|F2|OBJ-07|**Adverse.** Help after a slip is felt as being corrected or exposed. Concerns ST-01, HV-02.|HFC-06, HFC-07; Goffman (1967).|EM-03, EM-04; M-04 (face signs), M-09 (T)|Confirmed if face signs per slip rise in B, or residents describe the help as talking down (code T). If confirmed: "wait only" for that person.|5
+|UC01-F2-CL4|F2|OBJ-01|**Adverse.** The guide cuts in before the speaker can repair. Concerns ST-01, SA-04.|HFC-03; Schegloff et al. (1977).|EM-03; M-04 (self-repair share)|Confirmed if the self-repair share falls in B. If confirmed: a longer wait, per person.|5
+|UC01-F3-CL5|F3|OBJ-03|**Adverse.** Talk kept going on the walk raises stumbles, or lets walks run past tiredness. Concerns ST-01, HV-04.|HFC-02; Lundin-Olsson et al. (1997).|EM-03; M-06|Confirmed if stumbles per walk-hour are higher in B than in A in 2 or more cases, or overruns rise. If confirmed: starters only when seated.|5, 7, 9
+|UC01-F1-CL6|F1|OBJ-02|Positive. Asking first, with introductions, leads to more walks with company and more pleasure on them. Concerns ST-01, ST-02, SA-02.|HFC-01; Ryan & Deci (2000).|EM-03; M-02, M-03|Walks with company per week, and the positive emotion score, higher in B in 3 of 4 cases per track.|1, 3
+|UC03-F4-CL7|F4|OBJ-04|Positive. Painful questions are answered by the trusted person, and trust is kept: no untrue statement, no complaint of being fobbed off. Concerns ST-01, ST-04, SA-05, PS-03.|HFC-08; Mental Health Foundation (2016).|EM-03, EM-04; M-10, M-09 (U)|All listed questions deferred; trusted person arrives within [threshold - O-2]; zero untrue statements; no U codes.|UC01 6; UC03 4
+|UC01-F1-CL8|F1|OBJ-06|**Adverse.** The walk is felt as being "taken out", for staff's sake. Concerns ST-01, ST-03, VT-07.|VT-07; Kitwood (1997).|EM-03, EM-04; M-09 (D), M-07 ("Again?")|Confirmed if residents or relatives use code D, or the "Again?" share falls in B. If confirmed: offers only at the resident's request.|1
+|UC01-F2-CL9|F2|OBJ-05|**Adverse.** A guide that listens is felt as being listened in on. Concerns ST-01, ST-02, HV-03, VT-05.|VT-05; Niemeijer et al. (2015).|EM-04; M-09 (L, W)|Confirmed if residents or partners use codes L or W. If confirmed: thread-keeping off by default, on at the resident's request.|4
+|UC01-F1-CL10|F1, F2|OBJ-08|Positive, exploratory. Loneliness is lower at the end of B phases than of A phases. Concerns ST-01, HV-06.|HFC-07; Holwerda et al. (2014).|EM-03; M-08|Lower in B in 3 of 4 cases per track. Phases are short: a null result is likely and reported as such.|-
 
 == Graph edges ==
 
-UC01: realizes → DS-01; serves → OBJ-01, OBJ-02, OBJ-03, OBJ-05 to OBJ-08; uses → TDP-01, IDP-01, IDP-02, IDP-03; asserts → UC01-F1-PR1, UC01-F2-PR2, UC01-F4-PR4, UC01-F5-PR5, UC01-F1-CL1 to UC01-F2-CL8.
+UC01: realizes → DS-01; serves → OBJ-01 to OBJ-08; uses → TDP-01, IDP-01 to IDP-03; asserts → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC01-F5-PR5, UC01-F6-PR6, UC01-F2-CL1, UC01-F2-CL3, UC01-F2-CL4, UC01-F3-CL5, UC01-F1-CL6, UC01-F1-CL8, UC01-F2-CL9, UC01-F1-CL10.
 
-UC02: realizes → DS-02, DS-03; serves → OBJ-02, OBJ-04 to OBJ-07; uses → TDP-01, IDP-01, IDP-03; asserts → UC02-F3-PR3, UC02-F3-CL9, UC02-F3-CL10, UC02-F3-CL11.
+UC02: realizes → DS-02; serves → OBJ-01 to OBJ-06, OBJ-08; uses → TDP-01, IDP-01 to IDP-03; asserts → UC02-F2-CL2.
 
-UC03: realizes → DS-02, DS-03; serves → OBJ-04, OBJ-05, OBJ-09; uses → IDP-03; asserts → UC03-F6-PR6, UC03-F6-CL12, UC03-F6-CL13, UC03-F6-CL14.
+UC03: realizes → DS-03; serves → OBJ-02 to OBJ-08; uses → TDP-01, IDP-01 to IDP-03; asserts → UC03-F4-PR4, UC03-F4-CL7.
 
 = Open items =
 
 |=ID|=Item|=Blocks|=Owner
-|O-1|No primary data. All references cited from memory: evidence pass to check each one against its source.|Every Evidence basis|Group
-|O-2|Walking and memory (HFC-01) rests on a group observation: holiday moments on foot are remembered better than moments sitting down. Find a direct source; until then, a hypothesis that UC01-F2-CL3 tests.|HFC-01; CL3|Group
-|O-3|Thresholds for PR1 to PR6: silence share, cue latency, stop detection, alert latency, re-offer interval. Set from an EM-01 pilot and care-worker input.|PR1 to PR6|Group
-|O-4|Hearing: speaker audible to resident and partner outdoors, with hearing aids, wind and traffic. Test in EM-04.|TECH-02; F2|Group
-|O-5|Life-story profile: who writes it, how often it is reviewed, how avoided topics are found. Form for ST-08 and families.|F2, F6; VT-03, VT-06|ST-08 with group
-|O-6|News source: plain-language, accurate, licensed. No unchecked generated summaries.|F6; UC03|Group
-|O-7|Garden policy with ST-05 and ST-06: who may walk the loop with a partner instead of staff; who answers a gate alert.|UC01 pre-condition; VT-01|ST-05, ST-06
-|O-8|Consent and data: lawful basis (GDPR), supported consent, representative, where profile and records are stored.|UC01 to UC03 pre-conditions; VT-02, VT-06|ST-05
-|O-9|Pepper indoors: room by the lounge window and the garden door; not in bedrooms (docked guide instead). Check on site.|TECH-01; RP-01|Group
+|O-1|Evidence pass: all references cited from memory. The group observation behind HFC-01 needs a direct source.|Every Evidence basis|Group
+|O-2|Thresholds: wait length, echo latency, stumble response, alert latency, trusted person's arrival. Set from an EM-01 pilot and with care workers.|PR2 to PR5; CL7|Group
+|O-3|Offline speech recognition of older Dutch speakers, dialect and wind. Test in EM-01.|TECH-06; F2, F4|Group
+|O-4|Relationship map and prepared lines: form, owner, review after events; how staff learn of conflicts between residents.|F1, F2, F4; VT-04|ST-05 with group
+|O-5|Consent and data: GDPR art. 6 and 9; representative; process consent per walk; WMO check.|All pre-conditions; EM-02, EM-03|ST-07
+|O-6|Telephony: calls through the home's exchange; hints mixed into the line towards the relative only.|UC02; TECH-02|Group
+|O-7|Garden policy with ST-07 and ST-06: who may walk alone or in pairs; who answers alerts.|UC01, UC03 pre-conditions; VT-06|ST-07, ST-06
+|O-8|Research use of own-word lists: anonymisation; re-identification risk in a small home with a local dialect; ethics review.|EM-02 language notes; VT-05|Group
+|O-9|Pepper at the door: a private spot for consent questions, out of the walking path. Check on site.|TECH-01; RP-01|Group
 
 = References =
 
-|=Key|=Citation|=Confidence
-|Chrastil & Warren (2012)|Active and passive contributions to spatial learning. //Psychonomic Bulletin & Review//, 19(1), 1-23.|From memory; check
-|Churcher Clarke et al. (2017)|An adapted mindfulness intervention for people with dementia in care homes: feasibility pilot study. //International Journal of Geriatric Psychiatry//, 32(12), e123-e131.|From memory; check
-|Engelkamp (1998)|//Memory for Actions//. Psychology Press.|From memory; check
-|Erickson et al. (2011)|Exercise training increases size of hippocampus and improves memory. //PNAS//, 108(7), 3017-3022.|From memory; check
-|Forbes et al. (2015)|Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.|From memory; check
-|Gerdner (2000)|Effects of individualized versus classical "relaxation" music on the frequency of agitation in elderly persons with Alzheimer's disease and related disorders. //International Psychogeriatrics//, 12(1), 49-65.|From memory; check
-|Kaplan (1995)|The restorative benefits of nature: toward an integrative framework. //Journal of Environmental Psychology//, 15(3), 169-182.|From memory; check
-|Khachiyants et al. (2011)|Sundown syndrome in persons with dementia: an update. //Psychiatry Investigation//, 8(4), 275-287.|From memory; check
-|Kitwood (1997)|//Dementia Reconsidered: The Person Comes First//. Open University Press.|Verified as a work (morning-care pass)
-|Niemeijer et al. (2010, 2015)|See b3.1 References.|Verified (morning-care pass)
-|Pemberton et al. (2026)|The Tool, the Pet, the Carer & the Warden. //Information Systems Frontiers//, 28, 1039-1059.|Verified (morning-care pass)
-|Ryan & Deci (2000)|Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.|Standard citation; confirm
-|Thomas et al. (2017)|Individualized music program is associated with improved outcomes for U.S. nursing home residents with dementia. //American Journal of Geriatric Psychiatry//, 25(9), 931-938.|From memory; check
-|Williams et al. (2009)|Elderspeak communication: impact on dementia care. //American Journal of Alzheimer's Disease & Other Dementias//, 24(1), 11-20.|From memory; check
-|Woods et al. (2018)|Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, (3), CD001120.|From memory; check
+Cited on this page: Forbes et al. (2015); Goffman (1967); Holwerda et al. (2014); Kitwood (1997); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Niemeijer et al. (2015); Orange et al. (1996); Ryan & Deci (2000); Schegloff et al. (1977); Victor (2012); Williams et al. (2009). Full entries in the a1.1, b1.1, b3.1 and b4.1 References. All from memory; to check (O-1).

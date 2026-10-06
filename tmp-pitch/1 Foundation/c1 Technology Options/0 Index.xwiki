@@ -8,5 +8,5 @@ syntax: xwiki/2.1
 = Concepts =
 
 |=Page|=Options|=Status
-|[[c1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.c1 Technology Options.c1\.1 Mindful Walk.WebHome]]|Selected: TECH-01 Pepper as indoor host; TECH-02 Pocket guide; TECH-03 Garden beacons; TECH-04 Staff notification and session record; TECH-05 Listening library and recommender. Rejected: TECH-06 GPS tracker; TECH-07 Pepper on the walk; TECH-08 Headphones; TECH-09 Stress wristband|**Current**
+|[[c1.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.c1 Technology Options.c1\.1 Mindful Walk.WebHome]]|Selected: TECH-01 Pepper at the door; TECH-02 Pocket guide; TECH-03 Landmark beacons; TECH-04 Local server, one instance per resident; TECH-05 Exchange between instances; TECH-06 Walker model and starters. Rejected: TECH-07 Cloud speech and language services; TECH-08 Audio recording; TECH-09 Location and body sensing|**Current**
 |[[c1.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.c1 Technology Options.c1\.2 Morning Care (previous concept).WebHome]]|TECH-10 to TECH-15|Superseded

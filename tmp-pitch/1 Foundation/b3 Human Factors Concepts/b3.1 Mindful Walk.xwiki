@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b3.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eight concepts. Why walk: experiences on foot stick (HFC-01). Why guide attention: the present asks little of memory (HFC-02), and nature draws attention without effort (HFC-03). Why recall the past: remote memories outlast recent ones (HFC-04). Why personalise listening: the familiar calms (HFC-05). What to avoid: elderspeak (HFC-06), surveillance (HFC-07), a robot read as supervisor (HFC-08).
+**Abstract.** Eight concepts. Why walk: fresh air and movement stimulate memory and steady emotions (HFC-01). What walking costs: talking takes attention from the path (HFC-02). How conversations recover: self-repair first (HFC-03), on common ground (HFC-04). Why partners miss each other's slips, and how a System can model them: theory of mind (HFC-05). What to protect: face (HFC-06). What slips cost the resident: withdrawal and loneliness (HFC-07). Why always truthful: trust (HFC-08).
 
-= Human Factors Concept - Walking, place and memory [HFC-01] =
+= Human Factors Concept - Fresh air, movement and memory [HFC-01] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -13,27 +13,18 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|HFC-01
-|Name|Walking, place and memory
+|Name|Fresh air, movement and memory
 |Status|In Progress
-|Evidence basis|(((
-**Hypothesis.** Group observation: moments of a holiday spent walking are remembered much better than moments spent sitting down. No direct study found yet (Open item O-2).
+|Evidence basis|Literature and one group observation (hypothesis: moments on foot are remembered better than moments in a chair; Open item O-1).
+|Concept statement|Fresh air and movement stimulate memory and steady emotions. Side by side, on the move, talk comes easier and a pause costs less.
+|Human factor addressed|Memory; mood; conversation
+|Proposed mechanism|Walking supports the hippocampus. Time in nature lowers rumination. Places give talk a subject, and a way back after a slip. Walking side by side asks for no eye contact.
+|Source|Erickson et al. (2011): a year of walking enlarged the hippocampus in older adults. Forbes et al. (2015): exercise in dementia. Bratman et al. (2015): a nature walk lowered rumination. Evans & Jones (2011): walking interviews draw more place-bound talk.
+|Conditions and population of validity|Mostly healthy and older adults; dementia evidence weak.
+|Predicted Effect type|More pleasure on the walk; more talk; calmer afterwards
+|Associated Measures|M-02, M-03, M-05
 
-Candidate mechanisms from the literature:
-
-* Active navigation strengthens spatial memory over passive viewing (Chrastil & Warren, 2012)
-* A year of walking enlarged the hippocampus and improved memory in older adults (Erickson et al., 2011)
-* Actions performed are remembered better than actions heard or seen: the enactment effect (Engelkamp, 1998)
-* Walking interviews draw out more place-bound talk than seated ones (Evans & Jones, 2011)
-)))
-|Concept statement|Experiences on foot are encoded with place, movement and effort, and are recalled better than experiences sitting down. The walk is therapeutic in itself, wherever it leads.
-|Human factor addressed|Episodic and spatial memory; orientation; engagement
-|Proposed mechanism|Walking binds an experience to a place and to the body's own action. Each extra cue (location, effort, sequence) is another route back to the memory. Physical activity also supports the hippocampus, on which both spatial and episodic memory depend. Side by side, on the move, talk comes easier.
-|Source|Chrastil & Warren (2012); Erickson et al. (2011); Engelkamp (1998); Evans & Jones (2011). See References.
-|Conditions and population of validity|Mechanisms shown in healthy adults and older adults, not in dementia. Episodic encoding is impaired in Alzheimer's disease; any advantage may shrink with severity. Treat as a hypothesis; UC01-F2-CL3 tests it.
-|Predicted Effect type|Better same-day recall of walk events than of seated events; more talk about the walk afterwards
-|Associated Measures|M-03 Same-day recall; M-02 Walking minutes and completion
-
-= Human Factors Concept - Present-moment attention [HFC-02] =
+= Human Factors Concept - Walking while talking [HFC-02] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -41,25 +32,18 @@ Candidate mechanisms from the literature:
 
 |=Field|=Description
 |ID|HFC-02
-|Name|Present-moment attention (mindfulness in dementia)
+|Name|Walking while talking (dual task)
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
+|Evidence basis|Literature only.
+|Concept statement|Talking takes attention from walking. Older people with cognitive impairment slow, stop or lose balance under a second task, and notice tiredness later.
+|Human factor addressed|Gait; fall risk; body awareness
+|Proposed mechanism|Gait and speech draw on the same limited attention. A question demands more than a statement. Engaged talk crowds out signals of fatigue.
+|Source|Lundin-Olsson et al. (1997): older people who stop walking to talk fall more often. Montero-Odasso et al. (2012): gait slows and varies under a second task in cognitive impairment.
+|Conditions and population of validity|Established in older adults; stronger with cognitive impairment.
+|Predicted Effect type|Stumbles while talking; walks running past the set length
+|Associated Measures|M-06
 
-* Churcher Clarke et al. (2017): adapted mindfulness feasible in care homes
-* Berk et al. (2018): review of rationale and early evidence for mindfulness in dementia
-* Paller et al. (2015): uncontrolled study; quality of life and mood improved
-* Teut et al. (2013): mindful walking reduced stress in distressed adults (not dementia)
-)))
-|Concept statement|Attention anchored in the present - senses, body, breath - asks little of memory. Short, concrete cues keep a person with dementia with the activity at hand.
-|Human factor addressed|Attention; orientation; anxiety; agitation
-|Proposed mechanism|Losing the thread (PS-01, PS-04) is a memory failure: where am I, why am I here. A present-moment cue replaces the need to remember with something to notice. Each cue re-anchors; silence between cues gives time. Abstract imagery ("imagine a beach") needs working memory; concrete sensation ("feel the bench") does not.
-|Source|Churcher Clarke et al. (2017); Berk et al. (2018); Paller et al. (2015); Teut et al. (2013). See References.
-|Conditions and population of validity|Mild to moderate dementia; small samples; programmes adapted (shorter, concrete, repeated). Severe dementia: unknown.
-|Predicted Effect type|Longer engagement; fewer early turn-backs; less anxiety; calmer afterwards
-|Associated Measures|M-05 Engagement; M-04 Observed affect; M-06 Agitation
-
-= Human Factors Concept - Attention restoration in nature [HFC-03] =
+= Human Factors Concept - Conversation repair [HFC-03] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -67,23 +51,18 @@ Literature only.
 
 |=Field|=Description
 |ID|HFC-03
-|Name|Attention restoration in nature
+|Name|Conversation repair
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
+|Evidence basis|Literature only.
+|Concept statement|Speakers prefer to fix their own slips. In dementia, slips become more frequent and repair succeeds less often.
+|Human factor addressed|Conversation; face
+|Proposed mechanism|Self-repair needs a moment. Help offered too soon takes the turn and shows the slip. A cue to the last topic, or a new one, lets the talk go on.
+|Source|Schegloff et al. (1977): preference for self-repair. Orange et al. (1996): repair in Alzheimer's disease.
+|Conditions and population of validity|Conversation analysis of healthy talk; small samples in Alzheimer's disease.
+|Predicted Effect type|Wait-then-redirect raises recovered slips without more embarrassment
+|Associated Measures|M-04
 
-* Kaplan (1995): attention restoration theory - nature's "soft fascination" lets tired attention recover
-* Gonzalez & Kirkevold (2014): sensory gardens in dementia care; possible reduction in agitation; weak study designs
-)))
-|Concept statement|Natural settings draw attention without effort, so tired attention recovers.
-|Human factor addressed|Attention fatigue; stress; agitation
-|Proposed mechanism|Directed attention tires. Birdsong, moving leaves and water draw attention involuntarily, at no cost. The garden supplies the birdsong, leaves and water the cues mention.
-|Source|Kaplan (1995); Gonzalez & Kirkevold (2014). See References.
-|Conditions and population of validity|Theory from general populations; dementia evidence of low quality.
-|Predicted Effect type|Calmer during and after the walk; more noticing
-|Associated Measures|M-04 Observed affect; M-05 Engagement
-
-= Human Factors Concept - Reminiscence and personhood [HFC-04] =
+= Human Factors Concept - Common ground and reminiscence [HFC-04] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -91,24 +70,18 @@ Literature only.
 
 |=Field|=Description
 |ID|HFC-04
-|Name|Reminiscence and personhood
+|Name|Common ground and reminiscence
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
+|Evidence basis|Literature only.
+|Concept statement|Conversation rests on what both people know. Old memories outlast recent ones and give a pair common ground.
+|Human factor addressed|Conversation; identity
+|Proposed mechanism|Partners forget what they share. The System knows it from both profiles and may offer it, with consent. A shared topic from early adulthood is recalled with least effort.
+|Source|Clark & Brennan (1991): grounding in communication. Rubin et al. (1998): early adulthood is recalled best. Woods et al. (2018), Cochrane review: small, setting-dependent benefits of reminiscence.
+|Conditions and population of validity|Reminiscence studied in groups, not on walks; benefits small.
+|Predicted Effect type|Talk restarts after a slip; more positive interaction
+|Associated Measures|M-04, M-05
 
-* Woods et al. (2018), Cochrane review: small, setting-dependent benefits for quality of life, communication and mood
-* Rubin et al. (1998): the reminiscence bump - events from roughly age 10 to 30 are recalled best
-* Kitwood (1997): personhood in dementia care
-)))
-|Concept statement|Remote memories outlast recent ones. Inviting them affirms identity and gives conversation a subject.
-|Human factor addressed|Autobiographical memory; identity; communication; mood
-|Proposed mechanism|Recent memory fails first; youth and early adulthood remain. A cue from that period - a place, a trade, a song - opens a memory the person can still tell. Telling it to a listener affirms who they are. Testing it ("Do you remember?") exposes the gaps instead.
-|Source|Woods et al. (2018); Rubin et al. (1998); Kitwood (1997). See References.
-|Conditions and population of validity|Benefits small and variable. Mostly group sessions studied, not walks. Can stir grief or longing (VT-03).
-|Predicted Effect type|More engagement and talk; positive affect; at times sadness
-|Associated Measures|M-05 Engagement; M-04 Observed affect
-
-= Human Factors Concept - Personalised listening [HFC-05] =
+= Human Factors Concept - Theory of mind [HFC-05] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -116,24 +89,18 @@ Literature only.
 
 |=Field|=Description
 |ID|HFC-05
-|Name|Personalised listening
+|Name|Theory of mind
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
+|Evidence basis|Literature and group reasoning.
+|Concept statement|Understanding what others know, believe and feel weakens in dementia: two residents often miss each other's slips. A System can keep a simple model of each walker.
+|Human factor addressed|Social cognition; conversation
+|Proposed mechanism|Per walker, for one walk: common ground, the thread, what was said already, current beliefs, state (speaking, searching, finished, upset, tuned out). The model decides when to wait, redirect or defer.
+|Source|Bora et al. (2015), meta-analysis: theory of mind impaired in Alzheimer's disease. Moreau et al. (2016): impairment shown in social interaction. Scassellati (2002): theory of mind for a humanoid robot.
+|Conditions and population of validity|The walker model is a design construct; machine theory of mind shown only in narrow tasks.
+|Predicted Effect type|Slips noticed that the partner missed
+|Associated Measures|M-01 (model against listener codes), M-04
 
-* Gerdner (2000): individualised music reduced agitation more than classical "relaxation" music
-* Thomas et al. (2017): personalised music programme; fewer behavioural symptoms, less antipsychotic use
-* Rubin et al. (1998): favourites cluster in early adulthood
-)))
-|Concept statement|Audio from the person's own history calms and engages more than generic content.
-|Human factor addressed|Agitation; engagement; mood
-|Proposed mechanism|Familiar content is recognised with little effort; recognition brings pleasure and a sense of safety. Unfamiliar content demands effort, or is ignored.
-|Source|Gerdner (2000); Thomas et al. (2017); Rubin et al. (1998). See References.
-|Conditions and population of validity|Shown for music. Transfer to spoken content (news, audiobooks) unproven.
-|Predicted Effect type|Offers accepted; longer listening; less agitation
-|Associated Measures|M-11 Listening uptake; M-06 Agitation
-
-= Human Factors Concept - Elderspeak and personhood [HFC-06] =
+= Human Factors Concept - Face and personhood [HFC-06] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -141,23 +108,18 @@ Literature only.
 
 |=Field|=Description
 |ID|HFC-06
-|Name|Elderspeak and personhood
+|Name|Face and personhood
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
+|Evidence basis|Literature only.
+|Concept statement|Each interaction affirms or erodes a person's standing. Corrections, quizzing and sing-song speech (elderspeak) erode it.
+|Human factor addressed|Experienced dignity; withdrawal
+|Proposed mechanism|Help addressed to one person marks them as failing. Addressed to both, as a statement, it marks nobody.
+|Source|Goffman (1967): face-work. Kitwood (1997): personhood. Sabat (2001): the self in Alzheimer's disease. Williams et al. (2009): elderspeak provokes resistance.
+|Conditions and population of validity|Care-staff speech; robot voices not studied.
+|Predicted Effect type|Embarrassment, withdrawal; descriptions of being talked down to
+|Associated Measures|M-04 (face signs), M-09 (code T)
 
-* Williams et al. (2009): elderspeak by nursing-home staff linked to more resistiveness to care
-* Kitwood (1997): infantilisation and outpacing erode personhood
-)))
-|Concept statement|Simplified, sing-song, over-caring speech is heard as talking down, and provokes resistance.
-|Human factor addressed|Experienced dignity; resistance; withdrawal
-|Proposed mechanism|Speech style signals standing. Endearments, exaggerated intonation and praise for small acts tell an adult they are seen as a child. Meditation scripts share these markers.
-|Source|Williams et al. (2009); Kitwood (1997). See References.
-|Conditions and population of validity|Care-staff speech in US nursing homes. Robot or recorded voices: not studied.
-|Predicted Effect type|Resistance, withdrawal; descriptions of being talked down to
-|Associated Measures|M-08 Perceived privacy and tone (code T); M-04 Observed affect
-
-= Human Factors Concept - Perceived surveillance [HFC-07] =
+= Human Factors Concept - Coping, withdrawal and loneliness [HFC-07] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -165,23 +127,18 @@ Literature only.
 
 |=Field|=Description
 |ID|HFC-07
-|Name|Perceived surveillance
+|Name|Coping, withdrawal and loneliness
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
+|Evidence basis|Literature only.
+|Concept statement|Aware of decline, people protect themselves: some keep going as before, some face it openly. Avoiding talk protects face and leads to loneliness. Compensation lets a person keep doing what they value.
+|Human factor addressed|Coping with ageing and cognitive loss; loneliness
+|Proposed mechanism|The System keeps the thread outside the person's head: compensation. How openly it helps follows the person's coping style.
+|Source|Clare (2003): coping in early Alzheimer's disease. Baltes & Baltes (1990): selection, optimisation and compensation. Victor (2012): loneliness in care homes. Holwerda et al. (2014): loneliness predicted dementia onset. Holt-Lunstad et al. (2015): loneliness and mortality.
+|Conditions and population of validity|Coping studied in early dementia, at home. Loneliness measures in dementia of uncertain validity.
+|Predicted Effect type|More willingness to walk with others; less loneliness over weeks
+|Associated Measures|M-07, M-08
 
-* Niemeijer et al. (2010): review of surveillance technology in residential dementia care
-* Niemeijer et al. (2015): residents' own experience - supports autonomy only within a person-centred approach
-)))
-|Concept statement|Monitoring felt as continuous, or as more than needed, reads as surveillance and is rejected.
-|Human factor addressed|Perceived privacy; acceptance
-|Proposed mechanism|Awareness of being tracked makes support feel like supervision.
-|Source|Niemeijer et al. (2010, 2015). See References.
-|Conditions and population of validity|Residential dementia care; transfers directly.
-|Predicted Effect type|Discomfort, avoidance, rejection of the device
-|Associated Measures|M-08 Perceived privacy and tone (codes W, R)
-
-= Human Factors Concept - Robot embodiment and role [HFC-08] =
+= Human Factors Concept - Truth and trust [HFC-08] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -189,64 +146,51 @@ Literature only.
 
 |=Field|=Description
 |ID|HFC-08
-|Name|Robot embodiment and role
+|Name|Truth and trust
 |Status|In Progress
-|Evidence basis|(((
-Literature only.
-
-* Pemberton et al. (2026): older adults cast humanoid robots as "Warden"; prefer tool or pet framings
-* Furlanis et al. (2026): bias enacted through gaze, timing and tone (conceptual)
-* Bodala et al. (2021); Alimardani et al. (2020): Pepper as mindfulness coach, healthy adults
-)))
-|Concept statement|Form and behaviour decide the role a robot is given. A humanoid leading meditation can be read as a coach, or as a supervisor.
-|Human factor addressed|Perceived role; perceived surveillance; dignity; acceptance
-|Proposed mechanism|People assign roles to a robot from its body. Gaze that follows and pacing that checks read as watching. A voice that leads, then falls silent, reads as a guide.
-|Source|Pemberton et al. (2026); Furlanis et al. (2026); Bodala et al. (2021); Alimardani et al. (2020). See References.
-|Conditions and population of validity|Cognitively intact adults; no dementia data.
-|Predicted Effect type|Acceptance or rejection; feeling watched
-|Associated Measures|M-08 Perceived privacy and tone; M-05 Engagement
+|Evidence basis|Literature only.
+|Concept statement|Lies told to spare distress are common in dementia care, and contested. Found out, they cost trust. A blunt truth from a stranger causes grief.
+|Human factor addressed|Trust; grief
+|Proposed mechanism|Trust builds on consistent, truthful answers from known people. Gentle redirection answers the feeling without saying anything untrue.
+|Source|Mental Health Foundation (2016): inquiry on truth and lying in dementia care. James et al. (2006): staff lying, and guidelines.
+|Conditions and population of validity|UK care practice; System-delivered answers not studied.
+|Predicted Effect type|Trust kept; fewer repeated painful questions
+|Associated Measures|M-09 (code U), M-10
 
 == Graph edges ==
 
-HFC-01: grounds → UC01-F2-CL3, UC01-F2-CL2; explains → HV-05; associated-measure → M-03, M-02.
+HFC-01: grounds → UC01-F1-CL6; explains → HV-05, HV-06; associated-measure → M-02, M-03, M-05.
 
-HFC-02: grounds → UC01-F2-CL2, UC02-F3-CL9, UC02-F3-CL10; explains → HV-05; associated-measure → M-05, M-04, M-06.
+HFC-02: grounds → UC01-F3-CL5; explains → HV-04; associated-measure → M-06.
 
-HFC-03: grounds → UC01-F2-CL2; explains → HV-05; associated-measure → M-04, M-05.
+HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL4; explains → HV-02, HV-06; associated-measure → M-04.
 
-HFC-04: grounds → UC01-F2-CL4, UC01-F2-CL5, UC03-F6-CL12; explains → HV-07, HV-08; associated-measure → M-05, M-04.
+HFC-04: grounds → UC01-F2-CL1, UC02-F2-CL2; explains → HV-06, HV-07; associated-measure → M-04, M-05.
 
-HFC-05: grounds → UC03-F6-CL12, UC03-F6-CL13; explains → HV-05, HV-08; associated-measure → M-11, M-06.
+HFC-05: grounds → UC01-F2-CL1; explains → HV-06; associated-measure → M-01, M-04.
 
-HFC-06: grounds → UC01-F2-CL6; explains → HV-02; associated-measure → M-08, M-04.
+HFC-06: grounds → UC01-F2-CL3, UC01-F1-CL8; explains → HV-02; associated-measure → M-04, M-09.
 
-HFC-07: grounds → UC01-F4-CL7, UC02-F3-CL11; explains → HV-03; associated-measure → M-08.
+HFC-07: grounds → UC01-F1-CL10, UC01-F2-CL3; explains → HV-05, HV-06; associated-measure → M-07, M-08.
 
-HFC-08: grounds → UC02-F3-CL11, UC01-F2-CL6; explains → HV-02, HV-03; informs → TECH-01; associated-measure → M-08, M-05.
+HFC-08: grounds → UC03-F4-CL7; explains → HV-08; associated-measure → M-09, M-10.
 
 = References =
 
 //Cited from memory; checked in the evidence pass.//
 
-* Alimardani, M., Kemmeren, L., Okumura, K. & Hiraki, K. (2020). Robot-assisted mindfulness practice: analysis of neurophysiological responses and affective state change. //IEEE RO-MAN 2020//. (check)
-* Berk, L., Warmenhoven, F., van Os, J. & van Boxtel, M. (2018). Mindfulness training for people with dementia and their caregivers: rationale, current research, and future directions. //Frontiers in Psychology//, 9, 982.
-* Bodala, I. P., Churamani, N. & Gunes, H. (2021). Teleoperated robot coaching for mindfulness training: a longitudinal study. //IEEE RO-MAN 2021//. (check)
-* Chrastil, E. R. & Warren, W. H. (2012). Active and passive contributions to spatial learning. //Psychonomic Bulletin & Review//, 19(1), 1-23.
-* Churcher Clarke, A., Chan, J. M. Y., Stott, J., Royan, L. & Spector, A. (2017). An adapted mindfulness intervention for people with dementia in care homes: feasibility pilot study. //International Journal of Geriatric Psychiatry//, 32(12), e123-e131.
-* Engelkamp, J. (1998). //Memory for Actions//. Psychology Press.
+* Baltes, P. B. & Baltes, M. M. (1990). Psychological perspectives on successful aging: the model of selective optimization with compensation. In P. B. Baltes & M. M. Baltes (Eds.), //Successful Aging: Perspectives from the Behavioral Sciences// (pp. 1-34). Cambridge University Press.
+* Bora et al. (2015); Bratman et al. (2015); Clare (2003); Forbes et al. (2015); James et al. (2006); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Montero-Odasso et al. (2012); Orange et al. (1996); Schegloff et al. (1977); Victor (2012). See a1.1 References.
+* Clark, H. H. & Brennan, S. E. (1991). Grounding in communication. In L. B. Resnick, J. M. Levine & S. D. Teasley (Eds.), //Perspectives on Socially Shared Cognition// (pp. 127-149). American Psychological Association.
 * Erickson, K. I. et al. (2011). Exercise training increases size of hippocampus and improves memory. //PNAS//, 108(7), 3017-3022.
 * Evans, J. & Jones, P. (2011). The walking interview: methodology, mobility and place. //Applied Geography//, 31(2), 849-858.
-* Furlanis, T., Brščić, D. & Kanda, T. (2026). Robotic Bias and Its Dimensions. //HRI '26//, 562-571. doi:10.1145/3757279.3785613.
-* Gerdner, L. A. (2000). Effects of individualized versus classical "relaxation" music on the frequency of agitation in elderly persons with Alzheimer's disease and related disorders. //International Psychogeriatrics//, 12(1), 49-65.
-* Gonzalez, M. T. & Kirkevold, M. (2014). Benefits of sensory garden and horticultural activities in dementia care: a modified scoping review. //Journal of Clinical Nursing//, 23(19-20), 2698-2715.
-* Kaplan, S. (1995). The restorative benefits of nature: toward an integrative framework. //Journal of Environmental Psychology//, 15(3), 169-182.
+* Goffman, E. (1967). //Interaction Ritual: Essays on Face-to-Face Behavior//. Anchor Books.
+* Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T. & Stephenson, D. (2015). Loneliness and social isolation as risk factors for mortality: a meta-analytic review. //Perspectives on Psychological Science//, 10(2), 227-237.
+* Holwerda, T. J. et al. (2014). Feelings of loneliness, but not social isolation, predict dementia onset: results from the Amsterdam Study of the Elderly (AMSTEL). //Journal of Neurology, Neurosurgery & Psychiatry//, 85(2), 135-142.
 * Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press.
-* Niemeijer, A. R. et al. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//. PMID 20199699.
-* Niemeijer, A. R. et al. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320.
-* Paller, K. A. et al. (2015). Benefits of mindfulness training for patients with progressive cognitive decline and their caregivers. //American Journal of Alzheimer's Disease & Other Dementias//, 30(3), 257-267.
-* Pemberton, L., Mehandjiev, N. & Carter, M. (2026). The Tool, the Pet, the Carer & the Warden. //Information Systems Frontiers//, 28, 1039-1059. doi:10.1007/s10796-026-10699-2.
+* Moreau, N. et al. (2016). Theory of mind in Alzheimer disease: evidence of authentic impairment during social interaction. //Neuropsychology//, 30(3), 312-321.
 * Rubin, D. C., Rahhal, T. A. & Poon, L. W. (1998). Things learned in early adulthood are remembered best. //Memory & Cognition//, 26(1), 3-19.
-* Teut, M. et al. (2013). Mindful walking in psychologically distressed individuals: a randomized controlled trial. //Evidence-Based Complementary and Alternative Medicine//, 2013, 489856.
-* Thomas, K. S. et al. (2017). Individualized music program is associated with improved outcomes for U.S. nursing home residents with dementia. //American Journal of Geriatric Psychiatry//, 25(9), 931-938.
+* Sabat, S. R. (2001). //The Experience of Alzheimer's Disease: Life Through a Tangled Veil//. Blackwell.
+* Scassellati, B. (2002). Theory of mind for a humanoid robot. //Autonomous Robots//, 12(1), 13-24.
 * Williams, K. N., Herman, R., Gajewski, B. & Wilson, K. (2009). Elderspeak communication: impact on dementia care. //American Journal of Alzheimer's Disease & Other Dementias//, 24(1), 11-20.
 * Woods, B., O'Philbin, L., Farrell, E. M., Spector, A. E. & Orrell, M. (2018). Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, (3), CD001120.

@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.2 Robot Profile
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** One System with two devices and one voice. Pepper hosts indoors: invitations, seated practice, listening (RP-01). The pocket guide goes outside and to the bedside (RP-02). Both act as guides (HFC-08): they lead, then fall silent.
+**Abstract.** One System per resident, two devices, one voice. Pepper at the garden door asks, introduces and welcomes back (RP-01). The pocket guide keeps the thread on the walk (RP-02). Both are truthful, ask first, and stay silent while people talk. Each resident's settings follow their own wishes.
 
-= Robot Profile - Pepper as indoor host [RP-01] =
+= Robot Profile - Pepper at the door [RP-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -13,28 +13,20 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|RP-01
-|Name|Pepper as indoor host
+|Name|Pepper at the door
 |Status|In Progress
-|Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, HFC-08, VT-05 and VT-02. Not yet tested with residents.
-|Role in Scenario|At the garden door: invites, and welcomes back (DS-01). In the lounge on rain days: leads seated practice, then offers listening (DS-02).
+|Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, VT-04 and VT-07. Not yet tested with residents.
+|Role in Scenario|Asks Jan's consent; introduces Jan and Riet; welcomes them back (DS-01).
 |Social Competencies|(((
-* Offers two options; accepts any answer, including no
-* Leads, then stays silent for long stretches
-* Pauses on speech or touch; ends on "stop"
-* No small talk beyond the session
+* Asks each walker alone; two options; no is final
+* Introduces walkers by name and photo
+* One statement on return, never a question
 )))
-|Embodiment|Pepper (TECH-01). Stands by the door or the window, never in the path. Cameras disabled and visibly covered. Minimal arm and head movement; no gaze-following. Shoulder lights as a breathing light.
-|Narrative and Identity Framing|"The voice that goes walking." Presented as a guide for noticing; avoids the carer, companion and supervisor roles (HFC-08). Shares a name and voice with the pocket guide, so indoors and outdoors feel like one thing.
-|Communication Strategies|(((
-* Short, concrete sentences; normal pitch; adult words (IDP-01)
-* First name only if the resident wants it
-* No praise, no endearments
-* Two-option offers (IDP-03)
-* Breathing light instead of breathing instructions
-* Welcome back with one statement about the walk, never a question
-)))
-|Privacy and Data Handling|Hears speech only for a few keywords, during a session; no audio stored. Receives the landmarks of the walk just ended, for the welcome back; discards them after. Writes the four-item session record (F5).
-|Context-Aware Capabilities|Adapts the offer to hour, weather and profile. Does not learn the resident's behaviour over time. Does not sense mood.
+|Embodiment|Pepper (TECH-01), by the garden door, never in the path. Cameras disabled and visibly covered. Little movement; no gaze-following.
+|Narrative and Identity Framing|The host at the door; never a supervisor. Same name and voice as the pocket guide.
+|Communication Strategies|Short adult sentences; yes/no on the tablet; first name only if the resident wants it; no praise, no endearments.
+|Privacy and Data Handling|Sees only this walk's consented items. Receives the walk's last topic for the welcome; discards it after.
+|Context-Aware Capabilities|Who walks with whom; consent given or not. Nothing else.
 
 = Robot Profile - Pocket guide [RP-02] =
 
@@ -44,23 +36,38 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|RP-02
-|Name|Pocket guide
+|Name|Pocket guide, with the resident's own instance
 |Status|In Progress
-|Evidence basis|Group reasoning (TECH-02, TECH-03). Not yet built or tested.
-|Role in Scenario|On the rollator in the garden: cues, memory invitations, the way back, the gate (DS-01). Docked at the bedside: lying practice, news, a story (DS-03).
+|Evidence basis|Group reasoning (TECH-02 to TECH-06). Not yet built or tested.
+|Role in Scenario|Keeps the thread for Jan and Riet (DS-01). Whispers hints to Anne (DS-02). Talks with Riet; passes her question to Myra (DS-03).
 |Social Competencies|(((
-* Speaks rarely; silence is the default
-* Pause on the button; quiet until pressed again
-* One orienting cue at a hesitation or the gate; never repeats it
-* Tells the resident when someone is coming
+* Silent while people talk
+* Waits for self-repair, then redirects gently (IDP-01)
+* Asks before joining and before each starter (IDP-02)
+* Truthful; passes painful topics to a trusted person (IDP-03)
+* Never quizzes, corrects, praises or keeps tallies
 )))
-|Embodiment|Palm-sized speaker; one big button; pull-cord. Clips to rollator or wheelchair, or hangs on a lanyard. Docks on the bedside table. No screen, no camera.
-|Narrative and Identity Framing|The same voice as Pepper, in the pocket. Something you carry, like a radio. No camera, no screen.
-|Communication Strategies|(((
-* Present-moment cues, then long silence (IDP-01)
-* Memory invitations as statements, never questions (IDP-02)
-* At most two memory invitations per walk
-* Low volume outdoors; no names or sensitive topics within earshot of others
-)))
-|Privacy and Data Handling|Outdoors: microphone off; hears only beacons. Bedside: listens for a few keywords, on the device; no audio stored or sent. Knows the nearest landmark in the moment; sends it only inside an alert. No route stored.
-|Context-Aware Capabilities|Walking or stopped, landmark nearby, time elapsed. Nothing more: it cannot see distress, so distress is left to the companion and the care worker.
+|Embodiment|Palm-sized speaker and microphone; two large buttons (pause or answer; going in); pull-cord. Rollator clip or lanyard. No screen, no camera.
+|Narrative and Identity Framing|"The voice that knows where we were." A helper for the conversation; company on walks alone only where agreed.
+|Communication Strategies|Statements, not questions, while walking. Low volume. On calls, whispers reach the relative only.
+|Privacy and Data Handling|Listens on the device. Transcript and thread deleted at the end of the walk. Keeps the own-word list and consented facts. Nothing leaves the home.
+|Context-Aware Capabilities|Speech, pauses, topics, pace, stops, landmarks, time. Cannot see faces or distress: left to people.
+
+== Per-person settings ==
+
+Agreed with the resident, recorded in their instance (TECH-04), changed whenever they ask.
+
+|=Setting|=Options|=Default|=Set by
+|Walks offered|alone; with listed partners; on the phone with listed relatives|none until agreed|Resident with ST-05; ST-06 for walking alone
+|Guide on walks alone|silent; bridge to a person; conversation partner|bridge|Resident with ST-05 and ST-04
+|After a slip|wait only; wait, then place and thread|wait, then place and thread|Resident
+|Word help|off; after a wait|off|Resident
+|Starters|off; own life; shared ground with listed partners|own life|Resident; each starter consented per walk
+|Hints to a relative on calls|off; on|off|Resident and relative
+|Form of address|first name; surname; none|as the resident says|Resident
+|Pepper's welcome back|off; on|on|Resident
+|Learn own words and dialect|off; on|off|Resident and representative
+|Research use of own words|off; on, anonymised|off|Resident and representative; ethics review
+|Walk length; rest offers|minutes|per resident|ST-06; the resident can shorten, not lengthen
+|Safety alerts|always on|on|Not adjustable
+|Sensitive topics|topic; trusted person; agreed approach|none|ST-05 with ST-04, family and ST-06

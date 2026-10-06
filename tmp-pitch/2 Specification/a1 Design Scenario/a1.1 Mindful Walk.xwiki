@@ -3,52 +3,48 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three scenarios, one day apart. A garden walk with a partner, a pocket guide and a memory of the old post round (DS-01). A rain day at the window: seated practice, then a brass band (DS-02). Dusk: lying practice, the news on request, a story, sleep (DS-03). Same resident in all three: Jan (HP-01).
+**Abstract.** Three scenarios, one per walk. Jan and Riet on the garden loop: a lost thread found again (DS-01). Jan on the phone with Anne: a repeated story, a bench, "Come and get me" (DS-02). Riet alone: "Is Henk coming today?" (DS-03).
 
-= Design Scenario - Back on the round [DS-01] =
+= Design Scenario - Pension day [DS-01] =
 
-//Reimagines PS-01 and PS-02. Realized by UC01. Technology: Pepper at the door (TECH-01), pocket guide (TECH-02), garden beacons (TECH-03), care worker's phone (TECH-04).//
+//Reimagines PS-01. Realized by UC01. Technology: Pepper at the door (TECH-01), pocket guides (TECH-02), beacons (TECH-03), local server and exchange (TECH-04, TECH-05), walker model (TECH-06).//
 
-Two o'clock. Pepper waits by the garden door, eye lights soft. "Jan, the sun is out. A walk round the garden with Kees, or a sit by the window?" Jan shrugs, then: "With Kees, then." Sanne paired the two last week, with both families' agreement; Kees is already putting on a cap.
+Two o'clock. In her room, Riet's guide asks: "A walk with Jan today, or not today?" "With Jan." "May I mention the post office counter to him?" "Yes." At the garden door, Pepper asks Jan alone: "Riet would like a walk with you. Join her, or not today?" "Go on then." "May I mention your post round to Riet?" "Everyone knows that." The map lists nothing off-limits between them; Riet's diagnosis is off-limits with everyone.
 
-Myra clips the pocket guide to Jan's rollator and goes back to the ward. For the first minutes the guide is silent. Then: "Feel your feet on the path." After a long pause a blackbird sings, and the guide says: "A blackbird, in the beech." Jan and Kees stop to look.
+Myra clips on both guides and goes back to the ward. Pepper shows two photos: "Jan, this is Riet. Riet, this is Jan." On the path the guides are silent. At the bench: "You both worked for the post in Delft." Riet: "I had the counter!" She talks about pension day and the queue out of the door, then stops mid-sentence. The guide waits. Jan looks at the pond. After eight seconds, to both: "Riet was telling you about pension day." "The queue! All the way to the bakery." She goes on.
 
-At the pond the guide picks up a beacon. "Water. Smell the air." A long pause. At the rose bed, from Jan's life story: "Every front garden on the round had roses like these." Jan laughs: "And a dog behind every gate." Kees: "Which round was yours?" They sit on the bench and talk for ten minutes. Kees presses the button; the guide stays quiet.
+Later Riet says: "My head's no good any more." Jan: "Mine neither. Still got legs, though." They laugh; the guide says nothing. Talking, Jan catches the rollator on the kerb. "Bench on your left." They sit. At twenty-five minutes: "Time to head in. The door is past the roses."
 
-Back on the path, Jan drifts towards the gate. At the gate beacon the guide says, once: "The roses are behind you. Feel the sun on your hands." Jan turns. Myra's phone buzzes: //Jan - gate - last landmark: pond.// Myra looks out of the window, sees the two heading for the roses, and stays on the ward.
+At the door Pepper says: "Welcome back. Pension day, and a queue to the bakery." The record: pair walk, 27 minutes, one stumble, nobody called, two item IDs exchanged. Nothing about the conversation.
 
-After twenty-five minutes: "Time to head in. The door is past the roses." At the door Pepper says: "Welcome back. The blackbird was singing in the beech." That evening Jan tells their daughter on the phone about the blackbird and the roses.
+= Design Scenario - Anne on the line [DS-02] =
 
-The record shows four things: walk, 25 minutes, ended as planned, one gate alert. It contains nothing about the route or the conversation.
+//Reimagines PS-02. Realized by UC02. Technology: pocket guide with phone (TECH-02), local server (TECH-04), walker model (TECH-06).//
 
-= Design Scenario - Rain at the window [DS-02] =
+Tuesday, half past three: Anne's call. Jan agreed to walk during calls, and to hints for Anne. The guide: "Anne's calling. Answer?" Jan presses the big button. "It's Anne."
 
-//Reimagines PS-03, PS-04 and PS-06. Realized by UC02 and UC03. Technology: Pepper (TECH-01), listening library and recommender (TECH-05).//
+Jan walks the loop and tells the story of the dog that bit the postman. Ten minutes later it starts again. Only Anne hears the guide, a short whisper on the line: "Told before. The roses are out." Anne laughs at the ending, then asks: "Are the roses out yet?" "Red ones, by the bench."
 
-November. Rain since morning; no walks today. In the lounge, Pepper stands by the big window. Jan and two others sit in armchairs facing the garden. Sanne set up the session and is helping a resident across the room.
+At fifteen minutes Jan has slowed. The guide, to Jan: "Bench on your left. Sit and talk?" Jan sits. "Come and get me, Anne." Anne answers the feeling: "You miss home. I miss you too. I'm coming on Sunday." The guide stays silent.
 
-"Rain today. We could listen to it." Pepper's shoulder lights fade in and out, slowly, like breathing. After a while: "Feel the chair holding you." Later: "Rain on the glass," followed by a long silence. Jan's eyes wander to the door, and the next cue comes: "Your hands. Warm, or cold?" Jan looks at their hands. "Cold," they say, to nobody in particular, and almost smile.
+They say goodbye at twenty minutes. The record: phone walk, 20 minutes, nobody called. Anne calls again on Thursday.
 
-After ten minutes Pepper says "That is all for now", without praise, and then: "Brass band on the radio, or a short story?" Jan: "The band." The Sunday request programme, from Jan's profile. Jan taps the armrest in time. One of the others has fallen asleep; Pepper lets them.
+= Design Scenario - Is Henk coming? [DS-03] =
 
-Sanne comes over at the end.
+//Reimagines PS-03. Realized by UC03. Technology: pocket guide (TECH-02), beacons (TECH-03), local server and map (TECH-04, TECH-05), walker model (TECH-06).//
 
-= Design Scenario - Winding down at dusk [DS-03] =
+Riet walks the loop alone. She agreed with the coordinator that the guide may talk with her on walks alone. At the door it asked: "May I talk about your garden today?" "Yes."
 
-//Reimagines PS-05 and PS-06. Realized by UC02 and UC03. Technology: pocket guide docked at the bedside (TECH-02), listening library and recommender (TECH-05).//
+At the pond: "Ducks on the water." Riet: "Henk always brought bread for them. Is Henk coming today?" The map lists Henk's death as sensitive for Riet: trusted person Myra, approach agreed with her son Peter. The guide: "That's one for Myra. Shall I ask her to come?" "Yes."
 
-Jan walked in the garden today. Still, at five, Jan reaches for their coat. Dinner is being served and the evening shift is arriving. Myra walks Jan back to their room. "Would you like to lie down for a bit, with the voice?" Jan nods. Myra docks the pocket guide on the bedside table and leaves the door ajar.
+Myra's phone: //Riet - asks for Henk - pond bench.// Myra arrives within five minutes, sits down and answers as agreed with Peter: truthfully, gently, and she stays. Riet cries, then talks about Henk's bicycle. The guide is silent until Myra leaves, then: "The ducks are still there."
 
-The guide begins: "Lie back. Feel the pillow under your head." After a silence: "Your feet. Heavy and warm." Later: "Footsteps in the hall, far away." The cues grow sparse, then stop.
-
-Jan opens their eyes: "What's in the news?" The guide plays the evening headlines straight away, in plain language. One item is about a flood. "Terrible," says Jan. Then: "A story now, or quiet?" Jan: "Story." A short story about a lighthouse keeper, fifteen minutes, read slowly. It fades out at the end. Jan is asleep.
-
-Myra was not called back. The record: lying practice 12 minutes; listening 22 minutes; no call.
+The guide does not raise Henk again. The record: walk alone, 24 minutes, sensitive question, Myra called.
 
 = Graph edges =
 
-DS-01: reimagines → PS-01, PS-02; realized-by → UC01; features → HP-01, HP-02, HP-03, HP-04, RP-01, RP-02.
+DS-01: reimagines → PS-01; realized-by → UC01; features → HP-01, HP-02, HP-04, RP-01, RP-02.
 
-DS-02: reimagines → PS-03, PS-04, PS-06; realized-by → UC02, UC03; features → HP-01, HP-03, RP-01.
+DS-02: reimagines → PS-02; realized-by → UC02; features → HP-01, HP-03, RP-02.
 
-DS-03: reimagines → PS-05, PS-06; realized-by → UC02, UC03; features → HP-01, HP-02, RP-02.
+DS-03: reimagines → PS-03; realized-by → UC03; features → HP-02, HP-04, RP-02.

@@ -10,5 +10,5 @@ syntax: xwiki/2.1
 = Concepts =
 
 |=Page|=Contents|=Status
-|[[b1 Mindful Walk>>doc:tmp\: Pitch.2 Specification.b Use Cases with Claims and Premises.b1 Mindful Walk.WebHome]]|OBJ-01 to OBJ-09; UC01 Guided garden walk, UC02 Seated or lying practice, UC03 Listening; F1 to F6; UC01-F1-PR1 to UC03-F6-PR6; UC01-F1-CL1 to UC03-F6-CL14; Open items O-1 to O-9|**Current**
+|[[b1 Mindful Walk>>doc:tmp\: Pitch.2 Specification.b Use Cases with Claims and Premises.b1 Mindful Walk.WebHome]]|OBJ-01 to OBJ-08; UC01 A walk with a fellow resident, UC02 A walk on the phone with a relative, UC03 A walk on your own; F1 to F6; UC01-F1-PR1 to UC01-F6-PR6; UC01-F2-CL1 to UC01-F1-CL10; Open items O-1 to O-9|**Current**
 |[[b2 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.b Use Cases with Claims and Premises.b2 Morning Care (previous concept).WebHome]]|OBJ-10 to OBJ-15; UC04 Tooth brushing, UC05 Medication (deferred); F7 to F10; PR7 to PR10; CL15 to CL23; Open items O-10 to O-31|Superseded

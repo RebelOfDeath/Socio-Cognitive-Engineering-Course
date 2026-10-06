@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: c1.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Indoors, Pepper; outdoors, a pocket guide with the same voice. Five selected: Pepper as indoor host (TECH-01), the pocket guide (TECH-02), garden beacons (TECH-03), staff notification and session record (TECH-04), listening library and recommender (TECH-05). Four rejected, kept as Foundation knowledge: GPS tracker (TECH-06), Pepper on the walk (TECH-07), headphones (TECH-08), stress wristband (TECH-09). No hands-on testing yet; hardware details from vendor documentation.
+**Abstract.** Everything runs inside the care home, with no internet connection. Six selected: Pepper at the door (TECH-01), the pocket guide (TECH-02), landmark beacons (TECH-03), a local server with one instance of the System per resident (TECH-04), consent-gated exchange between instances (TECH-05), the walker model and starters (TECH-06). Three rejected: cloud speech and language services (TECH-07), audio recording (TECH-08), location and body sensing (TECH-09). No hands-on testing yet.
 
-= Technology Option - Pepper as indoor host (selected) [TECH-01] =
+= Technology Option - Pepper at the door (selected) [TECH-01] =
 
 **Report Format:** §1.3 Technology
 
@@ -13,41 +13,27 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|TECH-01
-|Name|Pepper as indoor host (selected)
+|Name|Pepper at the door (selected)
 |Status|In Progress
-|Evidence basis|Vendor documentation; the course platform. Pepper has been used as a mindfulness coach with healthy adults (Bodala et al., 2021; Alimardani et al., 2020). No hands-on testing by this project.
+|Evidence basis|Vendor documentation; the course platform. No hands-on testing by this project.
 |Category|Social Robot
 |Capabilities|(((
-Humanoid, about 1.2 m, wheeled base. Speech, chest tablet, touch sensors, eye and shoulder LEDs.
+Humanoid, about 1.2 m, wheeled base; speech, chest tablet, touch sensors.
 
-* Invitation at the door before the walk (F1); welcome back after it
-* Seated practice in the lounge or by the window (F3)
-* Breathing light: LEDs fade in and out at a slow breathing pace - an anchor without words
-* Listening host in the lounge (F6)
+* Before a walk: asks each walker alone, by voice with yes/no on the tablet (F1)
+* Re-introduces walkers by name and photo (F2)
+* Welcome back: one statement from the walk (F2)
 )))
-|Limitations|(((
-* Flat indoor floors only: no grass, gravel, kerbs or slopes (vendor guidance; check against the course unit)
-* Not waterproof
-* Size: may not fit beside a bed; not used in bedrooms (Open item O-9)
-* Humanoid form: may read as supervisor (HFC-08)
-* Cameras present even when switched off
-* Speech recognition of older voices unreliable: F3 must not depend on it
-)))
-|Maturity and feasibility|Commercially available; supplied by the course; documented SDK.
-|Failure and fallback behaviour|Pepper unavailable: the pocket guide runs seated practice, voice only; the activity coordinator leads as today.
-|Benefits|HV-05: on rain days, a stand-in for the calm and attention a walk gives (PS-03). HV-06: sessions without a leader for each resident. HV-07: small-group sessions.
-|Drawbacks|(((
-Strains VT-05: a humanoid adds to the risk of talking down.
-
-Strains VT-02: cameras present.
-
-Mitigations: cameras disabled and visibly covered; no gaze-following; low expressivity; adult voice; leads, then goes quiet.
-)))
-|Selected or rejected|Selected, indoors only.
+|Limitations|Flat indoor floors only. Speech recognition of older voices unreliable: answers by tablet. Humanoid form may read as supervisor. Cameras present (covered).
+|Maturity and feasibility|Commercially available; supplied by the course.
+|Failure and fallback behaviour|Pepper unavailable: the pocket guide asks consent in the resident's room.
+|Benefits|HV-01: consent asked face to face, privately. HV-06: introductions.
+|Drawbacks|Strains HV-03 (cameras). Mitigation: disabled and visibly covered.
+|Selected or rejected|Selected, at the garden door only.
 
 == Graph edges ==
 
-enables → F1, F3, F6 (lounge); strains → VT-05, VT-02; addresses → HV-05, HV-06, HV-07; realized-in → RP-01 (§2.2).
+enables → F1, F2; addresses → HV-01, HV-06; realized-in → RP-01 (§2.2).
 
 = Technology Option - Pocket guide (selected) [TECH-02] =
 
@@ -59,39 +45,29 @@ enables → F1, F3, F6 (lounge); strains → VT-05, VT-02; addresses → HV-05, 
 |ID|TECH-02
 |Name|Pocket guide (selected)
 |Status|In Progress
-|Evidence basis|Group reasoning. Off-the-shelf parts: small speaker, accelerometer, Bluetooth Low Energy, battery, large button, pull-cord.
+|Evidence basis|Group reasoning. Off-the-shelf parts.
 |Category|Wearable / AI-ICT
 |Capabilities|(((
-Palm-sized speaker. Clips to rollator or wheelchair, or hangs on a lanyard. Same voice as Pepper.
+Palm-sized; clips to a rollator or hangs on a lanyard. Same voice as Pepper.
 
-* Plays cues from a prepared script (F2)
-* Senses walking, stopped and fall-like impact (accelerometer)
-* Hears landmark beacons (TECH-03)
-* One large button: pause or continue the voice
-* Microphone off outdoors. At the bedside: listens for a few keywords (yes, no, stop, news), on the device; no audio stored or sent
-* Pull-cord for help, like the alarm cords in care-home bathrooms (F4)
-* Sends alerts over the home's Wi-Fi (F4)
-* Docks at the bedside in the evening: speaker for lying practice and audiobooks (F3, F6)
+* Speaker and microphone; speech recognised on the device (TECH-06)
+* Two large buttons: pause or answer; "going in". Pull-cord for help
+* Accelerometer: walking, stopped, pace, stumble
+* Beacon receiver (TECH-03)
+* Phone: calls through the home's own exchange. During a call, short hints mixed into the line towards the relative only
 )))
-|Limitations|(((
-* A speaker is public: passers-by hear it; wind and traffic drown it
-* Hearing aids: volume against feedback (Open item O-4)
-* Cannot see distress; infers only stops and silence
-* Cannot hear the resident outdoors: sadness and "I must go home" are for the companion
-* Can be left behind, dropped, or flat
-* Alerts need Wi-Fi across the garden
-)))
-|Maturity and feasibility|Prototype from off-the-shelf parts; feasible within the project.
-|Failure and fallback behaviour|Silent or flat: the walk goes on as today, with the companion; staff see the degraded state at the start. Alerts fail: the guide asks the companion to call; walk limited to the garden loop.
-|Benefits|HV-05: more and longer walks. HV-08: memory invitations from the life story. HV-03: no GPS, no camera; microphone off outdoors.
-|Drawbacks|Strains VT-06: memory invitations can be overheard. Mitigation: low volume; no names or avoided topics outdoors.
+|Limitations|A speaker is public; wind; hearing aids; battery. Recognition outdoors and in dialect untested (O-3). Cannot see faces or distress.
+|Maturity and feasibility|Prototype on a phone (EM-01); feasible within the project.
+|Failure and fallback behaviour|Silent or flat: the walk goes on as today; staff see the state at the start.
+|Benefits|HV-06: talk kept going. HV-04: stumbles and tiredness noticed. HV-03: no camera, no GPS.
+|Drawbacks|Strains VT-05: it listens. Strains VT-01: help offered during a walk.
 |Selected or rejected|Selected.
 
 == Graph edges ==
 
-enables → F2, F3 (room), F4, F6 (room); addresses → HV-03, HV-05, HV-08; strains → VT-06; realized-in → RP-02 (§2.2).
+enables → F1 to F5; addresses → HV-03, HV-04, HV-06; strains → VT-01, VT-05; realized-in → RP-02 (§2.2).
 
-= Technology Option - Garden beacons (selected) [TECH-03] =
+= Technology Option - Landmark beacons (selected) [TECH-03] =
 
 **Report Format:** §1.3 Technology
 
@@ -99,23 +75,23 @@ enables → F2, F3 (room), F4, F6 (room); addresses → HV-03, HV-05, HV-08; str
 
 |=Field|=Description
 |ID|TECH-03
-|Name|Garden beacons (selected)
+|Name|Landmark beacons (selected)
 |Status|In Progress
-|Evidence basis|Group reasoning. Bluetooth beacons are standard in museum audio guides and indoor positioning.
+|Evidence basis|Group reasoning. Bluetooth beacons are standard in museum audio guides.
 |Category|Sensing
-|Capabilities|Small battery beacons at landmarks: pond, rose bed, benches, gate. The guide hears the nearest one. Landmark: place-bound cue or memory invitation (F2). Gate: gate alert (F4). No positions stored.
-|Limitations|Proximity only, within metres. Misses under interference. Batteries. No landmarks outside the garden.
-|Maturity and feasibility|High; standard parts.
-|Failure and fallback behaviour|Landmark beacon silent: general cues continue. Gate beacon silent: existing door alarms and coded exits still apply. The System adds to exit measures; it never replaces them.
-|Benefits|Place-bound cues (HFC-01, HFC-03, HFC-04). A gate event without tracking (VT-02).
-|Drawbacks|Strains VT-02 lightly: a momentary location exists. Mitigation: never stored; sent only inside an alert.
+|Capabilities|Small battery beacons at the pond, roses, benches and gate. The guide hears the nearest: a place for redirection (F2); the gate for an alert (F5). No positions stored.
+|Limitations|Proximity only, within metres. Batteries. Garden only.
+|Maturity and feasibility|High.
+|Failure and fallback behaviour|Silent beacon: redirection uses the thread only; door alarms still apply.
+|Benefits|Places to redirect to (HFC-01). A gate event without tracking.
+|Drawbacks|A momentary location exists. Never stored; sent only inside an alert.
 |Selected or rejected|Selected.
 
 == Graph edges ==
 
-enables → F2 (place cues), F4 (gate); addresses → HV-04; strains → VT-02.
+enables → F2, F5; addresses → HV-04.
 
-= Technology Option - Staff notification and session record (selected) [TECH-04] =
+= Technology Option - Local server, one instance per resident (selected) [TECH-04] =
 
 **Report Format:** §1.3 Technology
 
@@ -123,23 +99,29 @@ enables → F2 (place cues), F4 (gate); addresses → HV-04; strains → VT-02.
 
 |=Field|=Description
 |ID|TECH-04
-|Name|Staff notification and session record (selected)
+|Name|Local server, one instance per resident (selected)
 |Status|In Progress
-|Evidence basis|Group reasoning. Care homes already use work phones and nurse-call systems.
+|Evidence basis|Group reasoning. Care homes already run local networks and work phones.
 |Category|AI/ICT
-|Capabilities|Alert to the care worker's phone: resident, trigger, last landmark (F4). Session record on a local server: practice type, minutes, ended early, person called and reason (F5).
-|Limitations|A separate app from the nurse-call system; integration likely out of scope. A second channel risks alert fatigue.
-|Maturity and feasibility|High; standard messaging and storage.
-|Failure and fallback behaviour|Alert not acknowledged: re-sent, then escalated to a second worker. Record not stored: session flagged as unrecorded.
-|Benefits|HV-04: help arrives. HV-06: called only when needed.
-|Drawbacks|Strains VT-02: the record is data about a resident. Kept to four items (UC01-F5-PR5).
+|Capabilities|(((
+* One instance per resident, in its own encrypted store: profile, own-word list, settings (RP-02), consent register
+* The relationship map (TECH-05)
+* Staff alerts to work phones over the home's Wi-Fi
+* Session record (F6)
+* No internet connection; updates by signed package, installed on site
+)))
+|Limitations|A single point of failure. No remote maintenance. Backups on site.
+|Maturity and feasibility|High; standard parts. Run by ST-07.
+|Failure and fallback behaviour|Server down: no alerts and no personal starters, so walks run as today. Staff see the state at the start.
+|Benefits|HV-03: nothing leaves the home. HV-01: each resident's own settings.
+|Drawbacks|Maintenance load on ST-07.
 |Selected or rejected|Selected.
 
 == Graph edges ==
 
-enables → F4, F5; addresses → HV-04, HV-06; strains → VT-02.
+enables → F1, F4, F5, F6; addresses → HV-01, HV-03.
 
-= Technology Option - Listening library and recommender (selected) [TECH-05] =
+= Technology Option - Exchange between instances (selected) [TECH-05] =
 
 **Report Format:** §1.3 Technology
 
@@ -147,38 +129,33 @@ enables → F4, F5; addresses → HV-04, HV-06; strains → VT-02.
 
 |=Field|=Description
 |ID|TECH-05
-|Name|Listening library and recommender (selected)
+|Name|Exchange between instances (selected)
 |Status|In Progress
-|Evidence basis|Group reasoning. Personalised music evidence in HFC-05. Rule-based recommendation chosen for being simple and explainable.
+|Evidence basis|Group reasoning.
 |Category|AI/ICT
 |Capabilities|(((
-Library: live radio, news bulletins (easy-language source, Open item O-6), audiobooks and short stories, music by era.
+For one walk, two residents' instances exchange a list of shareable items. An item is offered only if:
 
-Profile: life story, favourites, avoided topics, liked or skipped per item.
+1. its owner said yes to it, privately, before this walk
+1. the relationship map allows it for this pair
+1. it is off-limits for neither resident in this pair
 
-Rules:
+Unknown pair, or a map change awaiting review: nothing exchanged. Items deleted at the end of the walk. Audit: item IDs only.
 
-* Hour: news offered in the morning; calm content in the evening
-* State: after a walk, restless, rainy day
-* Profile: own era, own region, own interests
-* Two options per offer (IDP-03)
-* Short stories and familiar books first; for long books, a one-line recap per chapter, prepared in advance
-* News on request, any time, in one step
-
-Plays through Pepper (lounge) or the docked pocket guide (room).
+Relationship map, per resident: sensitive topics, each with trusted persons and the agreed approach. Per pair: walk agreed (both, date); off-limits topics; shareable items; "again" or "not again" after each walk. Kept by ST-05 with ST-04 and family; reviewed after any death, diagnosis, conflict or move, before the next walk.
 )))
-|Limitations|Rules capture taste roughly. Profile only as good as the family's input. Streaming and audiobook licences. Quality of the news source.
-|Maturity and feasibility|Medium. Rules and streams feasible; licensing to check.
-|Failure and fallback behaviour|Recommender down: offers the two standing favourites from the profile.
-|Benefits|HV-01: choice. HV-08: own content. HV-05: calmer evenings.
-|Drawbacks|Strains VT-06 (the profile) and VT-04 (the evening default). Mitigations as in their resolutions. A learned (machine-learning) recommender was considered and not chosen: it needs listening logs (VT-06).
-|Selected or rejected|Selected, rule-based.
+|Limitations|The map is only as current as staff keep it. Residents can still tell each other secrets themselves.
+|Maturity and feasibility|Medium; simple rules, careful upkeep.
+|Failure and fallback behaviour|Exchange fails: no personal starters; place cues only.
+|Benefits|HV-06: common ground. HV-03: secrets kept.
+|Drawbacks|Strains VT-04. Upkeep for ST-05.
+|Selected or rejected|Selected.
 
 == Graph edges ==
 
-enables → F6; addresses → HV-01, HV-05, HV-08; strains → VT-04, VT-06.
+enables → F1, F2, F4; addresses → HV-03, HV-06; strains → VT-04.
 
-= Technology Option - GPS tracker (rejected) [TECH-06] =
+= Technology Option - Walker model and starters (selected) [TECH-06] =
 
 **Report Format:** §1.3 Technology
 
@@ -186,23 +163,32 @@ enables → F6; addresses → HV-01, HV-05, HV-08; strains → VT-04, VT-06.
 
 |=Field|=Description
 |ID|TECH-06
-|Name|GPS tracker (rejected)
+|Name|Walker model and starters (selected)
 |Status|In Progress
-|Evidence basis|Commercially common for people with dementia. Concerns reviewed in Niemeijer et al. (2010).
-|Category|Sensing
-|Capabilities|Continuous position, anywhere; geofence alerts.
-|Limitations|Continuous route trace.
-|Maturity and feasibility|High.
-|Failure and fallback behaviour|Not applicable - rejected.
-|Benefits|Finds a resident beyond the garden.
-|Drawbacks|Violates HV-03; continuous monitoring (HFC-07); strains VT-02 more than any other option.
-|Selected or rejected|Rejected. Revisit only for walks beyond the garden, and only if ST-05 requires it.
+|Evidence basis|Group reasoning; HFC-03 to HFC-05. Offline speech recognition exists for Dutch (e.g. Vosk, whisper.cpp); accuracy for older speakers is lower (Vipperla et al., 2010).
+|Category|AI/ICT
+|Capabilities|(((
+Per walker, for one walk:
+
+* Topics: keywords matched to the person's own-word list
+* Stories told this walk: keyword overlap
+* Pause type: mid-sentence or finished, from pitch and filler words
+* Sensitive topics: keywords from the map
+
+Sentences from prepared, checked templates and lines ("[Name] was telling you about [topic]"); no free text generation. Learns the person's words and dialect if allowed. Transcript and thread deleted at the end of the walk.
+)))
+|Limitations|Keywords miss meaning. State inference is crude; the listener's codes check it (M-01).
+|Maturity and feasibility|Medium. Recognition accuracy is the main risk (O-3).
+|Failure and fallback behaviour|Low confidence: wait and place cues only; no thread echo.
+|Benefits|HV-02, HV-06, HV-07.
+|Drawbacks|Strains VT-05.
+|Selected or rejected|Selected.
 
 == Graph edges ==
 
-(no outgoing edges to Specification - rejected option, retained as Foundation knowledge); would strain → VT-02.
+enables → F2, F4; addresses → HV-02, HV-06, HV-07; strains → VT-05.
 
-= Technology Option - Pepper on the walk (rejected) [TECH-07] =
+= Technology Option - Cloud speech and language services (rejected) [TECH-07] =
 
 **Report Format:** §1.3 Technology
 
@@ -210,23 +196,19 @@ enables → F6; addresses → HV-01, HV-05, HV-08; strains → VT-04, VT-06.
 
 |=Field|=Description
 |ID|TECH-07
-|Name|Pepper on the walk (rejected)
+|Name|Cloud speech and language services (rejected)
 |Status|In Progress
-|Evidence basis|Vendor documentation: Pepper is designed for indoor use.
-|Category|Social Robot
-|Capabilities|A robot companion outdoors: presence, voice, tablet.
-|Limitations|Flat indoor floors only; rain; kerbs and gravel; battery; speed set by the robot, not the resident.
-|Maturity and feasibility|Not feasible outdoors.
+|Evidence basis|Group reasoning.
+|Category|AI/ICT
+|Capabilities|Better recognition; free conversation; generated starters.
+|Limitations|Needs an internet connection.
+|Maturity and feasibility|High.
 |Failure and fallback behaviour|Not applicable - rejected.
-|Benefits|Strong social presence on the walk.
-|Drawbacks|Terrain and weather rule it out.
-|Selected or rejected|Rejected. Indoor corridor walks beside Pepper on rain days: possible, not specified this cycle.
+|Benefits|Understands more; says more.
+|Drawbacks|Conversations leave the home (HV-03). A generated sentence can be untrue, and an untruth cannot be taken back (HV-08).
+|Selected or rejected|Rejected.
 
-== Graph edges ==
-
-(no outgoing edges to Specification - rejected option, retained as Foundation knowledge).
-
-= Technology Option - Headphones (rejected) [TECH-08] =
+= Technology Option - Audio recording (rejected) [TECH-08] =
 
 **Report Format:** §1.3 Technology
 
@@ -234,23 +216,19 @@ enables → F6; addresses → HV-01, HV-05, HV-08; strains → VT-04, VT-06.
 
 |=Field|=Description
 |ID|TECH-08
-|Name|Headphones (rejected)
+|Name|Audio recording (rejected)
 |Status|In Progress
 |Evidence basis|Group reasoning.
-|Category|Wearable
-|Capabilities|Private audio; nothing overheard.
-|Limitations|Hard to put on; conflict with hearing aids.
+|Category|Sensing
+|Capabilities|Recordings for tuning the recogniser and for coding research walks.
+|Limitations|A store of private conversations and secrets.
 |Maturity and feasibility|High.
 |Failure and fallback behaviour|Not applicable - rejected.
-|Benefits|Serves HV-03: cues stay private.
-|Drawbacks|Shuts out birdsong, wind and the companion's voice: the very things the walk attends to. Masks traffic and alarms (HV-04).
-|Selected or rejected|Rejected. Open-ear (bone-conduction) headsets deferred; could be tried in EM-04.
+|Benefits|Re-coding; reliability checks after the fact.
+|Drawbacks|Violates HV-03. Research listens live instead (EM-02).
+|Selected or rejected|Rejected.
 
-== Graph edges ==
-
-(no outgoing edges to Specification - rejected option, retained as Foundation knowledge).
-
-= Technology Option - Stress wristband (rejected) [TECH-09] =
+= Technology Option - Location and body sensing (rejected) [TECH-09] =
 
 **Report Format:** §1.3 Technology
 
@@ -258,23 +236,23 @@ enables → F6; addresses → HV-01, HV-05, HV-08; strains → VT-04, VT-06.
 
 |=Field|=Description
 |ID|TECH-09
-|Name|Stress wristband (rejected)
+|Name|Location and body sensing: GPS, cameras, wristbands (rejected)
 |Status|In Progress
-|Evidence basis|Group reasoning. Consumer wristbands estimate heart rate and skin conductance.
-|Category|Wearable / Sensing
-|Capabilities|Could sense stress and pace the practice to it.
-|Limitations|Accuracy in older adults uncertain; worn all day; skin irritation; taken off.
-|Maturity and feasibility|Medium.
+|Evidence basis|Commercially common. Concerns reviewed in Niemeijer et al. (2010).
+|Category|Sensing / Wearable
+|Capabilities|Position anywhere; faces and distress; heart rate.
+|Limitations|Continuous monitoring.
+|Maturity and feasibility|High.
 |Failure and fallback behaviour|Not applicable - rejected.
-|Benefits|Could detect distress the guide cannot see.
-|Drawbacks|Continuous body data; monitoring felt as surveillance (HFC-07); violates HV-03.
-|Selected or rejected|Rejected. Distress is left to people: the companion and the care worker.
+|Benefits|Finds a resident beyond the garden; sees distress the guide cannot.
+|Drawbacks|Felt as surveillance; violates HV-03. Distress is left to people.
+|Selected or rejected|Rejected.
 
 == Graph edges ==
 
-(no outgoing edges to Specification - rejected option, retained as Foundation knowledge).
+TECH-07 to TECH-09: no outgoing edges to Specification - rejected options, kept as Foundation knowledge.
 
 = References =
 
-* Alimardani, M. et al. (2020); Bodala, I. P. et al. (2021). See b3.1 References.
-* Niemeijer, A. R. et al. (2010). See b3.1 References.
+* Niemeijer, A. R. et al. (2010). See b4.1 References.
+* Vipperla, R., Renals, S. & Frankel, J. (2010). Ageing voices: the effect of changes in voice parameters on ASR performance. //EURASIP Journal on Audio, Speech, and Music Processing//, 2010, 525783. (check)

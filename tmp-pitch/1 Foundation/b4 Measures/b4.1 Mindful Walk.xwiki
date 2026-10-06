@@ -3,9 +3,9 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: b4.1 Mindful Walk
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eleven measures. System behaviour: M-01. Walking: M-02 (how much), M-03 (how well remembered). Resident state: M-04 affect, M-05 engagement, M-06 agitation. Resident experience: M-07 autonomy, M-08 privacy and tone. Care and company: M-09 staff time, M-10 human company. Listening: M-11 uptake. Validated instruments where they exist; bespoke counts and codes elsewhere, marked as such.
+**Abstract.** Ten measures. System behaviour: M-01. The walk: M-02 (how often, with whom). The person on the walk, rated live by a listener-observer: M-03 emotion, M-04 slips and recovery, M-05 conversation, M-06 safety while talking. The walkers' own view: M-07. Over weeks: M-08 loneliness. Values at risk: M-09 privacy, tone and trust codes; M-10 sensitive topics and disclosure. Nothing is recorded: every observer measure is coded live (EM-02).
 
-= Measure - Guide performance [M-01] =
+= Measure - System performance [M-01] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -13,22 +13,28 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|M-01
-|Name|Guide performance
+|Name|System performance
 |Status|In Progress
 |Evidence basis|Bespoke. Staged-event protocol, as used for prompting systems (Mihailidis et al., 2008).
-|Construct measured|Whether the System does what F1 to F6 specify, on time.
+|Construct measured|Whether the System does what F1 to F6 specify, on time, and nothing more.
 |Type|Quantitative
-|Instrument or procedure|Staged walks and sessions against a timestamped reference log (EM-01): stops, landmark passes, gate passes, help presses, fall-like drops (device only, onto a mat), no-response periods, refusals, evening requests for news.
-|Scoring or coding scheme|Per event: detected (yes/no); latency (s). False triggers per hour. Alert delivery latency (s). Pass thresholds: Open item O-3.
-|Validity and reliability|Bespoke. Depends on the accuracy of the reference log.
+|Instrument or procedure|(((
+Staged events against a timestamped reference log (EM-01): pauses, slips, repeated stories, starters with and without consent, blocked items, sensitive questions, stops, stumbles, gate, pull-cord, drops, relative's key.
+
+Checks on a full test day: network capture at the router; file-system search of all devices for audio.
+
+Walker model (Build B, pilot walks): the model's state labels against the listener's slip codes (M-04).
+)))
+|Scoring or coding scheme|Per event: correct (yes/no); latency (s). False triggers per hour. Disclosure trials: items spoken without consent or against the map (target 0). Packets leaving the home network (target 0). Audio files (target 0). Model: agreement with listener codes (κ).
+|Validity and reliability|Bespoke. Depends on the accuracy of the reference log. Role-players do not slip like residents.
 |Serves|Verification
-|Burden|No human subjects. Garden with beacons, prototype, experimenter.
+|Burden|No residents (staged events). Pilot walks: as EM-02.
 
 == Graph edges ==
 
-operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F6-PR6; used-by → EM-01; operationalizes → HV-04.
+operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC01-F5-PR5, UC01-F6-PR6; used-by → EM-01; operationalizes → HV-03, HV-04.
 
-= Measure - Walking: minutes and completion [M-02] =
+= Measure - Walks and company [M-02] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -36,22 +42,22 @@ operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F6-
 
 |=Field|=Description
 |ID|M-02
-|Name|Walking: minutes and completion
+|Name|Walks and company
 |Status|In Progress
 |Evidence basis|Bespoke count. Walking volume is a standard outcome in exercise studies (Forbes et al., 2015).
-|Construct measured|How much the resident walks.
+|Construct measured|How often and how long the resident walks, and with whom.
 |Type|Quantitative
-|Instrument or procedure|Session record (F5) plus companion log. Baseline from care record and observer.
-|Scoring or coding scheme|Walks started per week; minutes per walk; share of walks ended early (turned back before the planned end). Against the resident's own baseline.
-|Validity and reliability|Counts. Companion log checked against an observer on 20% of walks; ICC ≥ .60.
+|Instrument or procedure|Session record (F6), every walk. Baseline: the same record in A phases (EM-03), plus the care record.
+|Scoring or coding scheme|Per week: walks; minutes; walks alone, with a partner, on the phone; walks ended early. Phone track: calls per week.
+|Validity and reliability|Counts. Record checked against the observer on observed walks.
 |Serves|Validation
-|Burden|Low. One log line per walk.
+|Burden|None for residents.
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL1, UC01-F2-CL2, UC01-F2-CL8; used-by → EM-02; operationalizes → HV-05. Associated with HFC-01.
+operationalizes → UC01-F1-CL6, UC02-F2-CL2; used-by → EM-03; operationalizes → HV-06.
 
-= Measure - Same-day recall [M-03] =
+= Measure - Observed emotion [M-03] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -59,26 +65,36 @@ operationalizes → UC01-F1-CL1, UC01-F2-CL2, UC01-F2-CL8; used-by → EM-02; op
 
 |=Field|=Description
 |ID|M-03
-|Name|Same-day recall
+|Name|Observed emotion
 |Status|In Progress
-|Evidence basis|Bespoke. Cued recall and recognition, adapted from memory research. Tests HFC-01.
-|Construct measured|Whether events of a walk are recalled better than events of a seated session.
-|Type|Quantitative
+|Evidence basis|Observed Emotion Rating Scale (OERS; Lawton, Van Haitsma & Klapper, 1996), built for nursing-home residents with Alzheimer's disease. Validated instrument.
+|Construct measured|Emotional state and emotional quality of the walk, per walker.
+|Type|Quantitative (observational)
 |Instrument or procedure|(((
-Matched events: one distinctive event per walk and per seated session - a bell at the pond or a bell by the window; a named flower or a named object.
+OERS, rated live by the listener-observer (EM-02). No video, no audio stored.
 
-One hour later: an open question ("What was there outside today?"), then a choice of three pictures.
+Windows per walk: at the door (5 min before); on the walk (each 10 min); after (10 min, in the lounge). A 25-minute walk gives five windows.
+
+Each walker rated separately. Phone walks: the resident only.
 )))
-|Scoring or coding scheme|Free recall 0/1; recognition 0/1; per event type. Walk minus session, within resident.
-|Validity and reliability|Bespoke; no prior validity. Floor effects likely in moderate dementia. Event salience must be matched across conditions.
+|Scoring or coding scheme|(((
+Five affects: pleasure, alertness, anxiety, sadness, anger. Each rated by duration within the window: 1 never; 2 under 16 s; 3 16-59 s; 4 1-5 min; 5 over 5 min.
+
+Per walk: positive score = mean of pleasure and alertness over the walk windows; negative score = mean of anxiety, sadness and anger. The door and after windows are reported separately: mood before, and carry-over after.
+)))
+|Validity and reliability|(((
+Psychometrics in Lawton et al. (1996). Less reliable when rated by care staff than by trained researchers (Lawton et al., 1999): researchers only.
+
+Training: OERS manual, then 10 practice walks until ICC ≥ .70 with a trained rater. Study: a second observer on 20% of walks, rating independently; ICC(2,1) ≥ .60.
+)))
 |Serves|Validation
-|Burden|Human subjects. It is a memory test, which IDP-02 avoids: asked as conversation, stopped at any discomfort, in research sessions only.
+|Burden|Human subjects; an observer walks behind.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL3; used-by → EM-02. Associated with HFC-01.
+operationalizes → UC01-F1-CL6, UC01-F2-CL1 (no lower); used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-05.
 
-= Measure - Observed affect [M-04] =
+= Measure - Slips and recovery [M-04] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -86,22 +102,35 @@ operationalizes → UC01-F2-CL3; used-by → EM-02. Associated with HFC-01.
 
 |=Field|=Description
 |ID|M-04
-|Name|Observed affect
+|Name|Slips and recovery
 |Status|In Progress
-|Evidence basis|Observed Emotion Rating Scale (Lawton, Van Haitsma & Klapper, 1996), built for residents with Alzheimer's disease. Validated instrument.
-|Construct measured|Pleasure, anxiety, sadness, anger, alertness during the activity.
-|Type|Quantitative (observational)
-|Instrument or procedure|OERS, rated by a trained observer on the walk or at the session.
-|Scoring or coding scheme|Each affect rated for duration in a 10-minute window, on the scale of Lawton et al. (1996). Against baseline.
-|Validity and reliability|Psychometrics in Lawton et al. (1996). Less reliable when rated by care assistants than by research staff (Lawton et al., 1999).
+|Evidence basis|Bespoke. Categories from conversation analysis (Schegloff et al., 1977) and repair in Alzheimer's disease (Orange et al., 1996).
+|Construct measured|How often conversation goes off track, who repairs it, how fast, and at what cost to face.
+|Type|Quantitative (observational event coding)
+|Instrument or procedure|Live event coding by the listener-observer, who hears the walk through a headset (EM-02). One tablet row per slip. Codes only: no words, no content.
+|Scoring or coding scheme|(((
+Per slip:
+
+* Type: T thread lost; W word not found; R story repeated; B belief from another time; N person not recognised; S sensitive question
+* Repaired by: self; partner; relative; System; staff; nobody
+* Step used (IDP-01): wait; place; thread; shared topic; feeling; deferral
+* Seconds from slip to repair
+* Outcome: resumed; new topic; ended
+* Face signs within 30 s: apology; self-criticism ("my head"); withdrawal; laughing it off
+
+Recovered: talk resumes, on the topic or a new one, within 30 s, without face signs or distress.
+
+Per walk: recovery rate (recovered / slips); self-repair share; median seconds to repair; face signs per slip. Phone walks: R slips exposed by the relative ("You told me").
+)))
+|Validity and reliability|Bespoke. Nothing is recorded, so nothing can be re-coded: a second listener codes 20% of walks, live and independently; κ ≥ .60 for type and repairer (Landis & Koch, 1977). Disagreements are discussed after the walk and logged, never merged into one code.
 |Serves|Validation
-|Burden|Human subjects; observer walks along.
+|Burden|Human subjects; a listener hears the conversation (EM-02 rules).
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL2, UC01-F2-CL4, UC01-F2-CL5, UC01-F2-CL6, UC02-F3-CL9, UC03-F6-CL13; used-by → EM-02, EM-04; operationalizes → HV-05.
+operationalizes → UC01-F2-CL1, UC02-F2-CL2, UC01-F2-CL3, UC01-F2-CL4; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-02, HV-06.
 
-= Measure - Engagement [M-05] =
+= Measure - Conversation [M-05] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -109,22 +138,22 @@ operationalizes → UC01-F2-CL2, UC01-F2-CL4, UC01-F2-CL5, UC01-F2-CL6, UC02-F3-
 
 |=Field|=Description
 |ID|M-05
-|Name|Engagement
+|Name|Conversation
 |Status|In Progress
-|Evidence basis|Observational Measurement of Engagement (Cohen-Mansfield, Dakheel-Ali & Marx, 2009), developed with nursing-home residents with dementia.
-|Construct measured|Attention to, attitude toward, and time spent with the activity or cue.
+|Evidence basis|Interval coding adapted from the Quality of Interactions Schedule (QUIS; Dean, Proudfoot & Lindesay, 1993), developed for staff-resident interaction. The adaptation to resident-resident and resident-relative talk is bespoke.
+|Construct measured|How much the walkers talk, and how well.
 |Type|Quantitative (observational)
-|Instrument or procedure|OME, per walk segment or session segment.
-|Scoring or coding scheme|Duration of engagement; attention and attitude ratings, as defined in the source. Guided against baseline.
-|Validity and reliability|Reliability reported in the source. Our segmenting of walks is bespoke; two observers on 20% of segments, ICC ≥ .60.
+|Instrument or procedure|Listener-observer, 2-minute intervals (EM-02).
+|Scoring or coding scheme|Per interval: talk between walkers (yes/no); quality: positive (warm, laughter, a shared topic), neutral, negative (dismissive, conflict). Per walk: minutes of talk; share of positive and negative intervals.
+|Validity and reliability|Second listener on 20% of walks; κ ≥ .60.
 |Serves|Validation
-|Burden|Observer present.
+|Burden|As M-04.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL2, UC01-F2-CL4, UC02-F3-CL9; used-by → EM-02, EM-04; operationalizes → HV-05, HV-07.
+operationalizes → UC01-F1-CL6, UC02-F2-CL2; used-by → EM-02, EM-03; operationalizes → HV-06, HV-07.
 
-= Measure - Agitation [M-06] =
+= Measure - Safety while talking [M-06] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -132,22 +161,22 @@ operationalizes → UC01-F2-CL2, UC01-F2-CL4, UC02-F3-CL9; used-by → EM-02, EM
 
 |=Field|=Description
 |ID|M-06
-|Name|Agitation
+|Name|Safety while talking
 |Status|In Progress
-|Evidence basis|Cohen-Mansfield Agitation Inventory (Cohen-Mansfield, Marx & Rosenthal, 1989). Widely used in nursing homes. Validated instrument.
-|Construct measured|Frequency of agitated behaviour, late afternoon and evening in particular.
-|Type|Quantitative (staff-rated)
-|Instrument or procedure|CMAI, 29 behaviours, rated by staff over two weeks. Secondary: PRN doses from the care record.
-|Scoring or coding scheme|Each behaviour rated 1 (never) to 7 (several times an hour); summed. Phases compared.
-|Validity and reliability|Established instrument. Raters trained; same raters across phases.
+|Evidence basis|Bespoke checklist. Grounded in HFC-02 (Lundin-Olsson et al., 1997).
+|Construct measured|Whether talk on the walk raises fall risk or hides tiredness.
+|Type|Quantitative (observational, with device events)
+|Instrument or procedure|Listener-observer checklist per 2-minute interval, marked as talking or not talking; accelerometer events from the guide.
+|Scoring or coding scheme|Stumbles; near-falls (balance lost, recovered without a fall); stops mid-sentence; tiredness signs (slows, leans on the rollator, breathless, asks to sit); falls; minutes past the set length. Per walk-hour, split by talking and not talking intervals.
+|Validity and reliability|Bespoke. Observer and device counts compared; κ ≥ .60 between observers.
 |Serves|Validation
-|Burden|Staff rating time. No extra burden for the resident.
+|Burden|As M-04.
 
 == Graph edges ==
 
-operationalizes → UC02-F3-CL10, UC03-F6-CL13; used-by → EM-02; operationalizes → HV-05.
+operationalizes → UC01-F3-CL5; used-by → EM-02, EM-03; operationalizes → HV-04.
 
-= Measure - Perceived autonomy [M-07] =
+= Measure - The walkers' own view [M-07] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -155,22 +184,28 @@ operationalizes → UC02-F3-CL10, UC03-F6-CL13; used-by → EM-02; operationaliz
 
 |=Field|=Description
 |ID|M-07
-|Name|Perceived autonomy
+|Name|The walkers' own view
 |Status|In Progress
-|Evidence basis|Episode-specific need-fulfilment items, with observer counterpart (Custers et al., 2013). Dutch nursing homes; frail residents, not specifically dementia.
-|Construct measured|Felt choice and control over the walk, the practice or the listening.
-|Type|Quantitative, with observer counterpart
-|Instrument or procedure|Three autonomy items after the session, 5-point scale. Observer: 7-point "support of autonomy" scale for the same episode.
-|Scoring or coding scheme|Self-report: mean of three items. Observer: separate. Never combined.
-|Validity and reliability|α = .69 in the source. Residents rate higher than observers: the Claim is judged on the observer score.
+|Evidence basis|Bespoke. Self-report read alongside observation, never alone: residents rate their own experience higher than observers do (Custers et al., 2013).
+|Construct measured|Whether the resident valued the walk, felt free to go or not, and wants to go again. On calls: the relative's view.
+|Type|Mixed
+|Instrument or procedure|(((
+Resident, after each observed walk, only if willing and not distressed: three faces, "How was the walk?"; "Again?" (yes/no); "What was good about it?"
+
+Listener-observer, before and at the start: pressure signs (agrees reluctantly; looks to partner or staff before answering; "if I must").
+
+Relative, after each call: three items, 1-5: how the call went; how your relative seemed; would you call this way again.
+)))
+|Scoring or coding scheme|Faces 1-3; "Again?" share of yes; "What was good" coded: company, place, talk, being out, nothing. Pressure signs per walk. Relative's items: mean.
+|Validity and reliability|Bespoke. Ceiling effects expected in self-report.
 |Serves|Validation
-|Burden|Short interview; only if willing and not distressed.
+|Burden|Low; one minute after the walk.
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL1, UC03-F6-CL14; used-by → EM-02; operationalizes → HV-01.
+operationalizes → UC02-F2-CL2, UC01-F1-CL8; used-by → EM-02, EM-03; operationalizes → HV-01, HV-07.
 
-= Measure - Perceived privacy and tone [M-08] =
+= Measure - Loneliness [M-08] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -178,34 +213,22 @@ operationalizes → UC01-F1-CL1, UC03-F6-CL14; used-by → EM-02; operationalize
 
 |=Field|=Description
 |ID|M-08
-|Name|Perceived privacy and tone
+|Name|Loneliness
 |Status|In Progress
-|Evidence basis|Bespoke. Code set drawn from Niemeijer et al. (2010, 2015), Kitwood (1997) and Williams et al. (2009).
-|Construct measured|Whether residents feel watched, recorded, talked down to, or kept from the news. Whether staff and family judge the record and profile proportionate.
-|Type|Mixed: qualitative coding plus a content check
-|Instrument or procedure|(((
-Residents (EM-02): three open questions after a session - how it was to walk or sit while the voice guided; whether it felt like being watched; how it spoke to you.
-
-Staff and family (EM-03): interview, including what record and profile contain.
-
-Content check (EM-01): session record and profile against their specification.
-)))
-|Scoring or coding scheme|(((
-Codes: W watched; R recorded or reported on; T talked down to; K kept from news or information; N neutral or positive. A statement can have more than one code.
-
-Record and profile items named by staff or family: P proportionate, I intrusive.
-
-Content check: pass if exactly the specified items.
-)))
-|Validity and reliability|Bespoke. Two coders, all interviews; κ ≥ .60 (Landis & Koch, 1977).
-|Serves|Both: Verification (content) and Validation (experience)
-|Burden|Human subjects for the interviews. Content check: none.
+|Evidence basis|De Jong Gierveld 6-item loneliness scale (De Jong Gierveld & Van Tilburg, 2006). Validated in older adults; not in dementia.
+|Construct measured|Emotional and social loneliness.
+|Type|Quantitative (self-report)
+|Instrument or procedure|Six items read aloud by a researcher at the end of each phase (EM-03). Mild to moderate dementia only.
+|Scoring or coding scheme|0-6, as in the source; emotional and social subscales reported separately.
+|Validity and reliability|Validity in dementia uncertain; phases of 2-3 weeks are short for loneliness to change. Exploratory.
+|Serves|Validation
+|Burden|Five minutes per phase.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL6, UC01-F4-CL7, UC02-F3-CL11, UC03-F6-CL14, UC01-F5-PR5, UC03-F6-PR6; used-by → EM-01, EM-02, EM-03, EM-04; operationalizes → HV-02, HV-03.
+operationalizes → UC01-F1-CL10; used-by → EM-03; operationalizes → HV-06.
 
-= Measure - Care-worker time [M-09] =
+= Measure - Privacy, tone and trust codes [M-09] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -213,22 +236,22 @@ operationalizes → UC01-F2-CL6, UC01-F4-CL7, UC02-F3-CL11, UC03-F6-CL14, UC01-F
 
 |=Field|=Description
 |ID|M-09
-|Name|Care-worker time
+|Name|Privacy, tone and trust codes
 |Status|In Progress
-|Evidence basis|Time-sampled observation, method as in Rogers et al. (1999). Our coding is bespoke.
-|Construct measured|Staff minutes per walk and per calming episode; calls received.
-|Type|Quantitative
-|Instrument or procedure|Observer or staff time log.
-|Scoring or coding scheme|Minutes per walk, preparation included; minutes per calming episode; calls per day. Against baseline.
-|Validity and reliability|Two observers on 20% of episodes; ICC ≥ .60.
+|Evidence basis|Bespoke code set from Niemeijer et al. (2010, 2015), Kitwood (1997), Williams et al. (2009) and the Mental Health Foundation (2016).
+|Construct measured|Whether residents, partners, relatives and staff experience the System as watching, listening in, talking down, serving staff, revealing, or untruthful.
+|Type|Qualitative coding
+|Instrument or procedure|Short interviews (EM-04).
+|Scoring or coding scheme|W watched; L listened in on; T talked down to; D walked for others' sake ("taken out like a dog"); S secret revealed; U untrue; N neutral or positive. A statement can have more than one code.
+|Validity and reliability|Two coders on all interviews; κ ≥ .60.
 |Serves|Validation
-|Burden|Staff observed at work: a workplace-surveillance concern (HV-03).
+|Burden|Interviews; residents only if willing.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL8; used-by → EM-02, EM-03; operationalizes → HV-06.
+operationalizes → UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8, UC01-F2-CL9; used-by → EM-04; operationalizes → HV-01 to HV-03, HV-08.
 
-= Measure - Human company [M-10] =
+= Measure - Sensitive topics and disclosure [M-10] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
@@ -236,56 +259,33 @@ operationalizes → UC01-F2-CL8; used-by → EM-02, EM-03; operationalizes → H
 
 |=Field|=Description
 |ID|M-10
-|Name|Human company
+|Name|Sensitive topics and disclosure
 |Status|In Progress
-|Evidence basis|Bespoke count. Safeguard for VT-07.
-|Construct measured|Time the resident spends walking or talking with a person.
+|Evidence basis|Bespoke count. Safeguard for VT-03 and VT-04.
+|Construct measured|Whether painful questions reach the trusted person, and whether the System ever says something untrue or reveals what it should not.
 |Type|Quantitative
-|Instrument or procedure|Activity log: minutes with staff, volunteer, family or walking partner, per week.
-|Scoring or coding scheme|Minutes per week, against baseline. Must not fall.
-|Validity and reliability|Bespoke. Log completeness checked against observation on sample days.
-|Serves|Validation
-|Burden|Low. Staff logging.
+|Instrument or procedure|Session record (F6), listener-observer (S slips in M-04), staged trials (EM-01).
+|Scoring or coding scheme|Sensitive questions; deferred to the listed person (yes/no); minutes until they arrive. Untrue statements by the System (target 0). Items spoken without consent or against the map (target 0).
+|Validity and reliability|Counts. Any non-zero target count stops the B phase (EM-03).
+|Serves|Both: Verification (staged) and Validation (in use)
+|Burden|None beyond EM-02.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL8; used-by → EM-02, EM-03; operationalizes → HV-07.
-
-= Measure - Listening uptake [M-11] =
-
-**Report Format:** §1.2 Human Values and Human Factors
-
-== Fields ==
-
-|=Field|=Description
-|ID|M-11
-|Name|Listening uptake
-|Status|In Progress
-|Evidence basis|Bespoke. Acceptance counts, as commonly used to evaluate recommenders.
-|Construct measured|Whether offered content is chosen and kept on.
-|Type|Quantitative
-|Instrument or procedure|Per offer: accepted, declined, or other choice; minutes listened; stopped early. Baseline: same counts for the default station, observed on sample days.
-|Scoring or coding scheme|Acceptance rate; median minutes; early stops.
-|Validity and reliability|Counts. Time spent listening does not show enjoyment: read alongside M-04.
-|Serves|Validation
-|Burden|Low. Counted during the study only; not kept in the profile (VT-06).
-
-== Graph edges ==
-
-operationalizes → UC03-F6-CL12; used-by → EM-02; operationalizes → HV-01, HV-08.
+operationalizes → UC03-F4-PR4, UC03-F4-CL7, UC01-F1-PR1; used-by → EM-01, EM-02, EM-03; operationalizes → HV-03, HV-08.
 
 = References =
 
 //Cited from memory; checked in the evidence pass.//
 
-* Cohen-Mansfield, J., Marx, M. S. & Rosenthal, A. S. (1989). A description of agitation in a nursing home. //Journal of Gerontology//, 44(3), M77-M84.
-* Cohen-Mansfield, J., Dakheel-Ali, M. & Marx, M. S. (2009). Engagement in persons with dementia: the concept and its measurement. //American Journal of Geriatric Psychiatry//, 17(4), 299-307.
 * Custers, A. F. J. et al. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209.
-* Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
+* De Jong Gierveld, J. & Van Tilburg, T. (2006). A 6-item scale for overall, emotional, and social loneliness: confirmatory tests on survey data. //Research on Aging//, 28(5), 582-598.
+* Dean, R., Proudfoot, R. & Lindesay, J. (1993). The quality of interactions schedule (QUIS): development, reliability and use in the evaluation of two domus units. //International Journal of Geriatric Psychiatry//, 8(10), 819-826.
+* Forbes et al. (2015); Lundin-Olsson et al. (1997); Mental Health Foundation (2016); Orange et al. (1996); Schegloff et al. (1977). See a1.1 References.
+* Kitwood (1997); Williams et al. (2009). See b3.1 References.
 * Landis, J. R. & Koch, G. G. (1977). The measurement of observer agreement for categorical data. //Biometrics//, 33(1), 159-174.
 * Lawton, M. P., Van Haitsma, K. & Klapper, J. (1996). Observed affect in nursing home residents with Alzheimer's disease. //Journal of Gerontology B//, 51(1), P3-P14.
 * Lawton, M. P. et al. (1999). Observed affect and quality of life in dementia: further affirmations and problems. //Journal of Mental Health and Aging//, 5(1), 69-81.
 * Mihailidis, A. et al. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28.
-* Niemeijer, A. R. et al. (2010, 2015). See b3.1 References.
-* Rogers, J. C. et al. (1999). Improving morning care routines of nursing home residents with dementia. //Journal of the American Geriatrics Society//, 47(9), 1049-1057.
-* Williams, K. N. et al. (2009). Elderspeak communication: impact on dementia care. //American Journal of Alzheimer's Disease & Other Dementias//, 24(1), 11-20.
+* Niemeijer, A. R. et al. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//. PMID 20199699.
+* Niemeijer, A. R. et al. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320.
