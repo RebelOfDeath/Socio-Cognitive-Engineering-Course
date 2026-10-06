@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/c%20Team%20Design%20Pattern/spaces/c1%20Mindful%20Walk/pages/WebHome
-title: c1 Mindful Walk
+title: c1 Thread in the pocket, person in reach
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** One pattern: who repairs, who tells, who keeps safe. The speaker gets the first chance to repair, the companion the second, the System the third. Painful truths go to a trusted person. Safety stays with staff, whom the System calls. Consent and settings stay with the resident.
@@ -18,20 +18,20 @@ syntax: xwiki/2.1
 |Evidence basis|(((
 Literature and group reasoning only. Not yet evaluated.
 
-* Derived from SA-01 to SA-05, PS-01 to PS-03, UC01 to UC03
+* Derived from SA-01, SA-02, PS-01, PS-02, UC01, UC02
 * Order of repair: HFC-03 (Schegloff et al., 1977)
 * Partners miss each other's slips: HFC-05 (Bora et al., 2015)
 * Painful truths from a trusted person: HFC-08
 )))
-|Problem|People with dementia lose the thread of a conversation. A partner with dementia often misses it; a relative on the phone cannot see; staff cannot walk every walk. Painful questions go to whoever is near. Who does what?
+|Problem|People with dementia lose the thread of a conversation. A partner with dementia often misses it; staff cannot walk every walk. Painful questions go to whoever is near. Who does what?
 |Solution Structure|(((
 1. Speaker: first chance to repair.
-1. Companion (fellow resident or relative): talk, repair, comfort.
+1. Companion (fellow resident): talk, repair, comfort.
 1. System: keeps the thread, waits, redirects gently, watches pace, asks consent, defers.
 1. Trusted staff: painful truths; physical help.
 1. Coordinator: pairs, settings, relationship map.
 )))
-|Solution Description|The System keeps the thread outside the walkers' heads, and offers it back only after the speaker has had a moment. On calls the System helps the relative help, through a whisper. Anything painful or physical goes to a person: the System calls, it does not tell.
+|Solution Description|The System keeps the thread outside the walkers' heads, and offers it back only after the speaker has had a moment. Anything painful or physical goes to a person: the System calls, it does not tell.
 |Per-Actor allocation|(((
 **Resident (ST-01, ST-02):**
 
@@ -41,9 +41,9 @@ Literature and group reasoning only. Not yet evaluated.
 
 **Relative (ST-03):**
 
-1. Talk; repair, helped by whispered hints if agreed.
-1. Answer the wish to come home, truthfully.
-1. Press the help key when worried.
+1. Tell the life story; list welcome and off-limits topics.
+1. Agree with staff what is said about painful topics.
+1. Consent on the resident's behalf, where needed.
 
 **Care worker (ST-04):**
 
@@ -60,34 +60,33 @@ Literature and group reasoning only. Not yet evaluated.
 **System:**
 
 1. F1: ask first.
-1. F2: keep the thread; redirect gently; hints on calls.
+1. F2: keep the thread; redirect gently.
 1. F3: watch pace and rest.
 1. F4: defer listed topics.
 1. F5: call for help.
 1. F6: six-item record.
 )))
-|Consequences: benefits|Conversations recover without exposing the slip. Walks with company need less staff time. Painful news comes from the same trusted person each time. Expected effects, still to be tested: UC01-F2-CL1, UC02-F2-CL2, UC01-F1-CL6, UC03-F4-CL7.
+|Consequences: benefits|Conversations recover without exposing the slip. Walks with company need less staff time. Painful news comes from the same trusted person each time. Expected effects, still to be tested: UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6.
 |Consequences: risks|(((
 * Companions rely on the guide and stop helping
-* The guide cuts in before self-repair (UC01-F2-CL4)
-* Help after a slip feels like correction (UC01-F2-CL3)
+* The guide cuts in before self-repair (UC01-F2-CL3)
+* Help after a slip feels like correction (UC01-F2-CL2)
 * An out-of-date map lets a secret through, or misses a sensitive topic
-* Whispered hints feel like talking behind the resident's back
 )))
 |Related Patterns|IDP-01 Wait, then redirect gently; IDP-02 Ask first; IDP-03 Truthful deferral.
-|Connection to Claims|Rationale for UC01-F2-CL1, UC02-F2-CL2, UC01-F1-CL6, UC03-F4-CL7. Tested against UC01-F2-CL3, UC01-F2-CL4.
+|Connection to Claims|Rationale for UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6. Tested against UC01-F2-CL2, UC01-F2-CL3.
 |Validation path|EM-01 (the hand-offs work), EM-03 (slips recovered, per case), EM-04 (residents, relatives and staff accept the split).
 
 == Open items to check or research ==
 
 |=Item|=What is needed|=Reason
 |Relationship map (O-4)|Form, owner, review after every event.|An out-of-date map is the main route to a disclosure.
-|Garden policy (O-7)|Agree with ST-07 and ST-06 who may walk alone or in pairs.|Without it, the allocation has no permission.
-|Companion briefing|One page for partners' families and relatives: what the guide does, what it never does, the help key.|Companions must not assume the guide watches over the resident.
+|Garden policy (O-6)|Agree with ST-07 and ST-06 who may walk alone or in pairs.|Without it, the allocation has no permission.
+|Companion briefing|One page for walking partners and families: what the guide does, and what it never does.|Companions must not assume the guide watches over the resident.
 
 == Graph edges ==
 
-allocates → SA-02 to SA-05 tasks to ST-01 to ST-05; F1 to F6 to System; supports → UC01-F2-CL1, UC02-F2-CL2, UC01-F1-CL6, UC03-F4-CL7; tested-against → UC01-F2-CL3, UC01-F2-CL4.
+allocates → SA-01, SA-02 tasks to ST-01 to ST-05; F1 to F6 to System; supports → UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6; tested-against → UC01-F2-CL2, UC01-F2-CL3.
 
 == References ==
 

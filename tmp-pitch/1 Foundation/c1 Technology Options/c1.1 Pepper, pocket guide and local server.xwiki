@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/c1%20Technology%20Options/spaces/c1.1%20Mindful%20Walk/pages/WebHome
-title: c1.1 Mindful Walk
+title: c1.1 Pepper, pocket guide and local server
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Everything runs inside the care home, with no internet connection. Six selected: Pepper at the door (TECH-01), the pocket guide (TECH-02), landmark beacons (TECH-03), a local server with one instance of the System per resident (TECH-04), consent-gated exchange between instances (TECH-05), the walker model and starters (TECH-06). Three rejected: cloud speech and language services (TECH-07), audio recording (TECH-08), location and body sensing (TECH-09). No hands-on testing yet.

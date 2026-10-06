@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a2.1 Human Personas
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four personas, one per direct stakeholder role in the Design Scenarios. Two residents: Jan, a former postal worker (HP-01), and Elena, who ran the post office counter (HP-02). Anne, Jan's daughter on the phone (HP-03). Myra, the care worker Elena trusts (HP-04). All provisional: built from literature and group reasoning, not from interviews.
+**Abstract.** Three personas, one per direct stakeholder role in the Design Scenarios. Two residents: Jan, a former postal worker (HP-01), and Elena, who ran the post office counter (HP-02). Myra, the care worker Elena trusts (HP-03). All provisional: built from literature and group reasoning, not from interviews.
 
 = Human Persona - Jan [HP-01] =
 
@@ -15,9 +15,9 @@ syntax: xwiki/2.1
 |ID|HP-01
 |Name|Jan, resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-02.
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01.
 |Elaborates|ST-01; ST-02 on Elena's walks
-|Role in Scenario|Walks with Elena (DS-01). Walks while on the phone with Anne (DS-02).
+|Role in Scenario|Walks with Elena; misses her slip, stumbles while talking (DS-01).
 |Task Demands|(((
 1. Agree to go
 1. Keep a story going
@@ -27,7 +27,7 @@ syntax: xwiki/2.1
 |Specific Capabilities and Needs|(((
 Can: walk 20-30 minutes with a rollator; tell old stories vividly; answer yes or no; choose between two.
 
-Cannot: recall this morning; notice a repeated story.
+Cannot: recall this morning; notice a repeated story, or a partner's slip.
 
 Moderate dementia. Hearing aid. Copes by laughing slips off and going on as before.
 )))
@@ -38,9 +38,9 @@ Moderate dementia. Hearing aid. Copes by laughing slips off and going on as befo
 * HV-02 Dignity - plain talk, no fuss
 * HV-03 Privacy - "What I tell Elena is between us"
 )))
-|Social Network and Relationships|Daughter Anne (ST-03) calls twice a week, visits monthly. Elena (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
+|Social Network and Relationships|Their daughter (ST-03) visits monthly and wrote the life story with the coordinator. Elena (ST-02) lives two doors down. Myra (ST-04) works most afternoons.
 |History and Experiences|Thirty years delivering post in a small town, on foot and by bike. Walked the dog twice a day until moving in.
-|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, bridge only; hints to Anne, on; word help, off; starters, the post round and football. Will not be tracked.
+|Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, bridge only; word help, off; starters, the post round and football. Will not be tracked.
 
 = Human Persona - Elena [HP-02] =
 
@@ -52,9 +52,9 @@ Moderate dementia. Hearing aid. Copes by laughing slips off and going on as befo
 |ID|HP-02
 |Name|Elena, resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01, PS-03.
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-01, PS-02.
 |Elaborates|ST-01; ST-02 on Jan's walks
-|Role in Scenario|Walks with Jan; loses the thread and finds it again (DS-01). Walks alone with the guide as conversation partner; asks for Thomas (DS-03).
+|Role in Scenario|Walks with Jan; loses the thread and finds it again (DS-01). Walks alone with the guide as company; asks for Thomas (DS-02).
 |Task Demands|(((
 1. Find words; keep the thread
 1. Recover from a slip without embarrassment
@@ -79,7 +79,7 @@ Aged 81; mild Alzheimer's disease. Copes by facing it ("My head's no good any mo
 |History and Experiences|Ran the post office counter in the same town as Jan, and knew half the town by name. Moved in this year.
 |Constraints and Privacy Considerations|Settings agreed (RP-02): guide on walks alone, conversation partner; word help, after a wait ("give me a moment first"); starters, the counter and her garden. Off-limits with every partner: her diagnosis. Thomas's death: Myra only, as agreed with her son.
 
-= Human Persona - Anne [HP-03] =
+= Human Persona - Myra [HP-03] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -87,41 +87,11 @@ Aged 81; mild Alzheimer's disease. Copes by facing it ("My head's no good any mo
 
 |=Field|=Description
 |ID|HP-03
-|Name|Anne, Jan's daughter
-|Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Built on ST-03, PS-02.
-|Elaborates|ST-03
-|Role in Scenario|Calls Jan during a walk; hears whispered hints; answers "Come and get me" (DS-02).
-|Task Demands|(((
-1. Call at the agreed time
-1. Keep the call warm when a story repeats
-1. Answer the wish to come home, truthfully
-1. Get help when she cannot see
-)))
-|Specific Capabilities and Needs|Knows Jan's life in detail. Works full-time; calls during her own lunch walk. Lives far away. Needs hints only she hears, and only because Jan agreed.
-|Values and Motivations|(((
-* HV-06 Social connectedness - contact between monthly visits
-* HV-08 Truthfulness - will not lie to Jan
-* HV-05 Well-being - Jan calm after the call
-* HV-03 Privacy (low) - would like to know more of Jan's day
-)))
-|Social Network and Relationships|Wrote the life story with the coordinator.
-|History and Experiences|Has said "You told me already", and regretted it.
-|Constraints and Privacy Considerations|Will not have Jan's calls recorded.
-
-= Human Persona - Myra [HP-04] =
-
-**Report Format:** §2.2 Personas and Profiles
-
-== Fields ==
-
-|=Field|=Description
-|ID|HP-04
 |Name|Myra, care worker
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Built on ST-04, PS-03.
+|Evidence basis|Provisional. Group reasoning only. Built on ST-04, PS-02.
 |Elaborates|ST-04
-|Role in Scenario|Clips on the guides (DS-01). Answers Elena's question about Thomas (DS-03).
+|Role in Scenario|Clips on the guides (DS-01). Answers Elena's question about Thomas (DS-02).
 |Task Demands|(((
 1. Start walks without walking each one
 1. Come quickly when called

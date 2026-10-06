@@ -1,9 +1,9 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/a3%20Problem%20Scenario/spaces/a3.1%20Mindful%20Walk/pages/WebHome
-title: a3.1 Mindful Walk
+title: a3.1 A missed slip and a wrong answer
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Two scenarios, one per walk. On a pair walk, a slip goes unnoticed, costs face, and the talk distracts from the path (PS-01). On a walk alone, a painful question gets the wrong answer from the wrong person (PS-03). In both, a slip or a question meets nobody prepared for it.
+**Abstract.** Two scenarios, one per walk. On a pair walk, a slip goes unnoticed, costs face, and the talk distracts from the path (PS-01). On a walk alone, a painful question gets the wrong answer from the wrong person (PS-02). In both, a slip or a question meets nobody prepared for it.
 
 = Problem Scenario - A slip nobody noticed [PS-01] =
 
@@ -64,14 +64,14 @@ Contributing causes:
 
 illustrates → Problem; involves → ST-01, ST-02, ST-04, SA-02; reimagined-as → DS-01 (§2.1).
 
-= Problem Scenario - The wrong answer [PS-03] =
+= Problem Scenario - The wrong answer [PS-02] =
 
 **Report Format:** §1.1 Operational Demands
 
 == Fields ==
 
 |=Field|=Description
-|ID|PS-03
+|ID|PS-02
 |Name|The wrong answer
 |Status|In Progress
 |Evidence basis|(((
@@ -117,7 +117,7 @@ Contributing causes:
 
 == Graph edges ==
 
-illustrates → Problem; involves → ST-01, ST-03, ST-04, SA-01; reimagined-as → DS-03 (§2.1).
+illustrates → Problem; involves → ST-01, ST-03, ST-04, SA-01; reimagined-as → DS-02 (§2.1).
 
 = References =
 

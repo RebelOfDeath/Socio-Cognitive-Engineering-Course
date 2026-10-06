@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/d1%20Mindful%20Walk/pages/WebHome
-title: d1 Mindful Walk
+title: d1 How the guide speaks
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Three patterns for how the guide speaks. After a slip, wait, then redirect gently (IDP-01). Ask the owner, alone, before joining or using a starter (IDP-02). Never deceive, correct errors at once, and pass painful truths to a trusted person (IDP-03). Wording and timing are hypotheses until EM-01 Build A.
@@ -15,7 +15,7 @@ syntax: xwiki/2.1
 |ID|IDP-01
 |Name|Wait, then redirect gently
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only. Derived from SA-04, PS-01, PS-02, DS-01, DS-02. Grounded in HFC-01, HFC-03, HFC-04, HFC-06. Not yet evaluated.
+|Evidence basis|Literature and group reasoning only. Derived from SA-02, PS-01, DS-01. Grounded in HFC-01, HFC-03, HFC-04, HFC-06. Not yet evaluated.
 |Problem|After a slip, help too soon takes the turn; help too late lets the talk die. A correction or a quiz exposes the slip.
 |Principle|The speaker gets the first chance. Then offer both walkers a way back, as a statement.
 |Solution|(((
@@ -29,11 +29,11 @@ syntax: xwiki/2.1
 1. Silent again as soon as the talk resumes.
 )))
 |Research Link|HFC-03: speakers prefer self-repair (Schegloff et al., 1977); repair fails more often in dementia (Orange et al., 1996). HFC-04: common ground. HFC-06: face. HFC-01: the place as a topic that asks nothing of memory.
-|Connection to Claims|Shapes F2 (UC01 steps 5, 6; UC02 step 3; UC03 step 2). Rationale for UC01-F2-CL1, UC02-F2-CL2. Tested against UC01-F2-CL3, UC01-F2-CL4.
+|Connection to Claims|Shapes F2 (UC01 steps 5, 6; UC02 step 2). Rationale for UC01-F2-CL1. Tested against UC01-F2-CL2, UC01-F2-CL3.
 
 == Graph edges ==
 
-shapes → F2; supports → UC01-F2-CL1, UC02-F2-CL2; tested-against → UC01-F2-CL3, UC01-F2-CL4; informed-by → EM-01 (Build A).
+shapes → F2; supports → UC01-F2-CL1; tested-against → UC01-F2-CL2, UC01-F2-CL3; informed-by → EM-01 (Build A).
 
 = Interaction Design Pattern - Ask first [IDP-02] =
 
@@ -57,11 +57,11 @@ shapes → F2; supports → UC01-F2-CL1, UC02-F2-CL2; tested-against → UC01-F2
 1. No reminders of missed walks; no tallies.
 )))
 |Research Link|Self-determination theory: choice supports motivation (Ryan & Deci, 2000). Process consent: consent in dementia is renewed at each contact (Dewing, 2007).
-|Connection to Claims|Shapes F1. Rationale for UC01-F1-CL6. Tested against UC01-F1-CL8. Verified by UC01-F1-PR1.
+|Connection to Claims|Shapes F1. Rationale for UC01-F1-CL5. Tested against UC01-F1-CL7. Verified by UC01-F1-PR1.
 
 == Graph edges ==
 
-shapes → F1; supports → UC01-F1-CL6; tested-against → UC01-F1-CL8; verified-by → UC01-F1-PR1.
+shapes → F1; supports → UC01-F1-CL5; tested-against → UC01-F1-CL7; verified-by → UC01-F1-PR1.
 
 = Interaction Design Pattern - Truthful deferral [IDP-03] =
 
@@ -73,7 +73,7 @@ shapes → F1; supports → UC01-F1-CL6; tested-against → UC01-F1-CL8; verifie
 |ID|IDP-03
 |Name|Truthful deferral
 |Status|In Progress
-|Evidence basis|Literature and group reasoning only. Derived from SA-05, PS-03, DS-03. Grounded in HV-08, HFC-08. Not yet evaluated.
+|Evidence basis|Literature and group reasoning only. Derived from SA-01, PS-02, DS-02. Grounded in HV-08, HFC-08. Not yet evaluated.
 |Problem|Painful questions come anywhere. A kind lie costs trust. A blunt truth from a stranger, or a machine, causes grief.
 |Principle|Never deceive; correct errors at once. Pass painful truths to the trusted person.
 |Solution|(((
@@ -87,14 +87,14 @@ shapes → F1; supports → UC01-F1-CL6; tested-against → UC01-F1-CL8; verifie
 1. Contradicted, or found wrong: "I had that wrong." No argument; the error flagged for ST-05 to fix at its source.
 )))
 |Research Link|HFC-08: lies found out cost trust (Mental Health Foundation, 2016; James et al., 2006).
-|Connection to Claims|Shapes F4. Rationale for UC03-F4-CL7. Verified by UC03-F4-PR4.
+|Connection to Claims|Shapes F4. Rationale for UC02-F4-CL6. Verified by UC02-F4-PR4.
 
 == Graph edges ==
 
-shapes → F4; supports → UC03-F4-CL7; verified-by → UC03-F4-PR4.
+shapes → F4; supports → UC02-F4-CL6; verified-by → UC02-F4-PR4.
 
 == Open items to check or research ==
 
 |=Item|=What is needed|=Reason
-|Wait and wording (O-2)|EM-01 Build A: wait length, thread wording, word-help form, whisper wording.|Every pattern here is a hypothesis about how a voice should sound.
+|Wait and wording (O-2)|EM-01 Build A: wait length, thread wording, word-help form.|Every pattern here is a hypothesis about how a voice should sound.
 |Relationship map (O-4)|Form and review routine for listed topics and trusted persons.|IDP-02 and IDP-03 are only as safe as the map behind them.

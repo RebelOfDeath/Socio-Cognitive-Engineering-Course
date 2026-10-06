@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b3%20Human%20Factors%20Concepts/spaces/b3.1%20Mindful%20Walk/pages/WebHome
-title: b3.1 Mindful Walk
+title: b3.1 Memory, conversation and trust
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Eight concepts. Why walk: fresh air and movement stimulate memory and steady emotions (HFC-01). What walking costs: talking takes attention from the path (HFC-02). How conversations recover: self-repair first (HFC-03), on common ground (HFC-04). Why partners miss each other's slips, and how a System can model them: theory of mind (HFC-05). What to protect: face (HFC-06). What slips cost the resident: withdrawal and loneliness (HFC-07). Why no deception: trust (HFC-08).
@@ -159,21 +159,21 @@ syntax: xwiki/2.1
 
 == Graph edges ==
 
-HFC-01: grounds → UC01-F1-CL6; explains → HV-05, HV-06; associated-measure → M-02, M-03, M-05.
+HFC-01: grounds → UC01-F1-CL5; explains → HV-05, HV-06; associated-measure → M-02, M-03, M-05.
 
-HFC-02: grounds → UC01-F3-CL5; explains → HV-04; associated-measure → M-06.
+HFC-02: grounds → UC01-F3-CL4; explains → HV-04; associated-measure → M-06.
 
-HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL4; explains → HV-02, HV-06; associated-measure → M-04.
+HFC-03: grounds → UC01-F2-CL1, UC01-F2-CL3; explains → HV-02, HV-06; associated-measure → M-04.
 
 HFC-04: grounds → UC01-F2-CL1; explains → HV-06, HV-07; associated-measure → M-04, M-05.
 
 HFC-05: grounds → UC01-F2-CL1; explains → HV-06; associated-measure → M-01, M-04.
 
-HFC-06: grounds → UC01-F2-CL3, UC01-F1-CL8; explains → HV-02; associated-measure → M-04, M-09.
+HFC-06: grounds → UC01-F2-CL2, UC01-F1-CL7; explains → HV-02; associated-measure → M-04, M-09.
 
-HFC-07: grounds → UC01-F1-CL10, UC01-F2-CL3; explains → HV-05, HV-06; associated-measure → M-07, M-08.
+HFC-07: grounds → UC01-F1-CL9, UC01-F2-CL2; explains → HV-05, HV-06; associated-measure → M-07, M-08.
 
-HFC-08: grounds → UC03-F4-CL7; explains → HV-08; associated-measure → M-09, M-10.
+HFC-08: grounds → UC02-F4-CL6; explains → HV-08; associated-measure → M-09, M-10.
 
 = References =
 

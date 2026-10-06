@@ -39,7 +39,7 @@ syntax: xwiki/2.1
 |Name|Pocket guide, with the resident's own instance
 |Status|In Progress
 |Evidence basis|Group reasoning (TECH-02 to TECH-06). Not yet built or tested.
-|Role in Scenario|Keeps the thread for Jan and Elena (DS-01). Whispers hints to Anne (DS-02). Talks with Elena; passes her question to Myra (DS-03).
+|Role in Scenario|Keeps the thread for Jan and Elena; offers a bench after a stumble (DS-01). Talks with Elena; passes her question to Myra (DS-02).
 |Social Competencies|(((
 * Silent while people talk
 * Waits for self-repair, then redirects gently (IDP-01)
@@ -49,7 +49,7 @@ syntax: xwiki/2.1
 )))
 |Embodiment|Palm-sized speaker and microphone; two large buttons (pause or answer; going in); pull-cord. Rollator clip or lanyard. No screen, no camera.
 |Narrative and Identity Framing|"The voice that knows where we were." A helper for the conversation; company on walks alone only where agreed.
-|Communication Strategies|Statements, not questions, while walking. Low volume. On calls, whispers reach the relative only.
+|Communication Strategies|Statements, not questions, while walking. Low volume.
 |Privacy and Data Handling|Listens on the device. Transcript and thread deleted at the end of the walk. Keeps the own-word list and consented facts. Nothing leaves the home.
 |Context-Aware Capabilities|Speech, pauses, topics, pace, stops, landmarks, time. Cannot see faces or distress: left to people.
 
@@ -58,12 +58,11 @@ syntax: xwiki/2.1
 Agreed with the resident, recorded in their instance (TECH-04), changed whenever they ask.
 
 |=Setting|=Options|=Default|=Set by
-|Walks offered|alone; with listed partners; on the phone with listed relatives|none until agreed|Resident with ST-05; ST-06 for walking alone
+|Walks offered|alone; with listed partners|none until agreed|Resident with ST-05; ST-06 for walking alone
 |Guide on walks alone|silent; bridge to a person; conversation partner|bridge|Resident with ST-05 and ST-04
 |After a slip|wait only; wait, then place and thread|wait, then place and thread|Resident
 |Word help|off; after a wait|off|Resident
 |Starters|off; own life; shared ground with listed partners|own life|Resident; each starter consented per walk
-|Hints to a relative on calls|off; on|off|Resident and relative
 |Form of address|first name; surname; none|as the resident says|Resident
 |Pepper's welcome back|off; on|on|Resident
 |Learn own words and dialect|off; on|off|Resident and representative

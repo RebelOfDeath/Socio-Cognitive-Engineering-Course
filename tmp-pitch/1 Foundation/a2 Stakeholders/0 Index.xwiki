@@ -3,10 +3,10 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Stakeholders: everyone affected by an activity, recorded by their values and their relationship to each other. Current concept: Mindful Walk. The morning-care stakeholders are kept for traceability; that concept no longer drives the design.
+**Abstract.** Stakeholders: everyone affected by an activity, recorded by their values and their relationship to each other. Current concept: Walking with meaning. The morning-care stakeholders are kept for traceability; that concept no longer drives the design.
 
 = Concepts =
 
 |=Page|=Stakeholders|=Status
-|[[a2.1 Mindful Walk>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.a2\.1 Mindful Walk.WebHome]]|ST-01 Resident with dementia; ST-02 Fellow resident; ST-03 Relative; ST-04 Care worker; ST-05 Activity coordinator; ST-06 Medical and therapy staff; ST-07 Care home management|**Current**
+|[[a2.1 Residents, family and staff>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.a2\.1 Mindful Walk.WebHome]]|ST-01 Resident with dementia; ST-02 Fellow resident; ST-03 Relative; ST-04 Care worker; ST-05 Activity coordinator; ST-06 Medical and therapy staff; ST-07 Care home management|**Current**
 |[[a2.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a2 Stakeholders.a2\.2 Morning Care (previous concept).WebHome]]|ST-09 Resident with dementia; ST-10 Care home staff member; ST-11 Family members; ST-12 Management or owners; ST-13 Medical staff|Superseded

@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b5%20Evaluation%20Methods/spaces/b5.1%20Mindful%20Walk/pages/WebHome
-title: b5.1 Mindful Walk
+title: b5.1 Prototype, observed walks and ABAB test
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Four methods. A prototype that shows every Function and is verified against staged events (EM-01). A protocol for observing walks live, without recording: emotion, slips and recovery, conversation, safety (EM-02). An ABAB test per pair of residents (EM-03). Short interviews on privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates.
@@ -50,7 +50,7 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 
 |=Scene|=Events|=What the System shows
 |1 Pair walk (UC01)|Private consent at the door; re-introduction; a mid-story slip; a slip near a blocked topic; a stumble while talking; one walker presses "going in"|Waits, then echoes the thread to both; the blocked topic never offered; "Bench on your left"; the other walker offered a choice
-|2 Walk alone (UC03)|Guide as conversation partner; "Is Thomas coming today?"; gate beacon|Truthful deferral; the trusted worker alerted; one orienting cue at the gate
+|2 Walk alone (UC02)|Guide as conversation partner; "Is Thomas coming today?"; gate beacon|Truthful deferral; the trusted worker alerted; one orienting cue at the gate
 |Close|Record and devices inspected|Six items in the record; no audio file; no traffic outside the home network
 
 == Staged verification ==
@@ -73,7 +73,7 @@ Shown live, per walker: common ground (consented items; blocked items with the r
 
 == Graph edges ==
 
-produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC01-F5-PR5, UC01-F6-PR6; informs → IDP-01 to IDP-03 (Build A); applies → M-01, M-10.
+produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC02-F4-PR4, UC01-F5-PR5, UC01-F6-PR6; informs → IDP-01 to IDP-03 (Build A); applies → M-01, M-10.
 
 = Evaluation Method - Observed walks [EM-02] =
 
@@ -110,7 +110,7 @@ produces → Evidence for UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC
 * Training: OERS manual; 10 practice walks with role-players and Build A pilots, until ICC ≥ .70 (OERS) and κ ≥ .70 (slip type) against a trained rater.
 * Reliability: a second listener on 20% of study walks, coding independently (M-03 to M-06).
 * Confidentiality: codes only, never words or content. A signed confidentiality agreement. A risk of harm heard on a walk goes to ST-04 at once, under the home's protocol.
-* Language notes, separate consent only: dialect words and personal expressions for the resident's own-word list (TECH-06), without the context they were said in. Research use of these lists needs a further consent and ethics review (O-8). A word list can identify its speaker, more so in a small home with a local dialect; anonymisation lowers this risk and does not remove it.
+* Language notes, separate consent only: dialect words and personal expressions for the resident's own-word list (TECH-06), without the context they were said in. Research use of these lists needs a further consent and ethics review (O-7). A word list can identify its speaker, more so in a small home with a local dialect; anonymisation lowers this risk and does not remove it.
 
 == Graph edges ==
 
@@ -166,7 +166,7 @@ Set before the study starts:
 * Across pairs: median NAP
 * UC01-F2-CL1 is supported if NAP ≥ .70 at all three phase changes in at least 4 of 6 pairs, with face signs (M-04) no higher in B
 * Any fall: walks paused for that case and reviewed with ST-06 before going on
-* Stumbles per walk-hour higher in B than in A in 2 or more pairs: adverse UC01-F3-CL5 confirmed; starters only when seated before any further B phase
+* Stumbles per walk-hour higher in B than in A in 2 or more pairs: adverse UC01-F3-CL4 confirmed; starters only when seated before any further B phase
 * Any disclosure, or a System error that causes distress (M-10): B stopped for all cases until the cause is found and fixed
 * Other System errors: counted; above [threshold - O-2] per 100 statements, or left uncorrected, the source is fixed before B continues
 
@@ -185,7 +185,7 @@ Set before the study starts:
 
 == Graph edges ==
 
-produces → Evidence for UC01-F2-CL1, UC01-F2-CL4, UC01-F3-CL5, UC01-F1-CL6, UC01-F1-CL10, and in part UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8; applies → M-02 to M-08, M-10.
+produces → Evidence for UC01-F2-CL1, UC01-F2-CL3, UC01-F3-CL4, UC01-F1-CL5, UC01-F1-CL9, and in part UC01-F2-CL2, UC02-F4-CL6, UC01-F1-CL7; applies → M-02 to M-08, M-10.
 
 = Evaluation Method - Interviews [EM-04] =
 
@@ -207,7 +207,7 @@ produces → Evidence for UC01-F2-CL1, UC01-F2-CL4, UC01-F3-CL5, UC01-F1-CL6, UC
 
 == Graph edges ==
 
-produces → Evidence for UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8, UC01-F2-CL9; applies → M-09.
+produces → Evidence for UC01-F2-CL2, UC02-F4-CL6, UC01-F1-CL7, UC01-F2-CL8; applies → M-09.
 
 = References =
 

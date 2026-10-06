@@ -1,9 +1,9 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/a1%20Design%20Scenario/spaces/a1.1%20Mindful%20Walk/pages/WebHome
-title: a1.1 Mindful Walk
+title: a1.1 Two walks with Jan and Elena
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Two scenarios, one per walk. Jan and Elena on the garden loop: a lost thread found again, and a stumble while talking (DS-01). Elena alone: "Is Thomas coming today?" (DS-03).
+**Abstract.** Two scenarios, one per walk. Jan and Elena on the garden loop: a lost thread found again, and a stumble while talking (DS-01). Elena alone: "Is Thomas coming today?" (DS-02).
 
 = Design Scenario - Pension day [DS-01] =
 
@@ -17,9 +17,9 @@ Later Elena says: "My head's no good any more." Jan: "Mine neither. Still got le
 
 At the door Pepper says: "Welcome back. Pension day, and a queue to the bakery." The record: pair walk, 27 minutes, one stumble, nobody called. Nothing about the conversation.
 
-= Design Scenario - Is Thomas coming? [DS-03] =
+= Design Scenario - Is Thomas coming? [DS-02] =
 
-//Reimagines PS-03. Realized by UC03. Technology: pocket guide (TECH-02), beacons (TECH-03), local server and map (TECH-04, TECH-05), walker model (TECH-06).//
+//Reimagines PS-02. Realized by UC02. Technology: pocket guide (TECH-02), beacons (TECH-03), local server and map (TECH-04, TECH-05), walker model (TECH-06).//
 
 Elena walks the loop alone. She agreed with the coordinator that the guide may talk with her on walks alone. At the door it asked: "May I talk about your garden today?" "Yes."
 
@@ -31,6 +31,6 @@ The guide does not raise Thomas again. The record: walk alone, 24 minutes, sensi
 
 = Graph edges =
 
-DS-01: reimagines → PS-01; realized-by → UC01; features → HP-01, HP-02, HP-04, RP-01, RP-02.
+DS-01: reimagines → PS-01; realized-by → UC01; features → HP-01, HP-02, HP-03, RP-01, RP-02.
 
-DS-03: reimagines → PS-03; realized-by → UC03; features → HP-02, HP-04, RP-02.
+DS-02: reimagines → PS-02; realized-by → UC02; features → HP-02, HP-03, RP-02.

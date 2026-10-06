@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b2%20Value%20Tensions/spaces/b2.1%20Mindful%20Walk/pages/WebHome
-title: b2.1 Mindful Walk
+title: b2.1 Talk, truth, privacy and safety
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Seven tensions. Talking while walking (VT-01). Help that exposes the slip (VT-02). Truth that hurts (VT-03). Starters that need someone's secrets (VT-04). A System that listens (VT-05). Walking alone (VT-06). Company that turns into pressure, or a walk that serves staff (VT-07).
@@ -35,7 +35,7 @@ No talk on walks: rejected. Loses the reason to go.
 
 Help anywhere on the path: rejected. Adds a third task to walking and talking.
 )))
-|Status of the tension|Open. Verified by UC01-F3-PR3; tested by adverse UC01-F3-CL5.
+|Status of the tension|Open. Verified by UC01-F3-PR3; tested by adverse UC01-F3-CL4.
 
 = Value Tension - Dignity vs Social connectedness [VT-02] =
 
@@ -67,7 +67,7 @@ No help: rejected (PS-01).
 
 A missing word supplied by default: rejected. Takes the turn.
 )))
-|Status of the tension|Open. Tested by UC01-F2-CL1 and adverse UC01-F2-CL3, UC01-F2-CL4.
+|Status of the tension|Open. Tested by UC01-F2-CL1 and adverse UC01-F2-CL2, UC01-F2-CL3.
 
 = Value Tension - Truthfulness vs Well-being [VT-03] =
 
@@ -95,11 +95,11 @@ HV-05 Well-being: no new grief.
 * System error (misheard, out of date): a plain correction when contradicted ("I had that wrong"); the source fixed by ST-05
 )))
 |Alternatives considered|(((
-Kind lies: rejected. Trust lost when found out (PS-03).
+Kind lies: rejected. Trust lost when found out (PS-02).
 
-Always tell at once: rejected. Blunt news from the wrong source (PS-03).
+Always tell at once: rejected. Blunt news from the wrong source (PS-02).
 )))
-|Status of the tension|Provisionally resolved. Verified by UC03-F4-PR4; tested by UC03-F4-CL7.
+|Status of the tension|Provisionally resolved. Verified by UC02-F4-PR4; tested by UC02-F4-CL6.
 
 = Value Tension - Privacy vs Social connectedness [VT-04] =
 
@@ -156,14 +156,14 @@ HV-03 Privacy: conversations stay private.
 * Speech recognised on the device; thread and transcript deleted at the end of the walk
 * Kept: the own-word list and consented facts, visible to the resident and representative, who can delete them
 * New facts kept only after asking
-* Research use of word lists: separate consent, anonymised, ethics review; re-identification risk stated (O-8)
+* Research use of word lists: separate consent, anonymised, ethics review; re-identification risk stated (O-7)
 )))
 |Alternatives considered|(((
 Cloud speech recognition: rejected (TECH-07).
 
 No listening: rejected. No thread to keep.
 )))
-|Status of the tension|Open. Verified by UC01-F6-PR6; tested by adverse UC01-F2-CL9.
+|Status of the tension|Open. Verified by UC01-F6-PR6; tested by adverse UC01-F2-CL8.
 
 = Value Tension - Autonomy vs Safety [VT-06] =
 
@@ -219,20 +219,20 @@ HV-01 Autonomy: own reasons; free to refuse.
 * Settings agreed with the resident (RP-02); staff cannot start the guide for a resident who declined
 )))
 |Alternatives considered|Daily scheduled walks: rejected.
-|Status of the tension|Open. Tested by adverse UC01-F1-CL8.
+|Status of the tension|Open. Tested by adverse UC01-F1-CL7.
 
 == Graph edges ==
 
-VT-01: involves → HV-06, HV-04; bounds → F2, F3; tested-by → UC01-F3-PR3, UC01-F3-CL5.
+VT-01: involves → HV-06, HV-04; bounds → F2, F3; tested-by → UC01-F3-PR3, UC01-F3-CL4.
 
-VT-02: involves → HV-02, HV-06; bounds → F2; tested-by → UC01-F2-CL1, UC01-F2-CL3, UC01-F2-CL4.
+VT-02: involves → HV-02, HV-06; bounds → F2; tested-by → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3.
 
-VT-03: involves → HV-08, HV-05; bounds → F2, F4; tested-by → UC03-F4-PR4, UC03-F4-CL7.
+VT-03: involves → HV-08, HV-05; bounds → F2, F4; tested-by → UC02-F4-PR4, UC02-F4-CL6.
 
 VT-04: involves → HV-03, HV-06; bounds → F1, F2; strained-by → TECH-05; tested-by → UC01-F1-PR1.
 
-VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-02, TECH-06; tested-by → UC01-F6-PR6, UC01-F2-CL9.
+VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-02, TECH-06; tested-by → UC01-F6-PR6, UC01-F2-CL8.
 
 VT-06: involves → HV-01, HV-04; bounds → F5; tested-by → UC01-F5-PR5.
 
-VT-07: involves → HV-06, HV-01; bounds → F1; tested-by → UC01-F1-CL8.
+VT-07: involves → HV-06, HV-01; bounds → F1; tested-by → UC01-F1-CL7.

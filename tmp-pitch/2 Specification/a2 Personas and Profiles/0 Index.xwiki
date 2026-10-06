@@ -3,13 +3,13 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Personas elaborate the direct stakeholders who appear in the Design Scenarios; Robot Profiles do the same for the System. Current concept: Mindful Walk. The morning-care personas and profile are kept for traceability.
+**Abstract.** Personas elaborate the direct stakeholders who appear in the Design Scenarios; Robot Profiles do the same for the System. Current concept: Walking with meaning. The morning-care personas and profile are kept for traceability.
 
 **Report Format:** §2.2 Personas and Profiles
 
 = Pages =
 
 |=Page|=Contents|=Status
-|[[a2.1 Human Personas>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.1 Human Personas.WebHome]]|HP-01 Jan, resident; HP-02 Elena, resident; HP-03 Anne, Jan's daughter; HP-04 Myra, care worker|**Current**
+|[[a2.1 Human Personas>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.1 Human Personas.WebHome]]|HP-01 Jan, resident; HP-02 Elena, resident; HP-03 Myra, care worker|**Current**
 |[[a2.2 Robot Profile>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.2 Robot Profile.WebHome]]|RP-01 Pepper at the door; RP-02 Pocket guide; per-person settings|**Current**
 |[[a2.3 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.a2 Personas and Profiles.a2\.3 Morning Care (previous concept).WebHome]]|HP-05 Mary; HP-06 Myra; RP-03 Pepper as tooth-brushing aid|Superseded

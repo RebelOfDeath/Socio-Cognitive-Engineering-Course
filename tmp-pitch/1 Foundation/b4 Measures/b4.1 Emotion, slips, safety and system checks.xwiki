@@ -1,6 +1,6 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/1%20Foundation/spaces/b4%20Measures/spaces/b4.1%20Mindful%20Walk/pages/WebHome
-title: b4.1 Mindful Walk
+title: b4.1 Emotion, slips, safety and system checks
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 **Abstract.** Ten measures. System behaviour: M-01. The walk: M-02 (how often, with whom). The person on the walk, rated live by a listener-observer: M-03 emotion, M-04 slips and recovery, M-05 conversation, M-06 safety while talking. The walkers' own view: M-07. Over weeks: M-08 loneliness. Values at risk: M-09 privacy, tone and trust codes; M-10 sensitive topics, errors and disclosure. Nothing is recorded: every observer measure is coded live (EM-02).
@@ -32,7 +32,7 @@ Walker model (Build B, pilot walks): the model's state labels against the listen
 
 == Graph edges ==
 
-operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC01-F5-PR5, UC01-F6-PR6; used-by → EM-01; operationalizes → HV-03, HV-04.
+operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC02-F4-PR4, UC01-F5-PR5, UC01-F6-PR6; used-by → EM-01; operationalizes → HV-03, HV-04.
 
 = Measure - Walks and company [M-02] =
 
@@ -55,7 +55,7 @@ operationalizes → UC01-F1-PR1, UC01-F2-PR2, UC01-F3-PR3, UC03-F4-PR4, UC01-F5-
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL6; used-by → EM-03; operationalizes → HV-06.
+operationalizes → UC01-F1-CL5; used-by → EM-03; operationalizes → HV-06.
 
 = Measure - Observed emotion [M-03] =
 
@@ -92,7 +92,7 @@ A second observer on 20% of walks, rating independently; ICC(2,1) ≥ .60. Train
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL6, UC01-F2-CL1 (no lower); used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-05.
+operationalizes → UC01-F1-CL5, UC01-F2-CL1 (no lower); used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-05.
 
 = Measure - Slips and recovery [M-04] =
 
@@ -128,7 +128,7 @@ Per walk: recovery rate (recovered / slips); self-repair share; median seconds t
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL1, UC01-F2-CL3, UC01-F2-CL4; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-02, HV-06.
+operationalizes → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-02, HV-06.
 
 = Measure - Conversation [M-05] =
 
@@ -151,7 +151,7 @@ operationalizes → UC01-F2-CL1, UC01-F2-CL3, UC01-F2-CL4; used-by → EM-01 (Bu
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL6; used-by → EM-02, EM-03; operationalizes → HV-06, HV-07.
+operationalizes → UC01-F1-CL5; used-by → EM-02, EM-03; operationalizes → HV-06, HV-07.
 
 = Measure - Safety while talking [M-06] =
 
@@ -174,7 +174,7 @@ operationalizes → UC01-F1-CL6; used-by → EM-02, EM-03; operationalizes → H
 
 == Graph edges ==
 
-operationalizes → UC01-F3-CL5; used-by → EM-02, EM-03; operationalizes → HV-04.
+operationalizes → UC01-F3-CL4; used-by → EM-02, EM-03; operationalizes → HV-04.
 
 = Measure - The walkers' own view [M-07] =
 
@@ -201,7 +201,7 @@ Listener-observer, before and at the start: pressure signs (agrees reluctantly; 
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL8; used-by → EM-02, EM-03; operationalizes → HV-01, HV-07.
+operationalizes → UC01-F1-CL7; used-by → EM-02, EM-03; operationalizes → HV-01, HV-07.
 
 = Measure - Loneliness [M-08] =
 
@@ -224,7 +224,7 @@ operationalizes → UC01-F1-CL8; used-by → EM-02, EM-03; operationalizes → H
 
 == Graph edges ==
 
-operationalizes → UC01-F1-CL10; used-by → EM-03; operationalizes → HV-06.
+operationalizes → UC01-F1-CL9; used-by → EM-03; operationalizes → HV-06.
 
 = Measure - Privacy, tone and trust codes [M-09] =
 
@@ -247,7 +247,7 @@ operationalizes → UC01-F1-CL10; used-by → EM-03; operationalizes → HV-06.
 
 == Graph edges ==
 
-operationalizes → UC01-F2-CL3, UC03-F4-CL7, UC01-F1-CL8, UC01-F2-CL9; used-by → EM-04; operationalizes → HV-01 to HV-03, HV-08.
+operationalizes → UC01-F2-CL2, UC02-F4-CL6, UC01-F1-CL7, UC01-F2-CL8; used-by → EM-04; operationalizes → HV-01 to HV-03, HV-08.
 
 = Measure - Sensitive topics, errors and disclosure [M-10] =
 
@@ -284,7 +284,7 @@ Disclosure: items spoken without consent or against the map (target 0).
 
 == Graph edges ==
 
-operationalizes → UC03-F4-PR4, UC03-F4-CL7, UC01-F1-PR1; used-by → EM-01, EM-02, EM-03; operationalizes → HV-03, HV-08.
+operationalizes → UC02-F4-PR4, UC02-F4-CL6, UC01-F1-PR1; used-by → EM-01, EM-02, EM-03; operationalizes → HV-03, HV-08.
 
 = References =
 

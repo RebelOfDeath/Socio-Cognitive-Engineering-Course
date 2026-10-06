@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: a3 Objective Stories
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why the guide waits, then tells both (OS-01). Why hints go to the relative (OS-02). Why the guide asks first (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
+**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why the guide waits, then tells both (OS-01). Why painful questions go to a person (OS-02). Why the guide asks first (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
 
 = Objective Story - Tell us both [OS-01] =
 
@@ -19,7 +19,7 @@ syntax: xwiki/2.1
 |Narrative|//Elena:// "At the counter I talked all day. Now a word goes, and the story goes with it. Give me a moment. If it doesn't come back, remind us both where I was, not just me."
 |Concerns|F2 Keep the thread; HV-02 Dignity, HV-06 Social connectedness
 
-= Objective Story - A word in my ear [OS-02] =
+= Objective Story - Fetch me [OS-02] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -27,11 +27,11 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|OS-02
-|Name|A word in my ear
+|Name|Fetch me
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning; HFC-04, HFC-08.
-|Narrative|//Anne:// "The second telling of the dog story used to make me snap. Now I hear 'told before, the roses are out', and I ask about the roses. Jan agreed to the hints. I would never want them behind Jan's back."
-|Concerns|F2 Keep the thread (hints on calls); HV-06 Social connectedness, HV-08 Truthfulness
+|Evidence basis|Provisional. Group reasoning; HFC-08; IDP-03.
+|Narrative|//Myra:// "When Elena asks for Thomas, I want the guide to fetch me, not to answer her. Her son and I agreed what to say. One colleague told her bluntly, another said 'He's at work'; she trusted neither of us after that."
+|Concerns|F4 Defer sensitive topics; HV-08 Truthfulness, HV-05 Well-being
 
 = Objective Story - Not a dog [OS-03] =
 
@@ -44,13 +44,13 @@ syntax: xwiki/2.1
 |Name|Not a dog
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; VT-07.
-|Narrative|//Jan:// "I'm not a dog to be walked. I go out to see Elena, or to talk to Anne. The thing asks, and if I say no, that's that."
+|Narrative|//Jan:// "I'm not a dog to be walked. I go out to see Elena, or the roses. The thing asks, and if I say no, that's that."
 |Concerns|F1 Ask first; HV-01 Autonomy, HV-02 Dignity
 
 == Graph edges ==
 
 OS-01: narrates → F2, HV-02, HV-06; serves → OBJ-01, OBJ-07.
 
-OS-02: narrates → F2, HV-06, HV-08; serves → OBJ-01, OBJ-02.
+OS-02: narrates → F4, HV-08, HV-05; serves → OBJ-04.
 
 OS-03: narrates → F1, HV-01, HV-02; serves → OBJ-06.
