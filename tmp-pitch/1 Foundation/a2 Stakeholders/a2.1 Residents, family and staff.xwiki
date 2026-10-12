@@ -21,11 +21,11 @@ syntax: xwiki/2.1
 * HV-06 Social connectedness (high) - company, a chat
 * HV-02 Dignity (high) - slips not remarked on; never walked like a pet
 * HV-08 Truthfulness (high) - the truth, from someone trusted
-* HV-01 Autonomy (high) - own reasons, own settings, own consent
+* HV-01 Autonomy (high) - own choices, own pace
 * HV-03 Privacy (high) - own conversations and secrets
 * HV-07 Identity (high) - own past, own words
 * HV-05 Well-being (high) - fresh air, calm
-* HV-04 Safety (medium) - no falls, no getting lost
+* HV-04 Safety (high) - no falls, no getting lost
 )))
 |Relationship to other Stakeholders|Walks alone, or with ST-02. Family (ST-03) tells the life story. Helped by ST-04. Agrees settings with ST-05. Walking assessed by ST-06.
 
@@ -48,9 +48,9 @@ performs → SA-01, SA-02; holds → HV-01 to HV-08; appears-in → PS-01 to PS-
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - a mate to talk to
 * HV-01 Autonomy (high) - free to decline or end a walk
-* HV-03 Privacy (high) - own secrets stay with own System
-* HV-05 Well-being (high) - own walk, own health
-* HV-02 Dignity (medium) - a partner, not a minder
+* HV-03 Privacy (high) - own secrets
+* HV-05 Well-being (high) - fresh air, calm
+* HV-02 Dignity (medium) - not patronised, treated like a person
 )))
 |Relationship to other Stakeholders|Matched with ST-01 by ST-05; both consent. Own relatives, own care plan, own copy of the System.
 
@@ -69,13 +69,13 @@ performs → SA-02; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01
 |Name|Relative
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-02.
-|Type|Indirect - tells the life story; agrees sensitive topics, answers and settings; may consent on the resident's behalf
+|Type|Indirect - gives life story and sensitive topics/traumas; agrees what may be said; may consent on ST-01's behalf
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - their relative has company
 * HV-08 Truthfulness (high) - no lies told to their relative
-* HV-05 Well-being (high) - their relative calm
-* HV-07 Identity (high) - their relative stays the person they knew
-* HV-03 Privacy (low) - may want to know more than the resident would share
+* HV-05 Well-being (high) - provide their relative with fresh air and calm to increase their well-being
+* HV-07 Identity (high) - their relative's life story is known and respected
+* HV-03 Privacy (low) - their relative's secrets are kept, but they may be shared with the care worker and activity coordinator
 )))
 |Relationship to other Stakeholders|Relative of ST-01. Gives life story and sensitive topics to ST-05. Agrees with ST-04 who answers what. May consent on ST-01's behalf.
 
@@ -96,10 +96,10 @@ supports → SA-01, SA-02; holds → HV-03, HV-05 to HV-08; appears-in → PS-02
 |Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-02.
 |Type|Direct - starts walks, answers alerts; trusted person for named sensitive topics
 |Values and motivations|(((
-* HV-04 Safety (high) - every resident back, unharmed
-* HV-08 Truthfulness (high) - painful news told as agreed with the family
-* HV-05 Well-being (high) - residents out, and calm
-* HV-03 Privacy (medium) - for residents; no surveillance of own work
+* HV-04 Safety (high) - get every resident back, unharmed
+* HV-08 Truthfulness (high) - answer questions truthfully, but not betray secrets
+* HV-05 Well-being (high) - keep residents calm and happy
+* HV-03 Privacy (medium) - protect residents' privacy while providing care
 )))
 |Relationship to other Stakeholders|Trusted person for named topics of named residents. Keeps the relationship map current with ST-05. Follows ST-06 on walking and medical news.
 
@@ -120,8 +120,9 @@ supports → SA-01, SA-02; holds → HV-03 to HV-05, HV-08; appears-in → PS-01
 |Evidence basis|Provisional. Group reasoning only. Derived from SA-02.
 |Type|Direct - keeps profiles, pairs, per-person settings and the relationship map
 |Values and motivations|(((
-* HV-06 Social connectedness (high) - pairs that work
-* HV-07 Identity (high) - profiles that fit the person
+* HV-06 Social connectedness (high) - residents have company
+* HV-05 Well-being (high) - residents have fresh air, calm and matching pairs that enjoy each other's company
+* HV-07 Identity (high) - residents' life stories are known and respected
 * HV-03 Privacy (high) - map and profiles in their care
 * HV-01 Autonomy (medium) - settings agreed with the resident
 )))
