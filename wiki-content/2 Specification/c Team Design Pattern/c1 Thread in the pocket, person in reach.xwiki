@@ -1,0 +1,92 @@
+%%WIKI-SYNC-META%%
+title: c1 Thread in the pocket, person in reach
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** One pattern: who repairs, who tells, who keeps safe. The speaker gets the first chance to repair, the companion the second, the System the third. Painful truths go to a trusted person. Safety stays with staff, whom the System calls. Consent and settings stay with the resident.
+
+= Team Design Pattern - Thread in the pocket, person in reach [TDP-01] =
+
+**Report Format:** §2.4 Team Design Patterns (Task Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|TDP-01
+|Name|Thread in the pocket, person in reach
+|Status|In Progress
+|Evidence basis|(((
+Literature and group reasoning only. Not yet evaluated.
+
+* Derived from SA-01, SA-02, PS-01 to PS-06, UC01, UC02
+* Order of repair: HFC-03 (Schegloff et al., 1977)
+* Partners miss each other's slips: HFC-05 (Bora et al., 2015)
+* Painful truths from a trusted person: HFC-08
+)))
+|Problem|People with dementia lose the thread of a conversation. A partner with dementia often misses it; staff cannot walk every walk. Painful questions go to whoever is near. Who does what?
+|Solution Structure|(((
+1. Speaker: first chance to repair.
+1. Companion (fellow resident): talk, repair, comfort.
+1. System: keeps the thread, waits, redirects gently, watches pace, asks consent, defers.
+1. Trusted staff: painful truths; physical help.
+1. Coordinator: pairs, settings, relationship map.
+)))
+|Solution Description|The System keeps the thread outside the walkers' heads, and offers it back only after the speaker has had a moment. Anything painful or physical goes to a person: the System calls, it does not tell.
+|Per-Actor allocation|(((
+**Resident (ST-01, ST-02):**
+
+1. Consent, or not; set own preferences.
+1. Talk; repair own slips first.
+1. Pause the guide; end the walk.
+
+**Relative (ST-03):**
+
+1. Tell the life story; list welcome and off-limits topics.
+1. Agree with staff what is said about painful topics.
+1. Consent on the resident's behalf, where needed.
+
+**Care worker (ST-04):**
+
+1. Clip on the guides; check they report ready.
+1. Answer alerts.
+1. Answer listed topics as agreed with family.
+
+**Activity coordinator (ST-05):**
+
+1. Agree settings with each resident.
+1. Pair residents, with both consenting.
+1. Keep the relationship map current with ST-04 and family.
+
+**System:**
+
+1. F1: ask first.
+1. F2: keep the thread; redirect gently.
+1. F3: watch pace and rest.
+1. F4: defer listed topics.
+1. F5: call for help.
+1. F6: six-item record.
+)))
+|Consequences: benefits|Conversations recover without exposing the slip. Walks with company need less staff time. Painful news comes from the same trusted person each time. Expected effects, still to be tested: UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6.
+|Consequences: risks|(((
+* Companions rely on the guide and stop helping
+* The guide cuts in before self-repair (UC01-F2-CL3)
+* Help after a slip feels like correction (UC01-F2-CL2)
+* An out-of-date map lets a secret through, or misses a sensitive topic
+)))
+|Related Patterns|IDP-01 Wait, then redirect gently; IDP-02 Ask first; IDP-03 Truthful deferral.
+|Connection to Claims|Rationale for UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6. Tested against UC01-F2-CL2, UC01-F2-CL3.
+|Validation path|EM-01 (the hand-offs work), EM-03 (slips recovered, per case), EM-04 (residents, relatives and staff accept the split).
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Reason
+|Relationship map (O-4)|Form, owner, review after every event.|An out-of-date map is the main route to a disclosure.
+|Garden policy (O-6)|Agree with ST-07 and ST-06 who may walk alone or in pairs.|Without it, the allocation has no permission.
+|Companion briefing|One page for walking partners and families: what the guide does, and what it never does.|Companions must not assume the guide watches over the resident.
+
+== Graph edges ==
+
+allocates → SA-01, SA-02 tasks to ST-01 to ST-05; F1 to F6 to System; supports → UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6; tested-against → UC01-F2-CL2, UC01-F2-CL3.
+
+== References ==
+
+* Bora et al. (2015); Schegloff et al. (1977). See a1.1 References.

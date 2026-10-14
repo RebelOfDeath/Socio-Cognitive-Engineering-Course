@@ -146,8 +146,8 @@ def main():
 
     print(f"\nDone. Deleted {deleted} of {len(hrefs)} page(s).")
     if deleted:
-        print("Remember to remove the matching files under wiki-content/ and rerun "
-              "'python3 wiki-sync/sync.py outline'.")
+        print("Run 'python3 wiki-sync/sync.py pull' to remove the matching files under wiki-content/ "
+              "and refresh OUTLINE.md.")
 
 
 if __name__ == "__main__":

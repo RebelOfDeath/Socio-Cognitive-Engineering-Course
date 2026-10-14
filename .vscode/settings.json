@@ -1,6 +1,6 @@
 {
-  // In tmp-pitch/, a page with children is a folder; its own (empty) page is this hidden file.
+  // Sync bookkeeping: which pages were on the wiki at the last pull or push. Don't hand-edit.
   "files.exclude": {
-    "tmp-pitch/**/.page.xwiki": true
+    "wiki-content/.sync-state.json": true
   }
 }

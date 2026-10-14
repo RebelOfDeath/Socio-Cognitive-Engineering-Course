@@ -1,0 +1,11 @@
+%%WIKI-SYNC-META%%
+title: b2 Value Tensions
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Value Tensions: two values that cannot both be fully served, recorded as the trade-off the design actually makes. Main concept: Walking with meaning. The morning-care tensions are listed separately.
+
+= Concepts =
+
+|=Page|=Tensions|=Status
+|[[b2.1 Talk, truth, privacy and safety>>doc:1 Foundation.b2 Value Tensions.b2\.1 Talk, truth, privacy and safety.WebHome]]|VT-01 Social connectedness vs Safety; VT-02 Dignity vs Social connectedness; VT-03 Truthfulness vs Well-being; VT-04 Privacy vs Social connectedness; VT-05 Privacy vs Identity; VT-06 Autonomy vs Safety; VT-07 Social connectedness vs Autonomy|**Current**
+|[[b2.2 Morning care - value tensions>>doc:1 Foundation.b2 Value Tensions.b2\.2 Morning care - value tensions.WebHome]]|VT-08 to VT-15|Separate concept

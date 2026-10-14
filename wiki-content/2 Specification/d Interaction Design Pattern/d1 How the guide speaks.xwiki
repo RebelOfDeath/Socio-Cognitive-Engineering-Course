@@ -1,0 +1,99 @@
+%%WIKI-SYNC-META%%
+title: d1 How the guide speaks
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Three patterns for how the guide speaks. After a slip, wait, then redirect gently (IDP-01). Ask the owner, alone, before joining or using a starter (IDP-02). Never deceive, correct errors at once, and pass painful truths to a trusted person (IDP-03). Wording and timing are hypotheses until EM-01 Build A.
+
+= Interaction Design Pattern - Wait, then redirect gently [IDP-01] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-01
+|Name|Wait, then redirect gently
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only. Derived from SA-02, PS-01, DS-01. Grounded in HFC-01, HFC-03, HFC-04, HFC-06. Not yet evaluated.
+|Problem|After a slip, help too soon takes the turn; help too late lets the talk die. A correction or a quiz exposes the slip.
+|Principle|The speaker gets the first chance. Then offer both walkers a way back, as a statement.
+|Solution|(((
+1. Wait: about 8 s after a mid-sentence stop (O-2); keep walking.
+1. Place: something here and now. "The pond's just ahead."
+1. Thread, to both: "Elena was telling you about pension day."
+1. Shared topic, consented this walk: "Elena had the post office, and Jan the bakery, in the same town."
+1. Belief from another time: the feeling, then the present. "You're thinking of your mother. The sun is on the bench." No correction; no confirmation of what is untrue.
+1. Word help only if the person's setting allows it, after the wait, as a guess to both: "The sorting office?"
+1. Never: "What were you saying?", "You told us that already", "Do you remember...?"
+1. Silent again as soon as the talk resumes.
+)))
+|Research Link|HFC-03: speakers prefer self-repair (Schegloff et al., 1977); repair fails more often in dementia (Orange et al., 1996). HFC-04: common ground. HFC-06: face. HFC-01: the place as a topic that asks nothing of memory.
+|Connection to Claims|Shapes F2 (UC01 steps 5, 6; UC02 step 2). Rationale for UC01-F2-CL1. Tested against UC01-F2-CL2, UC01-F2-CL3.
+
+== Graph edges ==
+
+shapes → F2; supports → UC01-F2-CL1; tested-against → UC01-F2-CL2, UC01-F2-CL3; informed-by → EM-01 (Build A).
+
+= Interaction Design Pattern - Ask first [IDP-02] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-02
+|Name|Ask first
+|Status|In Progress
+|Evidence basis|Group reasoning. Derived from SA-02, PS-03, PS-05, VT-04, VT-07, DS-01. Grounded in HV-01, HV-03; Ryan & Deci (2000); process consent (Dewing, 2007). Not yet evaluated.
+|Problem|A personal starter reveals something about its owner. A partner who asks is hard to refuse. Asked in front of the other walker, "no" is hard to say.
+|Principle|Ask the owner, alone, before. Two options. "No" is final.
+|Solution|(((
+1. Ask each walker alone, before the walk: "Elena would like a walk with you. Join her, or not today?"
+1. Ask the owner of each starter, alone: "May I mention the post office counter to Jan?"
+1. Consent lasts one walk.
+1. After a no: no reason asked. The other walker hears only "Not today."
+1. Never ask in front of the other walker.
+1. No reminders of missed walks; no tallies.
+)))
+|Research Link|Self-determination theory: choice supports motivation (Ryan & Deci, 2000). Process consent: consent in dementia is renewed at each contact (Dewing, 2007).
+|Connection to Claims|Shapes F1. Rationale for UC01-F1-CL5. Tested against UC01-F1-CL7. Verified by UC01-F1-PR1.
+
+== Graph edges ==
+
+shapes → F1; supports → UC01-F1-CL5; tested-against → UC01-F1-CL7; verified-by → UC01-F1-PR1.
+
+= Interaction Design Pattern - Truthful deferral [IDP-03] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-03
+|Name|Truthful deferral
+|Status|In Progress
+|Evidence basis|Literature and group reasoning only. Derived from SA-01, PS-02, DS-02. Grounded in HV-08, HFC-08. Not yet evaluated.
+|Problem|Painful questions come anywhere. A kind lie costs trust. A blunt truth from a stranger, or a machine, causes grief.
+|Principle|Never deceive; correct errors at once. Pass painful truths to the trusted person.
+|Solution|(((
+1. Listed topic (relationship map): "That's one for Myra. Shall I ask her to come?"
+1. Alert the trusted person: resident, topic, place.
+1. No answer to the question itself; no denial.
+1. If the resident declines: the trusted person is told after the walk.
+1. The guide does not raise the topic again.
+1. Unlisted but possibly painful (a death, an illness, going home): treated as listed; the trusted person is the key worker.
+1. The trusted person decides what is said, as agreed with family and ST-06.
+1. Contradicted, or found wrong: "I had that wrong." No argument; the error flagged for ST-05 to fix at its source.
+)))
+|Research Link|HFC-08: lies found out cost trust (Mental Health Foundation, 2016; James et al., 2006).
+|Connection to Claims|Shapes F4. Rationale for UC02-F4-CL6. Verified by UC02-F4-PR4.
+
+== Graph edges ==
+
+shapes → F4; supports → UC02-F4-CL6; verified-by → UC02-F4-PR4.
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Reason
+|Wait and wording (O-2)|EM-01 Build A: wait length, thread wording, word-help form.|Every pattern here is a hypothesis about how a voice should sound.
+|Relationship map (O-4)|Form and review routine for listed topics and trusted persons.|IDP-02 and IDP-03 are only as safe as the map behind them.

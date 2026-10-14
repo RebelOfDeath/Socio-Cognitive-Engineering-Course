@@ -1,0 +1,11 @@
+%%WIKI-SYNC-META%%
+title: a1 Design Scenario
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Design Scenarios reimagine a Problem Scenario with the System in place. Main concept: Walking with meaning. The morning-care scenarios are listed separately.
+
+= Concepts =
+
+|=Page|=Scenarios|=Status
+|[[a1.1 Two walks with Jan and Elena>>doc:2 Specification.a1 Design Scenario.a1\.1 Two walks with Jan and Elena.WebHome]]|DS-01 Pension day; DS-02 Is Thomas coming?|**Current**
+|[[a1.2 Morning care - design scenarios>>doc:2 Specification.a1 Design Scenario.a1\.2 Morning care - design scenarios.WebHome]]|DS-04 Tooth brushing; DS-05 Medication|Separate concept

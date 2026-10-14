@@ -1,0 +1,70 @@
+%%WIKI-SYNC-META%%
+title: a2.2 Robot Profile
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** One System per resident, two devices, one voice. Pepper at the garden door asks, introduces and welcomes back (RP-01). The pocket guide keeps the thread on the walk (RP-02). Neither deceives; both ask first and stay silent while people talk. Each resident's settings follow their own wishes.
+
+= Robot Profile - Pepper at the door [RP-01] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|RP-01
+|Name|Pepper at the door
+|Status|In Progress
+|Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, VT-04 and VT-07. Not yet tested with residents.
+|Role in Scenario|Asks Jan's consent; introduces Jan and Elena; welcomes them back (DS-01).
+|Social Competencies|(((
+* Asks each walker alone; two options; no is final
+* Introduces walkers by name and photo
+* One statement on return, never a question
+)))
+|Embodiment|Pepper (TECH-01), by the garden door, never in the path. Cameras disabled and visibly covered. Little movement; no gaze-following.
+|Narrative and Identity Framing|The host at the door; never a supervisor. Same name and voice as the pocket guide.
+|Communication Strategies|Short adult sentences; yes/no on the tablet; first name only if the resident wants it; no praise, no endearments.
+|Privacy and Data Handling|Sees only this walk's consented items. Receives the walk's last topic for the welcome; discards it after.
+|Context-Aware Capabilities|Who walks with whom; consent given or not. Nothing else.
+
+= Robot Profile - Pocket guide [RP-02] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|RP-02
+|Name|Pocket guide, with the resident's own instance
+|Status|In Progress
+|Evidence basis|Group reasoning (TECH-02 to TECH-06). Not yet built or tested.
+|Role in Scenario|Keeps the thread for Jan and Elena; offers a bench after a stumble (DS-01). Talks with Elena; passes her question to Myra (DS-02).
+|Social Competencies|(((
+* Silent while people talk
+* Waits for self-repair, then redirects gently (IDP-01)
+* Asks before joining and before each starter (IDP-02)
+* Never deceives; corrects itself when wrong; passes painful topics to a trusted person (IDP-03)
+* Never quizzes, corrects, praises or keeps tallies
+)))
+|Embodiment|Palm-sized speaker and microphone; two large buttons (pause or answer; going in); pull-cord. Rollator clip or lanyard. No screen, no camera.
+|Narrative and Identity Framing|"The voice that knows where we were." A helper for the conversation; company on walks alone only where agreed.
+|Communication Strategies|Statements, not questions, while walking. Low volume.
+|Privacy and Data Handling|Listens on the device. Transcript and thread deleted at the end of the walk. Keeps the own-word list and consented facts. Nothing leaves the home.
+|Context-Aware Capabilities|Speech, pauses, topics, pace, stops, landmarks, time. Cannot see faces or distress: left to people.
+
+== Per-person settings ==
+
+Agreed with the resident, recorded in their instance (TECH-04), changed whenever they ask.
+
+|=Setting|=Options|=Default|=Set by
+|Walks offered|alone; with listed partners|none until agreed|Resident with ST-05; ST-06 for walking alone
+|Guide on walks alone|silent; bridge to a person; conversation partner|bridge|Resident with ST-05 and ST-04
+|After a slip|wait only; wait, then place and thread|wait, then place and thread|Resident
+|Word help|off; after a wait|off|Resident
+|Starters|off; own life; shared ground with listed partners|own life|Resident; each starter consented per walk
+|Form of address|first name; surname; none|as the resident says|Resident
+|Pepper's welcome back|off; on|on|Resident
+|Research use of own words|off; on, anonymised|off|Resident and representative; ethics review
+|Walk length; rest offers|minutes|per resident|ST-06; the resident can shorten, not lengthen
+|Safety alerts|always on|on|Not adjustable
+|Sensitive topics|topic; trusted person; agreed approach|none|ST-05 with ST-04, family and ST-06

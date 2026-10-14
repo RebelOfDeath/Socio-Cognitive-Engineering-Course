@@ -1,0 +1,30 @@
+%%WIKI-SYNC-META%%
+title: d Morning care - evaluation
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+* [[a1 Morning care - artifacts>>doc:3 Evaluation.a Artifacts.a1 Morning care - artifacts.WebHome]]: AT-02 Pepper tooth-brushing aid
+* [[b1 Morning care - evaluation reports>>doc:3 Evaluation.b Evaluation Reports.b1 Morning care - evaluation reports.WebHome]]: ER-01 cognitive walkthrough of UC04; ER-02 within-resident baseline comparison (study design)
+* [[c1 Morning care - evidence>>doc:3 Evaluation.c Evidence.c1 Morning care - evidence.WebHome]]: EV-01 to EV-07
+
+= Verification and validation summary =
+
+Where each UC04 Premise and Claim stands. "Planned" means the Evaluation Method is designed but has not produced Evidence.
+
+|=Premise or Claim|=Planned method|=Report so far|=Evidence so far|=Verdict so far
+|UC04-F7-PR7|EM-05|none (needs Build A)|none|none
+|UC04-F8-PR8|EM-05|none (needs Build A)|none|none
+|UC04-F9-PR9|EM-05|none (needs Build A)|none|none
+|UC04-F10-PR10|EM-05|none (needs Build A)|none|none
+|UC04-F8-CL15|EM-06|ER-01; ER-02 designed|EV-01|Qualifies (walkthrough only)
+|UC04-F8-CL16|EM-06|ER-02 designed|none|none
+|UC04-F8-CL17|EM-06|ER-02 designed|none|none
+|UC04-F8-CL18 (adverse)|EM-06|ER-01; ER-02 designed|EV-02|Qualifies (walkthrough only)
+|UC04-F8-CL19 (adverse)|EM-06, EM-07|ER-01; ER-02 designed|EV-03|Qualifies (walkthrough only)
+|UC04-F9-CL20|EM-06|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; the cause (WF-07) is fixed and needs walking again
+|UC04-F7-CL21|EM-06, EM-07|ER-01; ER-02 designed|EV-07|Qualifies (walkthrough only)
+|UC04-F10-CL22|EM-07|ER-01|EV-05|Challenges (walkthrough only; O-38)
+|UC04-F9-CL23|EM-06, EM-07|ER-02 designed|none|none
+|UC04-F8-CL24|EM-06|ER-01; ER-02 designed|EV-06|Qualifies (walkthrough only)
+|UC04-F9-CL25 (adverse)|EM-06|ER-02 designed|none|none
+
+No Claim has yet been tested on a verified Premise, because EM-05 has not run.

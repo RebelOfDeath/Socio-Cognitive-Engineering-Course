@@ -1,0 +1,237 @@
+%%WIKI-SYNC-META%%
+title: b2.1 Talk, truth, privacy and safety
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Seven tensions. Talking while walking (VT-01). Help that exposes the slip (VT-02). Truth that hurts (VT-03). Starters that need someone's secrets (VT-04). A System that listens (VT-05). Walking alone (VT-06). Company that turns into pressure, or a walk that serves staff (VT-07).
+
+= Value Tension - Social connectedness vs Safety [VT-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-01
+|Name|Social connectedness vs Safety (talking while walking)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Lundin-Olsson et al. (1997); Montero-Odasso et al. (2012). Illustrated by PS-01, PS-04.
+|Values in tension|(((
+HV-06 Social connectedness: talk on the walk.
+
+HV-04 Safety: attention for the path and the body.
+)))
+|Domain area|safety/physical-environmental
+|Nature of the conflict|Talking takes attention from walking: people slow, stop or stumble. Good talk masks tiredness.
+|Non-negotiable floor|Walk length and rest set by ST-06. Safety alerts always on.
+|Current resolution|(((
+* Starters and thread help only at a stop or a bench
+* No questions while walking
+* Stumble: offer to sit. Second stumble: alert
+* Head-back cue at the set length, even mid-talk
+)))
+|Alternatives considered|(((
+No talk on walks: rejected. Loses the reason to go.
+
+Help anywhere on the path: rejected. Adds a third task to walking and talking.
+)))
+|Status of the tension|Open. Verified by UC01-F3-PR3; tested by adverse UC01-F3-CL4.
+
+= Value Tension - Dignity vs Social connectedness [VT-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-02
+|Name|Dignity vs Social connectedness (help that exposes the slip)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Schegloff et al. (1977); Goffman (1967).
+|Values in tension|(((
+HV-06 Social connectedness: help the talk recover.
+
+HV-02 Dignity: a slip passes unremarked.
+)))
+|Domain area|psychological safety (personhood)
+|Nature of the conflict|Every repair shows that a slip happened. Help too soon takes the turn away; help too late lets the talk die.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Wait first: the speaker repairs their own slip
+* Then redirect gently, to both: the place, the thread as a statement, a consented shared topic (IDP-01)
+* Never "What were you saying?", "You told me", "Do you remember...?"
+* How openly help is given: per person, from their coping style and settings
+)))
+|Alternatives considered|(((
+No help: rejected (PS-01).
+
+A missing word supplied by default: rejected. Takes the turn.
+)))
+|Status of the tension|Open. Tested by UC01-F2-CL1 and adverse UC01-F2-CL2, UC01-F2-CL3.
+
+= Value Tension - Truthfulness vs Well-being [VT-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-03
+|Name|Truthfulness vs Well-being (truth that hurts)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Mental Health Foundation (2016); James et al. (2006).
+|Values in tension|(((
+HV-08 Truthfulness: no deception.
+
+HV-05 Well-being: no new grief.
+)))
+|Domain area|psychological safety; trust
+|Nature of the conflict|A death or a diagnosis can be news every time it is told. A kind lie spares distress now and costs trust later.
+|Non-negotiable floor|No deception by design: the script contains no untruth, denial or playing along. The System never delivers a death, a diagnosis or other listed painful news. Errors are possible; leaving one uncorrected is not.
+|Current resolution|(((
+* Belief from another time ("My mother is waiting"): gentle redirection. Answer the feeling, bring back the present; no correction, no confirmation of what is untrue (IDP-01)
+* Direct question on a listed topic: truthful deferral ("That's one for [trusted person]. Shall I ask them to come?") and an alert to the trusted person (IDP-03)
+* The trusted person decides what is said, as agreed with family and ST-06
+* System error (misheard, out of date): a plain correction when contradicted ("I had that wrong"); the source fixed by ST-05
+)))
+|Alternatives considered|(((
+Kind lies: rejected. Trust lost when found out (PS-02).
+
+Always tell at once: rejected. Blunt news from the wrong source (PS-02).
+)))
+|Status of the tension|Provisionally resolved. Verified by UC02-F4-PR4; tested by UC02-F4-CL6.
+
+= Value Tension - Privacy vs Social connectedness [VT-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-04
+|Name|Privacy vs Social connectedness (starters from personal facts)
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Illustrated by PS-05.
+|Values in tension|(((
+HV-06 Social connectedness: starters from both lives.
+
+HV-03 Privacy: secrets kept, also from a partner.
+)))
+|Domain area|privacy
+|Nature of the conflict|The best starters are personal. A starter about one resident, spoken to another, reveals it. A secret said once cannot be unsaid.
+|Non-negotiable floor|GDPR art. 5 and 9 (health data). Consent through resident and representative (Open item O-5).
+|Current resolution|(((
+* Each resident's data in their own instance of the System (TECH-04)
+* An item is shared on a walk only if: its owner said yes, privately, before this walk; the relationship map allows it for this pair; it is off-limits for neither (TECH-05)
+* Unknown pair, or a map change awaiting review: no personal starters; place cues only
+* Map reviewed after any death, diagnosis, conflict or move
+)))
+|Alternatives considered|(((
+One shared profile store: rejected.
+
+No personal starters: not preferred. Conversation loses its common ground.
+)))
+|Status of the tension|Provisionally resolved. Verified by UC01-F1-PR1.
+
+= Value Tension - Privacy vs Identity [VT-05] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-05
+|Name|Privacy vs Identity (a System that listens)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Niemeijer et al. (2010).
+|Values in tension|(((
+HV-07 Identity: own words, own dialect, own stories.
+
+HV-03 Privacy: conversations stay private.
+)))
+|Domain area|privacy
+|Nature of the conflict|To keep the thread, the System must listen. Learning a person's words and dialect helps it understand them; the same word list identifies them.
+|Non-negotiable floor|No audio stored. No internet connection: nothing leaves the home.
+|Current resolution|(((
+* Speech recognised on the device; thread and transcript deleted at the end of the walk
+* Kept: the own-word list and consented facts, visible to the resident and representative, who can delete them
+* New facts kept only after asking
+* Research use of word lists: separate consent, anonymised, ethics review; re-identification risk stated (O-7)
+)))
+|Alternatives considered|(((
+Cloud speech recognition: rejected (TECH-07).
+
+No listening: rejected. No thread to keep.
+)))
+|Status of the tension|Open. Verified by UC01-F6-PR6; tested by adverse UC01-F2-CL8.
+
+= Value Tension - Autonomy vs Safety [VT-06] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-06
+|Name|Autonomy vs Safety (walking alone)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Härlein et al. (2009).
+|Values in tension|(((
+HV-01 Autonomy: walk alone when you like.
+
+HV-04 Safety: falls, exits.
+)))
+|Domain area|safety/physical-environmental
+|Nature of the conflict|More freedom: more fall and exit risk. More supervision: fewer walks, and a guarded feeling.
+|Non-negotiable floor|Exit policy is ST-07's. The System never locks, blocks or restrains.
+|Current resolution|(((
+* Alone only if assessed fit (ST-06); garden loop only
+* Gate beacon: one orienting cue; alert to the care worker
+* No GPS, no route log
+)))
+|Alternatives considered|Staff on every walk: not preferred. Walks do not happen. GPS-tracked walking: rejected (TECH-09).
+|Status of the tension|Provisionally resolved. Verified by UC01-F5-PR5.
+
+= Value Tension - Social connectedness vs Autonomy [VT-07] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-07
+|Name|Social connectedness vs Autonomy (pressure, and the walk that serves staff)
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Illustrated by PS-03.
+|Values in tension|(((
+HV-06 Social connectedness: walks with company.
+
+HV-01 Autonomy: own reasons; free to refuse.
+)))
+|Domain area|social; personhood
+|Nature of the conflict|A partner who asks is hard to refuse. A device that invites daily can become a routine run for staff: the resident is "taken out", like a dog.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Each walker asked separately and privately (IDP-02)
+* Either walker may end the walk, without a reason
+* No tallies, no praise, no reminders of missed walks
+* Offers built on the resident's own reasons: a person, a place, a call
+* Settings agreed with the resident (RP-02); staff cannot start the guide for a resident who declined
+)))
+|Alternatives considered|Daily scheduled walks: rejected.
+|Status of the tension|Open. Tested by adverse UC01-F1-CL7.
+
+== Graph edges ==
+
+VT-01: involves → HV-06, HV-04; bounds → F2, F3; tested-by → UC01-F3-PR3, UC01-F3-CL4.
+
+VT-02: involves → HV-02, HV-06; bounds → F2; tested-by → UC01-F2-CL1, UC01-F2-CL2, UC01-F2-CL3.
+
+VT-03: involves → HV-08, HV-05; bounds → F2, F4; tested-by → UC02-F4-PR4, UC02-F4-CL6.
+
+VT-04: involves → HV-03, HV-06; bounds → F1, F2; strained-by → TECH-05; tested-by → UC01-F1-PR1.
+
+VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-02, TECH-06; tested-by → UC01-F6-PR6, UC01-F2-CL8.
+
+VT-06: involves → HV-01, HV-04; bounds → F5; tested-by → UC01-F5-PR5.
+
+VT-07: involves → HV-06, HV-01; bounds → F1; tested-by → UC01-F1-CL7.

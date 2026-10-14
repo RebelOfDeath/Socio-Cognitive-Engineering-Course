@@ -1,0 +1,10 @@
+%%WIKI-SYNC-META%%
+title: Design Patterns
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+This project's own patterns are written next to the Use Case they were abstracted from, in §2 Specification:
+
+* [[TDP-02 Graduated activity support with human handover>>doc:2 Specification.c Team Design Pattern.c2 Morning care - team design pattern.WebHome]] (§2.4, task level)
+* [[IDP-04 Respectful graduated prompting>>doc:2 Specification.d Interaction Design Pattern.d2 Morning care - interaction design pattern.WebHome]] (§2.5, interaction level)
+
+Both are drafted from UC04 alone and stay In Progress until UC05 shows whether they recur (§2.3, UC05 scope decision). The pages listed under this section are examples from the course template; nothing in this project rests on them.

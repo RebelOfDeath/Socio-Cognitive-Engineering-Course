@@ -1,0 +1,38 @@
+%%WIKI-SYNC-META%%
+title: a1 Morning care - artifacts
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+= Artifact [AT-02] =
+
+//The Prototype, Simulation, or other tangible Implementation evaluated this cycle. It instantiates a specific set of Use Cases and, through them, the Functions, Premises, and Claims those Use Cases carry, so they can be evaluated in a controlled Evaluation.//
+
+== Fields ==
+
+|=Field|=Description
+|ID|AT-02
+|Name|Pepper tooth-brushing aid
+|Status|In Progress
+|Scope|(((
+Instantiates UC04 (§2.3) and implements its four Functions: F7 step tracking from item sensors (TECH-11), F8 graduated prompting through Pepper's speech and chest tablet (TECH-10), F9 handover to the care worker's phone (TECH-12), and F10 the three-item session record (TECH-12). The prompt wording, timing and handover rules are those of UC04's //Escalation specification//.
+
+Deliberately out of scope: UC05 (medication, deferred by O-22), any use of Pepper's cameras (TECH-13 rejected), physical assistance by the robot (left to the care worker through F9), and any judgement of how clean the teeth are (PS-07 out of scope; M-19 is a research measure, not a System function).
+)))
+|Simulation notice|(((
+Paper build: nothing is simulated by software. The specification stands in for the interface. Evaluators read the prompt script and the timings, and imagine the tablet picture, Pepper's position at the doorway and the care worker's phone message.
+
+Build A: not applicable until it is built. If Pepper cannot be placed at the doorway (O-30), the planned fallback is to run F8 through a tool-like sink device (TECH-14), which would be recorded here as a separate build.
+)))
+|Premises verifiable|(((
+Paper build: none. It has no timing, no sensors and no message channel, so UC04-F7-PR7 to UC04-F10-PR10 can only be checked for whether they are specified coherently, which ER-01 did along the way.
+
+Build A: all four Premises, through EM-05 at a mock sink (ground-truth log, no human subjects). UC04-F10-PR10's check on who can read the record is only partly verifiable at a mock sink, because it depends on the care home's own access settings.
+)))
+|Builds|(((
+|=Build|=What changed
+|Spec-1 (paper)|First evaluated build. The UC04 specification as of this cycle: Action Sequence, Functions F7 to F10, Escalation specification, Premises and Claims tables, DS-04, HP-05, HP-06 and RP-03. Walked through in ER-01.
+|Build A (planned)|Working system: Pepper with the F8 prompt script and tablet pictures, item sensors on the toothbrush, toothpaste and cup (TECH-11), and the phone message and session record (TECH-12). Planned to include the changes ER-01 recommends (§2.3 Open items O-34 to O-38). First evaluated in the EM-05 pilot (O-29); then used by ER-02.
+)))
+
+== Graph edges ==
+
+instantiates → UC04; used-by ← ER-01 (Spec-1), ER-02 (Build A, planned).

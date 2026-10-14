@@ -1,0 +1,11 @@
+%%WIKI-SYNC-META%%
+title: c1 Technology Options
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Technology Options: available or emerging capabilities considered for the System, rejected ones included, so the rationale is a selection rather than a justification. Main concept: Walking with meaning. The morning-care options are listed separately.
+
+= Concepts =
+
+|=Page|=Options|=Status
+|[[c1.1 Pepper, pocket guide and local server>>doc:1 Foundation.c1 Technology Options.c1\.1 Pepper, pocket guide and local server.WebHome]]|Selected: TECH-01 Pepper at the door; TECH-02 Pocket guide; TECH-03 Landmark beacons; TECH-04 Local server, one instance per resident; TECH-05 Exchange between instances; TECH-06 Walker model and starters. Rejected: TECH-07 Cloud speech and language services; TECH-08 Audio recording; TECH-09 Location and body sensing|**Current**
+|[[c1.2 Morning care - technology options>>doc:1 Foundation.c1 Technology Options.c1\.2 Morning care - technology options.WebHome]]|TECH-10 to TECH-17|Separate concept

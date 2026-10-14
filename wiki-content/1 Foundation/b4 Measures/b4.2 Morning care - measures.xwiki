@@ -1,0 +1,254 @@
+%%WIKI-SYNC-META%%
+title: b4.2 Morning care - measures
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Measures M-12 to M-19 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Walking with meaning (see [[b4.1 Emotion, slips, safety and system checks>>doc:1 Foundation.b4 Measures.b4\.1 Emotion, slips, safety and system checks.WebHome]]); IDs continue after the Walking with meaning set.
+
+= Step-tracking and stall-detection performance  [M-12] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-12
+|Name|Step-tracking and stall-detection performance
+|Status|In Progress
+|Evidence basis|The protocol follows the system-performance reporting of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
+|Construct measured|Whether the System correctly identifies which SA-08 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
+|Type|Quantitative
+|Instrument or procedure|Staged-event protocol against a ground-truth log: scripted steps, stalls, resumptions and confounders at a mock sink, with each event timestamped by the experimenter.
+|Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Proposed pass thresholds are in UC04-F7-PR7 to UC04-F9-PR9 (§2.3), alongside the escalation timing they check. They are to be confirmed in a first EM-05 pilot with the selected item sensors (TECH-11); see §2.3 Open item O-29.
+|Validity and reliability|Bespoke. Validity rests on the accuracy of the ground-truth log, not on prior psychometric evidence.
+|Serves|Verification
+|Burden|No human subjects - staged events only. Requires a mock sink set-up and the prototype.
+
+== Graph edges ==
+
+operationalizes → UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9; used-by → EM-05. Associated with HFC-14.
+
+= Independent step completion  [M-13] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-13
+|Name|Independent step completion
+|Status|In Progress
+|Evidence basis|Step-level scoring as used in COACH (Mihailidis et al., 2008), which scored older adults with moderate-to-severe dementia on handwashing steps completed without human assistance. Directly reused, not adapted.
+|Construct measured|How many steps of the SA-08 sequence the resident completes with no prompt, per session.
+|Type|Quantitative
+|Instrument or procedure|Observer scoring of each SA-08 step during the real morning routine.
+|Scoring or coding scheme|One point per SA-08 step completed without any prompt or human assistance; summed per session (0-9 for SA-08's nine steps). Compared against the same resident's pre-System baseline.
+|Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers, per step (completed unprompted: yes/no): Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-11, VT-09).
+
+== Graph edges ==
+
+operationalizes → UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20, UC04-F9-CL25; used-by → EM-06; operationalizes → HV-12 (Competence), HV-09 (Autonomy). Associated with HFC-11.
+
+= Prompt level required  [M-14] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-14
+|Name|Prompt level required
+|Status|In Progress
+|Evidence basis|Bespoke ordinal coding. The levels correspond to SA-08's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
+|Construct measured|The highest level of assistance needed to get the resident through each step.
+|Type|Quantitative (ordinal)
+|Instrument or procedure|Observer coding per SA-08 step, during the real morning routine.
+|Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
+|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-13, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
+|Serves|Validation
+|Burden|Human subjects - as M-13, collected in the same observation.
+
+== Graph edges ==
+
+operationalizes → UC04-F8-CL16, UC04-F8-CL18; used-by → EM-06; operationalizes → HV-12 (Competence). Associated with HFC-11.
+
+= Observed distress and resistance  [M-15] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-15
+|Name|Observed distress and resistance
+|Status|In Progress
+|Evidence basis|(((
+Resistiveness to Care Scale (Mahoney et al., 1999), developed specifically for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017).
+
+Optionally paired with the Observed Emotion Rating Scale for affect (Lawton, Van Haitsma & Klapper, 1996).
+)))
+|Construct measured|Frustration, distress and resistance shown by the resident during the activity.
+|Type|Quantitative (observational, coded)
+|Instrument or procedure|Resistiveness to Care Scale - 13 observed behaviours - rated during or from the care episode. Optionally the Observed Emotion Rating Scale alongside it.
+|Scoring or coding scheme|Each of the 13 behaviours is rated for duration (0 absent, 1 less than 16 s, 2 16-59 s, 3 1-2 min, 4 more than 2 min) and intensity (1 mild, 2 moderate, 3 extreme). Duration and intensity are multiplied per item and summed to a total score from 0 (no resistiveness) to 156 (Mahoney et al., 1999, as described in "Revising the Resistiveness to Care Scale", PMC5897769). Compared against the resident's pre-System baseline.
+|Validity and reliability|Validated, not invented: internal consistency α .82-.87 (Mahoney et al., 1999), with further reliability and validity support in cognitively impaired older adults (Galik et al., 2017). For the Observed Emotion Rating Scale, psychometrics in Lawton et al. (1996); Lawton et al. (1999) found reliability "less than desirable" when rated by certified nursing assistants rather than trained research staff.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. If care staff rather than researchers do the rating, rater-training time has to be budgeted (Lawton et al., 1999).
+
+== Graph edges ==
+
+operationalizes → UC04-F8-CL15, UC04-F8-CL18, UC04-F8-CL19, UC04-F8-CL24; used-by → EM-06; operationalizes → HV-13 (Well-being), HV-10 (Dignity). Associated with HFC-11, HFC-12, HFC-13.
+
+= Perceived autonomy and felt control  [M-16] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-16
+|Name|Perceived autonomy and felt control
+|Status|In Progress
+|Evidence basis|Episode-specific need-fulfilment items from Custers et al. (2013), which measured Dutch nursing-home residents' fulfilment of the needs for autonomy, competence and relatedness during a specific videotaped caregiving episode, with a trained-observer counterpart. Provisional: that sample was physically frail residents (n = 36, mean age 80), not specifically residents with dementia.
+|Construct measured|The resident's felt sense of doing the activity themselves rather than being led through it, during a specific session.
+|Type|Quantitative, with an observer counterpart
+|Instrument or procedure|Episode-specific autonomy items from Custers et al. (2013), asked after the session, paired with an observer rating of the same episode.
+|Scoring or coding scheme|(((
+Self-report: the three autonomy items used for the videotaped caregiving episode in Custers et al. (2013), for example "Do you feel that you could make your own choices concerning, for example, your clothes?", adapted to tooth brushing. Each item is answered on a 5-point scale (1 no, absolutely not; 2 no; 3 partly; 4 yes; 5 yes, absolutely) in a short semi-structured interview straight after the session. Score: mean of the three items.
+
+Observer: the 7-point "support of autonomy" scale from the same study, rating how far the prompting respects the resident's perspective and supports their choices, using the study's behavioural definitions for each point.
+
+Report self-report and observer scores separately; do not combine them.
+)))
+|Validity and reliability|In Custers et al. (2013) the need-fulfilment scale for the videotaped episode had α = .69, and observers agreed within one scale point on 79% of episodes for support of autonomy. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement, so the self-report has a documented ceiling and must not be used alone. Our adaptation to tooth brushing is untested. Observer agreement will be checked as in M-13, using weighted kappa.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. Self-report may be difficult for residents with more advanced dementia; the observer rating also needs a trained observer present.
+
+== Graph edges ==
+
+operationalizes → UC04-F8-CL17; used-by → EM-06; operationalizes → HV-09 (Autonomy). Associated with HFC-09.
+
+= Perceived privacy and monitoring acceptability  [M-17] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-17
+|Name|Perceived privacy and monitoring acceptability
+|Status|In Progress
+|Evidence basis|Bespoke, but the concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
+|Construct measured|Whether residents experience the System as watching them or talking down to them, and whether care staff judge what the session record exposes as proportionate.
+|Type|Mixed (qualitative coding, plus a check of record content)
+|Instrument or procedure|(((
+Validation component, residents: a short, verbally administered post-session interview in EM-06 (bespoke, three open questions: how it felt to have the robot there while brushing their teeth; whether it felt like being watched; whether they liked how it spoke to them).
+
+Validation component, care staff: the EM-07 interview, including their judgement of what the session record exposes.
+
+Verification component (record content): inspection of stored session records against the three specified items.
+)))
+|Scoring or coding scheme|(((
+Code each statement into one of: W - the System watches, checks on, or supervises the resident; R - the System records or reports on the resident; T - the System talks down to the resident or treats them like a child (for UC04-F8-CL19); N - neutral or positive about the System's presence. A statement can carry more than one code. Code each record item named by care staff as P (proportionate) or I (intrusive). Report counts per code per resident; any W, R or T code is reported with its quote.
+
+Record-content check: pass if the record holds exactly the three specified items and no step-level trace.
+)))
+|Validity and reliability|Bespoke - no prior validity evidence; the code set follows the concerns in Niemeijer et al. (2010, 2015) and Kitwood (1997). Inter-coder reliability: two coders code all interviews independently, kappa per code, κ ≥ .60 acceptable (Landis & Koch, 1977); disagreements are resolved by discussion and the resolution recorded.
+|Serves|Both - Verification (record content) and Validation (perceived privacy)
+|Burden|Human subjects for the validation component - residents with dementia (supported consent) and care staff. The record-content check needs no human subjects.
+
+== Graph edges ==
+
+operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL19, UC04-F7-CL21, UC04-F10-CL22, UC04-F8-CL24; used-by → EM-05, EM-06 (resident interview), EM-07; operationalizes → HV-11 (Privacy), HV-10 (Dignity). Associated with HFC-10, HFC-12, HFC-13.
+
+= Care-worker prompting load  [M-18] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-18
+|Name|Care-worker prompting load
+|Status|In Progress
+|Evidence basis|Time-sampled observation as used in Rogers et al. (1999), which reported the proportion of a morning care session spent on physical assists.
+|Construct measured|How much of the care worker's time a resident's activity takes.
+|Type|Quantitative
+|Instrument or procedure|Time-sampled observation of care-worker prompting during the activity.
+|Scoring or coding scheme|Count and total duration of care-worker prompting episodes per session. Compared against the pre-System baseline. In the System phase, also the number of F9 notifications per care worker per round, by priority, and (from EM-07) how many the care worker judged unnecessary, so that time saved on prompting is not simply moved to handling notifications (HFC-14).
+|Validity and reliability|Method follows Rogers et al. (1999); our specific coding is bespoke. Inter-rater reliability: two observers time the same prompting episodes in at least 20% of sessions; agreement on episode counts as Cohen's kappa and on durations as an intraclass correlation, with κ or ICC ≥ .60 treated as acceptable.
+|Serves|Validation
+|Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-10) and residents.
+
+== Graph edges ==
+
+operationalizes → UC04-F9-CL23; used-by → EM-06, EM-07; operationalizes → HV-14 (Attentive care). Associated with HFC-14.
+
+= Brushing quality  [M-19] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-19
+|Name|Brushing quality
+|Status|In Progress
+|Evidence basis|(((
+Added in response to the midterm feedback, which asked how well the teeth were actually brushed. M-13 cannot answer that, because a resident can complete SA-08 task 7 and still brush badly.
+
+Part (a): two candidate instruments were read, both designed for assessing oral hygiene in older people in residential care. Proposed choice: the Plaque Score of the Mucosal-Plaque Score (MPS; Henriksen et al., 1999). Group to confirm (§2.3 Open item O-32).
+
+The Oral Health Assessment Tool (OHAT; Chalmers et al., 2005) was set aside for this purpose. It is an eight-category screening tool that carers complete to decide on dental referral, and plaque is covered only by its "oral cleanliness" category. Against a dentist's Plaque Index on 21 residents, that category agreed in 42.9% of cases (r = 0.15, not significant), and carers rated plaque much lower than the dentist did. OHAT would suit a general oral-health screen, but here it would measure the one thing M-19 needs least well.
+
+MPS adds a four-point Plaque Score (PS) to a four-point Mucosal Score (MS). Henriksen et al. describe the mucosal part as showing the sequelae of long-standing oral-care deficits and the plaque part as showing current hygiene, so PS is the part that can respond within EM-06. MS is recorded alongside as a secondary score.
+
+Part (a) limits to state wherever it is cited: MPS was developed to assess groups of residents, a ward or an institution, not individuals; its reliability samples were small (8 to 24 residents) at one Oslo institution for older people with mental disabilities; and validity against a reference standard was not tested.
+
+Part (b): brushing time from the toothbrush motion sensor that TECH-11 already includes. Bespoke.
+
+No primary data collected by this project.
+)))
+|Construct measured|How well the resident's teeth were cleaned: (a) plaque left after the morning routine, the outcome; (b) total time the toothbrush was in brushing motion per session, a process proxy.
+|Type|Quantitative
+|Instrument or procedure|(((
+(a) MPS scoring by a trained assessor (a dental hygienist, or a researcher trained by one) shortly after the morning routine, on a fixed schedule in both phases of EM-06, for example twice a week per resident. Only with consent, and only if the resident is willing on the day. As in Henriksen et al. (1999), the resident sits in a chair or lies in bed; the assessor uses daylight plus a head torch or flashlight and two dental mirrors, and removes dentures to inspect the mucosa. Henriksen et al. report two to four minutes per resident. Assessors calibrate beforehand on the criteria and a pictorial manual (one to two hours in the source). The source's 25-photograph manual is in Norwegian and available from the authors on request; obtaining it, or building an equivalent with a dental hygienist, is part of O-32.
+
+(b) Brushing time per session, logged from the toothbrush motion sensor in both EM-06 phases (the sensor can run without Pepper in the baseline phase). This log exists only for the evaluation, under research consent, kept apart from the F10 session record, and deleted after analysis. It is verified against the ground-truth log in EM-05.
+)))
+|Scoring or coding scheme|(((
+(a) Henriksen et al. (1999), scored on teeth and dentures:
+
+* Plaque Score (PS): 1 no easily visible plaque; 2 small amounts of hardly visible plaque; 3 moderate amounts of plaque; 4 abundant confluent plaque. Food remnants are not counted as plaque.
+* Mucosal Score (MS): 1 normal gingiva and oral mucosa; 2 mild inflammation; 3 moderate inflammation, including gingiva that bleeds easily under pressure or denture ulcers; 4 severe inflammation, including spontaneous gingival bleeding.
+* MPS = MS + PS, range 2 to 8: 2 to 4 good or acceptable, 5 to 6 unacceptable, 7 to 8 poor.
+* Tie rule from the source: when unsure between 1 and 2, or 2 and 3, score the lower; when unsure between 3 and 4, score 4.
+
+PS is the primary score, compared against the same residents' baseline-phase scores. Because MPS was built for groups, the result is reported as the change across residents, and no conclusion is drawn about a single resident's oral health from it.
+
+(b) Seconds of brushing motion per session, and the proportion of sessions that reach the resident's B-target (§2.3 Escalation specification). Compared against baseline.
+)))
+|Validity and reliability|(a) Henriksen et al. (1999) report reliability only. Weighted kappa for PS was 0.62 for one dentist scoring 24 residents a week apart, 0.71 between two dentists on 20 residents, and 0.80 among a dentist, two dental hygienists and a nurse on 8 residents after training. MS was weaker between the two dentists (0.47). Validity against a reference standard was not tested. Inter-rater reliability in this project as for M-13: two assessors independently score at least 20% of assessments, weighted kappa or ICC ≥ .60 acceptable (Landis & Koch, 1977). (b) Bespoke. Validity depends on the sensor telling brushing apart from other handling of the brush, which EM-05 checks against staged brushing. Brushing time says nothing about which teeth were brushed, so (b) never stands in for (a).
+|Serves|Both: Validation (plaque, brushing time in EM-06) and Verification (brushing-time accuracy in EM-05)
+|Burden|Human subjects for (a): residents with dementia, supported consent. An oral check is a physical intrusion into a personal-care area, so it is kept short and skipped when the resident is unwilling or distressed. (b) is data about how a personal-care activity was performed, which HP-05's constraints exclude from the System. It is justified only as time-limited research data under consent (VT-15).
+
+== Graph edges ==
+
+operationalizes → UC04-F8-CL24, UC04-F9-CL25, UC04-F7-PR7 (brushing-time component); used-by → EM-05 (part b), EM-06; operationalizes → HV-13 (Well-being). Associated with VT-15.

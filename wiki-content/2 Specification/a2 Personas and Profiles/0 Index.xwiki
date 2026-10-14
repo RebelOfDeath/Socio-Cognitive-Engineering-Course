@@ -1,0 +1,14 @@
+%%WIKI-SYNC-META%%
+title: a2 Personas and Profiles
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Personas elaborate the direct stakeholders who appear in the Design Scenarios; Robot Profiles do the same for the System. Main concept: Walking with meaning. The morning-care personas and profile are listed separately.
+
+**Report Format:** §2.2 Personas and Profiles
+
+= Pages =
+
+|=Page|=Contents|=Status
+|[[a2.1 Human Personas>>doc:2 Specification.a2 Personas and Profiles.a2\.1 Human Personas.WebHome]]|HP-01 Elena, resident; HP-02 Jan, resident; HP-03 Myra, care worker|**Current**
+|[[a2.2 Robot Profile>>doc:2 Specification.a2 Personas and Profiles.a2\.2 Robot Profile.WebHome]]|RP-01 Pepper at the door; RP-02 Pocket guide; per-person settings|**Current**
+|[[a2.3 Morning care - personas and profiles>>doc:2 Specification.a2 Personas and Profiles.a2\.3 Morning care - personas and profiles.WebHome]]|HP-05 Mary; HP-06 Myra; RP-03 Pepper as tooth-brushing aid|Separate concept
