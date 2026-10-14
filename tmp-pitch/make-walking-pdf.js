@@ -3,7 +3,7 @@
 // 1 Foundation and 2 Specification, in full, in one file.
 //
 // Chapters are found, not listed: every .xwiki page under those two folders except
-// '0 Index' pages and superseded '(previous concept)' pages, in path order.
+// '0 Index' pages and the separate Morning Care pages, in path order.
 // Markup is rendered with the xwiki-preview extension; Chromium prints the PDF.
 //
 // Usage:
@@ -56,7 +56,7 @@ function walk(dir) {
 
 function isChapter(file) {
   const name = path.basename(file, '.xwiki');
-  return !name.startsWith('.') && !name.startsWith('0 Index') && !name.includes('(previous concept)')
+  return !name.startsWith('.') && !name.startsWith('0 Index') && !name.includes(' Morning care - ')
     && !name.endsWith('.remote');
 }
 
@@ -149,7 +149,7 @@ const doc = `<!doctype html><html lang="en"><head><meta charset="utf-8">
 <div class="cover"><div class="kicker">SCE 2026 · Group 04 · tmp: Pitch</div>
 <h1>Walking with meaning</h1>
 <p>The ${chapters.length} current-concept chapters of the Foundation and Specification, in full,
-as they stand in tmp-pitch. Index pages and the superseded Morning Care pages are left out.</p></div>
+as they stand in tmp-pitch. Index pages and the separate Morning Care pages are left out.</p></div>
 <nav class="toc"><h2>Contents</h2><ol>${toc.join('')}</ol></nav>
 ${chapters.join('\n')}
 </body></html>`;

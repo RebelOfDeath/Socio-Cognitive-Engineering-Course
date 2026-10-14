@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Team Design Patterns: reusable task allocations between human and System actors. Current concept: Walking with meaning. The morning-care pattern is kept for traceability.
+**Abstract.** Team Design Patterns: reusable task allocations between human and System actors. Main concept: Walking with meaning. The morning-care pattern is listed separately.
 
 **Report Format:** §2.4 Team Design Patterns (Task Level)
 
@@ -11,4 +11,4 @@ syntax: xwiki/2.1
 
 |=Page|=Patterns|=Status
 |[[c1 Thread in the pocket, person in reach>>doc:tmp\: Pitch.2 Specification.c Team Design Pattern.c1 Mindful Walk.WebHome]]|TDP-01 Thread in the pocket, person in reach|**Current**
-|[[c2 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.c Team Design Pattern.c2 Morning Care (previous concept).WebHome]]|TDP-02 Graduated activity support with human handover|Superseded
+|[[c2 Morning care - team design pattern>>doc:tmp\: Pitch.2 Specification.c Team Design Pattern.c2 Morning Care (previous concept).WebHome]]|TDP-02 Graduated activity support with human handover|Separate concept

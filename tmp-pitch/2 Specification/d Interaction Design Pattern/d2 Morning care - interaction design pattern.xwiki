@@ -1,9 +1,9 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/d2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
-title: d2 Morning Care (previous concept)
+title: d2 Morning care - interaction design pattern
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Superseded. Interaction Design Pattern IDP-04 of the first concept, morning personal care. Replaced by [[d1 How the guide speaks>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Walking with meaning set.
+**Abstract.** Interaction Design Pattern IDP-04 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Walking with meaning (see [[d1 How the guide speaks>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d1 Mindful Walk.WebHome]]); IDs continue after the Walking with meaning set.
 
 = Respectful graduated prompting [IDP-04] =
 

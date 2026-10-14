@@ -3,10 +3,10 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Problem Scenarios place a breakdown in a concrete moment and analyse its causes. Current concept: Walking with meaning. The morning-care scenarios are kept for traceability; that concept no longer drives the design.
+**Abstract.** Problem Scenarios place a breakdown in a concrete moment and analyse its causes. Main concept: Walking with meaning. The morning-care scenarios are listed separately.
 
 = Concepts =
 
 |=Page|=Scenarios|=Status
 |[[a3.1 What goes wrong on a walk>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.1 Mindful Walk.WebHome]]|PS-01 A slip nobody noticed; PS-02 The wrong answer; PS-03 A pairing nobody wanted; PS-04 One more story; PS-05 A secret passed on; PS-06 Nobody to talk to|**Current**
-|[[a3.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.2 Morning Care (previous concept).WebHome]]|PS-07 Losing track of the tooth brushing routine; PS-08 Difficulty completing the medication routine|Superseded
+|[[a3.2 Morning care - problem scenarios>>doc:tmp\: Pitch.1 Foundation.a3 Problem Scenario.a3\.2 Morning Care (previous concept).WebHome]]|PS-07 Losing track of the tooth brushing routine; PS-08 Difficulty completing the medication routine|Separate concept

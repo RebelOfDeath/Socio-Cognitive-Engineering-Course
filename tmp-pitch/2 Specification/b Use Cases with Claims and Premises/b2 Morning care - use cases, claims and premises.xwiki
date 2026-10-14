@@ -1,9 +1,9 @@
 %%WIKI-SYNC-META%%
 href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A%20Pitch/spaces/2%20Specification/spaces/b%20Use%20Cases%20with%20Claims%20and%20Premises/spaces/b2%20Morning%20Care%20%28previous%20concept%29/pages/WebHome
-title: b2 Morning Care (previous concept)
+title: b2 Morning care - use cases, claims and premises
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Superseded. Objectives, Use Cases UC04 and UC05, Premises and Claims of the first concept, morning personal care. Replaced by [[b1 Pair walk and walk alone>>doc:tmp\: Pitch.2 Specification.b Use Cases with Claims and Premises.b1 Mindful Walk.WebHome]]. Kept for traceability; IDs shifted to follow the Walking with meaning set.
+**Abstract.** Objectives, Use Cases UC04 and UC05, Premises and Claims of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Walking with meaning (see [[b1 Pair walk and walk alone>>doc:tmp\: Pitch.2 Specification.b Use Cases with Claims and Premises.b1 Mindful Walk.WebHome]]); IDs continue after the Walking with meaning set.
 
 = Objective  [OBJ-10] =
 
@@ -352,7 +352,7 @@ Group decision (Open item O-22): tooth brushing is this cycle's spine. Material 
 These are gaps recorded as explicit decisions rather than left silent, per Step 14.
 
 |=ID|=Item|=Blocks|=Owner
-|O-10|Resolved. M-12…M-18 are on the §1.2 [[b4.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.b4 Measures.b4\.2 Morning Care (previous concept).WebHome]] page and EM-05…EM-07 on the §1.2 [[b5.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.b5 Evaluation Methods.b5\.2 Morning Care (previous concept).WebHome]] page. New Measures start at M-19, new Evaluation Methods at EM-08.|Nothing|Closed
+|O-10|Resolved. M-12…M-18 are on the §1.2 [[b4.2 Morning care - measures>>doc:tmp\: Pitch.1 Foundation.b4 Measures.b4\.2 Morning Care (previous concept).WebHome]] page and EM-05…EM-07 on the §1.2 [[b5.2 Morning care - evaluation methods>>doc:tmp\: Pitch.1 Foundation.b5 Evaluation Methods.b5\.2 Morning Care (previous concept).WebHome]] page. New Measures start at M-19, new Evaluation Methods at EM-08.|Nothing|Closed
 |O-11|Resolved (group decision: in scope). Notifying a care worker on immediate risk of serious harm stays in F9 and step 10. VT-08's non-negotiable floor now says "none identified", and the escalation rule has moved into its current resolution, since it is a design decision, not a regulation. PS-08's out-of-scope now excludes only emergency //treatment//. Because there is no camera, a possible emergency is inferred from no sensor change and no response (TECH-11 limitation, step 10).|Nothing|Closed
 |O-12|Resolved. SA-10 (the care worker's morning round) now records the care-continuity and handover task, and its Goal grounds the new OBJ-15, which F10 (and F9) serve.|Nothing|Closed
 |O-13|Resolved. UC04-F8-CL19 now grounds on HFC-12 (Personhood and malignant social psychology, Kitwood 1997) in §1.2, not on a Claim-level citation.|Nothing|Closed

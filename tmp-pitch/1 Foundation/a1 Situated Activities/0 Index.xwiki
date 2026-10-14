@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Situated Activities record what stakeholders do today, under the conditions they actually do it in. Current concept: **Walking with meaning**. The earlier morning-care concept is kept for traceability; it no longer drives the design.
+**Abstract.** Situated Activities record what stakeholders do today, under the conditions they actually do it in. Main concept: **Walking with meaning**. The morning-care concept is a separate strand, listed below.
 
 = Walking with meaning in brief =
 
@@ -19,5 +19,5 @@ syntax: xwiki/2.1
 
 |=Page|=Activities|=Status
 |[[a1.1 Garden walks, alone and in pairs>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.1 Mindful Walk.WebHome]]|SA-01 A walk on your own; SA-02 A walk with a fellow resident|**Current**
-|[[a1.3 Moving in, greeting and inviting>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.3 Moving in, greeting and inviting.WebHome]]|SA-03 Moving into the care home; SA-04 Greeting someone new; SA-05 Inviting someone for a walk|**Current**
-|[[a1.2 Morning Care (previous concept)>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Morning Care (previous concept).WebHome]]|SA-08 Brushing teeth; SA-09 Taking medication; SA-10 Morning care round|Superseded
+|[[a1.2 Moving in, greeting and inviting>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Moving in, greeting and inviting.WebHome]]|SA-03 Moving into the care home; SA-04 Greeting someone new; SA-05 Inviting someone for a walk|**Current**
+|[[a1.3 Morning care - situated activities>>doc:tmp\: Pitch.1 Foundation.a1 Situated Activities.a1\.2 Morning Care (previous concept).WebHome]]|SA-08 Brushing teeth; SA-09 Taking medication; SA-10 Morning care round|Separate concept

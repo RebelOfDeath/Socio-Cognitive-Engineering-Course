@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/tmp%3A
 title: 0 Index
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Interaction Design Patterns: reusable solutions for how the System communicates and is controlled. Current concept: Walking with meaning. The morning-care pattern is kept for traceability.
+**Abstract.** Interaction Design Patterns: reusable solutions for how the System communicates and is controlled. Main concept: Walking with meaning. The morning-care pattern is listed separately.
 
 **Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
 
@@ -11,4 +11,4 @@ syntax: xwiki/2.1
 
 |=Page|=Patterns|=Status
 |[[d1 How the guide speaks>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d1 Mindful Walk.WebHome]]|IDP-01 Wait, then redirect gently; IDP-02 Ask first; IDP-03 Truthful deferral|**Current**
-|[[d2 Morning Care (previous concept)>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d2 Morning Care (previous concept).WebHome]]|IDP-04 Respectful graduated prompting|Superseded
+|[[d2 Morning care - interaction design pattern>>doc:tmp\: Pitch.2 Specification.d Interaction Design Pattern.d2 Morning Care (previous concept).WebHome]]|IDP-04 Respectful graduated prompting|Separate concept
