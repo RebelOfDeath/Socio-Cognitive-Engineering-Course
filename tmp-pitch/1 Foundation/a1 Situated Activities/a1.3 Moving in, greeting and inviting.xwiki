@@ -1,0 +1,202 @@
+%%WIKI-SYNC-META%%
+title: a1.3 Moving in, greeting and inviting
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Three activities: moving into the care home (SA-03), greeting someone new (SA-04) and inviting someone for a walk (SA-05). A newcomer arrives confused, with little say, among strangers. Shyness, forgotten names and facts, and having nothing to say stop most first contacts. Fewer still walk together, held back by fear of a "no" or a forgotten agreement. Staff broker most introductions, depending on who is on shift.
+
+= Situated Activity - Moving into the care home [SA-03] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-03
+|Name|Moving into the care home
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Lai & Arthur (2003): wandering and exit-seeking in people with dementia
+* Victor (2012): loneliness in care homes is common
+)))
+|Goal|Settle in, learn the place and the routine, know some faces and regain some control.
+|Performing Actor(s)|(((
+* ST-01: Resident - moves in
+* ST-02: Fellow resident - may welcome
+* ST-03: Relative - arranges the move, gives the life story
+* ST-04: Care worker - receives and shows around
+* ST-05: Activity coordinator - takes the life story, assigns a seat, introduces
+* ST-06: Medical and therapy staff - assess walking
+)))
+|Trigger|Living at home ends after a fall, a hospital stay or a carer who can no longer cope. A place comes free.
+|Constituent Tasks|(((
+1. Pack and say goodbye
+1. Arrive and unpack
+1. Learn the way to the room, toilet, dining room, lounge and garden door
+1. Learn the daily routine and house rules
+1. Meet staff and residents (SA-04)
+1. Give the life story
+1. Find a seat at table and a role
+)))
+|Context|Often unplanned, decided by others, with little say over timing or room. Knows nobody. Staff change by shift, and other residents are often further into dementia and quiet. Doors and corridors look alike, and exits are coded. New surroundings add to confusion. The home sets meals, bedtime and going out.
+|Frequency and duration|Once per resident. Settling takes weeks to months.
+|Tools and artifacts|Room, name on door, intake form, life-story book, care plan, house rules, activity programme, coded doors
+|Existing workarounds|(((
+* Own furniture and photos
+* A visit before the move
+* Life story taken with family
+* A named care worker
+* Family stay the first day and visit often early on
+* Introductions (SA-04)
+* Keeping old habits, like the morning paper or a daily walk
+)))
+|Observed breakdowns|(((
+* Does not know why they are here, or thinks it temporary
+* Asks to go home and heads for the exit
+* Cannot find the room, toilet or dining room
+* Grieves for the home, spouse, pet and neighbours left behind
+* Resists the routine and care, angry at family or staff
+* Nobody to talk to (PS-06)
+* Too many new faces to remember
+* Seated among residents who do not talk
+* Stays in the room, skipping shared meals and activities
+* Life story not taken, or not passed on
+* Family visits taper
+* Not allowed out alone until walking is assessed (ST-06)
+* Withdrawal seen late (PS-06)
+)))
+
+== Graph edges ==
+
+performed-by → ST-01 (supported by ST-02 to ST-06); precedes → SA-04; illustrated-by → PS-06 (in part).
+
+= Situated Activity - Greeting someone new [SA-04] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-04
+|Name|Greeting someone new
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* Orange et al. (1996): in Alzheimer's disease, trouble in conversation grows and repair succeeds less often
+* Clare (2003): people aware of decline protect themselves, or face it
+)))
+|Goal|Exchange names and a few words, with a reason to talk again and no face lost.
+|Performing Actor(s)|(((
+* ST-01: Resident - greets, or is greeted
+* ST-02: Fellow resident - greets, or is greeted
+* ST-03: Relative - introduces
+* ST-04: Care worker - introduces
+* ST-05: Activity coordinator - assigns seats, introduces
+)))
+|Trigger|A newcomer (SA-03), a new neighbour at table, a stranger nearby, or a staff introduction
+|Constituent Tasks|(((
+1. Notice the other and decide to speak
+1. Greet
+1. Exchange names
+1. Say something about one's town, work or family
+1. Ask, listen, answer
+1. Find a shared topic
+1. Close ("See you at dinner")
+1. Next time, recognise them and recall the name
+)))
+|Context|Staff decide who sits with whom. Memory loss takes names, faces and own facts. Hearing and sight are often poor. Small talk costs effort, and silence feels like failure. The other often has dementia too. Greetings happen in shared rooms, where others watch.
+|Frequency and duration|Daily. Seconds to minutes.
+|Tools and artifacts|Lounge, dining tables, seating plan, names on doors, name badges, life-story book, photos
+|Existing workarounds|(((
+* Staff introduce and re-introduce, with names and one shared fact
+* Seat a newcomer beside a talkative resident
+* Names on doors or badges
+* Safe topics like the weather, food or the view
+* Habitual greetings ("Good morning", a handshake)
+* Life-story book or photos as a prompt
+)))
+|Observed breakdowns|(((
+* Too shy to speak first
+* Greets a known face as new, or the reverse
+* Forgets the name and asks again, embarrassed
+* Forgets own facts and goes quiet
+* Runs out of things to say, and one leaves
+* Repeats a question, and the other notices
+* Mishears and nods along
+* Offends by being too familiar or too formal
+* A greeting goes unheard and is read as a snub
+* Talk stops once staff leave
+* Ignored when joining a group mid-talk
+* Staff share a personal fact without consent (PS-05)
+* Introductions depend on who is on shift (PS-03)
+* Avoids the other after an awkward meeting
+)))
+
+== Graph edges ==
+
+performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-03; precedes → SA-05; illustrated-by → PS-03, PS-05 (in part).
+
+= Situated Activity - Inviting someone for a walk [SA-05] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|SA-05
+|Name|Inviting someone for a walk
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Literature and group reasoning only.
+
+* de Medeiros et al. (2012): residents with dementia form and keep friendships
+* Victor (2012): loneliness in care homes is common
+)))
+|Goal|Company on a walk. A "no" costs nobody face.
+|Performing Actor(s)|(((
+* ST-01: Resident - invites
+* ST-02: Fellow resident - accepts or declines
+* ST-03: Relative - takes another resident along on a walk
+* ST-04: Care worker - suggests a walk, opens the garden door
+* ST-05: Activity coordinator - seats and groups residents
+)))
+|Trigger|Loneliness, someone sitting alone, fine weather, a staff suggestion, or a good first meeting (SA-04)
+|Constituent Tasks|(((
+1. Pick someone
+1. Find an opening
+1. Read interest
+1. Invite and set a time
+1. Accept or decline
+1. Remember the time, meet, go (SA-02)
+)))
+|Context|Invitations happen in shared rooms. Others hear, so a "no" is public and a "yes" hard to refuse. A walk needs staff to assess walking (ST-06) and open the garden door.
+|Frequency and duration|Rare. Minutes.
+|Tools and artifacts|Lounge, dining tables, seating plan, activity programme, staff knowledge, garden door
+|Existing workarounds|(((
+* Staff suggest a walk together (SA-02)
+* Repeated contact at the same table or activity
+* Group activities as an opening
+* A relative takes a second resident along on a visit walk
+* Join someone already outside
+)))
+|Observed breakdowns|(((
+* No greeting, or a failed one (SA-04)
+* Does not ask, for fear of a "no" or of being a bother
+* Hearing loss or a flat face read as "no"
+* Agrees to please when asked in front of others (PS-03)
+* Invitation read as courtship, and the inviter avoided
+* Both forget the agreement
+* No staff free to open the door or go along
+* In a group of three, one is left out
+* Never asks again after one "no"
+)))
+
+== Graph edges ==
+
+performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-04; precedes → SA-02; bridges → SA-01 to SA-02 (PS-06: Bridge); illustrated-by → PS-03 (in part).
+
+= References =
+
+* Clare (2003); de Medeiros et al. (2012); Lai & Arthur (2003); Orange et al. (1996); Victor (2012). See a1.1 References.
