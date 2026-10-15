@@ -1,17 +1,17 @@
 %%WIKI-SYNC-META%%
-title: a1.2 Moving in, greeting and inviting
+title: a1.1 Moving in, greeting and inviting
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three activities: moving into the care home (SA-03), greeting someone new (SA-04) and inviting someone for a walk (SA-05). A newcomer arrives confused, with little say, among strangers. Shyness, forgotten names and facts, and having nothing to say stop most first contacts. Fewer still walk together, held back by fear of a "no" or a forgotten agreement. Staff broker most introductions, depending on who is on shift.
+**Abstract.** Three activities: moving into the care home (SA-01), greeting someone new (SA-02) and inviting someone for a walk (SA-03). A newcomer arrives confused, with little say, among strangers. Shyness, forgotten names and facts, and having nothing to say stop most first contacts. Fewer still walk together, held back by fear of a "no" or a forgotten agreement. Staff broker most introductions, depending on who is on shift.
 
-= Situated Activity - Moving into the care home [SA-03] =
+= Situated Activity - Moving into the care home [SA-01] =
 
 **Report Format:** §1.1 Operational Demands
 
 == Fields ==
 
 |=Field|=Description
-|ID|SA-03
+|ID|SA-01
 |Name|Moving into the care home
 |Status|In Progress
 |Evidence basis|(((
@@ -35,7 +35,7 @@ Provisional. Literature and group reasoning only.
 1. Arrive and unpack
 1. Learn the way to the room, toilet, dining room, lounge and garden door
 1. Learn the daily routine and house rules
-1. Meet staff and residents (SA-04)
+1. Meet staff and residents (SA-02)
 1. Give the life story
 1. Find a seat at table and a role
 )))
@@ -48,7 +48,7 @@ Provisional. Literature and group reasoning only.
 * Life story taken with family
 * A named care worker
 * Family stay the first day and visit often early on
-* Introductions (SA-04)
+* Introductions (SA-02)
 * Keeping old habits, like the morning paper or a daily walk
 )))
 |Observed breakdowns|(((
@@ -69,16 +69,16 @@ Provisional. Literature and group reasoning only.
 
 == Graph edges ==
 
-performed-by → ST-01 (supported by ST-02 to ST-06); precedes → SA-04; illustrated-by → PS-06 (in part).
+performed-by → ST-01 (supported by ST-02 to ST-06); precedes → SA-02; illustrated-by → PS-06 (in part).
 
-= Situated Activity - Greeting someone new [SA-04] =
+= Situated Activity - Greeting someone new [SA-02] =
 
 **Report Format:** §1.1 Operational Demands
 
 == Fields ==
 
 |=Field|=Description
-|ID|SA-04
+|ID|SA-02
 |Name|Greeting someone new
 |Status|In Progress
 |Evidence basis|(((
@@ -95,7 +95,7 @@ Provisional. Literature and group reasoning only.
 * ST-04: Care worker - introduces
 * ST-05: Activity coordinator - assigns seats, introduces
 )))
-|Trigger|A newcomer (SA-03), a new neighbour at table, a stranger nearby, or a staff introduction
+|Trigger|A newcomer (SA-01), a new neighbour at table, a stranger nearby, or a staff introduction
 |Constituent Tasks|(((
 1. Notice the other and decide to speak
 1. Greet
@@ -111,6 +111,7 @@ Provisional. Literature and group reasoning only.
 |Tools and artifacts|Lounge, dining tables, seating plan, names on doors, name badges, life-story book, photos
 |Existing workarounds|(((
 * Staff introduce and re-introduce, with names and one shared fact
+* Staff introduce residents who share a town, trade or church
 * Seat a newcomer beside a talkative resident
 * Names on doors or badges
 * Safe topics like the weather, food or the view
@@ -129,23 +130,24 @@ Provisional. Literature and group reasoning only.
 * A greeting goes unheard and is read as a snub
 * Talk stops once staff leave
 * Ignored when joining a group mid-talk
+* Residents with a shared past never find out
 * Staff share a personal fact without consent (PS-05)
-* Introductions depend on who is on shift (PS-03)
+* Introductions follow who is on shift, not residents' wishes (PS-03)
 * Avoids the other after an awkward meeting
 )))
 
 == Graph edges ==
 
-performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-03; precedes → SA-05; illustrated-by → PS-03, PS-05 (in part).
+performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-01; precedes → SA-03; illustrated-by → PS-03, PS-05 (in part).
 
-= Situated Activity - Inviting someone for a walk [SA-05] =
+= Situated Activity - Inviting someone for a walk [SA-03] =
 
 **Report Format:** §1.1 Operational Demands
 
 == Fields ==
 
 |=Field|=Description
-|ID|SA-05
+|ID|SA-03
 |Name|Inviting someone for a walk
 |Status|In Progress
 |Evidence basis|(((
@@ -162,27 +164,27 @@ Provisional. Literature and group reasoning only.
 * ST-04: Care worker - suggests a walk, opens the garden door
 * ST-05: Activity coordinator - seats and groups residents
 )))
-|Trigger|Loneliness, someone sitting alone, fine weather, a staff suggestion, or a good first meeting (SA-04)
+|Trigger|Loneliness, someone sitting alone, fine weather, a staff suggestion, or a good first meeting (SA-02)
 |Constituent Tasks|(((
 1. Pick someone
 1. Find an opening
 1. Read interest
 1. Invite and set a time
 1. Accept or decline
-1. Remember the time, meet, go (SA-02)
+1. Remember the time, meet and go
 )))
 |Context|Invitations happen in shared rooms. Others hear, so a "no" is public and a "yes" hard to refuse. A walk needs staff to assess walking (ST-06) and open the garden door.
 |Frequency and duration|Rare. Minutes.
 |Tools and artifacts|Lounge, dining tables, seating plan, activity programme, staff knowledge, garden door
 |Existing workarounds|(((
-* Staff suggest a walk together (SA-02)
+* Staff suggest a walk together
 * Repeated contact at the same table or activity
 * Group activities as an opening
 * A relative takes a second resident along on a visit walk
 * Join someone already outside
 )))
 |Observed breakdowns|(((
-* No greeting, or a failed one (SA-04)
+* No greeting, or a failed one (SA-02)
 * Does not ask, for fear of a "no" or of being a bother
 * Hearing loss or a flat face read as "no"
 * Agrees to please when asked in front of others (PS-03)
@@ -195,8 +197,21 @@ Provisional. Literature and group reasoning only.
 
 == Graph edges ==
 
-performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-04; precedes → SA-02; bridges → SA-01 to SA-02 (PS-06: Bridge); illustrated-by → PS-03 (in part).
+performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-02; illustrated-by → PS-03, PS-06 (in part).
 
 = References =
 
-* Clare (2003); de Medeiros et al. (2012); Lai & Arthur (2003); Orange et al. (1996); Victor (2012). See a1.1 References.
+* Bora, E., Walterfang, M. & Velakoulis, D. (2015). Theory of mind in behavioural-variant frontotemporal dementia and Alzheimer's disease: a meta-analysis. //Journal of Neurology, Neurosurgery & Psychiatry//, 86(7), 714-719.
+* Bratman, G. N., Hamilton, J. P., Hahn, K. S., Daily, G. C. & Gross, J. J. (2015). Nature experience reduces rumination and subgenual prefrontal cortex activation. //PNAS//, 112(28), 8567-8572.
+* Clare, L. (2003). Managing threats to self: awareness in early stage Alzheimer's disease. //Social Science & Medicine//, 57(6), 1017-1029.
+* Detweiler, M. B., Murphy, P. F., Myers, L. C. & Kim, K. Y. (2008). Does a wander garden influence inappropriate behaviors in dementia residents? //American Journal of Alzheimer's Disease & Other Dementias//, 23(1), 31-45.
+* Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
+* James, I. A., Wood-Mitchell, A., Waterworth, A. M., Mackenzie, L. E. & Cunningham, J. (2006). Lying to people with dementia: developing ethical guidelines for care settings. //International Journal of Geriatric Psychiatry//, 21(8), 800-801.
+* Lai, C. K. Y. & Arthur, D. G. (2003). Wandering behaviour in people with dementia. //Journal of Advanced Nursing//, 44(2), 173-182.
+* Lundin-Olsson, L., Nyberg, L. & Gustafson, Y. (1997). "Stops walking when talking" as a predictor of falls in elderly people. //The Lancet//, 349(9052), 617.
+* de Medeiros, K., Saunders, P. A., Doyle, P. J., Mosby, A. & Van Haitsma, K. (2012). Friendships among people with dementia in long-term care. //Dementia//, 11(3), 363-381.
+* Mental Health Foundation (2016). //What Is Truth? An Inquiry about Truth and Lying in Dementia Care//. London: Mental Health Foundation.
+* Montero-Odasso, M., Verghese, J., Beauchet, O. & Hausdorff, J. M. (2012). Gait and cognition: a complementary approach to understanding brain function and the risk of falling. //Journal of the American Geriatrics Society//, 60(11), 2127-2136.
+* Orange, J. B., Lubinski, R. B. & Higginbotham, D. J. (1996). Conversational repair by individuals with dementia of the Alzheimer's type. //Journal of Speech and Hearing Research//, 39(4), 881-895.
+* Schegloff, E. A., Jefferson, G. & Sacks, H. (1977). The preference for self-correction in the organization of repair in conversation. //Language//, 53(2), 361-382.
+* Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.
