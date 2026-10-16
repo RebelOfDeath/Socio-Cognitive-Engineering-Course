@@ -71,7 +71,7 @@ Shown live, for a suggested pair: the items each resident released, and the bloc
 
 == Graph edges ==
 
-produces → Evidence for UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F5-PR5, UC02-F6-PR6; informs → IDP-01 to IDP-03 (Build A); applies → M-01, M-10.
+produces → Evidence for UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F5-PR5, UC02-F6-PR6; informs → IDP-01 to IDP-03 (Build A); applies → M-01, M-10; M-03, M-07 (Build A).
 
 = Evaluation Method - Observing shared rooms [EM-02] =
 

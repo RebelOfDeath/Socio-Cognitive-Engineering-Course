@@ -2,7 +2,7 @@
 title: b3.1 Settling in, meeting and trust
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eleven concepts. Why suggest a walk: time outdoors and on foot may lift mood, though the evidence in dementia is weak (HFC-01). Why newcomers withdraw: moving in is a loss, and adjusting takes months (HFC-02). Why residents do not meet on their own: each waits for the other (HFC-10), refusing a request is hard (HFC-11), and residents misread each other's interest (HFC-05). What brings them together: a shared background (HFC-09) and common ground (HFC-04). How talk survives a slip: self-repair first (HFC-03). What to protect: face (HFC-06). What withdrawal costs: loneliness (HFC-07). Why no deception: trust (HFC-08).
+**Abstract.** Eleven concepts. Why suggest a walk: time outdoors and on foot may lift mood, though the evidence in dementia is weak (HFC-01). Why newcomers withdraw: moving in is a loss, and adjusting takes months (HFC-02). Why residents do not meet on their own: each waits for the other (HFC-16), refusing a request is hard (HFC-17), and residents misread each other's interest (HFC-05). What brings them together: a shared background (HFC-15) and common ground (HFC-04). How talk survives a slip: self-repair first (HFC-03). What to protect: face (HFC-06). What withdrawal costs: loneliness (HFC-07). Why no deception: trust (HFC-08).
 
 = Human Factors Concept - Fresh air, movement and mood [HFC-01] =
 
@@ -156,14 +156,14 @@ syntax: xwiki/2.1
 |Predicted Effect type|Trust kept; fewer repeated painful questions
 |Associated Measures|M-09 (code U), M-10
 
-= Human Factors Concept - Similarity and shared background [HFC-09] =
+= Human Factors Concept - Similarity and shared background [HFC-15] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-09
+|ID|HFC-15
 |Name|Similarity and shared background
 |Status|In Progress
 |Evidence basis|Literature only.
@@ -175,14 +175,14 @@ syntax: xwiki/2.1
 |Predicted Effect type|Matches on a shared background lead to more repeat contact than chance meetings
 |Associated Measures|M-02, M-05
 
-= Human Factors Concept - Fear of rejection and the liking gap [HFC-10] =
+= Human Factors Concept - Fear of rejection and the liking gap [HFC-16] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-10
+|ID|HFC-16
 |Name|Fear of rejection and the liking gap
 |Status|In Progress
 |Evidence basis|Literature only.
@@ -194,14 +194,14 @@ syntax: xwiki/2.1
 |Predicted Effect type|More introductions accepted when asked privately; more second meetings
 |Associated Measures|M-02, M-07
 
-= Human Factors Concept - The difficulty of saying no [HFC-11] =
+= Human Factors Concept - The difficulty of saying no [HFC-17] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|HFC-11
+|ID|HFC-17
 |Name|The difficulty of saying no
 |Status|In Progress
 |Evidence basis|Literature only.
@@ -231,11 +231,11 @@ HFC-07: grounds → UC02-F3-CL9; explains → HV-05, HV-06; associated-measure �
 
 HFC-08: grounds → UC01-F4-CL8; explains → HV-08; associated-measure → M-09, M-10.
 
-HFC-09: grounds → UC02-F3-CL1; explains → HV-06, HV-07; associated-measure → M-02, M-05.
+HFC-15: grounds → UC02-F3-CL1; explains → HV-06, HV-07; associated-measure → M-02, M-05.
 
-HFC-10: grounds → UC02-F3-CL1, UC03-F5-CL6; explains → HV-06; associated-measure → M-02, M-07.
+HFC-16: grounds → UC02-F3-CL1, UC03-F5-CL6; explains → HV-06; associated-measure → M-02, M-07.
 
-HFC-11: grounds → UC02-F1-CL3; explains → HV-01; associated-measure → M-07, M-09.
+HFC-17: grounds → UC02-F1-CL3; explains → HV-01; associated-measure → M-07, M-09.
 
 = References =
 

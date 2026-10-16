@@ -201,7 +201,7 @@ Observer, before and during: pressure signs (agrees reluctantly; looks to staff 
 
 == Graph edges ==
 
-operationalizes → UC02-F1-CL3, UC01-F3-CL5; used-by → EM-02, EM-03; operationalizes → HV-01, HV-02.
+operationalizes → UC02-F1-CL3, UC01-F3-CL5; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-01, HV-02.
 
 = Measure - Loneliness [M-08] =
 
@@ -280,7 +280,7 @@ Disclosure: items used without consent or against the map (target 0).
 )))
 |Validity and reliability|Staged error rates are exact. In use, only noticed errors are counted, which undercounts them. A disclosure, or an error that causes distress, pauses the System for review (EM-03).
 |Serves|Both: Verification (staged) and Validation (in use)
-|Burden|None beyond EM-02.
+|Burden|None for residents; a short report from staff when they notice an error.
 
 == Graph edges ==
 

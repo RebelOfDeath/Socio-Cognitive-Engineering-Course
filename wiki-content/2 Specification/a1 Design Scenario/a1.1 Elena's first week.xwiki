@@ -1,0 +1,29 @@
+%%WIKI-SYNC-META%%
+title: a1.1 Elena's first week
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** One scenario. Elena moves in, and the System finds that she and Jan, a long-time resident who has been keeping to his room, worked in the same town. Each is asked alone; both say yes; Pepper introduces them, and Jan suggests a walk. A painful question goes to Myra, and a note reminds her of the walk they agreed (DS-01).
+
+= Design Scenario - Elena's first week [DS-01] =
+
+//Reimagines PS-01 and PS-03, and in part PS-02 and PS-04. Realized by UC01 to UC03. Technology: TECH-01, TECH-03 to TECH-06.//
+
+Elena's son brings her in after a fall at home. On the second day the coordinator sits down with them for the life-story interview. Elena decides, item by item, what other residents may know: the post office counter she ran for twenty-five years, her town, her garden. Her diagnosis stays private. So does her husband's death last year: if she asks about Thomas, Myra answers, as agreed with her son.
+
+Pepper stands in the lounge. When Elena comes in for coffee it says: "Good afternoon, Elena. I'm Pepper. I help residents get to know each other." It says nothing more that day.
+
+The System finds three residents who share something Elena released. The coordinator approves one: Jan, who ran the bakery in her town. Jan agreed months ago that Myra hears when he stays in his room for days at a time, and last week she had such a note. She has been looking in on him since.
+
+Pepper asks Elena in the quiet corner: "There's a resident here, Jan, who had the bakery in your town. Would you like to meet him, or not this time?" "The bakery? Yes." "May I tell him you had the post office counter?" "Yes." The next morning Myra walks Jan to the lounge, and Pepper asks him the same way. "I'd like that." Neither hears that the other was asked.
+
+That afternoon Myra brings them to the same table. Pepper shows two photos: "Elena, this is Jan. Jan, this is Elena. You both worked in [town]: Elena at the post office counter, Jan at the bakery." Elena: "Your bread! I was across the road." They talk about the town, the customers, who married whom. Elena stops mid-sentence, and Jan waits; she finds the word herself. Pepper says nothing until the talk has run down, then: "If you'd both like a walk, the garden is open." Jan: "Tomorrow, after lunch?" "If it's dry."
+
+That evening Elena asks Pepper: "When can I go home?" "That's one for Myra. Shall I ask her to come?" "Yes." Myra comes, sits with her and answers as agreed with her son. Pepper does not raise it again.
+
+After lunch the next day Myra's phone shows: //Elena and Jan - walk - lounge.// Jan no longer has the plan in mind, but likes the idea when Myra mentions it, and she brings him to the lounge. Pepper says: "Elena, Jan, good to see you both." Myra opens the garden door, and they walk once round the garden.
+
+Later Pepper asks each of them alone: "Would you like to meet Jan again?" and "Would you like to meet Elena again?" Both say yes. The record: one introduction, accepted by both; one walk; two notes to Myra. Nothing about what Elena and Jan said to each other.
+
+= Graph edges =
+
+DS-01: reimagines → PS-01, PS-03, and in part PS-02, PS-04; realized-by → UC01, UC02, UC03; features → HP-01, HP-02, HP-03, RP-01.

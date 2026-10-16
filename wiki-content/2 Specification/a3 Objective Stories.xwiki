@@ -2,9 +2,9 @@
 title: a3 Objective Stories
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why the guide waits, then tells both (OS-01). Why painful questions go to a person (OS-02). Why the guide asks first (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
+**Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why Pepper gives both names (OS-01). Why painful questions go to a person (OS-02). Why each resident is asked alone (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
 
-= Objective Story - Tell us both [OS-01] =
+= Objective Story - Both our names [OS-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -12,11 +12,11 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|OS-01
-|Name|Tell us both
+|Name|Both our names
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning; HFC-03, HFC-06.
-|Narrative|//Elena:// "At the counter I talked all day. Now a word goes, and the story goes with it. Give me a moment. If it doesn't come back, remind us both where I was, not just me."
-|Concerns|F2 Keep the thread; HV-02 Dignity, HV-06 Social connectedness
+|Evidence basis|Provisional. Group reasoning; HFC-02, HFC-06.
+|Narrative|//Elena:// "New faces every day, and by lunch the names have gone. When someone is brought over, say both our names, as if we had all forgotten. Then nobody has to ask."
+|Concerns|F3 Introduce; HV-02 Dignity, HV-06 Social connectedness
 
 = Objective Story - Fetch me [OS-02] =
 
@@ -29,10 +29,10 @@ syntax: xwiki/2.1
 |Name|Fetch me
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-08; IDP-03.
-|Narrative|//Myra:// "When Elena asks for Thomas, I want the guide to fetch me, not to answer her. Her son and I agreed what to say. One colleague told her bluntly, another said 'He's at work'; she trusted neither of us after that."
+|Narrative|//Myra:// "When a newcomer asks when she can go home, I want the robot to fetch me, not to answer her. Her family and I agreed what to say. A colleague once told a resident 'only for a few days', and she trusted none of us after that."
 |Concerns|F4 Defer sensitive topics; HV-08 Truthfulness, HV-05 Well-being
 
-= Objective Story - Not a dog [OS-03] =
+= Objective Story - Ask me on my own [OS-03] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -40,15 +40,15 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|OS-03
-|Name|Not a dog
+|Name|Ask me on my own
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning; VT-07.
-|Narrative|//Jan:// "I'm not a dog to be walked. I go out to see Elena, or the roses. The thing asks, and if I say no, that's that."
+|Evidence basis|Provisional. Group reasoning; HFC-17; VT-02.
+|Narrative|//Jan:// "Don't ask me in front of her. If I say no, she shouldn't hear it, and I shouldn't have to explain. Ask me on my own, and take no for an answer."
 |Concerns|F1 Ask first; HV-01 Autonomy, HV-02 Dignity
 
 == Graph edges ==
 
-OS-01: narrates → F2, HV-02, HV-06; serves → OBJ-01, OBJ-07.
+OS-01: narrates → F3, HV-02, HV-06; serves → OBJ-02, OBJ-07.
 
 OS-02: narrates → F4, HV-08, HV-05; serves → OBJ-04.
 

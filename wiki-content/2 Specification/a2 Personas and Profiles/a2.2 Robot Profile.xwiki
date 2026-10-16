@@ -2,9 +2,9 @@
 title: a2.2 Robot Profile
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** One System per resident, two devices, one voice. Pepper at the garden door asks, introduces and welcomes back (RP-01). The pocket guide keeps the thread on the walk (RP-02). Neither deceives; both ask first and stay silent while people talk. Each resident's settings follow their own wishes.
+**Abstract.** One robot, in the lounge, with one instance of the System per resident behind it. Pepper asks each resident privately, introduces residents who both said yes, welcomes newcomers and repeats names at later meetings (RP-01). It never deceives, stays silent while people talk, and passes painful topics to a trusted person. Each resident's settings follow their own wishes. The pocket guide of the earlier concept has been dropped (TECH-02).
 
-= Robot Profile - Pepper at the door [RP-01] =
+= Robot Profile - Pepper in the lounge [RP-01] =
 
 **Report Format:** §2.2 Personas and Profiles
 
@@ -12,59 +12,40 @@ syntax: xwiki/2.1
 
 |=Field|=Description
 |ID|RP-01
-|Name|Pepper at the door
+|Name|Pepper in the lounge
 |Status|In Progress
-|Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, VT-04 and VT-07. Not yet tested with residents.
-|Role in Scenario|Asks Jan's consent; introduces Jan and Elena; welcomes them back (DS-01).
+|Evidence basis|Vendor documentation (TECH-01). Design choices follow HFC-06, HFC-16, HFC-17, VT-02 and VT-04. Not yet tested with residents.
+|Role in Scenario|Welcomes Elena; asks Elena and Jan, each alone; introduces them and suggests a walk; defers "When can I go home?" to Myra; greets both by name at the walk they agreed (DS-01).
 |Social Competencies|(((
-* Asks each walker alone; two options; no is final
-* Introduces walkers by name and photo
-* One statement on return, never a question
-)))
-|Embodiment|Pepper (TECH-01), by the garden door, never in the path. Cameras disabled and visibly covered. Little movement; no gaze-following.
-|Narrative and Identity Framing|The host at the door; never a supervisor. Same name and voice as the pocket guide.
-|Communication Strategies|Short adult sentences; yes/no on the tablet; first name only if the resident wants it; no praise, no endearments.
-|Privacy and Data Handling|Sees only this walk's consented items. Receives the walk's last topic for the welcome; discards it after.
-|Context-Aware Capabilities|Who walks with whom; consent given or not. Nothing else.
-
-= Robot Profile - Pocket guide [RP-02] =
-
-**Report Format:** §2.2 Personas and Profiles
-
-== Fields ==
-
-|=Field|=Description
-|ID|RP-02
-|Name|Pocket guide, with the resident's own instance
-|Status|In Progress
-|Evidence basis|Group reasoning (TECH-02 to TECH-06). Not yet built or tested.
-|Role in Scenario|Keeps the thread for Jan and Elena; offers a bench after a stumble (DS-01). Talks with Elena; passes her question to Myra (DS-02).
-|Social Competencies|(((
-* Silent while people talk
-* Waits for self-repair, then redirects gently (IDP-01)
-* Asks before joining and before each starter (IDP-02)
+* Asks each resident alone; two options; a "no" is final and goes no further
+* Introduces only when both said yes, by name and photo, with one item both released
+* Gives names to both, as statements, at later meetings
+* Silent while residents talk; offers one topic, once, if the talk stalls (IDP-01)
+* Suggests one activity for two, a walk first where both are assessed fit
 * Never deceives; corrects itself when wrong; passes painful topics to a trusted person (IDP-03)
 * Never quizzes, corrects, praises or keeps tallies
 )))
-|Embodiment|Palm-sized speaker and microphone; two large buttons (pause or answer; going in); pull-cord. Rollator clip or lanyard. No screen, no camera.
-|Narrative and Identity Framing|"The voice that knows where we were." A helper for the conversation; company on walks alone only where agreed.
-|Communication Strategies|Statements, not questions, while walking. Low volume.
-|Privacy and Data Handling|Listens on the device. Transcript and thread deleted at the end of the walk. Keeps the own-word list and consented facts. Nothing leaves the home.
-|Context-Aware Capabilities|Speech, pauses, topics, pace, stops, landmarks, time. Cannot see faces or distress: left to people.
+|Embodiment|Pepper (TECH-01), in the lounge near its entrance, with a quiet corner for private questions (O-8). Cameras disabled and visibly covered. Little movement; no gaze-following.
+|Narrative and Identity Framing|A host who knows who might like to meet; never a supervisor, and never company in place of people.
+|Communication Strategies|Short adult sentences; yes and no on the tablet; first name only if the resident wants it; no praise, no endearments.
+|Privacy and Data Handling|Sees only the items released for this pair, and only for the introduction. Keeps nothing of what residents say to each other. Never mentions time a resident spends in their room.
+|Context-Aware Capabilities|Who is being asked or introduced; whether consent was given; who the trusted person is for a listed topic. Nothing else. Cannot see faces or distress: left to people.
 
 == Per-person settings ==
 
 Agreed with the resident, recorded in their instance (TECH-04), changed whenever they ask.
 
 |=Setting|=Options|=Default|=Set by
-|Walks offered|alone; with listed partners|none until agreed|Resident with ST-05; ST-06 for walking alone
-|Guide on walks alone|silent; bridge to a person; conversation partner|bridge|Resident with ST-05 and ST-04
-|After a slip|wait only; wait, then place and thread|wait, then place and thread|Resident
-|Word help|off; after a wait|off|Resident
-|Starters|off; own life; shared ground with listed partners|own life|Resident; each starter consented per walk
+|Introductions|off; on request only; suggestions welcome|on request only|Resident with ST-05
+|Profile items|shareable or private, per item|private|Resident; the representative only where the resident cannot decide
+|Suggestions per week|none up to [maximum - O-2]|one|Resident
+|Names at meetings|repeated to both; only on request|repeated to both|Resident
+|Suggested activities|walk; garden; games; music; looking at photos; other|from the resident's preferences|Resident; walks only where ST-06 agrees
 |Form of address|first name; surname; none|as the resident says|Resident
-|Pepper's welcome back|off; on|on|Resident
-|Research use of own words|off; on, anonymised|off|Resident and representative; ethics review
-|Walk length; rest offers|minutes|per resident|ST-06; the resident can shorten, not lengthen
-|Safety alerts|always on|on|Not adjustable
+|Notes about time in one's room|off; on|off|Resident, with the representative; reviewed at each care-plan review (O-7)
 |Sensitive topics|topic; trusted person; agreed approach|none|ST-05 with ST-04, family and ST-06
+|Research use of the profile|off; on, anonymised|off|Resident and representative; ethics review
+
+== Graph edges ==
+
+RP-01: realizes → TECH-01; features-in → DS-01; uses → IDP-01 to IDP-03; performs → F1, F3, F4.

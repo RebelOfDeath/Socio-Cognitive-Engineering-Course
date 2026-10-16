@@ -123,7 +123,7 @@ Provisional. Literature and group reasoning only.
 
 == Graph edges ==
 
-performed-by → ST-01 (supported by ST-03 to ST-05); may follow → SA-01; precedes → SA-03; illustrated-by → PS-02, PS-01 (in part).
+performed-by → ST-01 (supported by ST-03 to ST-05); may follow → SA-01; precedes → SA-03; illustrated-by → PS-02.
 
 = Situated Activity - Greeting someone new [SA-03] =
 
@@ -226,6 +226,7 @@ Provisional. Literature and group reasoning only.
 * ST-03: Relative - includes another resident in a visit
 * ST-04: Care worker - suggests an activity, sets it up, opens the garden door
 * ST-05: Activity coordinator - seats and groups residents, provides materials
+* ST-06: Medical and therapy staff - assess walking before a walk is suggested
 )))
 |Trigger|Loneliness, someone sitting alone, fine weather, a shared interest, a staff suggestion, or a good first meeting (SA-03)
 |Constituent Tasks|(((
@@ -276,7 +277,7 @@ The following activities suit two people. Those with a reference were studied wi
 
 == Graph edges ==
 
-performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-03; illustrated-by → PS-04.
+performed-by → ST-01, ST-02 (supported by ST-03 to ST-06); preceded-by → SA-03; illustrated-by → PS-04.
 
 = References =
 

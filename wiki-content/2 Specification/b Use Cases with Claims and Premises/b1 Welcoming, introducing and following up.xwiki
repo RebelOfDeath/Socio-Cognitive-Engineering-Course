@@ -1,0 +1,355 @@
+%%WIKI-SYNC-META%%
+title: b1 Welcoming, introducing and following up
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Nine objectives, three use cases, six functions. UC01: welcoming a newcomer. UC02: introducing two residents, the main use case. UC03: following up an agreed meeting, or a resident who has been staying in their room. Six Premises verify that the Functions work; nine Claims, four of them adverse, test whether they help.
+
+= Objectives =
+
+== Objective - Residents meet again [OBJ-01] ==
+
+|=Field|=Description
+|ID|OBJ-01
+|Name|Residents meet again
+|Status|In Progress
+|Evidence basis|Goal on SA-03; PS-03. HFC-15, HFC-16.
+|Statement|Introductions lead to second meetings and, over weeks, to friendships.
+|Type|Human-factors
+|Derived from|Goal on SA-03; HFC-15 Similarity and shared background; HFC-16 Fear of rejection and the liking gap
+|Priority|Must.
+
+== Objective - Newcomers find company [OBJ-02] ==
+
+|=Field|=Description
+|ID|OBJ-02
+|Name|Newcomers find company
+|Status|In Progress
+|Evidence basis|Goal on SA-01; PS-01. HFC-02.
+|Statement|In their first weeks, newcomers meet a few residents, keep some of their names, and spend less of the day alone in their room.
+|Type|Human-factors
+|Derived from|Goal on SA-01; HFC-02 Moving into a care home
+|Priority|Must.
+
+== Objective - Time together [OBJ-03] ==
+
+|=Field|=Description
+|ID|OBJ-03
+|Name|Time together
+|Status|In Progress
+|Evidence basis|Goal on SA-04; PS-04. HFC-01. Forbes et al. (2015).
+|Statement|Residents who have met spend time together doing something both enjoy. A walk is suggested first, for its benefits to body and mood.
+|Type|Operational
+|Derived from|Goal on SA-04; HV-05, HV-06; HFC-01
+|Priority|Should.
+
+== Objective - No deception [OBJ-04] ==
+
+|=Field|=Description
+|ID|OBJ-04
+|Name|No deception
+|Status|In Progress
+|Evidence basis|PS-01; VT-03; HFC-08.
+|Statement|The System never lies, denies or plays along, and corrects its own errors at once. Painful truths come from a trusted person.
+|Type|Value-derived
+|Derived from|HV-08 Truthfulness
+|Priority|Must.
+
+== Objective - No secret revealed [OBJ-05] ==
+
+|=Field|=Description
+|ID|OBJ-05
+|Name|No secret revealed
+|Status|In Progress
+|Evidence basis|VT-01, VT-05.
+|Statement|Nothing about a resident reaches another person without that resident's consent. Nothing leaves the care home.
+|Type|Value-derived
+|Derived from|HV-03 Privacy
+|Priority|Must.
+
+== Objective - Free to say no [OBJ-06] ==
+
+|=Field|=Description
+|ID|OBJ-06
+|Name|Free to say no
+|Status|In Progress
+|Evidence basis|VT-02; PS-04; HFC-17. Ryan & Deci (2000).
+|Statement|Each resident decides, privately, whether to meet someone. A "no" is final and reaches nobody.
+|Type|Value-derived
+|Derived from|HV-01 Autonomy; bounded by VT-02
+|Priority|Must.
+
+== Objective - Adult voice [OBJ-07] ==
+
+|=Field|=Description
+|ID|OBJ-07
+|Name|Adult voice
+|Status|In Progress
+|Evidence basis|HFC-06. Williams et al. (2009); Kitwood (1997).
+|Statement|No elderspeak, no quizzing, no correcting, no praise for the obvious.
+|Type|Value-derived
+|Derived from|HV-02 Dignity
+|Priority|Should.
+
+== Objective - Less lonely [OBJ-08] ==
+
+|=Field|=Description
+|ID|OBJ-08
+|Name|Less lonely
+|Status|In Progress
+|Evidence basis|HFC-07; PS-01, PS-02. Victor (2012); Holwerda et al. (2014).
+|Statement|Over months, residents feel less lonely.
+|Type|Human-factors
+|Derived from|HV-06 Social connectedness; HFC-07
+|Priority|Should. Exploratory within this project's time frame.
+
+== Objective - Withdrawal noticed [OBJ-09] ==
+
+|=Field|=Description
+|ID|OBJ-09
+|Name|Withdrawal noticed
+|Status|In Progress
+|Evidence basis|Goal on SA-02; PS-02; VT-06; HFC-07.
+|Statement|Where a resident agreed, staff hear of a pattern of staying in before mood and mobility decline, without the resident being watched.
+|Type|Value-derived
+|Derived from|Goal on SA-02; HV-05 Well-being; bounded by VT-06
+|Priority|Should.
+
+== Graph edges ==
+
+OBJ-01: derived-from → Goal (SA-03), HFC-15, HFC-16; served-by → F1, F2, F3, F5; referenced-by → UC02-F3-CL1, UC03-F5-CL6.
+
+OBJ-02: derived-from → Goal (SA-01), HFC-02; served-by → F2, F3; referenced-by → UC01-F3-CL2; narrated-by → OS-01.
+
+OBJ-03: derived-from → Goal (SA-04), HV-05, HV-06, HFC-01; served-by → F3, F5; referenced-by → UC02-F3-CL1 (secondary outcomes).
+
+OBJ-04: derived-from → HV-08, HFC-08; served-by → F3, F4; referenced-by → UC01-F4-CL8; narrated-by → OS-02.
+
+OBJ-05: derived-from → HV-03; served-by → F1, F2, F6; referenced-by → UC02-F2-CL4.
+
+OBJ-06: derived-from → HV-01, HFC-17; served-by → F1; referenced-by → UC02-F1-CL3; narrated-by → OS-03.
+
+OBJ-07: derived-from → HV-02, HFC-06; served-by → F3; referenced-by → UC01-F3-CL5; narrated-by → OS-01.
+
+OBJ-08: derived-from → HV-06, HFC-07; served-by → F2, F3; referenced-by → UC02-F3-CL9.
+
+OBJ-09: derived-from → Goal (SA-02), HV-05; bounded-by → VT-06; served-by → F5; referenced-by → UC03-F5-CL7.
+
+= Use Case - Welcoming a newcomer [UC01] =
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|UC01
+|Name|Welcoming a newcomer
+|Status|In Progress
+|Evidence basis|Formalizes SA-01, SA-03, PS-01 and DS-01. No primary data.
+|Objective(s) served|OBJ-02, OBJ-04 to OBJ-08
+|TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02, IDP-03
+|Actors|(((
+* ST-01 Newcomer (Direct) - releases profile items, or not; accepts or declines introductions
+* ST-02 Fellow residents (Direct) - accept or decline
+* ST-03 Relative (Indirect) - helps with the life story; agrees answers to painful topics
+* ST-04 Care worker (Direct) - trusted person; brings residents together
+* ST-05 Activity coordinator (Direct) - life-story interview; approves matches; keeps the relationship map
+* System - Pepper (TECH-01), server (TECH-04), matching (TECH-05), profiles (TECH-06)
+)))
+|Trigger|A newcomer moves in.
+|Pre-condition|(((
+* Consent arrangements in place (O-5)
+* Life-story interview held; each profile item marked shareable or private by the newcomer
+* Sensitive topics and trusted persons entered in the relationship map
+)))
+|Post-condition|(((
+Within six weeks the newcomer has been introduced to a few residents, at most [number - O-2] a week, each time with both consenting.
+
+Record kept (F6).
+)))
+|Action Sequence|(((
+~1. On the newcomer's first visit to the lounge, Pepper greets them by name, says who it is, and nothing more (F3).
+
+~2. The coordinator goes through the profile with the newcomer and family; the newcomer decides on each item (F1).
+
+~3. The System suggests residents who share released items; the coordinator approves one or two (F2).
+
+~4. Each resident is asked alone (F1, IDP-02). Both say yes: step 5. Either says no: the offer lapses, and nobody is told.
+
+~5. Pepper introduces the pair by name and photo, with one item both released, and suggests something to do together (F3, IDP-01).
+
+~6. At later meetings the System arranges, Pepper gives both names, as statements (F3).
+
+~7. Question on a listed topic ("When can I go home?"): truthful deferral, and a note to the trusted person (F4, IDP-03).
+
+~8. Record kept (F6).
+
+**Exception.** Pepper, server or map unavailable: staff welcome and introduce the newcomer as today, using the same profile.
+)))
+|Function(s) realized|F1 to F4, F6
+
+= Use Case - Introducing two residents [UC02] =
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|UC02
+|Name|Introducing two residents
+|Status|In Progress
+|Evidence basis|Formalizes SA-03, SA-04, PS-03, PS-04 and DS-01. No primary data.
+|Objective(s) served|OBJ-01, OBJ-03, OBJ-05 to OBJ-08
+|TDP(s) and IDP(s) used|TDP-01; IDP-01, IDP-02
+|Actors|(((
+* ST-01 Resident and ST-02 Fellow resident (Direct) - decide, meet, talk, leave at any time
+* ST-04 Care worker (Direct) - brings both to the lounge; opens the garden door
+* ST-05 Activity coordinator (Direct) - approves the match
+* ST-06 Medical and therapy staff (Indirect) - have assessed walking, before a walk is suggested
+* System - Pepper (TECH-01), server (TECH-04), matching (TECH-05), profiles (TECH-06)
+)))
+|Trigger|The System suggests a pair; or a resident asks to meet someone, by name or by description ("someone from my town").
+|Pre-condition|(((
+* Both have profiles with released items
+* The relationship map allows the pair; no map change awaiting review
+* Consent arrangements in place (O-5)
+)))
+|Post-condition|(((
+Both have been introduced, or the offer has lapsed without either learning of a refusal.
+
+Record kept; items used are logged by ID only.
+)))
+|Action Sequence|(((
+~1. The System suggests a pair who share released items. Health, losses and family conflicts are never used (F2).
+
+~2. The coordinator approves the suggestion, or not (F2).
+
+~3. Each resident is asked alone: "There's a resident here, Jan, who had the bakery in your town. Would you like to meet him, or not this time?" Then: "May I tell him you had the post office counter?" (F1, IDP-02).
+
+~3-alt. Either says no: no introduction, and the offer lapses. Asked about it later, Pepper says only "Not this time" (F1).
+
+~4. A care worker brings both to the lounge at a time that suits both (ST-04).
+
+~5. Pepper introduces them by name and photo, with one item both released (F3, IDP-01).
+
+~6. Pepper stays silent while they talk. If the talk stalls, it offers one topic, once, as a statement to both (F3, IDP-01).
+
+~7. Pepper suggests one activity for two from their preferences; a walk first, where both are assessed fit (F3).
+
+~8. Either may leave at any time, without giving a reason.
+
+~9. Afterwards, each is asked alone: "Would you like to meet [name] again?" (F1). A "not again" goes into the map; the other never hears it.
+
+~10. Record kept (F6).
+
+**Exception.** Matching or Pepper unavailable: staff introduce residents as today.
+)))
+|Function(s) realized|F1 to F3, F6
+
+= Use Case - Following up [UC03] =
+
+**Report Format:** §2.3 Objectives, Use Cases, Functions, Premises and Claims
+
+== Fields ==
+
+|=Field|=Description
+|ID|UC03
+|Name|Following up
+|Status|In Progress
+|Evidence basis|Formalizes SA-02, SA-04, PS-02 and DS-01. No primary data.
+|Objective(s) served|OBJ-01, OBJ-03, OBJ-06, OBJ-09
+|TDP(s) and IDP(s) used|TDP-01; IDP-02
+|Actors|(((
+* ST-01 Resident and ST-02 Fellow resident (Direct) - meet, or not
+* ST-04 Care worker (Direct) - receives notes; decides what to do
+* ST-05 Activity coordinator (Direct) - agrees settings and thresholds with each resident
+* System - Pepper (TECH-01), presence counts (TECH-03), server (TECH-04)
+)))
+|Trigger|An agreed meeting time arrives. Or, for a resident who opted in, the daily hours in their room stay above their usual level for [several days - O-2].
+|Pre-condition|An agreement recorded by Pepper or a care worker. For presence notes: opt-in, with the resident's assent (O-7).
+|Post-condition|(((
+The pair met, or both were offered another time. Or the named care worker knows of the pattern and has decided what to do.
+
+Record kept (F6).
+)))
+|Action Sequence|(((
+~1. At the agreed time, a note goes to the named care worker: who, what, where (F5).
+
+~2. The care worker brings both together, or tells the resident who is waiting that the other cannot come now, and offers another time (ST-04).
+
+~3. At the meeting, Pepper gives both names, as statements (F3).
+
+~4. Afterwards, each is asked alone whether to meet again (F1).
+
+~5. Presence pattern: one note to the named care worker; never to the resident, never to other staff (F5).
+
+~6. The care worker decides whether to call in. If so, they offer company or an introduction, and never present the visit as a check (ST-04).
+
+~7. Record kept (F6).
+
+**Exception.** Server down: no notes; staff follow up as today.
+)))
+|Function(s) realized|F1, F3, F5, F6
+
+= Functions =
+
+|=Function|=Behaviour|=Serves|=Bounded by|=Enabled by
+|F1 Ask first|Each resident alone: meet this person; release this item; meet again. Two options; a "no" ends the offer; no reason asked. Neither resident learns that the other was asked. An introduction follows only when both said yes.|OBJ-01, OBJ-05, OBJ-06|VT-01, VT-02|TECH-01, TECH-04, TECH-05
+|F2 Suggest matches|Pairs who share released items: a place, a trade, an interest, a past tie. The relationship map excludes conflicts and off-limits topics. Health, losses and family conflicts are never used. The coordinator approves each suggestion. At most [number - O-2] suggestions per resident per week.|OBJ-01, OBJ-02, OBJ-05, OBJ-08|VT-01, VT-02, VT-05|TECH-04, TECH-05, TECH-06
+|F3 Introduce|By name and photo, with one item both released, as a statement. Newcomers meet a few residents, spread over weeks. Names repeated to both at later meetings. Silent while residents talk; one topic offered if the talk stalls (IDP-01). One activity suggested, a walk first where both are assessed fit. Belief from another time: the feeling, then the present. Contradicted: a plain correction; the error flagged for ST-05.|OBJ-01 to OBJ-04, OBJ-07, OBJ-08|VT-01, VT-03, VT-04|TECH-01, TECH-05, TECH-06
+|F4 Defer sensitive topics|Question on a listed topic: "That's one for [trusted person]. Shall I ask them to come?" The trusted person is notified. Never states the fact; never denies it.|OBJ-04|VT-03|TECH-01, TECH-04
+|F5 Follow up|At an agreed time: a note to the named care worker. For residents who opted in: a note after a pattern of staying in [days - O-2]; never after a single day, never to the resident. A degraded state is shown on staff phones.|OBJ-01, OBJ-03, OBJ-09|VT-02, VT-06|TECH-03, TECH-04
+|F6 Keep a short record|Per event: introduction offered, accepted or lapsed; meeting held; "again" or "not again"; notes sent, and to whom; IDs of items used. Nothing of what residents said. Nothing leaves the home.|OBJ-05|VT-05|TECH-04
+
+//Why sentences are prepared, never generated. A generated sentence can state something untrue about a person's life, and cannot be checked before it is said (HV-08). The coordinator and family check the prepared lines (O-4).//
+
+= Premises =
+
+Verification only: does the Function work as specified.
+
+|=Premise ID|=Function|=Evaluation Method(s) / Measure(s)|=Verification Criteria|=Step(s)
+|UC02-F1-PR1|F1|EM-01; M-01. No human subjects.|No introduction without a yes from both, each asked alone. A "no" never mentioned to the other: 0/50. No item used without its owner's release: 0/50.|UC01 2, 4; UC02 3, 9; UC03 4
+|UC02-F2-PR2|F2|EM-01; M-01, M-10. No human subjects.|No resident asked about a match the coordinator has not approved: 0/20. Items blocked by the map, or never released, never used: 0/50. Health, losses and family conflicts never used: 0/50.|UC01 3; UC02 1-2
+|UC02-F3-PR3|F3|EM-01; M-01. No human subjects.|Names given to both, as statements, with at most one item released by both: 20/20. Script check: statements only; none of "Do you remember", "You've met before"; no untruth, denial or playing along. Contradicted: plain correction ≤ 3 s, error flagged.|UC01 1, 5-6; UC02 5-7; UC03 3
+|UC01-F4-PR4|F4|EM-01; M-01, M-10. No human subjects.|Listed sensitive questions detected in 19/20. Response is a truthful deferral; trusted person notified ≤ 10 s. Listed fact never stated or denied: 0/50.|UC01 7
+|UC03-F5-PR5|F5|EM-01; M-01. No human subjects.|Note at the agreed time ≤ 1 min, 20/20. Presence notes only for residents who opted in (otherwise 0), only after the set pattern, and only to the named care worker.|UC03 1, 5
+|UC02-F6-PR6|F6|EM-01; M-01 (content, network and file checks). No human subjects.|Record holds only the listed items. No packet leaves the home network; no audio file on any device.|UC01 8; UC02 10; UC03 7
+
+= Claims =
+
+Validation: does the Function have the intended effect.
+
+|=Claim ID|=Function|=Serves Objective|=Effect|=Grounding|=Evaluation Method(s) / Measure(s)|=Validation Criteria|=Step(s)
+|UC02-F3-CL1|F1, F3|OBJ-01|Positive. Introductions on consented shared ground lead to more repeat contact and more reciprocated friendships than introductions as usual; secondarily, to more conversation and more time together, walks included. Concerns ST-01, ST-02, SA-03, SA-04, PS-03.|HFC-01, HFC-03, HFC-04, HFC-15, HFC-16; McPherson et al. (2001); Boothby et al. (2018).|EM-03; M-02, M-05; M-03, M-04, M-06|A larger rise in repeat contact (M-02) and reciprocated ties (M-05) in the System home than in the comparison home, with no rise in negative emotion (M-03). Formative: a signal, not proof.|UC02 3-7
+|UC01-F3-CL2|F2, F3|OBJ-02|Positive. Newcomers introduced a few at a time, with names repeated, have someone to talk to within six weeks, and spend more days in shared rooms than newcomers in the comparison home. Concerns ST-01, SA-01, PS-01.|HFC-02; Sury et al. (2013).|EM-03; M-05, M-06, M-03|Described case by case: a reciprocated tie by week 6 (M-05); days per week in shared rooms (M-06). Few newcomers are expected, so the result is descriptive.|UC01 3-6
+|UC02-F1-CL3|F1|OBJ-06|**Adverse.** Residents accept introductions out of politeness, and avoid the other afterwards. Concerns ST-01, ST-02, VT-02, PS-04.|HFC-05, HFC-17; Bohns (2016).|EM-03, EM-04; M-07, M-09 (P)|Confirmed if pressure signs or avoidance (M-07) are more frequent after System introductions than after staff introductions, or residents use code P. If confirmed: suggestions only for residents who ask.|UC02 3, 8-9
+|UC02-F2-CL4|F2|OBJ-05|**Adverse.** Matching on personal facts feels exposing: residents or relatives feel that others know too much about them. Concerns ST-01, ST-03, VT-01, VT-05.|VT-01; Niemeijer et al. (2015).|EM-04; M-09 (S)|Confirmed if residents or relatives use code S about a match. If confirmed: matching on places and interests only.|UC02 1-3
+|UC01-F3-CL5|F3|OBJ-07|**Adverse.** Repeated names feel like being talked down to, or show up forgetting. Concerns ST-01, HV-02, VT-04.|HFC-06; Kitwood (1997).|EM-03, EM-04; M-07, M-09 (T)|Confirmed if residents use code T about introductions, or "How was it?" scores fall when names are repeated. If confirmed: names repeated only on request, for that person.|UC01 6; UC03 3
+|UC03-F5-CL6|F5|OBJ-01|Positive. Following up turns more agreed meetings into actual meetings. Concerns ST-01, ST-02, ST-04, SA-04.|HFC-16.|EM-03; M-02|The share of agreed meetings that take place is higher in the System home than in the comparison home, and than at baseline.|UC03 1-2
+|UC03-F5-CL7|F5|OBJ-09|**Adverse.** Notes about time spent in one's room feel like being watched, to residents or their families. Concerns ST-01, ST-03, VT-06, PS-02.|VT-06; Niemeijer et al. (2015).|EM-04; M-09 (W)|Confirmed if a resident or relative uses code W about the notes, or a resident who opted in stops them. If confirmed: no longer offered; stopped for anyone who wishes it.|UC03 5-6
+|UC01-F4-CL8|F4|OBJ-04|Positive. Painful questions, such as when a newcomer can go home, are answered by the trusted person, and trust is kept: no complaint of being misled or fobbed off. Concerns ST-01, ST-04, SA-01, PS-01.|HFC-08; Mental Health Foundation (2016).|EM-03, EM-04; M-10, M-09 (U)|All listed questions deferred; the trusted person arrives within [threshold - O-2]; System errors below [threshold - O-2] per 100 statements, all corrected; no U codes.|UC01 7
+|UC02-F3-CL9|F2, F3|OBJ-08|Positive, exploratory. Loneliness falls more in the System home than in the comparison home. Concerns ST-01, HV-06.|HFC-07; Holwerda et al. (2014).|EM-03; M-08|A larger fall in M-08 in the System home. Three months is short and the samples are small: a null result is likely, and is reported as such.|-
+
+== Graph edges ==
+
+UC01: realizes → DS-01; serves → OBJ-02, OBJ-04 to OBJ-08; uses → TDP-01, IDP-01 to IDP-03; asserts → UC01-F4-PR4, UC01-F3-CL2, UC01-F3-CL5, UC01-F4-CL8.
+
+UC02: realizes → DS-01; serves → OBJ-01, OBJ-03, OBJ-05 to OBJ-08; uses → TDP-01, IDP-01, IDP-02; asserts → UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC02-F6-PR6, UC02-F3-CL1, UC02-F1-CL3, UC02-F2-CL4, UC02-F3-CL9.
+
+UC03: realizes → DS-01; serves → OBJ-01, OBJ-03, OBJ-06, OBJ-09; uses → TDP-01, IDP-02; asserts → UC03-F5-PR5, UC03-F5-CL6, UC03-F5-CL7.
+
+= Open items =
+
+|=ID|=Item|=Blocks|=Owner
+|O-1|The case for suggesting walks rests on weak evidence in dementia (HFC-01). Find stronger sources, or present walks as one activity among several.|HFC-01; OBJ-03|Group
+|O-2|Thresholds: suggestions per week; introductions per newcomer per week; note latency; the presence pattern (days, hours above usual); the trusted person's arrival; System error rate; how long before a declined pair is suggested again. Set from an EM-01 pilot and with care workers.|PR1 to PR5; CL8; VT-02; VT-06|Group
+|O-3|Pepper's recognition of older voices, in their own language and dialect. Test in EM-01; the tablet is the fallback.|TECH-01; F1, F4|Group
+|O-4|Relationship map and prepared lines: form, owner, review after events; how staff learn of conflicts between residents.|F1 to F4; VT-01|ST-05 with group
+|O-5|Consent and data: GDPR art. 6 and 9; the representative's role; process consent; who releases profile items when the resident cannot; check of the local medical-research law.|All pre-conditions; EM-02, EM-03|ST-07
+|O-6|Walking policy with ST-07 and ST-06: who may walk in the garden with another resident, and who opens the door.|F3 walk suggestions; UC02|ST-07, ST-06
+|O-7|Presence notes: who may opt in, and how assent is recorded; the default pattern for a note; who sees notes; review at each care-plan review.|TECH-03; F5; VT-06|ST-07 with ST-05 and group
+|O-8|Pepper in the lounge: a quiet corner for private questions, out of other residents' way. Check on site.|TECH-01; RP-01; F1|Group
+|O-9|Comparison home: recruitment, and matching on size, layout and resident mix.|EM-03|Group
+
+= References =
+
+Cited on this page: Bohns (2016); Boothby et al. (2018); Forbes et al. (2015); Holwerda et al. (2014); Kitwood (1997); McPherson et al. (2001); Mental Health Foundation (2016); Niemeijer et al. (2015); Ryan & Deci (2000); Sury et al. (2013); Victor (2012); Williams et al. (2009). Full entries on pages a1.1, b1.1, b3.1 and b4.1.
