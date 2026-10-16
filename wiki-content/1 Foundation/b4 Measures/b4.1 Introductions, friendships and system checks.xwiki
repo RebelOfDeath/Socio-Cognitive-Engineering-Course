@@ -2,7 +2,7 @@
 title: b4.1 Introductions, friendships and system checks
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Ten measures. M-01 checks that the System does what its Functions specify. The main outcomes are introductions and repeat contact (M-02) and friendships over weeks (M-05). Conversation between residents (M-04) and time spent together, walks included (M-06), are secondary. M-03 rates emotion, M-07 records the residents' own view and signs of pressure, and M-08 measures loneliness. M-09 and M-10 watch the values at risk: privacy, tone, trust and truth. Every outcome is collected in the same way in both care homes (EM-03), and nothing is recorded on audio or video.
+**Abstract.** Ten measures. M-01 checks that the System does what its Functions specify. The main outcomes are introductions and repeat contact (M-02) and friendships over weeks (M-05). Conversation between residents (M-04) and time spent together, walks included (M-06), are secondary. M-03 rates emotion, M-07 records the residents' own view and signs of pressure, and M-08 measures loneliness. M-09 and M-10 watch the values at risk: privacy, tone, trust and truth. Every outcome is collected in the same way in both care homes (EM-03), and nothing is recorded on audio or video. M-20 to M-24 are the measures of the two-site Kinnect study (EM-08, ER-03): agitation and affect, peer connections, conversational engagement, bedroom time and first-time usability. M-22 is computed on the robot (TECH-18), so no audio or transcript is kept for it either.
 
 = Measure - System performance [M-01] =
 
@@ -286,16 +286,201 @@ Disclosure: items used without consent or against the map (target 0).
 
 operationalizes → UC02-F2-PR2, UC01-F4-PR4, UC01-F4-CL8; used-by → EM-01, EM-03; operationalizes → HV-03, HV-08.
 
+= Measure - Agitation and observed affect [M-20] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-20
+|Name|Agitation and observed affect
+|Status|In Progress
+|Evidence basis|Cohen-Mansfield Agitation Inventory (CMAI; Cohen-Mansfield et al., 1989), developed in a nursing home. Validated instrument. Affect around sessions: OERS, as in M-03 (Lawton, Van Haitsma & Klapper, 1996).
+|Construct measured|Agitation and anxiety behaviour over the study, and shifts in observed mood and affect from before to after a Kinnect session or peer meeting.
+|Type|Quantitative (caregiver-rated and observational)
+|Instrument or procedure|(((
+CMAI, completed by the resident's primary caregiver at both homes: at the end of the setup phase (covering the two weeks before week 1) and in week 5 (covering weeks 4 and 5).
+
+OERS, rated by a researcher in a 5-minute window before and a 10-minute window after each observed Kinnect session or peer meeting, as in M-03.
+
+Staff log, between ratings: each agitation event, with date, time, the behaviour, and whether it happened during or within an hour of a Kinnect session.
+)))
+|Scoring or coding scheme|(((
+CMAI: 29 behaviours, each rated for frequency from 1 (never) to 7 (several times an hour) over the previous two weeks; total 29 to 203. Change per resident: week 5 minus baseline.
+
+OERS: positive and negative scores per window, as in M-03. Shift per session: after minus before.
+
+Staff log: agitation events per resident per week, split into during or within an hour of a session, and other times.
+)))
+|Validity and reliability|CMAI validity in nursing-home residents from the source. Caregivers know which arm their home is in, so CMAI ratings are not blind; where possible the same caregiver rates at baseline and in week 5. OERS reliability as in M-03.
+|Serves|Validation
+|Burden|Caregiver time for two CMAI ratings per resident and the staff log; none for residents beyond OERS, as M-03.
+
+== Graph edges ==
+
+operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operationalizes → HV-05.
+
+= Measure - Peer connections and communal time [M-21] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-21
+|Name|Peer connections and communal time
+|Status|In Progress
+|Evidence basis|Bespoke counts from a real-time location system (RTLS) with proximity badges (Grigorovich et al., 2021; Jansen et al., 2017), checked against the room scans of EM-02.
+|Construct measured|How often residents interact one-to-one with a peer after matching, how long they spend together in common areas, and how dense the social network in the home is.
+|Type|Quantitative (sensor and observational)
+|Instrument or procedure|(((
+Proximity badges, worn during waking hours by residents who gave separate consent for them, with fixed anchors in the lounge, the dining room and other common areas. Both homes, from the setup phase to week 5.
+
+Room scans by observers every 2 minutes during EM-02 sessions, coding talk (M-04) and company (M-06). These serve as the observation log.
+)))
+|Scoring or coding scheme|(((
+Thresholds are proposed (O-2):
+
+* **Co-location episode:** two participants' badges within 2 m of each other in the same common area for 5 minutes or more.
+* **Joint social time:** minutes in co-location episodes, per resident per week.
+* **Dyadic interaction:** a co-location episode during which a room scan codes the two as talking or doing something together. Episodes outside observed hours count as co-location only, reported separately.
+* **Tie:** a pair with co-location episodes on two or more days in a week, the same two-day rule as M-02.
+* **Network density:** ties divided by all possible pairs of participants, n(n-1)/2, per home per week.
+
+Matched pairs (intervention home) and all other pairs are reported separately, so that contact between matched residents can be told apart from a general rise in contact.
+)))
+|Validity and reliability|Bespoke. Badges near each other do not always mean a conversation, so dyadic interactions are counted only where a room scan confirms them. RTLS accuracy differs between systems and buildings (Grigorovich et al., 2021); the 2 m rule is checked during setup by placing badges at known distances. Room-scan reliability as in M-04 and M-06.
+|Serves|Validation
+|Burden|Residents wear a badge in waking hours. Acceptance of RTLS in long-term care varies (Grigorovich et al., 2021).
+
+== Graph edges ==
+
+operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; associated with → M-02, M-04, M-06; operationalizes → HV-06.
+
+= Measure - Conversational engagement [M-22] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-22
+|Name|Conversational engagement
+|Status|In Progress
+|Evidence basis|Automated linguistic and acoustic features of speech in dementia (Fraser et al., 2016; Luz et al., 2021). Their use as a measure of engagement in conversation is bespoke.
+|Construct measured|How engaged a resident is in conversation with Kinnect and with a matched peer.
+|Type|Quantitative (automated)
+|Instrument or procedure|(((
+Speech recognition, transcript analysis and acoustic analysis run on the robot's accelerator (TECH-18), during one-to-one sessions and during joint sessions with a matched peer where both residents have consented.
+
+Audio is held only in the robot's working memory while it is processed, and the transcript is deleted on the robot at the end of the session. Only the values below reach the local server (TECH-04).
+)))
+|Scoring or coding scheme|(((
+Per session (feature definitions proposed, O-2):
+
+* **Turn-taking ratio:** one-to-one sessions: the resident's turns divided by Kinnect's turns. Peer meetings: the shorter speaking time of the two residents divided by the longer (1 means equal).
+* **Utterance length:** mean words per turn.
+* **Response latency:** median seconds from the end of the other speaker's turn to the start of the resident's.
+* **Sentiment:** mean per-utterance score from an on-device sentiment model, -1 to 1.
+* **Topic coherence:** mean similarity between consecutive turns, from sentence embeddings, 0 to 1.
+)))
+|Validity and reliability|Depends on speech recognition accuracy, which drops with background noise, atypical speech cadence and word-finding pauses (Luz et al., 2021), and for older voices in general (Vipperla et al., 2010). Study audio is not kept, so the pipeline is checked in advance: in staged role-play sessions (EM-01), word error rate and each feature are compared against a hand transcription. Robot sessions take place in the intervention arm only, so this Measure describes change within that arm and cannot compare the arms.
+|Serves|Validation
+|Burden|None beyond the sessions. Residents and representatives are told that the robot processes speech on the robot itself and keeps no recordings or transcripts.
+
+== Graph edges ==
+
+operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; depends-on → TECH-18; operationalizes → HV-06.
+
+= Measure - Bedroom isolation time [M-23] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-23
+|Name|Bedroom isolation time
+|Status|In Progress
+|Evidence basis|Sensor-based assessment of life-space in nursing-home residents (Jansen et al., 2017).
+|Construct measured|How much of the waking day a resident spends in their own bedroom.
+|Type|Quantitative (sensor)
+|Instrument or procedure|The resident's badge (M-21), relative to a fixed beacon in their bedroom, at both homes. Only for residents who gave separate consent, in line with HV-03: time in one's room is noticed only where the resident agreed.
+|Scoring or coding scheme|(((
+Waking hours per resident: from the care plan's usual getting-up time and bedtime; 08:00 to 21:00 where the plan gives none.
+
+Per resident per day: minutes in the bedroom divided by waking minutes. A day counts only if the badge was detected for at least 80% of waking hours (proposed, O-2). Days on which the care record shows the resident confined to bed by illness are reported separately.
+
+Per resident per week: mean over valid days.
+)))
+|Validity and reliability|Bespoke threshold. A bedroom beacon can be picked up through a wall, so each one is checked at setup from the corridor and the neighbouring rooms, and its signal threshold set so that it counts only inside the room. Staff spot checks of where residents are, against the badge data, in the setup phase.
+|Serves|Validation
+|Burden|As M-21.
+
+== Graph edges ==
+
+operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operationalizes → HV-03, HV-06.
+
+= Measure - First-time usability [M-24] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-24
+|Name|First-time usability
+|Status|In Progress
+|Evidence basis|Bespoke. Response latency as in Luz et al. (2021); the first-impression question follows M-07.
+|Construct measured|Whether residents who meet Kinnect for the first time understand it and can use it without help.
+|Type|Quantitative (logs and observational checklist)
+|Instrument or procedure|(((
+Kinnect's interaction log from the week 1 sessions: each prompt, and the time and kind of the resident's response (voice or tablet).
+
+Observational checklist, filled in by a researcher during each resident's first three sessions:
+
+* Per prompt: answered relevantly within 10 s; prompt repeated; staff explained; signs of confusion (looks around for help, asks who or what is speaking).
+* Per session, four tasks: responds when Kinnect greets them; answers a yes/no question, by voice or on the tablet; accepts or declines an offer; ends the session or says they want to stop, and Kinnect stops.
+
+After the first session, if the resident is willing: three faces, "How was it, talking with Pepper?" (as in M-07). The researcher rates the resident's first approach: approaches, neutral, or turns away.
+)))
+|Scoring or coding scheme|(((
+Prompt comprehension rate: prompts answered relevantly within 10 s without repetition, divided by all prompts.
+
+Task completion: tasks done without staff intervention, divided by tasks attempted.
+
+Response latency: median seconds per session, from the log.
+
+First-impression receptivity: faces 1 to 3, and the researcher's approach rating.
+
+Criterion for the secondary Claim (proposed, O-2): comprehension and task completion each at least 80% by the end of week 1.
+)))
+|Validity and reliability|Bespoke. A second researcher fills in the checklist on 20% of sessions; κ ≥ .60 (Landis & Koch, 1977).
+|Serves|Validation
+|Burden|Low; part of the week 1 sessions.
+
+== Graph edges ==
+
+operationalizes → ER-03 secondary Claim (no ID yet); used-by → EM-08; operationalizes → HV-01.
+
 = References =
+
+* Cohen-Mansfield, J., Marx, M. S. & Rosenthal, A. S. (1989). A description of agitation in a nursing home. //Journal of Gerontology//, 44(3), M77-M84.
 
 * Custers, A. F. J. et al. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209.
 * De Jong Gierveld, J. & Van Tilburg, T. (2006). A 6-item scale for overall, emotional, and social loneliness: confirmatory tests on survey data. //Research on Aging//, 28(5), 582-598.
 * Dean, R., Proudfoot, R. & Lindesay, J. (1993). The quality of interactions schedule (QUIS): development, reliability and use in the evaluation of two domus units. //International Journal of Geriatric Psychiatry//, 8(10), 819-826.
+* Fraser, K. C., Meltzer, J. A. & Rudzicz, F. (2016). Linguistic features identify Alzheimer's disease in narrative speech. //Journal of Alzheimer's Disease//, 49(2), 407-422.
+* Grigorovich, A. et al. (2021). Factors affecting the implementation, use, and adoption of real-time location system technology for persons living with cognitive disabilities in long-term care homes: systematic review. //Journal of Medical Internet Research//, 23(1), e22831.
+* Jansen, C. P. et al. (2017). Life-space and movement behavior in nursing home residents: results of a new sensor-based assessment and associated factors. //BMC Geriatrics//, 17, 36.
 * Kitwood (1997); Williams et al. (2009). See b3.1 References.
 * Landis, J. R. & Koch, G. G. (1977). The measurement of observer agreement for categorical data. //Biometrics//, 33(1), 159-174.
 * Lawton, M. P., Van Haitsma, K. & Klapper, J. (1996). Observed affect in nursing home residents with Alzheimer's disease. //Journal of Gerontology B//, 51(1), P3-P14.
 * Lawton, M. P. et al. (1999). Observed affect and quality of life in dementia: further affirmations and problems. //Journal of Mental Health and Aging//, 5(1), 69-81.
+* Luz, S., Haider, F., de la Fuente Garcia, S., Fromm, D. & MacWhinney, B. (2021). Alzheimer's dementia recognition through spontaneous speech. //Frontiers in Computer Science//, 3, 780169.
 * Mental Health Foundation (2016). See a1.1 References.
 * Mihailidis, A. et al. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28.
 * Niemeijer, A. R. et al. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//, 22(7), 1129-1142.
 * Niemeijer, A. R. et al. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320.
+* Vipperla et al. (2010). See c1.1 References.
