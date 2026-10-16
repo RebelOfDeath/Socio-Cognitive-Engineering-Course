@@ -1,0 +1,236 @@
+%%WIKI-SYNC-META%%
+title: a3.1 Missed connections
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Four scenarios, in the order of the activities. A newcomer meets too many people at once, remembers none of them and spends more and more time in her room (PS-01). A resident who has stopped going out finds a reason to decline each invitation, and the invitations grow rarer (PS-02). Two residents who might become friends avoid each other, because she has forgotten his name and he mistakes her reserve for lack of interest (PS-03). A resident accepts a walk to be polite, and afterwards avoids the man who asked (PS-04). In each, contact between residents fails for ordinary reasons: tiredness, embarrassment, politeness, memory.
+
+= Problem Scenario - The first weeks [PS-01] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-01
+|Name|The first weeks
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-01 and SA-03.
+
+* Victor (2012): loneliness in care homes is common
+)))
+|Narrative|(((
+On her first day a care worker introduces her to everyone at her table and to several staff. By the evening she cannot recall a single name. The other residents leave her alone to settle in, while she waits for someone to speak to her.
+
+She misses her home and expects to return to it. Over the following weeks she spends more of the day in her room, and comes out mainly for meals and visits.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+* ST-03: Relative
+* ST-04: Care worker
+)))
+|Activities involved|SA-01: Moving into the care home; SA-03: Greeting someone new
+|Breakdown point|All introductions come on the first day, and nobody follows them up
+|Causes|(((
+Root causes:
+
+* Introductions come at once, when she is least able to take them in
+* The others think she wants to be left alone, and she waits for them to start
+* She sees her stay as temporary, so getting to know people seems pointless
+
+Contributing causes:
+
+* The move tires her, and she struggles to find her way around
+* She grieves for her home, her routine and the people she left
+* She is shy, or finds it hard to talk to strangers
+* She hears poorly in the noisy dining room
+* Her table neighbours rarely talk
+* Staff change every shift and have little time to repeat introductions
+* She would rather not ask for a name a second time
+)))
+|Sub-problems|(((
+1. She receives too many introductions too early
+1. Nobody repeats them
+1. Each side waits for the other to speak
+1. Staying in her room becomes the easier choice (SA-02)
+)))
+|Out of scope|(((
+* Admission procedures - ST-07
+* Treating low mood - ST-06
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01 to ST-04, SA-01, SA-03.
+
+= Problem Scenario - Staying in [PS-02] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-02
+|Name|Staying in
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-02.
+
+* Victor (2012): loneliness in care homes is common
+)))
+|Narrative|(((
+Since a fall some months ago he has spent most days in his room. He walks more slowly and tires quickly, and the lounge is noisy and full of people he hardly knows. When a care worker asks whether he would like to join an activity, he says he is tired, or that he will come next time.
+
+Staff ask less often. Each week, going out takes a little more effort.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-04: Care worker
+* ST-05: Activity coordinator
+)))
+|Activities involved|SA-02: Waiting for a reason to leave the room
+|Breakdown point|He declines invitations one at a time, until staff stop making them
+|Causes|(((
+Root causes:
+
+* Going out costs effort, and nothing on offer seems worth it
+* He knows nobody he would like to see
+* Each refusal makes the next invitation less likely
+
+Contributing causes:
+
+* He is in pain, stiff, or tires quickly
+* He is afraid of falling again
+* He does not want to be seen with a walking frame
+* He worries about reaching a toilet in time
+* He feels low, and little gives him pleasure
+* He hears poorly, and following group talk tires him
+* The lounge is loud, and the activities do not interest him
+* He does not want to trouble staff
+* His room is quiet, familiar and his own
+* Staff are busy, and accept a refusal without asking why
+)))
+|Sub-problems|(((
+1. Going out does not seem worth the effort
+1. He has nobody in particular to see
+1. Staff accept refusals and ask less often
+1. His withdrawal is noticed late
+)))
+|Out of scope|(((
+* Treating pain, low mood and fear of falling - ST-06
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-04, ST-05, SA-02.
+
+= Problem Scenario - Each waits for the other [PS-03] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-03
+|Name|Each waits for the other
+|Status|In Progress
+|Evidence basis|(((
+Provisional. Constructed from SA-03.
+
+* de Medeiros et al. (2012): residents with dementia form and keep friendships
+)))
+|Narrative|(((
+A care worker introduced them weeks ago, and they talked for a while about the area where both grew up. Since then she has forgotten his name. When they pass in the corridor she nods and walks on, so that she will not have to use it.
+
+He reads her nod as polite reserve and does not want to impose. Both tell their families there is nobody here to talk to.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+* ST-03: Relative
+* ST-04: Care worker
+)))
+|Activities involved|SA-03: Greeting someone new
+|Breakdown point|A good first conversation is not followed by a second
+|Causes|(((
+Root causes:
+
+* She has forgotten his name, and is embarrassed to ask
+* Each underestimates how much the other enjoyed their talk
+* Nobody arranges a second meeting
+
+Contributing causes:
+
+* They sit at different tables and keep different routines
+* He does not want to seem forward
+* She fears that other lapses will show if they talk longer
+* The care worker who introduced them is seldom on shift when they meet
+* A nod in passing leaves no opening for talk
+)))
+|Sub-problems|(((
+1. A forgotten name becomes a reason to avoid someone
+1. Neither shows the other they would like to talk again
+1. Nothing brings them together a second time
+)))
+|Out of scope|(((
+* Seating policy - ST-05
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01 to ST-04, SA-03.
+
+= Problem Scenario - A yes to be polite [PS-04] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|PS-04
+|Name|A yes to be polite
+|Status|In Progress
+|Evidence basis|Provisional. Constructed from SA-04 by group reasoning.
+|Narrative|(((
+A man asks the woman next to him in the lounge whether she would like to walk round the garden. She is tired, but saying no to his face feels rude, so she agrees.
+
+Halfway round she wants to go back, but waits for him to suggest it. He takes her silence for contentment and keeps going. Afterwards she sits elsewhere, so as not to be asked again.
+)))
+|Stakeholders involved|(((
+* ST-01: Resident with dementia
+* ST-02: Fellow resident
+)))
+|Activities involved|SA-04: Inviting someone to spend time together
+|Breakdown point|She accepts out of politeness, cannot end the walk, and then avoids him
+|Causes|(((
+Root causes:
+
+* Refusing a request face to face is uncomfortable
+* Neither says when they would like to stop
+* He cannot tell a willing yes from a polite one
+
+Contributing causes:
+
+* Others in the lounge can hear the invitation
+* She does not want to hurt his feelings
+* She is tired, in pain or cold, and does not say so
+* She worries he will take a refusal personally
+* The garden path offers no easy point to turn back
+)))
+|Sub-problems|(((
+1. A polite yes passes for a willing one
+1. Neither can end the walk without awkwardness
+1. She avoids him afterwards, and he does not know why
+)))
+|Out of scope|(((
+* Changes to the garden and its paths - ST-07
+)))
+
+== Graph edges ==
+
+illustrates → Problem; involves → ST-01, ST-02, SA-04.
+
+= References =
+
+* de Medeiros et al. (2012); Victor (2012). See a1.1 References.

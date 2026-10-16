@@ -2,7 +2,7 @@
 title: a2.1 Residents, family and staff
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Seven stakeholders. A resident (ST-01), often new to the home, meets, invites and walks with a fellow resident (ST-02). Three help them meet: the relative, who arranges the move and gives the life story (ST-03); the care worker, who receives newcomers and introduces residents (ST-04); the activity coordinator, who seats, introduces and pairs (ST-05). Medical and therapy staff assess and encourage walking (ST-06), and management runs admissions and staffing (ST-07). All share a concern for the resident's well-being and trust, and see the walk as an easy way to meet and stay active. They are divided on freedom against safety, and on what may be shared about a resident.
+**Abstract.** Seven stakeholders. A resident (ST-01), often new to the home or alone in their room, meets, invites and talks with a fellow resident (ST-02). Three help them meet: the relative, who arranges the move and gives the life story (ST-03); the care worker, who receives newcomers and introduces residents (ST-04); the activity coordinator, who seats, introduces and pairs (ST-05). Medical and therapy staff assess and encourage walking (ST-06), and management runs admissions and staffing (ST-07). All share a concern for the resident's well-being and trust, and see walking together as an easy way to meet and stay active. They are divided on freedom against safety, and on what may be shared about a resident.
 
 = Stakeholder - Resident with dementia [ST-01] =
 
@@ -14,8 +14,8 @@ syntax: xwiki/2.1
 |ID|ST-01
 |Name|Resident with dementia
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-03.
-|Type|Direct - moves in, meets others, invites, walks
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-04.
+|Type|Direct - moves in, meets others, invites, talks
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - company, friends
 * HV-02 Dignity (high) - slips not exposed, not patronised
@@ -30,7 +30,7 @@ syntax: xwiki/2.1
 
 == Graph edges ==
 
-performs → SA-01 to SA-03; holds → HV-01 to HV-08; appears-in → PS-01 to PS-06; elaborated-as → HP-01, HP-02 (§2.2).
+performs → SA-01 to SA-04; holds → HV-01 to HV-08; appears-in → PS-01 to PS-06; elaborated-as → HP-01, HP-02 (§2.2).
 
 = Stakeholder - Fellow resident [ST-02] =
 
@@ -42,11 +42,11 @@ performs → SA-01 to SA-03; holds → HV-01 to HV-08; appears-in → PS-01 to P
 |ID|ST-02
 |Name|Fellow resident
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-03.
-|Type|Direct - meets ST-01, accepts or declines, walks. Often has dementia too.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-03, SA-04.
+|Type|Direct - meets ST-01, accepts or declines, talks. Often has dementia too.
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - a friend to talk to
-* HV-01 Autonomy (high) - free to decline, or to end a walk
+* HV-01 Autonomy (high) - free to decline an introduction or an invitation
 * HV-03 Privacy (high) - own secrets
 * HV-05 Well-being (high) - movement, fresh air, calm
 * HV-02 Dignity (medium) - not patronised
@@ -55,7 +55,7 @@ performs → SA-01 to SA-03; holds → HV-01 to HV-08; appears-in → PS-01 to P
 
 == Graph edges ==
 
-performs → SA-02, SA-03; supports → SA-01; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01, PS-03 to PS-05; elaborated-as → HP-01, HP-02 (§2.2).
+performs → SA-03, SA-04; supports → SA-01; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01, PS-03 to PS-05; elaborated-as → HP-01, HP-02 (§2.2).
 
 = Stakeholder - Relative [ST-03] =
 
@@ -67,7 +67,7 @@ performs → SA-02, SA-03; supports → SA-01; holds → HV-01 to HV-03, HV-05, 
 |ID|ST-03
 |Name|Relative
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-03.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-04.
 |Type|Indirect - arranges the move, gives the life story, agrees what may be shared, may consent for ST-01
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - their relative has company
@@ -80,7 +80,7 @@ performs → SA-02, SA-03; supports → SA-01; holds → HV-01 to HV-03, HV-05, 
 
 == Graph edges ==
 
-supports → SA-01 to SA-03; holds → HV-03, HV-05 to HV-08; appears-in → PS-02, PS-05.
+supports → SA-01 to SA-04; holds → HV-03, HV-05 to HV-08; appears-in → PS-02, PS-05.
 
 = Stakeholder - Care worker [ST-04] =
 
@@ -92,10 +92,10 @@ supports → SA-01 to SA-03; holds → HV-03, HV-05 to HV-08; appears-in → PS-
 |ID|ST-04
 |Name|Care worker
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-03.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-04.
 |Type|Direct - receives newcomers, introduces residents, opens the garden door, answers painful questions
 |Values and motivations|(((
-* HV-04 Safety (high) - every resident back, unharmed
+* HV-04 Safety (high) - residents safe, nobody lost
 * HV-08 Truthfulness (high) - truthful answers, secrets kept
 * HV-05 Well-being (high) - residents calm and active
 * HV-06 Social connectedness (medium) - residents know each other
@@ -105,7 +105,7 @@ supports → SA-01 to SA-03; holds → HV-03, HV-05 to HV-08; appears-in → PS-
 
 == Graph edges ==
 
-supports → SA-01 to SA-03; holds → HV-03 to HV-06, HV-08; appears-in → PS-01 to PS-06; elaborated-as → HP-03 (§2.2).
+supports → SA-01 to SA-04; holds → HV-03 to HV-06, HV-08; appears-in → PS-01 to PS-06; elaborated-as → HP-03 (§2.2).
 
 = Stakeholder - Activity coordinator [ST-05] =
 
@@ -117,7 +117,7 @@ supports → SA-01 to SA-03; holds → HV-03 to HV-06, HV-08; appears-in → PS-
 |ID|ST-05
 |Name|Activity coordinator
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-03.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01 to SA-04.
 |Type|Direct - takes life stories, and seats, introduces and pairs residents
 |Values and motivations|(((
 * HV-06 Social connectedness (high) - residents have company, and a walk eases first contact
@@ -130,7 +130,7 @@ supports → SA-01 to SA-03; holds → HV-03 to HV-06, HV-08; appears-in → PS-
 
 == Graph edges ==
 
-supports → SA-01 to SA-03; holds → HV-01, HV-03, HV-05 to HV-07; appears-in → PS-03, PS-06.
+supports → SA-01 to SA-04; holds → HV-01, HV-03, HV-05 to HV-07; appears-in → PS-03, PS-06.
 
 = Stakeholder - Medical and therapy staff [ST-06] =
 
@@ -142,8 +142,8 @@ supports → SA-01 to SA-03; holds → HV-01, HV-03, HV-05 to HV-07; appears-in 
 |ID|ST-06
 |Name|Medical and therapy staff (physician, nurse, physiotherapist, psychologist)
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-03.
-|Type|Indirect - assess walking, set walk length, encourage regular walks, tell medical news
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-04.
+|Type|Indirect - assess walking, encourage regular walks, tell medical news
 |Values and motivations|(((
 * HV-04 Safety (high) - fall risk
 * HV-05 Well-being (high) - regular walking for fitness, mood and thinking
@@ -154,7 +154,7 @@ supports → SA-01 to SA-03; holds → HV-01, HV-03, HV-05 to HV-07; appears-in 
 
 == Graph edges ==
 
-supports → SA-01, SA-03; holds → HV-03 to HV-05, HV-08; appears-in → PS-04.
+supports → SA-01, SA-04; holds → HV-03 to HV-05, HV-08; appears-in → PS-04.
 
 = Stakeholder - Care home management [ST-07] =
 
@@ -166,7 +166,7 @@ supports → SA-01, SA-03; holds → HV-03 to HV-05, HV-08; appears-in → PS-04
 |ID|ST-07
 |Name|Care home management
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-03.
+|Evidence basis|Provisional. Group reasoning only. Derived from SA-01, SA-04.
 |Type|Indirect - runs admissions and staffing, controls exits and data, decides on adopting the System
 |Values and motivations|(((
 * HV-04 Safety (high) - liable for falls and exits
@@ -177,4 +177,4 @@ supports → SA-01, SA-03; holds → HV-03 to HV-05, HV-08; appears-in → PS-04
 
 == Graph edges ==
 
-governs → SA-01 (admission, exits), SA-03 (staffing), System data; holds → HV-03 to HV-05.
+governs → SA-01 (admission, exits), SA-04 (staffing), System data; holds → HV-03 to HV-05.
