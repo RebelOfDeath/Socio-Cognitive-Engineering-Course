@@ -30,7 +30,7 @@ syntax: xwiki/2.1
 
 == Graph edges ==
 
-performs → SA-01 to SA-04; holds → HV-01 to HV-08; appears-in → PS-01 to PS-06; elaborated-as → HP-01, HP-02 (§2.2).
+performs → SA-01 to SA-04; holds → HV-01 to HV-08; appears-in → PS-01 to PS-04; elaborated-as → HP-01, HP-02 (§2.2).
 
 = Stakeholder - Fellow resident [ST-02] =
 
@@ -55,7 +55,7 @@ performs → SA-01 to SA-04; holds → HV-01 to HV-08; appears-in → PS-01 to P
 
 == Graph edges ==
 
-performs → SA-03, SA-04; supports → SA-01; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01, PS-03 to PS-05; elaborated-as → HP-01, HP-02 (§2.2).
+performs → SA-03, SA-04; supports → SA-01; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01, PS-03, PS-04; elaborated-as → HP-01, HP-02 (§2.2).
 
 = Stakeholder - Relative [ST-03] =
 
@@ -80,7 +80,7 @@ performs → SA-03, SA-04; supports → SA-01; holds → HV-01 to HV-03, HV-05, 
 
 == Graph edges ==
 
-supports → SA-01 to SA-04; holds → HV-03, HV-05 to HV-08; appears-in → PS-02, PS-05.
+supports → SA-01 to SA-04; holds → HV-03, HV-05 to HV-08; appears-in → PS-01, PS-03.
 
 = Stakeholder - Care worker [ST-04] =
 
@@ -105,7 +105,7 @@ supports → SA-01 to SA-04; holds → HV-03, HV-05 to HV-08; appears-in → PS-
 
 == Graph edges ==
 
-supports → SA-01 to SA-04; holds → HV-03 to HV-06, HV-08; appears-in → PS-01 to PS-06; elaborated-as → HP-03 (§2.2).
+supports → SA-01 to SA-04; holds → HV-03 to HV-06, HV-08; appears-in → PS-01 to PS-03; elaborated-as → HP-03 (§2.2).
 
 = Stakeholder - Activity coordinator [ST-05] =
 
@@ -130,7 +130,7 @@ supports → SA-01 to SA-04; holds → HV-03 to HV-06, HV-08; appears-in → PS-
 
 == Graph edges ==
 
-supports → SA-01 to SA-04; holds → HV-01, HV-03, HV-05 to HV-07; appears-in → PS-03, PS-06.
+supports → SA-01 to SA-04; holds → HV-01, HV-03, HV-05 to HV-07; appears-in → PS-02.
 
 = Stakeholder - Medical and therapy staff [ST-06] =
 
@@ -154,7 +154,7 @@ supports → SA-01 to SA-04; holds → HV-01, HV-03, HV-05 to HV-07; appears-in 
 
 == Graph edges ==
 
-supports → SA-01, SA-04; holds → HV-03 to HV-05, HV-08; appears-in → PS-04.
+supports → SA-01, SA-04; holds → HV-03 to HV-05, HV-08.
 
 = Stakeholder - Care home management [ST-07] =
 

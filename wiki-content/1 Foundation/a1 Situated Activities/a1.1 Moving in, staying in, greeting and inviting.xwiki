@@ -57,19 +57,19 @@ Provisional. Literature and group reasoning only.
 * Cannot find the room, toilet or dining room
 * Grieves for the home, spouse, pet and neighbours left behind
 * Resists the routine and care, angry at family or staff
-* Nobody to talk to (PS-06)
-* Too many new faces to remember
+* Has nobody to talk to (PS-01)
+* Meets too many new faces to remember (PS-01)
 * Seated among residents who do not talk
 * Stays in the room, skipping shared meals and activities (SA-02)
 * Life story not taken, or not passed on
 * Family visits taper
 * Not allowed out alone until walking is assessed (ST-06)
-* Withdrawal seen late (PS-06)
+* Withdrawal is seen late
 )))
 
 == Graph edges ==
 
-performed-by → ST-01 (supported by ST-02 to ST-06); precedes → SA-02, SA-03; illustrated-by → PS-06 (in part).
+performed-by → ST-01 (supported by ST-02 to ST-06); precedes → SA-02, SA-03; illustrated-by → PS-01.
 
 = Situated Activity - Waiting for a reason to leave the room [SA-02] =
 
@@ -87,7 +87,7 @@ Provisional. Literature and group reasoning only.
 * Victor (2012): loneliness in care homes is common
 * Clare (2003): people aware of decline protect themselves, or face it
 )))
-|Goal|A reason worth leaving the room for.
+|Goal|Find a reason worth leaving the room for.
 |Performing Actor(s)|(((
 * ST-01: Resident - waits, then goes out or stays
 * ST-03: Relative - visits
@@ -115,15 +115,15 @@ Provisional. Literature and group reasoning only.
 |Observed breakdowns|(((
 * No reason comes, and the day passes in the room
 * Invitations are to activities, not to see someone
-* Declines every invitation, and staff stop asking
+* Declines every invitation, and staff stop asking (PS-02)
 * Sleeps by day and lies awake at night
-* Mood and walking decline unseen (PS-06)
+* Mood and walking decline unseen (PS-02)
 * Forgets the names of the few people they knew
 )))
 
 == Graph edges ==
 
-performed-by → ST-01 (supported by ST-03 to ST-05); may follow → SA-01; precedes → SA-03; illustrated-by → PS-06.
+performed-by → ST-01 (supported by ST-03 to ST-05); may follow → SA-01; precedes → SA-03; illustrated-by → PS-02, PS-01 (in part).
 
 = Situated Activity - Greeting someone new [SA-03] =
 
@@ -176,6 +176,7 @@ Provisional. Literature and group reasoning only.
 * Too shy to speak first
 * Greets a known face as new, or the reverse
 * Forgets the name and asks again, embarrassed
+* Avoids someone whose name they have forgotten (PS-03)
 * Forgets own facts and goes quiet
 * Runs out of things to say, and one leaves
 * Repeats a question, and the other notices
@@ -185,14 +186,16 @@ Provisional. Literature and group reasoning only.
 * Talk stops once staff leave
 * Ignored when joining a group mid-talk
 * Residents with a shared past never find out
-* Staff share a personal fact without consent (PS-05)
-* Introductions follow who is on shift, not residents' wishes (PS-03)
+* Staff share a personal fact without consent
+* Introductions follow who is on shift, not residents' wishes
+* Introductions come all at once, and nobody repeats them (PS-01)
+* A good first talk is not followed by a second (PS-03)
 * Avoids the other after an awkward meeting
 )))
 
 == Graph edges ==
 
-performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-01, SA-02; precedes → SA-04; illustrated-by → PS-03, PS-05 (in part).
+performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-01, SA-02; precedes → SA-04; illustrated-by → PS-03, PS-01 (in part).
 
 = Situated Activity - Inviting someone to spend time together [SA-04] =
 
