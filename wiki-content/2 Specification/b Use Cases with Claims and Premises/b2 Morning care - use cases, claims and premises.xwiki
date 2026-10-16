@@ -2,7 +2,7 @@
 title: b2 Morning care - use cases, claims and premises
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Objectives, Use Cases UC04 and UC05, Premises and Claims of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b1 Pair walk and walk alone>>doc:2 Specification.b Use Cases with Claims and Premises.b1 Pair walk and walk alone.WebHome]]); IDs continue after the Meaningful Connections set.
+**Abstract.** Objectives, Use Cases UC04 and UC05, Premises and Claims of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b1 Welcoming, introducing and following up>>doc:2 Specification.b Use Cases with Claims and Premises.b1 Welcoming, introducing and following up.WebHome]]); IDs continue after the Meaningful Connections set.
 
 = Objective  [OBJ-10] =
 
@@ -412,7 +412,7 @@ It is deferred for this cycle rather than dropped. Reasons:
 
 - PS-08 adds a fourth sub-problem, confirmation, that has no counterpart in PS-07 - the resident failing to confirm they have taken the medication, risking a double dose. That needs its own Function and its own Claim, and possibly a safety Premise, rather than reusing F7-F10.
 
-- Specifying it properly would roughly double the Premise and Claim count, and the medication activity will need Measures of its own on the §1.2 Measures page, numbered from M-20.
+- Specifying it properly would roughly double the Premise and Claim count, and the medication activity will need Measures of its own on the §1.2 Measures page, numbered from M-25.
 
 F7-F10 are expected to transfer, since both activities are stepwise sequences with initiation, sequencing and completion breakdowns. Confirming that recurrence across two Use Cases is what would justify abstracting the TDP and IDP in Steps 12-13 - so UC05 should be written before those are finalized, not after.
 
@@ -424,7 +424,7 @@ Group decision (Open item O-22): tooth brushing is this cycle's spine. Material 
 These are gaps recorded as explicit decisions rather than left silent, per Step 14.
 
 |=ID|=Item|=Blocks|=Owner
-|O-10|Resolved. M-12…M-18 are on the §1.2 [[b4.2 Morning care - measures>>doc:1 Foundation.b4 Measures.b4\.2 Morning care - measures.WebHome]] page and EM-05…EM-07 on the §1.2 [[b5.2 Morning care - evaluation methods>>doc:1 Foundation.b5 Evaluation Methods.b5\.2 Morning care - evaluation methods.WebHome]] page. New Measures start at M-20 (M-19 Brushing quality was added for O-32), new Evaluation Methods at EM-08.|Nothing|Closed
+|O-10|Resolved. M-12…M-18 are on the §1.2 [[b4.2 Morning care - measures>>doc:1 Foundation.b4 Measures.b4\.2 Morning care - measures.WebHome]] page and EM-05…EM-07 on the §1.2 [[b5.2 Morning care - evaluation methods>>doc:1 Foundation.b5 Evaluation Methods.b5\.2 Morning care - evaluation methods.WebHome]] page. New Measures start at M-25 (M-19 Brushing quality was added for O-32; M-20 to M-24 belong to the main concept), new Evaluation Methods at EM-09 (EM-08 belongs to the main concept).|Nothing|Closed
 |O-11|Resolved (group decision: in scope). Notifying a care worker on immediate risk of serious harm stays in F9 and step 10. VT-08's non-negotiable floor now says "none identified", and the escalation rule has moved into its current resolution, since it is a design decision, not a regulation. PS-08's out-of-scope now excludes only emergency //treatment//. Because there is no camera, a possible emergency is inferred from no sensor change and no response (TECH-11 limitation, step 10).|Nothing|Closed
 |O-12|Resolved. SA-10 (the care worker's morning round) now records the care-continuity and handover task, and its Goal grounds the new OBJ-15, which F10 (and F9) serve.|Nothing|Closed
 |O-13|Resolved. UC04-F8-CL19 now grounds on HFC-12 (Personhood and malignant social psychology, Kitwood 1997) in §1.2, not on a Claim-level citation.|Nothing|Closed

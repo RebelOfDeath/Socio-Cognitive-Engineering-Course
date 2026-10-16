@@ -2,7 +2,7 @@
 title: b5.1 Prototype, observation and two-home comparison
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four methods. A prototype shows every Function and is verified against staged events (EM-01). Observers code the lounge and dining room live, without recording: introductions, conversation, emotion and time together (EM-02). A formative comparison sets a care home with the System against an unrelated home without it (EM-03). Short interviews cover privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates.
+**Abstract.** Four methods. A prototype shows every Function and is verified against staged events (EM-01). Observers code the lounge and dining room live, without recording: introductions, conversation, emotion and time together (EM-02). A formative comparison sets a care home with the System against an unrelated home without it (EM-03). Short interviews cover privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates. EM-08 is the summative two-site controlled trial of Kinnect, run as ER-03.
 
 = Evaluation Method - Prototype: demonstration and staged verification [EM-01] =
 
@@ -205,10 +205,53 @@ produces → Evidence for UC02-F3-CL1, UC01-F3-CL2, UC02-F1-CL3, UC03-F5-CL6, UC
 
 produces → Evidence for UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-CL8; applies → M-09.
 
+= Evaluation Method - Two-site controlled trial [EM-08] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-08
+|Name|Two-site controlled trial (summative)
+|Status|In Progress
+|Evidence basis|Cluster-controlled trial: allocation by care home, so that residents in the two arms do not share space or staff (Donner & Klar, 2000). Person-centred care has been evaluated in residential dementia care with allocation by home (Chenoweth et al., 2014).
+|Procedure summary|(((
+The summative counterpart of EM-03, with the same structure of one home per arm. It is shorter, adds sensor and on-robot conversation measures, and follows a fixed facilitation protocol. Two similarly equipped care homes, at the same time: one runs Kinnect, the other keeps its standard social activity programme. Five weeks in all, after a setup phase.
+
+1. Weeks -4 to 0: ethics approval, consent and assent, MMSE or MoCA screening, baseline CMAI, badge and beacon installation, allocation of the homes to the arms, staff training. Weeks -2 to 0: baseline badge data and room scans at both homes.
+1. Week 1: daily one-to-one sessions with Kinnect; persona profiles; usability baseline.
+1. Weeks 2 to 3: compatibility matching; Kinnect introduces matched peers and invites residents to meet.
+1. Weeks 3 to 4: joint icebreaker sessions and check-ins with matched pairs; staff support informal meetings.
+1. Week 5: final CMAI, badge and conversation data analysis, debriefing interviews.
+
+Inclusion: MMSE 14 to 24 or MoCA 10 to 22; can reach communal areas; can talk in Kinnect's language; representative consent and the resident's own assent. Target: 30 residents per home, so that 25 complete.
+
+Analysis: ANCOVA on the change from baseline (weeks -2 to 0) to weeks 4 and 5, with M-21 joint social time as the primary outcome; dyadic interactions and bedroom time as key secondary outcomes under Holm's correction; an exact binomial test for first-time usability. The full protocol and analysis plan are in ER-03.
+)))
+|Purpose|Validation
+|Human subjects required|Yes. Residents with mild to moderate dementia or MCI at both homes; care staff at both homes.
+|Measures used|M-20 to M-24; M-04 and M-06 room scans as the check on M-21
+|Cost and feasibility|High. Access to two care homes, ethics approval, badges, beacons and observers at both homes, Pepper with an on-device accelerator (TECH-18) at the intervention home, staff training. About nine weeks per home from setup to offboarding. No cost estimate yet.
+|Known limitations|(((
+* One home per arm: as in EM-03, differences between the homes cannot be separated from the effect of Kinnect.
+* Hawthorne and observation effects in both arms (McCambridge et al., 2014).
+* One regional cultural context; replication in the Netherlands and India is planned.
+* Home-wide events, seasonal illness and residents' health affect communal-area use independently of the intervention.
+* Speech recognition errors with dementia speech can disrupt the dialogue (Luz et al., 2021).
+)))
+
+== Graph edges ==
+
+produces → Evidence for the ER-03 primary and secondary Claims (no IDs yet); applies → M-20 to M-24.
+
 = References =
 
+* Chenoweth, L. et al. (2014). PerCEN: a cluster randomized controlled trial of person-centered residential care and environment for people with dementia. //International Psychogeriatrics//, 26(7), 1147-1160.
 * Dewing, J. (2007). Participatory research: a method for process consent with persons who have dementia. //Dementia//, 6(1), 11-25.
-* Dean et al. (1993); Lawton et al. (1996); Mihailidis et al. (2008); Niemeijer et al. (2010, 2015). See b4.1 References.
+* Dean et al. (1993); Lawton et al. (1996); Luz et al. (2021); Mihailidis et al. (2008); Niemeijer et al. (2010, 2015). See b4.1 References.
+* Donner, A. & Klar, N. (2000). //Design and analysis of cluster randomization trials in health research//. Arnold.
+* McCambridge, J., Witton, J. & Elbourne, D. R. (2014). Systematic review of the Hawthorne effect: new concepts are needed to study research participation effects. //Journal of Clinical Epidemiology//, 67(3), 267-277.
 * Mental Health Foundation (2016). See a1.1 References.
 * Riek, L. D. (2012). Wizard of Oz studies in HRI: a systematic review and new reporting guidelines. //Journal of Human-Robot Interaction//, 1(1), 119-136.
 * Scriven, M. (1967). The methodology of evaluation. In R. W. Tyler, R. M. Gagné & M. Scriven (Eds.), //Perspectives of Curriculum Evaluation// (pp. 39-83). Rand McNally.

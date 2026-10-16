@@ -1,5 +1,5 @@
 %%WIKI-SYNC-META%%
-title: d1 Morning care - foundation coherence
+title: d2 Morning care - foundation coherence
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
 = Foundation Coherence =
@@ -249,7 +249,7 @@ No Value Tension has been tested yet, since no Evaluation Method has been run. T
 == Further gaps ==
 
 |=Gap|=Stance
-|SA-09, PS-08, VT-13 and TECH-15 form one cluster with no Claim, no Measure and no Evaluation Method.|Deferred with UC05 (§2.3 Open item O-22). New Measures for it start at M-20 and new Evaluation Methods at EM-08 (§2.3 Open item O-10).
+|SA-09, PS-08, VT-13 and TECH-15 form one cluster with no Claim, no Measure and no Evaluation Method.|Deferred with UC05 (§2.3 Open item O-22). New Measures for it start at M-25 and new Evaluation Methods at EM-09, since M-20 to M-24 and EM-08 belong to the main concept's Kinnect study (§2.3 Open item O-10).
 |VT-13 has no testing Claim.|Deferred with UC05, as above. Every other tension has at least one testing Claim or Premise.
 |HV-09 Autonomy and HV-10 Dignity are not addressed by any selected Technology Option.|Both are carried by Function behaviour: F8's wait and offer-style prompts follow the VT-08, VT-10 and VT-11 resolutions. They are tested by UC04-F8-CL17 (HV-09) and UC04-F8-CL19 (HV-10).
 |No Technology Option addresses the Goal on SA-10 directly.|SA-10's Goal reaches the design through HV-14 (addressed by TECH-10 and TECH-12) and OBJ-15. Recorded.

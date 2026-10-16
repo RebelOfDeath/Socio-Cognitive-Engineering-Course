@@ -2,7 +2,7 @@
 title: a1.2 Morning care - design scenarios
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Design Scenarios DS-04 and DS-05 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[a1.1 Two walks with Jan and Elena>>doc:2 Specification.a1 Design Scenario.a1\.1 Two walks with Jan and Elena.WebHome]]); IDs continue after the Meaningful Connections set.
+**Abstract.** Design Scenarios DS-04 and DS-05 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[a1.1 Elena's first week>>doc:2 Specification.a1 Design Scenario.a1\.1 Elena's first week.WebHome]]); IDs continue after the Meaningful Connections set.
 
 {{html}}
 <label for="status">Status:</label>

@@ -21,7 +21,7 @@ c1 Team Design Pattern	Repair on walks; 4 references use the old SA IDs	Write a 
 d1 How the guide speaks	Built around "the guide" on walks; 3 references use the old SA IDs	IDP-02 (ask first) and IDP-03 (truthful deferral) carry over. Apply IDP-01 (wait, then redirect) to conversation after an introduction.
 Evaluation		
 a Artifacts	"a1 Walking with Meaning - artifacts" is a byte-for-byte copy of the morning-care page (AT-02), and both are numbered a1	Delete the copy, or replace it with the main artifact (AT-01). Move morning care to a2.
-b Reports, c Evidence, d	Only morning-care pages exist, numbered b1, c1 and d	When main pages are added, they take b1 and c1 and morning care moves to b2 and c2.
+b Reports, c Evidence, d	b1 is now ER-03, the Kinnect two-site study design, and morning care moved to b2. Evidence and d still have only morning-care pages, numbered c1 and d	When main Evidence is added, it takes c1 and morning care moves to c2. ER-03's Open items list what the study still needs (Claim IDs, the sample-size assumptions, one home per arm, badges versus TECH-09, building TECH-18).
 Across the wiki		
 Concept name	"Walking with meaning" appears in 17 section indexes and in the morning-care abstracts	Choose a new concept name (your call), then replace it in one pass.
 References	Lundin-Olsson, Montero-Odasso and Detweiler support only walk content	Remove them once the pages that cite them change.

@@ -9,5 +9,5 @@ syntax: xwiki/2.1
 = Concepts =
 
 |=Page|=Contents|=Status
-|[[b1 Pair walk and walk alone>>doc:2 Specification.b Use Cases with Claims and Premises.b1 Pair walk and walk alone.WebHome]]|OBJ-01 to OBJ-08; UC01 A walk with a fellow resident, UC02 A walk on your own; F1 to F6; UC01-F1-PR1 to UC01-F6-PR6; UC01-F2-CL1 to UC01-F1-CL9; Open items O-1 to O-8|**Current**
+|[[b1 Welcoming, introducing and following up>>doc:2 Specification.b Use Cases with Claims and Premises.b1 Welcoming, introducing and following up.WebHome]]|OBJ-01 to OBJ-09; UC01 Welcoming a newcomer, UC02 Introducing two residents, UC03 Following up; F1 to F6; six Premises, UC02-F1-PR1 to UC02-F6-PR6; nine Claims, UC02-F3-CL1 to UC02-F3-CL9; Open items O-1 to O-9|**Current**
 |[[b2 Morning care - use cases, claims and premises>>doc:2 Specification.b Use Cases with Claims and Premises.b2 Morning care - use cases, claims and premises.WebHome]]|OBJ-10 to OBJ-15; UC04 Tooth brushing, UC05 Medication (deferred); F7 to F10; PR7 to PR10; CL15 to CL25; Open items O-10 to O-40|Separate concept
