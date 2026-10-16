@@ -1,0 +1,28 @@
+Left to change
+Page	What still centres on walks	Change needed
+Foundation		
+a1 Index	The "Walking with meaning in brief" section describes the walking guide	Rewrite the summary around introductions. The ask-first and no-deception points carry over.
+a2.1 Stakeholders	Small leftovers: "set walk length", "every resident back, unharmed", "garden and exits"	Review once the problem scenarios are rewritten.
+a3.1 What goes wrong on a walk	All six scenarios happen on walks, and 18 references use the old SA IDs	Rebuild around first contact. PS-03 (unwanted pairing) and PS-05 (secret passed on) carry over. PS-06 (nobody to talk to) and PS-02 (painful question) adapt to moving in. Drop PS-01 (slip on a walk) and PS-04 (tiredness on a walk), or keep them only as walk support.
+b1.1 Human Values	The values stand, but their meanings are written for walks ("walk or not, how long", "no praise for walking")	Rewrite the meanings for meeting and inviting. Make "Held by" match a2.1.
+b2.1 Value Tensions	VT-01 (talking while walking) and VT-06 (walking alone) only make sense on walks	Drop or demote VT-01 and VT-06. Recast VT-04 as matching on personal facts and VT-07 as pressure to accept an introduction.
+b3.1 Human Factors Concepts	HFC-01 (fresh air) and HFC-02 (walking while talking) are about walks. HFC-03 to HFC-08 carry over.	Keep HFC-01 as the reason to walk, and check its evidence first, because Forbes (2015) found no proven effect on dementia. Drop HFC-02. Add concepts for the move into the home, shared background as a basis for friendship, and shyness or fear of rejection.
+b4.1 Measures	M-02 counts walks, M-06 rates safety while talking, and observers rate on walks	Make introductions, accept/decline, repeat contact and friendships over weeks the main outcomes, with walks together as secondary. M-03 and M-08 to M-10 carry over.
+b5.1 Evaluation Methods	EM-02 observes walks and EM-03 runs ABAB per walking pair	Observe introductions in the lounge and dining room, and run ABAB per newcomer or unit. EM-01 and EM-04 carry over.
+c1.1 Technology Options	The pocket guide (TECH-02), landmark beacons (TECH-03) and walker model (TECH-06) exist for walks	Move Pepper from the garden door to the entrance or lounge. Turn the walker model into a resident profile for matching (life story, preferences, past ties). Consent-gated exchange (TECH-05) becomes the basis for matching. Review the pocket guide and beacons.
+d Foundation Coherence	Only the morning-care page exists, and it's numbered d1	Add a main d1 page and move morning care to d2.
+Specification		
+a1.1 Design Scenarios (Jan and Elena)	Both scenarios happen on walks	New scenario: Elena's first week. The System finds a past she shares with Jan (post office and bakery in the same town?) and introduces them, and Jan invites her for a walk.
+a2.1 Human Personas	Jan is "her walking partner"	Make Elena the newcomer and Jan a long-time resident, and give both preferences and past ties. Myra (the care worker) stays.
+a2.2 Robot Profile	RP-02 is the pocket guide, and RP-01 is Pepper at the garden door	Make RP-01 (ask, introduce, welcome) the main profile, placed at the entrance. Demote or drop RP-02.
+a3 Objective Stories	OS-01 (a slip on a walk) and OS-03 ("Not a dog to be walked") are walk stories	Rewrite both for introductions. OS-02 (painful questions go to a person) carries over.
+b1 Use Cases (pair walk and walk alone)	UC01 and UC02 are walks. F2 (keep the thread), F3 (pace and rest) and F5 (call for help on walks) are walk functions. 15 references use the old SA IDs.	Write new use cases for welcoming a newcomer, introducing two residents and following up an invitation, with a walk as the suggested first activity. F1 (ask first), F4 (defer sensitive topics) and F6 (short record) carry over. Rebuild the premises and claims; UC01-F1-CL5 is closest to the new main claim.
+c1 Team Design Pattern	Repair on walks; 4 references use the old SA IDs	Write a pattern for who introduces whom (staff, the System, residents) and who decides.
+d1 How the guide speaks	Built around "the guide" on walks; 3 references use the old SA IDs	IDP-02 (ask first) and IDP-03 (truthful deferral) carry over. Apply IDP-01 (wait, then redirect) to conversation after an introduction.
+Evaluation		
+a Artifacts	"a1 Walking with Meaning - artifacts" is a byte-for-byte copy of the morning-care page (AT-02), and both are numbered a1	Delete the copy, or replace it with the main artifact (AT-01). Move morning care to a2.
+b Reports, c Evidence, d	Only morning-care pages exist, numbered b1, c1 and d	When main pages are added, they take b1 and c1 and morning care moves to b2 and c2.
+Across the wiki		
+Concept name	"Walking with meaning" appears in 17 section indexes and in the morning-care abstracts	Choose a new concept name (your call), then replace it in one pass.
+References	Lundin-Olsson, Montero-Odasso and Detweiler support only walk content	Remove them once the pages that cite them change.
+wiki-content root	"Walking with meaning - chapters.pdf" and make-walking-pdf.js	Regenerate or rename both after the rewrite.

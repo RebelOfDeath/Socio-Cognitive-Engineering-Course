@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Builds 'Walking with meaning - chapters.pdf': every current-concept chapter of
+// Builds 'Meaningful Connections - chapters.pdf': every current-concept chapter of
 // 1 Foundation and 2 Specification, in full, in one file.
 //
 // Chapters are found, not listed: every .xwiki page under those two folders except
@@ -7,7 +7,7 @@
 // Markup is rendered with the xwiki-preview extension; Chromium prints the PDF.
 //
 // Usage:
-//   node wiki-content/make-walking-pdf.js [output.pdf]
+//   node wiki-content/make-connections-pdf.js [output.pdf]
 //
 // Environment:
 //   XWIKI_PREVIEW  xwiki-preview folder (default: ~/Desktop/Desktop/xwiki-preview)
@@ -24,7 +24,7 @@ const { pathToFileURL } = require('url');
 
 const ROOT = __dirname;
 const PARTS = [['1 Foundation', 'Foundation'], ['2 Specification', 'Specification']];
-const OUT = path.resolve(process.argv[2] || path.join(ROOT, 'Walking with meaning - chapters.pdf'));
+const OUT = path.resolve(process.argv[2] || path.join(ROOT, 'Meaningful Connections - chapters.pdf'));
 const HOME = os.homedir();
 const PREVIEW = process.env.XWIKI_PREVIEW || path.join(HOME, 'Desktop', 'Desktop', 'xwiki-preview');
 
@@ -145,9 +145,9 @@ for (const [folder, part] of PARTS) {
 }
 
 const doc = `<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>Walking with meaning: chapters</title><style>${CSS}</style></head><body>
+<title>Meaningful Connections: chapters</title><style>${CSS}</style></head><body>
 <div class="cover"><div class="kicker">SCE 2026 · Group 04</div>
-<h1>Walking with meaning</h1>
+<h1>Meaningful Connections</h1>
 <p>The ${chapters.length} current-concept chapters of the Foundation and Specification, in full,
 as they stand in wiki-content. Index pages and the separate Morning Care pages are left out.</p></div>
 <nav class="toc"><h2>Contents</h2><ol>${toc.join('')}</ol></nav>

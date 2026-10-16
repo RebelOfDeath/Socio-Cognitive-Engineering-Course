@@ -100,6 +100,6 @@ Multiple people edit this wiki, so the tool checks versions before overwriting a
 
 `wiki-sync/delete.py` deletes pages (or a whole subtree with `--space`) directly on the wiki, including outside the synced tree; run `pull` afterwards.
 
-## Walking with meaning PDF
+## Meaningful Connections PDF
 
-`node wiki-content/make-walking-pdf.js` builds `Walking with meaning - chapters.pdf` from the current-concept pages of `1 Foundation` and `2 Specification` (index pages and the separate Morning care pages are left out). Both files stay local: the sync only handles `.xwiki` files and `.attachments` folders.
+`node wiki-content/make-connections-pdf.js` builds `Meaningful Connections - chapters.pdf` from the current-concept pages of `1 Foundation` and `2 Specification` (index pages and the separate Morning care pages are left out). Both files stay local: the sync only handles `.xwiki` files and `.attachments` folders.

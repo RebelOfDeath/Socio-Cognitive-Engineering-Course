@@ -155,7 +155,7 @@ style: |
 - Identity: the old trade, the old town
 -->
 
-## Walking with meaning
+## Meaningful Connections
 
 <!-- _class: verbs -->
 

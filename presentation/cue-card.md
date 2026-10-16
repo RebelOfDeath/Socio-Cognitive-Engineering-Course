@@ -1,4 +1,4 @@
-# Walking with meaning: cue card
+# Meaningful Connections: cue card
 
 **1. Original concept: Tooth brushing**
 
@@ -36,7 +36,7 @@
 - Privacy: no secret passed on; nothing leaves the care home
 - Identity: the old trade, the old town
 
-**6. Walking with meaning**
+**6. Meaningful Connections**
 
 - Walk: fresh air and movement stimulate memory and steady emotions
 - Talk: with a fellow resident, or with the guide where agreed
