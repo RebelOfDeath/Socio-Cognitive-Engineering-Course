@@ -1,0 +1,256 @@
+%%WIKI-SYNC-META%%
+title: b3.1 Settling in, meeting and trust
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Eleven concepts. Why suggest a walk: time outdoors and on foot may lift mood, though the evidence in dementia is weak (HFC-01). Why newcomers withdraw: moving in is a loss, and adjusting takes months (HFC-02). Why residents do not meet on their own: each waits for the other (HFC-10), refusing a request is hard (HFC-11), and residents misread each other's interest (HFC-05). What brings them together: a shared background (HFC-09) and common ground (HFC-04). How talk survives a slip: self-repair first (HFC-03). What to protect: face (HFC-06). What withdrawal costs: loneliness (HFC-07). Why no deception: trust (HFC-08).
+
+= Human Factors Concept - Fresh air, movement and mood [HFC-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-01
+|Name|Fresh air, movement and mood
+|Status|In Progress
+|Evidence basis|Literature only. Evidence in dementia is weak (O-1).
+|Concept statement|Time outdoors and on foot may lift mood and help people keep up daily activities. Side by side, on the move, talk comes more easily and a pause costs less. For these reasons the System suggests a walk as a first activity for two.
+|Human factor addressed|Mood; daily functioning; conversation
+|Proposed mechanism|Exercise maintains physical function. Time in nature lowers rumination. Walking side by side asks for no eye contact, and the surroundings give talk a subject.
+|Source|Forbes et al. (2015), Cochrane review: in dementia, promising evidence that exercise helps with daily activities; no clear effect on cognition, mood or behaviour; evidence of very low quality. Bratman et al. (2015): a nature walk lowered rumination in healthy adults. Evans & Jones (2011): walking interviews draw more talk about place.
+|Conditions and population of validity|Mostly healthy adults; evidence in dementia weak and mixed.
+|Predicted Effect type|More pleasure in time spent together; calmer afterwards
+|Associated Measures|M-03, M-06
+
+= Human Factors Concept - Moving into a care home [HFC-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-02
+|Name|Moving into a care home
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Moving into a care home means losing a home, a routine and neighbours, often by someone else's decision. Newcomers with dementia take weeks to months to adjust, and many withdraw in that time.
+|Human factor addressed|Adjustment; orientation; loneliness
+|Proposed mechanism|A newcomer meets many people at once and keeps few names. Expecting to return home, they see little point in getting to know anyone. A few introductions, spread over the first weeks and repeated, leave fewer faces to learn and some to recognise.
+|Source|Sury et al. (2013), review: moving in is a time of loss and distress for people with dementia and their families, and few interventions have been tested. Victor (2012): loneliness in care homes.
+|Conditions and population of validity|Mostly qualitative studies, across varied homes and countries.
+|Predicted Effect type|Newcomers have someone to talk to within weeks, and spend less of the day in their room
+|Associated Measures|M-02, M-05, M-06
+
+= Human Factors Concept - Conversation repair [HFC-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-03
+|Name|Conversation repair
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Speakers prefer to fix their own slips. In dementia, slips become more frequent and repair succeeds less often.
+|Human factor addressed|Conversation; face
+|Proposed mechanism|Self-repair needs a moment. Help offered too soon takes the turn and shows the slip. A cue to the last topic, or to a shared one, lets the talk go on. Just after an introduction, a stalled conversation is when two residents give up on each other.
+|Source|Schegloff et al. (1977): preference for self-repair. Orange et al. (1996): repair in Alzheimer's disease.
+|Conditions and population of validity|Conversation analysis of healthy talk; small samples in Alzheimer's disease.
+|Predicted Effect type|Talk after an introduction survives slips, without embarrassment
+|Associated Measures|M-04
+
+= Human Factors Concept - Common ground and reminiscence [HFC-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-04
+|Name|Common ground and reminiscence
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Conversation rests on what both people know. Old memories outlast recent ones, and a past that two residents share gives them common ground.
+|Human factor addressed|Conversation; identity
+|Proposed mechanism|Residents rarely discover what they share (PS-03). The System can find it in two consented profiles and mention it once, at the introduction. A topic from early adulthood is recalled with least effort.
+|Source|Clark & Brennan (1991): grounding in communication. Rubin et al. (1998): early adulthood is recalled best. Woods et al. (2018), Cochrane review: small, setting-dependent benefits of reminiscence.
+|Conditions and population of validity|Reminiscence studied in staff-led groups; benefits small.
+|Predicted Effect type|More conversation after an introduction; more positive interaction
+|Associated Measures|M-04, M-05
+
+= Human Factors Concept - Theory of mind [HFC-05] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-05
+|Name|Theory of mind
+|Status|In Progress
+|Evidence basis|Literature and group reasoning.
+|Concept statement|Understanding what others know, believe and feel weakens in dementia. Two residents often misread each other's interest, discomfort or wish to stop.
+|Human factor addressed|Social cognition; consent
+|Proposed mechanism|A polite yes is taken for a willing one, and a nod for a lack of interest (PS-03, PS-04). Nobody reads these states reliably, the System included, so it asks each resident privately instead of inferring.
+|Source|Bora et al. (2015), meta-analysis: theory of mind impaired in Alzheimer's disease.
+|Conditions and population of validity|Measured in laboratory tasks, not in everyday conversation.
+|Predicted Effect type|Misreadings between residents; fewer when each is asked privately
+|Associated Measures|M-07
+
+= Human Factors Concept - Face and personhood [HFC-06] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-06
+|Name|Face and personhood
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Each interaction affirms or erodes a person's standing. Corrections, quizzing and sing-song speech (elderspeak) erode it.
+|Human factor addressed|Experienced dignity; withdrawal
+|Proposed mechanism|Help addressed to one person marks them as failing. Addressed to both, as a statement, it marks nobody: "Elena, Jan, good to see you both."
+|Source|Goffman (1967): face-work. Kitwood (1997): personhood. Sabat (2001): the self in Alzheimer's disease. Williams et al. (2009): elderspeak provokes resistance.
+|Conditions and population of validity|Care-staff speech; robot voices not studied.
+|Predicted Effect type|Embarrassment and withdrawal; descriptions of being talked down to
+|Associated Measures|M-07, M-09 (code T)
+
+= Human Factors Concept - Coping, withdrawal and loneliness [HFC-07] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-07
+|Name|Coping, withdrawal and loneliness
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Aware of decline, people protect themselves: some carry on as before, some face it openly. Avoiding company protects face and leads to loneliness. Withdrawal is gradual, so others notice it late.
+|Human factor addressed|Coping with cognitive loss; loneliness
+|Proposed mechanism|Each awkward meeting makes the next one less likely. A first meeting on shared ground, with an easy way out, lowers the cost of trying. Noticing a pattern of staying in lets staff offer company before withdrawal sets in.
+|Source|Clare (2003): coping in early Alzheimer's disease. Victor (2012): loneliness in care homes. Holwerda et al. (2014): loneliness predicted dementia onset.
+|Conditions and population of validity|Coping studied in early dementia, at home. Loneliness measures in dementia of uncertain validity.
+|Predicted Effect type|More willingness to meet others; less loneliness over months
+|Associated Measures|M-02, M-08
+
+= Human Factors Concept - Truth and trust [HFC-08] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-08
+|Name|Truth and trust
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Lies told to spare distress are common in dementia care, and contested. Once found out, they cost trust. A blunt truth from a stranger causes grief.
+|Human factor addressed|Trust; grief
+|Proposed mechanism|Trust builds on consistent, truthful answers from known people. Gentle redirection answers the feeling without saying anything untrue.
+|Source|Mental Health Foundation (2016): inquiry on truth and lying in dementia care. James et al. (2006): staff lying, and guidelines.
+|Conditions and population of validity|UK care practice; answers given by a System not studied.
+|Predicted Effect type|Trust kept; fewer repeated painful questions
+|Associated Measures|M-09 (code U), M-10
+
+= Human Factors Concept - Similarity and shared background [HFC-09] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-09
+|Name|Similarity and shared background
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|People tend to befriend people like themselves: from the same place, generation or trade, or with the same interests. Residents with dementia still form and keep friendships.
+|Human factor addressed|Friendship formation; conversation
+|Proposed mechanism|Similarity makes the other person more predictable and gives talk a subject. A shared hometown or trade is often the first thing two strangers look for. With memory loss, residents seldom find it on their own.
+|Source|McPherson et al. (2001): review of homophily in social networks. de Medeiros et al. (2012): friendships among people with dementia in long-term care.
+|Conditions and population of validity|Homophily established in general populations; untested as a matching rule in care homes.
+|Predicted Effect type|Matches on a shared background lead to more repeat contact than chance meetings
+|Associated Measures|M-02, M-05
+
+= Human Factors Concept - Fear of rejection and the liking gap [HFC-10] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-10
+|Name|Fear of rejection and the liking gap
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|People expect a conversation with a stranger to go worse than it does, and underestimate how much a new acquaintance liked them. So they rarely make the first move, and seldom follow up a good first talk.
+|Human factor addressed|Social initiative; friendship formation
+|Proposed mechanism|Each side waits for the other (PS-01, PS-03). A third party who asks both privately, and introduces them only when both agree, removes the risk of a "no" that the other hears.
+|Source|Epley & Schroeder (2014): commuters expected solitude to be more pleasant, yet enjoyed talking to a stranger more. Boothby et al. (2018): the liking gap persisted after conversations of all lengths and over months.
+|Conditions and population of validity|Healthy adults, mostly students and commuters; not tested in dementia.
+|Predicted Effect type|More introductions accepted when asked privately; more second meetings
+|Associated Measures|M-02, M-07
+
+= Human Factors Concept - The difficulty of saying no [HFC-11] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|HFC-11
+|Name|The difficulty of saying no
+|Status|In Progress
+|Evidence basis|Literature only.
+|Concept statement|Refusing a request face to face is uncomfortable, so people agree to things they would rather not do. They also stay in conversations longer than they want, because ending one feels rude.
+|Human factor addressed|Consent; autonomy
+|Proposed mechanism|People who ask underestimate how hard refusing is. A private question, with a "no" that reaches nobody, lowers the cost of declining. A meeting with a natural end, and leave to go at any time, lowers the cost of stopping.
+|Source|Bohns (2016): requesters underestimate compliance by about half, because they miss how awkward refusing is. Mastroianni et al. (2021): conversations rarely end when both people want them to.
+|Conditions and population of validity|Healthy adults, with strangers and acquaintances.
+|Predicted Effect type|Polite acceptances followed by avoidance (PS-04); fewer when residents are asked privately
+|Associated Measures|M-07, M-09 (code P)
+
+== Graph edges ==
+
+HFC-01: grounds → UC02-F3-CL1; explains → HV-05; associated-measure → M-03, M-06.
+
+HFC-02: grounds → UC01-F3-CL2; explains → HV-01, HV-05, HV-06; associated-measure → M-02, M-05, M-06.
+
+HFC-03: grounds → UC02-F3-CL1; explains → HV-02, HV-06; associated-measure → M-04.
+
+HFC-04: grounds → UC02-F3-CL1; explains → HV-06, HV-07; associated-measure → M-04, M-05.
+
+HFC-05: grounds → UC02-F1-CL3; explains → HV-01, HV-06; associated-measure → M-07.
+
+HFC-06: grounds → UC01-F3-CL5; explains → HV-02; associated-measure → M-07, M-09.
+
+HFC-07: grounds → UC02-F3-CL9; explains → HV-05, HV-06; associated-measure → M-02, M-08.
+
+HFC-08: grounds → UC01-F4-CL8; explains → HV-08; associated-measure → M-09, M-10.
+
+HFC-09: grounds → UC02-F3-CL1; explains → HV-06, HV-07; associated-measure → M-02, M-05.
+
+HFC-10: grounds → UC02-F3-CL1, UC03-F5-CL6; explains → HV-06; associated-measure → M-02, M-07.
+
+HFC-11: grounds → UC02-F1-CL3; explains → HV-01; associated-measure → M-07, M-09.
+
+= References =
+
+* Bohns, V. K. (2016). (Mis)understanding our influence over others: a review of the underestimation-of-compliance effect. //Current Directions in Psychological Science//, 25(2), 119-123.
+* Boothby, E. J., Cooney, G., Sandstrom, G. M. & Clark, M. S. (2018). The liking gap in conversations: do people like us more than we think? //Psychological Science//, 29(11), 1742-1756.
+* Bora et al. (2015); Bratman et al. (2015); Clare (2003); de Medeiros et al. (2012); Forbes et al. (2015); James et al. (2006); Mental Health Foundation (2016); Orange et al. (1996); Schegloff et al. (1977); Victor (2012); Woods et al. (2018). See a1.1 References.
+* Clark, H. H. & Brennan, S. E. (1991). Grounding in communication. In L. B. Resnick, J. M. Levine & S. D. Teasley (Eds.), //Perspectives on Socially Shared Cognition// (pp. 127-149). American Psychological Association.
+* Epley, N. & Schroeder, J. (2014). Mistakenly seeking solitude. //Journal of Experimental Psychology: General//, 143(5), 1980-1999.
+* Evans, J. & Jones, P. (2011). The walking interview: methodology, mobility and place. //Applied Geography//, 31(2), 849-858.
+* Goffman, E. (1967). //Interaction Ritual: Essays on Face-to-Face Behavior//. Anchor Books.
+* Holwerda, T. J. et al. (2014). Feelings of loneliness, but not social isolation, predict dementia onset: results from the Amsterdam Study of the Elderly (AMSTEL). //Journal of Neurology, Neurosurgery & Psychiatry//, 85(2), 135-142.
+* Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press.
+* Mastroianni, A. M., Gilbert, D. T., Cooney, G. & Wilson, T. D. (2021). Do conversations end when people want them to? //PNAS//, 118(10), e2011809118.
+* McPherson, M., Smith-Lovin, L. & Cook, J. M. (2001). Birds of a feather: homophily in social networks. //Annual Review of Sociology//, 27, 415-444.
+* Rubin, D. C., Rahhal, T. A. & Poon, L. W. (1998). Things learned in early adulthood are remembered best. //Memory & Cognition//, 26(1), 3-19.
+* Sabat, S. R. (2001). //The Experience of Alzheimer's Disease: Life Through a Tangled Veil//. Blackwell.
+* Sury, L., Burns, K. & Brodaty, H. (2013). Moving in: adjustment of people living with dementia going into a nursing home and their families. //International Psychogeriatrics//, 25(6), 867-876.
+* Williams, K. N., Herman, R., Gajewski, B. & Wilson, K. (2009). Elderspeak communication: impact on dementia care. //American Journal of Alzheimer's Disease & Other Dementias//, 24(1), 11-20.

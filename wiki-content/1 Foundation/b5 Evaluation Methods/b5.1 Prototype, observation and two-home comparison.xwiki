@@ -1,0 +1,215 @@
+%%WIKI-SYNC-META%%
+title: b5.1 Prototype, observation and two-home comparison
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Four methods. A prototype shows every Function and is verified against staged events (EM-01). Observers code the lounge and dining room live, without recording: introductions, conversation, emotion and time together (EM-02). A formative comparison sets a care home with the System against an unrelated home without it (EM-03). Short interviews cover privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates.
+
+= Evaluation Method - Prototype: demonstration and staged verification [EM-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-01
+|Name|Prototype: demonstration and staged verification
+|Status|In Progress
+|Evidence basis|Staged events against a timestamped reference log, as for the COACH prompting system (Mihailidis et al., 2008). Operator-voiced build: the Wizard-of-Oz method (Riek, 2012).
+|Procedure summary|(((
+One Artifact (AT-01) in three builds:
+
+* Build A, operator-voiced: a researcher triggers every line Pepper says from a console. Formative use with a few residents of the System home before EM-03 begins: wording, pace, how the private question feels. Observed under EM-02.
+* Build B, automated: matching, the consent register, introductions, notes to staff and the presence count run on the server. The operator approves each introduction before it plays.
+* Build C, demonstration: role-players; events can be injected; the match panel on a screen.
+
+Staged verification on Build B: 20 trials per event (50 for disclosure events), against the reference log. Role-players only.
+)))
+|Purpose|Verification; demonstration; formative (Build A)
+|Human subjects required|Builds B and C: no; team members act. Build A: yes, a few residents under EM-02 rules.
+|Measures used|M-01, M-10; M-03, M-07 (Build A)
+|Cost and feasibility|Moderate. Pepper from the course, a laptop as server, a Wi-Fi router, a tablet for the coordinator, presence parts for two test rooms. About 6-8 weeks to Build B.
+|Known limitations|Role-players do not behave like residents. Pepper's recognition of older voices is untested (O-3); residents can answer on the tablet instead. In Build A the operator adapts better than the System will.
+
+== Kit ==
+
+|=Part|=Prototype|=Stands in for
+|Robot|Pepper in the lounge; tablet for photos and yes/no|TECH-01
+|Server|Laptop on a Wi-Fi router with no internet uplink; one encrypted store per resident|TECH-04
+|Profiles and consent|Coordinator's tablet: profile items, shareable or private, and the relationship map|TECH-05, TECH-06
+|Presence count|Parts as in TECH-03, in two test rooms|TECH-03
+|Staff|Phone with the notes app|TECH-04
+|Operator|Console and match panel on a laptop|Build A voice; Build B approvals
+
+== Match panel ==
+
+Shown live, for a suggested pair: the items each resident released, and the blocked items with the reason; whether the coordinator approved; each resident's answer so far; the line Pepper will say. Below: why the pair was suggested. The panel shows no item that its owner has not released.
+
+== Demonstration script (Build C) ==
+
+|=Scene|=Events|=What the System shows
+|1 A newcomer's first week (UC01)|Welcome on arrival; one introduction on day two and another on day four; names repeated at the next meal; "When can I go home?"|Few faces at a time; names given to both, as statements; a truthful deferral and a note to the trusted person
+|2 Introducing two residents (UC02)|The coordinator approves a match; each resident asked alone; one says no in a second pair|Introduction only for the pair where both said yes, with one shared item and a suggested walk; the other pair's "no" never mentioned
+|3 Following up (UC03)|An agreed meeting time; one resident cannot come; "Again?" asked privately; a presence pattern for a resident who opted in, and none for one who did not|A note to the care worker; another time offered; one note about the pattern, to the named care worker only
+|Close|Record and devices inspected|Only the listed items in the record; no audio file; no traffic outside the home network
+
+== Staged verification ==
+
+|=Event|=Required behaviour|=Criterion (proposed; O-2)
+|Match not approved by the coordinator|No resident asked|0/20
+|Item its owner did not release|Never used to match or introduce|0/50
+|Item blocked by the map for this pair|Never spoken|0/50
+|One resident says no|No introduction; the "no" never mentioned to the other|0/50
+|Introduction|Names given to both, as statements; at most one shared item, released by both|20/20
+|Question on a listed sensitive topic|Truthful deferral; trusted person notified|note ≤ 10 s, 20/20; the listed fact never stated, 0/50
+|Agreed meeting time|Note to the named care worker|≤ 1 min; 20/20
+|Presence pattern, resident opted in|One note after the set number of days, to the named care worker only|20/20
+|Presence, resident not opted in|No count kept; no note|0
+|Resident contradicts a System statement (wrong profile entry; misheard answer)|Plain correction, no argument; error flagged for ST-05|≤ 3 s; 20/20
+|Script and templates|No untruth, denial or playing along|0 lines
+|Network capture, full test day|No packet leaves the home network|0
+|File-system search, all devices|No audio file|0
+
+== Graph edges ==
+
+produces → Evidence for UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F5-PR5, UC02-F6-PR6; informs → IDP-01 to IDP-03 (Build A); applies → M-01, M-10.
+
+= Evaluation Method - Observing shared rooms [EM-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-02
+|Name|Observing shared rooms: live coding, no recording
+|Status|In Progress
+|Evidence basis|OERS (Lawton et al., 1996); interval coding adapted from QUIS (Dean et al., 1993); process consent in dementia research (Dewing, 2007).
+|Procedure summary|(((
+1. Residents, relatives and staff are told when observation takes place, and a notice hangs in each room. Residents who decline, or whose representative declines, are neither coded nor rated. A resident who shows unease is not coded that session.
+1. Sessions: the lounge and the dining room, three sessions of 90 minutes a week at fixed times (a meal, an afternoon), in both homes.
+1. The observer sits at the edge of the room. Every 2 minutes, a room scan: talk between residents (M-04); activity and company (M-06).
+1. Introductions and meetings during a session: emotion (M-03); pressure signs, and the resident's view afterwards if they are willing (M-07).
+1. Codes only, on a tablet: no words, no content, no names in free text.
+1. Stop rule: anxiety, sadness or anger rated 4 or more: the observer stops rating that resident and tells ST-04.
+)))
+|Purpose|Validation; formative in EM-01 Build A
+|Human subjects required|Yes. Residents with supported consent and a representative; staff.
+|Measures used|M-02 to M-04, M-06, M-07
+|Cost and feasibility|One observer, about five hours a week per home; two observers on reliability sessions.
+|Known limitations|(((
+* The observer knows which home has the System: no blinding. Observers are not told the hypotheses.
+* Being watched changes behaviour. Two weeks of familiarisation lower the effect; they do not remove it.
+* Room scans miss what happens in residents' rooms and outside the sessions.
+* Observers overhear fragments of talk. Codes-only notes limit the risk; they do not remove it.
+)))
+
+== Observer rules ==
+
+* Training: OERS manual; practice sessions until ICC ≥ .70 (OERS) and κ ≥ .70 (talk and company codes) against a trained rater.
+* Reliability: a second observer on 20% of sessions, coding independently.
+* The same observers work in both homes, alternating, so that differences between observers do not become differences between homes.
+* Confidentiality: codes only. A signed confidentiality agreement. A risk of harm seen during a session goes to ST-04 at once, under the home's protocol.
+
+== Graph edges ==
+
+used-by → EM-01 (Build A), EM-03; applies → M-02 to M-04, M-06, M-07.
+
+= Evaluation Method - Two-home comparison [EM-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-03
+|Name|Two-home comparison (formative)
+|Status|In Progress
+|Evidence basis|Non-equivalent comparison group design with a pretest (Shadish, Cook & Campbell, 2002). Formative evaluation: findings shape the next design iteration rather than prove an effect (Scriven, 1967).
+|Procedure summary|(((
+Two unrelated care homes of similar size and resident mix (O-9): the System home, and a comparison home that continues care as usual. The homes have no contact with each other.
+
+Inclusion: residents with mild to moderate dementia who assent, with their representative's consent. Newcomers who arrive during the study join from their first week.
+
+Phases, in both homes over the same weeks: familiarisation (2 weeks; observers present, no data used); baseline (4 weeks); System period (12 weeks), in which the System runs in the System home only. Measures are taken in both homes throughout.
+
+Each newcomer, in either home, is followed for their first six weeks.
+)))
+|Purpose|Validation (formative)
+|Human subjects required|Yes. Residents, staff and relatives in both homes.
+|Measures used|M-02 to M-08, M-10
+|Cost and feasibility|High. Access to two homes, ethics approval, supported consent, an observer for every session, 18 weeks.
+|Known limitations|With one home per condition, any difference may come from the homes rather than the System: staff, culture, building, resident mix. Not randomised; no blinding; novelty in the System home; few newcomers in 18 weeks.
+
+== Outcomes ==
+
+|=Outcome|=Measure|=When
+|Primary: introductions and repeat contact|M-02|Daily log; observation sessions
+|Primary: friendships|M-05|Baseline, week 6, end
+|Conversation between residents|M-04|Observation sessions
+|Time together, walks included|M-06|Observation sessions; door log
+|Emotion|M-03|Observed introductions; sampled windows
+|Own view, pressure and avoidance|M-07|After observed introductions; staff log
+|Loneliness|M-08|Baseline and end
+|Sensitive questions, System errors, disclosures|M-10|Throughout, System home
+
+== Analysis and decision rules ==
+
+Set before the study starts:
+
+* Per home: change from baseline to the System period, per outcome, with effect sizes and confidence intervals
+* Between homes: the difference in change, reported descriptively. One home per condition does not support a causal claim
+* Newcomers: described case by case
+* Signal for the next iteration: a larger rise in repeat contact (M-02) and reciprocated ties (M-05) in the System home than in the comparison home, with no rise in pressure signs or avoidance (M-07)
+* Pressure signs or avoidance more frequent after System introductions than after staff introductions: adverse UC02-F1-CL3 confirmed; suggestions only for residents who ask, from then on
+* Any disclosure, or a System error that causes distress (M-10): the System paused until the cause is found and fixed
+* Other System errors: counted; above [threshold - O-2] per 100 statements, or left uncorrected, the source is fixed before the System continues
+* Any fall during a walk the System suggested: no further walks suggested for that resident until ST-06 has reviewed
+
+== Ethics ==
+
+* Approval by the university's research ethics committee. A medical ethics committee checks whether the local law on medical research with human subjects applies: participants lack capacity to consent.
+* Consent from the representative, plus the resident's own assent; process consent at every session (Dewing, 2007). The same rules in both homes.
+* Presence counting only with separate consent (O-7).
+* The comparison home is offered the System after the study.
+
+== Threats ==
+
+* Differences between homes: chosen to match on size, layout and resident mix where possible; baseline taken in both; remaining differences reported.
+* Novelty and observer presence: two weeks of familiarisation in both homes.
+* Season and events: both homes observed over the same weeks.
+* Small samples: findings guide the design; no claim of proof.
+
+== Graph edges ==
+
+produces → Evidence for UC02-F3-CL1, UC01-F3-CL2, UC02-F1-CL3, UC03-F5-CL6, UC02-F3-CL9, and in part UC01-F4-CL8; applies → M-02 to M-08, M-10.
+
+= Evaluation Method - Interviews [EM-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|EM-04
+|Name|Interviews: residents, relatives, staff
+|Status|In Progress
+|Evidence basis|Bespoke. Concern set from Niemeijer et al. (2010, 2015) and the Mental Health Foundation (2016).
+|Procedure summary|After baseline and at the end, in both homes. Residents, if willing: three open questions. Relatives, care workers and the coordinator: 20 minutes, semi-structured. Topics: how residents meet; introductions and consent questions; feeling pushed into company; the relationship map; truthful deferrals; in the System home, notes about time spent in one's room.
+|Purpose|Validation
+|Human subjects required|Yes. Residents, relatives, staff.
+|Measures used|M-09
+|Cost and feasibility|Moderate. Staff time in working hours.
+|Known limitations|Residents' answers are brief; relatives and staff give a second-hand view.
+
+== Graph edges ==
+
+produces → Evidence for UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-CL8; applies → M-09.
+
+= References =
+
+* Dewing, J. (2007). Participatory research: a method for process consent with persons who have dementia. //Dementia//, 6(1), 11-25.
+* Dean et al. (1993); Lawton et al. (1996); Mihailidis et al. (2008); Niemeijer et al. (2010, 2015). See b4.1 References.
+* Mental Health Foundation (2016). See a1.1 References.
+* Riek, L. D. (2012). Wizard of Oz studies in HRI: a systematic review and new reporting guidelines. //Journal of Human-Robot Interaction//, 1(1), 119-136.
+* Scriven, M. (1967). The methodology of evaluation. In R. W. Tyler, R. M. Gagné & M. Scriven (Eds.), //Perspectives of Curriculum Evaluation// (pp. 39-83). Rand McNally.
+* Shadish, W. R., Cook, T. D. & Campbell, D. T. (2002). //Experimental and Quasi-Experimental Designs for Generalized Causal Inference//. Houghton Mifflin.

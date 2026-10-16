@@ -2,7 +2,7 @@
 title: b1.1 What residents and staff value
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eight values. Social connectedness leads: company is the reason to walk and to talk. Dignity includes face: a slip is not exposed. Truthfulness: the System does not deceive, corrects its own errors, and leaves painful truths to a trusted person. Privacy covers other people's secrets as well as one's own.
+**Abstract.** Eight values, held by the stakeholders in a2.1. Social connectedness leads: residents want company and, over time, friends. Autonomy and privacy set its limits, because each resident decides whom to meet and what others may know about them. Dignity means that a forgotten name is never exposed. Truthfulness rules out deception, kind lies included, and leaves painful truths to a trusted person.
 
 = Human Value - Autonomy [HV-01] =
 
@@ -15,13 +15,13 @@ syntax: xwiki/2.1
 |Name|Autonomy
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Walk or not, with whom, how long. Choose own settings. Consent before joining a person and before each conversation starter.
+|Situated meaning|Each resident decides whom to meet, when, and what to do together. They choose what others may know about them, and can change their mind. Consent comes before every introduction and every shared fact.
 |Held by|ST-01, ST-02 (high); ST-05 (medium)
 |Intrinsic or instrumental|Intrinsic. Also supports Dignity.
 |Recognition criteria|(((
-Served: the resident sets and changes their own settings; a "no" ends the offer, without a reason asked.
+Served: the resident sets and changes their own settings; a "no" ends the offer, and nobody asks why.
 
-Violated: walks arranged for staff convenience; a starter used without asking; persuasion; reminders of missed walks.
+Violated: introductions arranged for staff convenience; a shared fact used without asking; persuasion; reminders of declined offers.
 )))
 |Source|Ryan, R. M. & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
 
@@ -36,13 +36,13 @@ Violated: walks arranged for staff convenience; a starter used without asking; p
 |Name|Dignity
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Spoken to as an adult. Slips are not remarked on. No quizzing, no correcting, no praise for walking. A walk taken for the resident's sake, never as a routine run.
+|Situated meaning|Residents are spoken to as adults. A forgotten name or fact passes without comment, and nobody is quizzed, corrected or praised for the obvious. Company is offered for the resident's sake, never to fill a timetable.
 |Held by|ST-01 (high); ST-02 (medium)
 |Intrinsic or instrumental|Intrinsic.
 |Recognition criteria|(((
-Served: help after a slip offered to both walkers, as a statement; the slip not mentioned afterwards.
+Served: names given as a statement ("This is Jan"), so that nobody has to admit forgetting; slips pass without remark.
 
-Violated: "You told me that already"; "Do you remember...?"; finishing someone's sentence; being "taken out" like a dog.
+Violated: "You've met before, don't you remember?"; "You told me that already"; finishing someone's sentence; being paired off to fill an activity.
 )))
 |Source|Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press. Goffman, E. (1967). //Interaction Ritual//. Anchor Books.
 
@@ -58,16 +58,16 @@ Violated: "You told me that already"; "Do you remember...?"; finishing someone's
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|(((
-Own conversations, own secrets, own whereabouts. Another resident's secrets never reach you through the System. Data stays in the care home.
+Each resident owns their life story, their secrets and their time alone. Nothing about one resident reaches another without consent, and the System's data stays in the care home.
 
-Staff: no surveillance of their own work.
+Staff: their own work is not monitored.
 )))
-|Held by|ST-01, ST-02, ST-05, ST-07 (high); ST-04, ST-06 (medium); ST-03 (low - may want more than the resident would share)
+|Held by|ST-01, ST-02, ST-05, ST-07 (high); ST-04, ST-06 (medium); ST-03 (low - may want more shared than the resident would)
 |Intrinsic or instrumental|Intrinsic. Also supports Dignity.
 |Recognition criteria|(((
-Served: nothing leaves the home; only consented items exchanged; no audio stored.
+Served: only consented facts are used to match or introduce; nothing leaves the home; time in one's room is noticed only where the resident agreed.
 
-Violated: a secret said to the wrong person; conversation recorded; route logged.
+Violated: a secret told to the wrong person; a match explained by a fact its owner never released; a resident watched in their room.
 )))
 |Source|Friedman, B., Kahn, P. H., Jr. & Borning, A. (2008). Value Sensitive Design and Information Systems. In K. E. Himma & H. T. Tavani (Eds.), //The Handbook of Information and Computer Ethics//. Wiley. Niemeijer et al. (2010).
 
@@ -82,15 +82,15 @@ Violated: a secret said to the wrong person; conversation recorded; route logged
 |Name|Safety
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|No falls, no getting lost; help arrives quickly. Talking while walking raises the risk.
-|Held by|ST-04, ST-06, ST-07 (high); ST-01 (medium)
-|Intrinsic or instrumental|Instrumental: the condition for walking at all.
+|Situated meaning|No falls and no getting lost, also when residents spend time together. A walk in the garden needs walking assessed first and a member of staff at the door.
+|Held by|ST-01, ST-04, ST-06, ST-07 (high)
+|Intrinsic or instrumental|Instrumental: a condition for going out at all.
 |Recognition criteria|(((
-Served: stumbles and tiredness noticed; alerts reach a person.
+Served: walks together suggested only to residents assessed fit; incidents reach a person quickly.
 
-Violated: the walk continues past tiredness; a fall goes unanswered.
+Violated: a walk suggested to someone not assessed; a fall that nobody notices.
 )))
-|Source|Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment. //Journal of Advanced Nursing//, 65(5), 922-933. Lundin-Olsson et al. (1997).
+|Source|Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment. //Journal of Advanced Nursing//, 65(5), 922-933.
 
 = Human Value - Well-being [HV-05] =
 
@@ -103,13 +103,13 @@ Violated: the walk continues past tiredness; a fall goes unanswered.
 |Name|Well-being
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Fresh air, movement, calm. Emotional safety: free from embarrassment, conflict, pressure, and painful news at the wrong moment.
-|Held by|ST-01 to ST-04, ST-06 (high); ST-07 (medium)
+|Situated meaning|Calm, movement, fresh air, and days with something to look forward to. Emotional safety: no embarrassment, pressure or conflict, and no painful news at the wrong moment.
+|Held by|ST-01 to ST-06 (high); ST-07 (medium)
 |Intrinsic or instrumental|Intrinsic.
 |Recognition criteria|(((
-Served: pleasure on the walk; calm afterwards.
+Served: pleasure in time spent together; calm afterwards.
 
-Violated: distress after a slip, a clash or a blunt answer.
+Violated: distress after an awkward introduction, a refusal made in public or a blunt answer.
 )))
 |Source|Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489. Bratman et al. (2015).
 
@@ -124,15 +124,15 @@ Violated: distress after a slip, a clash or a blunt answer.
 |Name|Social connectedness
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Company and conversation: a fellow resident, or the guide where agreed. Less lonely.
-|Held by|ST-01, ST-02, ST-03, ST-05 (high)
-|Intrinsic or instrumental|Both. Valued in itself; also the reason to go out.
+|Situated meaning|Residents have company and conversation with each other and, over time, a friend. They feel less lonely.
+|Held by|ST-01, ST-02, ST-03, ST-05 (high); ST-04 (medium)
+|Intrinsic or instrumental|Both. Valued in itself; also a reason to leave the room.
 |Recognition criteria|(((
-Served: more walks with company; conversations resume after slips.
+Served: introductions lead to further meetings; residents can name someone here they like to talk to.
 
-Violated: a device in place of people; partners withdraw after slips.
+Violated: the System in place of people; introductions that lead nowhere; withdrawal after an awkward meeting.
 )))
-|Source|Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646. Holwerda et al. (2014).
+|Source|Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646. Holwerda et al. (2014). de Medeiros et al. (2012).
 
 = Human Value - Identity [HV-07] =
 
@@ -145,13 +145,13 @@ Violated: a device in place of people; partners withdraw after slips.
 |Name|Identity
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Remain who you were: trade, places, people, own words and dialect.
+|Situated meaning|Residents remain who they were: their trade, places, people, interests and own words. A shared past gives two residents something to talk about.
 |Held by|ST-01, ST-03, ST-05 (high)
 |Intrinsic or instrumental|Intrinsic. Also gives conversation a subject.
 |Recognition criteria|(((
-Served: starters from the resident's own life, in their own words.
+Served: introductions built on the residents' own lives, in their own words.
 
-Violated: wrong facts about one's life; generic content.
+Violated: wrong facts about a resident's life; a match made on a label, such as a diagnosis, rather than on a life.
 )))
 |Source|Kitwood (1997). Woods, B. et al. (2018). Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, (3), CD001120.
 
@@ -167,35 +167,35 @@ Violated: wrong facts about one's life; generic content.
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|(((
-No deception by design: no lies, kind ones included; no denials; no playing along with an untrue belief. Trust once lost is rarely regained.
+No deception by design: no lies, kind ones included, no denials, and no playing along with an untrue belief. Trust once lost is rarely regained.
 
-Errors cannot be ruled out: the System mishears, a profile can be out of date, a resident's own words can be mistaken. So it states facts only from checked sources, attributes what others said, says less when unsure, and corrects itself plainly when contradicted.
+Errors cannot be ruled out: a profile can be out of date, and the System can mishear an answer. So it states facts only from checked sources, says less when unsure, and corrects itself plainly when contradicted.
 
-Painful truths (a death, a diagnosis) come from a trusted person, never from the System.
+Painful truths (why the resident lives here, a death, a diagnosis) come from a trusted person, never from the System.
 )))
 |Held by|ST-01, ST-03, ST-04, ST-06 (high)
 |Intrinsic or instrumental|Intrinsic. Also instrumental: trust is the condition for accepting any help.
 |Recognition criteria|(((
 Served: no untruth, denial or playing along in the script; errors corrected at once and fixed at their source; sensitive questions passed to the trusted person.
 
-Violated: "He's at work"; an error left standing; the guide states a death.
+Violated: "You're only here for a few days"; an error left standing; the System states a death.
 )))
 |Source|Mental Health Foundation (2016). //What Is Truth?// James et al. (2006).
 
 == Graph edges ==
 
-HV-01: held-by → ST-01, ST-02, ST-05; party-to → VT-06, VT-07; operationalized-by → M-07, M-09.
+HV-01: held-by → ST-01, ST-02, ST-05; party-to → VT-02, VT-06; operationalized-by → M-01, M-02, M-07, M-09; explained-by → HFC-02, HFC-05, HFC-11.
 
-HV-02: held-by → ST-01, ST-02; party-to → VT-02; operationalized-by → M-04, M-09; explained-by → HFC-03, HFC-06.
+HV-02: held-by → ST-01, ST-02; party-to → VT-04; operationalized-by → M-07, M-09; explained-by → HFC-03, HFC-06.
 
-HV-03: held-by → ST-01 to ST-07; party-to → VT-04, VT-05; operationalized-by → M-01, M-09, M-10.
+HV-03: held-by → ST-01 to ST-07; party-to → VT-01, VT-05, VT-06; operationalized-by → M-01, M-09, M-10.
 
-HV-04: held-by → ST-01, ST-04, ST-06, ST-07; party-to → VT-01, VT-06; operationalized-by → M-01, M-06; explained-by → HFC-02.
+HV-04: held-by → ST-01, ST-04, ST-06, ST-07; operationalized-by → M-06.
 
-HV-05: held-by → ST-01 to ST-04, ST-06, ST-07; party-to → VT-03; operationalized-by → M-03; explained-by → HFC-01, HFC-07.
+HV-05: held-by → ST-01 to ST-07; party-to → VT-03, VT-06; operationalized-by → M-03, M-06; explained-by → HFC-01, HFC-02, HFC-07.
 
-HV-06: held-by → ST-01, ST-02, ST-03, ST-05; party-to → VT-01, VT-02, VT-04, VT-07; operationalized-by → M-02, M-05, M-08; explained-by → HFC-01, HFC-03, HFC-04, HFC-05, HFC-07.
+HV-06: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-04; operationalized-by → M-02, M-04, M-05, M-06, M-08; explained-by → HFC-02 to HFC-05, HFC-07, HFC-09, HFC-10.
 
-HV-07: held-by → ST-01, ST-03, ST-05; party-to → VT-05; operationalized-by → M-05, M-07; explained-by → HFC-04.
+HV-07: held-by → ST-01, ST-03, ST-05; party-to → VT-05; operationalized-by → M-04; explained-by → HFC-04, HFC-09.
 
 HV-08: held-by → ST-01, ST-03, ST-04, ST-06; party-to → VT-03; operationalized-by → M-09, M-10; explained-by → HFC-08.

@@ -1,0 +1,301 @@
+%%WIKI-SYNC-META%%
+title: b4.1 Introductions, friendships and system checks
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Ten measures. M-01 checks that the System does what its Functions specify. The main outcomes are introductions and repeat contact (M-02) and friendships over weeks (M-05). Conversation between residents (M-04) and time spent together, walks included (M-06), are secondary. M-03 rates emotion, M-07 records the residents' own view and signs of pressure, and M-08 measures loneliness. M-09 and M-10 watch the values at risk: privacy, tone, trust and truth. Every outcome is collected in the same way in both care homes (EM-03), and nothing is recorded on audio or video.
+
+= Measure - System performance [M-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-01
+|Name|System performance
+|Status|In Progress
+|Evidence basis|Bespoke. Staged-event protocol, as used for prompting systems (Mihailidis et al., 2008).
+|Construct measured|Whether the System does what F1 to F6 specify, on time, and nothing more.
+|Type|Quantitative
+|Instrument or procedure|(((
+Staged events against a timestamped reference log (EM-01): match suggestions with and without consent, items blocked by the map, private questions, introductions, sensitive questions, agreed meetings, presence patterns for residents who did and did not opt in.
+
+Checks on a full test day: network capture at the router; file-system search of all devices for audio.
+)))
+|Scoring or coding scheme|Per event: correct (yes/no); latency (s). Suggestions or items used without consent or against the map (target 0). Presence notes for residents who did not opt in (target 0). Packets leaving the home network (target 0). Audio files (target 0).
+|Validity and reliability|Bespoke. Depends on the accuracy of the reference log. Role-players do not behave like residents.
+|Serves|Verification
+|Burden|No residents (staged events).
+
+== Graph edges ==
+
+operationalizes → UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F5-PR5, UC02-F6-PR6; used-by → EM-01; operationalizes → HV-01, HV-03.
+
+= Measure - Introductions and repeat contact [M-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-02
+|Name|Introductions and repeat contact
+|Status|In Progress
+|Evidence basis|Bespoke count.
+|Construct measured|How often residents are introduced, how often they accept, and how often a first meeting leads to a second.
+|Type|Quantitative
+|Instrument or procedure|(((
+In both homes, the coordinator keeps a short daily log: each introduction, who made it, whether both accepted, and any later meeting of the pair.
+
+Observers in the shared rooms (EM-02) note which pairs talk or do something together.
+
+In the System home, the System record (F6) serves as a cross-check, not as the source.
+)))
+|Scoring or coding scheme|Per resident per month: introductions; share accepted; pairs who meet again within 14 days; pairs seen together on two or more observation days without being prompted.
+|Validity and reliability|Bespoke. A staff log misses introductions made in passing, and observation covers only some hours. Each log is checked against observation.
+|Serves|Validation
+|Burden|A few minutes a day for the coordinator; none for residents.
+
+== Graph edges ==
+
+operationalizes → UC02-F3-CL1, UC03-F5-CL6; used-by → EM-02, EM-03; operationalizes → HV-01, HV-06.
+
+= Measure - Observed emotion [M-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-03
+|Name|Observed emotion
+|Status|In Progress
+|Evidence basis|Observed Emotion Rating Scale (OERS; Lawton, Van Haitsma & Klapper, 1996), built for nursing-home residents with Alzheimer's disease. Validated instrument.
+|Construct measured|Emotional state during introductions and time spent together, per resident.
+|Type|Quantitative (observational)
+|Instrument or procedure|(((
+OERS, rated live by an observer (EM-02). No video, no audio.
+
+Windows: each observed introduction or meeting (from 5 min before to 10 min after); and 10-minute windows for sampled residents during each observation session.
+
+Each resident is rated separately.
+)))
+|Scoring or coding scheme|(((
+Five affects: pleasure, alertness, anxiety, sadness, anger. Each is rated by duration within the window: 1 never; 2 under 16 s; 3 16-59 s; 4 1-5 min; 5 over 5 min.
+
+Per window: positive score = mean of pleasure and alertness; negative score = mean of anxiety, sadness and anger.
+)))
+|Validity and reliability|(((
+Psychometrics in Lawton et al. (1996). Less reliable when rated by care staff than by trained researchers (Lawton et al., 1999), so researchers rate.
+
+A second observer rates 20% of windows independently; ICC(2,1) ≥ .60. Training: EM-02.
+)))
+|Serves|Validation
+|Burden|Human subjects; an observer in the room.
+
+== Graph edges ==
+
+operationalizes → UC02-F3-CL1, UC01-F3-CL2; used-by → EM-01 (Build A), EM-02, EM-03; operationalizes → HV-05.
+
+= Measure - Conversation between residents [M-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-04
+|Name|Conversation between residents
+|Status|In Progress
+|Evidence basis|Interval coding adapted from the Quality of Interactions Schedule (QUIS; Dean, Proudfoot & Lindesay, 1993), developed for staff-resident interaction. The adaptation to talk between residents is bespoke.
+|Construct measured|How much residents talk with each other, and how well.
+|Type|Quantitative (observational)
+|Instrument or procedure|Observer room scan every 2 minutes during each session (EM-02). Codes only: no words, no content.
+|Scoring or coding scheme|Per resident in view, per scan: talking with another resident (yes/no); quality: positive (warm, laughter, a shared topic), neutral, or negative (dismissive, conflict). Per session: share of residents talking with another resident; share of positive and negative codes. Per observed introduction: minutes of talk in the 10 minutes after.
+|Validity and reliability|A second observer on 20% of sessions; κ ≥ .60 (Landis & Koch, 1977).
+|Serves|Validation
+|Burden|As M-03.
+
+== Graph edges ==
+
+operationalizes → UC02-F3-CL1; used-by → EM-02, EM-03; operationalizes → HV-06, HV-07.
+
+= Measure - Friendships [M-05] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-05
+|Name|Friendships
+|Status|In Progress
+|Evidence basis|Bespoke name generator, with staff reports as a second source. Self-report is read alongside other sources, never alone: residents rate their own experience higher than observers do (Custers et al., 2013).
+|Construct measured|Whether residents have someone in the home they like to talk to, and whether the feeling is mutual.
+|Type|Quantitative (self-report and staff report)
+|Instrument or procedure|(((
+At baseline, at six weeks and at the end (EM-03), each resident who is willing is asked: "Is there someone here you like to talk to?" and then "Anyone else?", up to three names. Photos of consenting residents in the same unit help those who cannot recall a name.
+
+Staff name, for each resident, the residents they spend time with.
+)))
+|Scoring or coding scheme|Per resident: names given (0-3); names reciprocated; named by staff. Per home: share of residents with at least one reciprocated tie; share named by nobody.
+|Validity and reliability|Bespoke. Depends on recall; the photo prompt helps, and may lead. Staff reports catch ties that residents cannot name.
+|Serves|Validation
+|Burden|About five minutes per resident, three times.
+
+== Graph edges ==
+
+operationalizes → UC02-F3-CL1, UC01-F3-CL2; used-by → EM-03; operationalizes → HV-06.
+
+= Measure - Time together [M-06] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-06
+|Name|Time together, walks included
+|Status|In Progress
+|Evidence basis|Bespoke. Room scans follow the momentary time sampling used in care-home observation.
+|Construct measured|How much time residents spend with each other, doing what, and whether anything goes wrong.
+|Type|Quantitative (observational and log)
+|Instrument or procedure|(((
+Observer room scans every 2 minutes (EM-02): for each resident in view, the activity and the company (alone; with staff; with one resident; in a group).
+
+In both homes, a garden-door log: residents going out together.
+
+For newcomers in their first six weeks: whether they joined shared meals and activities each day, from the staff log.
+)))
+|Scoring or coding scheme|Per session: share of residents in view doing something with one other resident. Per week: walks together; incidents during time together (falls, near-falls, distress). Per newcomer: days per week in shared rooms.
+|Validity and reliability|Room scans cover only observed hours; the door log depends on staff.
+|Serves|Validation
+|Burden|As M-03; the door log takes seconds per walk.
+
+== Graph edges ==
+
+operationalizes → UC02-F3-CL1, UC01-F3-CL2; used-by → EM-02, EM-03; operationalizes → HV-04, HV-05, HV-06.
+
+= Measure - The residents' own view [M-07] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-07
+|Name|The residents' own view
+|Status|In Progress
+|Evidence basis|Bespoke. Self-report read alongside observation, never alone (Custers et al., 2013).
+|Construct measured|Whether the resident valued meeting the other, felt free to decline or leave, and wants to meet again.
+|Type|Mixed
+|Instrument or procedure|(((
+Resident, after each observed introduction or meeting, only if willing and not distressed: three faces, "How was it, meeting [name]?"; "Again?" (yes/no).
+
+Observer, before and during: pressure signs (agrees reluctantly; looks to staff or the other resident before answering; "if I must"). In the following week: avoidance (sits elsewhere; leaves when the other arrives), from the staff log.
+)))
+|Scoring or coding scheme|Faces 1-3; share of "Again?" answered yes; pressure signs per introduction; pairs with avoidance within 7 days.
+|Validity and reliability|Bespoke. Ceiling effects expected in self-report.
+|Serves|Validation
+|Burden|Low; about a minute after the meeting.
+
+== Graph edges ==
+
+operationalizes → UC02-F1-CL3, UC01-F3-CL5; used-by → EM-02, EM-03; operationalizes → HV-01, HV-02.
+
+= Measure - Loneliness [M-08] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-08
+|Name|Loneliness
+|Status|In Progress
+|Evidence basis|De Jong Gierveld 6-item loneliness scale (De Jong Gierveld & Van Tilburg, 2006). Validated in older adults; not in dementia.
+|Construct measured|Emotional and social loneliness.
+|Type|Quantitative (self-report)
+|Instrument or procedure|Six items, read aloud by a researcher at baseline and at the end (EM-03). Mild to moderate dementia only.
+|Scoring or coding scheme|0-6, as in the source; emotional and social subscales reported separately.
+|Validity and reliability|Validity in dementia uncertain; three months is short for loneliness to change. Exploratory.
+|Serves|Validation
+|Burden|Five minutes, twice.
+
+== Graph edges ==
+
+operationalizes → UC02-F3-CL9; used-by → EM-03; operationalizes → HV-06.
+
+= Measure - Privacy, tone and trust codes [M-09] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-09
+|Name|Privacy, tone and trust codes
+|Status|In Progress
+|Evidence basis|Bespoke code set from Niemeijer et al. (2010, 2015), Kitwood (1997), Williams et al. (2009) and the Mental Health Foundation (2016).
+|Construct measured|Whether residents, relatives and staff experience the System as watching, talking down, pushing, revealing or misleading.
+|Type|Qualitative coding
+|Instrument or procedure|Short interviews (EM-04).
+|Scoring or coding scheme|W watched; T talked down to; P pushed into company, for others' sake; S secret revealed; U misled or fobbed off; N neutral or positive. A statement can have more than one code.
+|Validity and reliability|Two coders on all interviews; κ ≥ .60.
+|Serves|Validation
+|Burden|Interviews; residents only if willing.
+
+== Graph edges ==
+
+operationalizes → UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-CL8; used-by → EM-04; operationalizes → HV-01 to HV-03, HV-08.
+
+= Measure - Sensitive topics, errors and disclosure [M-10] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-10
+|Name|Sensitive topics, errors and disclosure
+|Status|In Progress
+|Evidence basis|Bespoke count. Safeguard for VT-01 and VT-03.
+|Construct measured|Whether painful questions reach the trusted person; how often the System gets a fact wrong, and whether it corrects itself; whether it reveals what it should not.
+|Type|Quantitative
+|Instrument or procedure|(((
+Script check: every prepared line and template, before use (EM-01).
+
+Staged trials with known facts, including a wrong profile entry and a misheard answer (EM-01).
+
+In use: the System record (F6) and staff reports of errors noticed by residents, relatives or staff.
+)))
+|Scoring or coding scheme|(((
+Deception by design: untruths, denials or playing along in the script (target 0).
+
+Errors: wrong facts per 100 System statements; share corrected when contradicted; time to correct. Threshold: O-2.
+
+Sensitive questions: deferred to the listed person (yes/no); minutes until they arrive.
+
+Disclosure: items used without consent or against the map (target 0).
+)))
+|Validity and reliability|Staged error rates are exact. In use, only noticed errors are counted, which undercounts them. A disclosure, or an error that causes distress, pauses the System for review (EM-03).
+|Serves|Both: Verification (staged) and Validation (in use)
+|Burden|None beyond EM-02.
+
+== Graph edges ==
+
+operationalizes → UC02-F2-PR2, UC01-F4-PR4, UC01-F4-CL8; used-by → EM-01, EM-03; operationalizes → HV-03, HV-08.
+
+= References =
+
+* Custers, A. F. J. et al. (2013). Need fulfillment in the nursing home: resident and observer perspectives in relation to resident well-being. //European Journal of Ageing//, 10(3), 201-209.
+* De Jong Gierveld, J. & Van Tilburg, T. (2006). A 6-item scale for overall, emotional, and social loneliness: confirmatory tests on survey data. //Research on Aging//, 28(5), 582-598.
+* Dean, R., Proudfoot, R. & Lindesay, J. (1993). The quality of interactions schedule (QUIS): development, reliability and use in the evaluation of two domus units. //International Journal of Geriatric Psychiatry//, 8(10), 819-826.
+* Kitwood (1997); Williams et al. (2009). See b3.1 References.
+* Landis, J. R. & Koch, G. G. (1977). The measurement of observer agreement for categorical data. //Biometrics//, 33(1), 159-174.
+* Lawton, M. P., Van Haitsma, K. & Klapper, J. (1996). Observed affect in nursing home residents with Alzheimer's disease. //Journal of Gerontology B//, 51(1), P3-P14.
+* Lawton, M. P. et al. (1999). Observed affect and quality of life in dementia: further affirmations and problems. //Journal of Mental Health and Aging//, 5(1), 69-81.
+* Mental Health Foundation (2016). See a1.1 References.
+* Mihailidis, A. et al. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28.
+* Niemeijer, A. R. et al. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//, 22(7), 1129-1142.
+* Niemeijer, A. R. et al. (2015). The experiences of people with dementia and intellectual disabilities with surveillance technologies in residential care. //Nursing Ethics//, 22(3), 307-320.

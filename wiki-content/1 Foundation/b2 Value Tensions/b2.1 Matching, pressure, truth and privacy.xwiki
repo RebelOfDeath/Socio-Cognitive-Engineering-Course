@@ -1,0 +1,217 @@
+%%WIKI-SYNC-META%%
+title: b2.1 Matching, pressure, truth and privacy
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Six tensions. The facts that make a good match are personal (VT-01). An invitation made face to face is hard to refuse (VT-02). A truthful answer can hurt, and a kind lie costs trust (VT-03). Repeating a name helps residents meet again, but can show that they forgot it (VT-04). A profile detailed enough to match on is also a privacy risk (VT-05). Noticing that a resident stays in their room intrudes on private time (VT-06).
+
+= Value Tension - Privacy vs Social connectedness [VT-01] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-01
+|Name|Privacy vs Social connectedness (matching on personal facts)
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Illustrated in part by PS-03.
+|Values in tension|(((
+HV-06 Social connectedness: matches and introductions built on what two residents share.
+
+HV-03 Privacy: each resident decides what others may know about them.
+)))
+|Domain area|privacy
+|Nature of the conflict|The facts that make a good match are personal: a hometown, a trade, a church, a loss. Telling one resident why they were matched tells them something about the other. A secret said once cannot be unsaid.
+|Non-negotiable floor|GDPR art. 5 and 9 (health data). Consent through the resident and their representative (O-5).
+|Current resolution|(((
+* Each resident's profile sits in their own instance of the System (TECH-04)
+* A fact is used to match or introduce only if its owner agreed, privately, and the relationship map allows it for this pair (TECH-05)
+* Health, losses and family conflicts are never offered as matching items; residents may raise them themselves
+* The coordinator approves each suggested match before anyone is asked (F2)
+* Unknown pair, or a map change awaiting review: no match is suggested
+* The map is reviewed after any death, diagnosis, conflict or move
+)))
+|Alternatives considered|(((
+One shared profile store: rejected.
+
+Matching without personal facts, by unit or table only: not preferred. Introductions lose their common ground (PS-03).
+)))
+|Status of the tension|Provisionally resolved. Verified by UC02-F2-PR2; tested by adverse UC02-F2-CL4.
+
+= Value Tension - Social connectedness vs Autonomy [VT-02] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-02
+|Name|Social connectedness vs Autonomy (pressure to accept an introduction)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning. Bohns (2016); Mastroianni et al. (2021). Illustrated by PS-04.
+|Values in tension|(((
+HV-06 Social connectedness: residents meet and spend time together.
+
+HV-01 Autonomy: each resident is free to decline, and to stop.
+)))
+|Domain area|social; personhood
+|Nature of the conflict|A request made face to face is hard to refuse, and harder in front of others. A resident who accepts out of politeness may avoid the other afterwards (PS-04). Suggestions made too often turn company into a duty, and residents into items on the activity plan.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Each resident is asked separately and privately, and neither is told that the other was asked (IDP-02)
+* An introduction follows only when both said yes. A "no" is never passed on: the offer lapses, and a resident who asks about it hears only "Not this time"
+* Either resident may leave a meeting at any time, without giving a reason
+* No tallies, no praise, no reminders of declined offers
+* At most [number - O-2] suggestions per resident per week
+* Staff cannot start an introduction for a resident who declined it
+)))
+|Alternatives considered|(((
+Fixed pairings on the activity plan: rejected.
+
+Introductions only on request: not preferred. Shy residents never ask (PS-03).
+)))
+|Status of the tension|Open. Verified by UC02-F1-PR1; tested by adverse UC02-F1-CL3.
+
+= Value Tension - Truthfulness vs Well-being [VT-03] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-03
+|Name|Truthfulness vs Well-being (truth that hurts)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Mental Health Foundation (2016); James et al. (2006). Illustrated in part by PS-01.
+|Values in tension|(((
+HV-08 Truthfulness: no deception.
+
+HV-05 Well-being: no new grief.
+)))
+|Domain area|psychological safety; trust
+|Nature of the conflict|A newcomer may ask every day when they can go home. A death or a diagnosis can be news every time it is told. A kind lie spares distress now and costs trust later.
+|Non-negotiable floor|No deception by design: the script contains no untruth, denial or playing along. The System never delivers a death, a diagnosis or other listed painful news. Errors are possible; leaving one uncorrected is not.
+|Current resolution|(((
+* Belief from another time ("My mother is waiting"): the System answers the feeling, then brings back the present, without correcting or confirming what is untrue (IDP-01)
+* Direct question on a listed topic, such as going home: a truthful deferral ("That's one for [trusted person]. Shall I ask them to come?") and a note to the trusted person (IDP-03)
+* The trusted person decides what is said, as agreed with family and ST-06
+* System error (misheard, out of date): a plain correction when contradicted ("I had that wrong"); ST-05 fixes the source
+)))
+|Alternatives considered|(((
+Kind lies ("Only for a few days"): rejected. Trust is lost when they are found out.
+
+Always telling at once: rejected. Blunt news comes from the wrong source.
+)))
+|Status of the tension|Provisionally resolved. Verified by UC01-F4-PR4; tested by UC01-F4-CL8.
+
+= Value Tension - Dignity vs Social connectedness [VT-04] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-04
+|Name|Dignity vs Social connectedness (names that expose forgetting)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Goffman (1967); Schegloff et al. (1977). Illustrated by PS-01 and PS-03.
+|Values in tension|(((
+HV-06 Social connectedness: residents recognise each other and meet again.
+
+HV-02 Dignity: forgetting passes without remark.
+)))
+|Domain area|psychological safety (personhood)
+|Nature of the conflict|Residents forget names, and may avoid someone rather than ask again (PS-03). Repeating names helps them meet again, but a reminder can show that they forgot. Help aimed at one person marks that person as failing.
+|Non-negotiable floor|None identified.
+|Current resolution|(((
+* Names are given to both residents, as a statement, at every meeting the System arranges ("Elena, Jan, good to see you both")
+* Never "Do you remember...?" or "You've met before"
+* Name cards or photos at the table only where the resident agreed
+* How openly names are repeated is set per person, in their settings
+)))
+|Alternatives considered|(((
+No repeated introductions: rejected (PS-01, PS-03).
+
+Name badges for everyone: not preferred. Badges mark residents as forgetful, and visitors can read them.
+)))
+|Status of the tension|Open. Verified by UC02-F3-PR3; tested by adverse UC01-F3-CL5.
+
+= Value Tension - Privacy vs Identity [VT-05] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-05
+|Name|Privacy vs Identity (a rich profile)
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Niemeijer et al. (2010).
+|Values in tension|(((
+HV-07 Identity: a profile detailed enough to find what residents share.
+
+HV-03 Privacy: the more the profile holds, the more can leak.
+)))
+|Domain area|privacy
+|Nature of the conflict|Good matches need a detailed life story: places, trades, interests, people. The same detail identifies the resident, and would hurt if it leaked. Relatives often know, and offer, more than the resident would share.
+|Non-negotiable floor|No internet connection: nothing leaves the home.
+|Current resolution|(((
+* The profile holds only what matching needs, item by item, each marked shareable or private
+* The resident decides on each item; the representative decides only where the resident cannot, and the resident's objection still counts
+* The resident and representative can see, change or delete any item
+* New facts are kept only after asking
+* Research use of profiles needs separate consent, anonymisation and ethics review (O-5)
+)))
+|Alternatives considered|(((
+Cloud matching services: rejected (TECH-07).
+
+A thin profile (unit, table, age): not preferred. Matches lose their reason.
+)))
+|Status of the tension|Open. Verified by UC02-F6-PR6; tested by adverse UC02-F2-CL4.
+
+= Value Tension - Privacy and Autonomy vs Well-being [VT-06] =
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|VT-06
+|Name|Privacy and Autonomy vs Well-being (noticing a resident who stays in)
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Niemeijer et al. (2010, 2015). Illustrated by PS-02.
+|Values in tension|(((
+HV-05 Well-being: withdrawal noticed before mood and mobility decline.
+
+HV-03 Privacy and HV-01 Autonomy: time in one's room is private, and staying in is a legitimate choice.
+)))
+|Domain area|privacy; personhood
+|Nature of the conflict|Withdrawal is gradual and seen late (PS-02). Noticing it means knowing how long a resident stays in their room. That knowledge intrudes on private time, and a visit prompted by it can feel like being watched.
+|Non-negotiable floor|The System never contacts the resident about time in their room; a person decides what to do. No location log.
+|Current resolution|(((
+* Only for residents who agreed, or whose representative agreed with the resident's assent (O-7)
+* The System keeps a daily count of hours in the room, never a timeline
+* Staff hear only of a pattern over several days [threshold - O-2], never of a single day
+* The note goes to the resident's named care worker, who decides whether to call in, and calls in to offer company, never to check
+* The resident can stop it at any time
+)))
+|Alternatives considered|(((
+Staff observation alone, as today: kept alongside. It misses gradual withdrawal.
+
+Continuous location tracking: rejected (TECH-09).
+)))
+|Status of the tension|Open. Verified by UC03-F5-PR5; tested by adverse UC03-F5-CL7.
+
+== Graph edges ==
+
+VT-01: involves → HV-03, HV-06; bounds → F1, F2, F3; strained-by → TECH-05, TECH-06; tested-by → UC02-F2-PR2, UC02-F2-CL4.
+
+VT-02: involves → HV-06, HV-01; bounds → F1, F2, F5; tested-by → UC02-F1-PR1, UC02-F1-CL3.
+
+VT-03: involves → HV-08, HV-05; bounds → F3, F4; tested-by → UC01-F4-PR4, UC01-F4-CL8.
+
+VT-04: involves → HV-02, HV-06; bounds → F3; tested-by → UC02-F3-PR3, UC01-F3-CL5.
+
+VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-06; tested-by → UC02-F6-PR6, UC02-F2-CL4.
+
+VT-06: involves → HV-03, HV-01, HV-05; bounds → F5; strained-by → TECH-03; tested-by → UC03-F5-PR5, UC03-F5-CL7.
