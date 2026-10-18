@@ -48,7 +48,7 @@ operationalizes → UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9; us
 |Scoring or coding scheme|One point per SA-08 step completed without any prompt or human assistance; summed per session (0-9 for SA-08's nine steps). Compared against the same resident's pre-System baseline.
 |Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers, per step (completed unprompted: yes/no): Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
-|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-11, VT-09).
+|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-11, VT-08).
 
 == Graph edges ==
 
@@ -247,8 +247,8 @@ PS is the primary score, compared against the same residents' baseline-phase sco
 )))
 |Validity and reliability|(a) Henriksen et al. (1999) report reliability only. Weighted kappa for PS was 0.62 for one dentist scoring 24 residents a week apart, 0.71 between two dentists on 20 residents, and 0.80 among a dentist, two dental hygienists and a nurse on 8 residents after training. MS was weaker between the two dentists (0.47). Validity against a reference standard was not tested. Inter-rater reliability in this project as for M-13: two assessors independently score at least 20% of assessments, weighted kappa or ICC ≥ .60 acceptable (Landis & Koch, 1977). (b) Bespoke. Validity depends on the sensor telling brushing apart from other handling of the brush, which EM-05 checks against staged brushing. Brushing time says nothing about which teeth were brushed, so (b) never stands in for (a).
 |Serves|Both: Validation (plaque, brushing time in EM-06) and Verification (brushing-time accuracy in EM-05)
-|Burden|Human subjects for (a): residents with dementia, supported consent. An oral check is a physical intrusion into a personal-care area, so it is kept short and skipped when the resident is unwilling or distressed. (b) is data about how a personal-care activity was performed, which HP-05's constraints exclude from the System. It is justified only as time-limited research data under consent (VT-15).
+|Burden|Human subjects for (a): residents with dementia, supported consent. An oral check is a physical intrusion into a personal-care area, so it is kept short and skipped when the resident is unwilling or distressed. (b) is data about how a personal-care activity was performed, which HP-05's constraints exclude from the System. It is justified only as time-limited research data under consent (VT-14).
 
 == Graph edges ==
 
-operationalizes → UC04-F8-CL24, UC04-F9-CL25, UC04-F7-PR7 (brushing-time component); used-by → EM-05 (part b), EM-06; operationalizes → HV-13 (Well-being). Associated with VT-15.
+operationalizes → UC04-F8-CL24, UC04-F9-CL25, UC04-F7-PR7 (brushing-time component); used-by → EM-05 (part b), EM-06; operationalizes → HV-13 (Well-being). Associated with VT-14.

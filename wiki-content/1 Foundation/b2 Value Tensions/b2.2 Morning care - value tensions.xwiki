@@ -2,9 +2,9 @@
 title: b2.2 Morning care - value tensions
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Value Tensions VT-08 to VT-15 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[b2.1 Matching, pressure, truth and privacy>>doc:1 Foundation.b2 Value Tensions.b2\.1 Matching, pressure, truth and privacy.WebHome]]). IDs continue after the main set.
+**Abstract.** Value Tensions VT-07 to VT-14 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[b2.1 Matching, pressure, truth and privacy>>doc:1 Foundation.b2 Value Tensions.b2\.1 Matching, pressure, truth and privacy.WebHome]]). IDs continue after the main set.
 
-= Autonomy vs Well-being  [VT-08] =
+= Autonomy vs Well-being  [VT-07] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -13,7 +13,7 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|VT-08
+|ID|VT-07
 |Name|Autonomy vs Well-being
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -33,7 +33,7 @@ No intervention unless explicitly requested: not preferred because a resident wi
 )))
 |Status of the tension|Provisionally resolved
 
-= Privacy vs Well-being  [VT-09] =
+= Privacy vs Well-being  [VT-08] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -42,7 +42,7 @@ No intervention unless explicitly requested: not preferred because a resident wi
 == Fields ==
 
 |=Field|=Description
-|ID|VT-09
+|ID|VT-08
 |Name|Privacy vs Well-being
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -60,7 +60,7 @@ Constant monitoring of all activities: not preferred because it unnecessarily re
 )))
 |Status of the tension|Provisionally resolved
 
-= Competence vs Well-being  [VT-10] =
+= Competence vs Well-being  [VT-09] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -69,7 +69,7 @@ Constant monitoring of all activities: not preferred because it unnecessarily re
 == Fields ==
 
 |=Field|=Description
-|ID|VT-10
+|ID|VT-09
 |Name|Competence vs Well-being
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -89,7 +89,7 @@ Allowing the resident to continue attempting the task without assistance: not pr
 )))
 |Status of the tension|Provisionally resolved
 
-= Dignity vs Competence  [VT-11] =
+= Dignity vs Competence  [VT-10] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -98,7 +98,7 @@ Allowing the resident to continue attempting the task without assistance: not pr
 == Fields ==
 
 |=Field|=Description
-|ID|VT-11
+|ID|VT-10
 |Name|Dignity vs Competence
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -118,7 +118,7 @@ Continuous step-by-step narration: not preferred, because it maximises the infan
 )))
 |Status of the tension|Open. Tested by UC04-F8-CL19 (adverse Claim). Strained by TECH-10 (Pepper), whose humanoid form raises the risk (§2.3 Open item O-19).
 
-= Autonomy vs Well-being (detection reliability)  [VT-12] =
+= Autonomy vs Well-being (detection reliability)  [VT-11] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -127,7 +127,7 @@ Continuous step-by-step narration: not preferred, because it maximises the infan
 == Fields ==
 
 |=Field|=Description
-|ID|VT-12
+|ID|VT-11
 |Name|Autonomy vs Well-being (detection reliability)
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -143,7 +143,7 @@ HV-13 Well-being: pulls toward detecting every stall, so that a resident who is 
 |Alternatives considered|Maximum sensitivity with immediate prompting: not preferred, because false prompts interrupt the resident and COACH found they cause frustration.
 |Status of the tension|Provisionally resolved. Open until EM-05 shows an acceptable false-prompt rate, and UC04-F8-CL18 tests whether the wait itself causes frustration.
 
-= Autonomy vs Well-being (medication timing)  [VT-13] =
+= Autonomy vs Well-being (medication timing)  [VT-12] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -152,7 +152,7 @@ HV-13 Well-being: pulls toward detecting every stall, so that a resident who is 
 == Fields ==
 
 |=Field|=Description
-|ID|VT-13
+|ID|VT-12
 |Name|Autonomy vs Well-being (medication timing)
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -168,7 +168,7 @@ HV-13 Well-being: pulls toward the medication being taken on time, as prescribed
 |Alternatives considered|Not yet considered - to be done when UC05 is specified.
 |Status of the tension|Open, deferred to UC05.
 
-= Competence vs Attentive care  [VT-14] =
+= Competence vs Attentive care  [VT-13] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -177,7 +177,7 @@ HV-13 Well-being: pulls toward the medication being taken on time, as prescribed
 == Fields ==
 
 |=Field|=Description
-|ID|VT-14
+|ID|VT-13
 |Name|Competence vs Attentive care
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only.
@@ -197,7 +197,7 @@ System completes the activity quickly for the resident: not possible for tooth b
 )))
 |Status of the tension|Open. Tested by UC04-F9-CL23, which asks whether care-worker time actually falls (M-18), and by UC04-F9-CL25, which asks whether brushing quality falls while the care worker is away.
 
-= Privacy vs Well-being (brushing quality)  [VT-15] =
+= Privacy vs Well-being (brushing quality)  [VT-14] =
 
 //Two values that cannot both be fully served, documented as the trade-off it actually encodes rather than as an absolute bound.//
 
@@ -206,7 +206,7 @@ System completes the activity quickly for the resident: not possible for tooth b
 == Fields ==
 
 |=Field|=Description
-|ID|VT-15
+|ID|VT-14
 |Name|Privacy vs Well-being (brushing quality)
 |Status|In Progress
 |Evidence basis|Provisional. Literature and group reasoning only. Raised by the midterm feedback, which asked how well the teeth were actually brushed.
@@ -230,18 +230,18 @@ Adding brushing time to the F10 record: not preferred, because it conflicts with
 
 == Graph edges ==
 
-VT-08: involves → HV-09, HV-13; bounds → F8, F9; tested-by → UC04-F8-CL18.
+VT-07: involves → HV-09, HV-13; bounds → F8, F9; tested-by → UC04-F8-CL18.
 
-VT-09: involves → HV-11, HV-13; bounds → F7, F9, F10; strained-by → TECH-10, TECH-12 (TECH-13 rejected for straining it most; TECH-17 rejected); tested-by → UC04-F7-CL21, UC04-F10-CL22.
+VT-08: involves → HV-11, HV-13; bounds → F7, F9, F10; strained-by → TECH-10, TECH-12 (TECH-13 rejected for straining it most; TECH-17 rejected); tested-by → UC04-F7-CL21, UC04-F10-CL22.
 
-VT-10: involves → HV-12, HV-13; bounds → F8; tested-by → UC04-F8-CL15, UC04-F8-CL18.
+VT-09: involves → HV-12, HV-13; bounds → F8; tested-by → UC04-F8-CL15, UC04-F8-CL18.
 
-VT-11: involves → HV-10, HV-12; bounds → F8; strained-by → TECH-10; tested-by → UC04-F8-CL19.
+VT-10: involves → HV-10, HV-12; bounds → F8; strained-by → TECH-10; tested-by → UC04-F8-CL19.
 
-VT-12: involves → HV-09, HV-13; bounds → F7, F8; strained-by → TECH-11; tested-by → UC04-F8-PR8, UC04-F8-CL18.
+VT-11: involves → HV-09, HV-13; bounds → F7, F8; strained-by → TECH-11; tested-by → UC04-F8-PR8, UC04-F8-CL18.
 
-VT-13: involves → HV-09, HV-13; bounds → UC05 (later cycle).
+VT-12: involves → HV-09, HV-13; bounds → UC05 (later cycle).
 
-VT-14: involves → HV-12, HV-14; bounds → F8, F9; tested-by → UC04-F9-CL23, UC04-F9-CL25.
+VT-13: involves → HV-12, HV-14; bounds → F8, F9; tested-by → UC04-F9-CL23, UC04-F9-CL25.
 
-VT-15: involves → HV-11, HV-13; bounds → F7, F8, F10; strained-by → TECH-16 (deferred), TECH-17 (rejected for straining it most); tested-by → UC04-F7-CL21, UC04-F9-CL25.
+VT-14: involves → HV-11, HV-13; bounds → F7, F8, F10; strained-by → TECH-16 (deferred), TECH-17 (rejected for straining it most); tested-by → UC04-F7-CL21, UC04-F9-CL25.

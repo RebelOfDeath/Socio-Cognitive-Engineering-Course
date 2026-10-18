@@ -144,14 +144,14 @@ Violated: residents are left waiting; staff take over activities to save time; t
 
 == **Graph edges** ==
 
-HV-09: held-by → ST-09, ST-10, ST-11, ST-13; party-to → VT-08, VT-12, VT-13; operationalized-by → M-13, M-16; explained-by → HFC-09.
+HV-09: held-by → ST-09, ST-10, ST-11, ST-13; party-to → VT-07, VT-11, VT-12; operationalized-by → M-13, M-16; explained-by → HFC-09.
 
-HV-10: held-by → ST-09, ST-10, ST-11, ST-12; party-to → VT-11; operationalized-by → M-15, M-17; explained-by → HFC-12, HFC-13.
+HV-10: held-by → ST-09, ST-10, ST-11, ST-12; party-to → VT-10; operationalized-by → M-15, M-17; explained-by → HFC-12, HFC-13.
 
-HV-11: held-by → ST-09, ST-10, ST-11, ST-12, ST-13; party-to → VT-09, VT-15; operationalized-by → M-17; explained-by → HFC-10, HFC-13.
+HV-11: held-by → ST-09, ST-10, ST-11, ST-12, ST-13; party-to → VT-08, VT-14; operationalized-by → M-17; explained-by → HFC-10, HFC-13.
 
-HV-12: held-by → ST-09, ST-10; party-to → VT-10, VT-11, VT-14; operationalized-by → M-13, M-14; explained-by → HFC-11.
+HV-12: held-by → ST-09, ST-10; party-to → VT-09, VT-10, VT-13; operationalized-by → M-13, M-14; explained-by → HFC-11.
 
-HV-13: held-by → ST-09 to ST-13; party-to → VT-08, VT-09, VT-10, VT-12, VT-13, VT-15; operationalized-by → M-15, M-19; explained-by → HFC-11.
+HV-13: held-by → ST-09 to ST-13; party-to → VT-07, VT-08, VT-09, VT-11, VT-12, VT-14; operationalized-by → M-15, M-19; explained-by → HFC-11.
 
-HV-14: held-by → ST-10, ST-11, ST-12; party-to → VT-14; operationalized-by → M-18; explained-by → HFC-14.
+HV-14: held-by → ST-10, ST-11, ST-12; party-to → VT-13; operationalized-by → M-18; explained-by → HFC-14.

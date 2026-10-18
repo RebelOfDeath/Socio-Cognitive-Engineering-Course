@@ -34,9 +34,9 @@ syntax: xwiki/2.1
 |Failure and fallback behaviour|If Pepper is unavailable (battery, crash, network), TECH-11 still tracks the activity and the System reports a degraded state to the care worker through TECH-12; the activity falls back to the existing SA-08 workarounds. This is what UC04-F7-PR7's robustness clause verifies. Pepper has to be charged between sessions.
 |Benefits|Serves the Goal on SA-08 by prompting the resident through stalls (F8); HV-12 Competence by letting the resident do as much as possible themselves; HV-14 Attentive care by taking over the waiting and low-level prompting from the care worker (SA-10).
 |Drawbacks|(((
-Strains VT-11 (Dignity vs Competence): its humanoid form raises the infantilisation risk. Mitigations: tool-like framing, low expressivity (no gaze-following during the activity, no exaggerated gentleness), adult-register prompts phrased as offers, demonstration on the tablet rather than by gesture.
+Strains VT-10 (Dignity vs Competence): its humanoid form raises the infantilisation risk. Mitigations: tool-like framing, low expressivity (no gaze-following during the activity, no exaggerated gentleness), adult-register prompts phrased as offers, demonstration on the tablet rather than by gesture.
 
-Strains VT-09 (Privacy vs Well-being): cameras are present. Mitigations: cameras are not used by any Function; the camera streams are disabled in software and the lenses are visibly covered, so residents and staff can see they are not in use; no audio is stored.
+Strains VT-08 (Privacy vs Well-being): cameras are present. Mitigations: cameras are not used by any Function; the camera streams are disabled in software and the lenses are visibly covered, so residents and staff can see they are not in use; no audio is stored.
 
 If UC04-F8-CL19 or UC04-F7-CL21 hold for Pepper, TECH-14 is the fallback.
 )))
@@ -44,7 +44,7 @@ If UC04-F8-CL19 or UC04-F7-CL21 hold for Pepper, TECH-14 is the fallback.
 
 == Graph edges ==
 
-enables → F8, F9 (resident-facing part); addresses → Goal (SA-08), HV-12, HV-14; strains → VT-11, VT-09; realized-in → RP-03 (§2.2).
+enables → F8, F9 (resident-facing part); addresses → Goal (SA-08), HV-12, HV-14; strains → VT-10, VT-08; realized-in → RP-03 (§2.2).
 
 = Sensors on the tooth-brushing items (selected)  [TECH-11] =
 
@@ -73,12 +73,12 @@ enables → F8, F9 (resident-facing part); addresses → Goal (SA-08), HV-12, HV
 |Maturity and feasibility|Prototype level: needs to be built from off-the-shelf sensors and a microcontroller. Feasible within the project for a mock sink (EM-05); robustness in a real bathroom is unproven.
 |Failure and fallback behaviour|If a sensor stops reporting, the System reports a degraded state to the care worker (TECH-12) rather than prompting on bad data; the activity falls back to the existing SA-08 workarounds.
 |Benefits|Serves the Goal on SA-08 (knowing where the resident is in the sequence at all). Serves HV-11 Privacy: no camera, and nothing is worn.
-|Drawbacks|Strains VT-12 (detection reliability): tracking from item events is coarser than video, so stall detection will produce some false and some missed stalls. Accepted in order to stay within VT-09.
+|Drawbacks|Strains VT-11 (detection reliability): tracking from item events is coarser than video, so stall detection will produce some false and some missed stalls. Accepted in order to stay within VT-08.
 |Selected or rejected|Selected - enables F7 without a camera.
 
 == Graph edges ==
 
-enables → F7, F8 (early-stop rule), F10 (session data); addresses → Goal (SA-08), HV-11; strains → VT-12.
+enables → F7, F8 (early-stop rule), F10 (session data); addresses → Goal (SA-08), HV-11; strains → VT-11.
 
 = Care-staff notification and session record (selected)  [TECH-12] =
 
@@ -99,12 +99,12 @@ enables → F7, F8 (early-stop rule), F10 (session data); addresses → Goal (SA
 |Maturity and feasibility|High - standard messaging and storage.
 |Failure and fallback behaviour|Alerting follows the handover rules in the §2.3 Escalation specification: four message types (routine, priority, urgent, information), each with its own acknowledgement time, one re-send, and escalation to a second care worker; urgent messages also go through the nurse-call system where it can be connected. Failures are logged. If the record cannot be stored, the session is flagged as unrecorded rather than silently lost.
 |Benefits|Serves HV-14 Attentive care (the care worker is only called when needed) and HV-13 Well-being (help arrives when prompting fails or there is a safety risk).
-|Drawbacks|Strains VT-09: the session record is data about a personal-care activity, so what it holds is limited to three items (UC04-F10-PR10) and it is not shared with ST-11.
+|Drawbacks|Strains VT-08: the session record is data about a personal-care activity, so what it holds is limited to three items (UC04-F10-PR10) and it is not shared with ST-11.
 |Selected or rejected|Selected.
 
 == Graph edges ==
 
-enables → F9, F10; addresses → HV-13, HV-14; strains → VT-09; alerting policy grounded on → HFC-14.
+enables → F9, F10; addresses → HV-13, HV-14; strains → VT-08; alerting policy grounded on → HFC-14.
 
 = Camera-based activity recognition (rejected)  [TECH-13] =
 
@@ -124,13 +124,13 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-09; alerting pol
 |Limitations|Continuous video of a resident in their bathroom during a personal-care activity.
 |Maturity and feasibility|Research prototypes exist; Pepper's own cameras could in principle be used.
 |Failure and fallback behaviour|Not applicable - rejected.
-|Benefits|Would serve the Goal on SA-08 with better detection than TECH-11, which would ease VT-12.
-|Drawbacks|Violates HV-11 Privacy and strains VT-09 more than anything else considered. Continuous monitoring is the concern HFC-10 describes (Niemeijer et al., 2010, 2015), and it would make UC04-F7-CL21 fail by design.
+|Benefits|Would serve the Goal on SA-08 with better detection than TECH-11, which would ease VT-11.
+|Drawbacks|Violates HV-11 Privacy and strains VT-08 more than anything else considered. Continuous monitoring is the concern HFC-10 describes (Niemeijer et al., 2010, 2015), and it would make UC04-F7-CL21 fail by design.
 |Selected or rejected|Rejected - the privacy cost in a bathroom outweighs the detection gain. Retained because it is the reason F7 works from items instead, and it would be the first option to revisit if TECH-11 proves too unreliable.
 
 == Graph edges ==
 
-(no outgoing edges to Specification - rejected option, retained as Foundation knowledge); would strain → VT-09.
+(no outgoing edges to Specification - rejected option, retained as Foundation knowledge); would strain → VT-08.
 
 = Tool-like sink-side prompting device (rejected)  [TECH-14] =
 
@@ -150,13 +150,13 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-09; alerting pol
 |Limitations|No social presence; cannot be the course's robot platform.
 |Maturity and feasibility|High - simple hardware.
 |Failure and fallback behaviour|Same as TECH-10.
-|Benefits|Would serve HV-10 Dignity and HV-11 Privacy. Best supported by the evidence for VT-11 (Dignity) and VT-09 (Privacy): less risk of being read as a supervisor or of talking down to the resident. Fits inside a bathroom.
+|Benefits|Would serve HV-10 Dignity and HV-11 Privacy. Best supported by the evidence for VT-10 (Dignity) and VT-08 (Privacy): less risk of being read as a supervisor or of talking down to the resident. Fits inside a bathroom.
 |Drawbacks|Does not use the project's robot platform.
 |Selected or rejected|Rejected - project constraint: the project uses Pepper. Retained because the evidence favours it for personal care, and it is the fallback if UC04-F8-CL19 or UC04-F7-CL21 hold for Pepper.
 
 == Graph edges ==
 
-(no outgoing edges to Specification: rejected option, retained as Foundation knowledge); would ease → VT-11, VT-09; fallback for → TECH-10 if UC04-F8-CL19 or UC04-F7-CL21 hold, or if O-30 fails.
+(no outgoing edges to Specification: rejected option, retained as Foundation knowledge); would ease → VT-10, VT-08; fallback for → TECH-10 if UC04-F8-CL19 or UC04-F7-CL21 hold, or if O-30 fails.
 
 = Medication tray or dispenser with sensors (deferred)  [TECH-15] =
 
@@ -177,7 +177,7 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-09; alerting pol
 |Maturity and feasibility|High - simple sensors.
 |Failure and fallback behaviour|To be specified with UC05.
 |Benefits|Would serve the Goal on SA-09.
-|Drawbacks|To be assessed with UC05, including VT-13.
+|Drawbacks|To be assessed with UC05, including VT-12.
 |Selected or rejected|Deferred - fits UC05 (medication), which is deferred to a later cycle.
 
 == Graph edges ==
@@ -209,12 +209,12 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-09; alerting pol
 |Maturity and feasibility|Commercially available, but reading its data outside the vendor app is uncertain. Not needed for F7, which only needs brushing motion.
 |Failure and fallback behaviour|Same as TECH-11.
 |Benefits|Would serve HV-13 by showing whether all of the mouth was brushed, which brushing time cannot.
-|Drawbacks|Strains VT-15: it produces a per-region record of how a personal-care activity was performed. Coverage feedback would invite more specific prompts ("the left side"), which raises the infantilisation risk tested by UC04-F8-CL19.
+|Drawbacks|Strains VT-14: it produces a per-region record of how a personal-care activity was performed. Coverage feedback would invite more specific prompts ("the left side"), which raises the infantilisation risk tested by UC04-F8-CL19.
 |Selected or rejected|Deferred. Revisit if UC04-F9-CL25 holds or UC04-F8-CL24 fails, that is, if brushing time turns out not to be enough.
 
 == Graph edges ==
 
-(no outgoing edges to Specification this cycle, deferred); would strain → VT-15.
+(no outgoing edges to Specification this cycle, deferred); would strain → VT-14.
 
 = Smart mirror or camera-based brushing analysis (rejected)  [TECH-17] =
 
@@ -235,9 +235,9 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-09; alerting pol
 |Maturity and feasibility|Prototypes and consumer products exist.
 |Failure and fallback behaviour|Not applicable, rejected.
 |Benefits|Would serve HV-13 Well-being, with the most complete picture of how well the resident brushed.
-|Drawbacks|Violates HV-11 Privacy and strains VT-09 and VT-15 more than any other brushing-quality option. It is the continuous monitoring HFC-10 describes, and it would make UC04-F7-CL21 fail by design. It also conflicts with covering Pepper's cameras: the System would hide one camera and add another.
+|Drawbacks|Violates HV-11 Privacy and strains VT-08 and VT-14 more than any other brushing-quality option. It is the continuous monitoring HFC-10 describes, and it would make UC04-F7-CL21 fail by design. It also conflicts with covering Pepper's cameras: the System would hide one camera and add another.
 |Selected or rejected|Rejected. Retained because it is the option the midterm feedback points toward, and the reason brushing quality is measured by people (M-19) instead.
 
 == Graph edges ==
 
-(no outgoing edges to Specification: rejected option, retained as Foundation knowledge); would strain → VT-09, VT-15.
+(no outgoing edges to Specification: rejected option, retained as Foundation knowledge); would strain → VT-08, VT-14.

@@ -62,7 +62,7 @@ syntax: xwiki/2.1
 |ID| RP-03
 |Name| Pepper as tooth-brushing aid
 |Status| In Progress
-|Evidence basis| Vendor documentation for Pepper (TECH-10); design choices follow HFC-13 and VT-11 (tool-like framing, low expressivity) and VT-09 (no cameras). Not yet tested with residents.
+|Evidence basis| Vendor documentation for Pepper (TECH-10); design choices follow HFC-13 and VT-10 (tool-like framing, low expressivity) and VT-08 (no cameras). Not yet tested with residents.
 |Role in Scenario| Stands at the bathroom doorway during the tooth-brushing routine (DS-04). Stays quiet while the resident manages, prompts at the lowest sufficient level when they stall (F8), and calls the care worker when prompting runs out, the resident is distressed, or there is a safety risk (F9).
 |Social Competencies| Slow, non-interruptive turn-taking. Waits and holds silence before prompting, and stops as soon as the resident resumes. Responds to a simple yes/no or a touch on its head or hand, but does not depend on understanding speech. Does not initiate conversation beyond the routine.
 |Embodiment| Pepper humanoid robot (TECH-10), about 1.2 m tall, on a wheeled base, with a chest tablet, speakers, microphones, touch sensors and LED eyes. Positioned at the bathroom doorway, never blocking the resident's path, kept away from water. Cameras disabled and lenses visibly covered; activity tracking comes from sensors on the tooth-brushing items (TECH-11), not from the robot. Arm gestures and head movement kept minimal during the activity, and no gaze-following of the resident.

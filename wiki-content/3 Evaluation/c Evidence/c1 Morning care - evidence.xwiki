@@ -72,7 +72,7 @@ syntax: xwiki/2.1
 |Result observed|Myra can read the three-item record, but "highest level: demonstration" does not say at which step, so it does not tell her where Mary needs help next time (WF-09).
 |Verdict|Challenges
 |Basis for verdict|Reviewer judgement against HP-06's third task demand. The privacy half of CL22 is met by design, while the sufficiency half is in doubt.
-|Limitations|Care workers may already know a resident well enough that the record only needs to flag that something changed. Only EM-07 can settle this. A fix would trade against VT-09 (O-38).
+|Limitations|Care workers may already know a resident well enough that the record only needs to flag that something changed. Only EM-07 can settle this. A fix would trade against VT-08 (O-38).
 
 = Evidence [EV-06] =
 
