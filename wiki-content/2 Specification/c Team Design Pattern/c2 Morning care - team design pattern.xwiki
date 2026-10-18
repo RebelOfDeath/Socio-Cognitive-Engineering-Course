@@ -29,7 +29,7 @@ Wang et al. (2017) studied robot-delivered stepwise prompts for handwashing and 
 
 Braley et al. (2019) found that some people with dementia, especially participants with moderate dementia, showed confusion or frustration during repeated automated prompting and benefited from communication with the researchers. This supports a human handover when prompting becomes unresolved or stressful; it does not establish the proposed System's handover thresholds.
 
-The project instantiation is derived from SA-08, SA-10, PS-07 and UC04. The resident retains the activity tasks, the System receives F7-F10, and the care worker retains reassurance, physical assistance and exception handling. This allocation remains provisional until it is evaluated through the Claims listed below.
+The project instantiation is derived from SA-08, SA-10, PS-05 and UC04. The resident retains the activity tasks, the System receives F7-F10, and the care worker retains reassurance, physical assistance and exception handling. This allocation remains provisional until it is evaluated through the Claims listed below.
 )))
 |Problem|A resident with dementia may lose their place in a familiar activity, while a care worker cannot continuously guide every step. If the System takes over too soon, it removes an opportunity to act independently; if it waits or prompts indefinitely, the resident may become distressed or the activity may remain incomplete. The team needs an explicit rule for what the resident attempts, what the System may prompt, and when a care worker assumes responsibility.
 |Solution Structure|(((

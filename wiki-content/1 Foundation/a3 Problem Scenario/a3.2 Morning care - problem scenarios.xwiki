@@ -2,9 +2,9 @@
 title: a3.2 Morning care - problem scenarios
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Problem Scenarios PS-07 and PS-08 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[a3.1 Missed connections>>doc:1 Foundation.a3 Problem Scenario.a3\.1 Missed connections.WebHome]]). IDs continue after the main set.
+**Abstract.** Problem Scenarios PS-05 and PS-06 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[a3.1 Missed connections>>doc:1 Foundation.a3 Problem Scenario.a3\.1 Missed connections.WebHome]]). IDs continue after the main set.
 
-= Losing track of the tooth brushing routine [PS-07] =
+= Losing track of the tooth brushing routine [PS-05] =
 
 //A narrative locating the Problem in a concrete moment, plus the analysis of why it happens.//
 
@@ -13,7 +13,7 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|PS-07
+|ID|PS-05
 |Name|Losing track of the tooth brushing routine
 |Status|In Progress
 |Evidence basis|Provisional. Constructed from SA-08 and the ST-09/ST-10 records, which rest on literature and group reasoning only. The pattern of stalling mid-sequence and needing repeated prompts matches Rogers et al. (1999) and the COACH study (Mihailidis et al., 2008). No resident or care worker has confirmed it.
@@ -46,7 +46,7 @@ Contributing causes:
 3. Completion: Resident may stop too early with brushing their teeth
 )))
 |Out of scope|(((
-- Medication routines - a separate activity (SA-09) with its own Problem Scenario (PS-08) and Use Case (UC05), deferred to a later cycle so this cycle can specify one activity properly.
+- Medication routines - a separate activity (SA-09) with its own Problem Scenario (PS-06) and Use Case (UC05), deferred to a later cycle so this cycle can specify one activity properly.
 
 - Other personal-care activities such as dressing, washing and toileting - they share the initiation, sequencing and completion sub-problems, but involve more intimate exposure and physical assistance. Extending the approach to them is a later decision, if it works for tooth brushing.
 
@@ -55,7 +55,7 @@ Contributing causes:
 - Dental health assessment - a clinical judgement for ST-13 or a dental professional, not something the System should infer.
 )))
 
-= Problem Scenario  [PS-08] =
+= Problem Scenario  [PS-06] =
 
 //A narrative locating the Problem in a concrete moment, plus the analysis of why it happens.//
 
@@ -64,7 +64,7 @@ Contributing causes:
 == Fields ==
 
 |=Field|=Description
-|ID|PS-08
+|ID|PS-06
 |Name|Difficulty completing the medication routine
 |Status|In Progress
 |Evidence basis|Provisional. Constructed from SA-09 and the ST-09/ST-10 records, which rest on literature (While et al., 2013) and group reasoning only. No resident or care worker has confirmed it.
@@ -126,6 +126,6 @@ Contributing causes:
 
 == Graph edges ==
 
-PS-07: illustrates → Problem; involves → ST-09, ST-10, SA-08, SA-10; motivates → OBJ-10; reimagined-as → DS-04 (§2.1).
+PS-05: illustrates → Problem; involves → ST-09, ST-10, SA-08, SA-10; motivates → OBJ-10; reimagined-as → DS-04 (§2.1).
 
-PS-08: illustrates → Problem; involves → ST-09, ST-10, SA-09, SA-10; motivates → UC05 (later cycle); reimagined-as → DS-05 (§2.1).
+PS-06: illustrates → Problem; involves → ST-09, ST-10, SA-09, SA-10; motivates → UC05 (later cycle); reimagined-as → DS-05 (§2.1).

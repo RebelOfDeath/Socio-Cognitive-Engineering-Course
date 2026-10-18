@@ -15,7 +15,7 @@ syntax: xwiki/2.1
 |Scope|(((
 Instantiates UC04 (§2.3) and implements its four Functions: F7 step tracking from item sensors (TECH-11), F8 graduated prompting through Pepper's speech and chest tablet (TECH-10), F9 handover to the care worker's phone (TECH-12), and F10 the three-item session record (TECH-12). The prompt wording, timing and handover rules are those of UC04's //Escalation specification//.
 
-Deliberately out of scope: UC05 (medication, deferred by O-22), any use of Pepper's cameras (TECH-13 rejected), physical assistance by the robot (left to the care worker through F9), and any judgement of how clean the teeth are (PS-07 out of scope; M-19 is a research measure, not a System function).
+Deliberately out of scope: UC05 (medication, deferred by O-22), any use of Pepper's cameras (TECH-13 rejected), physical assistance by the robot (left to the care worker through F9), and any judgement of how clean the teeth are (PS-05 out of scope; M-19 is a research measure, not a System function).
 )))
 |Simulation notice|(((
 Paper build: nothing is simulated by software. The specification stands in for the interface. Evaluators read the prompt script and the timings, and imagine the tablet picture, Pepper's position at the doorway and the care worker's phone message.

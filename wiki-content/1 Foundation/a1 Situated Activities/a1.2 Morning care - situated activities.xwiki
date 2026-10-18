@@ -81,7 +81,7 @@ ST-10: Care home staff member (supports and prompts when needed)
 
 == Graph edges ==
 
-performed-by → ST-09 (supported by ST-10); illustrated-by → PS-07.
+performed-by → ST-09 (supported by ST-10); illustrated-by → PS-05.
 
 = Situated Activity  [SA-09] =
 
@@ -148,7 +148,7 @@ ST-10: Care home employee (prepares the medication and reminds the resident)
 
 == Graph edges ==
 
-performed-by → ST-09 (supported by ST-10); illustrated-by → PS-08.
+performed-by → ST-09 (supported by ST-10); illustrated-by → PS-06.
 
 = Situated Activity  [SA-10] =
 
@@ -165,7 +165,7 @@ performed-by → ST-09 (supported by ST-10); illustrated-by → PS-08.
 |Evidence basis|(((
 Provisional. Literature and group reasoning only.
 
-Constructed from the care home worker's part in PS-07 and PS-08 and from HP-06. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
+Constructed from the care home worker's part in PS-05 and PS-06 and from HP-06. Rogers et al. (1999) describe nursing-home morning care routines for residents with dementia, and found that graduated prompting took considerably more caregiver time than usual care.
 )))
 |Goal|Get every resident on the round through their morning care safely and in time, giving each the support they actually need, and know afterwards what each resident needed so care can continue at handover
 |Performing Actor(s)|ST-10: Care home staff member
@@ -194,7 +194,7 @@ Constructed from the care home worker's part in PS-07 and PS-08 and from HP-06. 
 - Delegating one employee to handle medication for the whole round (SA-09)
 )))
 |Observed breakdowns|(((
-- Having to return repeatedly to the same resident to prompt the next step (PS-07, PS-08)
+- Having to return repeatedly to the same resident to prompt the next step (PS-05, PS-06)
 
 - Being unable to attend to two residents at once, so one of them waits
 
@@ -205,4 +205,4 @@ Constructed from the care home worker's part in PS-07 and PS-08 and from HP-06. 
 
 == Graph edges ==
 
-performed-by → ST-10; illustrated-by → PS-07, PS-08.
+performed-by → ST-10; illustrated-by → PS-05, PS-06.

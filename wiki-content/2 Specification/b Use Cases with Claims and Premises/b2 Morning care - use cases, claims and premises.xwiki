@@ -17,7 +17,7 @@ syntax: xwiki/2.1
 |Name|Activity reaches completion without care-worker prompting carrying it
 |Status|In Progress
 |Evidence basis|(((
-Derived from the Goal recorded on SA-08, and from PS-07's account of how that Goal currently fails.
+Derived from the Goal recorded on SA-08, and from PS-05's account of how that Goal currently fails.
 
 Literature: Rogers et al. (1999) found that systematic graduated prompting of nursing-home residents with dementia produced a 26% increase in self-dressing and significantly fewer physical assists than usual care, in a severely impaired cohort (mean MMSE 6.07). That establishes the effect direction is achievable.
 
@@ -26,7 +26,7 @@ No primary data collected by this project. SA-08's own Evidence basis rests on l
 |Statement|The resident reaches the last step of the tooth-brushing activity, and the verbal prompting a care worker currently has to supply is no longer what carries them there.
 |Type|Operational
 |Derived from|Goal on SA-08 ("maintain oral hygiene as part of the resident's normal morning routine, with as much independence as possible")
-|Priority|Must. This is the Goal SA-08 states, and the point at which PS-07 breaks down.
+|Priority|Must. This is the Goal SA-08 states, and the point at which PS-05 breaks down.
 
 == Graph edges ==
 
@@ -54,7 +54,7 @@ No primary data collected by this project.
 |Statement|At each step of the activity, the resident has had a real opportunity to act on their own before any assistance arrives.
 |Type|Value-derived
 |Derived from|HV-09 Autonomy and HV-12 Competence. Informed by VT-10's resolution, which already states the trade-off this Objective sits on.
-|Priority|Must. Without it, OBJ-10 could be satisfied by a System that simply narrates every step - which is what the existing workaround recorded on SA-08 already does, and what PS-07 identifies as the problem rather than the solution.
+|Priority|Must. Without it, OBJ-10 could be satisfied by a System that simply narrates every step - which is what the existing workaround recorded on SA-08 already does, and what PS-05 identifies as the problem rather than the solution.
 
 == Graph edges ==
 
@@ -103,7 +103,7 @@ derived-from → HFC-11; served-by → F8, F9; referenced-by → UC04-F8-CL16, U
 |Name|Support without the feeling of being watched
 |Status|In Progress
 |Evidence basis|(((
-Derived from HV-11, and from the scope decision recorded in PS-08's out-of-scope field ("we only report a failure in completing the task, we avoid surveilling the patient in general").
+Derived from HV-11, and from the scope decision recorded in PS-06's out-of-scope field ("we only report a failure in completing the task, we avoid surveilling the patient in general").
 
 Literature: Niemeijer et al. (2010), a systematic review of 79 papers on the ethical and practical acceptability of surveillance technology in residential care for people with dementia. Niemeijer et al. (2015) then asked residents themselves, and concluded such technology can contribute to autonomy //only// when embedded in a person-centred approach - which is the condition this Objective encodes.
 
@@ -189,11 +189,11 @@ derived-from → Goal (SA-10), HV-14; served-by → F9, F10; referenced-by → U
 |Name|Support the resident through the morning tooth-brushing routine
 |Status|In Progress
 |Evidence basis|(((
-Formalizes SA-08 and PS-07.
+Formalizes SA-08 and PS-05.
 
 Closest prior system: COACH (Mihailidis et al., 2008) prompted six older adults with moderate-to-severe dementia through handwashing using audio and audio-video prompts, and scored what M-13 scores here - one point per step completed without human assistance. It is the nearest published precedent for this Use Case and should be cited wherever this design is defended.
 
-No primary data collected by this project. No resident or care worker has been observed or interviewed; SA-08 and PS-07 rest on literature plus the group's own reasoning.
+No primary data collected by this project. No resident or care worker has been observed or interviewed; SA-08 and PS-05 rest on literature plus the group's own reasoning.
 )))
 |Objective(s) served|OBJ-10, OBJ-11, OBJ-12, OBJ-13, OBJ-14, OBJ-15
 |TDP(s) and IDP(s) used|TDP-02 Graduated activity support with human handover (§2.4) allocates the tasks between resident, System and care worker; IDP-04 Respectful graduated prompting (§2.5) shapes F8's prompts. Both are drafted from UC04 alone. Confirming that they recur needs UC05 (see UC05's scope decision).
@@ -206,7 +206,7 @@ The System - Pepper (TECH-10) for prompts and interaction, sensors on the tooth-
 
 ST-11 Family members (Indirect) - affected by outcomes, not an Actor in this Use Case, and not a recipient of anything F10 records.
 )))
-|Trigger|The resident's tooth-brushing window opens - SA-08's trigger, after waking, washing and/or breakfast - and either the resident is at the sink, or the window is running down with the activity not started. Both are in scope, because PS-07's first sub-problem is initiation.
+|Trigger|The resident's tooth-brushing window opens - SA-08's trigger, after waking, washing and/or breakfast - and either the resident is at the sink, or the window is running down with the activity not started. Both are in scope, because PS-05's first sub-problem is initiation.
 |Pre-condition|(((
 The resident's SA-08 step sequence is configured, together with the assistance baseline they currently need.
 
@@ -228,7 +228,7 @@ One of the following holds:
 In every case F10 holds a session record, and no step-by-step trace of the activity is retained.
 )))
 |Action Sequence|(((
-~1. The tooth-brushing window opens. The System begins tracking the activity (F7). **Deliberate addition** - SA-08 task 1 is the resident recognising that it is time, which PS-07 shows failing.
+~1. The tooth-brushing window opens. The System begins tracking the activity (F7). **Deliberate addition** - SA-08 task 1 is the resident recognising that it is time, which PS-05 shows failing.
 
 2. The resident enters the bathroom and begins (SA-08 tasks 2-3).
 
@@ -374,16 +374,16 @@ Correctness and conformity. The session record contains exactly the three specif
 One row per Claim. Validation - does the Function produce the intended effect. Premise and Claim numbers are drawn from project-wide counters, not reset per Use Case or per Function.
 
 |=Claim ID|=Function|=Serves Objective|=Effect|=Grounding|=Evaluation Method(s) / Measure(s)|=Validation Criteria|=Step(s)
-|UC04-F8-CL15|F8|OBJ-11, OBJ-10|Positive. Increases the number of SA-08 steps the resident completes with no prompt at all, compared with the care worker's current prompt-on-hesitation pattern. Concerns ST-09, SA-08, PS-07.|HFC-11; HV-09, HV-12. Precedent: Rogers et al. (1999) for the effect; Mihailidis et al. (2008) for the same outcome measure in a prompting system.|EM-06; M-13, M-15|M-13 mean above the same residents' pre-System baseline, with no increase in M-15.|3-8
+|UC04-F8-CL15|F8|OBJ-11, OBJ-10|Positive. Increases the number of SA-08 steps the resident completes with no prompt at all, compared with the care worker's current prompt-on-hesitation pattern. Concerns ST-09, SA-08, PS-05.|HFC-11; HV-09, HV-12. Precedent: Rogers et al. (1999) for the effect; Mihailidis et al. (2008) for the same outcome measure in a prompting system.|EM-06; M-13, M-15|M-13 mean above the same residents' pre-System baseline, with no increase in M-15.|3-8
 |UC04-F8-CL16|F8|OBJ-12, OBJ-10|Positive. Where the resident does stall, the graduated ladder resolves it at a lower level of assistance than current practice, which moves to naming or demonstrating at once. Concerns ST-09, ST-10, SA-08, HV-12.|HFC-11. Precedent: Rogers et al. (1999) found significantly fewer physical assists under graduated prompting.|EM-06; M-14, M-13|M-14 distribution shifted toward lower levels than baseline, at equal or better completion on M-13.|6-8
 |UC04-F8-CL17|F8|OBJ-11|Positive. Increases the resident's felt sense of doing the activity themselves rather than being led through it. Concerns ST-09, HV-09.|HFC-09; HV-09. Ryan & Deci (2000) for the mechanism; Peek et al. (2014) for acceptance factors in this population.|EM-06; M-16 (self-report and observer rating)|Both parts of M-16 are required. Holds if the observer's support-of-autonomy rating is higher than the pre-System baseline, and the self-report mean is no lower than baseline. The observer rating carries the Claim; the self-report alone cannot, because resident self-reports show documented ceiling effects (Custers et al., 2013; Open item O-17). If the two disagree, report both and treat the Claim as unresolved.|3-8
 |UC04-F8-CL18|F8|OBJ-11, OBJ-12|**Adverse.** For residents whose current ability falls below a step's demand, the deliberate wait before prompting increases observed frustration rather than producing independent completion. Concerns ST-09, HV-13.|HFC-11; HV-13. This tests VT-10 directly. Precedent: mistimed and false-alarm prompts in COACH (Mihailidis et al., 2008) were observed to produce general frustration and confusion - the same mechanism CL15 relies on, running the wrong way.|EM-06; M-15, M-14|Holds if M-15 (Resistiveness to Care Scale) rises above baseline for the lower-ability subgroup while M-13 does not improve for them. If it holds, the wait interval must become per-resident rather than configured once.|4, 6
 |UC04-F8-CL19|F8|OBJ-14|**Adverse.** Being prompted through tooth brushing by a robot is experienced as infantilising, independently of whether it improves completion. Concerns ST-09, HV-10.|HFC-12, HFC-13; HV-10. Kitwood (1997), who names infantilisation and outpacing among the detractors that erode personhood in dementia care. Robot-specific: Lee et al. (2016) on ageing stereotypes in assistive robot design; Coghlan et al. (2021), whose older participants (living at home, no dementia) called companion robots "patronizing" when they were toy-like or imitated human companionship; and Furlanis et al. (2026), whose "embodied treatment" dimension covers the gaze, timing and tone F8 controls - including a case of exaggerated gentleness toward older adults read as condescension.|EM-06, EM-07; M-15, M-17|Holds if residents (EM-06 post-session interview) or care staff (EM-07) describe the prompting as talking down to the resident or as child-like (M-17 code T), or if M-15 rises above baseline during prompting. Tests VT-11. Sensitive to §1.3: Pemberton et al. (2026) suggest an expressive humanoid form would raise this risk relative to an appliance-like one, so a negative result on one embodiment does not clear the other. The selected embodiment is Pepper (TECH-10), the higher-risk form; TECH-14 is the fallback if this Claim holds.|6-8
-|UC04-F9-CL20|F9|OBJ-10, OBJ-12|Positive. Reduces the share of sessions that end incomplete, by bringing a care worker in when prompting has run out instead of the activity being abandoned. Concerns ST-09, ST-10, SA-08, PS-07.|HV-13; HFC-11|EM-06; M-13|Fewer incomplete sessions than baseline. (The time effect was split out into UC04-F9-CL23; Open item O-18.)|9, 10, 8-alt
+|UC04-F9-CL20|F9|OBJ-10, OBJ-12|Positive. Reduces the share of sessions that end incomplete, by bringing a care worker in when prompting has run out instead of the activity being abandoned. Concerns ST-09, ST-10, SA-08, PS-05.|HV-13; HFC-11|EM-06; M-13|Fewer incomplete sessions than baseline. (The time effect was split out into UC04-F9-CL23; Open item O-18.)|9, 10, 8-alt
 |UC04-F9-CL23|F9|OBJ-15|Positive. Reduces the care worker's prompting time per resident during the morning round, because the System carries the waiting and the lower prompt levels and the care worker is called only when needed. Concerns ST-10, SA-10, HV-14.|HV-14; HFC-11, HFC-14. At risk: Rogers et al. (1999) found graduated prompting took considerably //more// caregiver time than usual care - absorbing that time is the point of the System, but it is an empirical question. Tests VT-14.|EM-06, EM-07; M-18|M-18 total care-worker prompting time per session below the pre-System baseline, with completion (M-13, CL20) no worse. Holds only if both are true: saving time by letting sessions go unfinished does not count.|9, 8-alt
 |UC04-F7-CL21|F7|OBJ-13|Positive. The resident does not experience the step tracking as being watched, because it requires nothing of them and observes the activity rather than the person. Concerns ST-09, HV-11.|HFC-10, HFC-13; HV-11. Niemeijer et al. (2010, 2015) - residents can experience surveillance technology as supporting autonomy, but only within a person-centred approach. Pemberton et al. (2026) sharpens the risk: older adults assigned humanoid robots the "Warden" role - oversight without attachment - which is this Claim failing by design rather than by accident.|EM-06, EM-07; M-17|No resident expressions of being watched in M-17 coding (code W, EM-06 post-session interview), and care staff judge the retained record proportionate (EM-07). Sensitive to §1.3 on the same axis as CL19: Pepper's cameras are disabled and covered, but physically present.|1, 3
 |UC04-F10-CL22|F10|OBJ-13, OBJ-15|Positive. The three-item session record gives the care worker enough to adjust the support they offer, without exposing how the resident performed a personal-care activity step by step. Concerns ST-10, ST-09, HV-11.|HV-11; VT-09 resolution; Niemeijer et al. (2010) on proportionality of what is recorded.|EM-07; M-17|Care staff report the record sufficient for handover and identify nothing in it they consider intrusive.|11
-|UC04-F8-CL24|F8|OBJ-10|Positive. The early-stop offer at SA-08 task 7 makes the resident brush for longer than at baseline, and so leaves less plaque. Concerns ST-09, SA-08, and PS-07's completion sub-problem (stopping brushing too early).|HFC-11; HV-13, HV-12. Group reasoning from PS-07's completion sub-problem. Seuntjens et al. (2025) support the step from longer brushing to less plaque, in single brushing exercises outside this population. Nearest precedent: in MOUTh (Jablonski et al., 2018), a relationship-based intervention for nursing-home residents with dementia who resisted mouth care, care staff achieved longer mouth care than controls (d = 0.56) but only a small differential improvement in oral health (d = 0.18). Care staff delivered that mouth care, so no published precedent has been found for prompting the resident to brush longer themselves (Open item O-32). MOUTh's small oral-health effect is also why this Claim requires plaque to fall, and not brushing time alone.|EM-06; M-19, M-15, M-17|Holds if brushing time (M-19 part b) is above the same residents' baseline //and// plaque (M-19 part a) is below it, with no rise in M-15 and no T codes about the brushing offer in M-17. If brushing time rises and plaque does not fall, the Claim is unsupported, since time spent is only a proxy for how well the teeth were cleaned.|7, 3-alt
+|UC04-F8-CL24|F8|OBJ-10|Positive. The early-stop offer at SA-08 task 7 makes the resident brush for longer than at baseline, and so leaves less plaque. Concerns ST-09, SA-08, and PS-05's completion sub-problem (stopping brushing too early).|HFC-11; HV-13, HV-12. Group reasoning from PS-05's completion sub-problem. Seuntjens et al. (2025) support the step from longer brushing to less plaque, in single brushing exercises outside this population. Nearest precedent: in MOUTh (Jablonski et al., 2018), a relationship-based intervention for nursing-home residents with dementia who resisted mouth care, care staff achieved longer mouth care than controls (d = 0.56) but only a small differential improvement in oral health (d = 0.18). Care staff delivered that mouth care, so no published precedent has been found for prompting the resident to brush longer themselves (Open item O-32). MOUTh's small oral-health effect is also why this Claim requires plaque to fall, and not brushing time alone.|EM-06; M-19, M-15, M-17|Holds if brushing time (M-19 part b) is above the same residents' baseline //and// plaque (M-19 part a) is below it, with no rise in M-15 and no T codes about the brushing offer in M-17. If brushing time rises and plaque does not fall, the Claim is unsupported, since time spent is only a proxy for how well the teeth were cleaned.|7, 3-alt
 |UC04-F9-CL25|F9|OBJ-10, OBJ-15|**Adverse.** Because the care worker is now absent for most of the routine, brushing quality falls even where independent step completion rises. The System counts SA-08 task 7 as done once brushing motion has occurred, while a care worker standing beside the resident would also have seen how well they brushed. Concerns ST-09, ST-10, HV-13.|HV-13; VT-14, VT-15. Raised by the midterm feedback, which asked how well the teeth were actually brushed. M-13 cannot detect this effect, because it scores step completion only.|EM-06; M-19, M-13|Holds if plaque (M-19 part a) is higher than the same residents' baseline during the System phase. If it holds while UC04-F8-CL15 also holds, the System is trading oral health for independence. The first response is to raise B-target for those residents; the second is a periodic brushing check by the care worker, outside the System.|7, 9
 
 == Graph edges ==
@@ -402,15 +402,15 @@ realizes → DS-04 (§2.1); serves → OBJ-10…OBJ-15; uses → TDP-02, IDP-04;
 |ID|UC05
 |Name|Support the resident through the medication routine
 |Status|Not Started
-|Evidence basis|Would formalize SA-09 and PS-08. No primary data collected by this project.
+|Evidence basis|Would formalize SA-09 and PS-06. No primary data collected by this project.
 |Scope decision|(((
 SA-09 and SA-08 have different triggers and different Goals, so this is a separate Use Case rather than an alternate flow of UC04 - it is not a candidate for merging.
 
 It is deferred for this cycle rather than dropped. Reasons:
 
-- PS-08's out-of-scope field already narrows it heavily, including a care-home blacklist for residents on critical medication, which needs settling before Functions can be written.
+- PS-06's out-of-scope field already narrows it heavily, including a care-home blacklist for residents on critical medication, which needs settling before Functions can be written.
 
-- PS-08 adds a fourth sub-problem, confirmation, that has no counterpart in PS-07 - the resident failing to confirm they have taken the medication, risking a double dose. That needs its own Function and its own Claim, and possibly a safety Premise, rather than reusing F7-F10.
+- PS-06 adds a fourth sub-problem, confirmation, that has no counterpart in PS-05 - the resident failing to confirm they have taken the medication, risking a double dose. That needs its own Function and its own Claim, and possibly a safety Premise, rather than reusing F7-F10.
 
 - Specifying it properly would roughly double the Premise and Claim count, and the medication activity will need Measures of its own on the §1.2 Measures page, numbered from M-25.
 
@@ -425,7 +425,7 @@ These are gaps recorded as explicit decisions rather than left silent, per Step 
 
 |=ID|=Item|=Blocks|=Owner
 |O-10|Resolved. M-12…M-18 are on the §1.2 [[b4.2 Morning care - measures>>doc:1 Foundation.b4 Measures.b4\.2 Morning care - measures.WebHome]] page and EM-05…EM-07 on the §1.2 [[b5.2 Morning care - evaluation methods>>doc:1 Foundation.b5 Evaluation Methods.b5\.2 Morning care - evaluation methods.WebHome]] page. New Measures start at M-25 (M-19 Brushing quality was added for O-32; M-20 to M-24 belong to the main concept), new Evaluation Methods at EM-09 (EM-08 belongs to the main concept).|Nothing|Closed
-|O-11|Resolved (group decision: in scope). Notifying a care worker on immediate risk of serious harm stays in F9 and step 10. VT-08's non-negotiable floor now says "none identified", and the escalation rule has moved into its current resolution, since it is a design decision, not a regulation. PS-08's out-of-scope now excludes only emergency //treatment//. Because there is no camera, a possible emergency is inferred from no sensor change and no response (TECH-11 limitation, step 10).|Nothing|Closed
+|O-11|Resolved (group decision: in scope). Notifying a care worker on immediate risk of serious harm stays in F9 and step 10. VT-08's non-negotiable floor now says "none identified", and the escalation rule has moved into its current resolution, since it is a design decision, not a regulation. PS-06's out-of-scope now excludes only emergency //treatment//. Because there is no camera, a possible emergency is inferred from no sensor change and no response (TECH-11 limitation, step 10).|Nothing|Closed
 |O-12|Resolved. SA-10 (the care worker's morning round) now records the care-continuity and handover task, and its Goal grounds the new OBJ-15, which F10 (and F9) serve.|Nothing|Closed
 |O-13|Resolved. UC04-F8-CL19 now grounds on HFC-12 (Personhood and malignant social psychology, Kitwood 1997) in §1.2, not on a Claim-level citation.|Nothing|Closed
 |O-14|Resolved. §1.3 now documents six Technology Options: Pepper (TECH-10), item sensors (TECH-11) and staff notification (TECH-12) selected; camera-based recognition (TECH-13) and a tool-like sink device (TECH-14) rejected; the medication tray (TECH-15) deferred. F7-F10's "Enabled by" clauses now cite them. Numeric thresholds are still open - see O-29.|Nothing|Closed
@@ -471,11 +471,11 @@ Resolved, with a recorded tension. (a) §1.3 records this evidence: the tool-lik
 )))|Nothing|Closed
 |O-21|Resolved (group decision: add a resident interview). EM-06 now ends each System session with M-16's items and three short, verbally administered M-17 questions, asked only if the resident is willing and not distressed. CL19 and CL21 now say which part of M-17 comes from EM-06 and which from EM-07.|Nothing|Closed
 |O-22|(((
-Resolved (group decision: tooth brushing is the spine). New DS-04 in §2.1 reimagines PS-07 with the selected System; DS-05 (medication) is kept, labelled as UC05 material. HP-05 and HP-06 now centre on DS-04. RP-03 is rewritten as Pepper at the bathroom doorway, with tracking from item sensors (TECH-11) - so the Robot Profile can now perform F7. The tray device is kept as TECH-15 (deferred).
+Resolved (group decision: tooth brushing is the spine). New DS-04 in §2.1 reimagines PS-05 with the selected System; DS-05 (medication) is kept, labelled as UC05 material. HP-05 and HP-06 now centre on DS-04. RP-03 is rewritten as Pepper at the bathroom doorway, with tracking from item sensors (TECH-11) - so the Robot Profile can now perform F7. The tray device is kept as TECH-15 (deferred).
 )))|Nothing|Closed
 |O-23|Resolved. Added SA-10 (morning care round, performed by ST-10), HV-14 Attentive care (held by ST-10, ST-12, ST-11), VT-14 Competence vs Attentive care, and OBJ-15. ST-10's values are now its own, not the resident's list. CL23 now has a baseline to compare against (M-18).|Nothing|Closed
 |O-24|Resolved. Added VT-11 Dignity vs Competence (tested by CL19), VT-12 detection reliability (tested by PR8 and CL18), and VT-13 medication timing (time-criticality, deferred with UC05). VT-14 also covers time-criticality for UC04. VT-09's "nature of the conflict" now describes privacy vs well-being, and VT-10's domain area is corrected.|Nothing|Closed
-|O-25|Resolved. PS-07's out-of-scope field now gives four exclusions, each with a reason, and treats medication as deferred to UC05 rather than excluded.|Nothing|Closed
+|O-25|Resolved. PS-05's out-of-scope field now gives four exclusions, each with a reason, and treats medication as deferred to UC05 rather than excluded.|Nothing|Closed
 |O-26|Resolved (group confirmed: no primary data yet). Every Evidence basis in §1.1 and §1.2 now says literature and group reasoning only, flagged provisional. Stakeholder relationships are written per Stakeholder, each Stakeholder lists only the values it holds, with a priority, and HV "Held by" fields match. Value sources now cite specific works (Ryan & Deci, 2000; Friedman et al., 2008; Kitwood, 1997; Niemeijer et al., 2010).|Nothing|Closed
 |O-27|Resolved. §1.4 was written from the Foundation pages as "d. Foundation Coherence" under 1. Foundation: edge inventory, open tensions with stance, completeness check. Writing it found 13 edges recorded on one page and missing on the other, and two orphaned Technology Options; all were fixed on the source pages except TECH-15, which waits for UC05.|Nothing|Closed
 |O-28|Resolved. M-15's scoring (duration × intensity per item, total 0-156) and M-16's items and scales are recorded from the sources. Each observer- or coder-rated Measure (M-13, M-14, M-17, M-18) now states a reliability plan: at least 20% double-coded, kappa or ICC ≥ .60 (Landis & Koch, 1977). M-17 has explicit codes (W, R, T, N; P/I).|Nothing|Closed

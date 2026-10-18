@@ -33,7 +33,7 @@ syntax: xwiki/2.1
 
 == Graph edges ==
 
-performs → SA-08, SA-09; holds → HV-09, HV-10, HV-11, HV-12, HV-13; appears-in → PS-07, PS-08; elaborated-as → HP-05 (§2.2).
+performs → SA-08, SA-09; holds → HV-09, HV-10, HV-11, HV-12, HV-13; appears-in → PS-05, PS-06; elaborated-as → HP-05 (§2.2).
 
 = Stakeholder - Care home staff member [ST-10] =
 
@@ -66,7 +66,7 @@ performs → SA-08, SA-09; holds → HV-09, HV-10, HV-11, HV-12, HV-13; appears-
 
 == Graph edges ==
 
-performs → SA-10; supports → SA-08, SA-09; holds → HV-09 to HV-14; appears-in → PS-07, PS-08; elaborated-as → HP-06 (§2.2).
+performs → SA-10; supports → SA-08, SA-09; holds → HV-09 to HV-14; appears-in → PS-05, PS-06; elaborated-as → HP-06 (§2.2).
 
 = Stakeholder - Family members of Resident [ST-11] =
 

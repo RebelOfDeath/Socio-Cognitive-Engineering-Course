@@ -13,7 +13,7 @@ syntax: xwiki/2.1
 |ID| HP-05
 |Name| Resident with dementia
 |Status| In Progress
-|Evidence basis| Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this Persona is provisional. Built on ST-09/ST-10 (§1.1), PS-07 and PS-08, and the literature cited in §1.2.
+|Evidence basis| Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this Persona is provisional. Built on ST-09/ST-10 (§1.1), PS-05 and PS-06, and the literature cited in §1.2.
 |Elaborates| ST-09
 |Role in Scenario| The person whose morning routine it is (DS-04). Instead of being a passive recipient, they are given time to do each step themselves, and are prompted only when they stall, at the lowest level that gets them going again.
 |Task Demands| 1. Recognizing that it is time to brush their teeth, and starting.
@@ -28,7 +28,7 @@ syntax: xwiki/2.1
 - HV-13: Well-being - The resident wants their mornings to be calm, and to avoid the frustration of getting stuck and not knowing what comes next.
 )))
 |Social Network and Relationships| Receives support from ST-10 (the care worker) and may have ST-11 (family) involved in their care. DS-04 does not remove their reliance on the care worker; it reduces how often they need them during the routine, because the System holds the sequence steady when the care worker is with another resident.
-|History and Experiences| No prior technology rejection recorded. Previous experiences include stalling part-way through tooth brushing (PS-07) and needing repeated reminders and redirection to complete tasks (PS-08). Being approached repeatedly and having everything re-explained can be confusing and tiring, which is why smaller, gentler cues are desirable.
+|History and Experiences| No prior technology rejection recorded. Previous experiences include stalling part-way through tooth brushing (PS-05) and needing repeated reminders and redirection to complete tasks (PS-06). Being approached repeatedly and having everything re-explained can be confusing and tiring, which is why smaller, gentler cues are desirable.
 |Constraints and Privacy Considerations| Will not accept being filmed in their bathroom. Monitoring should go no further than knowing where they are in the routine, and nothing about how they brushed their teeth should be kept.
 
 
@@ -37,7 +37,7 @@ syntax: xwiki/2.1
 |ID| HP-06
 |Name| Care home staff member
 |Status| In Progress
-|Evidence basis| Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this Persona is provisional. Built on ST-09/ST-10 (§1.1), PS-07 and PS-08, and the literature cited in §1.2.
+|Evidence basis| Literature and group reasoning only - no residents or care staff have been interviewed or observed by this project, so this Persona is provisional. Built on ST-09/ST-10 (§1.1), PS-05 and PS-06, and the literature cited in §1.2.
 |Elaborates| ST-10
 |Role in Scenario| Responsible for several residents on the morning round (SA-10). In DS-04 their role shifts from walking each resident through their routine step by step to being called in only when prompting has run out, the resident is distressed, or there is a safety risk.
 |Task Demands| 1. Being able to help another resident while one completes their routine.

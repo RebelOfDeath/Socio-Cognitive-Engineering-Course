@@ -16,7 +16,7 @@ syntax: xwiki/2.1
 
 
 = Design Scenario [DS-04] =
-//Reimagines PS-07 (losing track of the tooth-brushing routine) with the System in place. Realized by UC04. Technology: Pepper (TECH-10), sensors on the tooth-brushing items (TECH-11), and a notification to the care worker's phone (TECH-12).//
+//Reimagines PS-05 (losing track of the tooth-brushing routine) with the System in place. Realized by UC04. Technology: Pepper (TECH-10), sensors on the tooth-brushing items (TECH-11), and a notification to the care worker's phone (TECH-12).//
 
 It is morning in the dementia care home. The resident has finished breakfast and returns to their room. The care worker, Myra, reminds them that it is time to brush their teeth, and moves on to help the next resident on the round.
 
