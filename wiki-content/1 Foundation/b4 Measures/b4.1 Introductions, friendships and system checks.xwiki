@@ -2,7 +2,7 @@
 title: b4.1 Introductions, friendships and system checks
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Ten measures. M-01 checks that the System does what its Functions specify. The main outcomes are introductions and repeat contact (M-02) and friendships over weeks (M-05). Conversation between residents (M-04) and time spent together, walks included (M-06), are secondary. M-03 rates emotion, M-07 records the residents' own view and signs of pressure, and M-08 measures loneliness. M-09 and M-10 watch the values at risk: privacy, tone, trust and truth. Every outcome is collected in the same way in both care homes (EM-03), and nothing is recorded on audio or video. M-20 to M-24 are the measures of the two-site Kinnect study (EM-08, ER-03): agitation and affect, peer connections, conversational engagement, bedroom time and first-time usability. M-22 is computed on the robot (TECH-18), so no audio or transcript is kept for it either.
+**Abstract.** Fifteen measures. M-01 checks that the System does what its Functions specify. The main outcomes are introductions and repeat contact (M-02) and friendships over weeks (M-05). Conversation between residents (M-04) and time spent together, walks included (M-06), are secondary. M-03 rates emotion, M-07 records the residents' own view and signs of pressure, and M-08 measures loneliness. M-09 and M-10 watch the values at risk: privacy, tone, trust and truth. Every outcome is collected in the same way in both care homes (EM-03), and nothing is recorded on audio or video. M-19 to M-23 are the measures of the two-site Kinnect study (EM-08, ER-03): agitation and affect, peer connections, conversational engagement, bedroom time and first-time usability. M-21 is computed on the robot (TECH-18), so no audio or transcript is kept for it either.
 
 = Measure - System performance [M-01] =
 
@@ -286,14 +286,14 @@ Disclosure: items used without consent or against the map (target 0).
 
 operationalizes → UC02-F2-PR2, UC01-F4-PR4, UC01-F4-CL8; used-by → EM-01, EM-03; operationalizes → HV-03, HV-08.
 
-= Measure - Agitation and observed affect [M-20] =
+= Measure - Agitation and observed affect [M-19] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|M-20
+|ID|M-19
 |Name|Agitation and observed affect
 |Status|In Progress
 |Evidence basis|Cohen-Mansfield Agitation Inventory (CMAI; Cohen-Mansfield et al., 1989), developed in a nursing home. Validated instrument. Affect around sessions: OERS, as in M-03 (Lawton, Van Haitsma & Klapper, 1996).
@@ -319,16 +319,16 @@ Staff log: agitation events per resident per week, split into during or within a
 
 == Graph edges ==
 
-operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operationalizes → HV-05.
+operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operationalizes → HV-04, HV-05.
 
-= Measure - Peer connections and communal time [M-21] =
+= Measure - Peer connections and communal time [M-20] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|M-21
+|ID|M-20
 |Name|Peer connections and communal time
 |Status|In Progress
 |Evidence basis|Bespoke counts from a real-time location system (RTLS) with proximity badges (Grigorovich et al., 2021; Jansen et al., 2017), checked against the room scans of EM-02.
@@ -358,14 +358,14 @@ Matched pairs (intervention home) and all other pairs are reported separately, s
 
 operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; associated with → M-02, M-04, M-06; operationalizes → HV-06.
 
-= Measure - Conversational engagement [M-22] =
+= Measure - Conversational engagement [M-21] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|M-22
+|ID|M-21
 |Name|Conversational engagement
 |Status|In Progress
 |Evidence basis|Automated linguistic and acoustic features of speech in dementia (Fraser et al., 2016; Luz et al., 2021). Their use as a measure of engagement in conversation is bespoke.
@@ -393,20 +393,20 @@ Per session (feature definitions proposed, O-2):
 
 operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; depends-on → TECH-18; operationalizes → HV-06.
 
-= Measure - Bedroom isolation time [M-23] =
+= Measure - Bedroom isolation time [M-22] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|M-23
+|ID|M-22
 |Name|Bedroom isolation time
 |Status|In Progress
 |Evidence basis|Sensor-based assessment of life-space in nursing-home residents (Jansen et al., 2017).
 |Construct measured|How much of the waking day a resident spends in their own bedroom.
 |Type|Quantitative (sensor)
-|Instrument or procedure|The resident's badge (M-21), relative to a fixed beacon in their bedroom, at both homes. Only for residents who gave separate consent, in line with HV-03: time in one's room is noticed only where the resident agreed.
+|Instrument or procedure|The resident's badge (M-20), relative to a fixed beacon in their bedroom, at both homes. Only for residents who gave separate consent, in line with HV-03: time in one's room is noticed only where the resident agreed.
 |Scoring or coding scheme|(((
 Waking hours per resident: from the care plan's usual getting-up time and bedtime; 08:00 to 21:00 where the plan gives none.
 
@@ -416,20 +416,20 @@ Per resident per week: mean over valid days.
 )))
 |Validity and reliability|Bespoke threshold. A bedroom beacon can be picked up through a wall, so each one is checked at setup from the corridor and the neighbouring rooms, and its signal threshold set so that it counts only inside the room. Staff spot checks of where residents are, against the badge data, in the setup phase.
 |Serves|Validation
-|Burden|As M-21.
+|Burden|As M-20.
 
 == Graph edges ==
 
 operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operationalizes → HV-03, HV-06.
 
-= Measure - First-time usability [M-24] =
+= Measure - First-time usability [M-23] =
 
 **Report Format:** §1.2 Human Values and Human Factors
 
 == Fields ==
 
 |=Field|=Description
-|ID|M-24
+|ID|M-23
 |Name|First-time usability
 |Status|In Progress
 |Evidence basis|Bespoke. Response latency as in Luz et al. (2021); the first-impression question follows M-07.

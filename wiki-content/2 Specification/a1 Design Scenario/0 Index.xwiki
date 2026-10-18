@@ -8,4 +8,4 @@ syntax: xwiki/2.1
 
 |=Page|=Scenarios|=Status
 |[[a1.1 Elena's first week>>doc:2 Specification.a1 Design Scenario.a1\.1 Elena's first week.WebHome]]|DS-01 Elena's first week|**Current**
-|[[a1.2 Morning care - design scenarios>>doc:2 Specification.a1 Design Scenario.a1\.2 Morning care - design scenarios.WebHome]]|DS-04 Tooth brushing; DS-05 Medication|Separate concept
+|[[a1.2 Morning care - design scenarios>>doc:2 Specification.a1 Design Scenario.a1\.2 Morning care - design scenarios.WebHome]]|DS-02 Tooth brushing; DS-03 Medication|Separate concept

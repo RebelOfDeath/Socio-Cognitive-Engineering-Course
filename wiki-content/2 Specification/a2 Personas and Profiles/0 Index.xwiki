@@ -11,4 +11,4 @@ syntax: xwiki/2.1
 |=Page|=Contents|=Status
 |[[a2.1 Human Personas>>doc:2 Specification.a2 Personas and Profiles.a2\.1 Human Personas.WebHome]]|HP-01 Elena, resident; HP-02 Jan, resident; HP-03 Myra, care worker|**Current**
 |[[a2.2 Robot Profile>>doc:2 Specification.a2 Personas and Profiles.a2\.2 Robot Profile.WebHome]]|RP-01 Pepper in the lounge; per-person settings|**Current**
-|[[a2.3 Morning care - personas and profiles>>doc:2 Specification.a2 Personas and Profiles.a2\.3 Morning care - personas and profiles.WebHome]]|HP-05 Mary; HP-06 Myra; RP-03 Pepper as tooth-brushing aid|Separate concept
+|[[a2.3 Morning care - personas and profiles>>doc:2 Specification.a2 Personas and Profiles.a2\.3 Morning care - personas and profiles.WebHome]]|HP-04 Mary; HP-05 Myra; RP-02 Pepper as tooth-brushing aid|Separate concept

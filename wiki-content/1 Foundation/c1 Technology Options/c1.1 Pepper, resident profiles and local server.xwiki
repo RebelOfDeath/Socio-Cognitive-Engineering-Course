@@ -265,20 +265,20 @@ A second version of Pepper (TECH-01) with an added hardware accelerator, so that
 
 * Speech recognition and free one-to-one conversation (Kinnect, ER-03)
 * Persona items drawn from conversation, entered as private until the resident releases them (TECH-05)
-* Conversational measures (M-22), computed during the session
+* Conversational measures (M-21), computed during the session
 
-Audio is held only in working memory while it is processed. Transcripts are deleted on the robot at the end of each session. Only released profile items and the M-22 values reach the local server (TECH-04).
+Audio is held only in working memory while it is processed. Transcripts are deleted on the robot at the end of each session. Only released profile items and the M-21 values reach the local server (TECH-04).
 )))
 |Limitations|Does not exist yet as a product. The size, power use and heat of an accelerator in or on Pepper are unknown. Models small enough to run on the robot recognise less than cloud services, and recognition of older voices stays uncertain (Vipperla et al., 2010).
 |Maturity and feasibility|Envisioned; not built.
-|Failure and fallback behaviour|Accelerator unavailable: Pepper behaves as TECH-01, with answers on the tablet, and M-22 is not collected for that session.
+|Failure and fallback behaviour|Accelerator unavailable: Pepper behaves as TECH-01, with answers on the tablet, and M-21 is not collected for that session.
 |Benefits|HV-03: gives the understanding TECH-07 offers while conversations stay in the home and nothing is recorded (TECH-08). Makes ER-03's conversational measures possible.
 |Drawbacks|The robot still listens to and processes conversations. Residents may feel listened in on even when nothing is kept (M-09 code W). Cost of a custom build.
 |Selected or rejected|Envisioned for ER-03. Not part of the current prototype, which uses TECH-01 (EM-01).
 
 == Graph edges ==
 
-extends → TECH-01; enables → M-22, ER-03; addresses → HV-03.
+extends → TECH-01; enables → M-21, ER-03; addresses → HV-03; strains → VT-05.
 
 = References =
 

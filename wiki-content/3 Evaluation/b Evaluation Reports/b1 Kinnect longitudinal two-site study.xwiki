@@ -13,7 +13,7 @@ syntax: xwiki/2.1
 |Name|Longitudinal two-site controlled study of Kinnect (study design)
 |Status|In Progress (designed, not run)
 |Mode|Summative
-|Artifact used|AT-01 Kinnect, in a build that holds one-to-one conversations, builds persona profiles, computes compatibility scores and offers icebreakers, as described in //Intervention: matching and facilitation// below. It runs on Pepper with an on-device accelerator (TECH-18), so that speech and language processing happen on the robot. The AT-01 page has not been written yet (see //Open items//).
+|Artifact used|AT-01 Kinnect (forthcoming). This study design assumes a build that holds one-to-one conversations, builds persona profiles, computes compatibility scores and offers icebreakers, as described in //Intervention: matching and facilitation// below. It also assumes an on-device accelerator (TECH-18). The AT-01 page reserves the artifact ID only; implementation details have not yet been documented.
 |Evaluation Method(s) applied|[[EM-08 Two-site controlled trial>>doc:1 Foundation.b5 Evaluation Methods.b5\.1 Prototype, observation and two-home comparison.WebHome]], addressing Claims only. EM-08 is the summative counterpart of the formative two-home comparison EM-03.
 |Ethics|(((
 **Review.** The protocol is submitted to the Human Research Ethics Committee (HREC). Recruitment starts only after institutional ethical clearance.
@@ -23,7 +23,7 @@ syntax: xwiki/2.1
 **Protections.** Staff and researchers pause at once if a participant shows signs of agitation, confusion or frustration during a robot or peer interaction. Agitation is tracked throughout with CMAI criteria (Black et al., 2010; Cohen-Mansfield et al., 1989). Badges and the bedroom beacon are used only for residents who give separate consent for them. Speech is processed on the robot and no audio or transcript is kept. Personal data are handled as set out in the //Data management plan// below.
 )))
 |Introduction|(((
-**Claims addressed.** The study design states two hypotheses and calls them premises. In SCE terms both are Claims, because they are about effects on people. The introduction use cases they belong to have not been written yet, so neither has a Claim ID (see //Open items//).
+**Claims addressed.** The study design states two hypotheses and calls them premises. In SCE terms both are Claims, because they are about effects on people. UC01 to UC03 and their Claims now exist, but neither study hypothesis maps exactly to one current Claim ID (see //Open items//). UC02-F3-CL1 is the closest existing Claim to the primary hypothesis.
 
 * **Primary Claim.** Kinnect increases peer connections among residents with mild to moderate dementia, measured as dyadic social interactions and time spent in communal spaces, and reduces bedroom isolation.
 * **Secondary Claim.** Kinnect is intuitive and easy to understand for first-time users living with cognitive impairment.
@@ -60,18 +60,18 @@ Independent variable: arm, nominal with two levels (intervention, control), allo
 
 **Tasks.** Intervention arm: one-to-one sessions with Kinnect in week 1, introductions to a matched peer in weeks 2 and 3, and joint icebreaker sessions with that peer in weeks 3 and 4. Every session and introduction is optional. Control arm: the usual daily routine and activities.
 
-**Measures.** M-20 to M-24, defined on the §1.2 [[b4.1 Introductions, friendships and system checks>>doc:1 Foundation.b4 Measures.b4\.1 Introductions, friendships and system checks.WebHome]] page, with their scoring rules and proposed thresholds.
+**Measures.** M-19 to M-23, defined on the §1.2 [[b4.1 Introductions, friendships and system checks>>doc:1 Foundation.b4 Measures.b4\.1 Introductions, friendships and system checks.WebHome]] page, with their scoring rules and proposed thresholds.
 
 |=Domain|=Measure|=Source
-|Well-being and affect|M-20 Agitation and observed affect|CMAI from primary caregivers (Cohen-Mansfield et al., 1989); OERS around sessions, as in M-03; staff log of agitation events
-|Social connections and integration|M-21 Peer connections and communal time|Real-time location system (RTLS) proximity badges (Grigorovich et al., 2021; Jansen et al., 2017), checked against EM-02 room scans
-|Conversational engagement|M-22 Conversational engagement|Speech recognition, transcript NLP and acoustic analysis on the robot (TECH-18), in one-to-one sessions and joint sessions (Fraser et al., 2016; Luz et al., 2021)
-|Bedroom isolation time|M-23 Bedroom isolation time|Badge proximity to a fixed beacon in the resident's bedroom (Jansen et al., 2017)
-|First-time usability (secondary Claim)|M-24 First-time usability|Week 1 interaction logs, response latency (Luz et al., 2021), an observational usability checklist and a first-impression question
+|Well-being and affect|M-19 Agitation and observed affect|CMAI from primary caregivers (Cohen-Mansfield et al., 1989); OERS around sessions, as in M-03; staff log of agitation events
+|Social connections and integration|M-20 Peer connections and communal time|Real-time location system (RTLS) proximity badges (Grigorovich et al., 2021; Jansen et al., 2017), checked against EM-02 room scans
+|Conversational engagement|M-21 Conversational engagement|Speech recognition, transcript NLP and acoustic analysis on the robot (TECH-18), in one-to-one sessions and joint sessions (Fraser et al., 2016; Luz et al., 2021)
+|Bedroom isolation time|M-22 Bedroom isolation time|Badge proximity to a fixed beacon in the resident's bedroom (Jansen et al., 2017)
+|First-time usability (secondary Claim)|M-23 First-time usability|Week 1 interaction logs, response latency (Luz et al., 2021), an observational usability checklist and a first-impression question
 
 **Procedure.** Five phases, from four weeks before the intervention to week 5. See //Study protocol// below.
 
-**Material.** AT-01 Kinnect on Pepper with an on-device accelerator (TECH-18) at the intervention home. Proximity badges for consenting participants, with fixed anchors in common areas and beacons in bedrooms, at both homes. A tablet for EM-02 room scans. MMSE or MoCA and CMAI forms; OERS sheets; the staff agitation log; the M-24 usability checklist. Consent forms, including the separate consent for badges.
+**Material.** AT-01 Kinnect on Pepper with an on-device accelerator (TECH-18) at the intervention home. Proximity badges for consenting participants, with fixed anchors in common areas and beacons in bedrooms, at both homes. A tablet for EM-02 room scans. MMSE or MoCA and CMAI forms; OERS sheets; the staff agitation log; the M-23 usability checklist. Consent forms, including the separate consent for badges.
 )))
 
 == Formative-only fields ==
@@ -96,13 +96,13 @@ Independent variable: arm, nominal with two levels (intervention, control), allo
 **Tests.** Two-sided, α = .05. The primary outcome is a single test. Holm's correction is applied across the two key secondary tests marked with an asterisk. Every test is reported with its effect size and 95% confidence interval.
 
 |=Claim|=Question (yes/no)|=Dependent variable and level|=Analysis and decision rule
-|Primary|Do residents at the intervention home spend more time with peers in common areas in weeks 4 and 5 than residents at the control home, allowing for baseline?|M-21 joint social time: minutes per week in co-location episodes, mean over the period (ratio).|ANCOVA: outcome-period mean on arm, with the baseline mean as covariate. Met if the arm effect is positive and p < .05. If the residuals are clearly skewed, minutes are analysed as log(minutes + 1); this rule is fixed in advance.
-|Primary *|Are there more dyadic interactions at the intervention home, allowing for baseline?|M-21 dyadic interactions per resident in the period (count), with observed hours as exposure.|Negative binomial regression on arm, with the baseline count as covariate and log observed hours as offset. Met if the rate ratio is above 1 after Holm's correction.
-|Primary *|Do residents at the intervention home spend a smaller share of the waking day in their bedroom, allowing for baseline?|M-23 proportion of waking hours in the bedroom, weekly mean over valid days (ratio, 0 to 1).|ANCOVA as for the primary outcome. Met if the arm effect is negative after Holm's correction.
-|Primary (harm check)|Does agitation rise at the intervention home?|M-20 CMAI total in week 5, 29 to 203 (ordinal, treated as interval).|ANCOVA with baseline CMAI as covariate. Not a confirmatory test: a rise in the intervention arm whose confidence interval excludes 0 is reported as a possible adverse effect, and the session records of the residents concerned are reviewed.
-|Primary (descriptive)|Does the social network become denser?|M-21 network density, per home per week (ratio).|No test: there is one value per home per week. Plotted by week for both homes, with matched pairs shown apart from all other pairs.
-|Primary (within arm)|Does affect improve around sessions, and does conversation become more engaged over the weeks?|M-20 OERS shift per session (interval); M-22 features per session (ratio).|Intervention arm only, exploratory. Linear mixed models with week as fixed effect and a random intercept per resident; OERS shifts summarised with their mean and 95% CI.
-|Secondary|Do most first-time users reach the usability criterion by the end of week 1?|M-24, per resident: criterion met, yes or no (nominal).|Exact binomial. Supported if the lower limit of the 95% Clopper-Pearson interval for the proportion meeting the criterion is above .50. With 25 residents this needs 18 or more. If 80% of residents truly meet the criterion, the chance of reaching 18 is .89.
+|Primary|Do residents at the intervention home spend more time with peers in common areas in weeks 4 and 5 than residents at the control home, allowing for baseline?|M-20 joint social time: minutes per week in co-location episodes, mean over the period (ratio).|ANCOVA: outcome-period mean on arm, with the baseline mean as covariate. Met if the arm effect is positive and p < .05. If the residuals are clearly skewed, minutes are analysed as log(minutes + 1); this rule is fixed in advance.
+|Primary *|Are there more dyadic interactions at the intervention home, allowing for baseline?|M-20 dyadic interactions per resident in the period (count), with observed hours as exposure.|Negative binomial regression on arm, with the baseline count as covariate and log observed hours as offset. Met if the rate ratio is above 1 after Holm's correction.
+|Primary *|Do residents at the intervention home spend a smaller share of the waking day in their bedroom, allowing for baseline?|M-22 proportion of waking hours in the bedroom, weekly mean over valid days (ratio, 0 to 1).|ANCOVA as for the primary outcome. Met if the arm effect is negative after Holm's correction.
+|Primary (harm check)|Does agitation rise at the intervention home?|M-19 CMAI total in week 5, 29 to 203 (ordinal, treated as interval).|ANCOVA with baseline CMAI as covariate. Not a confirmatory test: a rise in the intervention arm whose confidence interval excludes 0 is reported as a possible adverse effect, and the session records of the residents concerned are reviewed.
+|Primary (descriptive)|Does the social network become denser?|M-20 network density, per home per week (ratio).|No test: there is one value per home per week. Plotted by week for both homes, with matched pairs shown apart from all other pairs.
+|Primary (within arm)|Does affect improve around sessions, and does conversation become more engaged over the weeks?|M-19 OERS shift per session (interval); M-21 features per session (ratio).|Intervention arm only, exploratory. Linear mixed models with week as fixed effect and a random intercept per resident; OERS shifts summarised with their mean and 95% CI.
+|Secondary|Do most first-time users reach the usability criterion by the end of week 1?|M-23, per resident: criterion met, yes or no (nominal).|Exact binomial. Supported if the lower limit of the 95% Clopper-Pearson interval for the proportion meeting the criterion is above .50. With 25 residents this needs 18 or more. If 80% of residents truly meet the criterion, the chance of reaching 18 is .89.
 
 **Verdict on the primary Claim.** Supports: the primary outcome and both key secondary outcomes are met, and the harm check shows no rise in agitation. Qualifies: the primary outcome is met but a key secondary outcome is not, or the harm check shows a rise. Challenges: the primary outcome is not met. A non-significant result is reported as "not shown", never as "no effect".
 
@@ -125,13 +125,13 @@ Target: d = 0.7 with r = .5, so 25 completing residents per arm. With 15% attrit
 
 The calculation treats residents as independent. Within a home they share staff and rooms, and matched residents share joint time by design. With one home per arm the variance between homes cannot be estimated (Donner & Klar, 2000), so the p-values describe these two homes only.
 
-**Reliability.** Inter-observer agreement as each Measure states: κ ≥ .60 for the room scans and the M-24 checklist, ICC(2,1) ≥ .60 for OERS. Observers train in the baseline weeks until they reach it.
+**Reliability.** Inter-observer agreement as each Measure states: κ ≥ .60 for the room scans and the M-23 checklist, ICC(2,1) ≥ .60 for OERS. Observers train in the baseline weeks until they reach it.
 
 **Preregistration.** Hypotheses, periods, tests, thresholds and the sample size are registered (for example on OSF) before the baseline weeks start. Anything decided after seeing data is reported as exploratory.
 
 == Intervention: matching and facilitation ==
 
-//How Kinnect brings residents together in the intervention arm. This describes the System under test, so it moves to the Specification and the AT-01 page once the introduction use cases are written.//
+//How Kinnect brings residents together in the intervention arm. The stable task allocation and interaction rules are specified in UC01 to UC03, TDP-01, IDP-01 to IDP-03 and AT-01; this section records the study-specific schedule and build under test.//
 
 **Persona and compatibility profiles.** During one-to-one sessions, Kinnect compiles a structured persona profile for each resident from reminiscence-based dialogue: biographical history, preferred social times, favourite conversation topics, musical taste and nostalgic eras (Woods et al., 2018).
 
@@ -155,7 +155,7 @@ The control home keeps its standard care routines throughout. Where a phase does
 * **Recruitment and consent.** Written consent from the legal representative or guardian, and verbal assent from the participant (Black et al., 2010; Slaughter et al., 2007).
 * **Cognitive and baseline screening.** MMSE or MoCA (Folstein et al., 1975; Nasreddine et al., 2005); baseline CMAI scores from primary caregivers (Cohen-Mansfield et al., 1989).
 * **Infrastructure.** Deploy the badge and room beacon system that tracks time in private bedrooms and in communal lounges, for residents who consent to it (Grigorovich et al., 2021; Jansen et al., 2017). Set up the observation logging protocols.
-* **Baseline (weeks -2 to 0).** Badges and EM-02 room scans run at both homes before Kinnect is introduced, so that both homes have a baseline for M-21 and M-23. Observers train during these weeks.
+* **Baseline (weeks -2 to 0).** Badges and EM-02 room scans run at both homes before Kinnect is introduced, so that both homes have a baseline for M-20 and M-22. Observers train during these weeks.
 * **Site allocation.** Allocate the two homes to the intervention and control arms (Donner & Klar, 2000).
 * **Staff education and training.** Study procedures, protocol compliance, usability observation, and running the intervention and control conditions (Chenoweth et al., 2014).
 )))
@@ -173,7 +173,7 @@ The control home keeps its standard care routines throughout. Where a phase does
 * **Care staff support.** When matched participants show interest, staff arrange informal seating or coffee and tea in common areas, without requiring anyone to take part (Black et al., 2010).
 )))
 |4 Post-intervention evaluation and offboarding|Week 5|(((
-* **Primary measures.** Final CMAI (Cohen-Mansfield et al., 1989). Analysis of the beacon logs for social network density, time in the communal lounge and bedroom isolation time (Jansen et al., 2017). Analysis of the M-22 values computed on the robot: turn-taking, sentiment, topic coherence (Fraser et al., 2016; Luz et al., 2021).
+* **Primary measures.** Final CMAI (Cohen-Mansfield et al., 1989). Analysis of the beacon logs for social network density, time in the communal lounge and bedroom isolation time (Jansen et al., 2017). Analysis of the M-21 values computed on the robot: turn-taking, sentiment, topic coherence (Fraser et al., 2016; Luz et al., 2021).
 * **Qualitative feedback.** Debriefing interviews with care staff and participants on perceived social connectedness and on how easy Kinnect was to use the first time.
 )))
 
@@ -195,20 +195,20 @@ The control home keeps its standard care routines throughout. Where a phase does
 Continuous sensing and AI profiling in long-term care carry ethical risks, privacy intrusions and possible algorithmic bias (Berridge & Grigorovich, 2022; Grigorovich et al., 2021). The following safeguards apply:
 
 * **Pseudonymisation.** All participant identifiers, life histories and clinical scores are pseudonymised at collection. The key linking codes to identities is stored physically and digitally apart from the conversation transcripts and beacon logs.
-* **On-device processing, no recordings.** Speech recognition, transcript NLP and acoustic analysis run on the robot's accelerator (TECH-18). Raw audio is held only in the robot's working memory while it is processed and is never written to disk or sent anywhere. Transcripts are deleted on the robot at the end of each session. Only derived values (the M-22 features) and the persona items a resident has released reach the home's local server (TECH-04), which has no internet uplink.
+* **On-device processing, no recordings.** Speech recognition, transcript NLP and acoustic analysis run on the robot's accelerator (TECH-18). Raw audio is held only in the robot's working memory while it is processed and is never written to disk or sent anywhere. Transcripts are deleted on the robot at the end of each session. Only derived values (the M-21 features) and the persona items a resident has released reach the home's local server (TECH-04), which has no internet uplink.
 * **Secure storage.** Data on the local server, and badge logs, are encrypted in transit and at rest with AES-256. Pseudonymised data leave the home for analysis only by an institutionally approved route.
 * **Regulatory compliance.** All data capture, algorithmic processing and retention schedules comply with the General Data Protection Regulation (GDPR) and institutional health-data privacy standards.
 * **Restricted access.** Only core research staff bound by institutional non-disclosure agreements have access to raw audio and identifiable data.
 
 == Open items ==
 
-* **Claim IDs.** The primary and secondary Claims get IDs once the introduction use cases are written (2 Specification, b Use Cases). The Foundation already points at UC02-F3-CL1 for introductions that lead to contact, which looks like the primary Claim's closest match.
+* **Claim IDs.** UC01 to UC03 are now written, but ER-03's composite primary hypothesis and its first-time-usability hypothesis do not map exactly to an existing Claim. Decide whether to narrow the primary hypothesis to UC02-F3-CL1 and treat bedroom isolation as a secondary outcome, or add explicit Claims; likewise add or identify a Claim for first-time usability before running the study.
 * **Premises first.** As in ER-02, the Premises the Claims rest on, such as speech recognition with older speakers, profile extraction and matching, should be verified on the build before the study starts. Otherwise a null result cannot be told apart from a System that did not work. No verification method for them exists yet.
 * **Sample size assumptions.** The target of 60 residents rests on an assumed effect (d = 0.7) and baseline correlation (r = .5). It is recomputed from the baseline weeks, and the homes must be large enough to supply it.
 * **One home per arm.** With a single home in each arm, a difference between the arms cannot be separated from other differences between the two homes, such as staff, layout, residents and activity programme. EM-03 states the same limit for the formative comparison, and Donner & Klar (2000) discuss it for trials with one cluster per arm. The baseline weeks and the ANCOVA allow for differences in starting level, and the baseline-trend check tests whether the homes were already changing differently. Neither removes the limit: only more homes per arm would.
-* **Badges and TECH-09.** M-21 and M-23 rely on wearable badges, and c1.1 rejects wearable location sensing (TECH-09) as surveillance. Separate consent and room-level beacons limit this, in line with HV-03's rule that time in one's room is noticed only where the resident agreed. The group still has to decide whether badges are acceptable for a time-limited study, or whether the presence count (TECH-03) should replace them.
-* **TECH-18 does not exist yet.** The study assumes a Pepper that can run speech and language processing on the robot. Until it is built, M-22 and Kinnect's free conversation cannot run without the cloud services rejected in TECH-07.
-* **Artifact page.** AT-01 Kinnect has no Artifact page yet.
+* **Badges and TECH-09.** M-20 and M-22 rely on wearable badges, and c1.1 rejects wearable location sensing (TECH-09) as surveillance. Separate consent and room-level beacons limit this, in line with HV-03's rule that time in one's room is noticed only where the resident agreed. The group still has to decide whether badges are acceptable for a time-limited study, or whether the presence count (TECH-03) should replace them.
+* **TECH-18 does not exist yet.** The study assumes a Pepper that can run speech and language processing on the robot. Until it is built, M-21 and Kinnect's free conversation cannot run without the cloud services rejected in TECH-07.
+* **Artifact build.** AT-01 is forthcoming. Its placeholder page contains no implementation details yet; the build must be defined and implemented before this report can be run.
 
 **Graph edges:** //uses → AT-01 (planned); applies → EM-08; produces → Evidence for the primary and secondary Claims, once run.//
 

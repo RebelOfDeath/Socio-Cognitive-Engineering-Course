@@ -15,65 +15,65 @@ Edges are listed by source ID, with the relation named as it appears on the sour
 == a1. Situated Activities ==
 
 |=Source|=Relation|=Target(s)
-|SA-08|performed-by|ST-09 (supported by ST-10)
-|SA-08|illustrated-by|PS-05
-|SA-09|performed-by|ST-09 (supported by ST-10)
-|SA-09|illustrated-by|PS-06
-|SA-10|performed-by|ST-10
-|SA-10|illustrated-by|PS-05, PS-06
+|SA-05|performed-by|ST-08 (supported by ST-09)
+|SA-05|illustrated-by|PS-05
+|SA-06|performed-by|ST-08 (supported by ST-09)
+|SA-06|illustrated-by|PS-06
+|SA-07|performed-by|ST-09
+|SA-07|illustrated-by|PS-05, PS-06
 
 == a2. Stakeholders ==
 
 |=Source|=Relation|=Target(s)
-|ST-09|performs|SA-08, SA-09
-|ST-09|holds|HV-09, HV-10, HV-11, HV-12, HV-13
+|ST-08|performs|SA-05, SA-06
+|ST-08|holds|HV-09, HV-10, HV-11, HV-12, HV-13
+|ST-08|appears-in|PS-05, PS-06
+|ST-08|elaborated-as|HP-04 (§2.2)
+|ST-09|performs|SA-07
+|ST-09|supports|SA-05, SA-06
+|ST-09|holds|HV-09 to HV-14
 |ST-09|appears-in|PS-05, PS-06
 |ST-09|elaborated-as|HP-05 (§2.2)
-|ST-10|performs|SA-10
-|ST-10|supports|SA-08, SA-09
-|ST-10|holds|HV-09 to HV-14
-|ST-10|appears-in|PS-05, PS-06
-|ST-10|elaborated-as|HP-06 (§2.2)
-|ST-11|holds|HV-09, HV-10, HV-11, HV-13, HV-14
-|ST-12|holds|HV-10, HV-11, HV-13, HV-14
-|ST-13|holds|HV-09, HV-11, HV-13
+|ST-10|holds|HV-09, HV-10, HV-11, HV-13, HV-14
+|ST-11|holds|HV-10, HV-11, HV-13, HV-14
+|ST-12|holds|HV-09, HV-11, HV-13
 
 == a3. Problem Scenarios ==
 
 |=Source|=Relation|=Target(s)
-|PS-05|involves|ST-09, ST-10, SA-08, SA-10
+|PS-05|involves|ST-08, ST-09, SA-05, SA-07
 |PS-05|motivates|OBJ-10
-|PS-05|reimagined-as|DS-04 (§2.1)
-|PS-06|involves|ST-09, ST-10, SA-09, SA-10
+|PS-05|reimagined-as|DS-02 (§2.1)
+|PS-06|involves|ST-08, ST-09, SA-06, SA-07
 |PS-06|motivates|UC05 (later cycle)
-|PS-06|reimagined-as|DS-05 (§2.1)
+|PS-06|reimagined-as|DS-03 (§2.1)
 
 == b1. Human Values ==
 
 |=Source|=Relation|=Target(s)
-|HV-09|held-by|ST-09, ST-10, ST-11, ST-13
+|HV-09|held-by|ST-08, ST-09, ST-10, ST-12
 |HV-09|party-to|VT-07, VT-11, VT-12
-|HV-09|operationalized-by|M-13, M-16
+|HV-09|operationalized-by|M-12, M-15
 |HV-09|explained-by|HFC-09
-|HV-10|held-by|ST-09, ST-10, ST-11, ST-12
+|HV-10|held-by|ST-08, ST-09, ST-10, ST-11
 |HV-10|party-to|VT-10
-|HV-10|operationalized-by|M-15, M-17
+|HV-10|operationalized-by|M-14, M-16
 |HV-10|explained-by|HFC-12, HFC-13
-|HV-11|held-by|ST-09, ST-10, ST-11, ST-12, ST-13
+|HV-11|held-by|ST-08, ST-09, ST-10, ST-11, ST-12
 |HV-11|party-to|VT-08, VT-14
-|HV-11|operationalized-by|M-17
+|HV-11|operationalized-by|M-16
 |HV-11|explained-by|HFC-10, HFC-13
-|HV-12|held-by|ST-09, ST-10
+|HV-12|held-by|ST-08, ST-09
 |HV-12|party-to|VT-09, VT-10, VT-13
-|HV-12|operationalized-by|M-13, M-14
+|HV-12|operationalized-by|M-12, M-13
 |HV-12|explained-by|HFC-11
-|HV-13|held-by|ST-09 to ST-13
+|HV-13|held-by|ST-08 to ST-12
 |HV-13|party-to|VT-07, VT-08, VT-09, VT-11, VT-12, VT-14
-|HV-13|operationalized-by|M-15, M-19
+|HV-13|operationalized-by|M-14, M-18
 |HV-13|explained-by|HFC-11
-|HV-14|held-by|ST-10, ST-11, ST-12
+|HV-14|held-by|ST-09, ST-10, ST-11
 |HV-14|party-to|VT-13
-|HV-14|operationalized-by|M-18
+|HV-14|operationalized-by|M-17
 |HV-14|explained-by|HFC-14
 
 The "held-by" edges agree with the "holds" edges on the Stakeholders page for all six values.
@@ -83,92 +83,92 @@ The "held-by" edges agree with the "holds" edges on the Stakeholders page for al
 |=Source|=Relation|=Target(s)
 |VT-07|involves|HV-09, HV-13
 |VT-07|bounds|F8, F9
-|VT-07|tested-by|UC04-F8-CL18
+|VT-07|tested-by|UC04-F8-CL13
 |VT-08|involves|HV-11, HV-13
 |VT-08|bounds|F7, F9, F10
 |VT-08|strained-by|TECH-10, TECH-12 (TECH-13 rejected for straining it most; TECH-17 rejected)
-|VT-08|tested-by|UC04-F7-CL21, UC04-F10-CL22
+|VT-08|tested-by|UC04-F7-CL16, UC04-F10-CL17
 |VT-09|involves|HV-12, HV-13
 |VT-09|bounds|F8
-|VT-09|tested-by|UC04-F8-CL15, UC04-F8-CL18
+|VT-09|tested-by|UC04-F8-CL10, UC04-F8-CL13
 |VT-10|involves|HV-10, HV-12
 |VT-10|bounds|F8
 |VT-10|strained-by|TECH-10
-|VT-10|tested-by|UC04-F8-CL19
+|VT-10|tested-by|UC04-F8-CL14
 |VT-11|involves|HV-09, HV-13
 |VT-11|bounds|F7, F8
 |VT-11|strained-by|TECH-11
-|VT-11|tested-by|UC04-F8-PR8, UC04-F8-CL18
+|VT-11|tested-by|UC04-F8-PR8, UC04-F8-CL13
 |VT-12|involves|HV-09, HV-13
 |VT-12|bounds|UC05 (later cycle)
 |VT-13|involves|HV-12, HV-14
 |VT-13|bounds|F8, F9
-|VT-13|tested-by|UC04-F9-CL23, UC04-F9-CL25
+|VT-13|tested-by|UC04-F9-CL18, UC04-F9-CL20
 |VT-14|involves|HV-11, HV-13
 |VT-14|bounds|F7, F8, F10
 |VT-14|strained-by|TECH-16 (deferred), TECH-17 (rejected for straining it most)
-|VT-14|tested-by|UC04-F7-CL21, UC04-F9-CL25
+|VT-14|tested-by|UC04-F7-CL16, UC04-F9-CL20
 
 == b3. Human Factors Concepts ==
 
 |=Source|=Relation|=Target(s)
 |HFC-09|explains|HV-09
-|HFC-09|associated-measure|M-16
-|HFC-09|grounds|UC04-F8-CL17
+|HFC-09|associated-measure|M-15
+|HFC-09|grounds|UC04-F8-CL12
 |HFC-10|explains|HV-11
-|HFC-10|associated-measure|M-17
-|HFC-10|grounds|UC04-F7-CL21
+|HFC-10|associated-measure|M-16
+|HFC-10|grounds|UC04-F7-CL16
 |HFC-11|explains|HV-12, HV-13
-|HFC-11|associated-measure|M-13, M-14, M-15
-|HFC-11|grounds|UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL18, UC04-F9-CL20, UC04-F9-CL23, UC04-F8-CL24
+|HFC-11|associated-measure|M-12, M-13, M-14
+|HFC-11|grounds|UC04-F8-CL10, UC04-F8-CL11, UC04-F8-CL13, UC04-F9-CL15, UC04-F9-CL18, UC04-F8-CL19
 |HFC-12|explains|HV-10
-|HFC-12|associated-measure|M-15, M-17
-|HFC-12|grounds|UC04-F8-CL19
+|HFC-12|associated-measure|M-14, M-16
+|HFC-12|grounds|UC04-F8-CL14
 |HFC-13|explains|HV-10, HV-11
-|HFC-13|associated-measure|M-17, M-15
+|HFC-13|associated-measure|M-16, M-14
 |HFC-13|informs|TECH-10 selection rationale
-|HFC-13|grounds|UC04-F8-CL19, UC04-F7-CL21
+|HFC-13|grounds|UC04-F8-CL14, UC04-F7-CL16
 |HFC-14|explains|HV-14
-|HFC-14|associated-measure|M-18, M-12
-|HFC-14|grounds|UC04 handover rules (F9), TECH-12 alerting policy, UC04-F9-CL23
+|HFC-14|associated-measure|M-17, M-11
+|HFC-14|grounds|UC04 handover rules (F9), TECH-12 alerting policy, UC04-F9-CL18
 
 == b4. Measures ==
 
 |=Source|=Relation|=Target(s)
-|M-12|used-by|EM-05
-|M-12|operationalizes|UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9
-|M-12|associated with|HFC-14
-|M-13|operationalizes|HV-12, HV-09; UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20, UC04-F9-CL25
+|M-11|used-by|EM-05
+|M-11|operationalizes|UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9
+|M-11|associated with|HFC-14
+|M-12|operationalizes|HV-12, HV-09; UC04-F8-CL10, UC04-F8-CL11, UC04-F9-CL15, UC04-F9-CL20
+|M-12|used-by|EM-06
+|M-12|associated with|HFC-11
+|M-13|operationalizes|HV-12; UC04-F8-CL11, UC04-F8-CL13
 |M-13|used-by|EM-06
 |M-13|associated with|HFC-11
-|M-14|operationalizes|HV-12; UC04-F8-CL16, UC04-F8-CL18
+|M-14|operationalizes|HV-13, HV-10; UC04-F8-CL10, UC04-F8-CL13, UC04-F8-CL14, UC04-F8-CL19
 |M-14|used-by|EM-06
-|M-14|associated with|HFC-11
-|M-15|operationalizes|HV-13, HV-10; UC04-F8-CL15, UC04-F8-CL18, UC04-F8-CL19, UC04-F8-CL24
+|M-14|associated with|HFC-11, HFC-12, HFC-13
+|M-15|operationalizes|HV-09; UC04-F8-CL12
 |M-15|used-by|EM-06
-|M-15|associated with|HFC-11, HFC-12, HFC-13
-|M-16|operationalizes|HV-09; UC04-F8-CL17
-|M-16|used-by|EM-06
-|M-16|associated with|HFC-09
-|M-17|operationalizes|HV-11, HV-10; UC04-F10-PR10 (record-content component), UC04-F8-CL19, UC04-F7-CL21, UC04-F10-CL22, UC04-F8-CL24
-|M-17|used-by|EM-05, EM-06 (resident interview), EM-07
-|M-17|associated with|HFC-10, HFC-12, HFC-13
-|M-18|operationalizes|HV-14; UC04-F9-CL23
-|M-18|used-by|EM-06, EM-07
-|M-18|associated with|HFC-14
-|M-19|operationalizes|HV-13; UC04-F8-CL24, UC04-F9-CL25, UC04-F7-PR7 (brushing-time component)
-|M-19|used-by|EM-05 (part b), EM-06
-|M-19|associated with|VT-14
+|M-15|associated with|HFC-09
+|M-16|operationalizes|HV-11, HV-10; UC04-F10-PR10 (record-content component), UC04-F8-CL14, UC04-F7-CL16, UC04-F10-CL17, UC04-F8-CL19
+|M-16|used-by|EM-05, EM-06 (resident interview), EM-07
+|M-16|associated with|HFC-10, HFC-12, HFC-13
+|M-17|operationalizes|HV-14; UC04-F9-CL18
+|M-17|used-by|EM-06, EM-07
+|M-17|associated with|HFC-14
+|M-18|operationalizes|HV-13; UC04-F8-CL19, UC04-F9-CL20, UC04-F7-PR7 (brushing-time component)
+|M-18|used-by|EM-05 (part b), EM-06
+|M-18|associated with|VT-14
 
 == b5. Evaluation Methods ==
 
 |=Source|=Relation|=Target(s)
-|EM-05|applies|M-12, M-17, M-19
+|EM-05|applies|M-11, M-16, M-18
 |EM-05|produces Evidence for|UC04-F7-PR7, UC04-F8-PR8, UC04-F9-PR9, UC04-F10-PR10
-|EM-06|applies|M-13, M-14, M-15, M-16, M-17, M-18, M-19
-|EM-06|produces Evidence for|UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL17, UC04-F8-CL18, UC04-F8-CL19, UC04-F9-CL20, UC04-F7-CL21, UC04-F9-CL23, UC04-F8-CL24, UC04-F9-CL25
-|EM-07|applies|M-17, M-18
-|EM-07|produces Evidence for|UC04-F8-CL19, UC04-F7-CL21, UC04-F10-CL22, UC04-F9-CL23
+|EM-06|applies|M-12, M-13, M-14, M-15, M-16, M-17, M-18
+|EM-06|produces Evidence for|UC04-F8-CL10, UC04-F8-CL11, UC04-F8-CL12, UC04-F8-CL13, UC04-F8-CL14, UC04-F9-CL15, UC04-F7-CL16, UC04-F9-CL18, UC04-F8-CL19, UC04-F9-CL20
+|EM-07|applies|M-16, M-17
+|EM-07|produces Evidence for|UC04-F8-CL14, UC04-F7-CL16, UC04-F10-CL17, UC04-F9-CL18
 
 The "used-by" edges on the Measures page and the "applies" edges on the Evaluation Methods page agree for all eight Measures.
 
@@ -176,32 +176,32 @@ The "used-by" edges on the Measures page and the "applies" edges on the Evaluati
 
 |=Source|=Relation|=Target(s)
 |TECH-10 (selected)|enables|F8, F9 (resident-facing part)
-|TECH-10|addresses|Goal (SA-08), HV-12, HV-14
+|TECH-10|addresses|Goal (SA-05), HV-12, HV-14
 |TECH-10|strains|VT-10, VT-08
-|TECH-10|realized-in|RP-03 (§2.2)
+|TECH-10|realized-in|RP-02 (§2.2)
 |TECH-11 (selected)|enables|F7, F8 (early-stop rule), F10 (session data)
-|TECH-11|addresses|Goal (SA-08), HV-11
+|TECH-11|addresses|Goal (SA-05), HV-11
 |TECH-11|strains|VT-11
 |TECH-12 (selected)|enables|F9, F10
 |TECH-12|addresses|HV-13, HV-14
 |TECH-12|strains|VT-08
 |TECH-12|alerting policy grounded on|HFC-14
 |TECH-13 (rejected)|would strain|VT-08 (no outgoing edges to the Specification)
-|TECH-14 (rejected)|would ease; fallback for|VT-10, VT-08; TECH-10 if UC04-F8-CL19 or UC04-F7-CL21 hold, or if O-30 fails
+|TECH-14 (rejected)|would ease; fallback for|VT-10, VT-08; TECH-10 if UC04-F8-CL14 or UC04-F7-CL16 hold, or if O-30 fails
 |TECH-15 (deferred)|none|No edges this cycle, deferred with UC05
 |TECH-16 (deferred)|would strain|VT-14 (no outgoing edges to the Specification this cycle)
 |TECH-17 (rejected)|would strain|VT-08, VT-14 (no outgoing edges to the Specification)
 
 == Dangling references and orphans ==
 
-**Dangling references** (an ID cited that is defined nowhere): none found. Every SA, ST, PS, HV, VT, HFC, M, EM and TECH ID cited on the Foundation pages is defined on its own page, and every forward reference resolves: F7 to F10, OBJ-10, UC04, UC05, UC04-F7-PR7 to UC04-F10-PR10 and UC04-F8-CL15 to UC04-F9-CL25 on the §2.3 page, DS-04 and DS-05 on the §2.1 page, and HP-05, HP-06 and RP-03 on the §2.2 Personas and Profiles page.
+**Dangling references** (an ID cited that is defined nowhere): none found. Every SA, ST, PS, HV, VT, HFC, M, EM and TECH ID cited on the Foundation pages is defined on its own page, and every forward reference resolves: F7 to F10, OBJ-10, UC04, UC05, UC04-F7-PR7 to UC04-F10-PR10 and UC04-F8-CL10 to UC04-F9-CL20 on the §2.3 page, DS-02 and DS-03 on the §2.1 page, and HP-04, HP-05 and RP-02 on the §2.2 Personas and Profiles page.
 
 **Orphans** (an entity no Graph edges line connects to anything):
 
 |=Entity|=Where it is mentioned|=Stance
-|TECH-15 Medication tray or dispenser with sensors (deferred)|In prose only: VT-12's floor discussion and UC05's scope decision.|Deferred with UC05. Its edges (addresses Goal (SA-09), strains VT-12) are to be drawn when UC05 is specified.
+|TECH-15 Medication tray or dispenser with sensors (deferred)|In prose only: VT-12's floor discussion and UC05's scope decision.|Deferred with UC05. Its edges (addresses Goal (SA-06), strains VT-12) are to be drawn when UC05 is specified.
 
-TECH-14 was an orphan in the first draft; its Graph edges now record that it would ease VT-10 and VT-08 and is the fallback for TECH-10. No other entity is an orphan. ST-11, ST-12 and ST-13 are connected only through "holds" edges, consistent with their Indirect type.
+TECH-14 was an orphan in the first draft; its Graph edges now record that it would ease VT-10 and VT-08 and is the fallback for TECH-10. No other entity is an orphan. ST-10, ST-11 and ST-12 are connected only through "holds" edges, consistent with their Indirect type.
 
 == One-sided and inconsistent edges ==
 
@@ -212,49 +212,49 @@ When this page was first drafted, 13 edges or fields were recorded on one page a
 |HFC-11 explains HV-13|b1: HV-13 had no explained-by edge|explained-by → HFC-11 added
 |HFC-14 explains HV-14|b1: HV-14 had no explained-by edge|explained-by → HFC-14 added
 |HFC-13 explains HV-11|b1: HV-11 listed only HFC-10|HFC-13 added
-|HV-10 operationalized-by M-15|b4: M-15 listed only HV-13|HV-10 added to M-15, since HFC-12 and HFC-13 also name M-15
-|M-19 operationalizes HV-13|b1: HV-13 listed only M-15|M-19 added
-|HFC associated-measure → M-12, M-14, M-15|b4: no associated HFC on M-12, M-14, M-15|M-12 → HFC-14; M-14 → HFC-11; M-15 → HFC-11, HFC-12, HFC-13
+|HV-10 operationalized-by M-14|b4: M-14 listed only HV-13|HV-10 added to M-14, since HFC-12 and HFC-13 also name M-14
+|M-18 operationalizes HV-13|b1: HV-13 listed only M-14|M-18 added
+|HFC associated-measure → M-11, M-13, M-14|b4: no associated HFC on M-11, M-13, M-14|M-11 → HFC-14; M-13 → HFC-11; M-14 → HFC-11, HFC-12, HFC-13
 |TECH-17 would strain VT-08|b2: VT-08 strained-by|TECH-17 (rejected) added
-|UC04-F8-CL24 grounds on HFC-11, uses M-15 and M-17|b3 HFC-11 grounds; b4 M-15, M-17|CL24 added to all three
-|UC04-F9-CL25 uses M-13|b4: M-13|CL25 added
-|VT-13 tested-by CL23 and CL25|b2: VT-13 Status named CL23 only|CL25 named in the Status field
-|PS-05 involves SA-10|a3: PS-05 Activities involved listed SA-08 only|SA-10 added (also to PS-06)
-|PS-06 "SA-09: Remind to take medication"|a1: SA-09 is "Taking prescribed medication"|PS-06 now uses the a1 name
+|UC04-F8-CL19 grounds on HFC-11, uses M-14 and M-16|b3 HFC-11 grounds; b4 M-14, M-16|CL19 added to all three
+|UC04-F9-CL20 uses M-12|b4: M-12|CL20 added
+|VT-13 tested-by CL18 and CL20|b2: VT-13 Status named CL18 only|CL20 named in the Status field
+|PS-05 involves SA-07|a3: PS-05 Activities involved listed SA-05 only|SA-07 added (also to PS-06)
+|PS-06 "SA-06: Remind to take medication"|a1: SA-06 is "Taking prescribed medication"|PS-06 now uses the a1 name
 
 = Open tensions =
 
 No Value Tension has been tested yet, since no Evaluation Method has been run. The table gives each tension's status as recorded on the b2 page, the design stance taken pending evidence, and what is meant to test it.
 
 |=Tension|=Values|=Recorded status|=Stance taken pending evidence|=Tested by
-|VT-07 Autonomy vs Well-being|HV-09, HV-13|Provisionally resolved|Graduated support: no assistance while the resident can continue, increasingly supportive prompting when difficulty is detected, and immediate notification of a care worker on an immediate risk of serious harm (group decision, §2.3 Open item O-11). No regulatory floor identified.|UC04-F8-CL18
-|VT-08 Privacy vs Well-being|HV-11, HV-13|Provisionally resolved|Monitor only what is needed to decide whether support is needed; share nothing sensitive unless the agreed conditions for caregiver involvement are met. No camera (TECH-13 rejected); Pepper's cameras disabled and covered; the session record is limited to three items and not shared with ST-11.|UC04-F7-CL21, UC04-F10-CL22; record content verified by UC04-F10-PR10 (M-17)
-|VT-09 Competence vs Well-being|HV-12, HV-13|Provisionally resolved|Allow time to complete a step, give a supportive prompt on repeated difficulty, and increase assistance if the resident still cannot continue or shows distress.|UC04-F8-CL15, UC04-F8-CL18
-|VT-10 Dignity vs Competence|HV-10, HV-12|Open|Prompts phrased as offers in an adult register, addressing the resident by name, stopping as soon as the resident resumes; the robot is framed as a tool with low expressivity. Strained by the choice of Pepper (TECH-10) over the tool-like device (TECH-14), which HFC-13 favours; TECH-14 is the named fallback (§2.3 Open items O-19, O-20).|UC04-F8-CL19 (adverse Claim)
-|VT-11 Autonomy vs Well-being (detection reliability)|HV-09, HV-13|Provisionally resolved, open until EM-05 shows an acceptable false-prompt rate|Favour fewer false prompts: F8 waits a configured interval and starts at the least intrusive prompt level. Accepted as the cost of item sensing (TECH-11) without a camera. Timing values are proposals awaiting the first EM-05 pilot (§2.3 Open item O-29).|UC04-F8-PR8 (M-12), UC04-F8-CL18
-|VT-12 Autonomy vs Well-being (medication timing)|HV-09, HV-13|Open, deferred to UC05|Deferred with UC05. A floor exists for time-critical medication: residents on such medication are excluded (PS-06), and the source for that floor is still a TODO on the b2 page. DS-05 sketches a resolution for the remaining medication.|No Claim yet; to be written with UC05
-|VT-13 Competence vs Attentive care|HV-12, HV-14|Open|The System carries the waiting and the lower prompt levels; the care worker is called only when prompting is exhausted, the resident is distressed, or there is a safety risk (F9). Alert volume is limited by the handover rules grounded on HFC-14 (§2.3 Open item O-31).|UC04-F9-CL23 (M-18), UC04-F9-CL25
-|VT-14 Privacy vs Well-being (brushing quality)|HV-11, HV-13|Open|Brushing time is used within the session only and stored nowhere; whether teeth are clean is judged by people (M-19 during evaluation, the home's oral-care routines and ST-13 otherwise). TECH-17 rejected; TECH-16 deferred until EM-06 shows whether brushing time is enough. Part of §2.3 Open item O-32 is still open (per-resident targets, confirming the plaque instrument).|UC04-F7-CL21, UC04-F9-CL25; TECH-16 decision also depends on UC04-F8-CL24
+|VT-07 Autonomy vs Well-being|HV-09, HV-13|Provisionally resolved|Graduated support: no assistance while the resident can continue, increasingly supportive prompting when difficulty is detected, and immediate notification of a care worker on an immediate risk of serious harm (group decision, §2.3 Open item O-11). No regulatory floor identified.|UC04-F8-CL13
+|VT-08 Privacy vs Well-being|HV-11, HV-13|Provisionally resolved|Monitor only what is needed to decide whether support is needed; share nothing sensitive unless the agreed conditions for caregiver involvement are met. No camera (TECH-13 rejected); Pepper's cameras disabled and covered; the session record is limited to three items and not shared with ST-10.|UC04-F7-CL16, UC04-F10-CL17; record content verified by UC04-F10-PR10 (M-16)
+|VT-09 Competence vs Well-being|HV-12, HV-13|Provisionally resolved|Allow time to complete a step, give a supportive prompt on repeated difficulty, and increase assistance if the resident still cannot continue or shows distress.|UC04-F8-CL10, UC04-F8-CL13
+|VT-10 Dignity vs Competence|HV-10, HV-12|Open|Prompts phrased as offers in an adult register, addressing the resident by name, stopping as soon as the resident resumes; the robot is framed as a tool with low expressivity. Strained by the choice of Pepper (TECH-10) over the tool-like device (TECH-14), which HFC-13 favours; TECH-14 is the named fallback (§2.3 Open items O-19, O-20).|UC04-F8-CL14 (adverse Claim)
+|VT-11 Autonomy vs Well-being (detection reliability)|HV-09, HV-13|Provisionally resolved, open until EM-05 shows an acceptable false-prompt rate|Favour fewer false prompts: F8 waits a configured interval and starts at the least intrusive prompt level. Accepted as the cost of item sensing (TECH-11) without a camera. Timing values are proposals awaiting the first EM-05 pilot (§2.3 Open item O-29).|UC04-F8-PR8 (M-11), UC04-F8-CL13
+|VT-12 Autonomy vs Well-being (medication timing)|HV-09, HV-13|Open, deferred to UC05|Deferred with UC05. A floor exists for time-critical medication: residents on such medication are excluded (PS-06), and the source for that floor is still a TODO on the b2 page. DS-03 sketches a resolution for the remaining medication.|No Claim yet; to be written with UC05
+|VT-13 Competence vs Attentive care|HV-12, HV-14|Open|The System carries the waiting and the lower prompt levels; the care worker is called only when prompting is exhausted, the resident is distressed, or there is a safety risk (F9). Alert volume is limited by the handover rules grounded on HFC-14 (§2.3 Open item O-31).|UC04-F9-CL18 (M-17), UC04-F9-CL20
+|VT-14 Privacy vs Well-being (brushing quality)|HV-11, HV-13|Open|Brushing time is used within the session only and stored nowhere; whether teeth are clean is judged by people (M-18 during evaluation, the home's oral-care routines and ST-12 otherwise). TECH-17 rejected; TECH-16 deferred until EM-06 shows whether brushing time is enough. Part of §2.3 Open item O-32 is still open (per-resident targets, confirming the plaque instrument).|UC04-F7-CL16, UC04-F9-CL20; TECH-16 decision also depends on UC04-F8-CL19
 
 = Completeness check =
 
 == Checks the manual names ==
 
 |=Check|=Result|=Stance
-|Any Situated Activity with no Goal stated|None. SA-08, SA-09 and SA-10 each state a Goal.|SA-09's Goal is addressed only by TECH-15, which is deferred with UC05 (§2.3 Open item O-22). Recorded as a scope decision for this cycle.
+|Any Situated Activity with no Goal stated|None. SA-05, SA-06 and SA-07 each state a Goal.|SA-06's Goal is addressed only by TECH-15, which is deferred with UC05 (§2.3 Open item O-22). Recorded as a scope decision for this cycle.
 |Any Human Value with no recognition criteria|None. HV-09 to HV-14 each state served and violated criteria.|No action.
 |Any Human Factors Concept with no associated Measure|None. HFC-09 to HFC-14 each name at least one Measure.|No action. The reverse links on the Measures page have been completed (see //One-sided and inconsistent edges//).
-|Any Technology Option addressing nothing|The three selected options (TECH-10 to TECH-12) each address a Goal or Human Value. The five rejected or deferred options (TECH-13 to TECH-17) have no "addresses" edge, which follows from their status. In their Benefits fields, TECH-13 names Goal (SA-08), TECH-15 names Goal (SA-09) and TECH-16 names HV-13; TECH-14 now names HV-10 and HV-11, and TECH-17 names HV-13.|Fixed on the c1 page, so that every option, rejected or not, states what it would have served.
+|Any Technology Option addressing nothing|The three selected options (TECH-10 to TECH-12) each address a Goal or Human Value. The five rejected or deferred options (TECH-13 to TECH-17) have no "addresses" edge, which follows from their status. In their Benefits fields, TECH-13 names Goal (SA-05), TECH-15 names Goal (SA-06) and TECH-16 names HV-13; TECH-14 now names HV-10 and HV-11, and TECH-17 names HV-13.|Fixed on the c1 page, so that every option, rejected or not, states what it would have served.
 
 == Further gaps ==
 
 |=Gap|=Stance
-|SA-09, PS-06, VT-12 and TECH-15 form one cluster with no Claim, no Measure and no Evaluation Method.|Deferred with UC05 (§2.3 Open item O-22). New Measures for it start at M-25 and new Evaluation Methods at EM-09, since M-20 to M-24 and EM-08 belong to the main concept's Kinnect study (§2.3 Open item O-10).
+|SA-06, PS-06, VT-12 and TECH-15 form one cluster with no Claim, no Measure and no Evaluation Method.|Deferred with UC05 (§2.3 Open item O-22). New Measures for it start at M-24 and new Evaluation Methods at EM-09, since M-19 to M-23 and EM-08 belong to the main concept's Kinnect study (§2.3 Open item O-10).
 |VT-12 has no testing Claim.|Deferred with UC05, as above. Every other tension has at least one testing Claim or Premise.
-|HV-09 Autonomy and HV-10 Dignity are not addressed by any selected Technology Option.|Both are carried by Function behaviour: F8's wait and offer-style prompts follow the VT-07, VT-09 and VT-10 resolutions. They are tested by UC04-F8-CL17 (HV-09) and UC04-F8-CL19 (HV-10).
-|No Technology Option addresses the Goal on SA-10 directly.|SA-10's Goal reaches the design through HV-14 (addressed by TECH-10 and TECH-12) and OBJ-15. Recorded.
-|ST-11, ST-12 and ST-13 have no Persona and perform no Situated Activity.|All three are Indirect Stakeholders. A Persona is built for Direct Stakeholders only, and both Direct Stakeholders have one (ST-09 → HP-05, ST-10 → HP-06). No action.
-|M-19 Brushing quality has no associated Human Factors Concept.|M-19 is justified through VT-14 and HV-13, and was added for the midterm feedback (§2.3 Open item O-32). Recorded; no HFC is proposed for this cycle.
+|HV-09 Autonomy and HV-10 Dignity are not addressed by any selected Technology Option.|Both are carried by Function behaviour: F8's wait and offer-style prompts follow the VT-07, VT-09 and VT-10 resolutions. They are tested by UC04-F8-CL12 (HV-09) and UC04-F8-CL14 (HV-10).
+|No Technology Option addresses the Goal on SA-07 directly.|SA-07's Goal reaches the design through HV-14 (addressed by TECH-10 and TECH-12) and OBJ-15. Recorded.
+|ST-10, ST-11 and ST-12 have no Persona and perform no Situated Activity.|All three are Indirect Stakeholders. A Persona is built for Direct Stakeholders only, and both Direct Stakeholders have one (ST-08 → HP-04, ST-09 → HP-05). No action.
+|M-18 Brushing quality has no associated Human Factors Concept.|M-18 is justified through VT-14 and HV-13, and was added for the midterm feedback (§2.3 Open item O-32). Recorded; no HFC is proposed for this cycle.
 |Every Foundation entity is provisional: no resident, care worker or manager has been observed or interviewed.|Recorded on every Evidence basis field (§2.3 Open item O-26). The edges on this page inherit that status.
 |Premise thresholds and escalation timing are proposals.|Pending the first EM-05 pilot (§2.3 Open item O-29). Affects VT-11's stance.
 |Whether Pepper (TECH-10) fits at a care-home bathroom doorway is unchecked.|§2.3 Open item O-30; fallback is TECH-14. Affects TECH-10's feasibility and the VT-10 stance.

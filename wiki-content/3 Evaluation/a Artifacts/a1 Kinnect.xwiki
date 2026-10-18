@@ -1,0 +1,15 @@
+%%WIKI-SYNC-META%%
+title: a1 Kinnect
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** AT-01 is reserved for the forthcoming Kinnect artifact. Other pages may refer to it as planned, but its implementation details have not yet been documented.
+
+= Artifact [AT-01] =
+
+|=Field|=Description
+|ID|AT-01
+|Name|Kinnect
+|Status|Not Started
+|Details|Not documented yet. This page reserves the ID and link target only.
+
+**Graph edge:** //used-by ← ER-03 (planned).//

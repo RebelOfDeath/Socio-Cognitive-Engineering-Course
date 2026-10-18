@@ -20,13 +20,13 @@ syntax: xwiki/2.1
 |Procedure summary|Scripted steps, stalls, resumptions and confounders are performed at a mock sink against a timestamped ground-truth log. The System's step identification, stall detection, brushing time, prompting and handover requests are compared with the log, including unacknowledged handovers to check re-sending and escalation. Stored session records are inspected for their content. The first run is a pilot that sets the proposed escalation values (§2.3 Open item O-29).
 |Purpose|Verification
 |Human subjects required|No
-|Measures used|M-12; M-17 (record-content component only); M-19 (brushing-time component only)
+|Measures used|M-11; M-16 (record-content component only); M-18 (brushing-time component only)
 |Cost and feasibility|Low. Needs a mock sink set-up, the prototype and experimenter time; no ethics approval for human subjects. Can run as soon as a prototype exists.
 |Known limitations|Cannot establish real-world accuracy with an actual resident in an actual bathroom. Scripted stalls may not resemble real hesitation.
 
 == Graph edges ==
 
-produces → Evidence for UC04-F7-PR7, UC04-F8-PR8, UC04-F9-PR9, UC04-F10-PR10; applies → M-12, M-17, M-19.
+produces → Evidence for UC04-F7-PR7, UC04-F8-PR8, UC04-F9-PR9, UC04-F10-PR10; applies → M-11, M-16, M-18.
 
 = Within-resident baseline comparison  [EM-06] =
 
@@ -41,16 +41,16 @@ produces → Evidence for UC04-F7-PR7, UC04-F8-PR8, UC04-F9-PR9, UC04-F10-PR10; 
 |Name|Within-resident baseline comparison
 |Status|In Progress
 |Evidence basis|Design follows the single-subject alternating baseline-intervention structure used in COACH (Mihailidis et al., 2008) with older adults with moderate-to-severe dementia.
-|Procedure summary|Residents are observed during the real morning routine, first without the System to establish each resident's own baseline, then with it, alternating between the two phases (A-B-A-B). In the baseline phases Pepper stands at the doorway on standby, so that the phases differ only in whether the Functions run. Trained observers score the activity during each session, and the toothbrush sensor logs brushing time in both phases. A trained assessor, who is not told the phase, scores plaque shortly after the routine on a fixed schedule in both phases (M-19). After each session in both phases the resident is asked the M-16 autonomy items, and after System sessions also M-17's three short, verbally administered interview questions, only if they are willing and not distressed. The full study design is ER-02 (§3).
+|Procedure summary|Residents are observed during the real morning routine, first without the System to establish each resident's own baseline, then with it, alternating between the two phases (A-B-A-B). In the baseline phases Pepper stands at the doorway on standby, so that the phases differ only in whether the Functions run. Trained observers score the activity during each session, and the toothbrush sensor logs brushing time in both phases. A trained assessor, who is not told the phase, scores plaque shortly after the routine on a fixed schedule in both phases (M-18). After each session in both phases the resident is asked the M-15 autonomy items, and after System sessions also M-16's three short, verbally administered interview questions, only if they are willing and not distressed. The full study design is ER-02 (§3).
 |Purpose|Validation
 |Human subjects required|Yes - residents with dementia (supported consent) and the care staff working with them.
-|Measures used|M-13, M-14, M-15, M-16, M-17 (resident post-session interview), M-18, M-19
+|Measures used|M-12, M-13, M-14, M-15, M-16 (resident post-session interview), M-17, M-18
 |Cost and feasibility|High. Needs access to a care home, ethics approval, supported consent, trained observers present during a personal-care activity, and enough sessions per resident for both phases.
-|Known limitations|Small n and no control group. Cannot separate novelty effects from the design. The observer's presence during a personal-care activity may itself change behaviour. Post-session interview answers from residents with dementia may be brief or unreliable (see M-16's ceiling effect), so they are read alongside the observer measures, never alone.
+|Known limitations|Small n and no control group. Cannot separate novelty effects from the design. The observer's presence during a personal-care activity may itself change behaviour. Post-session interview answers from residents with dementia may be brief or unreliable (see M-15's ceiling effect), so they are read alongside the observer measures, never alone.
 
 == Graph edges ==
 
-produces → Evidence for UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL17, UC04-F8-CL18, UC04-F8-CL19, UC04-F9-CL20, UC04-F7-CL21, UC04-F9-CL23, UC04-F8-CL24, UC04-F9-CL25; applied-in → ER-02 (designed, not run); applies → M-13, M-14, M-15, M-16, M-17, M-18, M-19.
+produces → Evidence for UC04-F8-CL10, UC04-F8-CL11, UC04-F8-CL12, UC04-F8-CL13, UC04-F8-CL14, UC04-F9-CL15, UC04-F7-CL16, UC04-F9-CL18, UC04-F8-CL19, UC04-F9-CL20; applied-in → ER-02 (designed, not run); applies → M-12, M-13, M-14, M-15, M-16, M-17, M-18.
 
 = Care-staff interview  [EM-07] =
 
@@ -65,13 +65,13 @@ produces → Evidence for UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL17, UC04-F8-CL18
 |Name|Care-staff interview
 |Status|In Progress
 |Evidence basis|Bespoke. The interview's concern set is drawn from Niemeijer et al. (2010, 2015) on the acceptability of surveillance technology in residential dementia care.
-|Procedure summary|Care staff are interviewed about the handover record the System produces and about whether they perceive the System as intrusive, for residents or for themselves. Interviews are coded with M-17's coding scheme, including whether staff describe the prompting as talking down to residents.
+|Procedure summary|Care staff are interviewed about the handover record the System produces and about whether they perceive the System as intrusive, for residents or for themselves. Interviews are coded with M-16's coding scheme, including whether staff describe the prompting as talking down to residents.
 |Purpose|Validation
 |Human subjects required|Yes - care staff.
-|Measures used|M-17, M-18
+|Measures used|M-16, M-17
 |Cost and feasibility|Moderate. Needs informed consent and staff time during working hours; lower ethics load than EM-06 because residents are not participants.
 |Known limitations|Cannot establish the resident's own privacy experience - only how staff read it. Staff accounts of their own prompting load are self-reports, not observations.
 
 == Graph edges ==
 
-produces → Evidence for UC04-F8-CL19, UC04-F7-CL21, UC04-F10-CL22, UC04-F9-CL23; applies → M-17, M-18.
+produces → Evidence for UC04-F8-CL14, UC04-F7-CL16, UC04-F10-CL17, UC04-F9-CL18; applies → M-16, M-17.

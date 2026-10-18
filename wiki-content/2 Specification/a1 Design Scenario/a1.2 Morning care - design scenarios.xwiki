@@ -2,7 +2,7 @@
 title: a1.2 Morning care - design scenarios
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Design Scenarios DS-04 and DS-05 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[a1.1 Elena's first week>>doc:2 Specification.a1 Design Scenario.a1\.1 Elena's first week.WebHome]]); IDs continue after the Meaningful Connections set.
+**Abstract.** Design Scenarios DS-02 and DS-03 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[a1.1 Elena's first week>>doc:2 Specification.a1 Design Scenario.a1\.1 Elena's first week.WebHome]]); IDs continue after the Meaningful Connections set.
 
 {{html}}
 <label for="status">Status:</label>
@@ -15,7 +15,7 @@ syntax: xwiki/2.1
 {{/html}}
 
 
-= Design Scenario [DS-04] =
+= Design Scenario [DS-02] =
 //Reimagines PS-05 (losing track of the tooth-brushing routine) with the System in place. Realized by UC04. Technology: Pepper (TECH-10), sensors on the tooth-brushing items (TECH-11), and a notification to the care worker's phone (TECH-12).//
 
 It is morning in the dementia care home. The resident has finished breakfast and returns to their room. The care worker, Myra, reminds them that it is time to brush their teeth, and moves on to help the next resident on the round.
@@ -34,7 +34,7 @@ Meanwhile Myra has been helping another resident get dressed. They were not call
 
 If the resident had stopped responding and nothing had moved for several minutes, Pepper would have told the resident that someone was coming, and Myra's phone would have received a short message: the resident's room, tooth brushing, step reached, reason for the call.
 
-= Design Scenario [DS-05] =
+= Design Scenario [DS-03] =
 //Medication - kept for UC05, deferred to a later cycle (§2.3 Open item O-22). The tray-based device described here corresponds to TECH-15 (§1.3), not to the Pepper-based System selected for UC04.//
 
 A resident with dementia needs to take prescribed medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it's time to take it. At first, the resident agrees to take the medicine.

@@ -158,7 +158,7 @@ HV-03 Privacy: minimising stored personal data and preventing unauthorised discl
 |Current resolution|(((
 * Persona attributes extracted during one-to-one dialogue enter the profile as private by default until the resident explicitly consents to release them for matching (TECH-05, TECH-06)
 * The resident (and, where appropriate, their representative) can inspect, edit, or delete any profile item at any time, and a resident's objection always prevails
-* Acoustic and linguistic engagement metrics (M-22) are reduced to numerical summary scores on the robot before reaching the local server
+* Acoustic and linguistic engagement metrics (M-21) are reduced to numerical summary scores on the robot before reaching the local server
 * Research analysis uses pseudonymised data under institutional ethics approval and separate consent (O-5)
 )))
 |Alternatives considered|(((

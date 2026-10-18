@@ -2,9 +2,9 @@
 title: b4.2 Morning care - measures
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Measures M-12 to M-19 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b4.1 Introductions, friendships and system checks>>doc:1 Foundation.b4 Measures.b4\.1 Introductions, friendships and system checks.WebHome]]); IDs continue after the Meaningful Connections set.
+**Abstract.** Measures M-11 to M-18 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b4.1 Introductions, friendships and system checks>>doc:1 Foundation.b4 Measures.b4\.1 Introductions, friendships and system checks.WebHome]]); IDs continue after the Meaningful Connections set.
 
-= Step-tracking and stall-detection performance  [M-12] =
+= Step-tracking and stall-detection performance  [M-11] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -13,11 +13,11 @@ syntax: xwiki/2.1
 == Fields ==
 
 |=Field|=Description
-|ID|M-12
+|ID|M-11
 |Name|Step-tracking and stall-detection performance
 |Status|In Progress
 |Evidence basis|The protocol follows the system-performance reporting of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
-|Construct measured|Whether the System correctly identifies which SA-08 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
+|Construct measured|Whether the System correctly identifies which SA-05 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
 |Type|Quantitative
 |Instrument or procedure|Staged-event protocol against a ground-truth log: scripted steps, stalls, resumptions and confounders at a mock sink, with each event timestamped by the experimenter.
 |Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Proposed pass thresholds are in UC04-F7-PR7 to UC04-F9-PR9 (§2.3), alongside the escalation timing they check. They are to be confirmed in a first EM-05 pilot with the selected item sensors (TECH-11); see §2.3 Open item O-29.
@@ -29,7 +29,32 @@ syntax: xwiki/2.1
 
 operationalizes → UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9; used-by → EM-05. Associated with HFC-14.
 
-= Independent step completion  [M-13] =
+= Independent step completion  [M-12] =
+
+//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
+
+**Report Format:** §1.2 Human Values and Human Factors
+
+== Fields ==
+
+|=Field|=Description
+|ID|M-12
+|Name|Independent step completion
+|Status|In Progress
+|Evidence basis|Step-level scoring as used in COACH (Mihailidis et al., 2008), which scored older adults with moderate-to-severe dementia on handwashing steps completed without human assistance. Directly reused, not adapted.
+|Construct measured|How many steps of the SA-05 sequence the resident completes with no prompt, per session.
+|Type|Quantitative
+|Instrument or procedure|Observer scoring of each SA-05 step during the real morning routine.
+|Scoring or coding scheme|One point per SA-05 step completed without any prompt or human assistance; summed per session (0-9 for SA-05's nine steps). Compared against the same resident's pre-System baseline.
+|Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers, per step (completed unprompted: yes/no): Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
+|Serves|Validation
+|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-11, VT-08).
+
+== Graph edges ==
+
+operationalizes → UC04-F8-CL10, UC04-F8-CL11, UC04-F9-CL15, UC04-F9-CL20; used-by → EM-06; operationalizes → HV-12 (Competence), HV-09 (Autonomy). Associated with HFC-11.
+
+= Prompt level required  [M-13] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -39,22 +64,22 @@ operationalizes → UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9; us
 
 |=Field|=Description
 |ID|M-13
-|Name|Independent step completion
+|Name|Prompt level required
 |Status|In Progress
-|Evidence basis|Step-level scoring as used in COACH (Mihailidis et al., 2008), which scored older adults with moderate-to-severe dementia on handwashing steps completed without human assistance. Directly reused, not adapted.
-|Construct measured|How many steps of the SA-08 sequence the resident completes with no prompt, per session.
-|Type|Quantitative
-|Instrument or procedure|Observer scoring of each SA-08 step during the real morning routine.
-|Scoring or coding scheme|One point per SA-08 step completed without any prompt or human assistance; summed per session (0-9 for SA-08's nine steps). Compared against the same resident's pre-System baseline.
-|Validity and reliability|Used as the primary outcome in Mihailidis et al. (2008). Inter-rater reliability for our own observers, per step (completed unprompted: yes/no): Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
+|Evidence basis|Bespoke ordinal coding. The levels correspond to SA-05's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
+|Construct measured|The highest level of assistance needed to get the resident through each step.
+|Type|Quantitative (ordinal)
+|Instrument or procedure|Observer coding per SA-05 step, during the real morning routine.
+|Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
+|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-12, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
-|Burden|Human subjects - residents with dementia, supported consent. An observer present during a personal-care activity, which is itself a privacy load (see HV-11, VT-08).
+|Burden|Human subjects - as M-12, collected in the same observation.
 
 == Graph edges ==
 
-operationalizes → UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20, UC04-F9-CL25; used-by → EM-06; operationalizes → HV-12 (Competence), HV-09 (Autonomy). Associated with HFC-11.
+operationalizes → UC04-F8-CL11, UC04-F8-CL13; used-by → EM-06; operationalizes → HV-12 (Competence). Associated with HFC-11.
 
-= Prompt level required  [M-14] =
+= Observed distress and resistance  [M-14] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -64,31 +89,6 @@ operationalizes → UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20, UC04-F9-CL25; used
 
 |=Field|=Description
 |ID|M-14
-|Name|Prompt level required
-|Status|In Progress
-|Evidence basis|Bespoke ordinal coding. The levels correspond to SA-08's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
-|Construct measured|The highest level of assistance needed to get the resident through each step.
-|Type|Quantitative (ordinal)
-|Instrument or procedure|Observer coding per SA-08 step, during the real morning routine.
-|Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
-|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-13, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
-|Serves|Validation
-|Burden|Human subjects - as M-13, collected in the same observation.
-
-== Graph edges ==
-
-operationalizes → UC04-F8-CL16, UC04-F8-CL18; used-by → EM-06; operationalizes → HV-12 (Competence). Associated with HFC-11.
-
-= Observed distress and resistance  [M-15] =
-
-//How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
-
-**Report Format:** §1.2 Human Values and Human Factors
-
-== Fields ==
-
-|=Field|=Description
-|ID|M-15
 |Name|Observed distress and resistance
 |Status|In Progress
 |Evidence basis|(((
@@ -106,9 +106,9 @@ Optionally paired with the Observed Emotion Rating Scale for affect (Lawton, Van
 
 == Graph edges ==
 
-operationalizes → UC04-F8-CL15, UC04-F8-CL18, UC04-F8-CL19, UC04-F8-CL24; used-by → EM-06; operationalizes → HV-13 (Well-being), HV-10 (Dignity). Associated with HFC-11, HFC-12, HFC-13.
+operationalizes → UC04-F8-CL10, UC04-F8-CL13, UC04-F8-CL14, UC04-F8-CL19; used-by → EM-06; operationalizes → HV-13 (Well-being), HV-10 (Dignity). Associated with HFC-11, HFC-12, HFC-13.
 
-= Perceived autonomy and felt control  [M-16] =
+= Perceived autonomy and felt control  [M-15] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -117,7 +117,7 @@ operationalizes → UC04-F8-CL15, UC04-F8-CL18, UC04-F8-CL19, UC04-F8-CL24; used
 == Fields ==
 
 |=Field|=Description
-|ID|M-16
+|ID|M-15
 |Name|Perceived autonomy and felt control
 |Status|In Progress
 |Evidence basis|Episode-specific need-fulfilment items from Custers et al. (2013), which measured Dutch nursing-home residents' fulfilment of the needs for autonomy, competence and relatedness during a specific videotaped caregiving episode, with a trained-observer counterpart. Provisional: that sample was physically frail residents (n = 36, mean age 80), not specifically residents with dementia.
@@ -131,15 +131,15 @@ Observer: the 7-point "support of autonomy" scale from the same study, rating ho
 
 Report self-report and observer scores separately; do not combine them.
 )))
-|Validity and reliability|In Custers et al. (2013) the need-fulfilment scale for the videotaped episode had α = .69, and observers agreed within one scale point on 79% of episodes for support of autonomy. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement, so the self-report has a documented ceiling and must not be used alone. Our adaptation to tooth brushing is untested. Observer agreement will be checked as in M-13, using weighted kappa.
+|Validity and reliability|In Custers et al. (2013) the need-fulfilment scale for the videotaped episode had α = .69, and observers agreed within one scale point on 79% of episodes for support of autonomy. Residents rated their own need fulfilment higher than observers did, with only weak-to-moderate agreement, so the self-report has a documented ceiling and must not be used alone. Our adaptation to tooth brushing is untested. Observer agreement will be checked as in M-12, using weighted kappa.
 |Serves|Validation
 |Burden|Human subjects - residents with dementia, supported consent. Self-report may be difficult for residents with more advanced dementia; the observer rating also needs a trained observer present.
 
 == Graph edges ==
 
-operationalizes → UC04-F8-CL17; used-by → EM-06; operationalizes → HV-09 (Autonomy). Associated with HFC-09.
+operationalizes → UC04-F8-CL12; used-by → EM-06; operationalizes → HV-09 (Autonomy). Associated with HFC-09.
 
-= Perceived privacy and monitoring acceptability  [M-17] =
+= Perceived privacy and monitoring acceptability  [M-16] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -148,7 +148,7 @@ operationalizes → UC04-F8-CL17; used-by → EM-06; operationalizes → HV-09 (
 == Fields ==
 
 |=Field|=Description
-|ID|M-17
+|ID|M-16
 |Name|Perceived privacy and monitoring acceptability
 |Status|In Progress
 |Evidence basis|Bespoke, but the concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
@@ -162,7 +162,7 @@ Validation component, care staff: the EM-07 interview, including their judgement
 Verification component (record content): inspection of stored session records against the three specified items.
 )))
 |Scoring or coding scheme|(((
-Code each statement into one of: W - the System watches, checks on, or supervises the resident; R - the System records or reports on the resident; T - the System talks down to the resident or treats them like a child (for UC04-F8-CL19); N - neutral or positive about the System's presence. A statement can carry more than one code. Code each record item named by care staff as P (proportionate) or I (intrusive). Report counts per code per resident; any W, R or T code is reported with its quote.
+Code each statement into one of: W - the System watches, checks on, or supervises the resident; R - the System records or reports on the resident; T - the System talks down to the resident or treats them like a child (for UC04-F8-CL14); N - neutral or positive about the System's presence. A statement can carry more than one code. Code each record item named by care staff as P (proportionate) or I (intrusive). Report counts per code per resident; any W, R or T code is reported with its quote.
 
 Record-content check: pass if the record holds exactly the three specified items and no step-level trace.
 )))
@@ -172,9 +172,9 @@ Record-content check: pass if the record holds exactly the three specified items
 
 == Graph edges ==
 
-operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL19, UC04-F7-CL21, UC04-F10-CL22, UC04-F8-CL24; used-by → EM-05, EM-06 (resident interview), EM-07; operationalizes → HV-11 (Privacy), HV-10 (Dignity). Associated with HFC-10, HFC-12, HFC-13.
+operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL14, UC04-F7-CL16, UC04-F10-CL17, UC04-F8-CL19; used-by → EM-05, EM-06 (resident interview), EM-07; operationalizes → HV-11 (Privacy), HV-10 (Dignity). Associated with HFC-10, HFC-12, HFC-13.
 
-= Care-worker prompting load  [M-18] =
+= Care-worker prompting load  [M-17] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -183,7 +183,7 @@ operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL19, UC04
 == Fields ==
 
 |=Field|=Description
-|ID|M-18
+|ID|M-17
 |Name|Care-worker prompting load
 |Status|In Progress
 |Evidence basis|Time-sampled observation as used in Rogers et al. (1999), which reported the proportion of a morning care session spent on physical assists.
@@ -193,13 +193,13 @@ operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL19, UC04
 |Scoring or coding scheme|Count and total duration of care-worker prompting episodes per session. Compared against the pre-System baseline. In the System phase, also the number of F9 notifications per care worker per round, by priority, and (from EM-07) how many the care worker judged unnecessary, so that time saved on prompting is not simply moved to handling notifications (HFC-14).
 |Validity and reliability|Method follows Rogers et al. (1999); our specific coding is bespoke. Inter-rater reliability: two observers time the same prompting episodes in at least 20% of sessions; agreement on episode counts as Cohen's kappa and on durations as an intraclass correlation, with κ or ICC ≥ .60 treated as acceptable.
 |Serves|Validation
-|Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-10) and residents.
+|Burden|Human subjects - care staff (observed at work, which is itself a workplace-surveillance concern for ST-09) and residents.
 
 == Graph edges ==
 
-operationalizes → UC04-F9-CL23; used-by → EM-06, EM-07; operationalizes → HV-14 (Attentive care). Associated with HFC-14.
+operationalizes → UC04-F9-CL18; used-by → EM-06, EM-07; operationalizes → HV-14 (Attentive care). Associated with HFC-14.
 
-= Brushing quality  [M-19] =
+= Brushing quality  [M-18] =
 
 //How a Premise or Claim would be operationalized. Documented in the Foundation so that Claims can be written testable rather than retrofitted later.//
 
@@ -208,15 +208,15 @@ operationalizes → UC04-F9-CL23; used-by → EM-06, EM-07; operationalizes → 
 == Fields ==
 
 |=Field|=Description
-|ID|M-19
+|ID|M-18
 |Name|Brushing quality
 |Status|In Progress
 |Evidence basis|(((
-Added in response to the midterm feedback, which asked how well the teeth were actually brushed. M-13 cannot answer that, because a resident can complete SA-08 task 7 and still brush badly.
+Added in response to the midterm feedback, which asked how well the teeth were actually brushed. M-12 cannot answer that, because a resident can complete SA-05 task 7 and still brush badly.
 
 Part (a): two candidate instruments were read, both designed for assessing oral hygiene in older people in residential care. Proposed choice: the Plaque Score of the Mucosal-Plaque Score (MPS; Henriksen et al., 1999). Group to confirm (§2.3 Open item O-32).
 
-The Oral Health Assessment Tool (OHAT; Chalmers et al., 2005) was set aside for this purpose. It is an eight-category screening tool that carers complete to decide on dental referral, and plaque is covered only by its "oral cleanliness" category. Against a dentist's Plaque Index on 21 residents, that category agreed in 42.9% of cases (r = 0.15, not significant), and carers rated plaque much lower than the dentist did. OHAT would suit a general oral-health screen, but here it would measure the one thing M-19 needs least well.
+The Oral Health Assessment Tool (OHAT; Chalmers et al., 2005) was set aside for this purpose. It is an eight-category screening tool that carers complete to decide on dental referral, and plaque is covered only by its "oral cleanliness" category. Against a dentist's Plaque Index on 21 residents, that category agreed in 42.9% of cases (r = 0.15, not significant), and carers rated plaque much lower than the dentist did. OHAT would suit a general oral-health screen, but here it would measure the one thing M-18 needs least well.
 
 MPS adds a four-point Plaque Score (PS) to a four-point Mucosal Score (MS). Henriksen et al. describe the mucosal part as showing the sequelae of long-standing oral-care deficits and the plaque part as showing current hygiene, so PS is the part that can respond within EM-06. MS is recorded alongside as a secondary score.
 
@@ -245,10 +245,10 @@ PS is the primary score, compared against the same residents' baseline-phase sco
 
 (b) Seconds of brushing motion per session, and the proportion of sessions that reach the resident's B-target (§2.3 Escalation specification). Compared against baseline.
 )))
-|Validity and reliability|(a) Henriksen et al. (1999) report reliability only. Weighted kappa for PS was 0.62 for one dentist scoring 24 residents a week apart, 0.71 between two dentists on 20 residents, and 0.80 among a dentist, two dental hygienists and a nurse on 8 residents after training. MS was weaker between the two dentists (0.47). Validity against a reference standard was not tested. Inter-rater reliability in this project as for M-13: two assessors independently score at least 20% of assessments, weighted kappa or ICC ≥ .60 acceptable (Landis & Koch, 1977). (b) Bespoke. Validity depends on the sensor telling brushing apart from other handling of the brush, which EM-05 checks against staged brushing. Brushing time says nothing about which teeth were brushed, so (b) never stands in for (a).
+|Validity and reliability|(a) Henriksen et al. (1999) report reliability only. Weighted kappa for PS was 0.62 for one dentist scoring 24 residents a week apart, 0.71 between two dentists on 20 residents, and 0.80 among a dentist, two dental hygienists and a nurse on 8 residents after training. MS was weaker between the two dentists (0.47). Validity against a reference standard was not tested. Inter-rater reliability in this project as for M-12: two assessors independently score at least 20% of assessments, weighted kappa or ICC ≥ .60 acceptable (Landis & Koch, 1977). (b) Bespoke. Validity depends on the sensor telling brushing apart from other handling of the brush, which EM-05 checks against staged brushing. Brushing time says nothing about which teeth were brushed, so (b) never stands in for (a).
 |Serves|Both: Validation (plaque, brushing time in EM-06) and Verification (brushing-time accuracy in EM-05)
-|Burden|Human subjects for (a): residents with dementia, supported consent. An oral check is a physical intrusion into a personal-care area, so it is kept short and skipped when the resident is unwilling or distressed. (b) is data about how a personal-care activity was performed, which HP-05's constraints exclude from the System. It is justified only as time-limited research data under consent (VT-14).
+|Burden|Human subjects for (a): residents with dementia, supported consent. An oral check is a physical intrusion into a personal-care area, so it is kept short and skipped when the resident is unwilling or distressed. (b) is data about how a personal-care activity was performed, which HP-04's constraints exclude from the System. It is justified only as time-limited research data under consent (VT-14).
 
 == Graph edges ==
 
-operationalizes → UC04-F8-CL24, UC04-F9-CL25, UC04-F7-PR7 (brushing-time component); used-by → EM-05 (part b), EM-06; operationalizes → HV-13 (Well-being). Associated with VT-14.
+operationalizes → UC04-F8-CL19, UC04-F9-CL20, UC04-F7-PR7 (brushing-time component); used-by → EM-05 (part b), EM-06; operationalizes → HV-13 (Well-being). Associated with VT-14.

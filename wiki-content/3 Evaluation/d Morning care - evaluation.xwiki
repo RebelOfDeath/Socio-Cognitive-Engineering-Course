@@ -15,16 +15,16 @@ Where each UC04 Premise and Claim stands. "Planned" means the Evaluation Method 
 |UC04-F8-PR8|EM-05|none (needs Build A)|none|none
 |UC04-F9-PR9|EM-05|none (needs Build A)|none|none
 |UC04-F10-PR10|EM-05|none (needs Build A)|none|none
-|UC04-F8-CL15|EM-06|ER-01; ER-02 designed|EV-01|Qualifies (walkthrough only)
-|UC04-F8-CL16|EM-06|ER-02 designed|none|none
-|UC04-F8-CL17|EM-06|ER-02 designed|none|none
-|UC04-F8-CL18 (adverse)|EM-06|ER-01; ER-02 designed|EV-02|Qualifies (walkthrough only)
-|UC04-F8-CL19 (adverse)|EM-06, EM-07|ER-01; ER-02 designed|EV-03|Qualifies (walkthrough only)
-|UC04-F9-CL20|EM-06|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; the cause (WF-07) is fixed and needs walking again
-|UC04-F7-CL21|EM-06, EM-07|ER-01; ER-02 designed|EV-07|Qualifies (walkthrough only)
-|UC04-F10-CL22|EM-07|ER-01|EV-05|Challenges (walkthrough only; O-38)
-|UC04-F9-CL23|EM-06, EM-07|ER-02 designed|none|none
-|UC04-F8-CL24|EM-06|ER-01; ER-02 designed|EV-06|Qualifies (walkthrough only)
-|UC04-F9-CL25 (adverse)|EM-06|ER-02 designed|none|none
+|UC04-F8-CL10|EM-06|ER-01; ER-02 designed|EV-01|Qualifies (walkthrough only)
+|UC04-F8-CL11|EM-06|ER-02 designed|none|none
+|UC04-F8-CL12|EM-06|ER-02 designed|none|none
+|UC04-F8-CL13 (adverse)|EM-06|ER-01; ER-02 designed|EV-02|Qualifies (walkthrough only)
+|UC04-F8-CL14 (adverse)|EM-06, EM-07|ER-01; ER-02 designed|EV-03|Qualifies (walkthrough only)
+|UC04-F9-CL15|EM-06|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; the cause (WF-07) is fixed and needs walking again
+|UC04-F7-CL16|EM-06, EM-07|ER-01; ER-02 designed|EV-07|Qualifies (walkthrough only)
+|UC04-F10-CL17|EM-07|ER-01|EV-05|Challenges (walkthrough only; O-38)
+|UC04-F9-CL18|EM-06, EM-07|ER-02 designed|none|none
+|UC04-F8-CL19|EM-06|ER-01; ER-02 designed|EV-06|Qualifies (walkthrough only)
+|UC04-F9-CL20 (adverse)|EM-06|ER-02 designed|none|none
 
 No Claim has yet been tested on a verified Premise, because EM-05 has not run.

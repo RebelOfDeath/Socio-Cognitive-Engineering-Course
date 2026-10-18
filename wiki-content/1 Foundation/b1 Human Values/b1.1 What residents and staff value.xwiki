@@ -184,17 +184,17 @@ Violated: telling a resident "You are only staying here for a few days"; leaving
 
 == Graph edges ==
 
-HV-01: held-by → ST-01, ST-02, ST-05; party-to → VT-02, VT-06; operationalized-by → M-01, M-02, M-07, M-09, M-24; explained-by → HFC-02, HFC-05, HFC-17.
+HV-01: held-by → ST-01, ST-02, ST-05; party-to → VT-02, VT-06; operationalized-by → M-01, M-02, M-07, M-09, M-23; explained-by → HFC-02, HFC-05, HFC-17.
 
 HV-02: held-by → ST-01, ST-02; party-to → VT-04; operationalized-by → M-07, M-09; explained-by → HFC-03, HFC-06.
 
-HV-03: held-by → ST-01 to ST-07; party-to → VT-01, VT-05, VT-06; operationalized-by → M-01, M-09, M-10, M-23.
+HV-03: held-by → ST-01 to ST-07; party-to → VT-01, VT-05, VT-06; operationalized-by → M-01, M-09, M-10, M-22.
 
-HV-04: held-by → ST-01, ST-04, ST-06, ST-07; operationalized-by → M-06, M-20.
+HV-04: held-by → ST-01, ST-04, ST-06, ST-07; operationalized-by → M-06, M-19.
 
-HV-05: held-by → ST-01 to ST-07; party-to → VT-03, VT-06; operationalized-by → M-03, M-06, M-20; explained-by → HFC-01, HFC-02, HFC-07.
+HV-05: held-by → ST-01 to ST-07; party-to → VT-03, VT-06; operationalized-by → M-03, M-06, M-19; explained-by → HFC-01, HFC-02, HFC-07.
 
-HV-06: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-04; operationalized-by → M-02, M-04, M-05, M-06, M-08, M-21, M-22, M-23; explained-by → HFC-01 to HFC-05, HFC-07, HFC-15, HFC-16.
+HV-06: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-04; operationalized-by → M-02, M-04, M-05, M-06, M-08, M-20, M-21, M-22; explained-by → HFC-01 to HFC-05, HFC-07, HFC-15, HFC-16.
 
 HV-07: held-by → ST-01, ST-03, ST-05; party-to → VT-05; operationalized-by → M-04; explained-by → HFC-04, HFC-15.
 

@@ -9,5 +9,5 @@ syntax: xwiki/2.1
 = Concepts =
 
 |=Page|=Patterns|=Status
-|[[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Thread in the pocket, person in reach.WebHome]]|TDP-01 Consent-gated social brokering with human handover|**Current**
+|[[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Consent-gated social brokering with human handover.WebHome]]|TDP-01 Consent-gated social brokering with human handover|**Current**
 |[[c2 Morning care - team design pattern>>doc:2 Specification.c Team Design Pattern.c2 Morning care - team design pattern.WebHome]]|TDP-02 Graduated activity support with human handover|Separate concept

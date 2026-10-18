@@ -48,7 +48,7 @@ Shown live, for a suggested pair: the items each resident released, and the bloc
 
 |=Scene|=Events|=What the System shows
 |1 A newcomer's first week (UC01)|Welcome on arrival; one introduction on day two and another on day four; names repeated at the next meal; "When can I go home?"|Few faces at a time; names given to both, as statements; a truthful deferral and a note to the trusted person
-|2 Introducing two residents (UC02)|The coordinator approves a match; each resident asked alone; one says no in a second pair|Introduction only for the pair where both said yes, with one shared item and a suggested walk; the other pair's "no" never mentioned
+|2 Introducing two residents (UC02)|The coordinator approves a match; each resident asked alone; one says no in a second pair|Introduction only for the pair where both said yes, with one shared item and one optional activity drawn from both profiles; the other pair's "no" never mentioned
 |3 Following up (UC03)|An agreed meeting time; one resident cannot come; "Again?" asked privately; a presence pattern for a resident who opted in, and none for one who did not|A note to the care worker; another time offered; one note about the pattern, to the named care worker only
 |Close|Record and devices inspected|Only the listed items in the record; no audio file; no traffic outside the home network
 
@@ -227,11 +227,11 @@ The summative counterpart of EM-03, with the same structure of one home per arm.
 
 Inclusion: MMSE 14 to 24 or MoCA 10 to 22; can reach communal areas; can talk in Kinnect's language; representative consent and the resident's own assent. Target: 30 residents per home, so that 25 complete.
 
-Analysis: ANCOVA on the change from baseline (weeks -2 to 0) to weeks 4 and 5, with M-21 joint social time as the primary outcome; dyadic interactions and bedroom time as key secondary outcomes under Holm's correction; an exact binomial test for first-time usability. The full protocol and analysis plan are in ER-03.
+Analysis: ANCOVA on the change from baseline (weeks -2 to 0) to weeks 4 and 5, with M-20 joint social time as the primary outcome; dyadic interactions and bedroom time as key secondary outcomes under Holm's correction; an exact binomial test for first-time usability. The full protocol and analysis plan are in ER-03.
 )))
 |Purpose|Validation
 |Human subjects required|Yes. Residents with mild to moderate dementia or MCI at both homes; care staff at both homes.
-|Measures used|M-20 to M-24; M-04 and M-06 room scans as the check on M-21
+|Measures used|M-19 to M-23; M-04 and M-06 room scans as the check on M-20
 |Cost and feasibility|High. Access to two care homes, ethics approval, badges, beacons and observers at both homes, Pepper with an on-device accelerator (TECH-18) at the intervention home, staff training. About nine weeks per home from setup to offboarding. No cost estimate yet.
 |Known limitations|(((
 * One home per arm: as in EM-03, differences between the homes cannot be separated from the effect of Kinnect.
@@ -243,7 +243,7 @@ Analysis: ANCOVA on the change from baseline (weeks -2 to 0) to weeks 4 and 5, w
 
 == Graph edges ==
 
-produces → Evidence for the ER-03 primary and secondary Claims (no IDs yet); applies → M-20 to M-24.
+produces → Evidence for the ER-03 primary and secondary Claims (no IDs yet); applies → M-19 to M-23.
 
 = References =
 

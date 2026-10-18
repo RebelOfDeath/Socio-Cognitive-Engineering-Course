@@ -15,7 +15,7 @@ syntax: xwiki/2.1
 |Scope|(((
 Instantiates UC04 (§2.3) and implements its four Functions: F7 step tracking from item sensors (TECH-11), F8 graduated prompting through Pepper's speech and chest tablet (TECH-10), F9 handover to the care worker's phone (TECH-12), and F10 the three-item session record (TECH-12). The prompt wording, timing and handover rules are those of UC04's //Escalation specification//.
 
-Deliberately out of scope: UC05 (medication, deferred by O-22), any use of Pepper's cameras (TECH-13 rejected), physical assistance by the robot (left to the care worker through F9), and any judgement of how clean the teeth are (PS-05 out of scope; M-19 is a research measure, not a System function).
+Deliberately out of scope: UC05 (medication, deferred by O-22), any use of Pepper's cameras (TECH-13 rejected), physical assistance by the robot (left to the care worker through F9), and any judgement of how clean the teeth are (PS-05 out of scope; M-18 is a research measure, not a System function).
 )))
 |Simulation notice|(((
 Paper build: nothing is simulated by software. The specification stands in for the interface. Evaluators read the prompt script and the timings, and imagine the tablet picture, Pepper's position at the doorway and the care worker's phone message.
@@ -29,7 +29,7 @@ Build A: all four Premises, through EM-05 at a mock sink (ground-truth log, no h
 )))
 |Builds|(((
 |=Build|=What changed
-|Spec-1 (paper)|First evaluated build. The UC04 specification as of this cycle: Action Sequence, Functions F7 to F10, Escalation specification, Premises and Claims tables, DS-04, HP-05, HP-06 and RP-03. Walked through in ER-01.
+|Spec-1 (paper)|First evaluated build. The UC04 specification as of this cycle: Action Sequence, Functions F7 to F10, Escalation specification, Premises and Claims tables, DS-02, HP-04, HP-05 and RP-02. Walked through in ER-01.
 |Build A (planned)|Working system: Pepper with the F8 prompt script and tablet pictures, item sensors on the toothbrush, toothpaste and cup (TECH-11), and the phone message and session record (TECH-12). Planned to include the changes ER-01 recommends (§2.3 Open items O-34 to O-38). First evaluated in the EM-05 pilot (O-29); then used by ER-02.
 )))
 

@@ -37,7 +37,7 @@ syntax: xwiki/2.1
 |Name|Time together
 |Status|In Progress
 |Evidence basis|Goal on SA-04; PS-04. HFC-01. Forbes et al. (2015).
-|Statement|Residents who have met spend time together doing something both enjoy. A walk is suggested first, for its benefits to body and mood.
+|Statement|Residents who have met spend time together doing something both enjoy. The System may suggest one activity from both residents' preferences; a walk is only one option.
 |Type|Operational
 |Derived from|Goal on SA-04; HV-05, HV-06; HFC-01
 |Priority|Should.
@@ -233,7 +233,7 @@ Record kept; items used are logged by ID only.
 
 ~6. Pepper stays silent while they talk. If the talk stalls, it offers one topic, once, as a statement to both (F3, IDP-01).
 
-~7. Pepper suggests one activity for two from their preferences; a walk first, where both are assessed fit (F3).
+~7. Pepper suggests one activity for two from both residents' preferences; a walk is offered only where both prefer it and are assessed fit (F3).
 
 ~8. Either may leave at any time, without giving a reason.
 
@@ -295,7 +295,7 @@ Record kept (F6).
 |=Function|=Behaviour|=Serves|=Bounded by|=Enabled by
 |F1 Ask first|Each resident alone: meet this person; release this item; meet again. Two options; a "no" ends the offer; no reason asked. Neither resident learns that the other was asked. An introduction follows only when both said yes.|OBJ-01, OBJ-05, OBJ-06|VT-01, VT-02|TECH-01, TECH-04, TECH-05
 |F2 Suggest matches|Pairs who share released items: a place, a trade, an interest, a past tie. The relationship map excludes conflicts and off-limits topics. Health, losses and family conflicts are never used. The coordinator approves each suggestion. At most [number - O-2] suggestions per resident per week.|OBJ-01, OBJ-02, OBJ-05, OBJ-08|VT-01, VT-02, VT-05|TECH-04, TECH-05, TECH-06
-|F3 Introduce|By name and photo, with one item both released, as a statement. Newcomers meet a few residents, spread over weeks. Names repeated to both at later meetings. Silent while residents talk; one topic offered if the talk stalls (IDP-01). One activity suggested, a walk first where both are assessed fit. Belief from another time: the feeling, then the present. Contradicted: a plain correction; the error flagged for ST-05.|OBJ-01 to OBJ-04, OBJ-07, OBJ-08|VT-01, VT-03, VT-04|TECH-01, TECH-05, TECH-06
+|F3 Introduce|By name and photo, with one item both released, as a statement. Newcomers meet a few residents, spread over weeks. Names repeated to both at later meetings. Silent while residents talk; one topic offered if the talk stalls (IDP-01). One optional activity is chosen from both profiles; a walk is offered only where both prefer it and are assessed fit. Belief from another time: the feeling, then the present. Contradicted: a plain correction; the error flagged for ST-05.|OBJ-01 to OBJ-04, OBJ-07, OBJ-08|VT-01, VT-03, VT-04|TECH-01, TECH-05, TECH-06
 |F4 Defer sensitive topics|Question on a listed topic: "That's one for [trusted person]. Shall I ask them to come?" The trusted person is notified. Never states the fact; never denies it.|OBJ-04|VT-03|TECH-01, TECH-04
 |F5 Follow up|At an agreed time: a note to the named care worker. For residents who opted in: a note after a pattern of staying in [days - O-2]; never after a single day, never to the resident. A degraded state is shown on staff phones.|OBJ-01, OBJ-03, OBJ-09|VT-02, VT-06|TECH-03, TECH-04
 |F6 Keep a short record|Per event: introduction offered, accepted or lapsed; meeting held; "again" or "not again"; notes sent, and to whom; IDs of items used. Nothing of what residents said. Nothing leaves the home.|OBJ-05|VT-05|TECH-04
@@ -340,7 +340,7 @@ UC03: realizes → DS-01; serves → OBJ-01, OBJ-03, OBJ-06, OBJ-09; uses → TD
 = Open items =
 
 |=ID|=Item|=Blocks|=Owner
-|O-1|The case for suggesting walks rests on weak evidence in dementia (HFC-01). Find stronger sources, or present walks as one activity among several.|HFC-01; OBJ-03|Group
+|O-1|Resolved. HFC-01 records that the evidence for walking benefits in dementia is weak, so the design presents a walk as one optional activity among several and never as the default.|Nothing|Closed
 |O-2|Thresholds: suggestions per week; introductions per newcomer per week; note latency; the presence pattern (days, hours above usual); the trusted person's arrival; System error rate; how long before a declined pair is suggested again. Set from an EM-01 pilot and with care workers.|PR1 to PR5; CL8; VT-02; VT-06|Group
 |O-3|Pepper's recognition of older voices, in their own language and dialect. Test in EM-01; the tablet is the fallback.|TECH-01; F1, F4|Group
 |O-4|Relationship map and prepared lines: form, owner, review after events; how staff learn of conflicts between residents.|F1 to F4; VT-01|ST-05 with group

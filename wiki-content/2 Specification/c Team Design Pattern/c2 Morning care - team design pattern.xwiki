@@ -2,7 +2,7 @@
 title: c2 Morning care - team design pattern
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Team Design Pattern TDP-02 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Kinnect (see [[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Thread in the pocket, person in reach.WebHome]]); IDs continue after the Kinnect pattern.
+**Abstract.** Team Design Pattern TDP-02 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Kinnect (see [[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Consent-gated social brokering with human handover.WebHome]]); IDs continue after the Kinnect pattern.
 
 = Graduated activity support with human handover [TDP-02] =
 
@@ -29,7 +29,7 @@ Wang et al. (2017) studied robot-delivered stepwise prompts for handwashing and 
 
 Braley et al. (2019) found that some people with dementia, especially participants with moderate dementia, showed confusion or frustration during repeated automated prompting and benefited from communication with the researchers. This supports a human handover when prompting becomes unresolved or stressful; it does not establish the proposed System's handover thresholds.
 
-The project instantiation is derived from SA-08, SA-10, PS-05 and UC04. The resident retains the activity tasks, the System receives F7-F10, and the care worker retains reassurance, physical assistance and exception handling. This allocation remains provisional until it is evaluated through the Claims listed below.
+The project instantiation is derived from SA-05, SA-07, PS-05 and UC04. The resident retains the activity tasks, the System receives F7-F10, and the care worker retains reassurance, physical assistance and exception handling. This allocation remains provisional until it is evaluated through the Claims listed below.
 )))
 |Problem|A resident with dementia may lose their place in a familiar activity, while a care worker cannot continuously guide every step. If the System takes over too soon, it removes an opportunity to act independently; if it waits or prompts indefinitely, the resident may become distressed or the activity may remain incomplete. The team needs an explicit rule for what the resident attempts, what the System may prompt, and when a care worker assumes responsibility.
 |Solution Structure|(((
@@ -38,18 +38,18 @@ The project instantiation is derived from SA-08, SA-10, PS-05 and UC04. The resi
 1. System requests care-worker support (F9) when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed.
 1. Care worker assesses the situation and provides the appropriate support.
 
-If F7 cannot reliably determine progress, the System reports a degraded state and the care worker uses the existing SA-08 workarounds. If there is no sensor change and no response for the configured safety interval, the System follows UC04's agreed safety branch and calls the care worker. This is a conservative inference rather than direct emergency detection: TECH-11 cannot see distress or a collapse.
+If F7 cannot reliably determine progress, the System reports a degraded state and the care worker uses the existing SA-05 workarounds. If there is no sensor change and no response for the configured safety interval, the System follows UC04's agreed safety branch and calls the care worker. This is a conservative inference rather than direct emergency detection: TECH-11 cannot see distress or a collapse.
 )))
 |Solution Description|The resident remains the primary performer of the activity. Item sensors (TECH-11) track activity progress without filming the resident. The System provides graduated assistance according to IDP-04. The System hands responsibility to the care worker when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed. TECH-12 sends the handover and stores a minimal record for care continuity. TDP-02 defines who is responsible; IDP-04 defines how System prompting escalates.
 |Per-Actor allocation|(((
-**Resident (ST-09):**
+**Resident (ST-08):**
 
-1. Initiate and carry out the activity steps they can still perform (SA-08 tasks 1-9).
+1. Initiate and carry out the activity steps they can still perform (SA-05 tasks 1-9).
 2. Continue after a prompt when able; no explicit response to the System is required for ordinary step tracking.
 
-**Care worker (ST-10):**
+**Care worker (ST-09):**
 
-1. Perform the wider morning-care round (SA-10) while the resident attempts SA-08.
+1. Perform the wider morning-care round (SA-07) while the resident attempts SA-05.
 2. Acknowledge an F9 message on the work phone; assess the resident and provide the next appropriate support, including reassurance or physical assistance when needed.
 3. Review F10's three-item session record for care continuity and handover.
 4. Use the existing care process if tracking, Pepper, or the notification channel fails.
@@ -61,13 +61,13 @@ If F7 cannot reliably determine progress, the System reports a degraded state an
 3. F9 through TECH-12: request care-worker assistance when prompting fails, task-state uncertainty is high, stress or confusion appears, or physical or safety help is needed, passing only room, activity, step reached and reason.
 4. F10 through TECH-12: store completion, highest prompt level, and whether a care worker was called; retain no step-by-step trace.
 )))
-|Consequences: benefits|Gives the resident a chance to complete steps independently; may resolve a stall without immediately requiring a care worker; provides a route to human assistance when System support is insufficient; may direct care-worker time toward residents who need it; provides a minimal handover record. These are expected effects, not observed outcomes (UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20, UC04-F9-CL23, UC04-F10-CL22).
+|Consequences: benefits|Gives the resident a chance to complete steps independently; may resolve a stall without immediately requiring a care worker; provides a route to human assistance when System support is insufficient; may direct care-worker time toward residents who need it; provides a minimal handover record. These are expected effects, not observed outcomes (UC04-F8-CL10, UC04-F8-CL11, UC04-F9-CL15, UC04-F9-CL18, UC04-F10-CL17).
 |Consequences: risks|(((
-An incorrect item-sensor inference may interrupt a resident who was progressing. Waiting too long or escalating the wrong prompt may increase frustration (UC04-F8-CL18). Pepper's humanoid presence, and camera lenses that are covered but still visible, may feel supervisory (UC04-F7-CL21). A separate phone channel can create alert burden; the handover rules in UC04's Escalation specification limit it, grounded on HFC-14 (alert fatigue). Because the care worker is absent for most of the routine, brushing quality may fall even when steps are completed (UC04-F9-CL25). TECH-11 cannot directly see distress or danger. The escalation values and premise thresholds are proposals awaiting the EM-05 pilot (O-29), and Pepper may not fit safely at a bathroom doorway (O-30).
+An incorrect item-sensor inference may interrupt a resident who was progressing. Waiting too long or escalating the wrong prompt may increase frustration (UC04-F8-CL13). Pepper's humanoid presence, and camera lenses that are covered but still visible, may feel supervisory (UC04-F7-CL16). A separate phone channel can create alert burden; the handover rules in UC04's Escalation specification limit it, grounded on HFC-14 (alert fatigue). Because the care worker is absent for most of the routine, brushing quality may fall even when steps are completed (UC04-F9-CL20). TECH-11 cannot directly see distress or danger. The escalation values and premise thresholds are proposals awaiting the EM-05 pilot (O-29), and Pepper may not fit safely at a bathroom doorway (O-30).
 )))
 |Related Patterns|IDP-04 Respectful graduated prompting shapes F8's interaction. The existing Human-Robot Group Game Management pattern concerns a different activity and does not validate this allocation.
-|Connection to Claims|Supports the design rationale for UC04-F8-CL15 (independent steps), UC04-F8-CL16 (lower assistance level), UC04-F9-CL20 (completion after handover), UC04-F9-CL23 (care-worker prompting time), and UC04-F10-CL22 (useful but proportionate record). UC04-F8-CL18 tests an adverse effect of waiting; UC04-F7-CL21 tests whether the tracking allocation preserves privacy as intended.
-|Validation path|Literature-grounded through HFC-11, Rogers et al. (1999), Mihailidis et al. (2008), Peters et al. (2014), Wang et al. (2017), and Braley et al. (2019). The linked Claims are operationalized by M-13, M-14, M-15, M-17 and M-18 through EM-06 and EM-07. Only one project instantiation is currently specified. UC05 will show whether the allocation recurs or whether medication confirmation and safety require a different pattern.
+|Connection to Claims|Supports the design rationale for UC04-F8-CL10 (independent steps), UC04-F8-CL11 (lower assistance level), UC04-F9-CL15 (completion after handover), UC04-F9-CL18 (care-worker prompting time), and UC04-F10-CL17 (useful but proportionate record). UC04-F8-CL13 tests an adverse effect of waiting; UC04-F7-CL16 tests whether the tracking allocation preserves privacy as intended.
+|Validation path|Literature-grounded through HFC-11, Rogers et al. (1999), Mihailidis et al. (2008), Peters et al. (2014), Wang et al. (2017), and Braley et al. (2019). The linked Claims are operationalized by M-12, M-13, M-14, M-16 and M-17 through EM-06 and EM-07. Only one project instantiation is currently specified. UC05 will show whether the allocation recurs or whether medication confirmation and safety require a different pattern.
 
 == Open items to check or research ==
 
@@ -76,11 +76,11 @@ An incorrect item-sensor inference may interrupt a resident who was progressing.
 |Pepper placement (O-30)|Test whether Pepper can stand within earshot and sight of the sink without entering the wet area or blocking the resident. Use TECH-14 if it cannot.|May change which device performs F8 and the resident-facing part of F9.
 |Alert policy (O-31)|HFC-14 and the handover rules are added, and HFC-14's sources are verified (O-33). Review acknowledgement times with care workers.|Needed to justify TECH-12 and to avoid moving workload from prompting to notification management.
 |Research: transfer and recurrence|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors; complete UC05 far enough to compare actor responsibilities.|Tests the evidence transfer, acceptance assumptions and whether this is reusable beyond UC04.
-|Stakeholder validation|Review the allocation, fallback and record with residents and care staff if ethically feasible; otherwise retain the explicit literature-only limitation.|HP-05, HP-06, SA-10 and the alert assumptions are provisional.
+|Stakeholder validation|Review the allocation, fallback and record with residents and care staff if ethically feasible; otherwise retain the explicit literature-only limitation.|HP-04, HP-05, SA-07 and the alert assumptions are provisional.
 
 == Graph edges ==
 
-allocates → SA-08 tasks to ST-09 and SA-10 tasks to ST-10, F7-F10 to System; supports → UC04-F8-CL15, UC04-F8-CL16, UC04-F9-CL20, UC04-F9-CL23, UC04-F10-CL22; tested against → UC04-F8-CL18, UC04-F7-CL21, UC04-F9-CL25.
+allocates → SA-05 tasks to ST-08 and SA-07 tasks to ST-09, F7-F10 to System; supports → UC04-F8-CL10, UC04-F8-CL11, UC04-F9-CL15, UC04-F9-CL18, UC04-F10-CL17; tested against → UC04-F8-CL13, UC04-F7-CL16, UC04-F9-CL20.
 
 == References ==
 

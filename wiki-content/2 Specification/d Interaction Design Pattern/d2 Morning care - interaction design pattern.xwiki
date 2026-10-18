@@ -19,10 +19,10 @@ syntax: xwiki/2.1
 |Evidence basis|(((
 Literature and group reasoning only. No residents or care workers have been interviewed or observed by this project, and the interaction has not yet been evaluated.
 
-The pattern is derived from SA-08's existing reminder and demonstration workarounds, PS-05, DS-04 and UC04 F8. HFC-09, HFC-11, HFC-12 and HFC-13 ground the principles concerning autonomy, adaptive assistance, personhood and robot embodiment. TECH-10 and RP-03 provide the selected modality: Pepper speech and tablet content with restrained movement. The cited literature does not establish that the proposed wording, timing or embodiment works for the intended residents.
+The pattern is derived from SA-05's existing reminder and demonstration workarounds, PS-05, DS-02 and UC04 F8. HFC-09, HFC-11, HFC-12 and HFC-13 ground the principles concerning autonomy, adaptive assistance, personhood and robot embodiment. TECH-10 and RP-02 provide the selected modality: Pepper speech and tablet content with restrained movement. The cited literature does not establish that the proposed wording, timing or embodiment works for the intended residents.
 )))
 |Problem|In a stepwise activity, a resident may hesitate because they need time, have forgotten the next action, or are unable to continue. A prompt that arrives too early, repeats, or sounds childlike can remove control and dignity. A prompt that arrives too late or is too vague can leave the resident confused or distressed. The System needs a consistent way to offer help and to stop when help is no longer needed.
-|Principle|Match the specificity and timing of assistance to the person's present ability, while preserving a meaningful opportunity to act independently. Communicate with an adult respectfully and make assistance an offer, not a judgment about failure. The group selected wait-then-escalate, from least to most specific, as a stated design hypothesis. If UC04-F8-CL18 shows increased distress, first adapt the wait per resident and then consider earlier prompting with fading cues.
+|Principle|Match the specificity and timing of assistance to the person's present ability, while preserving a meaningful opportunity to act independently. Communicate with an adult respectfully and make assistance an offer, not a judgment about failure. The group selected wait-then-escalate, from least to most specific, as a stated design hypothesis. If UC04-F8-CL13 shows increased distress, first adapt the wait per resident and then consider earlier prompting with fading cues.
 |Solution|(((
 1. Remain silent while TECH-11 indicates that the resident is progressing.
 2. After a reliably inferred stall, allow an individualized wait before prompting. UC04's Escalation specification proposes 15 s by default, adjusted per resident after the O-29 pilot.
@@ -37,17 +37,17 @@ HFC-09 links autonomy and perceived control to acceptance, citing Ryan & Deci (2
 
 These works cover different activities and populations. The transfer limits recorded in HFC-11 and HFC-13 still apply; the selected interaction must be evaluated with the intended users rather than presented as established practice.
 )))
-|Connection to Claims|Shapes F8 at UC04 steps 4-8. Supports the design rationale for UC04-F8-CL15 (independent steps), UC04-F8-CL16 (lower prompt level), and UC04-F8-CL17 (felt autonomy). UC04-F8-CL18 (distress caused by waiting) and UC04-F8-CL19 (infantilising prompts) are adverse claims that test whether this pattern actually works as intended. The pattern does not by itself establish any of these effects.
+|Connection to Claims|Shapes F8 at UC04 steps 4-8. Supports the design rationale for UC04-F8-CL10 (independent steps), UC04-F8-CL11 (lower prompt level), and UC04-F8-CL12 (felt autonomy). UC04-F8-CL13 (distress caused by waiting) and UC04-F8-CL14 (infantilising prompts) are adverse claims that test whether this pattern actually works as intended. The pattern does not by itself establish any of these effects.
 
 == Open items to check or research ==
 
 |=Item|=What is needed|=Why it matters
-|Prompt thresholds (O-29)|Proposed timing is in UC04's Escalation specification. Use the EM-05 pilot to confirm it, then configure the wait per resident with care-worker input.|Needed to verify UC04-F8-PR8 and reduce the risk tested by UC04-F8-CL18.
+|Prompt thresholds (O-29)|Proposed timing is in UC04's Escalation specification. Use the EM-05 pilot to confirm it, then configure the wait per resident with care-worker input.|Needed to verify UC04-F8-PR8 and reduce the risk tested by UC04-F8-CL13.
 |Pepper placement (O-30)|Test doorway audibility, tablet visibility, water clearance and obstruction with the actual robot or a full-size mock-up.|Determines whether strategy 7 and tablet demonstration are feasible; TECH-14 is the fallback.
-|Exact interaction content|Co-design or review the name use, wording, volume, images, acknowledgement and touch input with residents and care staff where ethically feasible.|HP-05 and RP-03 are still provisional and the interaction has not been tested with intended users.
-|Research and evaluation|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors, then apply M-13 to M-17 through EM-06 and EM-07, including both parts of M-16.|Tests independent performance, assistance level, distress, autonomy, privacy and infantilisation.
+|Exact interaction content|Co-design or review the name use, wording, volume, images, acknowledgement and touch input with residents and care staff where ethically feasible.|HP-04 and RP-02 are still provisional and the interaction has not been tested with intended users.
+|Research and evaluation|Check how the COACH, TEBRA, Wang and Braley findings transfer to residents with dementia using Pepper and item sensors, then apply M-12 to M-16 through EM-06 and EM-07, including both parts of M-15.|Tests independent performance, assistance level, distress, autonomy, privacy and infantilisation.
 |Reuse beyond UC04|Compare the pattern with UC05 after its medication-specific confirmation, reassurance and safety rules are specified.|Shows which parts transfer and which require a separate IDP.
 
 == Graph edges ==
 
-shapes → F8 in UC04 steps 4-8; supports → UC04-F8-CL15, UC04-F8-CL16, UC04-F8-CL17; tested against → UC04-F8-CL18, UC04-F8-CL19.
+shapes → F8 in UC04 steps 4-8; supports → UC04-F8-CL10, UC04-F8-CL11, UC04-F8-CL12; tested against → UC04-F8-CL13, UC04-F8-CL14.

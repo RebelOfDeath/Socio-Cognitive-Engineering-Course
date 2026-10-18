@@ -1,0 +1,223 @@
+%%WIKI-SYNC-META%%
+title: d1 Kinnect - foundation coherence
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+= Foundation Coherence - Meaningful Connections and Kinnect =
+
+//No new entity is defined here. This page inventories the relationships already stated across §1.1 to §1.3, traces their forward links into the Kinnect Specification, and records remaining gaps without treating planned work as evidence.//
+
+**Report Format:** §1.4 Foundation Coherence
+
+= Edge inventory =
+
+Edges are listed by source ID. Targets in §2 and §3 are included where the Foundation already points forward to them. AT-01 and ER-03 are planned; their presence in this inventory does not mean that Kinnect has been built or evaluated.
+
+== a1. Situated Activities ==
+
+|=Source|=Relation|=Target(s)
+|SA-01|performed-by|ST-01 (supported by ST-02 to ST-06)
+|SA-01|precedes|SA-02, SA-03
+|SA-01|illustrated-by|PS-01
+|SA-02|performed-by|ST-01 (supported by ST-03 to ST-05)
+|SA-02|may-follow; precedes|SA-01; SA-03
+|SA-02|illustrated-by|PS-02
+|SA-03|performed-by|ST-01, ST-02 (supported by ST-03 to ST-05)
+|SA-03|preceded-by; precedes|SA-01, SA-02; SA-04
+|SA-03|illustrated-by|PS-03, and PS-01 in part
+|SA-04|performed-by|ST-01, ST-02 (supported by ST-03 to ST-06)
+|SA-04|preceded-by|SA-03
+|SA-04|illustrated-by|PS-04
+
+== a2. Stakeholders ==
+
+|=Source|=Relation|=Target(s)
+|ST-01|performs|SA-01 to SA-04
+|ST-01|holds|HV-01 to HV-08
+|ST-01|appears-in|PS-01 to PS-04
+|ST-01|elaborated-as|HP-01, HP-02 (§2.2)
+|ST-02|performs; supports|SA-03, SA-04; SA-01
+|ST-02|holds|HV-01 to HV-03, HV-05, HV-06
+|ST-02|appears-in|PS-01, PS-03, PS-04
+|ST-02|elaborated-as|HP-01, HP-02 (§2.2)
+|ST-03|supports|SA-01 to SA-04
+|ST-03|holds|HV-03, HV-05 to HV-08
+|ST-03|appears-in|PS-01, PS-03
+|ST-04|supports|SA-01 to SA-04
+|ST-04|holds|HV-03 to HV-06, HV-08
+|ST-04|appears-in|PS-01 to PS-03
+|ST-04|elaborated-as|HP-03 (§2.2)
+|ST-05|supports|SA-01 to SA-04
+|ST-05|holds|HV-01, HV-03, HV-05 to HV-07
+|ST-05|appears-in|PS-02
+|ST-06|supports|SA-01, SA-04
+|ST-06|holds|HV-03 to HV-05, HV-08
+|ST-07|governs|SA-01, SA-04 and System data
+|ST-07|holds|HV-03 to HV-05
+
+The Stakeholder `holds` edges and the Human Value `held-by` edges agree. ST-01 and ST-02 are roles rather than two fixed people, so Elena and Jan (HP-01 and HP-02) can each occupy either role in different encounters.
+
+== a3. Problem Scenarios ==
+
+|=Source|=Relation|=Target(s)
+|PS-01|involves|ST-01 to ST-04, SA-01, SA-03
+|PS-01|reimagined-as|DS-01 (§2.1)
+|PS-02|involves|ST-01, ST-04, ST-05, SA-02
+|PS-02|reimagined-as|DS-01 in part (§2.1)
+|PS-03|involves|ST-01 to ST-04, SA-03
+|PS-03|reimagined-as|DS-01 (§2.1)
+|PS-04|involves|ST-01, ST-02, SA-04
+|PS-04|reimagined-as|DS-01 in part (§2.1)
+
+== b1. Human Values ==
+
+|=Source|=Held by|=Party to|=Operationalized by|=Explained by
+|HV-01 Autonomy|ST-01, ST-02, ST-05|VT-02, VT-06|M-01, M-02, M-07, M-09, M-23|HFC-02, HFC-05, HFC-17
+|HV-02 Dignity|ST-01, ST-02|VT-04|M-07, M-09|HFC-03, HFC-06
+|HV-03 Privacy|ST-01 to ST-07|VT-01, VT-05, VT-06|M-01, M-09, M-10, M-22|Not assigned to one HFC; bounded directly by the three tensions
+|HV-04 Safety|ST-01, ST-04, ST-06, ST-07|None|M-06, M-19|Not assigned to one HFC
+|HV-05 Well-being|ST-01 to ST-07|VT-03, VT-06|M-03, M-06, M-19|HFC-01, HFC-02, HFC-07
+|HV-06 Social connectedness|ST-01 to ST-05|VT-01, VT-02, VT-04|M-02, M-04 to M-06, M-08, M-20 to M-22|HFC-01 to HFC-05, HFC-07, HFC-15, HFC-16
+|HV-07 Identity|ST-01, ST-03, ST-05|VT-05|M-04|HFC-04, HFC-15
+|HV-08 Truthfulness|ST-01, ST-03, ST-04, ST-06|VT-03|M-09, M-10|HFC-08
+
+== b2. Value Tensions ==
+
+|=Source|=Involves|=Bounds|=Technology strained by|=Verified or tested by
+|VT-01 Privacy vs Social connectedness|HV-03, HV-06|F1, F2, F3|TECH-05, TECH-06|UC02-F2-PR2, UC02-F2-CL4
+|VT-02 Social connectedness vs Autonomy|HV-06, HV-01|F1, F2, F5|None named|UC02-F1-PR1, UC02-F1-CL3
+|VT-03 Truthfulness vs Well-being|HV-08, HV-05|F3, F4|None named|UC01-F4-PR4, UC01-F4-CL8
+|VT-04 Dignity vs Social connectedness|HV-02, HV-06|F3|None named|UC02-F3-PR3, UC01-F3-CL5
+|VT-05 Privacy vs Identity|HV-03, HV-07|F2, F6|TECH-06, TECH-18|UC02-F6-PR6, UC02-F2-CL4
+|VT-06 Privacy and Autonomy vs Well-being|HV-03, HV-01, HV-05|F5|TECH-03|UC03-F5-PR5, UC03-F5-CL7
+
+== b3. Human Factors Concepts ==
+
+|=Source|=Explains|=Associated Measure(s)|=Grounds
+|HFC-01 Fresh air, movement and mood|HV-05|M-03, M-06|UC02-F3-CL1
+|HFC-02 Moving into a care home|HV-01, HV-05, HV-06|M-02, M-05, M-06|UC01-F3-CL2
+|HFC-03 Conversation repair|HV-02, HV-06|M-04|UC02-F3-CL1
+|HFC-04 Common ground and reminiscence|HV-06, HV-07|M-04, M-05|UC02-F3-CL1
+|HFC-05 Theory of mind|HV-01, HV-06|M-07|UC02-F1-CL3
+|HFC-06 Face and personhood|HV-02|M-07, M-09|UC01-F3-CL5
+|HFC-07 Coping, withdrawal and loneliness|HV-05, HV-06|M-02, M-08|UC02-F3-CL9
+|HFC-08 Truth and trust|HV-08|M-09, M-10|UC01-F4-CL8
+|HFC-15 Similarity and shared background|HV-06, HV-07|M-02, M-05|UC02-F3-CL1
+|HFC-16 Fear of rejection and the liking gap|HV-06|M-02, M-07|UC02-F3-CL1, UC03-F5-CL6
+|HFC-17 The difficulty of saying no|HV-01|M-07, M-09|UC02-F1-CL3
+
+== b4. Measures ==
+
+|=Source|=Operationalizes|=Used by
+|M-01 System performance|All six Premises; HV-01, HV-03|EM-01
+|M-02 Introductions and repeat contact|UC02-F3-CL1, UC03-F5-CL6; HV-01, HV-06|EM-02, EM-03
+|M-03 Observed emotion|UC02-F3-CL1, UC01-F3-CL2; HV-05|EM-01 Build A, EM-02, EM-03
+|M-04 Conversation between residents|UC02-F3-CL1; HV-06, HV-07|EM-02, EM-03
+|M-05 Friendships|UC02-F3-CL1, UC01-F3-CL2; HV-06|EM-03
+|M-06 Time together|UC02-F3-CL1, UC01-F3-CL2; HV-04 to HV-06|EM-02, EM-03
+|M-07 The residents' own view|UC02-F1-CL3, UC01-F3-CL5; HV-01, HV-02|EM-01 Build A, EM-02, EM-03
+|M-08 Loneliness|UC02-F3-CL9; HV-06|EM-03
+|M-09 Privacy, tone and trust codes|UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-CL8; HV-01 to HV-03, HV-08|EM-04
+|M-10 Sensitive topics, errors and disclosure|PR2, PR4, CL8; HV-03, HV-08|EM-01, EM-03
+|M-19 Agitation and observed affect|ER-03 primary Claim without final ID; HV-04, HV-05|EM-08
+|M-20 Peer connections and communal time|ER-03 primary Claim without final ID; HV-06|EM-08
+|M-21 Conversational engagement|ER-03 primary Claim without final ID; HV-06; depends on TECH-18|EM-08
+|M-22 Bedroom isolation time|ER-03 primary Claim without final ID; HV-03, HV-06|EM-08
+|M-23 First-time usability|ER-03 secondary Claim without final ID; HV-01|EM-08
+
+== b5. Evaluation Methods ==
+
+|=Source|=Applies|=Produces or informs
+|EM-01 Prototype verification|M-01, M-10; M-03 and M-07 in Build A|Evidence for PR1 to PR6; informs IDP-01 to IDP-03
+|EM-02 Live observation of shared rooms|M-02 to M-04, M-06, M-07|Observations used in EM-01 Build A and EM-03
+|EM-03 Two-home comparison|M-02 to M-08, M-10|Evidence for UC02-F3-CL1, UC01-F3-CL2, UC02-F1-CL3, UC03-F5-CL6, UC02-F3-CL9 and part of UC01-F4-CL8
+|EM-04 Interviews|M-09|Evidence for UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-CL8
+|EM-08 Two-site controlled trial|M-19 to M-23|Evidence for the ER-03 primary and secondary Claims once they have final IDs and the study runs
+
+The Measure `used-by` and Evaluation Method `applies` edges agree. No Evaluation Method has yet produced Kinnect Evidence.
+
+== c1. Technology Options ==
+
+|=Source|=Status|=Enables or extends|=Addresses|=Strains
+|TECH-01 Pepper in the lounge|Selected|F1, F3, F4; realized in RP-01|HV-01, HV-06|No tension named directly
+|TECH-02 Pocket guide|Rejected|No Specification edge|Earlier alternative only|Not applicable
+|TECH-03 Opt-in room presence sensing|Selected|F5|HV-05, HV-06|VT-06
+|TECH-04 Local server|Selected|F1, F2, F4 to F6|HV-01, HV-03|No tension named directly
+|TECH-05 Consent-gated matching|Selected|F1 to F3|HV-03, HV-06|VT-01
+|TECH-06 Resident profile for matching|Selected|F2, F3|HV-06, HV-07|VT-01, VT-05
+|TECH-07 Cloud speech and language|Rejected|No Specification edge|Earlier alternative only|Privacy reason for rejection
+|TECH-08 Audio recording|Rejected|No Specification edge|Earlier alternative only|Privacy reason for rejection
+|TECH-09 Location and body sensing|Rejected|No Specification edge|Earlier alternative only|Surveillance reason for rejection
+|TECH-18 On-device accelerator|Envisioned, not built|Extends TECH-01; enables M-21 and ER-03|HV-03|VT-05
+
+== Forward trace through the Specification ==
+
+|=Source|=Relation|=Target(s)
+|DS-01|reimagines|PS-01, PS-03, and in part PS-02, PS-04
+|DS-01|realized-by|UC01, UC02, UC03
+|DS-01|features|HP-01, HP-02, HP-03, RP-01
+|RP-01|realizes; performs|TECH-01; F1, F3, F4
+|RP-01|uses|IDP-01 to IDP-03
+|UC01|serves|OBJ-02, OBJ-04 to OBJ-08
+|UC01|uses; asserts|TDP-01, IDP-01 to IDP-03; PR4, CL2, CL5, CL8
+|UC02|serves|OBJ-01, OBJ-03, OBJ-05 to OBJ-08
+|UC02|uses; asserts|TDP-01, IDP-01, IDP-02; PR1 to PR3, PR6, CL1, CL3, CL4, CL9
+|UC03|serves|OBJ-01, OBJ-03, OBJ-06, OBJ-09
+|UC03|uses; asserts|TDP-01, IDP-02; PR5, CL6, CL7
+|TDP-01|generalises|SA-01 to SA-04, PS-01 to PS-04
+|TDP-01|instantiated-by; refined-by|UC01 to UC03 and F1 to F6; IDP-01 to IDP-03
+|IDP-01|shapes|F3
+|IDP-02|shapes; bounds|F1; F2
+|IDP-03|shapes|F4
+|AT-01|used-by|ER-03, planned; no implementation details yet
+
+= Dangling references, orphans and inconsistent edges =
+
+**Dangling references:** none found in the Kinnect Foundation or Specification. Every cited SA, ST, PS, HV, VT, HFC, M, EM, TECH, DS, HP, RP, OBJ, UC, Premise, Claim, TDP and IDP resolves to a defined entry. AT-01 also has a deliberate placeholder page, so references may point to the forthcoming artifact without implying that it exists as a build.
+
+**Orphans:** no selected Foundation entity is wholly disconnected. TECH-02 and TECH-07 to TECH-09 have no outgoing Specification edges because they are explicitly rejected alternatives, not accidental omissions.
+
+Two one-sided edges were found while compiling this page and corrected at their source:
+
+|=Edge|=Missing from|=Correction
+|HV-04 operationalized-by M-19|M-19 on b4.1|M-19 now names both HV-04 Safety and HV-05 Well-being.
+|VT-05 strained-by TECH-18|TECH-18 on c1.1|TECH-18 now names VT-05, matching the tension page and its privacy/identity drawback.
+
+= Open tensions =
+
+No tension has been empirically resolved. “Provisionally resolved” means the specification contains a defensible design stance and a Premise/Claim intended to test it; it does not mean Evidence exists.
+
+|=Tension|=Recorded status|=Design stance pending evidence|=Checked by
+|VT-01 Privacy vs Social connectedness|Provisionally resolved|Profile items remain private by default; each disclosure is separately released; matching and introduction use only mutually released details.|UC02-F2-PR2, UC02-F2-CL4; M-01, M-09, M-10
+|VT-02 Social connectedness vs Autonomy|Open|Kinnect may propose, but each resident is asked privately and independently; refusal is ordinary, final and not disclosed to the other resident.|UC02-F1-PR1, UC02-F1-CL3; M-01, M-07, M-09
+|VT-03 Truthfulness vs Well-being|Provisionally resolved|Kinnect does not confirm a false premise or deliver painful truths. It gives a truthful boundary and hands the question to a named trusted person.|UC01-F4-PR4, UC01-F4-CL8; M-01, M-09, M-10
+|VT-04 Dignity vs Social connectedness|Open|Introduce symmetrically, repeat both names without exposing who forgot, offer one shared-ground statement, then step back.|UC02-F3-PR3, UC01-F3-CL5; M-01, M-07, M-09
+|VT-05 Privacy vs Identity|Open|Profiles preserve meaningful biography but each item is private until released. Raw audio and transcripts are not retained; TECH-18 remains only envisioned.|UC02-F6-PR6, UC02-F2-CL4; M-01, M-09, M-10
+|VT-06 Privacy and Autonomy vs Well-being|Open|Room-presence notes are opt-in and coarse, used to offer contact rather than compel it; continuous tracking is rejected.|UC03-F5-PR5, UC03-F5-CL7; M-01, M-09, M-22
+
+= Completeness check =
+
+== Required checks ==
+
+|=Check|=Result|=Stance
+|Situated Activity without a Goal|None. SA-01 to SA-04 each state a Goal.|No action.
+|Human Value without recognition criteria|None. HV-01 to HV-08 each state served and violated criteria.|No action.
+|Human Factors Concept without an associated Measure|None. HFC-01 to HFC-08 and HFC-15 to HFC-17 each name at least one Measure.|No action.
+|Selected Technology Option addressing nothing|None. TECH-01 and TECH-03 to TECH-06 address at least one Human Value. TECH-18 also addresses HV-03, but remains envisioned.|Rejected options remain as documented alternatives without forward Specification edges.
+|Premise without an operational Measure|None. M-01 covers all six Premises; M-10 additionally covers PR2 and PR4.|Evidence still requires EM-01 to run.
+|Current Claim without an operational Measure|None. CL1 to CL9 each has at least one Measure through M-02 to M-10.|No Claim has Evidence yet.
+
+== Remaining gaps ==
+
+|=Gap|=Stance
+|ST-05 Activity coordinator is marked Direct but has no Human Persona.|Add a persona or explicitly justify treating ST-05 through role requirements rather than a Persona. The current three Personas cover residents and the care worker only.
+|ER-03's composite primary hypothesis and first-time-usability hypothesis have no final Claim IDs.|Resolve before the study runs. Either narrow the hypotheses to existing Claims or add explicit Claims, then replace the provisional targets on M-19 to M-23 and EM-08.
+|AT-01 is forthcoming and contains no build details.|Correctly represented by a placeholder. Define its implementation and Builds only when those details exist.
+|TECH-18 is envisioned but not built.|Until it exists, M-21 and the free-conversation parts of ER-03 cannot run under the stated no-cloud policy.
+|ER-03 uses one care home per arm.|Site effects cannot be separated from the intervention effect. Baseline adjustment does not remove this limitation.
+|ER-03 proposes proximity badges although TECH-09 rejects wearable location sensing.|Resolve whether time-limited, separately consented room-level sensing is acceptable or replace it with the coarser TECH-03 approach.
+|No Kinnect Evaluation Report has results and no Kinnect Evidence page exists.|Keep all Foundation claims provisional until the artifact exists and EM-01 to EM-04 or EM-08 have actually run.
+|Thresholds and operating rules in O-2 to O-9 remain open.|Set them through the EM-01 pilot, site checks, legal review and decisions with residents and care staff.
+
+= Status of these edges =
+
+The chain is conceptually complete from situated activities through values, human factors, measures, technology and the current Specification. It supports a project about consent-gated social introductions and renewed peer contact; walking is only one optional activity selected from both residents' preferences. The chain remains a design hypothesis. AT-01, TECH-18 and the evaluations are not complete, and no empirical Evidence is claimed.
