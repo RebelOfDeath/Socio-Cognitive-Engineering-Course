@@ -2,12 +2,12 @@
 title: c Team Design Pattern
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Team Design Patterns: reusable task allocations between human and System actors. Main concept: Meaningful Connections. The morning-care pattern is listed separately.
+**Abstract.** Team Design Patterns generalise recurring allocations between people and systems across activities and use cases. TDP-01 describes consent-gated social brokering with human handover; Kinnect is its project-specific instantiation. The morning-care pattern is listed separately.
 
 **Report Format:** §2.4 Team Design Patterns (Task Level)
 
 = Concepts =
 
 |=Page|=Patterns|=Status
-|[[c1 Thread in the pocket, person in reach>>doc:2 Specification.c Team Design Pattern.c1 Thread in the pocket, person in reach.WebHome]]|TDP-01 Thread in the pocket, person in reach|**Current**
+|[[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Thread in the pocket, person in reach.WebHome]]|TDP-01 Consent-gated social brokering with human handover|**Current**
 |[[c2 Morning care - team design pattern>>doc:2 Specification.c Team Design Pattern.c2 Morning care - team design pattern.WebHome]]|TDP-02 Graduated activity support with human handover|Separate concept

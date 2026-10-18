@@ -2,12 +2,12 @@
 title: d Interaction Design Pattern
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Interaction Design Patterns: reusable solutions for how the System communicates and is controlled. Main concept: Meaningful Connections. The morning-care pattern is listed separately.
+**Abstract.** Interaction Design Patterns: reusable solutions for how the System communicates and is controlled. Kinnect introduces consenting residents on shared ground, steps back, protects private refusal and transfers sensitive questions to a trusted person. The morning-care pattern is listed separately.
 
 **Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
 
 = Concepts =
 
 |=Page|=Patterns|=Status
-|[[d1 How the guide speaks>>doc:2 Specification.d Interaction Design Pattern.d1 How the guide speaks.WebHome]]|IDP-01 Wait, then redirect gently; IDP-02 Ask first; IDP-03 Truthful deferral|**Current**
+|[[d1 How Kinnect introduces people>>doc:2 Specification.d Interaction Design Pattern.d1 How Kinnect introduces people.WebHome]]|IDP-01 Introduce, then step back; IDP-02 Ask each person in private; IDP-03 Defer sensitive questions to a trusted person|**Current**
 |[[d2 Morning care - interaction design pattern>>doc:2 Specification.d Interaction Design Pattern.d2 Morning care - interaction design pattern.WebHome]]|IDP-04 Respectful graduated prompting|Separate concept

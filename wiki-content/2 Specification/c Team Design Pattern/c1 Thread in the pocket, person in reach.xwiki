@@ -1,92 +1,163 @@
 %%WIKI-SYNC-META%%
-title: c1 Thread in the pocket, person in reach
+title: c1 Consent-gated social brokering with human handover
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** One pattern: who repairs, who tells, who keeps safe. The speaker gets the first chance to repair, the companion the second, the System the third. Painful truths go to a trusted person. Safety stays with staff, whom the System calls. Consent and settings stay with the resident.
+**Abstract.** A reusable allocation for helping two people begin voluntary social contact when neither is likely to initiate it alone. A support system identifies an opportunity, a responsible human checks its suitability, and each participant decides independently. The system provides only enough support to begin and then withdraws. The participants own the social activity; humans retain responsibility for care, sensitive matters, conflict and failed handovers. Kinnect is one instantiation of this pattern.
 
-= Team Design Pattern - Thread in the pocket, person in reach [TDP-01] =
+= Team Design Pattern - Consent-gated social brokering with human handover [TDP-01] =
 
 **Report Format:** §2.4 Team Design Patterns (Task Level)
+
+== Pattern scope ==
+
+This pattern generalises the recurring task allocation across the activities in [[1.a1.1 Moving in, staying in, greeting and inviting>>doc:1 Foundation.a1 Situated Activities.a1\.1 Moving in, staying in, greeting and inviting.WebHome]]:
+
+|=Situated activity|=Recurring allocation problem generalised by the pattern
+|SA-01 Moving into the care home|Personal information may help a newcomer meet others, but the newcomer must control its use and a responsible person must check its suitability.
+|SA-02 Waiting for a reason to leave the room|A possible social opportunity can be identified computationally, but a human must decide whether, when and how to act on it.
+|SA-03 Greeting someone new|Both people need an independent choice and a small amount of common ground; neither should be exposed as forgetful or rejected in public.
+|SA-04 Inviting someone to spend time together|The invitation must not create pressure, the participants must remain free to leave, and practical arrangements or support require a human owner.
+
+The invariant across these activities is: **system proposes, human checks, each person chooses, system facilitates briefly, people interact, human remains responsible.**
 
 == Fields ==
 
 |=Field|=Description
 |ID|TDP-01
-|Name|Thread in the pocket, person in reach
-|Status|In Progress
+|Name|Consent-gated social brokering with human handover
+|Status|In Progress - proto-pattern, not yet validated
 |Evidence basis|(((
-Literature and group reasoning only. Not yet evaluated.
+Derived from SA-01 to SA-04 and the recurring breakdowns in PS-01 to PS-04.
 
-* Derived from SA-01, SA-02, PS-01 to PS-06, UC01, UC02
-* Order of repair: HFC-03 (Schegloff et al., 1977)
-* Partners miss each other's slips: HFC-05 (Bora et al., 2015)
-* Painful truths from a trusted person: HFC-08
+* People often fail to initiate or renew contact despite potential mutual interest: HFC-15, HFC-16.
+* A direct invitation is difficult to refuse and another person's state is easily misread: HFC-05, HFC-17, VT-02.
+* Useful common ground is personal information whose disclosure requires control: HFC-04, VT-01, VT-05.
+* Assistance must preserve face, personhood and truthfulness: HFC-03, HFC-06, HFC-08, VT-03, VT-04.
+
+The allocation is based on literature-backed concepts and group reasoning. It has not been empirically evaluated as a complete pattern.
 )))
-|Problem|People with dementia lose the thread of a conversation. A partner with dementia often misses it; staff cannot walk every walk. Painful questions go to whoever is near. Who does what?
+|Problem|Two people may benefit from meeting but lack the information, confidence, memory or opportunity needed to initiate contact. A support system can discover possible common ground and coordinate an introduction, but should not decide that people ought to meet, expose personal information, infer consent, take over their relationship or handle situations requiring care and moral judgement.
+|Use when|(((
+Use when:
+
+* the goal is voluntary person-to-person contact rather than interaction with the system itself;
+* a system can identify a plausible social opportunity;
+* each participant can express assent or dissent in an accessible way;
+* a responsible human can review the opportunity and remain accountable for follow-up and exceptions.
+
+Do not use when participation is compulsory, refusal cannot be kept private, no human can own the handover, or the system would have to infer willingness from behaviour alone.
+)))
 |Solution Structure|(((
-1. Speaker: first chance to repair.
-1. Companion (fellow resident): talk, repair, comfort.
-1. System: keeps the thread, waits, redirects gently, watches pace, asks consent, defers.
-1. Trusted staff: painful truths; physical help.
-1. Coordinator: pairs, settings, relationship map.
+1. **Contribute:** each participant controls the personal information and preferences that may support a social opportunity.
+1. **Propose:** the system identifies a possible connection using only permitted information.
+1. **Check:** a responsible human reviews suitability, timing, exclusions and practical conditions.
+1. **Choose independently:** each participant accepts or declines without the other participant present.
+1. **Facilitate minimally:** after mutual agreement, the system provides identities, limited common ground and, where useful, one optional shared activity.
+1. **Withdraw:** once the participants engage, the system stops leading and supports only a clearly defined repair or request.
+1. **Relate:** the participants own the conversation or activity and may stop without explanation.
+1. **Hand over:** care, distress, conflict, sensitive information, physical assistance and failed coordination go to an identified human.
+1. **Follow up proportionately:** practical arrangements and renewed consent may be supported, while reasons for refusal and conversational content are not retained.
 )))
-|Solution Description|The System keeps the thread outside the walkers' heads, and offers it back only after the speaker has had a moment. Anything painful or physical goes to a person: the System calls, it does not tell.
-|Per-Actor allocation|(((
-**Resident (ST-01, ST-02):**
+|Solution Description|The system acts as a broker between possible social partners and as a temporary host at the start of contact. It does not act as a substitute friend, carer, therapist, supervisor or authority on whether a relationship should continue. The human reviewer provides contextual judgement that the system lacks. Independent choice prevents one participant's presence from pressuring the other. Minimal facilitation gives the participants a starting point without making the system the centre of the encounter. Explicit human handover prevents sensitive or safety-critical situations from being treated as ordinary dialogue-management problems.
+|Participant allocation|(((
+**Participant A and Participant B**
 
-1. Consent, or not; set own preferences.
-1. Talk; repair own slips first.
-1. Pause the guide; end the walk.
+1. Control what personal information may be used or disclosed.
+1. Decide independently whether to take part.
+1. Own the resulting conversation or shared activity.
+1. Pause, leave or withdraw consent without explanation.
 
-**Relative (ST-03):**
+**Human reviewer or coordinator**
 
-1. Tell the life story; list welcome and off-limits topics.
-1. Agree with staff what is said about painful topics.
-1. Consent on the resident's behalf, where needed.
+1. Check the proposed connection and its explanation.
+1. Consider known conflicts, vulnerabilities, accessibility and timing.
+1. Approve, reject or alter the proposal before either participant is approached.
+1. Keep permissions and exclusions current.
 
-**Care worker (ST-04):**
+**Human facilitator or carer**
 
-1. Clip on the guides; check they report ready.
-1. Answer alerts.
-1. Answer listed topics as agreed with family.
+1. Make the encounter practically possible.
+1. Remain reachable without unnecessarily dominating it.
+1. Recognise and respond to distress, conflict, care needs or changing capacity.
+1. Own follow-up and every handover that requires human judgement or physical presence.
 
-**Activity coordinator (ST-05):**
+**Support system**
 
-1. Agree settings with each resident.
-1. Pair residents, with both consenting.
-1. Keep the relationship map current with ST-04 and family.
-
-**System:**
-
-1. F1: ask first.
-1. F2: keep the thread; redirect gently.
-1. F3: watch pace and rest.
-1. F4: defer listed topics.
-1. F5: call for help.
-1. F6: six-item record.
+1. Use only permitted inputs when generating a proposal.
+1. Preserve the reviewer's decision and both participants' independent decisions.
+1. Facilitate only within the approved information and interaction boundaries.
+1. Withdraw after the opening and expose uncertainty or failure rather than improvising.
+1. Retain only the minimum operational record required for follow-up and accountability.
 )))
-|Consequences: benefits|Conversations recover without exposing the slip. Walks with company need less staff time. Painful news comes from the same trusted person each time. Expected effects, still to be tested: UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6.
-|Consequences: risks|(((
-* Companions rely on the guide and stop helping
-* The guide cuts in before self-repair (UC01-F2-CL3)
-* Help after a slip feels like correction (UC01-F2-CL2)
-* An out-of-date map lets a secret through, or misses a sensitive topic
+|Human requirements|Participants must have an understandable and accessible way to accept, decline and stop. The reviewer must understand the basis of a proposal and have authority to reject it. A named human must be available for practical coordination and exceptions. Permissions, exclusions and support needs must be reviewed when circumstances change.
+|Machine requirements|The system must enforce information permissions, human approval and independent participant choice as separate gates. It must disclose the basis of a proposal to the reviewer, minimise information revealed to participants, support neutral refusal, become inactive after successful facilitation, surface degraded states, and route defined exceptions to an accountable human. It must not infer consent, generate unverified personal claims or retain the content of the resulting social interaction.
+|Consequences: benefits|(((
+* Creates social opportunities without making participation compulsory.
+* Combines computational search with human contextual judgement.
+* Protects participants from public rejection and unnecessary disclosure.
+* Keeps the social activity between the participants instead of turning it into prolonged system interaction.
+* Establishes responsibility when coordination, care or sensitive judgement is needed.
 )))
-|Related Patterns|IDP-01 Wait, then redirect gently; IDP-02 Ask first; IDP-03 Truthful deferral.
-|Connection to Claims|Rationale for UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6. Tested against UC01-F2-CL2, UC01-F2-CL3.
-|Validation path|EM-01 (the hand-offs work), EM-03 (slips recovered, per case), EM-04 (residents, relatives and staff accept the split).
+|Consequences: liabilities|(((
+* A private invitation may still feel authoritative or difficult to refuse.
+* Human approval may become superficial automation bias rather than meaningful review.
+* Sparse, inaccurate or culturally narrow profiles can distribute opportunities unequally.
+* Minimal facilitation may be insufficient, while excessive facilitation makes participants dependent on the system.
+* Out-of-date permissions or exclusions can cause harmful disclosure or pairing.
+* A handover can fail when the responsible human is busy or unavailable.
+* Operational records can expand into surveillance unless their scope and retention are fixed.
+)))
+|Related Patterns|IDP-01 Introduce, then step back; IDP-02 Ask each person in private; IDP-03 Defer sensitive questions to a trusted person.
+|Validation strategy|First verify that every gate and handover operates as specified. Then observe whether participants experience the choice as voluntary, whether the system actually withdraws, whether people continue interacting without it, and whether humans receive and act on exceptions. Evaluate both intended social outcomes and adverse effects such as pressure, disclosure, unequal matching and failed handovers.
+|Grounding|Proto-pattern derived from this project's four social activities. Kinnect provides the first proposed instantiation through UC01 to UC03. Evidence for that instantiation does not automatically validate the pattern in other populations, organisations or technologies.
+
+== Generic sequence and handovers ==
+
+|=Stage|=System responsibility|=Human responsibility|=Participant authority
+|Opportunity|Find a candidate connection from permitted information|Review the basis, context and exclusions|Control whether their information may be considered
+|Invitation|Present a neutral, accessible private choice|Ensure the setting and response method are appropriate|Accept, decline or disengage
+|Introduction|Provide the approved minimum needed to begin|Make the encounter practically possible and remain reachable|Speak, act, remain silent or leave
+|Interaction|Withdraw; provide only a defined repair when appropriate|Observe only as required by the context|Own the activity and its direction
+|Exception|Stop, state the limitation and send an actionable handover|Take over care, sensitive judgement, conflict or physical support|Accept or decline further help where possible
+|Follow-up|Support practical arrangements and renewed private choice|Decide how to arrange or reschedule contact|Choose independently whether contact continues
+
+== Kinnect instantiation ==
+
+Kinnect applies the general pattern as follows. These choices belong to the project implementation, not to the reusable core of TDP-01.
+
+|=General pattern element|=Kinnect implementation|=Specification
+|Contribute|Resident profile items are private by default and released individually.|TECH-04 to TECH-06; F1
+|Propose|Kinnect suggests pairs from released places, trades, interests or past ties.|F2; UC01 step 3; UC02 step 1
+|Check|The activity coordinator reviews every suggestion and the relationship map.|ST-05; UC02 step 2
+|Choose independently|Pepper asks each resident separately about meeting and about the proposed disclosure.|F1; IDP-02; UC01 step 4; UC02 step 3
+|Facilitate minimally|Pepper gives both names, one mutually released detail and at most one optional activity.|F3; IDP-01; UC01 steps 5-6; UC02 steps 5-7
+|Withdraw|Pepper remains silent while residents interact and offers at most one prepared shared-ground statement after a stall.|F3; IDP-01
+|Hand over|Care workers arrange meetings; sensitive questions go to a trusted person; clinical and physical needs remain human responsibilities.|F4, F5; IDP-03; ST-04, ST-06
+|Follow up|A practical note goes to the named care worker and each resident is privately asked whether they want another meeting.|F1, F5, F6; UC03
+
+Kinnect permits several outcomes: conversation, coffee, music, photographs, games, gardening, a walk or no meeting. Walking is one possible activity, not the organising purpose of the pattern.
+
+== Connection to this project's claims and evaluation ==
+
+The Kinnect instantiation supports UC02-F3-CL1, UC01-F3-CL2 and UC03-F5-CL6. Its main risks are tested by UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7 and UC01-F4-CL8.
+
+EM-01 verifies the gates, information boundaries and handovers. EM-02 observes choice, withdrawal and resident-to-resident interaction. EM-03 and EM-04 examine repeat contact, friendship, pressure, disclosure and trust. ER-03/EM-08 is later summative evaluation of Kinnect, not evidence already obtained for the general pattern.
 
 == Open items to check or research ==
 
 |=Item|=What is needed|=Reason
-|Relationship map (O-4)|Form, owner, review after every event.|An out-of-date map is the main route to a disclosure.
-|Garden policy (O-6)|Agree with ST-07 and ST-06 who may walk alone or in pairs.|Without it, the allocation has no permission.
-|Companion briefing|One page for walking partners and families: what the guide does, and what it never does.|Companions must not assume the guide watches over the resident.
+|Meaningful review|Define what information a human reviewer sees, how rejection is recorded and how often permissions and exclusions are refreshed.|Human approval is not a safeguard when it becomes a routine click.
+|Process consent|Operational signs of assent and dissent developed with intended participants and carers.|A yes/no interface cannot establish continuing willingness on its own.
+|Handover capacity|Test ownership, acknowledgement and fallback during busy periods.|The allocation fails if the system refers to a human who cannot respond.
+|Unequal opportunity|Audit proposal frequency and quality for people with sparse profiles, communication impairments or minority backgrounds.|A matching system may reproduce or increase existing social exclusion.
+|Degree of withdrawal|Determine when one repair is helpful and when any intervention becomes intrusive.|Too little support abandons the encounter; too much displaces it.
+|Transferability|Evaluate the pattern outside Kinnect and outside this care-home context.|A single instantiation cannot establish that the allocation is generally reusable.
 
 == Graph edges ==
 
-allocates → SA-01, SA-02 tasks to ST-01 to ST-05; F1 to F6 to System; supports → UC01-F2-CL1, UC01-F1-CL5, UC02-F4-CL6; tested-against → UC01-F2-CL2, UC01-F2-CL3.
+generalises -> SA-01 to SA-04 and PS-01 to PS-04; instantiated-by -> UC01 to UC03 and F1 to F6; refined-by -> IDP-01 to IDP-03; supports -> UC02-F3-CL1, UC01-F3-CL2, UC03-F5-CL6; tested-against -> UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-CL8.
 
 == References ==
 
-* Bora et al. (2015); Schegloff et al. (1977). See a1.1 References.
+* Black et al. (2010). See ER-03 References. Dewing (2007), see b5.1 References. Niemeijer et al. (2010, 2015), see b4.1 References.
+* Boothby et al. (2018); Bohns (2016); Clark & Brennan (1991); McPherson et al. (2001). See b3.1 References.

@@ -2,7 +2,7 @@
 title: c2 Morning care - team design pattern
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Team Design Pattern TDP-02 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[c1 Thread in the pocket, person in reach>>doc:2 Specification.c Team Design Pattern.c1 Thread in the pocket, person in reach.WebHome]]); IDs continue after the Meaningful Connections set.
+**Abstract.** Team Design Pattern TDP-02 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Kinnect (see [[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Thread in the pocket, person in reach.WebHome]]); IDs continue after the Kinnect pattern.
 
 = Graduated activity support with human handover [TDP-02] =
 

@@ -1,0 +1,165 @@
+%%WIKI-SYNC-META%%
+title: d1 How Kinnect introduces people
+syntax: xwiki/2.1
+%%WIKI-SYNC-META%%
+**Abstract.** Three interaction patterns govern Kinnect's role in a social introduction. It introduces two consenting residents on one piece of shared ground and then steps back (IDP-01). It asks each person privately, making refusal ordinary and final (IDP-02). It does not improvise an answer to a sensitive question, but truthfully hands the question to a named person (IDP-03). These are design hypotheses until the wording, timing and experience are evaluated.
+
+= Interaction Design Pattern - Introduce, then step back [IDP-01] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-01
+|Name|Introduce, then step back
+|Status|In Progress - not yet evaluated
+|Evidence basis|Derived from SA-03, PS-01, PS-03 and DS-01. Grounded in HFC-03, HFC-04, HFC-06, HFC-15 and HFC-16; constrained by VT-01 and VT-04. Literature and group reasoning only.
+|Design problem|Two residents need enough shared ground to begin, and may need their names repeated without either person being exposed as forgetful. If Kinnect keeps talking, quizzes them or repeatedly rescues pauses, it competes with the relationship it is meant to support.
+|Use when|Both residents have independently agreed to this introduction, the coordinator has approved the match, and at least one mutually releasable topic is available. Also use the symmetric-name form at a later facilitated meeting.
+|Principle|Give both people equal footing, offer one safe opening and then make room for them. Support the conversation only when it has clearly stalled, never before a speaker has had a chance to repair their own turn.
+|Solution|(((
+1. Confirm immediately before speaking that both accept the meeting; visible or verbal dissent stops the introduction.
+1. Identify the robot's limited role when needed: "I'm Kinnect. I help residents get to know each other."
+1. Address both residents symmetrically: "Elena, this is Jan. Jan, this is Elena."
+1. State one detail that both residents released and ST-05 approved for this pair: "You both worked in [town]: Elena at the post office and Jan at the bakery."
+1. If useful, offer one concrete activity as an option, chosen from both profiles: coffee, photographs, music, a game, gardening or a walk where appropriate.
+1. Stop speaking. Do not ask a memory question, demand an answer or narrate the silence.
+1. If a speaker pauses mid-turn, allow time for self-repair. If the whole exchange stalls, offer one prepared statement to both about the shared topic or present setting, then step back again.
+1. If either person leaves, turns away or says they want to stop, close neutrally: "All right."
+1. If corrected, say "I had that wrong," stop using the item and flag it for ST-05.
+)))
+|Do not|(((
+* "Do you remember Jan?" or any other test of memory
+* "You told us that already," praise for ordinary participation, or elderspeak
+* Reveal a second profile item merely because the first did not produce conversation
+* Infer friendship, consent or discomfort from facial expression, silence or a compatibility score
+* Fill every pause or remain the centre of the exchange
+)))
+|Research link|Shared background supplies common ground (HFC-04, HFC-15). Symmetric naming protects face and personhood (HFC-06, VT-04). Waiting preserves the preference for self-repair (HFC-03). The third-party introduction lowers the social risk created by the liking gap (HFC-16).
+|Connection to Claims|Shapes F3 in UC01, UC02 and UC03. Supports UC02-F3-CL1 and UC01-F3-CL2; tested against UC01-F3-CL5. Verified in part by UC02-F3-PR3.
+
+== Interaction parameters ==
+
+|=Parameter|=Choice|=Rationale
+|Disclosure|Both names plus no more than one mutually released detail|Enough common ground to begin without turning the profile into a public biography (VT-01).
+|Turn allocation|Address both residents; no quiz question|Avoids identifying either person as the one who forgot (VT-04).
+|Silence|Default after the opening; wait before one repair prompt|Residents, not Kinnect, should own the conversation; speakers get the first chance to self-repair (HFC-03).
+|Voice|Adult, neutral-warm, short sentences; ordinary pace adjusted only for hearing needs|Supports comprehension without elderspeak (HFC-06).
+|Gaze and gesture|Open orientation to both; low movement; no fixed stare|Signals equal inclusion and avoids making one resident the patient or target.
+|Activity suggestion|One optional activity from both profiles; no default requirement to walk|The project supports connection through several ordinary activities; walking is one option (SA-04).
+|Error repair|Immediate, plain correction and withdrawal of the item|Protects truthfulness and prevents a disputed fact being repeated (HV-08).
+
+== Graph edges ==
+
+shapes -> F3; supports -> UC02-F3-CL1, UC01-F3-CL2; tested-against -> UC01-F3-CL5; verified-by -> UC02-F3-PR3; informed-by -> EM-01 Build A.
+
+= Interaction Design Pattern - Ask each person in private [IDP-02] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-02
+|Name|Ask each person in private
+|Status|In Progress - not yet evaluated
+|Evidence basis|Derived from SA-03, SA-04, PS-03, PS-04 and DS-01. Grounded in HV-01, HV-02, HFC-05 and HFC-17; constrained by VT-01 and VT-02. Literature and group reasoning only.
+|Design problem|A public invitation is difficult to refuse, particularly when the proposed companion can hear it. Combining permission to meet with permission to disclose a personal fact also obscures what the resident actually accepted. Dementia makes one-time consent inadequate when willingness changes in the moment.
+|Use when|Before an introduction, before disclosing a profile item, before arranging a repeat meeting and whenever participation is renewed after a break or visible uncertainty.
+|Principle|Ask the person affected, apart from the other resident, about one decision at a time. Make yes and no equally easy. Treat assent as temporary and dissent as decisive.
+|Solution|(((
+1. Ask in a quiet place where the proposed companion and other residents cannot hear.
+1. State the concrete choice without persuasion: "There is a resident here, Jan, who had the bakery in your town. Would you like to meet him, or not this time?"
+1. Offer two equally visible and audible responses. Do not preselect "yes."
+1. If the resident agrees, ask separately about the proposed disclosure: "May I tell Jan that you worked at the post office?"
+1. Proceed only after the other resident has answered the corresponding questions in private and ST-05 has approved the match.
+1. Treat consent as applying to this introduction and this disclosed item only. Ask again for a later introduction or a different item.
+1. A spoken no, "not now," turning away, pushing the tablet aside, distress or withdrawal ends the offer. Do not seek a reason or immediately offer another person.
+1. Tell the other resident only whether a meeting will happen: "Not this time." Never say who declined or why.
+1. At the meeting, remain alert to renewed dissent; initial agreement does not remove the right to leave.
+)))
+|Do not|(((
+* Ask one resident while the proposed companion is present
+* Treat silence, a smile, lack of resistance or a representative's consent as present assent
+* Bundle meeting, disclosure, activity and research participation into one yes
+* Repeat an invitation until the resident agrees
+* Record or reveal the reason for refusal
+)))
+|Research link|Face-to-face requests are harder to refuse than requesters expect (Bohns, 2016; HFC-17). Process consent requires attention to continuing assent and dissent rather than a single decision (Dewing, 2007). Because neither people nor Kinnect can reliably infer another resident's internal state (HFC-05), the pattern asks directly.
+|Connection to Claims|Shapes F1 and the consent boundary around F2. Supports OBJ-05 and OBJ-06; tested against UC02-F1-CL3. Verified by UC02-F1-PR1.
+
+== Interaction parameters ==
+
+|=Parameter|=Choice|=Rationale
+|Setting|Private enough that the other resident cannot hear|Removes the direct interpersonal cost of refusal (VT-02).
+|Decision unit|One person, one meeting, one disclosed item|Makes the scope of consent understandable and auditable (VT-01).
+|Response|Equivalent yes and no by speech or tablet; behavioural dissent also stops the offer|Supports different communication abilities and ongoing assent.
+|After refusal|No reason, persuasion, praise, tally or disclosure|A refusal is an exercise of autonomy, not a failure.
+|Expiry|At the end of the proposed encounter|A previous yes does not authorize later meetings or disclosures.
+
+== Graph edges ==
+
+shapes -> F1; bounds -> F2; supports -> OBJ-05, OBJ-06; tested-against -> UC02-F1-CL3; verified-by -> UC02-F1-PR1; informed-by -> EM-01 Build A.
+
+= Interaction Design Pattern - Defer sensitive questions to a trusted person [IDP-03] =
+
+**Report Format:** §2.5 Interaction Design Patterns (Interaction Level)
+
+== Fields ==
+
+|=Field|=Description
+|ID|IDP-03
+|Name|Defer sensitive questions to a trusted person
+|Status|In Progress - not yet evaluated
+|Evidence basis|Derived from SA-01, PS-01 and DS-01. Grounded in HV-05, HV-08, HFC-08 and VT-03. Literature and group reasoning only.
+|Design problem|A resident may ask about going home, a death, a diagnosis or another painful reality. A reassuring lie can damage trust, while blunt disclosure by a robot lacks the relationship and judgement needed to respond safely. An improvised deflection can also feel evasive or patronising.
+|Use when|The question concerns a topic listed in the relationship map, or an unlisted topic that could contain painful personal or clinical news. Use only when a named human recipient and a working handover channel are available.
+|Principle|Do not lie, deny, confirm or improvise the answer. Name the boundary honestly, offer the trusted person and transfer the question with enough context for that person to respond.
+|Solution|(((
+1. Recognise the topic as listed or potentially sensitive; do not retrieve or speak the underlying fact.
+1. Use the prepared deferral: "That is something to talk through with Myra. Shall I ask her to come?"
+1. If the resident agrees, notify the named person with resident, topic, place and time. Do not include the sensitive answer.
+1. Confirm only the action: "I have asked Myra to come." Do not promise when the person will arrive unless the system knows.
+1. If the resident declines, close neutrally and notify the trusted person after the interaction only where the agreed care plan requires it.
+1. Do not raise the topic again. The human decides how and when to respond under the agreed care plan.
+1. If the named person or channel is unavailable, say so plainly and offer an available staff member; mark the failed handover for staff review.
+1. If Kinnect itself stated something incorrect, say "I had that wrong," stop using the item and flag its source for correction. Do not use deferral to avoid owning an error.
+)))
+|Do not|(((
+* Give therapeutic lies or false reassurance
+* Deliver news of death, diagnosis or permanent admission
+* Confirm or deny the resident's belief before the trusted person responds
+* Say "I can't tell you" without offering a person who can help
+* Promise that a staff member is coming when the handover has not been acknowledged
+)))
+|Research link|Truthful, consistent responses protect trust, while both deception and blunt correction can cause harm in dementia care (HFC-08; Mental Health Foundation, 2016; James et al., 2006). The pattern assigns the substantive response to a person with an established relationship and access to the care plan.
+|Connection to Claims|Shapes F4. Supports OBJ-04 and UC01-F4-CL8; verified by UC01-F4-PR4.
+
+== Interaction parameters ==
+
+|=Parameter|=Choice|=Rationale
+|Wording|Prepared, truthful boundary plus an offer to contact a named person|Avoids both deception and an empty refusal.
+|Information sent|Resident, topic, place and time; not the sensitive answer|Gives staff actionable context while minimising disclosure.
+|Recipient|Named trusted person; available staff fallback|A deferral without reachable human ownership abandons the resident.
+|Acknowledgement|Promise only what the system can verify|Prevents a failed handover becoming another deception.
+|System error|Immediate correction, separate from sensitive-topic deferral|Kinnect remains accountable for its own statements.
+
+== Graph edges ==
+
+shapes -> F4; supports -> OBJ-04, UC01-F4-CL8; verified-by -> UC01-F4-PR4; informed-by -> EM-01 Build A.
+
+== Open items to check or research ==
+
+|=Item|=What is needed|=Reason
+|Wording and timing (O-2)|Test the introduction length, silence before a single prompt, adult tone and refusal wording in EM-01 Build A.|All three patterns depend on how the interaction is experienced, not merely on whether the correct line is present.
+|Process consent (O-5)|Agree observable assent and dissent rules with residents, representatives and care staff.|A yes/no interface cannot by itself establish continuing willingness.
+|Quiet setting (O-8)|Check whether the lounge has a genuinely private place to ask each resident.|IDP-02 fails if others can overhear the answer.
+|Relationship map (O-4)|Define owner, review triggers, unavailable-recipient fallback and acknowledgement rule.|IDP-01 and IDP-03 are only as safe as the permissions and human handovers behind them.
+|Accessibility|Test hearing, vision, speech and tablet alternatives with the intended residents.|A nominal choice is not meaningful if one response channel is inaccessible.
+
+== References ==
+
+* Bohns (2016); Clark & Brennan (1991); Goffman (1967); McPherson et al. (2001); Schegloff et al. (1977). See b3.1 References.
+* Dewing (2007). See b5.1 References.
+* James et al. (2006); Mental Health Foundation (2016); Orange et al. (1996). See a1.1 References.
