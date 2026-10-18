@@ -2,7 +2,7 @@
 title: a3.1 Missed connections
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four scenarios, in the order of the activities. A newcomer meets too many people at once, remembers none of them and spends more and more time in her room (PS-01). A resident who has stopped going out finds a reason to decline each invitation, and the invitations grow rarer (PS-02). Two residents who might become friends avoid each other, because she has forgotten his name and he mistakes her reserve for lack of interest (PS-03). A resident accepts a walk to be polite, and afterwards avoids the man who asked (PS-04). In each, contact between residents fails for ordinary reasons: tiredness, embarrassment, politeness, memory.
+**Abstract.** Four problem scenarios trace how social contact breaks down across the four situated activities. A newcomer is introduced to too many people on her first day, remembers none of their names, and gradually retreats to her bedroom (PS-01). A long-term resident who rarely leaves his room finds a reason to decline each group invitation until staff stop asking (PS-02). Two residents who had a warm first conversation avoid each other afterwards because she has forgotten his name and he mistakes her reserve for disinterest (PS-03). Finally, a resident accepts a face-to-face invitation in the lounge out of politeness, feels trapped when the conversation drags on, and avoids the peer who asked (PS-04). Across all four scenarios, ordinary human barriers—fatigue, embarrassment, politeness, and short-term memory loss—prevent connection.
 
 = Problem Scenario - The first weeks [PS-01] =
 
@@ -15,14 +15,15 @@ syntax: xwiki/2.1
 |Name|The first weeks
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-01 and SA-03.
+Provisional; constructed from SA-01 and SA-03.
 
-* Victor (2012): loneliness in care homes is common
+* Sury et al. (2013): admission to residential care involves disorientation, grief, and social withdrawal.
+* Victor (2012): loneliness in care homes is common.
 )))
 |Narrative|(((
-On her first day a care worker introduces her to everyone at her table and to several staff. By the evening she cannot recall a single name. The other residents leave her alone to settle in, while she waits for someone to speak to her.
+On her first day in the care home, a care worker introduces her to everyone at her dining table and to several staff members in quick succession. By evening she cannot recall a single name. Over the next few days, fellow residents give her space to settle in, while she sits quietly waiting for someone to approach her.
 
-She misses her home and expects to return to it. Over the following weeks she spends more of the day in her room, and comes out mainly for meals and visits.
+She misses her own house and assumes she will return home soon. Over the following weeks she spends more of each day alone in her bedroom, coming out mainly for meals and family visits.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
@@ -31,33 +32,33 @@ She misses her home and expects to return to it. Over the following weeks she sp
 * ST-04: Care worker
 )))
 |Activities involved|SA-01: Moving into the care home; SA-03: Greeting someone new
-|Breakdown point|All introductions come on the first day, and nobody follows them up
+|Breakdown point|All introductions happen at once on the first day, and nobody follows them up when she is ready to take them in.
 |Causes|(((
 Root causes:
 
-* Introductions come at once, when she is least able to take them in
-* The others think she wants to be left alone, and she waits for them to start
-* She sees her stay as temporary, so getting to know people seems pointless
+* Introductions arrive all at once on arrival day, when she is overwhelmed and least able to retain new names
+* Fellow residents assume she wants privacy, while she waits for someone else to initiate conversation
+* Because she believes her stay is temporary, investing effort in meeting neighbours feels unnecessary
 
 Contributing causes:
 
-* The move tires her, and she struggles to find her way around
-* She grieves for her home, her routine and the people she left
-* She is shy, or finds it hard to talk to strangers
-* She hears poorly in the noisy dining room
-* Her table neighbours rarely talk
-* Staff change every shift and have little time to repeat introductions
-* She would rather not ask for a name a second time
+* The move exhausts her, and she still struggles to navigate the building
+* She is grieving for her home, her familiar routine, and the neighbours she left behind
+* She feels shy about speaking first to strangers
+* Background clatter in the dining room makes hearing difficult
+* The residents seated at her table speak very little
+* Care staff rotate across shifts and rarely have time to repeat introductions
+* She feels too embarrassed to ask for a neighbour's name a second time
 )))
 |Sub-problems|(((
-1. She receives too many introductions too early
-1. Nobody repeats them
-1. Each side waits for the other to speak
-1. Staying in her room becomes the easier choice (SA-02)
+1. Too many introductions happen at once during the stress of arrival
+1. Introductions are not repeated or scaffolded over the following weeks
+1. Both the newcomer and established residents wait for the other to speak first
+1. Remaining alone in the bedroom becomes the easiest way to avoid awkwardness (SA-02)
 )))
 |Out of scope|(((
-* Admission procedures - ST-07
-* Treating low mood - ST-06
+* Admission procedures and room allocation - ST-07
+* Clinical treatment of depression or adjustment disorder - ST-06
 )))
 
 == Graph edges ==
@@ -75,14 +76,15 @@ illustrates → Problem; involves → ST-01 to ST-04, SA-01, SA-03.
 |Name|Staying in
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-02.
+Provisional; constructed from SA-02.
 
-* Victor (2012): loneliness in care homes is common
+* Jansen et al. (2017): nursing-home residents spend large portions of the waking day in their bedrooms.
+* Victor (2012): loneliness in care homes is common.
 )))
 |Narrative|(((
-Since a fall some months ago he has spent most days in his room. He walks more slowly and tires quickly, and the lounge is noisy and full of people he hardly knows. When a care worker asks whether he would like to join an activity, he says he is tired, or that he will come next time.
+Since a fall several months ago, he has spent most days inside his bedroom. He walks more slowly and tires easily, and the communal lounge feels loud and full of people he barely knows. When a care worker knocks to ask whether he would like to join a group activity, he says he is tired or promises to come next time.
 
-Staff ask less often. Each week, going out takes a little more effort.
+Over the weeks, staff knock less often to invite him. With each passing week, stepping out of his room takes a little more effort.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
@@ -90,35 +92,33 @@ Staff ask less often. Each week, going out takes a little more effort.
 * ST-05: Activity coordinator
 )))
 |Activities involved|SA-02: Waiting for a reason to leave the room
-|Breakdown point|He declines invitations one at a time, until staff stop making them
+|Breakdown point|He declines general group invitations one by one until staff stop offering them.
 |Causes|(((
 Root causes:
 
-* Going out costs effort, and nothing on offer seems worth it
-* He knows nobody he would like to see
-* Each refusal makes the next invitation less likely
+* Leaving the room takes physical and social effort, and a noisy group activity does not feel worth the strain
+* He has no specific acquaintance in the lounge whom he looks forward to seeing
+* Repeated refusals lead busy staff to assume he prefers solitude
 
 Contributing causes:
 
-* He is in pain, stiff, or tires quickly
-* He is afraid of falling again
-* He does not want to be seen with a walking frame
-* He worries about reaching a toilet in time
-* He feels low, and little gives him pleasure
-* He hears poorly, and following group talk tires him
-* The lounge is loud, and the activities do not interest him
-* He does not want to trouble staff
-* His room is quiet, familiar and his own
-* Staff are busy, and accept a refusal without asking why
+* He experiences joint stiffness, pain, or rapid fatigue
+* He worries about falling again or being seen struggling with a rollator
+* He feels anxious about reaching a bathroom in time once in the lounge
+* Low mood dulls his interest in unfamiliar group games
+* Hearing loss makes group banter exhausting to follow
+* He dislikes feeling like a burden on busy care workers
+* His bedroom is quiet, predictable, and entirely his own
+* Staff under shift pressure accept a polite refusal at face value without exploring what one-to-one company might appeal to him
 )))
 |Sub-problems|(((
-1. Going out does not seem worth the effort
-1. He has nobody in particular to see
-1. Staff accept refusals and ask less often
-1. His withdrawal is noticed late
+1. Generic group invitations do not outweigh the effort of leaving the bedroom
+1. He has no familiar peer waiting for him in the common areas
+1. Staff gradually stop inviting him after repeated refusals
+1. Gradual bedroom isolation goes unaddressed until mood and mobility have visibly declined
 )))
 |Out of scope|(((
-* Treating pain, low mood and fear of falling - ST-06
+* Medical management of pain, clinical depression, and fall rehabilitation - ST-06
 )))
 
 == Graph edges ==
@@ -136,14 +136,15 @@ illustrates → Problem; involves → ST-01, ST-04, ST-05, SA-02.
 |Name|Each waits for the other
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Constructed from SA-03.
+Provisional; constructed from SA-03.
 
-* de Medeiros et al. (2012): residents with dementia form and keep friendships
+* de Medeiros et al. (2012): residents with dementia can form lasting friendships when supported.
+* Boothby et al. (2018): conversational partners systematically underestimate how much the other person enjoyed talking with them.
 )))
 |Narrative|(((
-A care worker introduced them weeks ago, and they talked for a while about the area where both grew up. Since then she has forgotten his name. When they pass in the corridor she nods and walks on, so that she will not have to use it.
+A care worker introduced two residents a few weeks ago, and they spent twenty minutes talking warmly about the region where both grew up. By the following week, however, she has forgotten his name. When they pass in the corridor or sit near each other in the lounge, she offers a quick nod and looks away so she will not have to admit forgetting.
 
-He reads her nod as polite reserve and does not want to impose. Both tell their families there is nobody here to talk to.
+He interprets her brief nod as polite distance and does not want to intrude. Later that week, both tell their visiting relatives that there is nobody in the home they can really talk to.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
@@ -152,29 +153,29 @@ He reads her nod as polite reserve and does not want to impose. Both tell their 
 * ST-04: Care worker
 )))
 |Activities involved|SA-03: Greeting someone new
-|Breakdown point|A good first conversation is not followed by a second
+|Breakdown point|A promising first conversation is never followed up by a second meeting.
 |Causes|(((
 Root causes:
 
-* She has forgotten his name, and is embarrassed to ask
-* Each underestimates how much the other enjoyed their talk
-* Nobody arranges a second meeting
+* She has forgotten his name and feels too embarrassed to ask for it again
+* Each resident underestimates how much the other enjoyed their first conversation
+* Nobody bridges the gap by arranging a natural second meeting or re-stating their names
 
 Contributing causes:
 
-* They sit at different tables and keep different routines
-* He does not want to seem forward
-* She fears that other lapses will show if they talk longer
-* The care worker who introduced them is seldom on shift when they meet
-* A nod in passing leaves no opening for talk
+* They are assigned to different dining tables and keep different daily routines
+* He is reluctant to appear pushy or overly familiar
+* She worries that a longer conversation will expose further memory lapses
+* The care worker who originally introduced them is rarely on duty when the two cross paths
+* A passing nod in the corridor offers no natural topic to restart conversation
 )))
 |Sub-problems|(((
-1. A forgotten name becomes a reason to avoid someone
-1. Neither shows the other they would like to talk again
-1. Nothing brings them together a second time
+1. Forgetting a peer's name becomes a reason to avoid speaking with them
+1. Neither resident realises the other would welcome another conversation
+1. No mechanism brings compatible peers back together or refreshes their names unobtrusively
 )))
 |Out of scope|(((
-* Seating policy - ST-05
+* Dining-room table assignment policy - ST-05
 )))
 
 == Graph edges ==
@@ -191,40 +192,45 @@ illustrates → Problem; involves → ST-01 to ST-04, SA-03.
 |ID|PS-04
 |Name|A yes to be polite
 |Status|In Progress
-|Evidence basis|Provisional. Constructed from SA-04 by group reasoning.
-|Narrative|(((
-A man asks the woman next to him in the lounge whether she would like to walk round the garden. She is tired, but saying no to his face feels rude, so she agrees.
+|Evidence basis|(((
+Provisional; constructed from SA-04.
 
-Halfway round she wants to go back, but waits for him to suggest it. He takes her silence for contentment and keeps going. Afterwards she sits elsewhere, so as not to be asked again.
+* Bohns (2016): people find face-to-face requests hard to refuse and comply out of social discomfort.
+* Mastroianni et al. (2021): conversations rarely end when both parties want them to.
+)))
+|Narrative|(((
+A fellow resident approaches her armchair in the communal lounge, within earshot of neighbours, and asks whether she would like to sit together over coffee and play cards. She is tired and wants quiet, but turning him down to his face in front of others feels unkind, so she agrees.
+
+Twenty minutes in, she is exhausted and wants to return to her room, but waits for him to suggest stopping. Mistaking her quiet compliance for enjoyment, he deals another hand. From the next day on, she avoids the lounge in the afternoon so she will not be put on the spot again.
 )))
 |Stakeholders involved|(((
 * ST-01: Resident with dementia
 * ST-02: Fellow resident
 )))
 |Activities involved|SA-04: Inviting someone to spend time together
-|Breakdown point|She accepts out of politeness, cannot end the walk, and then avoids him
+|Breakdown point|She accepts a public, face-to-face invitation out of politeness, feels unable to end the encounter, and subsequently avoids the inviter and the lounge.
 |Causes|(((
 Root causes:
 
-* Refusing a request face to face is uncomfortable
-* Neither says when they would like to stop
-* He cannot tell a willing yes from a polite one
+* Refusing a direct request face to face feels rude, especially when other residents are nearby
+* Neither resident has an easy, face-saving way to bring the meeting to a close
+* The inviter cannot distinguish reluctant compliance from genuine interest
 
 Contributing causes:
 
-* Others in the lounge can hear the invitation
-* She does not want to hurt his feelings
-* She is tired, in pain or cold, and does not say so
+* Other residents in the lounge can overhear the invitation
+* She does not want to hurt a neighbour's feelings or appear unfriendly
+* She is tired or unwell but hesitates to complain
 * She worries he will take a refusal personally
-* The garden path offers no easy point to turn back
+* Open-ended sitting in the lounge lacks a clear, agreed duration or natural stopping point
 )))
 |Sub-problems|(((
-1. A polite yes passes for a willing one
-1. Neither can end the walk without awkwardness
-1. She avoids him afterwards, and he does not know why
+1. Face-to-face invitations pressure residents into saying yes when they would rather decline
+1. Once together, neither resident can end the interaction without awkwardness
+1. Reluctant compliance leads to subsequent avoidance of both the peer and communal spaces
 )))
 |Out of scope|(((
-* Changes to the garden and its paths - ST-07
+* Architectural layout and acoustics of the communal lounge - ST-07
 )))
 
 == Graph edges ==
@@ -233,4 +239,6 @@ illustrates → Problem; involves → ST-01, ST-02, SA-04.
 
 = References =
 
-* de Medeiros et al. (2012); Victor (2012). See a1.1 References.
+* Bohns (2016); Boothby et al. (2018); Mastroianni et al. (2021). See b3.1 References.
+* de Medeiros et al. (2012); Jansen et al. (2017); Sury et al. (2013); Victor (2012). See a1.1 References.
+

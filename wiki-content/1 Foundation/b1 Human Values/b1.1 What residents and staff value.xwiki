@@ -2,7 +2,7 @@
 title: b1.1 What residents and staff value
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Eight values, held by the stakeholders in a2.1. Social connectedness leads: residents want company and, over time, friends. Autonomy and privacy set its limits, because each resident decides whom to meet and what others may know about them. Dignity means that a forgotten name is never exposed. Truthfulness rules out deception, kind lies included, and leaves painful truths to a trusted person.
+**Abstract.** Eight human values ground the social introductions concept, held by the stakeholders in [[a2.1 Residents, family and staff>>doc:1 Foundation.a2 Stakeholders.a2\.1 Residents, family and staff.WebHome]]. Social connectedness leads: residents want genuine company and, over time, friendships with peers. Autonomy and privacy set its boundaries, ensuring each resident chooses whom to meet, when to stay in their room, and what biographical details others may learn. Dignity demands that forgotten names or conversational slips pass without exposure. Truthfulness rules out deception—including well-meant white lies—and reserves painful truths for a trusted human caregiver.
 
 = Human Value - Autonomy [HV-01] =
 
@@ -14,14 +14,14 @@ syntax: xwiki/2.1
 |ID|HV-01
 |Name|Autonomy
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Each resident decides whom to meet, when, and what to do together. They choose what others may know about them, and can change their mind. Consent comes before every introduction and every shared fact.
+|Evidence basis|Provisional; based on published literature and group reasoning.
+|Situated meaning|Each resident decides whether to engage with the System, whom to meet, when to join communal spaces, and what to do together. They control which biographical details may be shared with peers and can revise those choices at any time. Explicit consent precedes every introduction and every shared personal fact.
 |Held by|ST-01, ST-02 (high); ST-05 (medium)
-|Intrinsic or instrumental|Intrinsic. Also supports Dignity.
+|Intrinsic or instrumental|Intrinsic; also supports Dignity (HV-02).
 |Recognition criteria|(((
-Served: the resident sets and changes their own settings; a "no" ends the offer, and nobody asks why.
+Served: residents configure and update their own preferences; declining an invitation or turning away ends the interaction immediately without anyone asking for a justification.
 
-Violated: introductions arranged for staff convenience; a shared fact used without asking; persuasion; reminders of declined offers.
+Violated: pairings arranged for staff convenience; personal details mentioned without prior consent; repeated persuasion after a refusal; reminders or tallies of declined invitations.
 )))
 |Source|Ryan, R. M. & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. //American Psychologist//, 55(1), 68-78.
 
@@ -35,14 +35,14 @@ Violated: introductions arranged for staff convenience; a shared fact used witho
 |ID|HV-02
 |Name|Dignity
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Residents are spoken to as adults. A forgotten name or fact passes without comment, and nobody is quizzed, corrected or praised for the obvious. Company is offered for the resident's sake, never to fill a timetable.
+|Evidence basis|Provisional; based on published literature and group reasoning.
+|Situated meaning|Residents are addressed as capable adults. A forgotten name or mid-sentence pause passes without remark, and nobody is quizzed, corrected, or praised for basic participation. Companionship is offered for the resident's own sake, never to fill an institutional schedule.
 |Held by|ST-01 (high); ST-02 (medium)
 |Intrinsic or instrumental|Intrinsic.
 |Recognition criteria|(((
-Served: names given as a statement ("This is Jan"), so that nobody has to admit forgetting; slips pass without remark.
+Served: names are woven naturally into greetings for both people ("Elena, Jan, good to see you both") so neither has to admit forgetting; conversational slips are given quiet time for self-repair.
 
-Violated: "You've met before, don't you remember?"; "You told me that already"; finishing someone's sentence; being paired off to fill an activity.
+Violated: remarks such as "You've met before, don't you remember?" or "You told me that already"; finishing a resident's sentence prematurely; pairing residents merely to occupy them.
 )))
 |Source|Kitwood, T. (1997). //Dementia Reconsidered: The Person Comes First//. Open University Press. Goffman, E. (1967). //Interaction Ritual//. Anchor Books.
 
@@ -56,18 +56,18 @@ Violated: "You've met before, don't you remember?"; "You told me that already"; 
 |ID|HV-03
 |Name|Privacy
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
+|Evidence basis|Provisional; based on published literature and group reasoning.
 |Situated meaning|(((
-Each resident owns their life story, their secrets and their time alone. Nothing about one resident reaches another without consent, and the System's data stays in the care home.
+Each resident retains ownership over their life history, personal confidences, and quiet time in their bedroom. No personal detail about one resident is disclosed to another without explicit permission, presence in private bedrooms is tracked only at coarse resolution with separate consent, and all raw conversation processing remains inside the care home.
 
-Staff: their own work is not monitored.
+For care staff, privacy also means their daily work is not timed or monitored as workplace surveillance.
 )))
-|Held by|ST-01, ST-02, ST-05, ST-07 (high); ST-04, ST-06 (medium); ST-03 (low - may want more shared than the resident would)
-|Intrinsic or instrumental|Intrinsic. Also supports Dignity.
+|Held by|ST-01, ST-02, ST-05, ST-07 (high); ST-04, ST-06 (medium); ST-03 (low - relatives may wish to share more background than the resident themselves would release)
+|Intrinsic or instrumental|Intrinsic; also supports Dignity (HV-02) and Autonomy (HV-01).
 |Recognition criteria|(((
-Served: only consented facts are used to match or introduce; nothing leaves the home; time in one's room is noticed only where the resident agreed.
+Served: only consented profile items are used for matching or icebreakers; no raw audio or transcripts are stored after a session; bedroom time is logged only at coarse daily resolution for residents who opted in.
 
-Violated: a secret told to the wrong person; a match explained by a fact its owner never released; a resident watched in their room.
+Violated: disclosing a private fact or family matter to a peer; explaining a match by citing an unreleased detail; continuous or unconsented room monitoring.
 )))
 |Source|Friedman, B., Kahn, P. H., Jr. & Borning, A. (2008). Value Sensitive Design and Information Systems. In K. E. Himma & H. T. Tavani (Eds.), //The Handbook of Information and Computer Ethics//. Wiley. Niemeijer et al. (2010).
 
@@ -81,16 +81,16 @@ Violated: a secret told to the wrong person; a match explained by a fact its own
 |ID|HV-04
 |Name|Safety
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|No falls and no getting lost, also when residents spend time together. A walk in the garden needs walking assessed first and a member of staff at the door.
+|Evidence basis|Provisional; based on published literature and group reasoning.
+|Situated meaning|Residents remain physically and emotionally safe during robot sessions and peer meetings. Suggested activities respect each resident's mobility and clinical boundaries, and any sign of acute agitation, distress, or physical hazard triggers an immediate pause and human handover.
 |Held by|ST-01, ST-04, ST-06, ST-07 (high)
-|Intrinsic or instrumental|Instrumental: a condition for going out at all.
+|Intrinsic or instrumental|Instrumental: a prerequisite for social activities in the home.
 |Recognition criteria|(((
-Served: walks together suggested only to residents assessed fit; incidents reach a person quickly.
+Served: shared activities match the residents' assessed mobility and clinical guidance; robot and peer sessions pause immediately upon distress or agitation, with care staff notified promptly.
 
-Violated: a walk suggested to someone not assessed; a fall that nobody notices.
+Violated: suggesting an activity that exceeds a resident's mobility limits; continuing a session when a resident shows agitation or distress.
 )))
-|Source|Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment. //Journal of Advanced Nursing//, 65(5), 922-933.
+|Source|Cohen-Mansfield, J., Marx, M. S. & Rosenthal, A. S. (1989). A description of agitation in a nursing home. //Journal of Gerontology//, 44(3), M77-M84. Härlein, J. et al. (2009). Fall risk factors in older people with dementia or cognitive impairment. //Journal of Advanced Nursing//, 65(5), 922-933.
 
 = Human Value - Well-being [HV-05] =
 
@@ -102,16 +102,16 @@ Violated: a walk suggested to someone not assessed; a fall that nobody notices.
 |ID|HV-05
 |Name|Well-being
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Calm, movement, fresh air, and days with something to look forward to. Emotional safety: no embarrassment, pressure or conflict, and no painful news at the wrong moment.
+|Evidence basis|Provisional; based on published literature and group reasoning.
+|Situated meaning|Emotional comfort, calm, and days that hold pleasant company and something to look forward to, free from social pressure, embarrassment, agitation, or blunt reminders of painful losses.
 |Held by|ST-01 to ST-06 (high); ST-07 (medium)
 |Intrinsic or instrumental|Intrinsic.
 |Recognition criteria|(((
-Served: pleasure in time spent together; calm afterwards.
+Served: observable pleasure and alertness during and after conversations; reduced agitation and distress over time.
 
-Violated: distress after an awkward introduction, a refusal made in public or a blunt answer.
+Violated: anxiety, frustration, or agitation triggered by an awkward introduction, a public refusal, or an insensitive remark.
 )))
-|Source|Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489. Bratman et al. (2015).
+|Source|Lawton, M. P., Van Haitsma, K. & Klapper, J. (1996). Observed affect in nursing home residents with Alzheimer's disease. //Journal of Gerontology B//, 51(1), P3-P14. Woods et al. (2018).
 
 = Human Value - Social connectedness [HV-06] =
 
@@ -123,14 +123,14 @@ Violated: distress after an awkward introduction, a refusal made in public or a 
 |ID|HV-06
 |Name|Social connectedness
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Residents have company and conversation with each other and, over time, a friend. They feel less lonely.
+|Evidence basis|Provisional; based on published literature and group reasoning.
+|Situated meaning|Residents enjoy meaningful conversation and companionship with compatible peers in the care home and, over time, build mutual friendships that ease loneliness and give them a reason to spend time in communal areas.
 |Held by|ST-01, ST-02, ST-03, ST-05 (high); ST-04 (medium)
-|Intrinsic or instrumental|Both. Valued in itself; also a reason to leave the room.
+|Intrinsic or instrumental|Both: valued in its own right, and instrumental in motivating residents to leave their bedrooms and engage with daily life.
 |Recognition criteria|(((
-Served: introductions lead to further meetings; residents can name someone here they like to talk to.
+Served: introductions lead to repeat conversations and shared time in common areas; residents can name a peer in the home whom they enjoy talking with.
 
-Violated: the System in place of people; introductions that lead nowhere; withdrawal after an awkward meeting.
+Violated: using the robot as a substitute for human company; one-off introductions that never lead to further contact; social withdrawal following a pressured or awkward meeting.
 )))
 |Source|Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646. Holwerda et al. (2014). de Medeiros et al. (2012).
 
@@ -144,14 +144,14 @@ Violated: the System in place of people; introductions that lead nowhere; withdr
 |ID|HV-07
 |Name|Identity
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
-|Situated meaning|Residents remain who they were: their trade, places, people, interests and own words. A shared past gives two residents something to talk about.
+|Evidence basis|Provisional; based on published literature and group reasoning.
+|Situated meaning|Residents are recognised as the people they have been throughout their lives—defined by their hometowns, trades, eras, musical tastes, and personal stories rather than by their diagnosis. Shared life history gives two residents natural common ground for conversation.
 |Held by|ST-01, ST-03, ST-05 (high)
-|Intrinsic or instrumental|Intrinsic. Also gives conversation a subject.
+|Intrinsic or instrumental|Intrinsic; also instrumental in supplying effortless topics for peer conversation.
 |Recognition criteria|(((
-Served: introductions built on the residents' own lives, in their own words.
+Served: introductions and icebreakers draw directly on the residents' own life stories, interests, and preferred eras.
 
-Violated: wrong facts about a resident's life; a match made on a label, such as a diagnosis, rather than on a life.
+Violated: getting biographical facts wrong; matching residents solely by clinical stage or dining table rather than shared background and interests.
 )))
 |Source|Kitwood (1997). Woods, B. et al. (2018). Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, (3), CD001120.
 
@@ -165,37 +165,38 @@ Violated: wrong facts about a resident's life; a match made on a label, such as 
 |ID|HV-08
 |Name|Truthfulness
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only.
+|Evidence basis|Provisional; based on published literature and group reasoning.
 |Situated meaning|(((
-No deception by design: no lies, kind ones included, no denials, and no playing along with an untrue belief. Trust once lost is rarely regained.
+No deception by design: the System never tells lies (including well-meant "therapeutic" lies), never pretends to be human or to share human memories, and never plays along with a false belief. Once trust is broken in dementia care, it is rarely recovered.
 
-Errors cannot be ruled out: a profile can be out of date, and the System can mishear an answer. So it states facts only from checked sources, says less when unsure, and corrects itself plainly when contradicted.
+Because profile entries can become outdated and speech recognition can mishear an utterance, the System states biographical facts only from verified profile items, speaks conservatively when uncertain, and corrects itself plainly when contradicted.
 
-Painful truths (why the resident lives here, a death, a diagnosis) come from a trusted person, never from the System.
+Painful truths—such as why the resident lives in the home, a bereavement, or a diagnosis—are always handed over to a trusted human caregiver rather than answered by the robot.
 )))
 |Held by|ST-01, ST-03, ST-04, ST-06 (high)
-|Intrinsic or instrumental|Intrinsic. Also instrumental: trust is the condition for accepting any help.
+|Intrinsic or instrumental|Intrinsic; also instrumental because trust is a precondition for accepting social facilitation.
 |Recognition criteria|(((
-Served: no untruth, denial or playing along in the script; errors corrected at once and fixed at their source; sensitive questions passed to the trusted person.
+Served: dialogue contains no untruths, denials, or false pretence; factual errors are acknowledged immediately and flagged for correction; questions on sensitive topics are deferred to the designated trusted person.
 
-Violated: "You're only here for a few days"; an error left standing; the System states a death.
+Violated: telling a resident "You are only staying here for a few days"; leaving a factual error uncorrected; the robot delivering news of a bereavement or diagnosis.
 )))
-|Source|Mental Health Foundation (2016). //What Is Truth?// James et al. (2006).
+|Source|Mental Health Foundation (2016). //What Is Truth?// James et al. (2006). Wang et al. (2026).
 
 == Graph edges ==
 
-HV-01: held-by → ST-01, ST-02, ST-05; party-to → VT-02, VT-06; operationalized-by → M-01, M-02, M-07, M-09; explained-by → HFC-02, HFC-05, HFC-17.
+HV-01: held-by → ST-01, ST-02, ST-05; party-to → VT-02, VT-06; operationalized-by → M-01, M-02, M-07, M-09, M-24; explained-by → HFC-02, HFC-05, HFC-17.
 
 HV-02: held-by → ST-01, ST-02; party-to → VT-04; operationalized-by → M-07, M-09; explained-by → HFC-03, HFC-06.
 
-HV-03: held-by → ST-01 to ST-07; party-to → VT-01, VT-05, VT-06; operationalized-by → M-01, M-09, M-10.
+HV-03: held-by → ST-01 to ST-07; party-to → VT-01, VT-05, VT-06; operationalized-by → M-01, M-09, M-10, M-23.
 
-HV-04: held-by → ST-01, ST-04, ST-06, ST-07; operationalized-by → M-06.
+HV-04: held-by → ST-01, ST-04, ST-06, ST-07; operationalized-by → M-06, M-20.
 
-HV-05: held-by → ST-01 to ST-07; party-to → VT-03, VT-06; operationalized-by → M-03, M-06; explained-by → HFC-01, HFC-02, HFC-07.
+HV-05: held-by → ST-01 to ST-07; party-to → VT-03, VT-06; operationalized-by → M-03, M-06, M-20; explained-by → HFC-01, HFC-02, HFC-07.
 
-HV-06: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-04; operationalized-by → M-02, M-04, M-05, M-06, M-08; explained-by → HFC-02 to HFC-05, HFC-07, HFC-15, HFC-16.
+HV-06: held-by → ST-01 to ST-05; party-to → VT-01, VT-02, VT-04; operationalized-by → M-02, M-04, M-05, M-06, M-08, M-21, M-22, M-23; explained-by → HFC-01 to HFC-05, HFC-07, HFC-15, HFC-16.
 
 HV-07: held-by → ST-01, ST-03, ST-05; party-to → VT-05; operationalized-by → M-04; explained-by → HFC-04, HFC-15.
 
 HV-08: held-by → ST-01, ST-03, ST-04, ST-06; party-to → VT-03; operationalized-by → M-09, M-10; explained-by → HFC-08.
+

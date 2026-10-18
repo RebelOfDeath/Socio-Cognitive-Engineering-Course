@@ -2,7 +2,7 @@
 title: b2.1 Matching, pressure, truth and privacy
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Six tensions. The facts that make a good match are personal (VT-01). An invitation made face to face is hard to refuse (VT-02). A truthful answer can hurt, and a kind lie costs trust (VT-03). Repeating a name helps residents meet again, but can show that they forgot it (VT-04). A profile detailed enough to match on is also a privacy risk (VT-05). Noticing that a resident stays in their room intrudes on private time (VT-06).
+**Abstract.** Six value tensions shape the design of social introductions. The personal details that make a compelling match also expose private history (VT-01). Direct invitations to socialise are uncomfortable to refuse (VT-02). Blunt truths can cause fresh grief, yet well-meant lies erode trust (VT-03). Repeating a neighbour's name supports recognition, but can highlight a memory lapse if aimed at one person (VT-04). Rich persona profiles enable meaningful matching while increasing privacy exposure (VT-05). Finally, noticing when a resident spends days isolated in their bedroom protects well-being, but risks intruding on legitimate solitude and private space (VT-06).
 
 = Value Tension - Privacy vs Social connectedness [VT-01] =
 
@@ -14,29 +14,29 @@ syntax: xwiki/2.1
 |ID|VT-01
 |Name|Privacy vs Social connectedness (matching on personal facts)
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Illustrated in part by PS-03.
+|Evidence basis|Provisional; derived from group reasoning and illustrated in part by PS-03.
 |Values in tension|(((
-HV-06 Social connectedness: matches and introductions built on what two residents share.
+HV-06 Social connectedness: grounding peer matches and icebreakers in genuine shared history and interests.
 
-HV-03 Privacy: each resident decides what others may know about them.
+HV-03 Privacy: letting each resident control what fellow residents learn about their life.
 )))
 |Domain area|privacy
-|Nature of the conflict|The facts that make a good match are personal: a hometown, a trade, a church, a loss. Telling one resident why they were matched tells them something about the other. A secret said once cannot be unsaid.
-|Non-negotiable floor|GDPR art. 5 and 9 (health data). Consent through the resident and their representative (O-5).
+|Nature of the conflict|The biographical details that spark immediate connection—a hometown, a former trade, a favourite era, or a shared interest—are personal. Telling one resident why they were matched reveals something about the other, and a personal fact once spoken cannot be taken back.
+|Non-negotiable floor|GDPR Articles 5 and 9 (health and sensitive personal data), alongside representative consent and ongoing resident assent (O-5).
 |Current resolution|(((
-* Each resident's profile sits in their own instance of the System (TECH-04)
-* A fact is used to match or introduce only if its owner agreed, privately, and the relationship map allows it for this pair (TECH-05)
-* Health, losses and family conflicts are never offered as matching items; residents may raise them themselves
-* The coordinator approves each suggested match before anyone is asked (F2)
-* Unknown pair, or a map change awaiting review: no match is suggested
-* The map is reviewed after any death, diagnosis, conflict or move
+* Each resident's profile is stored in an isolated, encrypted per-resident record on the local server (TECH-04)
+* A personal detail is used for compatibility matching or spoken in an icebreaker only if its owner privately released it and the relationship map permits it for that pair (TECH-05)
+* Medical diagnoses, bereavements, and family conflicts are excluded from matching and icebreakers; residents are free to bring them up themselves if they wish
+* The activity coordinator reviews and approves proposed pairings before an introduction is arranged (F2)
+* If a pairing is unreviewed or the relationship map has a pending update, no match is proposed
+* Staff review the relationship map after any bereavement, clinical change, interpersonal friction, or room move
 )))
 |Alternatives considered|(((
-One shared profile store: rejected.
+A single shared profile database accessible without per-item release: rejected for violating HV-03.
 
-Matching without personal facts, by unit or table only: not preferred. Introductions lose their common ground (PS-03).
+Matching solely by residential unit or dining table without personal facts: rejected because introductions lose the common ground that sustains conversation (PS-03).
 )))
-|Status of the tension|Provisionally resolved. Verified by UC02-F2-PR2; tested by adverse UC02-F2-CL4.
+|Status of the tension|Provisionally resolved. Verified by UC02-F2-PR2; tested by adverse Claim UC02-F2-CL4.
 
 = Value Tension - Social connectedness vs Autonomy [VT-02] =
 
@@ -48,29 +48,29 @@ Matching without personal facts, by unit or table only: not preferred. Introduct
 |ID|VT-02
 |Name|Social connectedness vs Autonomy (pressure to accept an introduction)
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning. Bohns (2016); Mastroianni et al. (2021). Illustrated by PS-04.
+|Evidence basis|Provisional; grounded in Bohns (2016) and Mastroianni et al. (2021), and illustrated by PS-04.
 |Values in tension|(((
-HV-06 Social connectedness: residents meet and spend time together.
+HV-06 Social connectedness: encouraging isolated residents to meet compatible peers and spend time together.
 
-HV-01 Autonomy: each resident is free to decline, and to stop.
+HV-01 Autonomy: preserving each resident's freedom to decline an invitation or leave a conversation at will.
 )))
 |Domain area|social; personhood
-|Nature of the conflict|A request made face to face is hard to refuse, and harder in front of others. A resident who accepts out of politeness may avoid the other afterwards (PS-04). Suggestions made too often turn company into a duty, and residents into items on the activity plan.
-|Non-negotiable floor|None identified.
+|Nature of the conflict|A direct invitation made face to face—especially within earshot of others in the lounge—is awkward to refuse. Residents who agree merely out of politeness often feel trapped during the encounter and avoid the peer afterwards (PS-04). Conversely, overly frequent suggestions turn companionship into a chore.
+|Non-negotiable floor|All robot sessions and peer introductions are strictly voluntary; verbal or non-verbal dissent (such as turning away) ends the interaction immediately (Black et al., 2010).
 |Current resolution|(((
-* Each resident is asked separately and privately, and neither is told that the other was asked (IDP-02)
-* An introduction follows only when both said yes. A "no" is never passed on: the offer lapses, and a resident who asks about it hears only "Not this time"
-* Either resident may leave a meeting at any time, without giving a reason
-* No tallies, no praise, no reminders of declined offers
-* At most [number - O-2] suggestions per resident per week
-* Staff cannot start an introduction for a resident who declined it
+* During one-to-one bridging sessions, the System invites each resident privately in a quiet setting before bringing the pair together, so neither hears whether the other was asked (IDP-02)
+* A joint introduction proceeds only when both residents independently agree; a refusal is never relayed to the other resident
+* Either resident may end a session or leave a peer meeting at any moment without giving a reason
+* The System keeps no public tallies, offers no patronising praise, and never reminds residents of declined invitations
+* Bridging invitations are capped at a modest weekly limit per resident [threshold - O-2]
+* Staff do not override a resident's refusal to meet a suggested peer
 )))
 |Alternatives considered|(((
-Fixed pairings on the activity plan: rejected.
+Assigning fixed peer pairings on the weekly activity schedule: rejected as coercive.
 
-Introductions only on request: not preferred. Shy residents never ask (PS-03).
+Brokering introductions only when a resident explicitly asks staff: rejected because shy or newly admitted residents rarely initiate requests on their own (PS-01, PS-03).
 )))
-|Status of the tension|Open. Verified by UC02-F1-PR1; tested by adverse UC02-F1-CL3.
+|Status of the tension|Open. Verified by UC02-F1-PR1; tested by adverse Claim UC02-F1-CL3.
 
 = Value Tension - Truthfulness vs Well-being [VT-03] =
 
@@ -82,27 +82,27 @@ Introductions only on request: not preferred. Shy residents never ask (PS-03).
 |ID|VT-03
 |Name|Truthfulness vs Well-being (truth that hurts)
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Mental Health Foundation (2016); James et al. (2006). Illustrated in part by PS-01.
+|Evidence basis|Provisional; grounded in Mental Health Foundation (2016), James et al. (2006), and Wang et al. (2026), and illustrated in part by PS-01.
 |Values in tension|(((
-HV-08 Truthfulness: no deception.
+HV-08 Truthfulness: avoiding deception, false pretence, and untruthful reassurance.
 
-HV-05 Well-being: no new grief.
+HV-05 Well-being: sparing residents acute distress and repeated grief.
 )))
 |Domain area|psychological safety; trust
-|Nature of the conflict|A newcomer may ask every day when they can go home. A death or a diagnosis can be news every time it is told. A kind lie spares distress now and costs trust later.
-|Non-negotiable floor|No deception by design: the script contains no untruth, denial or playing along. The System never delivers a death, a diagnosis or other listed painful news. Errors are possible; leaving one uncorrected is not.
+|Nature of the conflict|A newcomer may ask daily when she can go home, and a resident who has forgotten a spouse's death may experience the bereavement as fresh news if told bluntly. A soothing lie spares immediate distress in the moment, but destroys trust when the resident realises they were deceived.
+|Non-negotiable floor|No deception by design: the System never states an untruth, never pretends to be human, and never delivers news of a death, diagnosis, or permanent admission. Factual errors by the System must be corrected immediately when challenged.
 |Current resolution|(((
-* Belief from another time ("My mother is waiting"): the System answers the feeling, then brings back the present, without correcting or confirming what is untrue (IDP-01)
-* Direct question on a listed topic, such as going home: a truthful deferral ("That's one for [trusted person]. Shall I ask them to come?") and a note to the trusted person (IDP-03)
-* The trusted person decides what is said, as agreed with family and ST-06
-* System error (misheard, out of date): a plain correction when contradicted ("I had that wrong"); ST-05 fixes the source
+* When a resident expresses a belief rooted in the past ("My mother is waiting for me"), the System acknowledges the underlying emotion and gently bridges to a comforting present topic without either correcting the resident or validating the false premise (IDP-01)
+* When a resident asks a direct question on a sensitive topic (such as going home or a deceased relative), the System gives a truthful deferral ("That is something to talk through with [trusted person]. Shall I ask them to come over?") and notifies that caregiver (IDP-03)
+* The designated human caregiver responds using the approach agreed with the family and clinical team (ST-03, ST-06)
+* If the System states an outdated or misheard fact and the resident contradicts it, the System apologises plainly ("I had that wrong") and flags the item for ST-05 to correct
 )))
 |Alternatives considered|(((
-Kind lies ("Only for a few days"): rejected. Trust is lost when they are found out.
+Therapeutic lies ("You are only staying for a few days"): rejected because discovery undermines trust in both the System and care staff.
 
-Always telling at once: rejected. Blunt news comes from the wrong source.
+Direct factual disclosure by the robot: rejected because painful truths require human empathy and clinical judgement.
 )))
-|Status of the tension|Provisionally resolved. Verified by UC01-F4-PR4; tested by UC01-F4-CL8.
+|Status of the tension|Provisionally resolved. Verified by UC01-F4-PR4; tested by Claim UC01-F4-CL8.
 
 = Value Tension - Dignity vs Social connectedness [VT-04] =
 
@@ -114,27 +114,27 @@ Always telling at once: rejected. Blunt news comes from the wrong source.
 |ID|VT-04
 |Name|Dignity vs Social connectedness (names that expose forgetting)
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Goffman (1967); Schegloff et al. (1977). Illustrated by PS-01 and PS-03.
+|Evidence basis|Provisional; grounded in Goffman (1967) and Schegloff et al. (1977), and illustrated by PS-01 and PS-03.
 |Values in tension|(((
-HV-06 Social connectedness: residents recognise each other and meet again.
+HV-06 Social connectedness: helping residents recognise one another and pick up prior conversations across meetings.
 
-HV-02 Dignity: forgetting passes without remark.
+HV-02 Dignity: ensuring memory lapses are never spotlighted in front of peers.
 )))
 |Domain area|psychological safety (personhood)
-|Nature of the conflict|Residents forget names, and may avoid someone rather than ask again (PS-03). Repeating names helps them meet again, but a reminder can show that they forgot. Help aimed at one person marks that person as failing.
+|Nature of the conflict|Residents with dementia frequently forget a new acquaintance's name and may walk past them rather than risk embarrassment (PS-03). Reminding them of the name enables conversation, yet an explicit reminder aimed at one resident signals that they have forgotten.
 |Non-negotiable floor|None identified.
 |Current resolution|(((
-* Names are given to both residents, as a statement, at every meeting the System arranges ("Elena, Jan, good to see you both")
-* Never "Do you remember...?" or "You've met before"
-* Name cards or photos at the table only where the resident agreed
-* How openly names are repeated is set per person, in their settings
+* At every facilitated meeting, the System greets both residents by name symmetrically ("Elena, Jan, good to see you both"), framing the names as a warm welcome rather than a memory prompt
+* The System never asks quiz-style questions such as "Do you remember who this is?" or "You met last week, didn't you?"
+* Shared icebreaker prompts are addressed to the pair as a whole rather than testing either individual's recall
+* How prominently names are repeated can be adjusted in each resident's preferences
 )))
 |Alternatives considered|(((
-No repeated introductions: rejected (PS-01, PS-03).
+Introducing residents only once on arrival: rejected because forgotten names quickly halt follow-up contact (PS-01, PS-03).
 
-Name badges for everyone: not preferred. Badges mark residents as forgetful, and visitors can read them.
+Visible name badges worn at all times: not preferred for everyday care, as badges can feel stigmatising to residents inside their own home.
 )))
-|Status of the tension|Open. Verified by UC02-F3-PR3; tested by adverse UC01-F3-CL5.
+|Status of the tension|Open. Verified by UC02-F3-PR3; tested by adverse Claim UC01-F3-CL5.
 
 = Value Tension - Privacy vs Identity [VT-05] =
 
@@ -144,30 +144,29 @@ Name badges for everyone: not preferred. Badges mark residents as forgetful, and
 
 |=Field|=Description
 |ID|VT-05
-|Name|Privacy vs Identity (a rich profile)
+|Name|Privacy vs Identity (a rich persona profile)
 |Status|In Progress
-|Evidence basis|Provisional. Literature and group reasoning only. Niemeijer et al. (2010).
+|Evidence basis|Provisional; grounded in Niemeijer et al. (2010) and Berridge & Grigorovich (2022).
 |Values in tension|(((
-HV-07 Identity: a profile detailed enough to find what residents share.
+HV-07 Identity: building a rich persona profile of life history, nostalgic eras, musical tastes, and conversational pace so matches reflect who the resident truly is.
 
-HV-03 Privacy: the more the profile holds, the more can leak.
+HV-03 Privacy: minimising stored personal data and preventing unauthorised disclosure.
 )))
 |Domain area|privacy
-|Nature of the conflict|Good matches need a detailed life story: places, trades, interests, people. The same detail identifies the resident, and would hurt if it leaked. Relatives often know, and offer, more than the resident would share.
-|Non-negotiable floor|No internet connection: nothing leaves the home.
+|Nature of the conflict|Meaningful compatibility matching relies on specific biographical details and conversational features gathered across one-to-one sessions. That same specificity makes the profile sensitive, and relatives sometimes volunteer stories that the resident would prefer to keep private.
+|Non-negotiable floor|All speech and language processing runs on the robot's on-device accelerator (TECH-18) and the home's local server (TECH-04) with no cloud uplink; raw audio is held only in working memory and transcripts are deleted at the end of each session.
 |Current resolution|(((
-* The profile holds only what matching needs, item by item, each marked shareable or private
-* The resident decides on each item; the representative decides only where the resident cannot, and the resident's objection still counts
-* The resident and representative can see, change or delete any item
-* New facts are kept only after asking
-* Research use of profiles needs separate consent, anonymisation and ethics review (O-5)
+* Persona attributes extracted during one-to-one dialogue enter the profile as private by default until the resident explicitly consents to release them for matching (TECH-05, TECH-06)
+* The resident (and, where appropriate, their representative) can inspect, edit, or delete any profile item at any time, and a resident's objection always prevails
+* Acoustic and linguistic engagement metrics (M-22) are reduced to numerical summary scores on the robot before reaching the local server
+* Research analysis uses pseudonymised data under institutional ethics approval and separate consent (O-5)
 )))
 |Alternatives considered|(((
-Cloud matching services: rejected (TECH-07).
+Cloud-hosted speech and language services: rejected to prevent biographical audio and transcripts from leaving the care home (TECH-07).
 
-A thin profile (unit, table, age): not preferred. Matches lose their reason.
+Minimal profiles containing only age and unit: rejected because matches lose personal identity and shared reminiscence ground.
 )))
-|Status of the tension|Open. Verified by UC02-F6-PR6; tested by adverse UC02-F2-CL4.
+|Status of the tension|Open. Verified by UC02-F6-PR6; tested by adverse Claim UC02-F2-CL4.
 
 = Value Tension - Privacy and Autonomy vs Well-being [VT-06] =
 
@@ -177,30 +176,30 @@ A thin profile (unit, table, age): not preferred. Matches lose their reason.
 
 |=Field|=Description
 |ID|VT-06
-|Name|Privacy and Autonomy vs Well-being (noticing a resident who stays in)
+|Name|Privacy and Autonomy vs Well-being (noticing bedroom isolation without intruding)
 |Status|In Progress
-|Evidence basis|Provisional. Group reasoning only. Niemeijer et al. (2010, 2015). Illustrated by PS-02.
+|Evidence basis|Provisional; grounded in Niemeijer et al. (2010, 2015) and Jansen et al. (2017), and illustrated by PS-02.
 |Values in tension|(((
-HV-05 Well-being: withdrawal noticed before mood and mobility decline.
+HV-05 Well-being: noticing sustained bedroom isolation early, before mood, confidence, and mobility deteriorate.
 
-HV-03 Privacy and HV-01 Autonomy: time in one's room is private, and staying in is a legitimate choice.
+HV-03 Privacy and HV-01 Autonomy: respecting the bedroom as private space and recognising that time alone is a legitimate personal choice.
 )))
 |Domain area|privacy; personhood
-|Nature of the conflict|Withdrawal is gradual and seen late (PS-02). Noticing it means knowing how long a resident stays in their room. That knowledge intrudes on private time, and a visit prompted by it can feel like being watched.
-|Non-negotiable floor|The System never contacts the resident about time in their room; a person decides what to do. No location log.
+|Nature of the conflict|Social withdrawal in a care home develops gradually and is easily missed between busy care rounds (PS-02). Detecting sustained isolation requires sensing how much time a resident spends in their bedroom against communal spaces. However, fine-grained tracking compromises privacy and dignity, and a staff visit triggered by a sensor can make the resident feel watched in their own room.
+|Non-negotiable floor|Presence sensing uses only coarse daily resolution, requires explicit opt-in consent and resident assent, and never triggers an automated robot prompt about bedroom time.
 |Current resolution|(((
-* Only for residents who agreed, or whose representative agreed with the resident's assent (O-7)
-* The System keeps a daily count of hours in the room, never a timeline
-* Staff hear only of a pattern over several days [threshold - O-2], never of a single day
-* The note goes to the resident's named care worker, who decides whether to call in, and calls in to offer company, never to check
-* The resident can stop it at any time
+* Room and communal presence sensing (TECH-03) is enabled only for residents who give separate consent and ongoing assent (O-7)
+* The System records only a coarse daily summary (proportion of waking hours in the bedroom vs. common areas), never a minute-by-minute movement log or camera feed
+* Care staff are notified only when bedroom isolation remains elevated across several consecutive days [threshold - O-2], respecting normal day-to-day desires for quiet and solitude
+* The notification goes solely to the resident's primary care worker, who decides whether to drop by and always frames a visit as a warm offer of company rather than a welfare check
+* The resident or representative can disable presence sensing at any time
 )))
 |Alternatives considered|(((
-Staff observation alone, as today: kept alongside. It misses gradual withdrawal.
+Relying on informal staff observation alone: retained alongside, but insufficient on its own because gradual day-by-day withdrawal across shifts goes unnoticed (PS-02).
 
-Continuous location tracking: rejected (TECH-09).
+Continuous fine-grained location or camera monitoring: rejected as intrusive surveillance (TECH-09).
 )))
-|Status of the tension|Open. Verified by UC03-F5-PR5; tested by adverse UC03-F5-CL7.
+|Status of the tension|Open. Verified by UC03-F5-PR5; tested by adverse Claim UC03-F5-CL7.
 
 == Graph edges ==
 
@@ -212,6 +211,7 @@ VT-03: involves → HV-08, HV-05; bounds → F3, F4; tested-by → UC01-F4-PR4, 
 
 VT-04: involves → HV-02, HV-06; bounds → F3; tested-by → UC02-F3-PR3, UC01-F3-CL5.
 
-VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-06; tested-by → UC02-F6-PR6, UC02-F2-CL4.
+VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-06, TECH-18; tested-by → UC02-F6-PR6, UC02-F2-CL4.
 
 VT-06: involves → HV-03, HV-01, HV-05; bounds → F5; strained-by → TECH-03; tested-by → UC03-F5-PR5, UC03-F5-CL7.
+

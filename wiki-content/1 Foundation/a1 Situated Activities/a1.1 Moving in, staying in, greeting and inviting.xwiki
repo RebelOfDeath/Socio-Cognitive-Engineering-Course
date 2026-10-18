@@ -2,7 +2,7 @@
 title: a1.1 Moving in, staying in, greeting and inviting
 syntax: xwiki/2.1
 %%WIKI-SYNC-META%%
-**Abstract.** Four activities: moving into the care home (SA-01), waiting for a reason to leave the room (SA-02), greeting someone new (SA-03) and inviting someone to spend time together (SA-04). A newcomer arrives confused, with little say, among strangers. Others have stayed in their rooms for months. Shyness, forgotten names and facts, and having nothing to say stop most first contacts. Fewer still talk, held back by fear of a "no" or of intruding. Staff broker most introductions, depending on who is on shift.
+**Abstract.** Four situated activities underpin our concept: moving into the care home (SA-01), waiting in one's bedroom for a reason to come out (SA-02), greeting someone new (SA-03), and inviting a fellow resident to spend time together (SA-04). A newcomer arrives disoriented, with little say in the transition, surrounded by strangers. Other residents stay in their bedrooms for months at a time. Shyness, forgotten names, and difficulty finding a topic stall most first conversations, and fear of rejection or intrusion keeps residents from inviting peers to join them. Care staff broker most introductions when their workload permits, relying on whatever personal history they happen to know on shift.
 
 = Situated Activity - Moving into the care home [SA-01] =
 
@@ -15,56 +15,56 @@ syntax: xwiki/2.1
 |Name|Moving into the care home
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Literature and group reasoning only.
+Provisional; based on published literature and group reasoning.
 
-* Lai & Arthur (2003): wandering and exit-seeking in people with dementia
-* Victor (2012): loneliness in care homes is common
+* Sury et al. (2013): moving into residential care is a period of loss and disorientation for people with dementia.
+* Lai & Arthur (2003): wandering and exit-seeking in people with dementia.
+* Victor (2012): loneliness is widespread in residential care homes.
 )))
-|Goal|Settle in, learn the place and the routine, know some faces and regain some control.
+|Goal|Settle into the home, learn the layout and daily rhythm, recognise a few familiar faces, and regain a sense of personal control.
 |Performing Actor(s)|(((
-* ST-01: Resident - moves in
-* ST-02: Fellow resident - may welcome
-* ST-03: Relative - arranges the move, gives the life story
-* ST-04: Care worker - receives and shows around
-* ST-05: Activity coordinator - takes the life story, assigns a seat, introduces
-* ST-06: Medical and therapy staff - assess walking
+* ST-01: Resident - moves into the home
+* ST-02: Fellow resident - may welcome the newcomer
+* ST-03: Relative - arranges the move and shares biographical history
+* ST-04: Care worker - receives the newcomer and shows them around
+* ST-05: Activity coordinator - records the life story, assigns dining seats, and introduces residents
+* ST-06: Medical and therapy staff - assess cognitive and mobility needs at admission
 )))
-|Trigger|Living at home ends after a fall, a hospital stay or a carer who can no longer cope. A place comes free.
+|Trigger|Living at home becomes unsustainable after a fall, a hospital admission, or caregiver exhaustion, and a room in the care home opens up.
 |Constituent Tasks|(((
-1. Pack and say goodbye
-1. Arrive and unpack
-1. Learn the way to the room, toilet, dining room, lounge and garden door
-1. Learn the daily routine and house rules
-1. Meet staff and residents (SA-03)
-1. Give the life story
-1. Find a seat at table and a role
+1. Pack belongings and say goodbye to home
+1. Arrive at the care home and unpack
+1. Learn the way between the bedroom, bathroom, dining room, and communal lounge
+1. Learn the daily schedule and house routines
+1. Meet care staff and fellow residents (SA-03)
+1. Share biographical history and personal preferences
+1. Find a regular place at table and a comfortable daily rhythm
 )))
-|Context|Often unplanned, decided by others, with little say over timing or room. Knows nobody. Staff change by shift, and other residents are often further into dementia and quiet. Doors and corridors look alike, and exits are coded. New surroundings add to confusion. The home sets meals, bedtime and going out.
-|Frequency and duration|Once per resident. Settling takes weeks to months.
-|Tools and artifacts|Room, name on door, intake form, life-story book, care plan, house rules, activity programme, coded doors
+|Context|Admissions are often unplanned and decided by relatives or clinicians, leaving the resident little say over timing or room choice. The newcomer arrives knowing nobody. Staff rotate across shifts, and many fellow residents live with more advanced dementia and speak little. Corridors and doors look alike, exits are keypad-coded, and the unfamiliar layout compounds confusion. Meal times and house routines are fixed by the institution.
+|Frequency and duration|Once per admission; settling in takes weeks to months.
+|Tools and artifacts|Bedroom, name plate on the door, intake form, life-story book, care plan, house rules, weekly activity programme, coded doors.
 |Existing workarounds|(((
-* Own furniture and photos
-* A visit before the move
-* Life story taken with family
-* A named care worker
-* Family stay the first day and visit often early on
-* Introductions (SA-03)
-* Keeping old habits, like the morning paper or a daily walk
+* Bringing familiar furniture, ornaments, and family photographs from home
+* Visiting the care home before admission day
+* Recording a life story together with family members
+* Assigning a primary care worker as a consistent point of contact
+* Frequent family visits during the first days
+* Staff-led introductions to table neighbours (SA-03)
+* Maintaining familiar habits, such as reading the morning paper or having coffee at a set hour
 )))
 |Observed breakdowns|(((
-* Does not know why they are here, or thinks it temporary
-* Asks to go home and heads for the exit
-* Cannot find the room, toilet or dining room
-* Grieves for the home, spouse, pet and neighbours left behind
-* Resists the routine and care, angry at family or staff
-* Has nobody to talk to (PS-01)
-* Meets too many new faces to remember (PS-01)
-* Seated among residents who do not talk
-* Stays in the room, skipping shared meals and activities (SA-02)
-* Life story not taken, or not passed on
-* Family visits taper
-* Not allowed out alone until walking is assessed (ST-06)
-* Withdrawal is seen late
+* The resident does not understand why they are in the home, or believes the stay is only for a few days
+* The resident asks to go home and searches for an exit
+* The resident cannot find their bedroom, the bathroom, or the dining room
+* Grief over the house, spouse, pets, and neighbours left behind
+* Resistance to care routines and resentment toward family or staff
+* Having nobody to talk to during the day (PS-01)
+* Meeting too many unfamiliar faces at once to remember any of them (PS-01)
+* Being seated at meals among residents who rarely speak
+* Retreating to the bedroom and skipping communal meals or activities (SA-02)
+* Biographical history is never collected, or stays in a file that floor staff never read
+* Family visits gradually become less frequent
+* Social withdrawal goes unnoticed amid routine physical care
 )))
 
 == Graph edges ==
@@ -82,43 +82,44 @@ performed-by → ST-01 (supported by ST-02 to ST-06); precedes → SA-02, SA-03;
 |Name|Waiting for a reason to leave the room
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Literature and group reasoning only.
+Provisional; based on published literature and group reasoning.
 
-* Victor (2012): loneliness in care homes is common
-* Clare (2003): people aware of decline protect themselves, or face it
+* Jansen et al. (2017): nursing-home residents spend large portions of the waking day isolated in their private bedrooms.
+* Victor (2012): loneliness in care homes is widespread.
+* Clare (2003): people aware of cognitive decline often withdraw socially to protect themselves from embarrassment.
 )))
-|Goal|Find a reason worth leaving the room for.
+|Goal|Find a worthwhile, comfortable reason to leave the bedroom and spend time around others.
 |Performing Actor(s)|(((
-* ST-01: Resident - waits, then goes out or stays
-* ST-03: Relative - visits
-* ST-04: Care worker - looks in, brings meals
-* ST-05: Activity coordinator - invites to activities
+* ST-01: Resident - stays in the bedroom and decides whether to come out
+* ST-03: Relative - visits occasionally
+* ST-04: Care worker - checks in briefly and brings care or meals
+* ST-05: Activity coordinator - invites the resident to communal activities
 )))
-|Trigger|Nothing planned and nobody to see, often a habit built over months
+|Trigger|An empty schedule and no particular person to meet in the common areas, hardening into a daily habit over weeks or months.
 |Constituent Tasks|(((
-1. Get up and dress
-1. Pass the time with television, the window or a doze
-1. Listen for a knock, a meal or a visit
-1. Weigh an invitation
-1. Go out, or stay
+1. Wake, wash, and dress
+1. Pass the hours watching television, looking out the window, or dozing
+1. Listen for a knock at the door, a meal delivery, or a visitor
+1. Weigh an invitation from staff to join the lounge or an activity
+1. Step out to the common areas, or remain in the room
 )))
-|Context|Has lived in the home for months or years. The room is the one place they control. Staff look in briefly. Earlier acquaintances have moved, died or been forgotten. The lounge is full of strangers.
-|Frequency and duration|Daily, most of the day.
-|Tools and artifacts|Room, television, window, call bell, meal tray, activity programme
+|Context|The resident has lived in the home for months or years. Their private bedroom feels safe, quiet, and within their control, whereas the communal lounge is noisy and full of strangers. Staff check in briefly between care tasks. Earlier acquaintances in the home may have passed away, moved unit, or faded from memory.
+|Frequency and duration|Daily, often spanning most waking hours.
+|Tools and artifacts|Bedroom, armchair, television, window, call bell, meal tray, printed activity programme.
 |Existing workarounds|(((
-* Meals in the dining room
-* Staff invite to activities, more than once
-* A favourite activity, like music or bingo
-* A small task, like folding napkins or watering plants
-* Family visits and walks
+* Serving meals in the communal dining room
+* Staff repeating invitations gently rather than asking only once
+* Offering a familiar group activity, such as music or bingo
+* Giving the resident a small, valued role, such as folding napkins or tending indoor plants
+* Visits and outings with family members
 )))
 |Observed breakdowns|(((
-* No reason comes, and the day passes in the room
-* Invitations are to activities, not to see someone
-* Declines every invitation, and staff stop asking (PS-02)
-* Sleeps by day and lies awake at night
-* Mood and walking decline unseen (PS-02)
-* Forgets the names of the few people they knew
+* No compelling reason arises, and the entire day passes alone in the bedroom
+* Staff invitations focus on scheduled group events rather than meeting a compatible peer
+* The resident declines repeated invitations until staff stop asking (PS-02)
+* Daytime napping disrupts nighttime sleep
+* Mood, confidence, and physical mobility decline gradually without triggering an alert (PS-02)
+* The resident forgets the names of the few peers they once knew
 )))
 
 == Graph edges ==
@@ -136,61 +137,61 @@ performed-by → ST-01 (supported by ST-03 to ST-05); may follow → SA-01; prec
 |Name|Greeting someone new
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Literature and group reasoning only.
+Provisional; based on published literature and group reasoning.
 
-* Orange et al. (1996): in Alzheimer's disease, trouble in conversation grows and repair succeeds less often
-* Clare (2003): people aware of decline protect themselves, or face it
+* Orange et al. (1996): conversational breakdowns become more frequent in Alzheimer's disease, and repair succeeds less often.
+* Clare (2003): awareness of cognitive slips leads residents to guard against losing face.
 )))
-|Goal|Exchange names and a few words, with a reason to talk again and no face lost.
+|Goal|Exchange names and a brief, pleasant conversation that leaves both residents willing to speak again without embarrassment.
 |Performing Actor(s)|(((
-* ST-01: Resident - greets, or is greeted
-* ST-02: Fellow resident - greets, or is greeted
-* ST-03: Relative - introduces
-* ST-04: Care worker - introduces
-* ST-05: Activity coordinator - assigns seats, introduces
+* ST-01: Resident - greets or responds to a peer
+* ST-02: Fellow resident - greets or responds to ST-01
+* ST-03: Relative - occasionally introduces residents during a visit
+* ST-04: Care worker - introduces residents in passing
+* ST-05: Activity coordinator - arranges seating and introduces compatible peers
 )))
-|Trigger|A newcomer (SA-01), a new neighbour at table, a stranger nearby, or a staff introduction
+|Trigger|Encountering a newcomer (SA-01), sitting beside a new neighbour at meals, passing a peer in the lounge, or being introduced by staff.
 |Constituent Tasks|(((
-1. Notice the other and decide to speak
-1. Greet
+1. Notice the other resident and decide to speak
+1. Offer a greeting
 1. Exchange names
-1. Say something about one's town, work or family
-1. Ask, listen, answer
-1. Find a shared topic
-1. Close ("See you at dinner")
-1. Next time, recognise them and recall the name
+1. Mention a personal detail, such as one's hometown, former trade, or family
+1. Ask a question, listen, and reply
+1. Discover a shared topic or memory
+1. Part on warm terms ("See you at dinner")
+1. Recognise the person next time and recall their name
 )))
-|Context|Staff decide who sits with whom. Memory loss takes names, faces and own facts. Hearing and sight are often poor. Small talk costs effort, and silence feels like failure. The other often has dementia too. Greetings happen in shared rooms, where others watch.
-|Frequency and duration|Daily. Seconds to minutes.
-|Tools and artifacts|Lounge, dining tables, seating plan, names on doors, name badges, life-story book, photos
+|Context|Seating in the dining room and lounge is largely arranged by staff. Short-term memory loss erodes names, faces, and even one's own recent stories, while hearing or vision loss makes cues easy to miss. Making small talk with a stranger takes effort, and an awkward silence feels like a personal failure—especially in shared rooms where others can overhear.
+|Frequency and duration|Daily; lasting from a few seconds to several minutes.
+|Tools and artifacts|Communal lounge, dining tables, seating plan, door name plates, life-story books, photographs.
 |Existing workarounds|(((
-* Staff introduce and re-introduce, with names and one shared fact
-* Staff introduce residents who share a town, trade or church
-* Seat a newcomer beside a talkative resident
-* Names on doors or badges
-* Safe topics like the weather, food or the view
-* Habitual greetings ("Good morning", a handshake)
-* Life-story book or photos as a prompt
+* Staff introduce and re-introduce residents by name, adding one shared detail to spark talk
+* Staff connect residents who come from the same region, trade, or congregation
+* Seating a newcomer beside an outgoing resident at meals
+* Door name plates or table place cards
+* Relying on immediate, low-memory topics such as the weather, the meal, or the view outside
+* Using habitual courtesies ("Good morning", a nod, or a handshake)
+* Looking through a photo album or life-story book together
 )))
 |Observed breakdowns|(((
-* Too shy to speak first
-* Greets a known face as new, or the reverse
-* Forgets the name and asks again, embarrassed
-* Avoids someone whose name they have forgotten (PS-03)
-* Forgets own facts and goes quiet
-* Runs out of things to say, and one leaves
-* Repeats a question, and the other notices
-* Mishears and nods along
-* Offends by being too familiar or too formal
-* A greeting goes unheard and is read as a snub
-* Talk stops once staff leave
-* Ignored when joining a group mid-talk
-* Residents with a shared past never find out
-* Staff share a personal fact without consent
-* Introductions follow who is on shift, not residents' wishes
-* Introductions come all at once, and nobody repeats them (PS-01)
-* A good first talk is not followed by a second (PS-03)
-* Avoids the other after an awkward meeting
+* Both residents feel too shy to speak first
+* Greeting a familiar neighbour as a stranger, or mistaking a stranger for someone else
+* Forgetting the other person's name and feeling too embarrassed to ask again
+* Avoiding a friendly acquaintance specifically to hide having forgotten their name (PS-03)
+* Losing the thread mid-sentence and falling silent
+* Running out of things to say until one person walks away
+* Repeating the same question within minutes, which the other resident notices
+* Mishearing a remark in a noisy room and merely nodding along
+* Striking a tone that feels overly familiar or stiffly formal
+* A quiet greeting goes unheard and is mistaken for a deliberate snub
+* Conversation dies as soon as the staff member who introduced them walks away
+* Being ignored when trying to join an existing group conversation
+* Two residents who share a hometown, trade, or interest sit yards apart for months without ever finding out
+* Staff mention a private detail about a resident without asking permission first
+* Introductions depend on which caregiver is on shift rather than on residents' compatibility or wishes
+* A flurry of first-day introductions is never followed up (PS-01)
+* A warm first conversation never leads to a second meeting (PS-03)
+* Avoiding a peer after an awkward or halting exchange
 )))
 
 == Graph edges ==
@@ -208,71 +209,69 @@ performed-by → ST-01, ST-02 (supported by ST-03 to ST-05); preceded-by → SA-
 |Name|Inviting someone to spend time together
 |Status|In Progress
 |Evidence basis|(((
-Provisional. Literature and group reasoning only.
+Provisional; based on published literature and group reasoning.
 
-* de Medeiros et al. (2012): residents with dementia form and keep friendships
-* Victor (2012): loneliness in care homes is common
-* Woods et al. (2018): reminiscence slightly improves communication, mood and quality of life
-* Astell et al. (2010): a touchscreen of old photos, music and film supports conversation
-* Särkämö et al. (2014): singing and listening to familiar songs improve mood and memory
-* Gonzalez & Kirkevold (2014): garden and horticultural activities increase social engagement and reduce agitation
-* Camp & Skrajner (2004): residents with milder dementia can lead activities for others
-* Spector et al. (2003): themed group activities improve cognition and quality of life
+* de Medeiros et al. (2012): residents with dementia in long-term care form and maintain meaningful friendships.
+* Victor (2012): loneliness in care homes is common.
+* Woods et al. (2018): structured reminiscence supports communication, mood, and quality of life.
+* Astell et al. (2010): shared touchscreen media (photographs, music, film clips) scaffolds conversation in dementia.
+* Särkämö et al. (2014): singing and listening to familiar music improve mood and episodic memory.
+* Gonzalez & Kirkevold (2014): garden and horticultural activities increase social engagement and reduce agitation.
+* Camp & Skrajner (2004): residents with milder dementia can lead structured small-group games for peers.
+* Spector et al. (2003): themed cognitive stimulation activities improve communication and quality of life.
 )))
-|Goal|Spend time with another resident over something both enjoy. Either can say no without losing face.
+|Goal|Spend enjoyable time with a fellow resident over a shared activity, while leaving both people free to decline or finish without losing face.
 |Performing Actor(s)|(((
-* ST-01: Resident - invites
+* ST-01: Resident - extends or considers an invitation
 * ST-02: Fellow resident - accepts or declines
-* ST-03: Relative - includes another resident in a visit
-* ST-04: Care worker - suggests an activity, sets it up, opens the garden door
-* ST-05: Activity coordinator - seats and groups residents, provides materials
-* ST-06: Medical and therapy staff - assess walking before a walk is suggested
+* ST-03: Relative - occasionally includes a fellow resident during a visit
+* ST-04: Care worker - suggests a shared activity, brings coffee or materials, or helps residents move to the lounge
+* ST-05: Activity coordinator - pairs compatible residents and provides materials or icebreakers
+* ST-06: Medical and therapy staff - note any clinical or mobility restrictions in the care plan
 )))
-|Trigger|Loneliness, someone sitting alone, fine weather, a shared interest, a staff suggestion, or a good first meeting (SA-03)
+|Trigger|Feeling lonely, noticing a peer sitting alone, discovering a shared interest during an introduction (SA-03), or receiving a gentle suggestion from staff.
 |Constituent Tasks|(((
-1. Pick someone
-1. Find an opening
-1. Read interest
-1. Suggest something to do, and a time
-1. Accept or decline
-1. Remember the time, meet and begin
-1. Find a way to finish, and perhaps to meet again
+1. Choose a fellow resident to spend time with
+1. Find an approachable moment to speak
+1. Gauge whether the other person seems receptive
+1. Suggest a shared activity and a time
+1. Accept or decline the invitation
+1. Remember the plan, meet in the common area, and begin
+1. Bring the activity to a natural close, with the option to meet again
 )))
 |Context|(((
-Invitations happen in shared rooms. Others hear, so a "no" is public and a "yes" hard to refuse. A shared task gives the two something to talk about and makes pauses comfortable. Many activities need staff to set them up, unlock the garden or kitchen, or go along; walking is assessed first (ST-06).
+Invitations in a care home usually happen in communal rooms where others can overhear, making a direct refusal feel rude and an acceptance feel pressured. Having a concrete activity or topic in front of both residents eases the burden of continuous conversation and makes pauses comfortable. Many shared activities benefit from light staff support to set out materials or bring two residents to the same table.
 
-The following activities suit two people. Those with a reference were studied with people with dementia, often in groups:
+Ordinary activities that work well for two residents include:
 
-* A card or board game, a jigsaw, a crossword, the newspaper, baking, laying tables
-* A walk in the garden, often suggested by staff for the exercise and fresh air
-* Potting, watering or picking in a raised bed (Gonzalez & Kirkevold, 2014)
-* Looking through photos, music or objects from the past (Woods et al., 2018), or a touchscreen collection of them (Astell et al., 2010)
-* Singing or listening to familiar songs (Särkämö et al., 2014)
-* Word games, quizzes and sorting objects into categories (Spector et al., 2003)
-* Montessori-based games, such as memory bingo, which a resident with milder dementia can lead for another (Camp & Skrajner, 2004)
+* Sharing coffee or tea, playing cards or board games, working on a jigsaw or crossword, reading the newspaper, or helping lay tables
+* Reminiscing over old photographs, music, or objects from a familiar era (Woods et al., 2018), including on a shared touchscreen (Astell et al., 2010)
+* Listening to or singing familiar songs from their youth (Särkämö et al., 2014)
+* Tending indoor plants, potting herbs in a raised bed, or taking a stroll in the garden (Gonzalez & Kirkevold, 2014)
+* Light word games, trivia, or sorting activities (Spector et al., 2003; Camp & Skrajner, 2004)
 )))
-|Frequency and duration|Rare. Minutes to an hour.
-|Tools and artifacts|Lounge, dining tables, seating plan, activity programme, staff knowledge, garden door, raised beds, cards and board games, jigsaws, photo albums, old objects, song books, music player, touchscreen, newspapers
+|Frequency and duration|Uncommon without facilitation; typically 15 minutes to an hour when it occurs.
+|Tools and artifacts|Communal lounge, dining tables, coffee and tea service, cards, board games, jigsaws, photo albums, nostalgic music or objects, touchscreen tablet, newspapers, garden patio and raised beds.
 |Existing workarounds|(((
-* Staff suggest an activity for two, often a walk
-* Residents meet again and again at the same table or activity
-* A group activity serves as an opening
-* A relative includes a second resident in a visit
-* A resident joins someone already busy, in the garden or at a jigsaw
-* Staff give two residents a shared task, like watering plants or laying tables
+* Staff suggest a simple activity for two residents, such as having coffee together or looking at photos
+* Seating the same pair near each other at meals or group events so familiarity grows
+* Using a scheduled group activity as a low-pressure setting to sit side by side
+* A visiting relative draws a neighbour into the conversation
+* One resident joins another who is already occupied with a puzzle, music, or plants
+* Staff ask two residents to help with a small shared chore, such as folding linen or watering plants
 )))
 |Observed breakdowns|(((
-* The greeting failed, or never happened (SA-03)
-* Does not ask, for fear of a "no" or of being a bother
-* Hearing loss or a flat expression is read as "no"
-* Agrees to please when asked in front of others (PS-04)
-* Neither knows how to finish, and the activity runs on too long (PS-04)
-* The activity is too hard for one of them, who feels exposed
-* An invitation is read as courtship, and the inviter avoided
-* Both forget the agreement
-* No staff are free to set up, unlock or go along
-* In a group of three, one is left out
-* Never asks again after one "no"
+* The initial greeting never happened or stalled awkwardly (SA-03)
+* Neither resident asks, out of shyness or fear of being turned down
+* Hearing loss or a flat facial expression is misread as disinterest
+* A resident agrees only to be polite because the request was made face to face in front of others (PS-04)
+* Neither person knows how to wind down the meeting, so it drags on until one feels trapped and tired (PS-04)
+* An activity proves too demanding for one resident, leaving them feeling exposed
+* A friendly invitation is misconstrued as romantic interest, causing avoidance
+* Both residents forget the agreed time before the meeting happens
+* No staff member is free to help bring the two residents together or set out materials
+* In a group of three, one resident is inadvertently left out of the talk
+* After a single refusal, the resident never risks asking anyone again
 )))
 
 == Graph edges ==
@@ -283,21 +282,19 @@ performed-by → ST-01, ST-02 (supported by ST-03 to ST-06); preceded-by → SA-
 
 * Astell, A. J., Ellis, M. P., Bernardi, L., Alm, N., Dye, R., Gowans, G. & Campbell, J. (2010). Using a touch screen computer to support relationships between people with dementia and caregivers. //Interacting with Computers//, 22(4), 267-275.
 * Bora, E., Walterfang, M. & Velakoulis, D. (2015). Theory of mind in behavioural-variant frontotemporal dementia and Alzheimer's disease: a meta-analysis. //Journal of Neurology, Neurosurgery & Psychiatry//, 86(7), 714-719.
-* Bratman, G. N., Hamilton, J. P., Hahn, K. S., Daily, G. C. & Gross, J. J. (2015). Nature experience reduces rumination and subgenual prefrontal cortex activation. //PNAS//, 112(28), 8567-8572.
 * Camp, C. J. & Skrajner, M. J. (2004). Resident-Assisted Montessori Programming (RAMP): training persons with dementia to serve as group activity leaders. //The Gerontologist//, 44(3), 426-431.
 * Clare, L. (2003). Managing threats to self: awareness in early stage Alzheimer's disease. //Social Science & Medicine//, 57(6), 1017-1029.
-* Detweiler, M. B., Murphy, P. F., Myers, L. C. & Kim, K. Y. (2008). Does a wander garden influence inappropriate behaviors in dementia residents? //American Journal of Alzheimer's Disease & Other Dementias//, 23(1), 31-45.
-* Forbes, D. et al. (2015). Exercise programs for people with dementia. //Cochrane Database of Systematic Reviews//, (4), CD006489.
+* de Medeiros, K., Saunders, P. A., Doyle, P. J., Mosby, A. & Van Haitsma, K. (2012). Friendships among people with dementia in long-term care. //Dementia//, 11(3), 363-381.
 * Gonzalez, M. T. & Kirkevold, M. (2014). Benefits of sensory garden and horticultural activities in dementia care: a modified scoping review. //Journal of Clinical Nursing//, 23(19-20), 2698-2715.
 * James, I. A., Wood-Mitchell, A., Waterworth, A. M., Mackenzie, L. E. & Cunningham, J. (2006). Lying to people with dementia: developing ethical guidelines for care settings. //International Journal of Geriatric Psychiatry//, 21(8), 800-801.
+* Jansen, C. P., Diegelmann, M., Schnabel, E. L., Wahl, H. W. & Hauer, K. (2017). Life-space and movement behavior in nursing home residents: results of a new sensor-based assessment and associated factors. //BMC Geriatrics//, 17, 36.
 * Lai, C. K. Y. & Arthur, D. G. (2003). Wandering behaviour in people with dementia. //Journal of Advanced Nursing//, 44(2), 173-182.
-* Lundin-Olsson, L., Nyberg, L. & Gustafson, Y. (1997). "Stops walking when talking" as a predictor of falls in elderly people. //The Lancet//, 349(9052), 617.
-* de Medeiros, K., Saunders, P. A., Doyle, P. J., Mosby, A. & Van Haitsma, K. (2012). Friendships among people with dementia in long-term care. //Dementia//, 11(3), 363-381.
 * Mental Health Foundation (2016). //What Is Truth? An Inquiry about Truth and Lying in Dementia Care//. London: Mental Health Foundation.
-* Montero-Odasso, M., Verghese, J., Beauchet, O. & Hausdorff, J. M. (2012). Gait and cognition: a complementary approach to understanding brain function and the risk of falling. //Journal of the American Geriatrics Society//, 60(11), 2127-2136.
 * Orange, J. B., Lubinski, R. B. & Higginbotham, D. J. (1996). Conversational repair by individuals with dementia of the Alzheimer's type. //Journal of Speech and Hearing Research//, 39(4), 881-895.
 * Särkämö, T., Tervaniemi, M., Laitinen, S., Numminen, A., Kurki, M., Johnson, J. K. & Rantanen, P. (2014). Cognitive, emotional, and social benefits of regular musical activities in early dementia: randomized controlled study. //The Gerontologist//, 54(4), 634-650.
 * Schegloff, E. A., Jefferson, G. & Sacks, H. (1977). The preference for self-correction in the organization of repair in conversation. //Language//, 53(2), 361-382.
 * Spector, A., Thorgrimsen, L., Woods, B., Royan, L., Davies, S., Butterworth, M. & Orrell, M. (2003). Efficacy of an evidence-based cognitive stimulation therapy programme for people with dementia: randomised controlled trial. //British Journal of Psychiatry//, 183, 248-254.
+* Sury, L., Burns, K. & Brodaty, H. (2013). Moving in: adjustment of people living with dementia going into a nursing home and their families. //International Psychogeriatrics//, 25(6), 867-876.
 * Victor, C. R. (2012). Loneliness in care homes: a neglected area of research? //Aging Health//, 8(6), 637-646.
 * Woods, B., O'Philbin, L., Farrell, E. M., Spector, A. E. & Orrell, M. (2018). Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, (3), CD001120.
+
