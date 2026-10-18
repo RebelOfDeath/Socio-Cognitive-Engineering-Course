@@ -4,6 +4,7 @@
   const start = () => Deck.init({
     stops: K.STOPS,
     chapters: K.CHAPTERS,
+    notes: K.notes,
     build: A => K.scenes.forEach(scene => scene(A)),
   });
   const fonts = document.fonts ? document.fonts.ready : Promise.resolve();

@@ -1,7 +1,8 @@
 /*
  * Shared vocabulary for the story: stops, chapters, palette, DOM helpers and
- * the two recurring illustrations (the sink and Pepper). Scene files push
- * builder functions onto K.scenes; main.js runs them in order.
+ * the recurring illustration (the floor plan of the home, with its residents
+ * as dots). Scene files push builder functions onto K.scenes; main.js runs
+ * them in order.
  */
 (function () {
   'use strict';
@@ -11,61 +12,59 @@
   const layer = document.getElementById('layer');
 
   const C = {
-    ink: '#0D1017', ink2: '#151A24', ink3: '#1E2431', line: '#2B3242',
-    paper: '#F3EEE4', muted: '#8A92A3',
-    mary: '#F4B740', myra: '#3FD8B0', sys: '#8F8CFF', alert: '#FF5E3A',
+    bg: '#1A2340', bg2: '#243054', card: '#243054', ink: '#F4EAD5', line: '#4E4B46', muted: 'rgba(244,234,213,.46)',
+    elena: '#D4A574', jan: '#F4EAD5', sys: '#E8C77A', myra: '#A9B4D6', mc: '#8C8A84', alert: '#E08A72',
   };
 
+  const WIKI = 'https://xwiki.ewi.tudelft.nl/xwiki/wiki/sce2026group04';
+  const POC = 'https://github.com/gintskk/sce-poc';
+
   const CHAPTERS = [
-    'Cover', 'The morning', 'What matters', 'The bet', 'One morning, redesigned',
-    'The pattern', 'How we will know', 'The whole picture', 'What is still open',
+    'Cover', 'Moving in', 'Two lines', 'What matters', 'What we know', 'The technology',
+    'Elena’s first week', 'The design', 'The prototype', 'How we will know', 'Meet again',
   ];
 
   /* w = length of the transition into this stop (in viewport heights of scroll).
      dur = how long the glide into it takes when advancing with the keyboard. */
   const STOPS = [
-    { id: 'cover', ch: 0, title: 'The wait is the design' },
-    { id: 'dawn', ch: 1, title: '7:40 a.m. at the sink', w: 1.2, dur: 1900 },
-    { id: 'steps', ch: 1, title: 'Nine small steps' },
-    { id: 'stall', ch: 1, title: 'She pauses', w: 1.4, dur: 2600 },
-    { id: 'subproblems', ch: 1, title: 'Three ways the thread breaks' },
-    { id: 'round', ch: 1, title: 'Myra’s morning round', w: 1.4, dur: 2400 },
-    { id: 'returns', ch: 1, title: 'Every return costs someone', w: 1.4, dur: 3000 },
-    { id: 'rogers', ch: 1, title: 'The method works, and costs time' },
-    { id: 'personas', ch: 2, title: 'Mary and Myra' },
-    { id: 'stakeholders', ch: 2, title: 'Five stakeholders', w: 1.2 },
-    { id: 'values', ch: 2, title: 'Six values', w: 1.3, dur: 2000 },
-    { id: 'instrumental', ch: 2, title: 'Attentive care is a means' },
-    { id: 'tensions', ch: 2, title: 'Seven tensions', w: 1.4, dur: 2400 },
-    { id: 'open-tensions', ch: 2, title: 'Two stay open' },
-    { id: 'hfc', ch: 2, title: 'Five human-factors mechanisms' },
-    { id: 'warden', ch: 2, title: 'The warden problem', w: 1.2 },
-    { id: 'bet', ch: 3, title: 'What if the robot carried the wait?' },
-    { id: 'tech', ch: 3, title: 'Six technology options', w: 1.5, dur: 2600 },
-    { id: 'pepper', ch: 3, title: 'Evidence against Pepper', w: 1.3, dur: 2200 },
-    { id: 'sensors', ch: 3, title: 'Track the items, not the person', w: 1.3, dur: 2200 },
-    { id: 'ds-start', ch: 4, title: 'Pepper says nothing', w: 1.3, dur: 2400 },
-    { id: 'ds-wait', ch: 4, title: 'The wait', w: 1.8, dur: 3600 },
-    { id: 'ds-l1', ch: 4, title: 'The lightest prompt', w: 1.5, dur: 3000 },
-    { id: 'ds-l2', ch: 4, title: 'One level more specific', w: 1.6, dur: 3200 },
-    { id: 'ds-done', ch: 4, title: '“All done.”', w: 1.5, dur: 2800 },
-    { id: 'ds-record', ch: 4, title: 'Three facts on Myra’s phone', w: 1.2 },
-    { id: 'ds-safety', ch: 4, title: 'If nothing moves at all' },
-    { id: 'ladder', ch: 5, title: 'Respectful graduated prompting', w: 1.3, dur: 2200 },
-    { id: 'direction', ch: 5, title: 'Which way the ladder runs' },
-    { id: 'tdp', ch: 5, title: 'Who does what', w: 1.3 },
-    { id: 'handover', ch: 5, title: 'When it fails, it says so' },
-    { id: 'objectives', ch: 6, title: 'Six objectives' },
-    { id: 'claims', ch: 6, title: 'Nine claims', w: 1.5, dur: 2600 },
-    { id: 'risky', ch: 6, title: 'Where we are most exposed' },
-    { id: 'measures', ch: 6, title: 'Seven measures' },
-    { id: 'evaluation', ch: 6, title: 'Three evaluations, cheapest first', w: 1.2 },
-    { id: 'graph', ch: 7, title: 'Everything, in one picture', w: 2.4, dur: 4200 },
-    { id: 'strains', ch: 7, title: 'Costs we accepted on purpose' },
-    { id: 'nodata', ch: 8, title: 'No resident has been asked yet' },
-    { id: 'open', ch: 8, title: 'Four things to settle' },
-    { id: 'fallbacks', ch: 8, title: 'If we are wrong', w: 1.2 },
-    { id: 'close', ch: 8, title: 'Thank you', w: 1.4, dur: 2400 },
+    { id: 'cover', ch: 0, title: 'Meaningful connections' },
+    { id: 'arrive', ch: 1, title: 'Elena moves in', w: 1.4, dur: 2600 },
+    { id: 'flurry', ch: 1, title: 'She meets everyone at once', w: 1.4, dur: 2600 },
+    { id: 'jan', ch: 1, title: 'Jan stays in his room', w: 1.2, dur: 2000 },
+    { id: 'wait', ch: 1, title: 'Same town, without knowing it', w: 1.2, dur: 2000 },
+    { id: 'polite', ch: 1, title: 'Saying yes to be polite' },
+    { id: 'lines', ch: 2, title: 'Two lines of the problem', w: 1.6, dur: 3000 },
+    { id: 'fork', ch: 2, title: 'Why we picked connections', w: 1.4, dur: 2600 },
+    { id: 'stakeholders', ch: 3, title: 'Stakeholders', w: 1.2 },
+    { id: 'values', ch: 3, title: 'Human values', w: 1.2 },
+    { id: 'tensions', ch: 3, title: 'Value tensions', w: 1.2 },
+    { id: 'hfc', ch: 4, title: 'Human factors', w: 1.2 },
+    { id: 'implies', ch: 4, title: 'Design rules', w: 1.2 },
+    { id: 'tech', ch: 5, title: 'Technology choices', w: 1.2 },
+    { id: 'prepared', ch: 5, title: 'Prepared sentences' },
+    { id: 'interview', ch: 6, title: 'The life-story interview', w: 1.4, dur: 2400 },
+    { id: 'hello', ch: 6, title: 'Pepper says hello', w: 1.3, dur: 2400 },
+    { id: 'match', ch: 6, title: 'The coordinator approves a match', w: 1.4, dur: 2800 },
+    { id: 'ask', ch: 6, title: 'Pepper asks Elena', w: 1.3, dur: 2400 },
+    { id: 'askjan', ch: 6, title: 'Pepper asks Jan', w: 1.3, dur: 2400 },
+    { id: 'meet', ch: 6, title: '“Your bread!”', w: 1.4, dur: 2600 },
+    { id: 'pause', ch: 6, title: 'Pepper stays silent', w: 1.2, dur: 2200 },
+    { id: 'gohome', ch: 6, title: '“When can I go home?”', w: 1.3, dur: 2400 },
+    { id: 'walk', ch: 6, title: 'A walk in the garden', w: 2, dur: 4200 },
+    { id: 'record', ch: 6, title: 'The record' },
+    { id: 'who', ch: 7, title: 'Who decides', w: 1.2 },
+    { id: 'patterns', ch: 7, title: 'How Pepper speaks', w: 1.2 },
+    { id: 'never', ch: 7, title: 'What Pepper never does' },
+    { id: 'claims', ch: 7, title: 'Claims', w: 1.2 },
+    { id: 'poc', ch: 8, title: 'A live walkthrough', w: 1.3, dur: 2200 },
+    { id: 'poc-people', ch: 8, title: 'Getting to know someone' },
+    { id: 'poc-map', ch: 8, title: 'The relationship map' },
+    { id: 'poc-wrong', ch: 8, title: '“I had that wrong.”' },
+    { id: 'verify', ch: 9, title: 'Checking the premises', w: 1.2 },
+    { id: 'study', ch: 9, title: 'The Kinnect study', w: 1.4, dur: 2600 },
+    { id: 'measures', ch: 9, title: 'Measures' },
+    { id: 'again', ch: 10, title: '“Would you like to meet Jan again?”', w: 1.4, dur: 2600 },
+    { id: 'thanks', ch: 10, title: 'Thank you', w: 1.2, dur: 2000 },
   ];
 
   /* ------------------------------------------------------------ helpers */
@@ -97,172 +96,154 @@
   const G = (parent, attrs) => S('g', attrs, parent);
 
   const ln = extra => Object.assign({
-    fill: 'none', stroke: C.paper, 'stroke-width': 2.4,
+    fill: 'none', stroke: C.ink, 'stroke-width': 2,
     'stroke-linecap': 'round', 'stroke-linejoin': 'round',
   }, extra);
 
-  /* Absolutely positioned HTML block, returned for chaining. */
   function block(cls, x, y, w, html, parent) {
     return place(H('div', cls, parent, html), x, y, w);
   }
 
-  /* SVG + HTML pair that can be moved and scaled together. */
-  function pair(A) {
-    const g = G(K.L.main);
-    const div = H('div', 'pair');
-    const p = A.proxy({ x: 0, y: 0, s: 1 }, q => {
-      const v = `translate(${q.x.toFixed(2)} ${q.y.toFixed(2)}) scale(${q.s.toFixed(4)})`;
-      if (v !== q._v) {
-        q._v = v;
-        g.setAttribute('transform', v);
-        div.style.transform = `translate(${q.x.toFixed(2)}px, ${q.y.toFixed(2)}px) scale(${q.s.toFixed(4)})`;
-      }
-    });
-    return { g, div, p };
+  /* A link to a cited work. Opens in a new tab so the deck keeps its place. */
+  const ref = (label, url) => `<a class="ref" href="${url}" target="_blank" rel="noopener">${label}</a>`;
+
+  const doi = (label, d) => ref(label, 'https://doi.org/' + d);
+
+  /* Top-right marker for where we are in Elena's week. */
+  function dayMark(A, inId, outId, n, w) {
+    const el = H('div', 'day', null, `<div class="n">${n}</div><div class="w">${w || 'Elena’s first week'}</div>`);
+    A.reveal(el, inId, { a: 0.2, b: 0.7, y: -12 });
+    if (outId) A.conceal(el, outId, { a: 0, b: 0.3, y: 0 });
+    return el;
   }
 
-  /* A caption: kicker, headline, optional quote, body, citation. */
+  /* Speaker notes per stop: what we say out loud, shown with N. */
+  const notes = {};
+  const note = (id, ...ps) => { (notes[id] = notes[id] || []).push(...ps); };
+
+  /* A caption: kicker, headline, a one-line subtitle (s), citation line.
+     The longer body (b) goes to the speaker notes, since we tell it. */
   function caption(A, inId, outId, o) {
+    if (o.b) note(inId, o.b);
     const el = H('div', 'cap' + (o.cls ? ' ' + o.cls : ''));
     place(el, o.x ?? 120, o.y ?? 250, o.w);
     let html = '';
     if (o.k) html += `<div class="k"${o.kc ? ` style="color:${o.kc}"` : ''}>${o.k}</div>`;
     if (o.t) html += `<h2>${o.t}</h2>`;
-    if (o.q) html += `<div class="q">${o.q}</div>`;
-    if (o.b) html += `<p class="b">${o.b}</p>`;
+    if (o.s) html += `<p class="b">${o.s}</p>`;
     if (o.c) html += `<div class="c">${o.c}</div>`;
     el.innerHTML = html;
-    A.reveal([...el.children], inId, { a: o.a ?? 0.45, b: 1, stagger: 0.06, y: 30 });
+    A.reveal([...el.children], inId, { a: o.a ?? 0.4, b: 1, stagger: 0.06, y: 30 });
     if (outId) A.conceal(el, outId, { a: 0, b: 0.3 });
     return el;
   }
 
-  function textWidth(el) {
-    try { return el.getBBox().width; } catch (e) { return el.textContent.length * 8; }
+  /* One spoken line: who says it, and what. */
+  function say(A, inId, outId, o) {
+    const el = block('line ' + (o.cls || 'sys'), o.x, o.y, o.w,
+      `<div class="who">${o.who}</div><div class="say">${o.text}</div>`);
+    A.reveal(el, inId, { a: o.a ?? 0.45, b: o.b ?? 1, y: 18 });
+    if (outId) A.conceal(el, outId, { a: 0, b: 0.3 });
+    return el;
   }
 
-  /* ------------------------------------------------------------- the sink */
-  /* Drawn in local coordinates: (0, 0) is the middle of the counter top. */
+  /* -------------------------------------------------------- the home */
+  /*
+   * A plain floor plan: seven rooms along the top, a corridor, the lounge
+   * (with Pepper), a quiet corner and the entrance below, the garden outside.
+   * Residents are dots; connections are lines drawn between them.
+   */
+  const PLAN = { x: 1000, y: 230, w: 800, roomH: 170, corr: 60, lowH: 190 };
+  const ROOMS = [
+    { id: 'R-GERRIT', n: 3, name: 'Gerrit' },
+    { id: 'R-WILLEM', n: 7, name: 'Willem' },
+    { id: 'R-RIA', n: 9, name: 'Ria' },
+    { id: 'R-JAN', n: 12, name: 'Jan', c: 'jan' },
+    { id: 'R-ELENA', n: 14, name: 'Elena', c: 'elena' },
+    { id: 'R-ANS', n: 21, name: 'Ans' },
+    { id: 'R-CORRIE', n: 22, name: 'Corrie' },
+  ];
+  const roomW = PLAN.w / ROOMS.length;
+  const roomCenter = i => [PLAN.x + roomW * (i + 0.5), PLAN.y + PLAN.roomH * 0.55];
+  const lowY = PLAN.y + PLAN.roomH + PLAN.corr;
+  const SPOTS = {
+    entrance: [PLAN.x + 720, lowY + 120],
+    door: [PLAN.x + 720, lowY + PLAN.lowH + 30],
+    corridor: y => [y, PLAN.y + PLAN.roomH + PLAN.corr / 2],
+    lounge: [PLAN.x + 210, lowY + 100],
+    table: [PLAN.x + 300, lowY + 120],
+    quiet: [PLAN.x + 540, lowY + 95],
+    pepper: [PLAN.x + 120, lowY + 70],
+    gardenDoor: [PLAN.x + 230, lowY + PLAN.lowH],
+    garden: [PLAN.x + 400, lowY + PLAN.lowH + 120],
+  };
 
-  function buildSink(A, parent) {
+  function buildHome(A, parent) {
     const root = G(parent);
-    const lines = [];
-    const L = (tag, attrs, p) => { const e = S(tag, ln(attrs), p || root); lines.push(e); return e; };
+    const walls = [];
+    const W = (d, extra) => { const p = S('path', ln(Object.assign({ d, 'stroke-width': 2.2 }, extra)), root); walls.push(p); return p; };
+    const { x, y, w, roomH, corr, lowH } = PLAN;
+    const bottom = lowY + lowH;
+    // outer walls, with a gap for the entrance (right) and the garden door (bottom)
+    W(`M ${x + 680} ${bottom} H ${x} V ${y} H ${x + w} V ${bottom} H ${x + 760}`);
+    // rooms
+    W(`M ${x} ${y + roomH} H ${x + w}`, { 'stroke-opacity': 0.5 });
+    for (let i = 1; i < ROOMS.length; i++) W(`M ${x + roomW * i} ${y} V ${y + roomH}`, { 'stroke-opacity': 0.5 });
+    // lower row: lounge | quiet corner | entrance hall
+    W(`M ${x} ${lowY} H ${x + w}`, { 'stroke-opacity': 0.5, 'stroke-dasharray': '2 8' });
+    W(`M ${x + 460} ${lowY} V ${bottom}`, { 'stroke-opacity': 0.5 });
+    W(`M ${x + 620} ${lowY} V ${bottom}`, { 'stroke-opacity': 0.5 });
+    // garden: a loop path outside
+    const loop = S('path', ln({ d: `M ${x + 160} ${bottom + 120} C ${x + 160} ${bottom + 60} ${x + 640} ${bottom + 60} ${x + 640} ${bottom + 120} C ${x + 640} ${bottom + 180} ${x + 160} ${bottom + 180} ${x + 160} ${bottom + 120} Z`, stroke: C.jan, 'stroke-opacity': 0.55, 'stroke-dasharray': '3 9' }), root);
+    gsap.set(loop, { autoAlpha: 0 });
 
-    L('rect', { x: -180, y: -392, width: 360, height: 242, rx: 18, 'stroke-opacity': 0.6 });
-    L('path', { d: 'M -130 -220 L -40 -310 M -100 -196 L -20 -276', 'stroke-opacity': 0.22 });
-    L('rect', { x: -420, y: 0, width: 840, height: 24, rx: 5 });
-    L('ellipse', { cx: 0, cy: -1, rx: 122, ry: 10, 'stroke-opacity': 0.7 });
-    L('rect', { x: -392, y: 24, width: 784, height: 240, rx: 4, 'stroke-opacity': 0.22 });
-    L('path', { d: 'M 0 44 V 244 M -22 140 H -12 M 12 140 H 22', 'stroke-opacity': 0.22 });
-    // tap
-    L('path', { d: 'M -10 -8 V -76 Q -10 -104 20 -104 H 50 Q 64 -104 64 -90 V -80' });
-    L('path', { d: 'M -28 -8 H 8 M -10 -60 L -40 -66' });
-    // cup
-    const cup = L('path', { d: 'M -392 -94 L -384 0 L -330 0 L -322 -94 Z' });
+    const labels = G(root);
+    const L = (tx, ty, t, extra) => S('text', Object.assign({ x: tx, y: ty, class: 'st-mono', 'font-size': 12, fill: C.muted, 'letter-spacing': '1.6' }, extra), labels, t);
+    ROOMS.forEach((r, i) => L(x + roomW * i + 12, y + 24, String(r.n).padStart(2, '0')));
+    L(x + 16, lowY + 28, 'LOUNGE');
+    L(x + 476, lowY + 28, 'QUIET CORNER');
+    L(x + 636, lowY + 28, 'ENTRANCE');
+    L(x + 16, bottom + 46, 'GARDEN');
+    gsap.set(labels, { autoAlpha: 0 });
 
-    // weight pads and flow sensor (system violet), hidden until the sensors stop
-    const padCup = S('rect', { x: -398, y: -4, width: 82, height: 5, rx: 2, fill: C.sys }, root);
-    const padPaste = S('rect', { x: 158, y: -4, width: 214, height: 5, rx: 2, fill: C.sys }, root);
-    const flow = S('rect', { x: -18, y: -52, width: 16, height: 13, rx: 3, fill: C.sys }, root);
-    gsap.set([padCup, padPaste, flow], { autoAlpha: 0 });
-
-    // water from the spout
-    const water = S('path', ln({ d: 'M 58 -78 V -10 M 64 -78 V -8 M 70 -78 V -10', 'stroke-width': 2, stroke: C.paper, 'stroke-opacity': 0.55, 'stroke-dasharray': '6 5', class: 'marching' }), root);
-    gsap.set(water, { autoAlpha: 0 });
-
-    // toothpaste (outer = placement proxy)
-    const pasteG = G(root);
-    const pasteP = A.xf(pasteG, 265, -12, 1, 0);
-    S('rect', { x: -96, y: -7, width: 20, height: 14, rx: 3, fill: C.ink2, stroke: C.paper, 'stroke-width': 2.2 }, pasteG);
-    S('path', { d: 'M -76 -12 C -20 -13 30 -11 70 -5 L 86 -7 L 86 7 L 70 5 C 30 11 -20 13 -76 12 Z', fill: C.ink2, stroke: C.paper, 'stroke-width': 2.2, 'stroke-linejoin': 'round' }, pasteG);
-
-    // toothbrush: outer placement proxy, inner wiggle group
-    const brushG = G(root);
-    const brushP = A.xf(brushG, -234, -9, 1, 0);
-    const brushW = G(brushG);
-    S('rect', { x: -80, y: -4.5, width: 120, height: 9, rx: 4.5, fill: C.ink2, stroke: C.paper, 'stroke-width': 2.2 }, brushW);
-    S('rect', { x: 38, y: -6, width: 36, height: 11, rx: 4, fill: C.ink2, stroke: C.paper, 'stroke-width': 2.2 }, brushW);
-    S('path', ln({ d: 'M 43 -8 V -20 M 50 -8 V -20 M 57 -8 V -20 M 64 -8 V -20 M 71 -8 V -20', 'stroke-width': 2 }), brushW);
-    const motion = S('circle', { cx: -48, cy: 0, r: 4.5, fill: C.sys }, brushW);
-    gsap.set(motion, { autoAlpha: 0 });
-
-    // sensor event flashes (pulse loop in CSS; visibility scrubbed)
-    const flash = (x, y, p) => {
-      const f = S('circle', { cx: x, cy: y, r: 16, fill: 'none', stroke: C.sys, 'stroke-width': 3, class: 'pulse' }, p || root);
-      gsap.set(f, { autoAlpha: 0 });
-      return f;
-    };
-    const flashes = {
-      motion: flash(-48, 0, brushW),
-      cup: flash(-357, -2),
-      paste: flash(265, -2),
-      flow: flash(-10, -46),
-    };
-
-    // Mary, as a presence: a marigold dot. Outer proxy, inner wiggle.
-    const maryG = G(root);
-    const maryP = A.xf(maryG, -620, -90, 1, 0);
-    const maryW = G(maryG);
-    S('circle', { r: 46, fill: 'url(#glow-mary)' }, maryW);
-    S('circle', { r: 13, fill: C.mary }, maryW);
-    const pause = S('circle', { r: 28, fill: 'none', stroke: C.mary, 'stroke-width': 2.4, 'stroke-dasharray': '5 7', class: 'spin' }, maryW);
-    const stall = S('circle', { r: 28, fill: 'none', stroke: C.alert, 'stroke-width': 2.6, 'stroke-dasharray': '5 7', class: 'spin' }, maryW);
-    gsap.set([maryG, pause, stall], { autoAlpha: 0 });
-
-    return {
-      root, lines, cup, padCup, padPaste, flow, water, motion, flashes,
-      brushG, brushP, brushW, pasteG, pasteP,
-      mary: { g: maryG, p: maryP, w: maryW, pause, stall },
-      objects: [brushG, pasteG],
-    };
-  }
-
-  /* --------------------------------------------------------------- Pepper */
-  /* Local origin at the middle of the base; the head top is at about y = -610. */
-
-  function buildPepper(A, parent) {
-    const root = G(parent);
-    const st = { fill: C.ink2, stroke: C.sys, 'stroke-width': 3, 'stroke-linejoin': 'round' };
-    S('path', Object.assign({ d: 'M -110 0 C -100 -120 -72 -225 -58 -262 L 58 -262 C 72 -225 100 -120 110 0 Z' }, st), root);
-    S('path', { d: 'M -80 -428 C -112 -400 -122 -330 -112 -270', fill: 'none', stroke: C.sys, 'stroke-width': 15, 'stroke-linecap': 'round', 'stroke-opacity': 0.85 }, root);
-    S('path', { d: 'M 80 -428 C 112 -400 122 -330 112 -270', fill: 'none', stroke: C.sys, 'stroke-width': 15, 'stroke-linecap': 'round', 'stroke-opacity': 0.85 }, root);
-    S('path', Object.assign({ d: 'M -76 -262 C -84 -330 -86 -400 -72 -440 L 72 -440 C 86 -400 84 -330 76 -262 Z' }, st), root);
-    S('rect', { x: -46, y: -412, width: 92, height: 66, rx: 7, fill: C.ink, stroke: C.sys, 'stroke-width': 2 }, root);
-    const tabletGlow = S('rect', { x: -46, y: -412, width: 92, height: 66, rx: 7, fill: C.sys, 'fill-opacity': 0.3 }, root);
-    const picto = G(root);
-    S('circle', { cx: -16, cy: -380, r: 15, fill: 'none', stroke: C.paper, 'stroke-width': 2.4 }, picto);
-    S('path', ln({ d: 'M -4 -372 L 30 -396', 'stroke-width': 3.4 }), picto);
-    S('path', ln({ d: 'M 24 -400 L 33 -388', 'stroke-width': 4 }), picto);
-    gsap.set([tabletGlow, picto], { autoAlpha: 0 });
-
-    S('rect', Object.assign({ x: -16, y: -472, width: 32, height: 36, rx: 8 }, st), root);
-    S('path', Object.assign({ d: 'M -80 -545 C -80 -630 80 -630 80 -545 C 80 -494 52 -470 0 -470 C -52 -470 -80 -494 -80 -545 Z' }, st), root);
-    const eyes = [-30, 30].map(x => S('circle', { cx: x, cy: -548, r: 14, fill: C.sys, 'fill-opacity': 0.95, stroke: C.sys, 'stroke-width': 2 }, root));
-    const cams = [-590, -505].map(y => S('circle', { cx: 0, cy: y, r: 6, fill: '#05060a', stroke: C.muted, 'stroke-width': 1.6 }, root));
-    const covers = [-590, -505].map(y => {
-      const cg = G(root);
-      S('rect', { x: -13, y: y - 7, width: 26, height: 14, rx: 4, fill: C.paper }, cg);
-      return { g: cg, p: A.xf(cg, 0, -26, 1, 0) };
+    // residents
+    const dots = {};
+    ROOMS.forEach((r, i) => {
+      const [cx, cy] = roomCenter(i);
+      const g = G(root);
+      const col = r.c ? C[r.c] : C.muted;
+      const p = A.xf(g, cx, cy, 1);
+      const halo = S('circle', { r: 30, fill: col, 'fill-opacity': 0.12 }, g);
+      const ring = S('circle', { r: 22, fill: 'none', stroke: col, 'stroke-width': 1.6, 'stroke-dasharray': '3 6', class: 'spin' }, g);
+      const core = S('circle', { r: r.c ? 11 : 8, fill: col }, g);
+      const name = S('text', { y: 44, 'text-anchor': 'middle', class: 'st-sans', 'font-size': 15, 'font-weight': 500, fill: r.c ? col : C.muted }, g, r.name);
+      gsap.set([halo, ring], { autoAlpha: 0 });
+      dots[r.name.toLowerCase()] = { g, p, halo, ring, core, name, home: [cx, cy] };
     });
-    gsap.set(covers.map(c => c.g), { autoAlpha: 0 });
-    return { root, eyes, cams, covers, tabletGlow, picto };
+
+    // Pepper, as a small indigo glyph in the lounge
+    const pep = G(root);
+    const pepP = A.xf(pep, ...SPOTS.pepper, 1);
+    S('rect', { x: -13, y: -20, width: 26, height: 40, rx: 11, fill: C.sys }, pep);
+    S('circle', { cx: -5, cy: -9, r: 2.6, fill: C.bg }, pep);
+    S('circle', { cx: 5, cy: -9, r: 2.6, fill: C.bg }, pep);
+    const pepPulse = S('circle', { r: 26, fill: 'none', stroke: C.sys, 'stroke-width': 2, class: 'pulse' }, pep);
+    S('text', { y: 40, 'text-anchor': 'middle', class: 'st-mono', 'font-size': 11, fill: C.sys, 'letter-spacing': '1.6' }, pep, 'PEPPER');
+    gsap.set([pep, pepPulse], { autoAlpha: 0 });
+
+    return { root, walls, loop, labels, dots, pepper: { g: pep, p: pepP, pulse: pepPulse } };
   }
 
-  /* A small tool-like sink-side device (TECH-05) */
-  function buildDevice(parent) {
-    const root = G(parent);
-    S('rect', { x: -64, y: -92, width: 128, height: 92, rx: 12, fill: C.ink2, stroke: C.paper, 'stroke-width': 2.4 }, root);
-    S('rect', { x: -48, y: -76, width: 58, height: 40, rx: 4, fill: 'none', stroke: C.paper, 'stroke-width': 1.8 }, root);
-    for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) S('circle', { cx: 26 + i * 10, cy: -68 + j * 10, r: 2.4, fill: C.paper }, root);
-    S('rect', { x: -48, y: -26, width: 96, height: 8, rx: 4, fill: C.sys, 'fill-opacity': 0.7 }, root);
-    return root;
+  /* A curved thread between two points, for connections. */
+  function thread(parent, a, b, color, bend = -60, extra) {
+    const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2 + bend;
+    return S('path', ln(Object.assign({ d: `M ${a[0]} ${a[1]} Q ${mx} ${my} ${b[0]} ${b[1]}`, stroke: color, 'stroke-width': 2.6 }, extra)), parent);
   }
 
   window.K = {
-    NS, art, layer, C, CHAPTERS, STOPS,
-    S, H, G, ln, place, block, pair, caption, textWidth,
-    buildSink, buildPepper, buildDevice,
+    NS, art, layer, C, WIKI, POC, CHAPTERS, STOPS, PLAN, ROOMS, SPOTS,
+    S, H, G, ln, place, block, ref, doi, caption, say, dayMark, note, notes,
+    buildHome, thread,
     scenes: [], ctx: {}, L: null,
   };
 })();

@@ -11,6 +11,8 @@
   'use strict';
 
   const W = 1920, H = 1080;
+  /* Every glide is this much slower than its nominal duration. */
+  const SLOW = 2.2;
   const stage = document.getElementById('stage');
   const scroller = document.getElementById('scroller');
   const hud = document.getElementById('hud');
@@ -71,9 +73,9 @@
     const span = Math.abs(stops[i].t - curT);
     let dur;
     if (opts.dur) dur = opts.dur;
-    else if (forward && span <= stops[i].w + 1e-6) dur = stops[i].dur || 1300;
-    else dur = Math.min(2400, 650 + span * 260);
-    if (!forward) dur = Math.min(dur, 1000);
+    else if (forward && span <= stops[i].w + 1e-6) dur = (stops[i].dur || 1300) * SLOW;
+    else dur = Math.min(3600, 900 + span * 380);
+    if (!forward) dur = Math.min(dur, 1800);
 
     const t0 = performance.now();
     nav = { raf: 0, i };
@@ -163,8 +165,9 @@
       else if (k === 'End') { e.preventDefault(); goTo(stops.length - 1); }
       else if (k === 'f' || k === 'F') toggleFullscreen();
       else if (k === 's' || k === 'S') setMode(!stepMode);
+      else if (k === 'n' || k === 'N') toggleNotes();
       else if (k === 'g' || k === 'G' || k === 'o' || k === 'O' || k === 'Escape') { e.preventDefault(); toggleIndex(true); }
-      else if (/^[0-8]$/.test(k)) {
+      else if (/^[0-9]$/.test(k)) {
         const ch = +k, i = stops.findIndex(s => s.ch === ch);
         if (i >= 0) goTo(i);
       }
@@ -184,7 +187,7 @@
   let hudEls = null;
   function buildHud() {
     hud.innerHTML =
-      '<div class="hud-top"><div class="brand"><i></i><span>SCE 2026 · Group 04</span><span class="chap"></span></div>' +
+      '<div class="hud-top"><div class="brand"><i></i><span>SCE 2026</span><span>Group 04</span><span class="chap"></span></div>' +
       '<div><span class="mode"></span><span class="count"></span></div></div><div class="rail"></div>';
     const rail = hud.querySelector('.rail');
     const railW = W - 240;
@@ -235,11 +238,26 @@
     if (idx !== lastIdx || force) {
       lastIdx = idx;
       const s = stops[idx];
-      hudEls.chap.textContent = s.ch ? `${roman(s.ch)} · ${chapters[s.ch]}` : '';
+      hudEls.chap.textContent = s.ch ? `${roman(s.ch)}  ${chapters[s.ch]}` : '';
       hudEls.count.innerHTML = `<b>${String(idx + 1).padStart(2, '0')}</b> / ${String(stops.length).padStart(2, '0')}`;
       hudEls.mode.textContent = stepMode ? 'Step mode' : 'Free scroll';
       if (indexOpen) markIndex();
+      if (notesOpen) renderNotes();
     }
+  }
+
+  /* ------------------------------------------------------ speaker notes */
+
+  let notesOpen = false, notesEl = null, notes = {};
+  function renderNotes() {
+    const s = stops[currentIndex()];
+    const n = notes[s.id];
+    notesEl.innerHTML = `<div class="t">${s.title}</div>` + (n ? n.map(p => `<p>${p}</p>`).join('') : '<p>No notes for this stop.</p>');
+  }
+  function toggleNotes(open) {
+    notesOpen = open ?? !notesOpen;
+    notesEl.hidden = !notesOpen;
+    if (notesOpen) renderNotes();
   }
 
   /* --------------------------------------------------------- index panel */
@@ -247,13 +265,13 @@
   function buildIndex() {
     let html = '<h2>Contents<span>G or Esc to close</span></h2><div class="cols">';
     chapters.forEach((c, ci) => {
-      html += `<div class="ch"><h3>${ci ? roman(ci) + ' · ' : ''}${c}</h3>`;
+      html += `<div class="ch"><h3>${ci ? roman(ci) + '  ' : ''}${c}</h3>`;
       stops.forEach((s, i) => {
         if (s.ch === ci) html += `<a href="#${s.id}" data-i="${i}"><span>${String(i + 1).padStart(2, '0')}</span>${s.title}</a>`;
       });
       html += '</div>';
     });
-    html += '</div><div class="keys"><span>→ ↓ space · next</span><span>← ↑ · back</span><span>0 to 8 · chapter</span><span>F · fullscreen</span><span>S · step or free scroll</span><span>G · contents</span></div>';
+    html += '</div><div class="keys"><span>→ ↓ space: next</span><span>← ↑: back</span><span>0 to 9: chapter</span><span>F: fullscreen</span><span>S: step or free scroll</span><span>G: contents</span><span>N: speaker notes</span></div>';
     indexEl.innerHTML = html;
     indexEl.addEventListener('click', e => {
       const a = e.target.closest('a[data-i]');
@@ -390,6 +408,8 @@
   function init(cfg) {
     stops = cfg.stops;
     chapters = cfg.chapters;
+    notes = cfg.notes || {};
+    notesEl = document.getElementById('notes');
     let t = 0;
     stops.forEach((s, i) => {
       s.w = i === 0 ? 0 : (s.w ?? 1);
