@@ -238,7 +238,7 @@
     if (idx !== lastIdx || force) {
       lastIdx = idx;
       const s = stops[idx];
-      hudEls.chap.textContent = s.ch ? `${roman(s.ch)}  ${chapters[s.ch]}` : '';
+      hudEls.chap.textContent = s.ch ? `${roman(s.ch)}  ${chapters[s.ch]}` : (idx > 0 ? chapters[0] : '');
       hudEls.count.innerHTML = `<b>${String(idx + 1).padStart(2, '0')}</b> / ${String(stops.length).padStart(2, '0')}`;
       hudEls.mode.textContent = stepMode ? 'Step mode' : 'Free scroll';
       if (indexOpen) markIndex();

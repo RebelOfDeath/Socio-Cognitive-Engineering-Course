@@ -7,7 +7,19 @@
   'use strict';
   Object.assign(K.notes, {
     cover: [
-      'Our project is about the first weeks in a care home, and about how a robot could help a new resident meet someone. We tell it through one person, Elena.',
+      'Our project is about the first weeks in a care home, and about how a robot could help a new resident meet someone. Before we introduce our persona Elena, we want to start with two quick questions for you.',
+    ],
+    'open-q1': [
+      'First: think back to the last time you walked into a room where you knew nobody at all—your first day at university, a new job, or moving to a new city.',
+      'Even when you are young, sharp, and know why you are there, walking up to strangers and starting from zero takes effort.',
+    ],
+    'open-q2': [
+      'Second: think of one close friend you have today. What actually turned that first hello into a real friendship?',
+      'It is almost never being introduced to ten people at once around a loud table. Usually you discover one small thing in common, there is no pressure, and you run into each other a second time before the first conversation is forgotten.',
+    ],
+    'open-hook': [
+      'Now imagine doing that at eighty-one, after moving into a care home with mild Alzheimer’s disease.',
+      'On day one you are introduced to the whole dining table at once; by the evening, every name is gone, and staying in your room feels safer. Our goal is not to build a robot companion that replaces human contact, but a quiet host that helps a newcomer find one person worth meeting again.',
     ],
     arrive: [
       'Elena is 81 and has mild Alzheimer’s disease. Her son brings her in after a fall at home.',

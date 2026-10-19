@@ -20,7 +20,7 @@
   const POC = 'https://github.com/gintskk/sce-poc';
 
   const CHAPTERS = [
-    'Cover', 'Moving in', 'Two lines', 'What matters', 'What we know', 'The technology',
+    'Opening', 'Moving in', 'Two lines', 'What matters', 'What we know', 'The technology',
     'Elena’s first week', 'The design', 'The prototype', 'How we will know', 'Meet again',
   ];
 
@@ -28,6 +28,9 @@
      dur = how long the glide into it takes when advancing with the keyboard. */
   const STOPS = [
     { id: 'cover', ch: 0, title: 'Meaningful connections' },
+    { id: 'open-q1', ch: 0, title: 'A room of strangers', w: 0.7, dur: 550 },
+    { id: 'open-q2', ch: 0, title: 'How strangers become friends', w: 0.7, dur: 550 },
+    { id: 'open-hook', ch: 0, title: 'Starting over at eighty-one', w: 0.7, dur: 550 },
     { id: 'arrive', ch: 1, title: 'Elena moves in', w: 1.4, dur: 2600 },
     { id: 'flurry', ch: 1, title: 'She meets everyone at once', w: 1.4, dur: 2600 },
     { id: 'jan', ch: 1, title: 'Jan stays in his room', w: 1.2, dur: 2000 },

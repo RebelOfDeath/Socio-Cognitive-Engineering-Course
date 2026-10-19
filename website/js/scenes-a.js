@@ -48,14 +48,84 @@
       <div class="abs names rise" style="left:120px;top:870px"><span>Diana Banţă</span><span>Roham Koohestani</span><span>Gints Kuļikovskis</span><span>Antoni Nowakowski</span><span>Rayan Salmi</span></div>
       <div class="abs hint rise" style="right:120px;top:960px"><span class="key">→</span> or <span class="key">space</span> to begin <span style="width:18px"></span><span class="key">G</span> contents</div>`);
     el.style.height = '1080px';
-    A.conceal(el, 'arrive', { a: 0, b: 0.3, y: -40 });
-    A.conceal(g, 'arrive', { a: 0, b: 0.3 });
+    A.conceal(el, 'open-q1', { a: 0, b: 0.3, y: -24 });
+    A.conceal(g, 'open-q1', { a: 0, b: 0.3 });
     X.coverThread = th;
+  });
+
+  /* ----------------------------------------------------------- Opening */
+  K.scenes.push(function openQ1(A) {
+    const el = K.H('div', 'ppt-slide', null, `
+      <div class="k">Question 01 · For you</div>
+      <h2>When did you last walk into a room where you knew <em>nobody</em>?</h2>
+      <div class="ppt-pills">
+        <div class="ppt-pill">First day at university</div>
+        <div class="ppt-pill">Starting a new job</div>
+        <div class="ppt-pill">Moving to a new city</div>
+        <div class="ppt-pill">Joining a group late</div>
+      </div>`);
+    A.reveal([...el.children], 'open-q1', { a: 0.3, b: 0.9, stagger: 0.05, y: 14 });
+    A.conceal(el, 'open-q2', { a: 0, b: 0.3, y: -12 });
+  });
+
+  K.scenes.push(function openQ2(A) {
+    const el = K.H('div', 'ppt-slide', null, `
+      <div class="k">Question 02 · Think of a close friend</div>
+      <h2>What turned that first hello into an actual <em>friendship</em>?</h2>
+      <div class="ppt-grid-3">
+        <div class="ppt-card">
+          <div class="num">01 · Common ground</div>
+          <h3>Something shared</h3>
+          <p>The same street, study, or past.</p>
+        </div>
+        <div class="ppt-card">
+          <div class="num">02 · No pressure</div>
+          <h3>Easy to say no</h3>
+          <p>A low-stakes moment, not a spotlight.</p>
+        </div>
+        <div class="ppt-card">
+          <div class="num">03 · Continuity</div>
+          <h3>A second meeting</h3>
+          <p>Seeing each other again before you forget.</p>
+        </div>
+      </div>`);
+    A.reveal([el.children[0], el.children[1], ...el.children[2].children], 'open-q2', { a: 0.3, b: 0.9, stagger: 0.04, y: 14 });
+    A.conceal(el, 'open-hook', { a: 0, b: 0.3, y: -12 });
+  });
+
+  K.scenes.push(function openHook(A) {
+    const el = K.H('div', 'ppt-slide', null, `
+      <div class="k">Our starting point</div>
+      <h2>Now imagine starting over at <em>eighty-one</em> — with dementia.</h2>
+      <div class="ppt-grid-2">
+        <div class="ppt-card">
+          <div class="num" style="color:var(--alert)">What usually happens</div>
+          <h3>Ten strangers at lunch</h3>
+          <ul class="ppt-list">
+            <li>Introduced to the whole table at once</li>
+            <li>Every name gone by evening</li>
+            <li>Easier to stay in your room tomorrow</li>
+          </ul>
+        </div>
+        <div class="ppt-card accent">
+          <div class="num">Our goal</div>
+          <h3>One person worth meeting again</h3>
+          <ul class="ppt-list">
+            <li><b>Not</b> a robot pretending to be a friend</li>
+            <li>A quiet host that finds <b>one shared thread</b></li>
+            <li>Asks in private, introduces, then steps back</li>
+          </ul>
+        </div>
+      </div>`);
+    A.reveal([el.children[0], el.children[1], ...el.children[2].children], 'open-hook', { a: 0.3, b: 0.9, stagger: 0.04, y: 14 });
+    A.conceal(el, 'arrive', { a: 0, b: 0.3, y: -12 });
   });
 
   /* ------------------------------------------------------- I Moving in */
   K.scenes.push(function arrive(A) {
     const h = X.home;
+    gsap.set(h.walls, { autoAlpha: 0 });
+    A.set(h.walls, 'arrive', { autoAlpha: 1 }, 0.14);
     A.draw(h.walls, 'arrive', 0.15, 0.75, { stagger: 0.02 });
     A.reveal([h.labels, h.loop], 'arrive', { a: 0.5, b: 0.85 });
     A.reveal([X.jan.g, ...X.others.map(o => o.g)], 'arrive', { a: 0.5, b: 0.9, stagger: 0.04 });
