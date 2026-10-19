@@ -8,6 +8,7 @@
  * transition is scrubbed and can be replayed backwards.
  */
 (function () {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   'use strict';
 
   const W = 1920, H = 1080;
@@ -431,9 +432,12 @@
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     unit = Math.max(400, innerHeight);
     scroller.style.height = Math.ceil(total * unit + innerHeight) + 'px';
-    const fromHash = stops.findIndex(s => '#' + s.id === location.hash);
+    // Always open on the cover. A stale #hash or the browser's remembered scroll
+    // position would otherwise drop the deck somewhere in the middle.
     tl.time(0, true);
-    goTo(fromHash > 0 ? fromHash : 0, { instant: true });
+    window.scrollTo(0, 0);
+    goTo(0, { instant: true });
+    requestAnimationFrame(() => { if (window.scrollY > 1 && curT === 0) goTo(0, { instant: true }); });
     document.documentElement.classList.add('ready');
   }
 

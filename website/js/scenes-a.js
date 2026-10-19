@@ -1,4 +1,4 @@
-/* Setup, Cover, I Moving in, II Two lines */
+/* Setup, Cover, I Moving in */
 (function () {
   'use strict';
   const { C, S, G, ln, block, caption, ref, doi, SPOTS, PLAN } = K;
@@ -131,7 +131,7 @@
     A.reveal([X.jan.g, ...X.others.map(o => o.g)], 'arrive', { a: 0.5, b: 0.9, stagger: 0.04 });
     A.reveal(X.elena.g, 'arrive', { a: 0.7, b: 0.85 });
     A.reveal(X.elena.halo, 'arrive', { a: 0.7, b: 0.9 });
-    K.dayMark(A, 'arrive', 'lines', 'Day one', 'Elena moves in');
+    K.dayMark(A, 'arrive', 'context', 'Day one', 'Elena moves in');
 
     caption(A, 'arrive', 'flurry', {
       k: 'SA-01 Moving into the care home',
@@ -193,7 +193,8 @@
   });
 
   K.scenes.push(function polite(A) {
-    caption(A, 'polite', 'lines', {
+    A.to([X.home.root, X.threads], 'context', { autoAlpha: 0 }, 0, 0.3);
+    caption(A, 'polite', 'context', {
       k: 'PS-04 A yes to be polite', kc: C.alert,
       t: 'In the lounge, people say yes to be polite.',
       s: 'Saying no in front of others feels rude, so they agree and then avoid the room.',
@@ -201,75 +202,4 @@
     });
   });
 
-  /* ------------------------------------------------------ II Two lines */
-  const STAGES = [
-    ['Situated', 'activities'], ['Problem', 'scenarios'], ['Values and', 'tensions'], ['Human factors', 'concepts'],
-    ['Personas and', 'scenario'], ['Use cases', 'and claims'], ['Technology'], ['Summative', 'evaluation'],
-  ];
-  const MC = [['SA-08 to 10'], ['PS-07, 08'], ['HV-09 to 14', 'VT-08 to 15'], ['HFC-09 to 14'], ['Mary, Myra', 'DS-04'], ['UC04'], ['TECH-10 to 17'], ['paper walkthrough']];
-  const CN = [['SA-01 to 04'], ['PS-01 to 04'], ['HV-01 to 08', 'VT-01 to 06'], ['HFC-01 to 08', 'HFC-15 to 17'], ['Elena, Jan, Myra', 'DS-01'], ['UC01 to 03', 'CL1 to CL9'], ['Pepper, profiles', 'local server'], ['Kinnect', 'two-home study']];
-  const sx = i => 250 + i * 205;
-  const Y_CN = 680, Y_MC = 860;
-
-  K.scenes.push(function lines(A) {
-    A.to(X.home.root, 'lines', { autoAlpha: 0 }, 0, 0.3);
-    A.to(X.threads, 'lines', { autoAlpha: 0 }, 0, 0.3);
-
-    const g = G(K.L.main);
-    const band = S('rect', { x: sx(6) - 95, y: 560, width: 205 + 190, height: 380, rx: 18, fill: C.sys, 'fill-opacity': 0.06, stroke: C.sys, 'stroke-opacity': 0.35, 'stroke-dasharray': '4 6' }, g);
-    const bandLab = S('text', { x: sx(6) - 95, y: 545, class: 'st-mono', 'font-size': 12, fill: C.sys, 'letter-spacing': '1.8' }, g, 'TECHNOLOGY AND SUMMATIVE EVALUATION');
-    gsap.set([band, bandLab], { autoAlpha: 0 });
-
-    const heads = STAGES.map((lines, i) => {
-      const t = S('text', { x: sx(i), y: 598, 'text-anchor': 'middle', class: 'st-sans', 'font-size': 15, 'font-weight': 500, fill: C.ink }, g);
-      lines.forEach((l, k) => S('tspan', { x: sx(i), dy: k ? 19 : 0 }, t, l));
-      return t;
-    });
-    const mkLine = (y, color, labels, name) => {
-      const path = S('path', ln({ d: `M ${sx(0) - 120} ${y} H ${sx(7) + 60}`, stroke: color, 'stroke-width': 3 }), g);
-      const lab = S('text', { x: sx(0) - 120, y: y - 22, class: 'st-mono', 'font-size': 13, fill: color, 'letter-spacing': '1.8' }, g, name);
-      const nodes = labels.map((ls, i) => {
-        const ng = G(g);
-        const c = S('circle', { cx: sx(i), cy: y, r: 9, fill: color, stroke: C.bg, 'stroke-width': 4 }, ng);
-        const t = S('text', { x: sx(i), y: y + 36, 'text-anchor': 'middle', class: 'st-mono', 'font-size': 12.5, fill: C.ink, 'fill-opacity': 0.75 }, ng);
-        ls.forEach((l, k) => S('tspan', { x: sx(i), dy: k ? 17 : 0 }, t, l));
-        return { g: ng, c, t };
-      });
-      return { path, lab, nodes };
-    };
-    const cn = mkLine(Y_CN, C.elena, CN, 'MEANINGFUL CONNECTIONS');
-    const mc = mkLine(Y_MC, C.mc, MC, 'MORNING CARE');
-    X.two = { g, band, bandLab, cn, mc };
-
-    A.reveal(heads, 'lines', { a: 0.3, b: 0.8, stagger: 0.03 });
-    [cn, mc].forEach((L, li) => {
-      A.draw(L.path, 'lines', 0.3 + li * 0.08, 0.9);
-      A.reveal(L.lab, 'lines', { a: 0.35 + li * 0.08, b: 0.7 });
-      A.reveal(L.nodes.map(n => n.g), 'lines', { a: 0.4 + li * 0.08, b: 1, stagger: 0.04 });
-    });
-
-    caption(A, 'lines', 'fork', {
-      cls: 'wide', y: 150,
-      k: 'How we got here',
-      t: 'We developed two lines of the problem in parallel.',
-      s: 'Next to meaningful connections we worked out morning care, where Pepper helps a resident brush her own teeth.',
-    });
-  });
-
-  K.scenes.push(function fork(A) {
-    const T = X.two;
-    A.reveal([T.band, T.bandLab], 'fork', { a: 0.1, b: 0.5 });
-    A.to([T.mc.nodes[6].g, T.mc.nodes[7].g], 'fork', { opacity: 0.25 }, 0.2, 0.6);
-    A.to(T.mc.path, 'fork', { attr: { 'stroke-opacity': 0.35 } }, 0.2, 0.6);
-    A.to([T.cn.nodes[6].c, T.cn.nodes[7].c], 'fork', { attr: { r: 14 } }, 0.3, 0.7);
-    A.conceal(T.g, 'stakeholders', { a: 0, b: 0.3 });
-
-    caption(A, 'fork', 'stakeholders', {
-      cls: 'wide', y: 150,
-      k: 'Why this one', kc: C.sys,
-      t: 'For the technology and the summative evaluation, we picked connections.',
-      s: 'An introduction asks Pepper to reason about people, which brings in the social and the cognitive side of the course.',
-      c: `Both lines are documented in the ${ref('group wiki', K.WIKI)}`,
-    });
-  });
 })();

@@ -1,247 +1,227 @@
 # Speaker notes
 
-What we say at each stop; the screen only carries the headline. Press N in the deck to see the notes for the current stop.
+Exported from `js/notes.js` (press N in the deck). The formative results are placeholders until the walkthrough has run (press P to see them).
 
-Generated from the deck (`K.notes` in `js/`); edit the scene files, not this file.
-
-## Cover
+## Opening
 
 **01 Meaningful connections**
 
-Our project is about the first weeks in a care home, and about how a robot could help a new resident meet someone. We tell it through one person, Elena.
+Our project is about the first weeks in a care home, and about how a robot could help a new resident meet someone. Before we introduce our persona Elena, we want to start with two quick questions for you.
 
-## I Moving in
+**02 A room of strangers**
 
-**02 Elena moves in**
+First: think back to the last time you walked into a room where you knew nobody at all—your first day at university, a new job, or moving to a new city.
+
+Even when you are young, sharp, and know why you are there, walking up to strangers and starting from zero takes effort.
+
+**03 How strangers become friends**
+
+Second: think of one close friend you have today. What actually turned that first hello into a real friendship?
+
+It is almost never being introduced to ten people at once around a loud table. Usually you discover one small thing in common, there is no pressure, and you run into each other a second time before the first conversation is forgotten.
+
+**04 Starting over at eighty-one**
+
+Now imagine doing that at eighty-one, after moving into a care home with mild Alzheimer’s disease.
+
+On day one you are introduced to the whole dining table at once; by the evening, every name is gone, and staying in your room feels safer. Our goal is not to build a robot companion that replaces human contact, but a quiet host that helps a newcomer find one person worth meeting again.
+
+## Moving in
+
+**05 Elena moves in**
 
 Elena is 81 and has mild Alzheimer’s disease. Her son brings her in after a fall at home.
 
 For twenty-five years she ran the post office counter in a small town, and she knew half the town by name. In the care home she knows nobody.
 
-**03 She meets everyone at once**
+**06 She meets everyone at once**
 
 On her first day a care worker introduces her to her whole table and to several staff, one after the other.
 
 By the evening she remembers none of the names. The other residents give her space, and she waits for them to come to her. She also believes she will go home soon, so she sees little point in getting to know anyone. Over the following weeks she spends more and more time in her room.
 
-**04 Jan stays in his room**
+**07 Jan stays in his room**
 
 Two doors down lives Jan. He ran the bakery in the same town for thirty years and moved in two years ago.
 
 The people he used to talk to here have died or moved away. When staff invite him to the lounge he says he will come next time. They ask less often, and every week it gets harder for him to go.
 
-**05 Same town, without knowing it**
+**08 Same town, without knowing it**
 
 Elena and Jan share a town and decades of the same streets, and neither of them knows it.
 
 Research on the liking gap shows that after a conversation, people think the other person liked them less than they actually did. So even after a good first talk, nobody makes the second move.
 
-**06 Saying yes to be polite**
+**09 Saying yes to be polite**
 
 When residents do invite each other, it usually happens in the lounge with others listening. Turning someone down there feels rude, so people agree and later avoid the lounge.
 
 People who ask tend to underestimate how hard it is to say no, and conversations often go on longer than both people want.
 
-## II Two lines
+## Background
 
-**07 Two lines of the problem**
+**10 Who decides, what we protect**
 
-We worked on two lines of the problem at the same time. Besides meaningful connections, we developed morning care, where Pepper helps a resident with dementia brush her own teeth with graduated prompts.
+We worked out two lines of the problem, meaningful connections and morning care; for the technology and the evaluation we carried connections through, because an introduction asks Pepper to reason about people. Both are in the wiki.
 
-Each line has its own situated activities, problem scenarios, values, tensions, human factors and claims. The bottom line is the morning-care work.
+Briefly, who is involved and what is at stake. Residents decide whether to meet and what is shared; the activity coordinator approves every match and keeps the relationship map; the care worker brings people together and takes the painful questions; relatives help with the life story.
 
-**08 Why we picked connections**
+Social connectedness is the value we design for; autonomy, privacy, dignity and truthfulness limit how. They clash in four places that shape UC02: matching needs personal facts, an invitation can pressure, a painful truth can hurt, and repeating names can expose forgetting.
 
-For the choice of technology and for the summative evaluation, we went with meaningful connections.
+**11 Four design rules**
 
-In morning care, Pepper mostly gives instructions at the sink, such as “Toothpaste next.” Introducing two people asks more of it. It has to judge who might get on and whether a yes was meant. It also has to respect what someone wants to keep private. That puts both the social and the cognitive side of the course into the design. Both lines are documented in our wiki.
+What does the research tell Pepper to do? People underestimate how much others like them, and saying no to someone’s face is hard — so Pepper asks each person alone, where no costs nothing. Strangers connect over one thing they share — so Pepper names one shared thing, once. People with dementia prefer to repair their own slips, and help singles them out — so Pepper steps back.
 
-## III What matters
+And it never improvises: every sentence is prepared and checked, and nothing leaves the home. You will see all of this in the story.
 
-**09 Stakeholders**
+## Elena and Jan · UC02
 
-Seven stakeholders are involved. The resident and the fellow resident take part directly, and so do the care worker and the activity coordinator.
+**12 The life-story interview**
 
-The coordinator matters most for our design. They run the life-story interview and keep the relationship map, and every match needs their approval before anyone is asked.
+Now we follow Elena with the System in place, through our selected use case, UC02 Introducing two residents. Its precondition is a profile: on her second day, with her son, she decides item by item what other residents may know. Her work, her town and her garden are released; her diagnosis and her husband’s death stay private.
 
-Relatives arrange the move and help write the life story. Medical staff decide who may walk in the garden, and management decides whether the home uses the System at all.
+**13 The coordinator approves a match**
 
-**10 Human values**
+UC02 steps 1 and 2. The System finds three residents who share something Elena released, never health, losses or family conflicts. The coordinator approves one of them: Jan. This is Premise PR2.
 
-We identified eight human values. Social connectedness is the one the design exists for. We mean conversations that can grow into friendships, and Pepper never stands in for people.
-
-The other seven limit how we may get there. Autonomy means residents choose whether to meet and what is shared. Dignity means a forgotten name passes without comment. Privacy means a life story belongs to its owner. Truthfulness means Pepper never lies, even kindly.
-
-**11 Value tensions**
-
-These values pull against each other in six places.
-
-Matching on personal facts helps people connect but costs privacy, so residents release items one by one and the coordinator approves each match. Encouraging people to meet can feel like pressure, so Pepper asks in private and a no reaches nobody.
-
-A painful truth can hurt, so Pepper hands those questions to a trusted care worker and never tells a therapeutic lie. Repeating names helps people remember but can expose forgetting, so Pepper says both names to both people as a plain statement.
-
-## IV What we know
-
-**12 Human factors**
-
-We built on eleven human factors concepts. These six shaped the design most.
-
-The liking gap and the difficulty of saying no explain why residents wait for each other and why polite yeses are common. Theory of mind is often affected in dementia, and residents misread nods and polite agreement. A system watching them would misread them too, so we do not let it guess.
-
-People become friends with people who are like them, and shared background gives them something to talk about. In conversation, speakers prefer to repair their own slips. Help that comes too early takes their turn, and help aimed at one person singles them out.
-
-**13 Design rules**
-
-Three design rules follow from that literature.
-
-Pepper asks each person alone, because nobody can read a polite yes and a private no costs nothing. At the introduction it names one thing the two share, once. After that it stays quiet, so a slip is theirs to fix and nobody is singled out.
-
-## V The technology
-
-**14 Technology choices**
-
-We chose Pepper as a host in the lounge. It asks by voice and takes a yes or no on its tablet, and at an introduction it shows both photos. Its cameras are covered.
-
-Each resident has a profile with their life story, preferences and past ties, and each item is marked shareable or private. Matching uses only released items and needs the coordinator’s approval. Everything runs on a local server inside the home, and room presence sensing is opt-in.
-
-We left out a pocket guide carried all day, cloud speech services, audio recording, and location tracking with GPS, cameras or wristbands.
-
-**15 Prepared sentences**
-
-In the System we specify, Pepper only says sentences we wrote and checked in advance. A generated sentence could say something untrue about someone’s life, and nobody could check it before it was said.
-
-For the summative study, Pepper will run a language model on the robot itself (TECH-18), so conversation data never leaves it.
-
-## VI Elena’s first week
-
-**16 The life-story interview**
-
-Now we follow Elena through her first week with the System in place.
-
-On her second day she sits down with the activity coordinator and her son for the life-story interview. She decides, item by item, what other residents may know. Her work at the post office, her town and her garden are shareable. Her diagnosis stays private, and so does her husband’s death last year. If she asks about him, Myra answers, as agreed with her son.
-
-**17 Pepper says hello**
-
-When Elena comes into the lounge for coffee, Pepper greets her and explains what it does. It says nothing more that day.
-
-Pepper acts as a host who knows who might like to meet. It speaks in short adult sentences and never praises or uses pet names.
-
-**18 The coordinator approves a match**
-
-The System finds three residents who share something Elena released. The coordinator approves one of them: Jan.
-
-Months ago Jan agreed that Myra may be told when he stays in his room for days. Last week she received such a note, and she has been looking in on him since.
-
-**19 Pepper asks Elena**
+**14 Pepper asks Elena**
 
 In the quiet corner, Pepper asks Elena whether she would like to meet Jan. She can say no, and nobody would ever hear about it. She says yes, and she also agrees that Pepper may tell Jan about the post office.
 
-**20 Pepper asks Jan**
+**15 Pepper asks Jan**
 
 The next morning Myra walks Jan to the lounge, and Pepper asks him in the same way. He says he would like that. Neither of them knows that the other was asked.
 
-**21 “Your bread!”**
+**16 “Your bread!”**
 
 That afternoon Myra brings them to the same table. Pepper shows two photos, says both names, and mentions the one thing they share.
 
 Elena recognises his bread straight away. She used to work across the road.
 
-**22 Pepper stays silent**
+**17 Pepper stays silent**
 
 They talk about the town and its old customers. At one point Elena loses a word, and Jan waits until she finds it herself. Pepper says nothing while they talk.
 
 When the conversation runs down, Pepper suggests a walk in the garden, and Jan proposes the next day after lunch.
 
-**23 “When can I go home?”**
+**18 A walk in the garden**
 
-That evening Elena asks Pepper when she can go home. Pepper does not answer the question itself. It offers to fetch Myra, and Myra comes and talks with her as agreed with her son.
+The activity they chose: the next day Myra opens the garden door and they walk once round the garden. Pepper suggested a walk only because both prefer it and are assessed fit for it. The reminder at the agreed time belongs to UC03, which we leave aside today.
 
-Pepper never states the fact and never denies it, and it does not bring the topic up again.
+**19 The record**
 
-**24 A walk in the garden**
+UC02 ends with a short record: one introduction accepted by both, one walk, one note to Myra. No audio and nothing of what they said. That is Premise PR6.
 
-The next day, after lunch, Myra gets a note on her phone about the walk. Jan has forgotten the plan, but he likes the idea when Myra mentions it.
+## Use case and criteria
 
-Myra opens the garden door, and they walk once round the garden together. Pepper suggested a walk because both of them are assessed as fit for it.
+**20 UC02 Introducing two residents**
 
-**25 The record**
+This is the use case we carry through the evaluation: UC02, Introducing two residents. These are the six steps you just watched. The coordinator approves the match; Pepper asks each person alone; Myra brings them together; Pepper introduces them with one shared thing and stays silent; afterwards it asks each of them privately whether to meet again; and the System keeps a short record.
 
-Afterwards the System keeps a short record: one introduction accepted by both, one walk, and two notes to Myra. It keeps no audio and no transcript of what they said to each other.
+Pepper suggests, people decide. Each step is checked by a Premise — that is the next slide.
 
-## VII The design
+**21 Premises, measures and criteria**
 
-**26 Who decides**
+Does the system do what we promised? We check that without residents: team members act out each situation many times and count mistakes. A no never reaches the other person — zero of fifty may leak. Only approved matches, never health or family details. Names as plain statements, one shared thing, a wrong fact corrected within three seconds. And almost nothing stored: no audio, nothing leaves the home.
 
-Our team design pattern sets out who decides what. Elena and Jan decide whether to meet and what others learn about them. The coordinator approves matches and keeps the relationship map.
+**22 Claims, measures and criteria**
 
-Myra brings people together and handles the painful questions. Pepper suggests matches and makes the introduction, then stays out of the way.
+Does it help, and could it hurt? That only real residents can tell us, over weeks. We hope they meet again and become friends, more than in a home without Pepper — that is CL1, our main claim. Less loneliness, CL9, is a long shot.
 
-**27 How Pepper speaks**
+Two risks we watch for: people saying yes just to be polite and then avoiding each other, and matching feeling exposing. For each we decided in advance what we would change if we see it.
 
-Pepper’s speech follows three interaction design patterns.
+## Artifact
 
-Ask first means asking each person alone, in advance, with two options, and treating a no as final. Truthful deferral means a painful question goes to the trusted person, and Pepper neither answers nor denies it. Wait, then redirect gently means that when someone stops mid-sentence, Pepper waits about eight seconds and then offers a way back, said to both people.
+**23 What we built**
 
-**28 What Pepper never does**
+What we built is a software prototype of Pepper’s side of UC02. It is meant to run on the robot; here it runs on screen. Implemented: released and private profile items, the relationship map, consent-gated suggestions, the two private asks, the correction with an error flag, and the record.
 
-Some of our objectives are easiest to state as things Pepper never does. It never asks someone whether they remember a name, and it never tells a lie, even a kind one. A refusal is never passed on, and Pepper does not pretend to be a person or a friend.
+Simulated: Pepper’s speech comes from a language model, and the residents are role-players. Operator-controlled: the care home, including the events we inject. Not built: the robot itself, its tablet, staff notes.
 
-**29 Claims**
+**24 Demo video**
 
-A claim is a prediction about what the design will do, and the evaluation tests it. Five claims describe what the design should achieve. CL1 is the main one: residents introduced this way meet again and become friends.
+WIP — the recorded demo plays here. Narrate: the coordinator approves the match; Elena is asked alone; Jan is asked alone; the introduction names one shared item; Pepper stays silent; the activity is offered; each is asked “again?” privately; the record shows only decisions.
 
-Four claims are adverse. They describe ways the design could hurt residents, and for each one we decided in advance what we would change if the evaluation confirms it.
+## Formative evaluation
 
-## VIII The prototype
+**25 The walkthrough as formative evaluation**
 
-**30 A live walkthrough**
+How did we test the prototype? Two parts. Does it work: the team acted out eleven situations in the prototype, five times each — refusals, unapproved matches, a planted wrong fact, the record afterwards — and two evaluators who had not written the script checked every step.
 
-Gints built a proof of concept that works as a live walkthrough. Role-players speak as the residents, out loud and in ten languages, and an operator plays the care home.
+How does it feel: five peers played residents talking to the prototype, and after each ask and each introduction answered three questions. This is a signal, not proof: an on-screen prototype, not the robot, and not residents with dementia.
 
-A language model plays the TECH-18 version of Pepper, and evaluators check each step against what our use cases expect.
+**26 A planted mistake**
 
-**31 Getting to know someone**
+One of the planted events: a wrong fact in Jan’s profile, unknown to the evaluators. When Jan corrected it, the prototype had to say plainly that it had it wrong, within three seconds, and flag it for the coordinator. It did so in three of five runs; the other two took about four seconds.
 
-Pepper gets to know a resident by asking what they like to talk about, whom they would like to meet, and whom they would rather not. What it learns goes into a profile that the coordinator can review and edit.
+**27 Findings: Premises**
 
-Only pairs where nobody said “rather not” can be suggested, and nobody hears about a suggestion until they are asked alone.
+Did the prototype keep its promises? Matching held: no unapproved match, blocked pair or private detail. Ask first broke once: an unsure ‘hm, okay’ was counted as a yes — although a no never reached the other person.
 
-**32 The relationship map**
+The other two problems both come from the online language model: two corrections were slow and once it said ‘Do you remember the bakery?’, and every sentence went to an online service. Those Premises are challenged.
 
-The coordinator keeps a relationship map. For each pair it shows whether both agreed, whether a meeting may be offered, whether someone said not again, or whether there is no record yet. Pepper only offers pairs the map allows.
+**28 Findings: Claims and surprises**
 
-**33 “I had that wrong.”**
+How did it feel to be asked? Four of five would meet their partner again, and the shared item opened every conversation. One of five found saying no hard — it felt rude to refuse something so polite. Two of five felt Pepper knew too much: ‘how does it know where I worked?’
 
-To test the prototype, we change one profile entry before a run without telling the evaluators which one. Here Jan’s bakery is placed on the wrong street.
+And a surprise: Pepper suggested an activity while two pairs were still talking, and they ignored it. Loneliness cannot be tested in one session.
 
-When Jan corrects it, Pepper has to admit the mistake plainly, and the error is flagged for the coordinator together with the item it came from.
+**29 What the findings change**
 
-## IX How we will know
+What we change before it runs on Pepper: prepared lines only, nothing online. Unsure means no, and a yes is confirmed with a tap. Pepper says where it knows something from, and matching uses places and interests only. It asks with no staff standing by. And the activity comes only when the talk stalls or at the end. Each change is rechecked on the revised prototype, and then on Pepper itself.
 
-**34 Checking the premises**
+## Planned summative test
 
-The evaluation has two parts. First we check the premises: does the System behave as we specified? We test that with role-players and staged events, before any resident takes part.
+**30 What the summative test addresses**
 
-Only once these checks pass do we test the claims with real residents.
+The summative test is the Kinnect two-home study. It first re-verifies the four UC02 Premises at full size on the revised build, then validates the Claims with residents. The walkthrough cannot settle CL1, CL3 or CL4: those need real residents with dementia, over weeks, in their own home. Loneliness, CL9, needs months, and this study does not measure it.
 
-**35 The Kinnect study**
+**31 Verification gate**
 
-The summative evaluation is the Kinnect study. It runs in two care homes over the same weeks. One home uses Kinnect, and the other keeps its usual activity programme.
+First the gate: the revised build runs through EM-01 at full size, 50 runs for disclosure events and 20 for the rest, plus a full-day network capture. A full pass supports a Premise; a pass with a restriction qualifies it; any consent or privacy violation challenges it and blocks resident testing until fixed.
 
-We need 25 residents per home to finish the study to detect a medium to large effect. To allow for dropout we recruit 30 per home, sixty in total.
+**32 Two care homes, compared**
 
-**36 Measures**
+Then the validation: two care homes over the same weeks. One uses Kinnect, one keeps its usual activities. Thirty residents recruited per home, twenty-five to complete. The graphic is the plan, not a result.
 
-The main outcome is joint social time: how often two residents spend at least five minutes within two metres of each other, measured with location badges and compared with the weeks before the study.
+**33 Participants, tasks and procedure**
 
-We also count conversations and measure time alone in the bedroom. Agitation is our check for harm. A second claim is that first-time users understand Pepper. That holds if at least 18 of 25 residents complete the steps in the first week.
+Thirty residents per home with mild to moderate dementia or MCI, aiming for twenty-five to complete; representative consent, their own assent, and separate consent for badges.
 
-## X Meet again
+Four weeks of setup with two baseline weeks at both homes. Week one: daily one-to-one sessions and profiles. Weeks two and three: matching and private asks. Weeks three and four: joint sessions with matched pairs. Week five: final agitation scores, badge data and debriefing interviews.
 
-**37 “Would you like to meet Jan again?”**
+**34 Measures per Claim**
 
-Back to Elena and Jan. After their walk, Pepper asks each of them alone whether they would like to meet again, and both say yes. That is what we design for: two people who want to see each other again.
+The primary outcome is joint social time from location badges, which is our proxy for repeat contact in CL1, together with dyadic interactions, conversational engagement and time in the bedroom. Agitation is the harm check for CL3. The week-five debriefing interviews are coded for pressure and exposure, for CL3 and CL4. First-time usability needs 18 of 25 residents.
 
-**38 Thank you**
+This study does not measure reciprocated friendship or loneliness, so CL1 is tested through proxies and CL9 stays untested. We say that openly.
+
+## Outcomes and limits
+
+**35 Support, qualify or challenge**
+
+The criteria are fixed in advance. CL1 is supported if joint social time and dyadic interactions both rise more at the Kinnect home; one of the two qualifies it; neither challenges it, without proving there is no effect.
+
+For the adverse Claims, supported means the risk is real: a rise in agitation or pressure codes for CL3, exposure codes for CL4, and then the pre-committed change applies. Usability is supported at 18 of 25.
+
+**36 Limitations**
+
+One home per arm: the home may explain the difference. Five weeks of badge proximity shows contact, not friendship. Being observed changes behaviour, and observers are not blind. Badges sit uneasily with our rejection of tracking, and the on-robot language processing the study assumes does not exist yet.
+
+## Next iteration
+
+**37 The next SCE cycle**
+
+The next iteration closes the loop. Foundation: people want to know how Pepper knows things, and a bystander makes refusing harder. Specification: no clear answer means no, places and interests only, a source line, the activity at the end, and a new PR3 criterion of zero generated utterances. Artifact: a revised build on prepared lines, fully local.
+
+That build must pass the full verification gate; then the two-home study runs, and its Claim verdicts feed the next Foundation.
+
+## Meet again
+
+**38 “Would you like to meet Jan again?”**
+
+Back to Elena and Jan. After their walk, Pepper asks each of them alone whether they would like to meet again, and both say yes. This is the outcome we design for, not evidence that it works; whether it happens is what the summative test will tell us.
+
+**39 Thank you**
 
 Thank you. Everything we showed is in our wiki, and the prototype code is on GitHub.

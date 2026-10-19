@@ -12,7 +12,7 @@
     A.to(X.threads, 'interview', { autoAlpha: 1 }, 0, 0.1);
     A.to(X.gap, 'interview', { autoAlpha: 0 }, 0, 0.2);
     A.to(X.jan.ring, 'interview', { autoAlpha: 1 }, 0, 0.1);
-    dayMark(A, 'interview', 'hello', 'Day two');
+    dayMark(A, 'interview', 'match', 'Day two');
 
     const items = [
       ['The post office counter, twenty-five years', true],
@@ -28,36 +28,21 @@
         <span class="tag ${ok ? 'solid' : ''}" style="${ok ? `background:${C.jan};` : `color:${C.muted}`}">${ok ? 'shareable' : 'private'}</span></div>`).join(''));
     A.reveal(card, 'interview', { a: 0.3, b: 0.8, y: 30 });
     A.reveal([...card.querySelectorAll('.tag')], 'interview', { a: 0.6, b: 1, stagger: 0.04, y: 0, s: 0.6 });
-    A.conceal(card, 'hello');
-    A.to(X.home.root, 'hello', { autoAlpha: 1 }, 0.1, 0.5);
+    A.conceal(card, 'match');
+    A.to(X.home.root, 'match', { autoAlpha: 1 }, 0.1, 0.5);
 
-    caption(A, 'interview', 'hello', {
+    caption(A, 'interview', 'match', {
       cls: 'scene', y: 300,
-      k: 'UC01 Welcoming a newcomer, step 2',
+      k: 'UC02 precondition · released profile items',
       t: 'Elena decides what other residents may know.',
-      s: 'Her son sits with her during the life-story interview. Every item starts out private.',
-      c: 'DS-01 F1 Ask first',
-    });
-  });
-
-  K.scenes.push(function hello(A) {
-    dayMark(A, 'hello', 'match', 'Coffee time');
-    const lounge = X.helloAt = at(30, 10, SPOTS.lounge);
-    X.walk(X.elena, 'hello', [[X.elena.home[0], X.CORR_Y], [lounge[0], X.CORR_Y], lounge], 0.1, 0.55);
-    A.reveal(X.home.pepper.g, 'hello', { a: 0.3, b: 0.6 });
-    A.reveal(X.home.pepper.pulse, 'hello', { a: 0.55, b: 0.8 });
-    say(A, 'hello', 'match', { x: 120, y: 640, w: 760, who: 'Pepper', text: '“Good afternoon, Elena. I’m Pepper. I help residents get to know each other.”', a: 0.55 });
-    caption(A, 'hello', 'match', {
-      cls: 'scene', y: 300,
-      k: 'RP-01 Pepper in the lounge', kc: C.sys,
-      t: 'On her first visit, Pepper only says hello.',
+      s: 'Her son sits with her during the life-story interview. Every item starts out private; only released items can ever be used.',
+      c: 'DS-01 · selected use case UC02 Introducing two residents · F1 Ask first',
     });
   });
 
   K.scenes.push(function match(A) {
     dayMark(A, 'match', 'ask', 'Matching');
-    A.to(X.home.pepper.pulse, 'match', { autoAlpha: 0 }, 0, 0.2);
-    X.walk(X.elena, 'match', [[X.helloAt[0], X.CORR_Y], [X.elena.home[0], X.CORR_Y], X.elena.home], 0, 0.3);
+    A.reveal(X.home.pepper.g, 'match', { a: 0.2, b: 0.5 });
     const e = X.elena.home;
     const cands = [X.home.dots.gerrit, X.home.dots.ans, X.jan];
     X.cand = cands.map((d, i) => K.thread(X.threads, e, d.home, i === 2 ? C.jan : C.muted, i === 0 ? -140 : i === 1 ? -50 : -40, { 'stroke-dasharray': '4 7', 'stroke-width': 2.2 }));
@@ -71,10 +56,10 @@
     A.conceal(appr, 'ask');
     caption(A, 'match', 'ask', {
       cls: 'scene', y: 300,
-      k: 'UC02 Introducing two residents, steps 1 and 2',
+      k: 'UC02 Introducing two residents · steps 1–2',
       t: 'The coordinator approves one of three matches.',
-      s: 'Jan had the bakery in her town. Months ago he agreed that Myra may hear when he stays in his room.',
-      c: 'F2 Suggest matches TECH-05 TECH-03',
+      s: 'Jan had the bakery in her town. Health, losses and family conflicts are never used.',
+      c: 'F2 Suggest matches · TECH-05 · PR2',
     });
   });
 
@@ -88,7 +73,7 @@
     say(A, 'ask', 'askjan', { x: 120, y: 810, w: 800, who: 'Pepper', text: '“May I tell him you had the post office counter?”  <span style="color:var(--elena)">“Yes.”</span>', a: 0.8 });
     caption(A, 'ask', 'askjan', {
       cls: 'scene', y: 230,
-      k: 'IDP-02 Ask first', kc: C.sys,
+      k: 'UC02 step 3 · IDP-02 Ask first', kc: C.sys,
       t: 'Pepper asks Elena in private.',
     });
   });
@@ -102,7 +87,7 @@
     say(A, 'askjan', 'meet', { cls: 'jan', x: 120, y: 760, w: 700, who: 'Jan', text: '“I’d like that.”', a: 0.72 });
     caption(A, 'askjan', 'meet', {
       cls: 'scene', y: 230,
-      k: 'F1 Ask first',
+      k: 'UC02 step 3 · F1 Ask first · PR1',
       t: 'The next morning, Pepper asks Jan the same way.',
       s: 'Neither of them hears that the other was asked.',
     });
@@ -121,7 +106,7 @@
     say(A, 'meet', 'pause', { cls: 'elena', x: 120, y: 720, w: 760, who: 'Elena', text: '“Your bread! I was across the road.”', a: 0.7 });
     caption(A, 'meet', 'pause', {
       cls: 'scene', y: 230,
-      k: 'F3 Introduce',
+      k: 'UC02 steps 4–5 · F3 Introduce · PR3',
       t: 'Pepper introduces them with the one thing they share.',
     });
   });
@@ -130,41 +115,16 @@
     const mute = S('text', { x: SPOTS.pepper[0], y: SPOTS.pepper[1] - 40, 'text-anchor': 'middle', class: 'st-mono', 'font-size': 12, fill: C.sys, 'letter-spacing': '1.6' }, K.L.top, 'SILENT');
     gsap.set(mute, { autoAlpha: 0 });
     A.reveal(mute, 'pause', { a: 0.2, b: 0.4 });
-    A.conceal(mute, 'gohome');
-    caption(A, 'pause', 'gohome', {
+    A.conceal(mute, 'walk');
+    caption(A, 'pause', 'walk', {
       cls: 'scene', y: 230,
-      k: 'IDP-01 Wait, then redirect gently',
+      k: 'UC02 steps 6–7 · IDP-01 Wait, then redirect gently',
       t: 'While they talk, Pepper stays silent.',
       s: 'Elena loses a word, and Jan waits until she finds it.',
     });
-    say(A, 'pause', 'gohome', { x: 120, y: 640, w: 760, who: 'Pepper', text: '“If you’d both like a walk, the garden is open.”', a: 0.55 });
-    say(A, 'pause', 'gohome', { cls: 'jan', x: 120, y: 790, w: 380, who: 'Jan', text: '“Tomorrow, after lunch?”', a: 0.7 });
-    say(A, 'pause', 'gohome', { cls: 'elena', x: 520, y: 790, w: 340, who: 'Elena', text: '“If it’s dry.”', a: 0.8 });
-  });
-
-  K.scenes.push(function gohome(A) {
-    dayMark(A, 'gohome', 'walk', 'That evening');
-    A.to(X.bond, 'gohome', { autoAlpha: 0 }, 0, 0.3);
-    X.walk(X.jan, 'gohome', [[X.jP[0], X.CORR_Y], [X.jan.home[0], X.CORR_Y], X.jan.home], 0, 0.4);
-
-    // Myra, the care worker, appears from the corridor
-    const mg = G(K.L.main);
-    S('circle', { r: 26, fill: C.myra, 'fill-opacity': 0.14 }, mg);
-    S('circle', { r: 10, fill: C.myra }, mg);
-    S('text', { y: 42, 'text-anchor': 'middle', class: 'st-sans', 'font-size': 15, 'font-weight': 500, fill: C.myra }, mg, 'Myra');
-    X.myra = { g: mg, p: A.xf(mg, SPOTS.entrance[0], X.CORR_Y, 1) };
-    gsap.set(mg, { autoAlpha: 0 });
-    A.reveal(mg, 'gohome', { a: 0.65, b: 0.75 });
-    const tgt = at(80, -20, SPOTS.table);
-    X.walk(X.myra, 'gohome', [[tgt[0], X.CORR_Y], tgt], 0.7, 1);
-
-    say(A, 'gohome', 'walk', { cls: 'elena', x: 120, y: 470, w: 760, who: 'Elena', text: '“When can I go home?”', a: 0.35 });
-    say(A, 'gohome', 'walk', { x: 120, y: 590, w: 760, who: 'Pepper', text: '“That’s one for Myra. Shall I ask her to come?”', a: 0.5 });
-    caption(A, 'gohome', 'walk', {
-      cls: 'scene', y: 230,
-      k: 'IDP-03 Truthful deferral', kc: C.myra,
-      t: 'When Elena asks to go home, Pepper fetches Myra.',
-    });
+    say(A, 'pause', 'walk', { x: 120, y: 640, w: 760, who: 'Pepper', text: '“If you’d both like a walk, the garden is open.”', a: 0.55 });
+    say(A, 'pause', 'walk', { cls: 'jan', x: 120, y: 790, w: 380, who: 'Jan', text: '“Tomorrow, after lunch?”', a: 0.7 });
+    say(A, 'pause', 'walk', { cls: 'elena', x: 520, y: 790, w: 340, who: 'Elena', text: '“If it’s dry.”', a: 0.8 });
   });
 
   K.scenes.push(function walk(A) {
@@ -176,10 +136,18 @@
     A.reveal(phone, 'walk', { a: 0.05, b: 0.25 });
     A.conceal(phone, 'record');
 
+    // Myra, the care worker, comes to open the garden door
+    const mg = G(K.L.main);
+    S('circle', { r: 26, fill: C.myra, 'fill-opacity': 0.14 }, mg);
+    S('circle', { r: 10, fill: C.myra }, mg);
+    S('text', { y: 42, 'text-anchor': 'middle', class: 'st-sans', 'font-size': 15, 'font-weight': 500, fill: C.myra }, mg, 'Myra');
+    X.myra = { g: mg, p: A.xf(mg, SPOTS.entrance[0], X.CORR_Y, 1) };
+    gsap.set(mg, { autoAlpha: 0 });
+    A.reveal(mg, 'walk', { a: 0.05, b: 0.15 });
     const t = SPOTS.table;
-    X.walk(X.jan, 'walk', [[X.jan.home[0], X.CORR_Y], [t[0] + 30, X.CORR_Y], at(30, 0, t)], 0.1, 0.3);
+    X.walk(X.jan, 'walk', [at(30, 0, t)], 0.1, 0.3);
     X.walk(X.elena, 'walk', [at(-30, 0, t)], 0.1, 0.3);
-    X.walk(X.myra, 'walk', [at(100, -30, t)], 0.1, 0.3);
+    X.walk(X.myra, 'walk', [[at(100, -30, t)[0], X.CORR_Y], at(100, -30, t)], 0.1, 0.3);
     say(A, 'walk', 'record', { x: 120, y: 800, w: 760, who: 'Pepper', text: '“Elena, Jan, good to see you both.”', a: 0.25, b: 0.4 });
 
     // once round the garden loop
@@ -199,7 +167,7 @@
 
     caption(A, 'walk', 'record', {
       cls: 'scene', y: 230,
-      k: 'UC03 Following up', kc: C.jan,
+      k: 'UC02 step 7 · the activity they chose', kc: C.jan,
       t: 'The next day they walk round the garden.',
     });
   });
@@ -209,7 +177,7 @@
       <div style="display:grid;grid-template-columns:110px 1fr;row-gap:6px;align-items:baseline;margin-top:20px">
         <div style="font:300 64px/1 var(--sans)">1</div><div style="font:400 22px/1.3 var(--sans)">introduction, accepted by both</div>
         <div style="font:300 64px/1 var(--sans)">1</div><div style="font:400 22px/1.3 var(--sans)">walk</div>
-        <div style="font:300 64px/1 var(--sans)">2</div><div style="font:400 22px/1.3 var(--sans)">notes to Myra</div>
+        <div style="font:300 64px/1 var(--sans)">1</div><div style="font:400 22px/1.3 var(--sans)">note to Myra</div>
       </div>
       <div class="never" style="position:relative;margin-top:26px"><div class="it" style="font-size:30px">what Elena and Jan said to each other<i></i></div></div>`);
     const strike = card.querySelector('.it i');
@@ -220,7 +188,7 @@
     A.to([X.home.root, X.threads, X.myra.g], 'who', { autoAlpha: 0 }, 0, 0.3);
     caption(A, 'record', 'who', {
       cls: 'scene', y: 230,
-      k: 'UC02 step 10',
+      k: 'UC02 step 10 · F6 · PR6',
       t: 'The System keeps a short record.',
       s: 'It notes what happened and nothing of what was said.',
     });

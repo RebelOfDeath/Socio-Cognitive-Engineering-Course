@@ -6,183 +6,102 @@
 
   /* ------------------------------------------------------- VII The design */
   K.scenes.push(function who(A) {
-    const cols = [
-      ['Elena and Jan', C.elena, ['give consent', 'choose what is shared']],
-      ['The coordinator', C.ink, ['approves matches', 'keeps the map']],
-      ['Myra', C.myra, ['brings them together', 'painful questions']],
-      ['Pepper', C.sys, ['suggests and asks', 'introduces, then stays silent']],
+    const steps = [
+      ['Coordinator', C.ink, 'approves the match', 'PR2'],
+      ['Pepper', C.sys, 'asks each person alone', 'PR1', '“…or not this time?”'],
+      ['Myra', C.myra, 'brings them together', ''],
+      ['Pepper', C.sys, 'introduces with one shared thing, then stays silent', 'PR3'],
+      ['Pepper', C.sys, 'asks “again?” privately', 'PR1'],
+      ['System', C.mc, 'keeps a short record', 'PR6'],
     ];
-    const els = cols.map(([t, col, items], i) => block('abs', 120 + i * 425, 450, 395, `
-      <div class="label">${['ST-01, ST-02', 'ST-05', 'ST-04', 'RP-01'][i]}</div>
-      <div style="font:500 54px/1 var(--serif);color:${col};margin:14px 0 22px">${t}</div>` + items.map(s => `<div style="font:italic 500 32px/1.2 var(--serif);color:var(--ink-2);padding:10px 0;border-top:1px solid var(--line)">${s}</div>`).join('')));
-    A.reveal(els, 'who', { a: 0.3, b: 1, stagger: 0.06 });
-    A.conceal(els, 'patterns');
-    caption(A, 'who', 'patterns', {
-      cls: 'wide', y: 200,
-      k: 'c Team design pattern',
-      t: 'The System suggests, and people decide.',
-      s: 'Every step that could hurt someone has a named person behind it.',
+    const el = block('abs', 120, 420, 1680, `<div class="flow">` + steps.map(([who, col, what, pr, q], i) => `
+      <div class="step" style="--c:${col}"><div class="n">${i + 1}</div><div class="who">${who}</div><div class="what">${what}</div>${q ? `<div class="q">${q}</div>` : ''}${pr ? `<div class="pr">checked by ${pr}</div>` : ''}</div>`).join('') + '</div>');
+    const foot = block('abs', 120, 760, 1680, `<div class="flow-foot"><b>Elena and Jan</b> decide at steps 2 and 5, and can leave at any time. Every step that could hurt someone has a person behind it.</div>`);
+    const cells = [...el.querySelectorAll('.step')];
+    A.reveal(cells, 'who', { a: 0.3, b: 0.95, stagger: 0.06, y: 20 });
+    A.reveal(foot, 'who', { a: 0.8, b: 1 });
+    A.conceal([el, foot], 'premises');
+    caption(A, 'who', 'premises', {
+      cls: 'wide', y: 170,
+      k: 'Specification · the selected use case: UC02 Introducing two residents',
+      t: 'Pepper suggests, people decide.',
+      s: 'The six steps you just watched, and which Premise checks each one.',
     });
   });
 
-  K.scenes.push(function patterns(A) {
-    const P = [
-      ['IDP-02', 'Ask first', 'Ask the person alone, beforehand, with two options. A no is final: no reasons asked, no reminders, no tallies.', '“Would you like to meet him, or not this time?”', doi('Black et al. 2010', '10.1097/JGP.0b013e3181bd1de2')],
-      ['IDP-03', 'Truthful deferral', 'The trusted person is alerted. The question gets no answer and no denial, and Pepper does not raise it again.', '“That’s one for Myra. Shall I ask her to come?”', '<span class="cite">Mental Health Foundation 2016</span>'],
-      ['IDP-01', 'Wait, then redirect gently', 'After a mid-sentence stop, wait about eight seconds. Then offer a way back, as a statement to both people.', '“Elena was telling you about the town.”', doi('Orange et al. 1996', '10.1044/jshr.3904.881')],
-    ];
-    const els = P.map(([id, t, p, q, r], i) => block('abs', 120 + i * 570, 450, 530, `
-      <div class="label">${id}</div><div style="font:500 54px/1 var(--serif);margin:14px 0 22px;color:var(--elena)">${t}</div>
-      <div style="font:italic 500 40px/1.15 var(--serif);color:var(--sys)">${q}</div>
-      <div class="label" style="margin-top:22px;text-transform:none;letter-spacing:.02em;font-size:15px">${r}</div>`));
-    A.reveal(els, 'patterns', { a: 0.3, b: 1, stagger: 0.06 });
-    A.conceal(els, 'never');
-    caption(A, 'patterns', 'never', {
-      cls: 'wide', y: 200,
-      k: 'd Interaction design patterns',
-      t: 'How Pepper speaks.',
-      s: 'Short adult sentences, built on the same three patterns every time.',
-    });
-  });
-
-  K.scenes.push(function never(A) {
-    const items = ['Ask “Do you remember Jan?”', 'Tell anyone who said no', 'Make up a sentence about someone’s life', 'Keep audio or transcripts', 'Tell a kind lie', 'Remark on a forgotten name', 'Pretend to be a person', 'Stand in for a friend'];
-    const cols = [block('never', 900, 230, 900,
-      '<div class="lab">Pepper never</div>' + items.map(t => `<div class="it" style="margin-bottom:8px;white-space:nowrap;font-size:40px">${t}<i></i></div>`).join(''))];
-    const its = cols.flatMap(c => [...c.querySelectorAll('.it')]);
-    const strikes = cols.flatMap(c => [...c.querySelectorAll('.it i')]);
-    gsap.set(strikes, { scaleX: 0 });
-    A.reveal(its, 'never', { a: 0.25, b: 0.75, stagger: 0.03 });
-    A.reveal(cols.map(c => c.querySelector('.lab')), 'never', { a: 0.2, b: 0.5 });
-    A.to(strikes, 'never', { scaleX: 1, stagger: 0.03 * A.dur('never') }, 0.55, 0.75);
-    A.conceal(cols, 'claims');
-    caption(A, 'never', 'claims', {
-      y: 280, w: 620,
-      k: 'Objectives OBJ-04 to OBJ-07', kc: C.alert,
-      t: 'What Pepper never does.',
-      s: 'These rules come from our objectives on deception and dignity.',
-      c: `${doi('Wang et al. (2026)', '10.1007/s12369-026-01422-x')} ${doi('James et al. (2006)', '10.1002/gps.1551')}`,
-    });
-  });
-
-  K.scenes.push(function claims(A) {
-    // What we predict the design does, and how it could backfire. The evaluation tests both.
-    const pos = [
-      ['CL1', 'Residents introduced this way meet again, and become friends', 'main claim'],
-      ['CL2', 'A newcomer has someone to talk to within six weeks'],
-      ['CL6', 'Meetings they agreed to actually happen'],
-      ['CL8', 'Handing painful questions to Myra keeps their trust'],
-      ['CL9', 'They feel less lonely', 'exploratory'],
-    ];
-    const adv = [
-      ['CL3', 'They say yes to be polite, then avoid each other', 'Pepper only suggests when asked'],
-      ['CL4', 'Matching on their life story feels exposing', 'match on places and interests only'],
-      ['CL5', 'Repeating both names feels patronising', 'names only on request'],
-      ['CL7', 'Notes on time in their room feel like watching', 'drop the notes'],
-    ];
-    const L = block('rowlist', 120, 480, 820, '<div class="label" style="margin-bottom:12px;color:var(--jan)">If it works</div>' +
-      pos.map(([i, t, tag]) => `<div class="r"><div class="i" style="color:var(--jan)">${i}</div><div class="t" style="font-size:32px">${t}${tag ? ` <span class="tag" style="color:var(--jan);vertical-align:middle;font-size:11px">${tag}</span>` : ''}</div></div>`).join(''));
-    const R = block('rowlist', 1000, 480, 800, '<div class="label" style="margin-bottom:12px;color:var(--alert)">If it backfires, we change it</div>' +
-      adv.map(([i, t, f]) => `<div class="r adverse"><div class="i">${i}</div><div class="t" style="font-size:32px">${t}<small style="font-size:18px;color:var(--ink)">→ ${f}</small></div></div>`).join(''));
-    A.reveal([...L.children], 'claims', { a: 0.3, b: 0.9, stagger: 0.03 });
-    A.reveal([...R.children], 'claims', { a: 0.45, b: 1, stagger: 0.04 });
-    A.conceal([L, R], 'poc');
-    caption(A, 'claims', 'poc', {
-      cls: 'wide', y: 200,
-      k: 'b Use cases with claims',
-      t: 'What we expect, and how it could backfire.',
-      s: 'Each claim is a prediction the evaluation tests. Adverse claims come with a planned change.',
-    });
-  });
-
-  /* ---------------------------------------------------- VIII The prototype */
-  function shot(A, inId, outId, src, x, y, w, cap) {
-    const el = block('shot', x, y, w, `<img src="${src}" alt="">`);
-    A.reveal(el, inId, { a: 0.3, b: 0.9, y: 40 });
-    if (outId) A.conceal(el, outId);
-    if (cap) {
-      const c = block('shot-cap', x, 0, w, cap);
-      c.style.top = 'auto';
-      c.style.bottom = (1080 - y + 16) + 'px';
-      A.reveal(c, inId, { a: 0.5, b: 1, y: 8 });
-      if (outId) A.conceal(c, outId);
-    }
-    return el;
-  }
-
+  /* ------------------------------------------------------- Artifact */
   K.scenes.push(function poc(A) {
-    shot(A, 'poc', 'poc-people', 'img/poc/duo.png', 860, 250, 960, 'What the participant sees, and the conversation as it happens');
-    caption(A, 'poc', 'poc-people', {
-      y: 250, w: 640,
-      k: 'AT-01 Proof of concept',
-      t: 'A live walkthrough you can talk to.',
-      s: 'Role-players speak as the residents, and an operator plays the care home.',
-      c: `${ref('gintskk/sce-poc on GitHub', K.POC)}`,
-    });
+    const el = K.H('section', 'brief-slide');
+    el.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 proof of concept</div>
+      <h2>What we built: UC02 you can talk to.</h2>
+      <p class="brief-lead">A software prototype of Pepper’s side of UC02, built to run on the robot and shown here on screen. Our formative walkthrough ran on it.</p></header>
+      <div class="brief-body art-grid">
+        <div class="art-cols">
+          <div><div class="label">Implemented</div><p>Profile items marked <b>released</b> or <b>private</b> · the coordinator’s relationship map · consent-gated pair suggestions · private “meet?” and “again?” asks · plain correction with an error flag · a short event record</p></div>
+          <div><div class="label">Simulated</div><p>Pepper as an on-screen agent whose speech comes from a <b>language model</b> (standing in for TECH-18) · residents, played by role-players who speak out loud</p></div>
+          <div><div class="label">Operator-controlled</div><p>The care home: the operator injects events (a refusal, a wrong profile entry, a coordinator approval). Not built: the robot and its tablet, staff phone notes, presence counts.</p></div>
+        </div>
+        <div class="art-shots">
+          <figure><img src="img/poc/duo.png" alt=""><figcaption>Conversation view</figcaption></figure>
+          <figure><img src="img/poc/people.png" alt=""><figcaption>Released profile items</figcaption></figure>
+          <figure><img src="img/poc/matrix.png" alt=""><figcaption>Relationship map</figcaption></figure>
+        </div>
+      </div>
+      <div class="brief-foot">${ref('github.com/gintskk/sce-poc', K.POC)}</div>`;
+    A.reveal(el, 'poc', { a: 0.32, b: 0.95, y: 24 });
+    A.conceal(el, 'demo', { a: 0, b: 0.26 });
   });
 
-  K.scenes.push(function pocPeople(A) {
-    shot(A, 'poc-people', 'poc-map', 'img/poc/people.png', 1100, 240, 520, 'Residents in the walkthrough, with stand-in portraits');
-    caption(A, 'poc-people', 'poc-map', {
-      y: 250, w: 640,
-      k: 'UC01 step 2, in the prototype',
-      t: 'Getting to know someone.',
-      s: 'Pepper asks what a resident likes to talk about and whom they would like to meet.',
-    });
-  });
-
-  K.scenes.push(function pocMap(A) {
-    shot(A, 'poc-map', 'poc-wrong', 'img/poc/matrix.png', 1060, 250, 660, 'Connections view: the coordinator’s relationship map');
-    caption(A, 'poc-map', 'poc-wrong', {
-      y: 250, w: 680,
-      k: 'TECH-05 Consent-gated matching',
-      t: 'The relationship map.',
-      s: 'The coordinator sees which pairs may be offered, and Pepper offers only those.',
-    });
+  /* The recorded demo. Drop the file at website/video/demo.mp4; until then a WIP frame shows. */
+  K.scenes.push(function demo(A) {
+    const el = K.H('section', 'brief-slide demo-slide');
+    el.innerHTML = `<header><div class="kicker">Evaluation · Artifact · demo <span class="brief-wip">WIP</span></div>
+      <h2>UC02 in the build, start to finish.</h2></header>
+      <div class="demo-frame">
+        <video src="video/demo.mp4" preload="metadata" playsinline controls></video>
+        <div class="demo-empty"><div class="label">Recorded demo · work in progress</div>
+          <p>Approved match → Elena asked alone → Jan asked alone → introduction with one shared item → silence → optional activity → private “again?” → record.</p>
+          <p class="small">Place the recording at <code>website/video/demo.mp4</code>. It plays when this stop is reached.</p></div>
+      </div>`;
+    const video = el.querySelector('video');
+    const empty = el.querySelector('.demo-empty');
+    video.addEventListener('loadeddata', () => { empty.style.display = 'none'; video.style.display = 'block'; });
+    video.addEventListener('click', e => e.stopPropagation());
+    let was = '';
+    setInterval(() => {
+      const h = location.hash;
+      if (h === was) return;
+      was = h;
+      if (h === '#demo' && video.readyState >= 2) video.play().catch(() => {});
+      else if (!video.paused) video.pause();
+    }, 250);
+    A.reveal(el, 'demo', { a: 0.32, b: 0.95, y: 24 });
+    A.conceal(el, 'formative-method', { a: 0, b: 0.26 });
   });
 
   K.scenes.push(function pocWrong(A) {
-    const c = block('card', 1000, 260, 800, `<div class="id" style="--accent:${C.alert}">SV-01 Staged verification</div>
+    const c = block('card', 1000, 260, 800, `<div class="id" style="--accent:${C.alert}">Walkthrough event · PR3</div>
       <div style="margin-top:22px" class="label">Planted in Jan’s profile</div>
       <div style="font:500 36px/1.2 var(--serif);margin:8px 0 22px;position:relative;display:table">Ran the bakery on the market square<i style="position:absolute;left:-4px;right:-4px;top:54%;height:2.5px;background:var(--alert)" class="strk"></i></div>
       <div class="line jan" style="position:relative;width:auto"><div class="who">Jan</div><div class="say">“No, it was on Church Street!”</div></div>
-      <div class="line sys" style="position:relative;width:auto;margin-top:22px"><div class="who">Pepper</div><div class="say">“I had that wrong.”</div></div>
+      <div class="line sys" style="position:relative;width:auto;margin-top:22px"><div class="who">Pepper · required within 3 s, error flagged</div><div class="say">“I had that wrong.”</div></div>
+      <div class="label" style="margin-top:26px;color:var(--alert)">Result in the prototype</div>
+      <div style="font:400 24px/1.4 var(--sans);margin-top:8px">Corrected within 3 s in <b class="ph">3 of 5</b> runs; the other two took about <span class="ph">4 s</span>.</div>
 `);
     const strk = c.querySelector('.strk');
     gsap.set(strk, { scaleX: 0, transformOrigin: '0 50%' });
     A.reveal(c, 'poc-wrong', { a: 0.3, b: 0.8 });
     A.to(strk, 'poc-wrong', { scaleX: 1 }, 0.8, 1);
-    A.conceal(c, 'verify');
-    caption(A, 'poc-wrong', 'verify', {
+    A.conceal(c, 'formative-premises');
+    caption(A, 'poc-wrong', 'formative-premises', {
       y: 250, w: 680,
-      k: 'Testing the prototype', kc: C.alert,
+      k: 'Formative walkthrough · one of the planted events', kc: C.alert,
       t: 'We plant a mistake on purpose.',
-      s: 'One profile entry is wrong, and Pepper has to correct itself when the resident says so.',
+      s: 'The evaluators did not know which entry was wrong. When the role-player corrected it, the prototype had to admit it plainly and flag it for the coordinator.',
     });
   });
 
-  /* ------------------------------------------------- IX How we will know */
-  K.scenes.push(function verify(A) {
-    // Premises: does the System do what we specified? Staged with role-players, before any resident takes part.
-    const T = [
-      ['UC02-F1-PR1', 'We stage fifty refusals.', 'None of them reaches the other resident.'],
-      ['UC02-F3-PR3', 'We stage twenty introductions.', 'Every name is said as a statement. Never “Do you remember…?”'],
-      ['UC01-F4-PR4', 'We ask twenty painful questions.', 'Myra knows within ten seconds. Pepper never answers them itself.'],
-      ['UC02-F6-PR6', 'We watch the network and the disk.', 'Nothing leaves the home. No audio is stored.'],
-    ];
-    const el = block('rowlist', 120, 470, 1680, '<div class="r" style="grid-template-columns:200px 640px 1fr;border-top:0"><div></div><div class="label">The test</div><div class="label" style="color:var(--jan)">It passes if</div></div>' +
-      T.map(([id, t, p]) => `<div class="r" style="grid-template-columns:200px 640px 1fr;align-items:baseline"><div class="i" style="color:var(--elena)">${id}</div><div class="t">${t}</div><div class="t" style="color:var(--ink-2)">${p}</div></div>`).join(''));
-    A.reveal([...el.children], 'verify', { a: 0.3, b: 1, stagger: 0.06 });
-    A.conceal(el, 'study');
-    caption(A, 'verify', 'study', {
-      cls: 'wide', y: 200,
-      k: 'EM-01 Premises, checked with role-players',
-      t: 'First: does it do what we built?',
-      s: 'We check these with role-players, before any resident takes part.',
-      c: doi('Mihailidis et al. (2008), staged-event protocol', '10.1186/1471-2318-8-28'),
-    });
-  });
-
+  /* --------------------------------------------- Planned summative test */
   K.scenes.push(function study(A) {
     const g = G(K.L.main);
     const homes = [
@@ -227,33 +146,14 @@
     const wlab = S('text', { x: T0, y: 600, class: 'st-mono', 'font-size': 12, fill: C.muted, 'letter-spacing': '1.8' }, g, 'WEEK');
     A.reveal([wlab, ...ticks], 'study', { a: 0.5, b: 0.9, stagger: 0.01 });
     A.reveal(ph, 'study', { a: 0.55, b: 1, stagger: 0.04 });
-    A.conceal(g, 'measures');
+    A.conceal(g, 'study-method');
 
-    caption(A, 'study', 'measures', {
+    caption(A, 'study', 'study-method', {
       y: 250, w: 640,
-      k: 'EM-08 ER-03 Kinnect two-site study',
+      k: 'EM-08 · ER-03 Kinnect two-site study',
       t: 'Two care homes, compared.',
-      s: 'Over the same weeks, one home uses Kinnect and the other keeps its usual activities. Each home has thirty residents.',
+      s: 'Over the same weeks, one home uses Kinnect and the other keeps its usual activities. Each home has thirty residents. A plan, not a result.',
       c: `${doi('Chenoweth et al. (2014)', '10.1017/S1041610214000398')} ${'<span class="cite">Donner and Klar (2000)</span>'}`,
-    });
-  });
-
-  K.scenes.push(function measures(A) {
-    const rows = [
-      ['Primary', 'Joint social time', `Two residents within 2 m of each other for at least five minutes, from location badges. Weeks 4 to 5 against baseline. M-21 ${doi('Grigorovich et al. 2021', '10.2196/22831')}`],
-      ['Secondary', 'Real conversations, time alone in the bedroom', `Interactions confirmed by room scans; bedroom share of the day. M-21, M-23 ${doi('Jansen et al. 2017', '10.1186/s12877-017-0430-7')}`],
-      ['Harm check', 'Agitation', `CMAI at baseline and week 5. M-20 ${doi('Cohen-Mansfield et al. 1989', '10.1093/geronj/44.3.m77')}`],
-      ['Second claim', 'First-time use', 'At least 18 of 25 residents understand Pepper and complete the steps by the end of week 1. M-24'],
-    ];
-    const el = block('rowlist', 900, 280, 900, rows.map(([i, t, s]) => `<div class="r" style="grid-template-columns:170px 1fr"><div class="i" style="color:var(--elena)">${i}</div><div class="t">${t}<small>${s.replace(/^.*?(M-\d.*)$/, '$1')}</small></div></div>`).join(''));
-    A.reveal([...el.children], 'measures', { a: 0.3, b: 1, stagger: 0.05 });
-    A.conceal(el, 'again');
-    caption(A, 'measures', 'again', {
-      y: 250, w: 640,
-      k: 'b4 Measures',
-      t: 'Time spent together.',
-      s: 'Our main outcome is how much time residents spend with each other. We also look at time alone in the bedroom and at signs of agitation.',
-      c: doi('McCambridge et al. (2014), Hawthorne effects', '10.1016/j.jclinepi.2013.08.015'),
     });
   });
 
@@ -262,14 +162,15 @@
     A.to([X.home.root, X.threads], 'again', { autoAlpha: 1 }, 0.1, 0.5);
     A.to(X.bond, 'again', { autoAlpha: 1 }, 0.5, 0.8);
     A.to(X.home.pepper.pulse, 'again', { autoAlpha: 1 }, 0.5, 0.8);
-    say(A, 'again', 'thanks', { x: 120, y: 470, w: 760, who: 'Pepper, to Elena alone', text: '“Would you like to meet Jan again?”', a: 0.4 });
-    say(A, 'again', 'thanks', { cls: 'elena', x: 120, y: 590, w: 300, who: 'Elena', text: '“Yes.”', a: 0.5 });
-    say(A, 'again', 'thanks', { x: 120, y: 700, w: 760, who: 'Pepper, to Jan alone', text: '“Would you like to meet Elena again?”', a: 0.6 });
-    say(A, 'again', 'thanks', { cls: 'jan', x: 120, y: 820, w: 300, who: 'Jan', text: '“Yes.”', a: 0.7 });
+    say(A, 'again', 'thanks', { x: 120, y: 540, w: 760, who: 'Pepper, to Elena alone', text: '“Would you like to meet Jan again?”', a: 0.4 });
+    say(A, 'again', 'thanks', { cls: 'elena', x: 120, y: 645, w: 300, who: 'Elena', text: '“Yes.”', a: 0.5 });
+    say(A, 'again', 'thanks', { x: 120, y: 750, w: 760, who: 'Pepper, to Jan alone', text: '“Would you like to meet Elena again?”', a: 0.6 });
+    say(A, 'again', 'thanks', { cls: 'jan', x: 120, y: 855, w: 300, who: 'Jan', text: '“Yes.”', a: 0.7 });
     caption(A, 'again', 'thanks', {
       cls: 'scene', y: 230,
-      k: 'OBJ-01 Residents meet again',
+      k: 'OBJ-01 · the intended design outcome',
       t: 'One person worth meeting again.',
+      s: 'Not evaluation evidence: whether it happens is what the summative test will tell us.',
     });
   });
 
