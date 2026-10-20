@@ -87,6 +87,6 @@
       <div class="brief-foot" style="margin-top:28px">${doi('Boothby et al. 2018', '10.1177/0956797618783714')} · ${doi('Bohns 2016', '10.1177/0963721415628011')} · ${doi('McPherson et al. 2001', '10.1146/annurev.soc.27.1.415')} · ${doi('Orange et al. 1996', '10.1044/jshr.3904.881')} · ${doi('Williams et al. 2009', '10.1177/1533317508318472')} · ${doi('Niemeijer et al. 2010', '10.1017/S1041610210000037')}</div>
     `);
     A.reveal(el, 'rules', { a: 0.25, b: 0.95, y: 22 });
-    A.conceal(el, 'interview');
+    A.conceal(el, 'part2-video');
   });
 })();

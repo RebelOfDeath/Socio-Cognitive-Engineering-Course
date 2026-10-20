@@ -1,4 +1,4 @@
-/* Assignment sections: UC02 criteria, formative evaluation, planned summative test, next iteration.
+/* Assignment sections: formative evaluation, planned summative test, next iteration.
  * Reuses the deck's colours, serif type and ruled rows. Bounded layout: heading and body in document flow.
  *
  * Formative numbers wrapped in ph(...) are invented placeholders, not observed data. Press P in the deck to
@@ -26,90 +26,8 @@
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === 'p' || e.key === 'P') document.body.classList.toggle('show-ph');
   });
-  const V = {
-    sup: '<span class="v sup">Supported</span>',
-    qual: '<span class="v qual">Qualified</span>',
-    chal: '<span class="v chal">Challenged</span>',
-    risk: '<span class="v chal">Supported · risk present</span>',
-    none: '<span class="v none">Not testable here</span>',
-    pend: '<span class="v pend">Pending</span>',
-  };
-
-  /* ------------------------------------------------ Specification · UC02 criteria */
-  K.scenes.push(function premises(A) {
-    const rows = [
-      ['PR1', 'Ask first', 'A “no” never reaches the other person, and nobody is introduced without two private yeses.', '0 of 50 refusals leak'],
-      ['PR2', 'Approved matches only', 'Pepper only suggests pairs the coordinator approved, and never uses health, loss or family details.', '0 of 50 slips'],
-      ['PR3', 'Introduce kindly', 'Both names said as plain statements, one shared thing, never “Do you remember…?”. A wrong fact is corrected at once.', '20 of 20 correct · fixed within 3 s'],
-      ['PR6', 'Keep almost nothing', 'Only a short list of events is stored. No audio, and nothing leaves the care home.', '0 recordings · 0 data out'],
-    ];
-    slide(A, 'premises', 'claims', 'Specification · UC02 Premises · verification', 'Does the system do what we promised?',
-      'Checked without residents: team members act out each situation many times and count mistakes.',
-      `<div class="plain">` + rows.map(([pr, t, what, pass]) => `<div class="prow"><div class="pid">${pr}</div><div><div class="pt">${t}</div><div class="pw">${what}</div></div><div class="pass"><div class="label">Pass if</div>${pass}</div></div>`).join('') + '</div>',
-      'Method EM-01 (staged events against a reference log) · measures M-01, M-10 · full criteria in the wiki, UC02-F1-PR1 to UC02-F6-PR6.');
-  });
-
-  K.scenes.push(function claims(A) {
-    const hope = [
-      ['CL1', 'They meet again', 'Introduced residents see each other again and become friends, more than in a home without Pepper.', 'Measured: repeat contact, mutual friendships, mood'],
-      ['CL9', 'They feel less lonely', 'A long shot: loneliness changes slowly, so “no change yet” is likely.', 'Measured: loneliness questionnaire'],
-    ];
-    const risk = [
-      ['CL3', 'Yes, just to be polite', 'People accept and then avoid each other.', 'If seen: Pepper only offers introductions when asked'],
-      ['CL4', 'It feels exposing', 'Being matched on personal facts feels like others know too much.', 'If seen: match on places and interests only'],
-    ];
-    const card = ([cl, t, what, how]) => `<div class="ccard"><div class="pid">${cl}</div><div class="pt">${t}</div><div class="pw">${what}</div><div class="how">${how}</div></div>`;
-    slide(A, 'claims', 'poc', 'Specification · UC02 Claims · validation', 'Does it help, and could it hurt?',
-      'Only real residents, over weeks, can answer this. That is what the summative study is for.',
-      `<div class="claims2"><div><div class="label" style="color:var(--jan)">What we hope for</div>${hope.map(card).join('')}</div>
-        <div><div class="label" style="color:var(--alert)">Risks we watch for</div>${risk.map(card).join('')}</div></div>`,
-      'Measures M-02, M-03, M-05, M-07, M-08, M-09 · full validation criteria in the wiki, UC02-F3-CL1 to UC02-F3-CL9.');
-  });
 
   /* ------------------------------------------------------------ Formative */
-  K.scenes.push(function formativeMethod(A) {
-    slide(A, 'formative-method', 'poc-wrong', 'Evaluation · Formative evaluation · method', 'How we tested the prototype.',
-      '',
-      `<div class="fmethod">
-        <div><div class="label">Part 1 · Premises</div><h3>Does it work?</h3><p>The team acted out <b>${ph('11')} situations</b> in the prototype, <b>${ph('5')} times each</b>: refusals, unapproved matches, a planted wrong fact, the record afterwards. Two evaluators who did not write the script checked every step.</p></div>
-        <div><div class="label">Part 2 · Claims</div><h3>How does it feel?</h3><p><b>${ph('5')} peers</b> played residents talking to the prototype. After each private ask and each introduction they answered three questions: was it easy to say no? did Pepper know too much? would you meet this person again?</p></div>
-      </div>
-      <div class="rule-strip" style="margin-top:44px"><b>A signal, not proof.</b> An on-screen prototype, not the robot; peers, not residents with dementia; one session each.</div>`,
-      'Method: EM-01 staged events against a reference log, plus a short probe (M-07 / M-09 style questions). Fewer runs than EM-01’s 20 / 50.');
-  });
-
-  K.scenes.push(function formativePremises(A) {
-    slide(A, 'formative-premises', 'formative-claims', 'Evaluation · Formative findings · Premises', 'Did the prototype keep its promises?',
-      '',
-      `<div class="w-scorecard">
-        <div class="w-sc-row ok">
-          <div class="w-sc-id"><span class="mark ok">✓</span><b>PR2</b><span>Approved Matches</span></div>
-          <div class="w-sc-meter"><div class="bar"><i style="width:100%"></i></div><span><b>${ph('15 / 15')}</b> clean · 0 unapproved · 0 private details</span></div>
-          <div class="w-sc-cause">Rule engine held</div>
-          <div>${V.sup}</div>
-        </div>
-        <div class="w-sc-row no">
-          <div class="w-sc-id"><span class="mark no">✗</span><b>PR1</b><span>Ask First</span></div>
-          <div class="w-sc-meter"><div class="bar"><i class="warn" style="width:95%"></i></div><span><b>${ph('0 / 15')}</b> leaks · <b>${ph('1 / 20')}</b> unsure <i>“hm, okay”</i> taken as yes</span></div>
-          <div class="w-sc-cause alert">Ambiguous speech</div>
-          <div>${V.chal}</div>
-        </div>
-        <div class="w-sc-row no llm-group">
-          <div class="w-sc-id"><span class="mark no">✗</span><b>PR3</b><span>Introduce Kindly</span></div>
-          <div class="w-sc-meter"><div class="bar"><i class="bad" style="width:60%"></i></div><span><b>${ph('3 / 5')}</b> fixes ≤ 3 s · <b>1</b> asked <i>“Do you remember the bakery?”</i></span></div>
-          <div class="w-sc-cause llm">⚡ Hosted LLM</div>
-          <div>${V.chal}</div>
-        </div>
-        <div class="w-sc-row no llm-group">
-          <div class="w-sc-id"><span class="mark no">✗</span><b>PR6</b><span>Keep Almost Nothing</span></div>
-          <div class="w-sc-meter"><div class="bar"><i class="bad" style="width:50%"></i></div><span><b>0</b> audio kept · <b>Every utterance</b> sent to cloud LLM API</span></div>
-          <div class="w-sc-cause llm">⚡ Hosted LLM</div>
-          <div>${V.chal}</div>
-        </div>
-      </div>`,
-      'Key insight: Both PR3 (improvised question + latency) and PR6 (cloud traffic) failed because of the hosted language model.');
-  });
-
   K.scenes.push(function formativeClaims(A) {
     slide(A, 'formative-claims', 'formative-changes', 'Evaluation · Formative findings · Claims', 'How did it feel to be asked?',
       '',
@@ -145,7 +63,7 @@
   });
 
   K.scenes.push(function formativeChanges(A) {
-    slide(A, 'formative-changes', 'formative-live', 'Evaluation · Formative evaluation · design changes', 'What we change before it runs on Pepper.',
+    slide(A, 'formative-changes', 'summative-intro', 'Evaluation · Formative evaluation · design changes', 'What we change before it runs on Pepper.',
       '',
       `<div class="w-changes-grid">
         <div class="w-chg-card">
@@ -175,23 +93,6 @@
         </div>
       </div>`,
       'All 5 fixes are re-verified on the revised build before any resident testing.');
-  });
-
-  K.scenes.push(function formativeLive(A) {
-    slide(A, 'formative-live', 'summative-intro', 'Evaluation · Formative evaluation · live cognitive walkthrough', 'Live walkthrough: Pepper as a connection-maker.',
-      `For our live session (${ph('10+')} concurrent participants), visitors role-play an older resident, interact with Pepper’s chest tablet, and complete an in-app feedback form.`,
-      `<div class="live-grid">
-        <div class="art-cols live-cols">
-          <div><div class="label">Role-play personas &amp; connection-making</div><p>On entry, each participant is assigned <b>Elena (81)</b>, botanical illustrator with early-onset Alzheimer’s; <b>Jan (75)</b>, former lighthouse keeper who just moved in; or <b>Ria (79)</b>, former theatre costume designer. Rather than only proposing walks, Pepper acts as a <b>connection-maker</b>—suggesting introductions and shared activities (chess, stargazing, classical vinyl, sketching, greenhouse tea) with a 2×2 resident photo grid.</p></div>
-          <div><div class="label">Human-factor workarounds &amp; embodied view</div><p>Supports <b>visual &amp; biographical name lookup</b> when a resident forgets a name (e.g. <i>“What was the name of the gray-haired man with the yellow cat on his shirt?”</i> → Willem, 84) and word-finding slips. Recorded Pepper animations (wave hello, nod yes, gesture no, talk) pair with a tracked chest-tablet bezel, large typeface, and an outside <b>Enlarge Tablet</b> button for mobile.</p></div>
-          <div><div class="label">Scientific controls &amp; feedback form</div><p>Participants test <b>speech rate</b> (Slow 0.8×, Calm 1.0×, Brisk 1.25×) and <b>conversation style</b> (Warm &amp; chatty vs. Direct &amp; brief) with gestures enabled, then submit a 6-item <b>Participant Feedback Form</b> rating connection-making, tablet legibility, speech rate, directness, and gesturing.</p></div>
-        </div>
-        <div class="live-shots">
-          <figure><img src="img/poc/Screenshot 2026-10-20 013151.png" alt="Pepper robot simulation holding the chest tablet"><figcaption>Embodied Pepper simulation · tracked chest tablet &amp; enlarge button</figcaption></figure>
-          <figure><img src="img/poc/Screenshot 2026-10-20 013239.png" alt="Participant Feedback Form"><figcaption>In-app Participant Feedback Form · 6 evaluation items</figcaption></figure>
-        </div>
-      </div>`,
-      `Live cognitive walkthrough prototype · ${K.ref('github.com/gintskk/sce-poc', K.POC)} · responses logged via POST /api/feedback.`);
   });
 
   /* ------------------------------------------------------- Planned summative */

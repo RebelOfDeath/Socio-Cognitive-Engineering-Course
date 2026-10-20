@@ -38,55 +38,11 @@
     "What does the research tell Pepper to do? People underestimate how much others like them, and saying no to someone’s face is hard — so Pepper asks each person alone, where no costs nothing. Strangers connect over one thing they share — so Pepper names one shared thing, once. People with dementia prefer to repair their own slips, and help singles them out — so Pepper steps back.",
     "And it never improvises: every sentence is prepared and checked, and nothing leaves the home. You will see all of this in the story."
   ],
-  "interview": [
-    "Now we follow Elena with the System in place, through our selected use case, UC02 Introducing two residents. Its precondition is a profile: on her second day, with her son, she decides item by item what other residents may know. Her work, her town and her garden are released; her diagnosis and her husband’s death stay private."
+  "part2-video": [
+    "Video: part2_3min.mp4. It starts when this stop is reached and pauses when you move on; click the video to pause it."
   ],
-  "match": [
-    "UC02 steps 1 and 2. The System finds three residents who share something Elena released, never health, losses or family conflicts. The coordinator approves one of them: Jan. This is Premise PR2."
-  ],
-  "ask": [
-    "In the quiet corner, Pepper asks Elena whether she would like to meet Jan. She can say no, and nobody would ever hear about it. She says yes, and agrees that Pepper may tell Jan about the post office.",
-    "The next morning Pepper asks Jan in the same way, alone. He says he would like that. Neither of them knows that the other was asked unless both say yes — that is Premise PR1."
-  ],
-  "meet": [
-    "That afternoon Myra brings them to the same table. Pepper shows two photos, says both names, and mentions the one thing they share.",
-    "Elena recognises his bread straight away. She used to work across the road."
-  ],
-  "pause": [
-    "They talk about the town and its old customers. At one point Elena loses a word, and Jan waits until she finds it herself. Pepper says nothing while they talk.",
-    "When the conversation runs down, Pepper suggests a walk in the garden, and Jan proposes the next day after lunch. Myra receives a three-tag note on her phone and opens the garden door for their walk the next day."
-  ],
-  "record": [
-    "UC02 ends with a short record: one introduction accepted by both, one walk, one note to Myra. No audio and nothing of what they said. That is Premise PR6."
-  ],
-  "who": [
-    "This is the use case we carry through the evaluation: UC02, Introducing two residents. These are the six steps you just watched. The coordinator approves the match; Pepper asks each person alone; Myra brings them together; Pepper introduces them with one shared thing and stays silent; afterwards it asks each of them privately whether to meet again; and the System keeps a short record.",
-    "The robot suggests, people decide. Each step is checked by a Premise — that is the next slide."
-  ],
-  "premises": [
-    "Does the robot do what we promised? We check that without residents: team members act out each situation many times and count mistakes. A no never reaches the other person — zero of fifty may leak. Only approved matches, never health or family details. Names as plain statements, one shared thing, a wrong fact corrected within three seconds. And almost nothing stored: no audio, nothing leaves the home."
-  ],
-  "claims": [
-    "Does it help, and could it hurt? That only real residents can tell us, over weeks. We hope they meet again and become friends, more than in a home without the robot — that is CL1, our main claim. Less loneliness, CL9, is a long shot.",
-    "Two risks we watch for: people saying yes just to be polite and then avoiding each other, and matching feeling exposing. For each we decided in advance what we would change if we see it."
-  ],
-  "poc": [
-    "What we built is a web walkthrough of Pepper’s side of UC02. Implemented: released and private profile items, the relationship map, consent-gated suggestions, the two private asks, the correction with an error flag, and the record.",
-    "Simulated: Pepper is an on-screen agent whose speech comes from a language model, and the residents are role-players speaking out loud. Operator-controlled: the care home, including the events we inject. Not built: the robot, the tablet, staff notes."
-  ],
-  "demo": [
-    "WIP — the recorded demo plays here. Narrate: the coordinator approves the match; Elena is asked alone; Jan is asked alone; the introduction names one shared item; Pepper stays silent; the activity is offered; each is asked “again?” privately; the record shows only decisions."
-  ],
-  "formative-method": [
-    "Our formative evaluation was the prototype walkthrough. For the Premises, an operator injected eleven scripted event types, five runs each, and two evaluators who had not written the script checked every step of UC02 against a reference log.",
-    "For the Claims we added a short probe: five peers played residents with their own profile cards, and after each private ask and each introduction they answered three questions — how easy was it to say no, did Pepper know more than they’d like, would they meet this person again. These are early signals, not validation: they are not residents with dementia."
-  ],
-  "poc-wrong": [
-    "One example of a planted event: a wrong entry in Jan’s profile, unknown to the evaluators. When Jan corrects it, Pepper must say plainly that it had it wrong, within three seconds, and flag the error for the coordinator. That is part of PR3."
-  ],
-  "formative-premises": [
-    "Matching held up: no unapproved match, no blocked pair, no private item in fifteen runs, so PR2 is supported. The consent logic mostly held — no refusal ever reached the other person — but once an unsure ‘hm, okay’ was taken as a yes, so PR1 is challenged.",
-    "The language model is where it broke. Two of five corrections took longer than three seconds, and once it generated ‘Do you remember the bakery?’, exactly the phrasing we ban. And the network capture showed every utterance going to the hosted API. PR3 and PR6 are challenged."
+  "demo-video": [
+    "Video: 2026-10-20 demos combined (faster).mp4. It starts when this stop is reached and pauses when you move on; click the video to pause it."
   ],
   "formative-claims": [
     "CL1 looks promising: four of five would meet their partner again, and the shared item opened every conversation. CL3 is a weak signal: one participant found refusing hard, and the one hesitation we saw came when a team member stood next to Pepper.",
@@ -94,11 +50,6 @@
   ],
   "formative-changes": [
     "Every finding leads to a change with a retest. Prepared lines only and no hosted model, for PR3 and PR6. No clear answer means no, confirmed with a tap, for PR1. A ‘That’s wrong’ button for slow corrections. For CL4 we apply the criterion’s response — places and interests only — and Pepper says where it knows something from. The ask happens without staff nearby, and the activity is offered only when the talk stalls or at the end."
-  ],
-  "formative-live": [
-    "To let ten or more live participants experience the cognitive walkthrough themselves, we built a streamlined simulation view where Pepper holds its chest tablet in real video, with a physical bezel, a large typeface and a 2-by-2 resident photo grid, plus an outside Enlarge button for mobile phones.",
-    "Each participant gets a role-play persona—such as Elena, a retired botanical illustrator with early-onset Alzheimer’s, Jan, a former lighthouse keeper who just moved in, or Ria, a former theatre costume designer—and tests how Pepper acts as a connection-maker and handles human factors like forgetting a resident’s name and asking ‘what was the name of the gray-haired man with the yellow cat on his shirt?’.",
-    "At the top, participants can vary speech rate and conversation style—warm and chatty versus direct and brief—and at the end they fill in a short six-question feedback form to gather structured evidence on connection-making, tablet legibility, speech rate, directness and physical gesturing."
   ],
   "summative-intro": [
     "The summative test is the Kinnect two-home study. It first re-verifies the four UC02 Premises at full size on the revised build, then validates the Claims with residents. The walkthrough cannot settle CL1, CL3 or CL4: those need real residents with dementia, over weeks, in their own home. Loneliness, CL9, needs months, and this study does not measure it."

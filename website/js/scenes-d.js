@@ -1,148 +1,35 @@
-/* VII The design, VIII The prototype, IX How we will know, X Meet again */
+/* The two videos, the planned summative test graphic, Meet again */
 (function () {
   'use strict';
-  const { C, S, G, block, caption, say, ref, doi } = K;
+  const { C, S, G, block, caption, say, ref, doi, SPOTS } = K;
   const X = K.ctx;
 
-  /* ------------------------------------------------------- VII The design */
-  K.scenes.push(function who(A) {
-    const steps = [
-      ['Coordinator', C.ink, 'approves the match', 'PR2'],
-      ['Pepper', C.sys, 'asks each person alone', 'PR1', '“…or not this time?”'],
-      ['Myra', C.myra, 'brings them together', ''],
-      ['Pepper', C.sys, 'introduces with one shared thing, then stays silent', 'PR3'],
-      ['Pepper', C.sys, 'asks “again?” privately', 'PR1'],
-      ['System', C.mc, 'keeps a short record', 'PR6'],
-    ];
-    const el = block('abs', 120, 420, 1680, `<div class="flow">` + steps.map(([who, col, what, pr, q], i) => `
-      <div class="step" style="--c:${col}"><div class="n">${i + 1}</div><div class="who">${who}</div><div class="what">${what}</div>${q ? `<div class="q">${q}</div>` : ''}${pr ? `<div class="pr">checked by ${pr}</div>` : ''}</div>`).join('') + '</div>');
-    const foot = block('abs', 120, 760, 1680, `<div class="flow-foot"><b>Elena and Jan</b> decide at steps 2 and 5, and can leave at any time. Every step that could hurt someone has a person behind it.</div>`);
-    const cells = [...el.querySelectorAll('.step')];
-    A.reveal(cells, 'who', { a: 0.3, b: 0.95, stagger: 0.06, y: 20 });
-    A.reveal(foot, 'who', { a: 0.8, b: 1 });
-    A.conceal([el, foot], 'premises');
-    caption(A, 'who', 'premises', {
-      cls: 'wide', y: 170,
-      k: 'Specification · the selected use case: UC02 Introducing two residents',
-      t: 'Pepper suggests, people decide.',
-      s: 'The six steps you just watched, and which Premise checks each one.',
-    });
-  });
-
-  /* ------------------------------------------------------- Artifact */
-  K.scenes.push(function poc(A) {
-    const el = K.H('section', 'brief-slide');
-    el.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 Proof of Concept</div>
-      <h2>What we built: UC02 you can talk to.</h2></header>
-      <div class="brief-body art-grid" style="margin-top:24px">
-        <div class="w-poc-tiers">
-          <div class="w-poc-tier ok">
-            <div class="w-pt-head"><span class="dot"></span><strong>Implemented in Code</strong><i>Core UC02 logic</i></div>
-            <div class="w-pt-chips">
-              <span>🔓 Released vs. Private tags</span>
-              <span>🗺️ Coordinator relationship map</span>
-              <span>🤝 Double-blind consent gate</span>
-              <span>🚩 Error flag on correction</span>
-              <span>📋 Minimal 3-counter event log</span>
-            </div>
-          </div>
-          <div class="w-poc-tier sim">
-            <div class="w-pt-head"><span class="dot"></span><strong>Simulated for Walkthrough</strong><i>Stand-ins</i></div>
-            <div class="w-pt-chips">
-              <span>🤖 On-screen Pepper agent</span>
-              <span>💬 Hosted LLM speech (for TECH-18)</span>
-              <span>🗣️ Live peer role-players</span>
-            </div>
-          </div>
-          <div class="w-poc-tier op">
-            <div class="w-pt-head"><span class="dot"></span><strong>Operator-Injected / Unbuilt</strong><i>Boundary</i></div>
-            <div class="w-pt-chips">
-              <span>🎛️ Injected refusals &amp; wrong facts</span>
-              <span class="dim">✗ Physical Pepper &amp; tablet</span>
-              <span class="dim">✗ Staff phone notes &amp; badges</span>
-            </div>
-          </div>
-        </div>
-        <div class="art-shots">
-          <figure><img src="img/poc/duo.png" alt=""><figcaption>Conversation view</figcaption></figure>
-          <figure><img src="img/poc/people.png" alt=""><figcaption>Released profile items</figcaption></figure>
-          <figure><img src="img/poc/matrix.png" alt=""><figcaption>Relationship map</figcaption></figure>
-        </div>
-      </div>
-      <div class="brief-foot">${ref('github.com/gintskk/sce-poc', K.POC)}</div>`;
-    A.reveal(el, 'poc', { a: 0.32, b: 0.95, y: 24 });
-    A.conceal(el, 'demo', { a: 0, b: 0.26 });
-  });
-
-  /* The recorded demo. Drop the file at website/video/demo.mp4; until then a WIP frame shows. */
-  K.scenes.push(function demo(A) {
-    const el = K.H('section', 'brief-slide demo-slide');
-    el.innerHTML = `<header><div class="kicker">Evaluation · Artifact · demo <span class="brief-wip">WIP</span></div>
-      <h2>UC02 in the build, start to finish.</h2></header>
-      <div class="demo-frame">
-        <video src="video/demo.mp4" preload="metadata" playsinline controls></video>
-        <div class="demo-empty"><div class="label">Recorded demo · work in progress</div>
-          <p>Approved match → Elena asked alone → Jan asked alone → introduction with one shared item → silence → optional activity → private “again?” → record.</p>
-          <p class="small">Place the recording at <code>website/video/demo.mp4</code>. It plays when this stop is reached.</p></div>
-      </div>`;
-    const video = el.querySelector('video');
-    const empty = el.querySelector('.demo-empty');
-    video.addEventListener('loadeddata', () => { empty.style.display = 'none'; video.style.display = 'block'; });
-    video.addEventListener('click', e => e.stopPropagation());
-    let was = '';
+  /* A full-stage video, played as it is. It starts when the deck settles on its stop and pauses as soon as the deck moves off it. */
+  function video(A, id, out, src) {
+    const el = K.H('section', 'video-slide');
+    const v = document.createElement('video');
+    v.src = encodeURI(src);
+    v.preload = 'auto';
+    v.playsInline = true;
+    v.controls = true;
+    el.appendChild(v);
+    v.addEventListener('click', e => e.stopPropagation());
+    const stop = K.STOPS.find(s => s.id === id);
+    let here = false;
     setInterval(() => {
-      const h = location.hash;
-      if (h === was) return;
-      was = h;
-      if (h === '#demo' && video.readyState >= 2) video.play().catch(() => {});
-      else if (!video.paused) video.pause();
-    }, 250);
-    A.reveal(el, 'demo', { a: 0.32, b: 0.95, y: 24 });
-    A.conceal(el, 'formative-method', { a: 0, b: 0.26 });
-  });
+      const now = location.hash === '#' + id && Math.abs(Deck.time - stop.t) < 0.05;
+      if (now === here) return;
+      here = now;
+      document.body.classList.toggle('on-video', here);
+      if (here) v.play().catch(() => {});
+      else v.pause();
+    }, 200);
+    A.reveal(el, id, { a: 0.32, b: 0.95, y: 0 });
+    A.conceal(el, out, { a: 0, b: 0.26, y: 0 });
+  }
 
-  K.scenes.push(function pocWrong(A) {
-    caption(A, 'poc-wrong', 'formative-premises', {
-      y: 240, w: 680,
-      k: 'Formative Walkthrough · Planted Event (PR3)', kc: C.alert,
-      t: 'Testing how Pepper handles a wrong fact.',
-      wx: `<div class="w-inline-pills" style="margin-top:14px">
-        <span class="w-ip">Evaluators blind to which fact is wrong</span>
-        <span class="w-ip alert">Target: Admit &amp; flag ≤ 3 s</span>
-      </div>`,
-    });
-    const c = block('card w-wrong-card', 940, 210, 860, `
-      <div class="id" style="--accent:${C.alert}">PR3 Error-Correction Stress Test · 5 Runs</div>
-      <div class="w-wrong-steps">
-        <div class="w-ws-box">
-          <span class="w-ws-num">01 · Injected Bug</span>
-          <div class="w-ws-strike">“Bakery on the Market Square”</div>
-          <small>Planted in Jan’s profile</small>
-        </div>
-        <div class="w-ws-arr">→</div>
-        <div class="w-ws-box">
-          <span class="w-ws-num">02 · Resident Pushback</span>
-          <div class="w-ws-quote">“No, it was on Church Street!”</div>
-          <small>Spoken by role-player</small>
-        </div>
-        <div class="w-ws-arr">→</div>
-        <div class="w-ws-box gold">
-          <span class="w-ws-num">03 · Required Response</span>
-          <div class="w-ws-quote sys">“I had that wrong.”</div>
-          <small>+ Coordinator flag logged</small>
-        </div>
-      </div>
-      <div class="w-latency-meter">
-        <div class="w-lm-head"><span>Latency Gate Result (Threshold ≤ 3.0 s)</span><span class="v chal">PR3 Challenged</span></div>
-        <div class="w-lm-bar">
-          <div class="w-lm-pass" style="width:60%"><span class="ph">3 / 5</span> runs ≤ 3 s (median <span class="ph">2.9 s</span>)</div>
-          <div class="w-lm-fail" style="width:40%"><span class="ph">2 / 5</span> took ~<span class="ph">4 s</span> (LLM delay)</div>
-        </div>
-      </div>
-    `);
-    A.reveal(c, 'poc-wrong', { a: 0.3, b: 0.85 });
-    A.conceal(c, 'formative-premises');
-  });
+  K.scenes.push(A => video(A, 'part2-video', 'demo-video', 'part2_3min.mp4'));
+  K.scenes.push(A => video(A, 'demo-video', 'formative-claims', '2026-10-20 demos combined (faster).mp4'));
 
   /* --------------------------------------------- Planned summative test */
   K.scenes.push(function study(A) {
@@ -202,8 +89,14 @@
 
   /* ------------------------------------------------------- X Meet again */
   K.scenes.push(function again(A) {
+    // While the plan is still hidden, set it as the UC02 story left it: Elena and Jan at the lounge table, joined, Pepper beside them.
+    const t = SPOTS.table, eP = [t[0] - 34, t[1]], jP = [t[0] + 34, t[1]];
+    A.set(X.elena.p, 'again', { x: eP[0], y: eP[1] }, 0.05);
+    A.set(X.jan.p, 'again', { x: jP[0], y: jP[1] }, 0.05);
+    A.set([X.gap, X.jan.ring], 'again', { autoAlpha: 0 }, 0.05);
+    A.set(X.home.pepper.g, 'again', { autoAlpha: 1 }, 0.05);
+    S('path', { d: `M ${eP[0]} ${eP[1]} L ${jP[0]} ${jP[1]}`, stroke: C.ink, 'stroke-width': 3, 'stroke-linecap': 'round', fill: 'none' }, X.threads);
     A.to([X.home.root, X.threads], 'again', { autoAlpha: 1 }, 0.1, 0.5);
-    A.to(X.bond, 'again', { autoAlpha: 1 }, 0.5, 0.8);
     A.to(X.home.pepper.pulse, 'again', { autoAlpha: 1 }, 0.5, 0.8);
     say(A, 'again', 'thanks', { x: 120, y: 540, w: 760, who: 'Pepper, to Elena alone', text: '“Would you like to meet Jan again?”', a: 0.4 });
     say(A, 'again', 'thanks', { cls: 'elena', x: 120, y: 645, w: 300, who: 'Elena', text: '“Yes.”', a: 0.5 });
