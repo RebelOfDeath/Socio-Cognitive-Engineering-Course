@@ -47,7 +47,6 @@
     { id: 'study-method', ch: 6, title: 'Participants, tasks and procedure', w: 1.1, dur: 1100 },
     { id: 'measures', ch: 6, title: 'Measures per Claim', w: 1.1, dur: 1100 },
     { id: 'outcomes', ch: 7, title: 'Support, qualify or challenge', w: 1.1, dur: 1100 },
-    { id: 'limitations', ch: 7, title: 'Limitations', w: 1.1, dur: 1100 },
     { id: 'next', ch: 8, title: 'The next SCE cycle', w: 1.1, dur: 1100 },
     { id: 'again', ch: 9, title: '“Would you like to meet Jan again?”', w: 1.4, dur: 2600 },
     { id: 'thanks', ch: 9, title: 'Thank you', w: 1.2, dur: 2000 },

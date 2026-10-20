@@ -72,9 +72,6 @@
     "The criteria are fixed in advance. CL1 is supported if joint social time and dyadic interactions both rise more at the Kinnect home; one of the two qualifies it; neither challenges it, without proving there is no effect.",
     "For the adverse Claims, supported means the risk is real: a rise in agitation or pressure codes for CL3, exposure codes for CL4, and then the pre-committed change applies. Usability is supported at 18 of 25."
   ],
-  "limitations": [
-    "One home per arm: the home may explain the difference. Five weeks of badge proximity shows contact, not friendship. Being observed changes behaviour, and observers are not blind. Badges sit uneasily with our rejection of tracking, and the on-robot language processing the study assumes does not exist yet."
-  ],
   "next": [
     "The next iteration closes the loop. Foundation: people want to know how Pepper knows things, and a bystander makes refusing harder. Specification: no clear answer means no, places and interests only, a source line, the activity at the end, and a new PR3 criterion of zero generated utterances. Artifact: a revised build on prepared lines, fully local.",
     "That build must pass the full verification gate; then the two-home study runs, and its Claim verdicts feed the next Foundation."

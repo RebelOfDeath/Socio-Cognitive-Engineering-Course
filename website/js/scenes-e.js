@@ -190,7 +190,7 @@
   });
 
   K.scenes.push(function outcomes(A) {
-    slide(A, 'outcomes', 'limitations', 'Planned summative test · expected outcomes', 'How each criterion will be applied.',
+    slide(A, 'outcomes', 'next', 'Planned summative test · expected outcomes', 'How each criterion will be applied.',
       'Fixed before data collection. For an adverse Claim, “supported” means the risk is real and its pre-committed change applies.',
       table(['', 'Supports', 'Qualifies', 'Challenges'], [
         ['PR1–PR3, PR6', 'Every criterion met on the revised build.', 'Met with a scope restriction (e.g. tablet-only answers).', 'Any violation: no resident testing until fixed.'],
@@ -199,45 +199,6 @@
         ['CL4 · exposure', 'S codes about a match from residents or relatives.', 'S codes only about how Pepper knows, not what is shared.', 'No S codes.'],
         ['Usability (M-23)', '≥ 18 of 25 meet the criterion.', 'Met only with the tablet fallback.', 'Fewer than 18: simplify before anything else.'],
       ], 'brief-verdicts brief-compact'), 'CL9 is not addressed by this study and is reported as untested.');
-  });
-
-  K.scenes.push(function limitations(A) {
-    slide(A, 'limitations', 'next', 'Planned summative test · limitations', 'What this design can, and cannot, settle.',
-      '',
-      `<div class="w-limits-grid">
-        <div class="w-lim-card">
-          <div class="w-lim-num">01 · Cluster Confounding</div>
-          <h3>One care home per arm</h3>
-          <div class="w-lim-pair">
-            <div class="threat"><b>Threat:</b> Building layout, staff culture, or cohort mix may drive differences.</div>
-            <div class="mitig"><b>Mitigation:</b> 2-week baseline ANCOVA; multi-site cluster RCT needed next.</div>
-          </div>
-        </div>
-        <div class="w-lim-card">
-          <div class="w-lim-num">02 · Proxy &amp; Time Horizon</div>
-          <h3>Proximity ≠ friendship</h3>
-          <div class="w-lim-pair">
-            <div class="threat"><b>Threat:</b> 2m badge proximity over 5 weeks captures contact &amp; novelty, not deep ties.</div>
-            <div class="mitig"><b>Mitigation:</b> Triangulate with dyad scans; add M-05 &amp; M-08 in Cycle 2.</div>
-          </div>
-        </div>
-        <div class="w-lim-card">
-          <div class="w-lim-num">03 · Unblinded Observation</div>
-          <h3>Hawthorne &amp; dyad dependence</h3>
-          <div class="w-lim-pair">
-            <div class="threat"><b>Threat:</b> Visible robot &amp; observers alter behaviour; matched pairs are non-independent.</div>
-            <div class="mitig"><b>Mitigation:</b> Identical observation schedule in Home B; pair-clustered analysis.</div>
-          </div>
-        </div>
-        <div class="w-lim-card">
-          <div class="w-lim-num">04 · Ethical &amp; Tech Tension</div>
-          <h3>Location badges &amp; TECH-18 gap</h3>
-          <div class="w-lim-pair">
-            <div class="threat"><b>Threat:</b> Study badges clash with our no-tracking rule; local NLP (TECH-18) is unbuilt.</div>
-            <div class="mitig"><b>Mitigation:</b> Separate badge consent for trial only; prepared-line + tablet build.</div>
-          </div>
-        </div>
-      </div>`);
   });
 
   /* ---------------------------------------------------------- Next iteration */
