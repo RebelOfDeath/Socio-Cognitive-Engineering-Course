@@ -1,7 +1,7 @@
 /* VII The design, VIII The prototype, IX How we will know, X Meet again */
 (function () {
   'use strict';
-  const { C, S, G, block, caption, say, ref, doi, SPOTS } = K;
+  const { C, S, G, block, caption, say, ref, doi, SPOTS, abWrap } = K;
   const X = K.ctx;
 
   /* ------------------------------------------------------- VII The design */
@@ -31,8 +31,8 @@
 
   /* ------------------------------------------------------- Artifact */
   K.scenes.push(function poc(A) {
-    const el = K.H('section', 'brief-slide');
-    el.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 proof of concept</div>
+    const elA = K.H('section', 'brief-slide');
+    elA.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 proof of concept</div>
       <h2>What we built: UC02 you can talk to.</h2>
       <p class="brief-lead">A software prototype of Pepper’s side of UC02, built to run on the robot and shown here on screen. Our formative walkthrough ran on it.</p></header>
       <div class="brief-body art-grid">
@@ -48,8 +48,52 @@
         </div>
       </div>
       <div class="brief-foot">${ref('github.com/gintskk/sce-poc', K.POC)}</div>`;
-    A.reveal(el, 'poc', { a: 0.32, b: 0.95, y: 24 });
-    A.conceal(el, 'demo', { a: 0, b: 0.26 });
+    abWrap('poc', 'A', elA);
+    A.reveal(elA, 'poc', { a: 0.32, b: 0.95, y: 24 });
+    A.conceal(elA, 'demo', { a: 0, b: 0.26 });
+
+    const elB = K.H('section', 'brief-slide');
+    elB.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 Proof of Concept</div>
+      <h2>What we built: UC02 you can talk to.</h2></header>
+      <div class="brief-body art-grid" style="margin-top:24px">
+        <div class="w-poc-tiers">
+          <div class="w-poc-tier ok">
+            <div class="w-pt-head"><span class="dot"></span><strong>Implemented in Code</strong><i>Core UC02 logic</i></div>
+            <div class="w-pt-chips">
+              <span>🔓 Released vs. Private tags</span>
+              <span>🗺️ Coordinator relationship map</span>
+              <span>🤝 Double-blind consent gate</span>
+              <span>🚩 Error flag on correction</span>
+              <span>📋 Minimal 3-counter event log</span>
+            </div>
+          </div>
+          <div class="w-poc-tier sim">
+            <div class="w-pt-head"><span class="dot"></span><strong>Simulated for Walkthrough</strong><i>Stand-ins</i></div>
+            <div class="w-pt-chips">
+              <span>🤖 On-screen Pepper agent</span>
+              <span>💬 Hosted LLM speech (for TECH-18)</span>
+              <span>🗣️ Live peer role-players</span>
+            </div>
+          </div>
+          <div class="w-poc-tier op">
+            <div class="w-pt-head"><span class="dot"></span><strong>Operator-Injected / Unbuilt</strong><i>Boundary</i></div>
+            <div class="w-pt-chips">
+              <span>🎛️ Injected refusals &amp; wrong facts</span>
+              <span class="dim">✗ Physical Pepper &amp; tablet</span>
+              <span class="dim">✗ Staff phone notes &amp; badges</span>
+            </div>
+          </div>
+        </div>
+        <div class="art-shots">
+          <figure><img src="img/poc/duo.png" alt=""><figcaption>Conversation view</figcaption></figure>
+          <figure><img src="img/poc/people.png" alt=""><figcaption>Released profile items</figcaption></figure>
+          <figure><img src="img/poc/matrix.png" alt=""><figcaption>Relationship map</figcaption></figure>
+        </div>
+      </div>
+      <div class="brief-foot">${ref('github.com/gintskk/sce-poc', K.POC)}</div>`;
+    abWrap('poc', 'B', elB);
+    A.reveal(elB, 'poc', { a: 0.32, b: 0.95, y: 24 });
+    A.conceal(elB, 'demo', { a: 0, b: 0.26 });
   });
 
   /* The recorded demo. Drop the file at website/video/demo.mp4; until then a WIP frame shows. */
@@ -80,7 +124,7 @@
   });
 
   K.scenes.push(function pocWrong(A) {
-    const c = block('card', 1000, 260, 800, `<div class="id" style="--accent:${C.alert}">Walkthrough event · PR3</div>
+    const cA = block('card', 1000, 260, 800, `<div class="id" style="--accent:${C.alert}">Walkthrough event · PR3</div>
       <div style="margin-top:22px" class="label">Planted in Jan’s profile</div>
       <div style="font:500 36px/1.2 var(--serif);margin:8px 0 22px;position:relative;display:table">Ran the bakery on the market square<i style="position:absolute;left:-4px;right:-4px;top:54%;height:2.5px;background:var(--alert)" class="strk"></i></div>
       <div class="line jan" style="position:relative;width:auto"><div class="who">Jan</div><div class="say">“No, it was on Church Street!”</div></div>
@@ -88,17 +132,60 @@
       <div class="label" style="margin-top:26px;color:var(--alert)">Result in the prototype</div>
       <div style="font:400 24px/1.4 var(--sans);margin-top:8px">Corrected within 3 s in <b class="ph">3 of 5</b> runs; the other two took about <span class="ph">4 s</span>.</div>
 `);
-    const strk = c.querySelector('.strk');
+    const strk = cA.querySelector('.strk');
     gsap.set(strk, { scaleX: 0, transformOrigin: '0 50%' });
-    A.reveal(c, 'poc-wrong', { a: 0.3, b: 0.8 });
+    A.reveal(cA, 'poc-wrong', { a: 0.3, b: 0.8 });
     A.to(strk, 'poc-wrong', { scaleX: 1 }, 0.8, 1);
-    A.conceal(c, 'formative-premises');
-    caption(A, 'poc-wrong', 'formative-premises', {
+    A.conceal(cA, 'formative-premises');
+    const capA = caption(A, 'poc-wrong', 'formative-premises', {
       y: 250, w: 680,
       k: 'Formative walkthrough · one of the planted events', kc: C.alert,
       t: 'We plant a mistake on purpose.',
       s: 'The evaluators did not know which entry was wrong. When the role-player corrected it, the prototype had to admit it plainly and flag it for the coordinator.',
     });
+    abWrap('poc-wrong', 'A', cA, capA);
+
+    const capB = caption(A, 'poc-wrong', 'formative-premises', {
+      y: 240, w: 680,
+      k: 'Formative Walkthrough · Planted Event (PR3)', kc: C.alert,
+      t: 'Testing how Pepper handles a wrong fact.',
+      wx: `<div class="w-inline-pills" style="margin-top:14px">
+        <span class="w-ip">Evaluators blind to which fact is wrong</span>
+        <span class="w-ip alert">Target: Admit &amp; flag ≤ 3 s</span>
+      </div>`,
+    });
+    const cB = block('card w-wrong-card', 940, 210, 860, `
+      <div class="id" style="--accent:${C.alert}">PR3 Error-Correction Stress Test · 5 Runs</div>
+      <div class="w-wrong-steps">
+        <div class="w-ws-box">
+          <span class="w-ws-num">01 · Injected Bug</span>
+          <div class="w-ws-strike">“Bakery on the Market Square”</div>
+          <small>Planted in Jan’s profile</small>
+        </div>
+        <div class="w-ws-arr">→</div>
+        <div class="w-ws-box">
+          <span class="w-ws-num">02 · Resident Pushback</span>
+          <div class="w-ws-quote">“No, it was on Church Street!”</div>
+          <small>Spoken by role-player</small>
+        </div>
+        <div class="w-ws-arr">→</div>
+        <div class="w-ws-box gold">
+          <span class="w-ws-num">03 · Required Response</span>
+          <div class="w-ws-quote sys">“I had that wrong.”</div>
+          <small>+ Coordinator flag logged</small>
+        </div>
+      </div>
+      <div class="w-latency-meter">
+        <div class="w-lm-head"><span>Latency Gate Result (Threshold ≤ 3.0 s)</span><span class="v chal">PR3 Challenged</span></div>
+        <div class="w-lm-bar">
+          <div class="w-lm-pass" style="width:60%"><span class="ph">3 / 5</span> runs ≤ 3 s (median <span class="ph">2.9 s</span>)</div>
+          <div class="w-lm-fail" style="width:40%"><span class="ph">2 / 5</span> took ~<span class="ph">4 s</span> (LLM delay)</div>
+        </div>
+      </div>
+    `);
+    abWrap('poc-wrong', 'B', capB, cB);
+    A.reveal(cB, 'poc-wrong', { a: 0.3, b: 0.85 });
+    A.conceal(cB, 'formative-premises');
   });
 
   /* --------------------------------------------- Planned summative test */

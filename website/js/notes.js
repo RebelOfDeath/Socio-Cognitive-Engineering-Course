@@ -108,6 +108,11 @@
   "formative-changes": [
     "Every finding leads to a change with a retest. Prepared lines only and no hosted model, for PR3 and PR6. No clear answer means no, confirmed with a tap, for PR1. A ‘That’s wrong’ button for slow corrections. For CL4 we apply the criterion’s response — places and interests only — and Pepper says where it knows something from. The ask happens without staff nearby, and the activity is offered only when the talk stalls or at the end."
   ],
+  "formative-live": [
+    "To let ten or more live participants experience the cognitive walkthrough themselves, we built a streamlined simulation view where Pepper holds its chest tablet in real video, with a physical bezel, a large typeface and a 2-by-2 resident photo grid, plus an outside Enlarge button for mobile phones.",
+    "Each participant gets a role-play persona—such as Elena, a retired botanical illustrator with early-onset Alzheimer’s, Jan, a former lighthouse keeper who just moved in, or Ria, a former theatre costume designer—and tests how Pepper acts as a connection-maker and handles human factors like forgetting a resident’s name and asking ‘what was the name of the gray-haired man with the yellow cat on his shirt?’.",
+    "At the top, participants can vary speech rate and conversation style—warm and chatty versus direct and brief—and at the end they fill in a short six-question feedback form to gather structured evidence on connection-making, tablet legibility, speech rate, directness and physical gesturing."
+  ],
   "summative-intro": [
     "The summative test is the Kinnect two-home study. It first re-verifies the four UC02 Premises at full size on the revised build, then validates the Claims with residents. The walkthrough cannot settle CL1, CL3 or CL4: those need real residents with dementia, over weeks, in their own home. Loneliness, CL9, needs months, and this study does not measure it."
   ],
