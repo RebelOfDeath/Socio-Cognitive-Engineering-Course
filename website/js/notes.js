@@ -23,19 +23,11 @@
   ],
   "flurry": [
     "On her first day a care worker introduces her to her whole table and to several staff, one after the other.",
-    "By the evening she remembers none of the names. The other residents give her space, and she waits for them to come to her. She also believes she will go home soon, so she sees little point in getting to know anyone. Over the following weeks she spends more and more time in her room."
-  ],
-  "jan": [
-    "Two doors down lives Jan. He ran the bakery in the same town for thirty years and moved in two years ago.",
-    "The people he used to talk to here have died or moved away. When staff invite him to the lounge he says he will come next time. They ask less often, and every week it gets harder for him to go."
+    "By the evening she remembers none of the names. The other residents give her space, and she waits for them to come to her. Over the following weeks she spends more and more time in her room."
   ],
   "wait": [
-    "Elena and Jan share a town and decades of the same streets, and neither of them knows it.",
-    "Research on the liking gap shows that after a conversation, people think the other person liked them less than they actually did. So even after a good first talk, nobody makes the second move."
-  ],
-  "polite": [
-    "When residents do invite each other, it usually happens in the lounge with others listening. Turning someone down there feels rude, so people agree and later avoid the lounge.",
-    "People who ask tend to underestimate how hard it is to say no, and conversations often go on longer than both people want."
+    "Two doors down in Room 12 lives Jan. He ran the bakery in the same town for thirty years, and the people he used to talk to here have died or moved away, so he stays in his room.",
+    "Elena and Jan share a town and decades of the same streets, and neither of them knows it. Because of the liking gap, each waits for the other to make the first move—and when invitations happen in front of others in the lounge, people say yes just to be polite and later avoid the room."
   ],
   "context": [
     "We worked out two lines of the problem, meaningful connections and morning care; for the technology and the evaluation we carried connections through, because an introduction asks Pepper to reason about people. Both are in the wiki.",
@@ -53,10 +45,8 @@
     "UC02 steps 1 and 2. The System finds three residents who share something Elena released, never health, losses or family conflicts. The coordinator approves one of them: Jan. This is Premise PR2."
   ],
   "ask": [
-    "In the quiet corner, Pepper asks Elena whether she would like to meet Jan. She can say no, and nobody would ever hear about it. She says yes, and she also agrees that Pepper may tell Jan about the post office."
-  ],
-  "askjan": [
-    "The next morning Myra walks Jan to the lounge, and Pepper asks him in the same way. He says he would like that. Neither of them knows that the other was asked."
+    "In the quiet corner, Pepper asks Elena whether she would like to meet Jan. She can say no, and nobody would ever hear about it. She says yes, and agrees that Pepper may tell Jan about the post office.",
+    "The next morning Pepper asks Jan in the same way, alone. He says he would like that. Neither of them knows that the other was asked unless both say yes — that is Premise PR1."
   ],
   "meet": [
     "That afternoon Myra brings them to the same table. Pepper shows two photos, says both names, and mentions the one thing they share.",
@@ -64,10 +54,7 @@
   ],
   "pause": [
     "They talk about the town and its old customers. At one point Elena loses a word, and Jan waits until she finds it herself. Pepper says nothing while they talk.",
-    "When the conversation runs down, Pepper suggests a walk in the garden, and Jan proposes the next day after lunch."
-  ],
-  "walk": [
-    "The activity they chose: the next day Myra opens the garden door and they walk once round the garden. Pepper suggested a walk only because both prefer it and are assessed fit for it. The reminder at the agreed time belongs to UC03, which we leave aside today."
+    "When the conversation runs down, Pepper suggests a walk in the garden, and Jan proposes the next day after lunch. Myra receives a three-tag note on her phone and opens the garden door for their walk the next day."
   ],
   "record": [
     "UC02 ends with a short record: one introduction accepted by both, one walk, one note to Myra. No audio and nothing of what they said. That is Premise PR6."

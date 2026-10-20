@@ -1,7 +1,7 @@
 /* VII The design, VIII The prototype, IX How we will know, X Meet again */
 (function () {
   'use strict';
-  const { C, S, G, block, caption, say, ref, doi, SPOTS, abWrap } = K;
+  const { C, S, G, block, caption, say, ref, doi } = K;
   const X = K.ctx;
 
   /* ------------------------------------------------------- VII The design */
@@ -31,29 +31,8 @@
 
   /* ------------------------------------------------------- Artifact */
   K.scenes.push(function poc(A) {
-    const elA = K.H('section', 'brief-slide');
-    elA.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 proof of concept</div>
-      <h2>What we built: UC02 you can talk to.</h2>
-      <p class="brief-lead">A software prototype of Pepper’s side of UC02, built to run on the robot and shown here on screen. Our formative walkthrough ran on it.</p></header>
-      <div class="brief-body art-grid">
-        <div class="art-cols">
-          <div><div class="label">Implemented</div><p>Profile items marked <b>released</b> or <b>private</b> · the coordinator’s relationship map · consent-gated pair suggestions · private “meet?” and “again?” asks · plain correction with an error flag · a short event record</p></div>
-          <div><div class="label">Simulated</div><p>Pepper as an on-screen agent whose speech comes from a <b>language model</b> (standing in for TECH-18) · residents, played by role-players who speak out loud</p></div>
-          <div><div class="label">Operator-controlled</div><p>The care home: the operator injects events (a refusal, a wrong profile entry, a coordinator approval). Not built: the robot and its tablet, staff phone notes, presence counts.</p></div>
-        </div>
-        <div class="art-shots">
-          <figure><img src="img/poc/duo.png" alt=""><figcaption>Conversation view</figcaption></figure>
-          <figure><img src="img/poc/people.png" alt=""><figcaption>Released profile items</figcaption></figure>
-          <figure><img src="img/poc/matrix.png" alt=""><figcaption>Relationship map</figcaption></figure>
-        </div>
-      </div>
-      <div class="brief-foot">${ref('github.com/gintskk/sce-poc', K.POC)}</div>`;
-    abWrap('poc', 'A', elA);
-    A.reveal(elA, 'poc', { a: 0.32, b: 0.95, y: 24 });
-    A.conceal(elA, 'demo', { a: 0, b: 0.26 });
-
-    const elB = K.H('section', 'brief-slide');
-    elB.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 Proof of Concept</div>
+    const el = K.H('section', 'brief-slide');
+    el.innerHTML = `<header><div class="kicker">Evaluation · Artifact · AT-01 Proof of Concept</div>
       <h2>What we built: UC02 you can talk to.</h2></header>
       <div class="brief-body art-grid" style="margin-top:24px">
         <div class="w-poc-tiers">
@@ -91,9 +70,8 @@
         </div>
       </div>
       <div class="brief-foot">${ref('github.com/gintskk/sce-poc', K.POC)}</div>`;
-    abWrap('poc', 'B', elB);
-    A.reveal(elB, 'poc', { a: 0.32, b: 0.95, y: 24 });
-    A.conceal(elB, 'demo', { a: 0, b: 0.26 });
+    A.reveal(el, 'poc', { a: 0.32, b: 0.95, y: 24 });
+    A.conceal(el, 'demo', { a: 0, b: 0.26 });
   });
 
   /* The recorded demo. Drop the file at website/video/demo.mp4; until then a WIP frame shows. */
@@ -124,28 +102,7 @@
   });
 
   K.scenes.push(function pocWrong(A) {
-    const cA = block('card', 1000, 260, 800, `<div class="id" style="--accent:${C.alert}">Walkthrough event · PR3</div>
-      <div style="margin-top:22px" class="label">Planted in Jan’s profile</div>
-      <div style="font:500 36px/1.2 var(--serif);margin:8px 0 22px;position:relative;display:table">Ran the bakery on the market square<i style="position:absolute;left:-4px;right:-4px;top:54%;height:2.5px;background:var(--alert)" class="strk"></i></div>
-      <div class="line jan" style="position:relative;width:auto"><div class="who">Jan</div><div class="say">“No, it was on Church Street!”</div></div>
-      <div class="line sys" style="position:relative;width:auto;margin-top:22px"><div class="who">Pepper · required within 3 s, error flagged</div><div class="say">“I had that wrong.”</div></div>
-      <div class="label" style="margin-top:26px;color:var(--alert)">Result in the prototype</div>
-      <div style="font:400 24px/1.4 var(--sans);margin-top:8px">Corrected within 3 s in <b class="ph">3 of 5</b> runs; the other two took about <span class="ph">4 s</span>.</div>
-`);
-    const strk = cA.querySelector('.strk');
-    gsap.set(strk, { scaleX: 0, transformOrigin: '0 50%' });
-    A.reveal(cA, 'poc-wrong', { a: 0.3, b: 0.8 });
-    A.to(strk, 'poc-wrong', { scaleX: 1 }, 0.8, 1);
-    A.conceal(cA, 'formative-premises');
-    const capA = caption(A, 'poc-wrong', 'formative-premises', {
-      y: 250, w: 680,
-      k: 'Formative walkthrough · one of the planted events', kc: C.alert,
-      t: 'We plant a mistake on purpose.',
-      s: 'The evaluators did not know which entry was wrong. When the role-player corrected it, the prototype had to admit it plainly and flag it for the coordinator.',
-    });
-    abWrap('poc-wrong', 'A', cA, capA);
-
-    const capB = caption(A, 'poc-wrong', 'formative-premises', {
+    caption(A, 'poc-wrong', 'formative-premises', {
       y: 240, w: 680,
       k: 'Formative Walkthrough · Planted Event (PR3)', kc: C.alert,
       t: 'Testing how Pepper handles a wrong fact.',
@@ -154,7 +111,7 @@
         <span class="w-ip alert">Target: Admit &amp; flag ≤ 3 s</span>
       </div>`,
     });
-    const cB = block('card w-wrong-card', 940, 210, 860, `
+    const c = block('card w-wrong-card', 940, 210, 860, `
       <div class="id" style="--accent:${C.alert}">PR3 Error-Correction Stress Test · 5 Runs</div>
       <div class="w-wrong-steps">
         <div class="w-ws-box">
@@ -183,9 +140,8 @@
         </div>
       </div>
     `);
-    abWrap('poc-wrong', 'B', capB, cB);
-    A.reveal(cB, 'poc-wrong', { a: 0.3, b: 0.85 });
-    A.conceal(cB, 'formative-premises');
+    A.reveal(c, 'poc-wrong', { a: 0.3, b: 0.85 });
+    A.conceal(c, 'formative-premises');
   });
 
   /* --------------------------------------------- Planned summative test */

@@ -1,7 +1,7 @@
 /* Setup, Cover, I Moving in */
 (function () {
   'use strict';
-  const { C, S, G, ln, block, caption, ref, doi, SPOTS, PLAN, abWrap, discardCard } = K;
+  const { C, S, G, ln, block, caption, doi, SPOTS, PLAN } = K;
   const X = K.ctx;
 
   const CORR_Y = PLAN.y + PLAN.roomH + PLAN.corr / 2;
@@ -55,7 +55,7 @@
 
   /* ----------------------------------------------------------- Opening */
   K.scenes.push(function openQ1(A) {
-    const elA = K.H('div', 'ppt-slide', null, `
+    const el = K.H('div', 'ppt-slide', null, `
       <div class="k">Question 01 · For you</div>
       <h2>When did you last walk into a room where you knew <em>nobody</em>?</h2>
       <div class="ppt-pills">
@@ -64,20 +64,12 @@
         <div class="ppt-pill">Moving to a new city</div>
         <div class="ppt-pill">Joining a group late</div>
       </div>`);
-    abWrap('open-q1', 'A', elA);
-    A.reveal([...elA.children], 'open-q1', { a: 0.3, b: 0.9, stagger: 0.05, y: 14 });
-    A.conceal(elA, 'open-q2', { a: 0, b: 0.3, y: -12 });
-
-    discardCard(A, 'open-q1', 'open-q2', {
-      x: 240, y: 240, w: 1440,
-      title: 'Icebreaker Q1 removed to reach the core story & evaluation faster',
-      why: 'This slide only listed 4 generic examples of entering a new room. The presenter can ask the question in one sentence on the cover slide.',
-      kept: 'The contrast between how friendships actually form vs. day one in a care home is merged directly into Stop #04 (Starting over at eighty-one).',
-    });
+    A.reveal([...el.children], 'open-q1', { a: 0.3, b: 0.9, stagger: 0.05, y: 14 });
+    A.conceal(el, 'open-q2', { a: 0, b: 0.3, y: -12 });
   });
 
   K.scenes.push(function openQ2(A) {
-    const elA = K.H('div', 'ppt-slide', null, `
+    const el = K.H('div', 'ppt-slide', null, `
       <div class="k">Question 02 · Think of a close friend</div>
       <h2>What turned that first hello into an actual <em>friendship</em>?</h2>
       <div class="ppt-grid-3">
@@ -97,20 +89,12 @@
           <p>Seeing each other again before you forget.</p>
         </div>
       </div>`);
-    abWrap('open-q2', 'A', elA);
-    A.reveal([elA.children[0], elA.children[1], ...elA.children[2].children], 'open-q2', { a: 0.3, b: 0.9, stagger: 0.04, y: 14 });
-    A.conceal(elA, 'open-hook', { a: 0, b: 0.3, y: -12 });
-
-    discardCard(A, 'open-q2', 'open-hook', {
-      x: 240, y: 240, w: 1440,
-      title: 'Merged into Stop #04 (Starting over at eighty-one)',
-      why: 'Instead of spending three separate slides on the opening hook, all three pillars (Common ground, Easy to say no, Second meeting) now appear in the visual pipeline on the next slide.',
-      kept: '01 Common ground · 02 No pressure (easy no) · 03 Continuity (second meeting) → integrated into Stop #04 Option B.',
-    });
+    A.reveal([el.children[0], el.children[1], ...el.children[2].children], 'open-q2', { a: 0.3, b: 0.9, stagger: 0.04, y: 14 });
+    A.conceal(el, 'open-hook', { a: 0, b: 0.3, y: -12 });
   });
 
   K.scenes.push(function openHook(A) {
-    const elA = K.H('div', 'ppt-slide', null, `
+    const el = K.H('div', 'ppt-slide', null, `
       <div class="k">Our starting point</div>
       <h2>Now imagine starting over at <em>eighty-one</em> — with dementia.</h2>
       <div class="ppt-grid-2">
@@ -133,46 +117,8 @@
           </ul>
         </div>
       </div>`);
-    abWrap('open-hook', 'A', elA);
-    A.reveal([elA.children[0], elA.children[1], ...elA.children[2].children], 'open-hook', { a: 0.3, b: 0.9, stagger: 0.04, y: 14 });
-    A.conceal(elA, 'arrive', { a: 0, b: 0.3, y: -12 });
-
-    const elB = K.H('div', 'ppt-slide', null, `
-      <div class="k">Our starting point · Condensed opening</div>
-      <h2 style="margin-bottom:38px">Starting over at <em>eighty-one</em> — with dementia.</h2>
-      <div class="w-vs-stack">
-        <div class="w-pipeline bad">
-          <div class="w-pipe-head">
-            <span class="w-badge alert">Usual Care Home Day 1</span>
-            <strong>Overload → Withdrawal</strong>
-          </div>
-          <div class="w-pipe-steps">
-            <div class="w-step-box"><div class="w-big-num">10+</div><div class="w-step-label">Strangers at lunch<small>Introduced all at once</small></div></div>
-            <div class="w-pipe-arrow">→</div>
-            <div class="w-step-box"><div class="w-big-num">0</div><div class="w-step-label">Names by evening<small>Short-term memory overload</small></div></div>
-            <div class="w-pipe-arrow">→</div>
-            <div class="w-step-box alert-box"><div class="w-big-num">🚪</div><div class="w-step-label">Stays in bedroom<small>Safer than facing strangers</small></div></div>
-          </div>
-        </div>
-        <div class="w-pipeline good">
-          <div class="w-pipe-head">
-            <span class="w-badge gold">Kinnect · Quiet Host (Not a Robot Companion)</span>
-            <strong>How Real Friendships Form</strong>
-          </div>
-          <div class="w-pipe-steps four">
-            <div class="w-step-box"><div class="w-tag-top">01 · Common Ground</div><div class="w-step-title">One shared thread</div><div class="w-step-sub">Same town, work, or interest</div></div>
-            <div class="w-pipe-arrow">→</div>
-            <div class="w-step-box"><div class="w-tag-top">02 · No Pressure</div><div class="w-step-title">Private ask first</div><div class="w-step-sub">Easy to say no alone</div></div>
-            <div class="w-pipe-arrow">→</div>
-            <div class="w-step-box"><div class="w-tag-top">03 · Host Steps Back</div><div class="w-step-title">1-to-1 intro, then mute</div><div class="w-step-sub">Humans talk, robot is silent</div></div>
-            <div class="w-pipe-arrow">→</div>
-            <div class="w-step-box accent-box"><div class="w-tag-top">04 · Continuity</div><div class="w-step-title">Meet again</div><div class="w-step-sub">1 person worth seeing tomorrow</div></div>
-          </div>
-        </div>
-      </div>`);
-    abWrap('open-hook', 'B', elB);
-    A.reveal([...elB.children], 'open-hook', { a: 0.3, b: 0.9, stagger: 0.05, y: 14 });
-    A.conceal(elB, 'arrive', { a: 0, b: 0.3, y: -12 });
+    A.reveal([el.children[0], el.children[1], ...el.children[2].children], 'open-hook', { a: 0.3, b: 0.9, stagger: 0.04, y: 14 });
+    A.conceal(el, 'arrive', { a: 0, b: 0.3, y: -12 });
   });
 
   /* ------------------------------------------------------- I Moving in */
@@ -187,15 +133,7 @@
     A.reveal(X.elena.halo, 'arrive', { a: 0.7, b: 0.9 });
     K.dayMark(A, 'arrive', 'context', 'Day one', 'Elena moves in');
 
-    const capA = caption(A, 'arrive', 'flurry', {
-      k: 'SA-01 Moving into the care home',
-      t: 'Elena moves into the care home.',
-      s: 'She is 81 and has mild Alzheimer’s disease. She knows nobody here.',
-      c: `HP-01 Elena ${doi('Sury et al. (2013)', '10.1017/S1041610213000057')}`,
-    });
-    abWrap('arrive', 'A', capA);
-
-    const capB = caption(A, 'arrive', 'flurry', {
+    caption(A, 'arrive', 'flurry', {
       k: 'SA-01 · HP-01 Persona',
       t: 'Elena moves into Room 14.',
       wx: `<div class="w-chip-grid">
@@ -205,7 +143,6 @@
       </div>`,
       c: `HP-01 Elena ${doi('Sury et al. (2013)', '10.1017/S1041610213000057')}`,
     });
-    abWrap('arrive', 'B', capB);
   });
 
   K.scenes.push(function flurry(A) {
@@ -219,19 +156,11 @@
     });
     // names arrive one after another and stay while we talk; they fade slowly as she goes to her room
     A.reveal(tags, 'flurry', { a: 0.3, b: 1, stagger: 0.07 });
-    A.to(tags, 'jan', { autoAlpha: 0, stagger: 0.05 * A.dur('jan') }, 0, 0.45);
+    A.to(tags, 'wait', { autoAlpha: 0, stagger: 0.04 * A.dur('wait') }, 0, 0.38);
     // she ends the day in her room
-    X.walk(X.elena, 'jan', [[lounge[0], CORR_Y], [X.elena.home[0], CORR_Y], X.elena.home], 0, 0.45);
+    X.walk(X.elena, 'wait', [[lounge[0], CORR_Y], [X.elena.home[0], CORR_Y], X.elena.home], 0, 0.4);
 
-    const capA = caption(A, 'flurry', 'jan', {
-      k: 'PS-01 The first weeks', kc: C.alert,
-      t: 'On her first day she meets everyone at once.',
-      s: 'By the evening she remembers none of their names.',
-      c: `PS-01 ${doi('Victor (2012)', '10.2217/ahe.12.65')}`,
-    });
-    abWrap('flurry', 'A', capA);
-
-    const capB = caption(A, 'flurry', 'jan', {
+    caption(A, 'flurry', 'wait', {
       k: 'PS-01 · Cognitive overload', kc: C.alert,
       t: 'Everyone at once — then nobody.',
       wx: `<div class="w-mini-flow">
@@ -243,46 +172,21 @@
       </div>`,
       c: `PS-01 ${doi('Victor (2012)', '10.2217/ahe.12.65')}`,
     });
-    abWrap('flurry', 'B', capB);
-  });
-
-  K.scenes.push(function jan(A) {
-    A.reveal(X.jan.ring, 'jan', { a: 0.4, b: 0.7 });
-    A.reveal(X.jan.halo, 'jan', { a: 0.4, b: 0.7 });
-    const capA = caption(A, 'jan', 'wait', {
-      k: 'SA-02 Waiting for a reason to leave the room',
-      t: 'Next door, Jan has stopped coming out.',
-      s: 'He ran the bakery in her town, and the people he used to talk to here have died or moved away.',
-      c: `PS-02 Staying in ${doi('Jansen et al. (2017)', '10.1186/s12877-017-0430-7')}`,
-    });
-    abWrap('jan', 'A', capA);
-
-    discardCard(A, 'jan', 'wait', {
-      x: 120, y: 230, w: 760,
-      title: 'Merged into Stop #08 (Same town, without knowing it)',
-      why: 'Separating “Jan stays in his room” and “They share a town” into two stops slows down the problem scenario.',
-      kept: 'Jan’s room isolation (PS-02), his 30 years at the town bakery, and the shared-town liking gap (PS-03) are combined on the next stop.',
-    });
   });
 
   K.scenes.push(function wait(A) {
+    A.reveal(X.jan.ring, 'wait', { a: 0.25, b: 0.6 });
+    A.reveal(X.jan.halo, 'wait', { a: 0.25, b: 0.6 });
     const e = X.elena.home, j = X.jan.home;
     X.gap = K.thread(X.threads, [e[0], e[1] + 4], [j[0], j[1] + 4], C.muted, 70, { 'stroke-dasharray': '3 9', 'stroke-width': 2 });
-    A.reveal(X.gap, 'wait', { a: 0.3, b: 0.7 });
+    A.reveal(X.gap, 'wait', { a: 0.35, b: 0.75 });
     X.gapQ = S('text', { x: (e[0] + j[0]) / 2, y: e[1] + 62, 'text-anchor': 'middle', class: 'st-serif', 'font-size': 36, 'font-style': 'italic', 'font-weight': 500, fill: C.jan }, K.L.top, 'same town?');
     X.gapQ.setAttribute('y', X.CORR_Y + 12);
     A.reveal(X.gapQ, 'wait', { a: 0.5, b: 0.9 });
-    A.conceal(X.gapQ, 'polite', { a: 0, b: 0.3 });
+    A.conceal(X.gapQ, 'context', { a: 0, b: 0.3 });
+    A.to([X.home.root, X.threads], 'context', { autoAlpha: 0 }, 0, 0.3);
 
-    const capA = caption(A, 'wait', 'polite', {
-      k: 'PS-03 Each waits for the other', kc: C.alert,
-      t: 'They grew up in the same town without knowing it.',
-      s: 'Each waits for the other to make the first move.',
-      c: `HFC-16 the liking gap ${doi('Boothby et al. (2018)', '10.1177/0956797618783714')}`,
-    });
-    abWrap('wait', 'A', capA);
-
-    const capB = caption(A, 'wait', 'polite', {
+    caption(A, 'wait', 'context', {
       y: 190, w: 780,
       k: 'PS-02 & PS-03 · Shared past, silent corridor', kc: C.alert,
       t: 'Same town, two doors apart — neither steps out.',
@@ -304,25 +208,6 @@
         </div>
       </div>`,
       c: `PS-02 ${doi('Jansen et al. (2017)', '10.1186/s12877-017-0430-7')} · HFC-16 ${doi('Boothby et al. (2018)', '10.1177/0956797618783714')}`,
-    });
-    abWrap('wait', 'B', capB);
-  });
-
-  K.scenes.push(function polite(A) {
-    A.to([X.home.root, X.threads], 'context', { autoAlpha: 0 }, 0, 0.3);
-    const capA = caption(A, 'polite', 'context', {
-      k: 'PS-04 A yes to be polite', kc: C.alert,
-      t: 'In the lounge, people say yes to be polite.',
-      s: 'Saying no in front of others feels rude, so they agree and then avoid the room.',
-      c: `HFC-17 ${doi('Bohns (2016)', '10.1177/0963721415628011')} ${doi('Mastroianni et al. (2021)', '10.1073/pnas.2011809118')}`,
-    });
-    abWrap('polite', 'A', capA);
-
-    discardCard(A, 'polite', 'context', {
-      x: 120, y: 230, w: 760,
-      title: 'Discarded: redundant with Background & Design Rules',
-      why: 'This stop had no new floor-plan action, and its exact point (public invitations force a polite “yes”, HFC-17) is stated directly in the next two slides.',
-      kept: 'Covered in Stop #10 (VT-02 Autonomy vs. Connection) and Stop #11 (Rule 01: Ask Alone where “no” costs nothing).',
     });
   });
 

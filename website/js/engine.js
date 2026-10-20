@@ -72,15 +72,9 @@
     }
     const forward = target > from;
     const span = Math.abs(stops[i].t - curT);
-    const curIdx = currentIndex();
-    const minI = Math.min(curIdx, i), maxI = Math.max(curIdx, i);
-    let onlySkippedBetween = Math.abs(i - curIdx) > 1;
-    for (let k = minI + 1; k < maxI; k++) {
-      if (!window.K?.isStopSkipped?.(stops[k])) { onlySkippedBetween = false; break; }
-    }
     let dur;
     if (opts.dur) dur = opts.dur;
-    else if (forward && (span <= stops[i].w + 1e-6 || onlySkippedBetween)) dur = (stops[i].dur || 1300) * SLOW;
+    else if (forward && span <= stops[i].w + 1e-6) dur = (stops[i].dur || 1300) * SLOW;
     else dur = Math.min(3600, 900 + span * 380);
     if (!forward) dur = Math.min(dur, 1800);
 
@@ -103,8 +97,7 @@
   }
 
   function next() {
-    let i = nav ? nav.i + 1 : stops.findIndex(s => s.t > curT + 0.01);
-    while (i > 0 && i < stops.length - 1 && window.K?.isStopSkipped?.(stops[i])) i++;
+    const i = nav ? nav.i + 1 : stops.findIndex(s => s.t > curT + 0.01);
     if (i > 0 && i < stops.length) goTo(i);
   }
 
@@ -112,7 +105,6 @@
     let i = -1;
     if (nav) i = nav.i - 1;
     else for (let k = 0; k < stops.length; k++) if (stops[k].t < curT - 0.01) i = k;
-    while (i > 0 && window.K?.isStopSkipped?.(stops[i])) i--;
     if (i >= 0) goTo(i);
   }
 
@@ -140,7 +132,7 @@
   function bindInput() {
     let lastWheel = 0;
     window.addEventListener('wheel', e => {
-      if (indexOpen || window.K?.abModalOpen) return;
+      if (indexOpen) return;
       if (!stepMode) { cancelNav(); return; }
       e.preventDefault();
       const now = performance.now();
@@ -153,9 +145,9 @@
 
     let touchY = null;
     window.addEventListener('touchstart', e => { touchY = e.touches[0].clientY; }, { passive: true });
-    window.addEventListener('touchmove', e => { if (stepMode && !indexOpen && !window.K?.abModalOpen) e.preventDefault(); }, { passive: false });
+    window.addEventListener('touchmove', e => { if (stepMode && !indexOpen) e.preventDefault(); }, { passive: false });
     window.addEventListener('touchend', e => {
-      if (!stepMode || touchY == null || indexOpen || window.K?.abModalOpen) return;
+      if (!stepMode || touchY == null || indexOpen) return;
       const dy = touchY - e.changedTouches[0].clientY;
       touchY = null;
       if (Math.abs(dy) > 40) dy > 0 ? next() : prev();
@@ -164,10 +156,6 @@
     window.addEventListener('keydown', e => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const k = e.key;
-      if (window.K?.abModalOpen) {
-        if (k === 'Escape' || k === 'r' || k === 'R') { e.preventDefault(); window.K.toggleAbModal(false); }
-        return;
-      }
       if (indexOpen) {
         if (k === 'Escape' || k === 'g' || k === 'G' || k === 'o' || k === 'O') { e.preventDefault(); toggleIndex(false); }
         return;
@@ -179,9 +167,6 @@
       else if (k === 'f' || k === 'F') toggleFullscreen();
       else if (k === 's' || k === 'S') setMode(!stepMode);
       else if (k === 'n' || k === 'N') toggleNotes();
-      else if (k === 'b' || k === 'B') { e.preventDefault(); window.K?.toggleCurrentAb?.(); }
-      else if (k === 'r' || k === 'R') { e.preventDefault(); window.K?.toggleAbModal?.(); }
-      else if (k === 'x' || k === 'X') { e.preventDefault(); window.K?.toggleSkipDiscarded?.(); }
       else if (k === 'g' || k === 'G' || k === 'o' || k === 'O' || k === 'Escape') { e.preventDefault(); toggleIndex(true); }
       else if (/^[0-9]$/.test(k)) {
         const ch = +k, i = stops.findIndex(s => s.ch === ch);
@@ -190,7 +175,7 @@
     });
 
     stage.addEventListener('click', e => {
-      if (e.target.closest('a, button, .rail, .ab-ui, .ab-discard-card')) return;
+      if (e.target.closest('a, .rail')) return;
       if (e.button === 0) next();
     });
 
@@ -255,15 +240,10 @@
       lastIdx = idx;
       const s = stops[idx];
       hudEls.chap.textContent = s.ch ? `${roman(s.ch)}  ${chapters[s.ch]}` : (idx > 0 ? chapters[0] : '');
-      const activeStops = stops.filter(st => !window.K?.isStopSkipped?.(st));
-      const activePos = activeStops.indexOf(s);
-      const dispIdx = activePos >= 0 ? activePos + 1 : idx + 1;
-      const dispTot = activePos >= 0 ? activeStops.length : stops.length;
-      hudEls.count.innerHTML = `<b>${String(dispIdx).padStart(2, '0')}</b> / ${String(dispTot).padStart(2, '0')}`;
+      hudEls.count.innerHTML = `<b>${String(idx + 1).padStart(2, '0')}</b> / ${String(stops.length).padStart(2, '0')}`;
       hudEls.mode.textContent = stepMode ? 'Step mode' : 'Free scroll';
       if (indexOpen) markIndex();
       if (notesOpen) renderNotes();
-      window.K?.updateAbHud?.(s, idx, stops);
     }
   }
 
@@ -288,11 +268,11 @@
     chapters.forEach((c, ci) => {
       html += `<div class="ch"><h3>${ci ? roman(ci) + '  ' : ''}${c}</h3>`;
       stops.forEach((s, i) => {
-        if (s.ch === ci) html += `<a href="#${s.id}" data-i="${i}" data-stop-id="${s.id}"><span>${String(i + 1).padStart(2, '0')}</span>${s.title}</a>`;
+        if (s.ch === ci) html += `<a href="#${s.id}" data-i="${i}"><span>${String(i + 1).padStart(2, '0')}</span>${s.title}</a>`;
       });
       html += '</div>';
     });
-    html += '</div><div class="keys"><span>→ ↓ space: next</span><span>← ↑: back</span><span>B: toggle Option A/B</span><span>R: review all A/B changes</span><span>X: skip/show discarded</span><span>0 to 9: chapter</span><span>F: fullscreen</span><span>G: contents</span><span>N: speaker notes</span></div>';
+    html += '</div><div class="keys"><span>→ ↓ space: next</span><span>← ↑: back</span><span>0 to 9: chapter</span><span>F: fullscreen</span><span>S: step or free scroll</span><span>G: contents</span><span>N: speaker notes</span></div>';
     indexEl.innerHTML = html;
     indexEl.addEventListener('click', e => {
       const a = e.target.closest('a[data-i]');
@@ -305,11 +285,7 @@
 
   function markIndex() {
     const idx = currentIndex();
-    indexEl.querySelectorAll('a[data-i]').forEach(a => {
-      const i = +a.dataset.i;
-      a.classList.toggle('on', i === idx);
-      a.classList.toggle('skipped', !!window.K?.isStopDiscarded?.(stops[i]?.id));
-    });
+    indexEl.querySelectorAll('a[data-i]').forEach(a => a.classList.toggle('on', +a.dataset.i === idx));
   }
 
   function toggleIndex(open) {
@@ -451,7 +427,6 @@
     fit();
     buildHud();
     buildIndex();
-    window.K?.initAbUi?.();
     bindInput();
 
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -470,7 +445,6 @@
     init,
     goTo: (idOrIndex, opts) => goTo(typeof idOrIndex === 'string' ? stops.findIndex(s => s.id === idOrIndex) : idOrIndex, opts),
     next, prev,
-    refreshHud: () => updateHud(true),
     get time() { return curT; },
     get stops() { return stops; },
     api: { pos, dur, reveal, conceal, span, to, set, xf, proxy, move, draw, undraw, prepDraw, get tl() { return tl; } },
