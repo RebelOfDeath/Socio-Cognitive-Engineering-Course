@@ -56,7 +56,7 @@
   /* ----------------------------------------------------------- Opening */
   K.scenes.push(function openQ1(A) {
     const el = K.H('div', 'ppt-slide', null, `
-      <div class="k">Question 01 · For you</div>
+      <div class="k">Question 01, for you</div>
       <h2>When did you last walk into a room where you knew <em>nobody</em>?</h2>
       <div class="ppt-pills">
         <div class="ppt-pill">First day at university</div>
@@ -70,21 +70,21 @@
 
   K.scenes.push(function openQ2(A) {
     const el = K.H('div', 'ppt-slide', null, `
-      <div class="k">Question 02 · Think of a close friend</div>
+      <div class="k">Question 02, a close friend</div>
       <h2>What turned that first hello into an actual <em>friendship</em>?</h2>
       <div class="ppt-grid-3">
         <div class="ppt-card">
-          <div class="num">01 · Common ground</div>
+          <div class="num">01 Common ground</div>
           <h3>Something shared</h3>
           <p>The same street, study, or past.</p>
         </div>
         <div class="ppt-card">
-          <div class="num">02 · No pressure</div>
+          <div class="num">02 No pressure</div>
           <h3>Easy to say no</h3>
           <p>A low-stakes moment, not a spotlight.</p>
         </div>
         <div class="ppt-card">
-          <div class="num">03 · Continuity</div>
+          <div class="num">03 Continuity</div>
           <h3>A second meeting</h3>
           <p>Seeing each other again before you forget.</p>
         </div>
@@ -96,11 +96,11 @@
   K.scenes.push(function openHook(A) {
     const el = K.H('div', 'ppt-slide', null, `
       <div class="k">Our starting point</div>
-      <h2>Now imagine starting over at <em>eighty-one</em> — with dementia.</h2>
+      <h2>Now imagine starting over at <em>eighty-one</em>, with dementia.</h2>
       <div class="ppt-grid-2">
         <div class="ppt-card">
           <div class="num" style="color:var(--alert)">What usually happens</div>
-          <h3>Ten strangers at lunch</h3>
+          <h3>A whole table of strangers</h3>
           <ul class="ppt-list">
             <li>Introduced to the whole table at once</li>
             <li>Every name gone by evening</li>
@@ -134,14 +134,14 @@
     K.dayMark(A, 'arrive', 'context', 'Day one', 'Elena moves in');
 
     caption(A, 'arrive', 'flurry', {
-      k: 'SA-01 · HP-01 Persona',
+      k: 'SA-01, persona HP-01',
       t: 'Elena moves into Room 14.',
       wx: `<div class="w-chip-grid">
-        <div class="w-stat-chip"><span class="n">81</span><span class="l">Years old · Mild Alzheimer’s</span></div>
+        <div class="w-stat-chip"><span class="n">81</span><span class="l">Years old, mild Alzheimer’s</span></div>
         <div class="w-stat-chip"><span class="n">25 yrs</span><span class="l">Town post office counter</span></div>
         <div class="w-stat-chip alert"><span class="n">0</span><span class="l">People she knows here</span></div>
       </div>`,
-      c: `HP-01 Elena ${doi('Sury et al. (2013)', '10.1017/S1041610213000057')}`,
+      c: `SA-01 ${doi('Sury et al. (2013)', '10.1017/S1041610213000057')}`,
     });
   });
 
@@ -161,14 +161,14 @@
     X.walk(X.elena, 'wait', [[lounge[0], CORR_Y], [X.elena.home[0], CORR_Y], X.elena.home], 0, 0.4);
 
     caption(A, 'flurry', 'wait', {
-      k: 'PS-01 · Cognitive overload', kc: C.alert,
-      t: 'Everyone at once — then nobody.',
+      k: 'PS-01 The first weeks', kc: C.alert,
+      t: 'Everyone at once, then nobody.',
       wx: `<div class="w-mini-flow">
-        <div class="w-mf-node"><b>8+</b><span>Names at lunch</span></div>
+        <div class="w-mf-node"><b>All</b><span>Introduced on day one</span></div>
         <div class="w-mf-arr">→</div>
         <div class="w-mf-node alert"><b>0</b><span>Kept by evening</span></div>
         <div class="w-mf-arr">→</div>
-        <div class="w-mf-node"><b>Rm 14</b><span>Retreats alone</span></div>
+        <div class="w-mf-node"><b>Weeks</b><span>More time in her room</span></div>
       </div>`,
       c: `PS-01 ${doi('Victor (2012)', '10.2217/ahe.12.65')}`,
     });
@@ -188,26 +188,26 @@
 
     caption(A, 'wait', 'context', {
       y: 190, w: 780,
-      k: 'PS-02 & PS-03 · Shared past, silent corridor', kc: C.alert,
-      t: 'Same town, two doors apart — neither steps out.',
+      k: 'PS-01, PS-02: waiting and staying in', kc: C.alert,
+      t: 'Same town, same corridor, and neither steps out.',
       wx: `<div class="w-pair-bridge">
         <div class="w-pb-card elena">
-          <div class="w-pb-who">Elena · Room 14</div>
+          <div class="w-pb-who">Elena, Room 14</div>
           <div class="w-pb-role">Post office counter (25 yrs)</div>
           <div class="w-pb-state">Waits to be approached</div>
         </div>
         <div class="w-pb-mid">
-          <span class="w-pb-tag">Same Town</span>
+          <span class="w-pb-tag">Same town</span>
           <div class="w-pb-line"></div>
-          <small>Liking gap (HFC-16):<br>neither knows</small>
+          <small>Neither knows (HFC-15);<br>each waits (HFC-16)</small>
         </div>
         <div class="w-pb-card jan">
-          <div class="w-pb-who">Jan · Room 12</div>
+          <div class="w-pb-who">Jan, Room 12</div>
           <div class="w-pb-role">Town bakery (30 yrs)</div>
           <div class="w-pb-state">Old friends gone; stays in room</div>
         </div>
       </div>`,
-      c: `PS-02 ${doi('Jansen et al. (2017)', '10.1186/s12877-017-0430-7')} · HFC-16 ${doi('Boothby et al. (2018)', '10.1177/0956797618783714')}`,
+      c: `PS-02 ${doi('Jansen et al. (2017)', '10.1186/s12877-017-0430-7')}, HFC-16 ${doi('Boothby et al. (2018)', '10.1177/0956797618783714')}`,
     });
   });
 

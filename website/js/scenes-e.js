@@ -1,8 +1,9 @@
 /* Assignment sections: formative evaluation, planned summative test, next iteration.
  * Reuses the deck's colours, serif type and ruled rows. Bounded layout: heading and body in document flow.
  *
- * Formative numbers wrapped in ph(...) are invented placeholders, not observed data. Press P in the deck to
- * highlight them; replace each with the walkthrough result (WALKTHROUGH-PROTOCOL.md) before presenting.
+ * The formative walkthrough (WALKTHROUGH-PROTOCOL.md) has not been run, so the formative slides show its plan:
+ * what each event and probe tests, and which result triggers which change. No observed numbers appear here.
+ * The summative slides follow ER-03 (wiki, 3 Evaluation/b1) as written.
  */
 (function () {
   'use strict';
@@ -13,229 +14,180 @@
     el.dataset.stop = id;
     el.innerHTML = `<header><div class="kicker">${kicker}</div><h2>${title}</h2>${lead ? `<p class="brief-lead">${lead}</p>` : ''}</header><div class="brief-body">${content}</div>${footer ? `<div class="brief-foot">${footer}</div>` : ''}`;
     A.reveal(el, id, { a: 0.32, b: 0.95, y: 24 });
-    A.conceal(el, out, { a: 0, b: 0.26 });
+    if (out) A.conceal(el, out, { a: 0, b: 0.26 });
     return el;
   }
 
   function table(headings, rows, cls = '') {
     return `<table class="brief-table ${cls}"><thead><tr>${headings.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
   }
-  const ph = t => `<span class="ph">${t}</span>`;
-  // P highlights the placeholder numbers (presenter check only).
-  window.addEventListener('keydown', e => {
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === 'p' || e.key === 'P') document.body.classList.toggle('show-ph');
-  });
 
   /* ------------------------------------------------------------ Formative */
-  K.scenes.push(function formativeClaims(A) {
-    slide(A, 'formative-claims', 'formative-changes', 'Evaluation · Formative findings · Claims', 'How did it feel to be asked?',
-      '',
-      `<div class="fcards w-fcards-b">
-        <div class="fcard ok">
-          <div class="w-dots-row"><span class="big">${ph('4 / 5')}</span><div class="w-peeps"><i class="on ok"></i><i class="on ok"></i><i class="on ok"></i><i class="on ok"></i><i></i></div></div>
-          <div class="ft">Would meet their partner again</div>
-          <div class="fq">Shared item opened 5 / 5 talks immediately</div>
-          <div class="ftag">CL1 · Positive Signal</div>
-        </div>
-        <div class="fcard mid">
-          <div class="w-dots-row"><span class="big">${ph('1 / 5')}</span><div class="w-peeps"><i class="on mid"></i><i></i><i></i><i></i><i></i></div></div>
-          <div class="ft">Found saying no hard</div>
-          <div class="fq">“Felt rude to refuse” — happened when staff stood nearby</div>
-          <div class="ftag">CL3 · Weak Signal</div>
-        </div>
-        <div class="fcard no">
-          <div class="w-dots-row"><span class="big">${ph('2 / 5')}</span><div class="w-peeps"><i class="on no"></i><i class="on no"></i><i></i><i></i><i></i></div></div>
-          <div class="ft">Felt Pepper knew too much</div>
-          <div class="fq">“How does it know where I worked?” (Source unclear)</div>
-          <div class="ftag">CL4 · Risk Seen</div>
-        </div>
-      </div>
-      <div class="w-surprise-flow">
-        <span class="w-sf-badge">⚡ Unexpected Finding</span>
-        <div class="w-sf-step">Pair still talking warmly</div>
-        <span class="w-sf-arr">+</span>
-        <div class="w-sf-step bad">Pepper offers activity on timer</div>
-        <span class="w-sf-arr">→</span>
-        <div class="w-sf-step">Ignored by <b>${ph('2 of 5')} pairs</b></div>
+  K.scenes.push(function formativePlan(A) {
+    slide(A, 'formative-claims', 'claim-example', 'Evaluation, formative walkthrough (planned, not yet run)', 'What the walkthrough tests on the proof of concept.',
+      'EM-01 on a smaller scale: the operator stages events on the build, and two evaluators log each run independently. Afterwards 4 to 6 peers each go through a private ask and an introduction, then answer a short paper probe.',
+      `<div class="brief-two">
+        <div>${table(['Premise', 'Staged event', 'Passes if'], [
+          ['PR1', 'A says “not this time”; an unclear “hm”', 'No introduction; the “no” never reaches B'],
+          ['PR2', 'Unapproved match; blocked pair; private item', 'Nobody asked; item never used'],
+          ['PR3', 'Introduction; B corrects a planted wrong entry', 'Names as statements; correction within 3 s'],
+          ['PR6', 'Inspection after the session', 'Listed fields only; 0 packets out; 0 audio files'],
+        ], 'brief-compact')}</div>
+        <div>${table(['Claim', 'Probe question', 'Scale'], [
+          ['CL1', 'Would you like to meet this person again?', '1 certainly not to 5 certainly'],
+          ['CL3', 'How easy was it to say no?', '1 very hard to 5 very easy'],
+          ['CL4', 'Did Pepper know more about you than you’d like?', '1 not at all to 5 far too much'],
+          ['Open', 'Did anything feel odd, pushy or too personal?', 'Free text'],
+        ], 'brief-compact')}</div>
       </div>`,
-      '5 peer role-players (1 session): early signals only. CL9 (loneliness) requires months.');
+      'Five runs per event, where EM-01 asks for 20 or 50. Peers without dementia give early signals, not validation. CL9 (loneliness) is not probed.');
   });
 
   K.scenes.push(function formativeChanges(A) {
-    slide(A, 'formative-changes', 'summative-intro', 'Evaluation · Formative evaluation · design changes', 'What we change before it runs on Pepper.',
-      '',
-      `<div class="w-changes-grid">
-        <div class="w-chg-card">
-          <span class="w-chg-tag">PR3 · PR6</span>
-          <div class="w-chg-from">✗ Hosted LLM leaked packets &amp; asked “Do you remember…?”</div>
-          <div class="w-chg-to">✓ <b>Prepared templates only</b> · 100% local execution</div>
-        </div>
-        <div class="w-chg-card">
-          <span class="w-chg-tag">PR1</span>
-          <div class="w-chg-from">✗ Ambiguous “hm, okay” counted as consent</div>
-          <div class="w-chg-to">✓ <b>Unsure = No</b> · Yes confirmed with 1 tablet tap</div>
-        </div>
-        <div class="w-chg-card">
-          <span class="w-chg-tag alert">CL4</span>
-          <div class="w-chg-from">✗ “How does it know where I worked?”</div>
-          <div class="w-chg-to">✓ <b>State source</b> (“From your intake”) + <b>Places &amp; interests only</b></div>
-        </div>
-        <div class="w-chg-card">
-          <span class="w-chg-tag">CL3</span>
-          <div class="w-chg-from">✗ Hesitation to refuse when a bystander stood near</div>
-          <div class="w-chg-to">✓ <b>No staff standing by</b> during private ask</div>
-        </div>
-        <div class="w-chg-card span-2">
-          <span class="w-chg-tag gold">Surprise Fix</span>
-          <div class="w-chg-from">✗ Activity prompt interrupted 2 / 5 pairs mid-conversation</div>
-          <div class="w-chg-to">✓ <b>Wait for silence stall (≥ 10 s) or end of session</b> before offering an activity</div>
-        </div>
-      </div>`,
-      'All 5 fixes are re-verified on the revised build before any resident testing.');
+    slide(A, 'formative-changes', 'summative-intro', 'Evaluation, formative walkthrough (planned)', 'Each possible result has its change agreed in advance.',
+      'One problem is already known from the code: the proof of concept sends speech to Google Cloud and gets conversational replies from a hosted language model. Consent questions, introductions and corrections are prepared lines. PR6 cannot pass on this build.',
+      table(['If the walkthrough shows', 'We change'], [
+        ['PR1: an unclear answer is taken as a yes', 'One question per answer; no clear answer counts as no'],
+        ['PR2: an unapproved or blocked match reaches a resident', 'Filter when matches are suggested, before anyone is asked'],
+        ['PR3: a correction takes longer than 3 s', 'A “That’s wrong” button on the tablet; the error is flagged for the coordinator'],
+        ['PR6: packets leave the home network', 'Run the model and speech inside the home, or remove the model'],
+        ['CL3: two or more peers find saying no hard (1 or 2 on Q1)', 'Ask with no staff standing by; “not this time” as prominent as yes'],
+        ['CL4: two or more peers feel exposed (4 or 5 on Q2)', 'Match on places and interests only (the UC02 response for CL4)'],
+      ], 'brief-compact'),
+      'Each change is retested on the revised build before any resident takes part.');
   });
 
   /* ------------------------------------------------------- Planned summative */
   K.scenes.push(function summativeIntro(A) {
-    slide(A, 'summative-intro', 'verify', 'Planned summative test · introduction', 'What the walkthrough cannot settle.',
+    slide(A, 'summative-intro', 'verify', 'Planned summative test, introduction', 'What the walkthrough cannot settle.',
       '',
       `<div class="w-bridge-grid">
         <div class="w-bridge-card">
-          <div class="w-br-id"><span class="pid">PR1–PR3, PR6</span><span class="w-tag">Verification Gate</span></div>
+          <div class="w-br-id"><span class="pid">PR1 to PR3, PR6</span><span class="w-tag">Premises</span></div>
           <div class="w-br-vs">
-            <div class="w-br-left"><small>Walkthrough Limit</small><span>Small sample (5–20 runs) on LLM speech that broke</span></div>
+            <div class="w-br-left"><small>Walkthrough</small><span>Five runs per event: too few for the EM-01 criteria</span></div>
             <div class="w-br-arr">→</div>
-            <div class="w-br-right"><small>Summative Requirement</small><span><b>Full EM-01 gate (20 / 50 runs)</b> on local prepared-line build</span></div>
+            <div class="w-br-right"><small>Summative</small><span><b>Full EM-01 runs (20 or 50)</b> on the revised build, before residents take part</span></div>
           </div>
         </div>
         <div class="w-bridge-card">
-          <div class="w-br-id"><span class="pid">CL1</span><span class="w-tag">Primary Benefit</span></div>
+          <div class="w-br-id"><span class="pid">CL1</span><span class="w-tag">Benefit</span></div>
           <div class="w-br-vs">
-            <div class="w-br-left"><small>Walkthrough Limit</small><span>1-session peer role-play cannot show lasting ties</span></div>
+            <div class="w-br-left"><small>Walkthrough</small><span>One session with peers cannot show repeat contact</span></div>
             <div class="w-br-arr">→</div>
-            <div class="w-br-right"><small>Summative Requirement</small><span><b>5-week longitudinal tracking</b> across 2 care homes (ER-03)</span></div>
+            <div class="w-br-right"><small>Summative</small><span><b>Five weeks in two care homes</b> (ER-03); CL1 is the closest Claim to its primary hypothesis</span></div>
           </div>
         </div>
         <div class="w-bridge-card">
-          <div class="w-br-id"><span class="pid alert">CL3 &amp; CL4</span><span class="w-tag alert">Adverse Risks</span></div>
+          <div class="w-br-id"><span class="pid alert">CL3, CL4</span><span class="w-tag alert">Adverse</span></div>
           <div class="w-br-vs">
-            <div class="w-br-left"><small>Walkthrough Limit</small><span>Peers don’t feel real dementia stigma or profile exposure</span></div>
+            <div class="w-br-left"><small>Walkthrough</small><span>Peers without dementia, with invented profiles</span></div>
             <div class="w-br-arr">→</div>
-            <div class="w-br-right"><small>Summative Requirement</small><span><b>Real residents, staff &amp; decliners</b> in daily care routines</span></div>
+            <div class="w-br-right"><small>Summative</small><span><b>Residents and relatives</b>: observation (M-07) and coded interviews (M-09), which ER-03 does not yet include</span></div>
           </div>
         </div>
         <div class="w-bridge-card dim">
-          <div class="w-br-id"><span class="pid" style="color:var(--muted)">CL9</span><span class="w-tag">Exploratory Boundary</span></div>
+          <div class="w-br-id"><span class="pid" style="color:var(--muted)">CL9</span><span class="w-tag">Exploratory</span></div>
           <div class="w-br-vs">
-            <div class="w-br-left"><small>Time Horizon</small><span>Trait loneliness changes over months, not 5 weeks</span></div>
+            <div class="w-br-left"><small>Time horizon</small><span>Loneliness changes over months</span></div>
             <div class="w-br-arr">→</div>
-            <div class="w-br-right"><small>Honest Scope</small><span><b>Left untested in ER-03</b>; reported openly as a limitation</span></div>
+            <div class="w-br-right"><small>Scope</small><span><b>Not measured in ER-03</b>; reported as untested</span></div>
           </div>
         </div>
       </div>`,
-      'Two-stage summative architecture: Stage 1 Full EM-01 Verification Gate → Stage 2 Two-Home Controlled Trial (ER-03).');
+      'The summative test is ER-03, the Kinnect two-site trial (method EM-08). Its two hypotheses have no Claim IDs yet.');
   });
 
   K.scenes.push(function verify(A) {
-    slide(A, 'verify', 'study', 'Planned summative test · verification gate', 'The revised build must pass before any resident takes part.',
-      'Method: EM-01 staged events on the versioned build, against a reference log. Team role-players; no human subjects.',
-      table(['Premise · measure', 'Supported if', 'Qualified / challenged if'], [
-        ['PR1 · M-01', 'Two private yeses every time; refusal disclosed and unreleased item used <b>0/50</b>.', 'Uncovered case: qualified. Any consent or disclosure violation: challenged; fix and rerun.'],
-        ['PR2 · M-01, M-10', 'Unapproved offers <b>0/20</b>; blocked, unreleased or sensitive items used <b>0/50</b>.', 'Uncovered case: qualified. Any prohibited offer or item: challenged.'],
-        ['PR3 · M-01', 'Prepared lines only; script <b>20/20</b>; correction <b>≤ 3 s</b>, error flagged.', 'Timing met only with the tablet fallback: qualified. Any untrue or quizzing line: challenged.'],
-        ['PR6 · M-01', 'Listed record fields only; <b>0</b> packets leave the home network over a full test day; <b>0</b> audio files.', 'Incomplete inspection: qualified. Any packet or audio file: challenged.'],
-      ], 'brief-compact'), 'A challenged safety or privacy Premise blocks resident use until it is repaired and retested.');
+    slide(A, 'verify', 'study', 'Planned summative test, Premises first', 'The revised build must pass before any resident takes part.',
+      'ER-03 asks for the Premises to be verified on the build first; otherwise a null result cannot be told apart from a System that did not work. Method EM-01: staged events against a reference log, team role-players, no human subjects.',
+      table(['Premise, measure', 'Criterion (EM-01)', 'Verdict'], [
+        ['PR1, M-01', 'A yes from both, each asked alone. A “no” mentioned to the other: <b>0/50</b>. An item used without its owner’s release: <b>0/50</b>.', 'Supported if every criterion holds in every run'],
+        ['PR2, M-01, M-10', 'A resident asked about an unapproved match: <b>0/20</b>. Blocked, unreleased or sensitive items used: <b>0/50</b>.', 'Qualified if met only with a restriction, or partly untestable'],
+        ['PR3, M-01', 'Names as statements, at most one item released by both: <b>20/20</b>. Script: <b>0</b> untrue lines. Correction <b>≤ 3 s</b>, error flagged.', 'Challenged if any run fails'],
+        ['PR6, M-01', 'Record holds only the listed items. <b>0</b> packets leave the home network over a full test day; <b>0</b> audio files on any device.', 'A challenged Premise is fixed and rerun'],
+      ], 'brief-compact'));
   });
 
   K.scenes.push(function studyMethod(A) {
-    slide(A, 'study-method', 'measures', 'Planned summative test · method · EM-08 / ER-03', 'Who takes part, and what they do.',
-      'Two-site controlled trial: two similar care homes at the same time, allocated by home. One runs Kinnect; the other keeps its standard social activity programme.',
+    slide(A, 'study-method', 'measures', 'Planned summative test, method (EM-08, ER-03)', 'Who takes part, and what they do.',
+      'Two-site controlled trial: two similar care homes over the same weeks, allocated by home. One runs Kinnect; the other keeps its standard social activity programme.',
       `<div class="brief-two">
-        <div><div class="label">Human subjects</div><h3>30 recruited per home, 25 to complete</h3><p>Mild to moderate dementia or MCI: MMSE 14–24 or MoCA 10–22. Can reach communal areas and talk in Kinnect’s language. Representative consent plus the resident’s own assent; separate consent for location badges.</p><p>Care staff at both homes; staff training at the Kinnect home.</p></div>
-        <div><div class="label">Tasks and procedure · five weeks</div><h3>Profiles → introductions → meetings</h3><p><b>Weeks −4 to 0:</b> ethics, consent, screening, baseline CMAI, badges; baseline at both homes in weeks −2 to 0.<br><b>Week 1:</b> daily one-to-one sessions; profiles; usability baseline.<br><b>Weeks 2–3:</b> matching; Pepper asks and introduces.<br><b>Weeks 3–4:</b> joint sessions and check-ins with matched pairs.<br><b>Week 5:</b> final CMAI, badge data, debriefing interviews.</p></div>
-      </div>`, 'Every session is optional. The comparison home is offered Kinnect after the study.');
+        <div><div class="label">Participants</div><h3>30 recruited per home, 25 to complete</h3><p>Mild to moderate dementia or MCI: MMSE 14 to 24 or MoCA 10 to 22. Able to reach communal areas and to talk in Kinnect’s language. Consent from a representative plus the resident’s own assent; separate consent for location badges.</p><p>Care staff at both homes take part through training, protocol support and the debriefing interviews.</p></div>
+        <div><div class="label">Procedure, five weeks after set-up</div><h3>Profiles, introductions, meetings</h3><p><b>Weeks −4 to 0:</b> ethics, consent, screening, baseline CMAI, badges; baseline measurement at both homes in weeks −2 to 0.<br><b>Week 1:</b> daily one-to-one sessions; profiles; first-time usability.<br><b>Weeks 2 and 3:</b> matching; Pepper asks each resident and introduces.<br><b>Weeks 3 and 4:</b> joint sessions and check-ins with matched pairs.<br><b>Week 5:</b> final CMAI, badge data, debriefing interviews.</p></div>
+      </div>`, 'Taking part in any session is voluntary.');
   });
 
   K.scenes.push(function measures(A) {
-    slide(A, 'measures', 'outcomes', 'Planned summative test · measures', 'Which measure speaks to which Claim.',
+    slide(A, 'measures', 'outcomes', 'Planned summative test, measures', 'What ER-03 measures, and what each result counts for.',
       '',
       `<div class="w-map-grid">
         <div class="w-map-row">
-          <div class="w-m-inst primary"><b>M-20 · Joint Social Time</b><span>Badges: ≥ 5 min within 2 m + room scans &amp; dyads</span></div>
-          <div class="w-m-link">─── Primary Proxy ──▶</div>
-          <div class="w-m-claim good"><b>CL1 · Repeat Contact</b><span>Primary benefit outcome (ANCOVA Wks 4–5 vs. Baseline)</span></div>
+          <div class="w-m-inst primary"><b>M-20 Joint social time</b><span>Badges: two residents within 2 m for 5 min or more</span></div>
+          <div class="w-m-link">Primary outcome ▶</div>
+          <div class="w-m-claim good"><b>Primary Claim (closest: CL1)</b><span>ANCOVA, weeks 4 and 5 against the baseline weeks</span></div>
         </div>
         <div class="w-map-row">
-          <div class="w-m-inst"><b>M-21 Turn-Taking · M-22 Bedroom Time</b><span>On-robot coherence + % waking day alone in room</span></div>
-          <div class="w-m-link">── Secondary (Holm) ─▶</div>
-          <div class="w-m-claim good"><b>CL1 · Engagement &amp; Isolation</b><span>Active conversation &amp; reduced room withdrawal</span></div>
+          <div class="w-m-inst"><b>M-20 Dyads, M-22 Bedroom time</b><span>Room scans; share of waking hours in one’s own bedroom</span></div>
+          <div class="w-m-link">Key secondary (Holm) ▶</div>
+          <div class="w-m-claim good"><b>Primary Claim</b><span>Both must be met for the Claim to be supported</span></div>
         </div>
         <div class="w-map-row">
-          <div class="w-m-inst alert"><b>M-19 · Agitation (CMAI)</b><span>Cohen-Mansfield score at Wk 0 vs. Wk 5 + session affect</span></div>
-          <div class="w-m-link alert">──── Harm Check ───▶</div>
-          <div class="w-m-claim bad"><b>CL3 · Polite-Yes Pressure</b><span>Detects distress or agitation from social prompts</span></div>
+          <div class="w-m-inst alert"><b>M-19 Agitation (CMAI)</b><span>Week 5, with baseline CMAI as covariate</span></div>
+          <div class="w-m-link alert">Harm check ▶</div>
+          <div class="w-m-claim bad"><b>Primary Claim</b><span>A rise qualifies the Claim; session records are reviewed</span></div>
         </div>
         <div class="w-map-row">
-          <div class="w-m-inst alert"><b>Week-5 Coded Interviews (M-09)</b><span>Residents (incl. decliners), relatives &amp; care staff</span></div>
-          <div class="w-m-link alert">── Codes P &amp; S ────▶</div>
-          <div class="w-m-claim bad"><b>CL3 (Code P) &amp; CL4 (Code S)</b><span>Qualitative pressure (P) &amp; profile exposure (S)</span></div>
+          <div class="w-m-inst"><b>M-21 Engagement, M-19 Affect</b><span>Per session, Kinnect home only</span></div>
+          <div class="w-m-link">Exploratory ▶</div>
+          <div class="w-m-claim"><b>Within the Kinnect arm</b><span>Does conversation become more engaged over the weeks?</span></div>
         </div>
         <div class="w-map-row">
-          <div class="w-m-inst"><b>M-23 · First-Time Usability</b><span>Week-1 session logs &amp; observation checklist</span></div>
-          <div class="w-m-link">── Threshold ≥ 18/25 ▶</div>
-          <div class="w-m-claim"><b>Baseline Usability</b><span>Can residents interact without staff takeover?</span></div>
+          <div class="w-m-inst"><b>M-23 First-time usability</b><span>Week-1 session logs and observation checklist</span></div>
+          <div class="w-m-link">18 of 25 or more ▶</div>
+          <div class="w-m-claim"><b>Usability hypothesis</b><span>Can residents use Kinnect without staff taking over?</span></div>
         </div>
       </div>`,
-      'Explicit gap: Reciprocated friendship (M-05) & loneliness (M-08 / CL9) are not in ER-03; CL1 relies on proximity proxies.');
+      'Not measured in ER-03: reciprocated friendship (M-05), loneliness (M-08, CL9), and the pressure and exposure Claims CL3 and CL4 (M-07, M-09).');
   });
 
   K.scenes.push(function outcomes(A) {
-    slide(A, 'outcomes', 'next', 'Planned summative test · expected outcomes', 'How each criterion will be applied.',
-      'Fixed before data collection. For an adverse Claim, “supported” means the risk is real and its pre-committed change applies.',
+    slide(A, 'outcomes', 'next', 'Planned summative test, expected outcomes', 'How each result will be read.',
+      'Fixed before data collection. With one home per arm, a difference shows that these two homes changed differently; it does not show that other homes would.',
       table(['', 'Supports', 'Qualifies', 'Challenges'], [
-        ['PR1–PR3, PR6', 'Every criterion met on the revised build.', 'Met with a scope restriction (e.g. tablet-only answers).', 'Any violation: no resident testing until fixed.'],
-        ['CL1 · benefit', 'M-20 arm effect positive (p < .05) and more dyadic interactions after Holm.', 'Only one of the two, or the effect fades in week 5.', 'No difference. Not proof of no effect with one home per arm.'],
-        ['CL3 · pressure', 'CMAI rises (CI excludes 0) or P codes in interviews.', 'Signals only when staff stand by, or few decliners interviewed.', 'No rise, no P codes, decliners covered.'],
-        ['CL4 · exposure', 'S codes about a match from residents or relatives.', 'S codes only about how Pepper knows, not what is shared.', 'No S codes.'],
-        ['Usability (M-23)', '≥ 18 of 25 meet the criterion.', 'Met only with the tablet fallback.', 'Fewer than 18: simplify before anything else.'],
-      ], 'brief-verdicts brief-compact'), 'CL9 is not addressed by this study and is reported as untested.');
+        ['Primary Claim (closest: CL1)', 'Primary outcome and both key secondary outcomes met; no rise in agitation.', 'Primary met, but a key secondary is not, or agitation rises.', 'Primary not met. Reported as “not shown”, never as “no effect”.'],
+        ['Usability (M-23)', 'Lower limit of the 95% interval above .50: 18 or more of 25.', '', 'Fewer than 18 of 25: not supported.'],
+        ['CL3, pressure (adverse)', 'Pressure signs or avoidance (M-07) more frequent after System introductions, or code P. Then: suggestions only for residents who ask.', '', 'Neither seen.'],
+        ['CL4, exposure (adverse)', 'Residents or relatives use code S about a match. Then: match on places and interests only.', '', 'No code S.'],
+      ], 'brief-verdicts brief-compact'), 'CL3 and CL4 need EM-03 or EM-04 alongside ER-03. CL9 is reported as untested.');
   });
 
   /* ---------------------------------------------------------- Next iteration */
   K.scenes.push(function nextIteration(A) {
-    slide(A, 'next', 'again', 'Evaluation · next iteration', 'From walkthrough findings to the next SCE cycle.',
+    slide(A, 'next', 'again', 'Evaluation, next iteration', 'What the next SCE cycle changes, and why.',
       '',
       `<div class="cycle">
-        <div><div class="label">Formative findings</div><p>PR1, PR3, PR6 challenged · CL4 risk seen · CL1 positive signal</p></div><i>→</i>
-        <div><div class="label">Design changes</div><p>Prepared lines, local only · clear yes · places and interests</p></div><i>→</i>
-        <div><div class="label">Revised build</div><p>Passes the full EM-01 gate</p></div><i>→</i>
-        <div><div class="label">Summative test</div><p>Two homes · Claim verdicts</p></div><i>↺</i>
-      </div>
-      <div class="w-next-board">
-        <div class="w-nb-col">
-          <div class="w-nb-head"><span>01</span><strong>Foundation</strong></div>
-          <div class="w-nb-item"><b>HV-08 / VT-01:</b> Document LLM fluency vs. truth &amp; local-privacy trade-off</div>
-          <div class="w-nb-item"><b>VT-01:</b> Residents need to know <i>how</i> Pepper knows a fact</div>
-          <div class="w-nb-item"><b>HFC-17:</b> Nearby staff increase pressure to say yes</div>
-        </div>
-        <div class="w-nb-col">
-          <div class="w-nb-head"><span>02</span><strong>Specification</strong></div>
-          <div class="w-nb-item"><b>PR3 Criterion:</b> <code>0 generated utterances</code></div>
-          <div class="w-nb-item"><b>F1 &amp; UC02:</b> Unsure = No (+ tap); ask with no staff nearby</div>
-          <div class="w-nb-item"><b>F2 &amp; F3:</b> Places/interests only; cite source; prompt at stall</div>
-        </div>
-        <div class="w-nb-col">
-          <div class="w-nb-head"><span>03</span><strong>Artifact</strong></div>
-          <div class="w-nb-item"><b>Speech:</b> Replace cloud LLM with prepared templates</div>
-          <div class="w-nb-item"><b>Input:</b> Local yes / no / “not this time” + tablet tap fallback</div>
-          <div class="w-nb-item"><b>Retest:</b> Pass full EM-01 gate on physical Pepper</div>
-        </div>
-        <div class="w-nb-col">
-          <div class="w-nb-head"><span>04</span><strong>Summative (ER-03)</strong></div>
-          <div class="w-nb-item"><b>Expand Measures:</b> Add reciprocated ties (M-05) &amp; loneliness (M-08)</div>
-          <div class="w-nb-item"><b>Pre-committed Triggers:</b> CL3 → pull-only; CL4 → places/interests</div>
-          <div class="w-nb-item"><b>Close Loop:</b> Feed two-home verdicts into Cycle 2</div>
-        </div>
-      </div>`);
+        <div><div class="label">Formative</div><p>Run the walkthrough on the proof of concept</p></div><i>→</i>
+        <div><div class="label">Design changes</div><p>Apply the change agreed for each result</p></div><i>→</i>
+        <div><div class="label">Revised build</div><p>Passes the full EM-01 runs</p></div><i>→</i>
+        <div><div class="label">Summative test</div><p>Two homes, Claim verdicts</p></div><i>↺</i>
+      </div>` +
+      table(['', 'What we found', 'Why it matters', 'What we do next'], [
+        ['Artifact: speech leaves the home', 'The proof of concept sends residents’ speech to Google Cloud and gets replies from a hosted model.', 'What residents say leaves the home, which TECH-07 rules out. PR6 fails, so no resident may use this build.', 'Run speech recognition on the robot (TECH-18); replace the hosted model with a local one, or remove it. Rerun EM-01.'],
+        ['Foundation: HFC-17, saying no', 'The evidence that refusing face to face is hard comes from studies with healthy adults (Bohns 2016).', 'Asking each resident alone (Rule 01) and CL3 rest on it. We do not know whether a resident with dementia feels the same pressure when a robot asks, or more.', 'Count pressure signs after Pepper’s asks and after staff asks (M-07). If they are more frequent after Pepper’s, CL3 holds and Pepper only makes suggestions to residents who ask.'],
+        ['Specification: Claim IDs', 'ER-03’s two hypotheses do not map to a Claim ID.', 'Without one, the study’s verdict cannot be recorded against a Claim, so it cannot change the design.', 'Narrow the primary hypothesis to UC02-F3-CL1, with bedroom time as a secondary outcome; add a Claim for first-time usability.'],
+        ['Summative: what ER-03 measures', 'ER-03 measures time spent near each other (badges), not friendships, loneliness, pressure or exposure.', 'A positive result would show more time together, which falls short of the reciprocated friendships CL1 claims, and says nothing about CL3 or CL4.', 'Add friendships (M-05), pressure signs (M-07) and interviews coded P and S (M-09).'],
+      ], 'brief-compact brief-next'));
+  });
+
+  /* ------------------------------------- Example: how a Claim relates to a Function (after the walkthrough tests) */
+  K.scenes.push(function claimExample(A) {
+    slide(A, 'claim-example', 'formative-changes', 'Evaluation, an example from UC02', 'How a Claim relates to a Function.',
+      'In SCE every Claim belongs to a Function: it states an effect we expect that Function to have. A positive Claim is the reason to build the Function; an adverse Claim is a risk that, if confirmed, changes it.',
+      table(['', 'Function: what Pepper does', 'Claim about that Function', 'Why we expect it', 'How we test it', 'What the verdict does to the Function'], [
+        ['<span style="color:#9CC9A4">CL1</span><small>Positive</small>', '<b>F3, with F1.</b> Asks each alone, then introduces both by name with one item both released: the post office and the bakery.', 'Introductions on shared ground lead to more repeat contact and more reciprocated friendships than introductions as usual.', '<b>HFC-15:</b> people befriend people like themselves. <b>HFC-16:</b> they rarely follow up a good first talk.', '<b>M-02:</b> do they meet again within 14 days, unprompted? <b>M-05:</b> do they name each other? Two homes (EM-03).', '<b>Justifies F3.</b> Supported if M-02 and M-05 rise more in the System home, with no rise in negative emotion (M-03).'],
+        ['<span style="color:var(--alert)">CL3</span><small>Adverse</small>', '<b>F1.</b> Asks the resident for a yes.', 'Residents accept out of politeness, then avoid the other.', '<b>HFC-17:</b> refusing is uncomfortable, so people agree to things they would rather not do.', '<b>M-07:</b> pressure signs during the ask (“if I must”); avoidance in the next week.', '<b>Constrains F1.</b> If more frequent after System introductions than after staff ones, F1 changes: suggestions only for residents who ask.'],
+      ], 'brief-compact brief-claim'),
+      'From UC02 in the wiki (2 Specification, b1). The two Claims pull on the same introduction: one is why we build it, the other limits how.');
   });
 })();

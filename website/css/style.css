@@ -414,7 +414,6 @@ body.on-video::after { opacity: 0; }
 .brief-table.brief-four-col th:nth-child(3) { width: auto; }
 
 /* Invented placeholder numbers: press P to highlight */
-body.show-ph .ph { background: rgba(224,138,114,.3); outline: 1px dashed var(--alert); border-radius: 3px; }
 
 /* Design rules: why → rule */
 .why-row { display: grid; grid-template-columns: 640px 60px 1fr; gap: 24px; align-items: baseline; border-top: 1px solid var(--line); padding-top: 26px; }
@@ -1107,3 +1106,11 @@ body.show-ph .ph { background: rgba(224,138,114,.3); outline: 1px dashed var(--a
 }
 .w-nb-item b { color: var(--ink); font-weight: 600; }
 .w-nb-item code { color: var(--sys); font-size: 15px; }
+
+/* Next iteration and the backup Claim example: narrower label column. */
+.brief-next th:first-child, .brief-next td:first-child { width: 17%; }
+.brief-next td { font-size: 18px; padding-top: 11px; padding-bottom: 11px; }
+.brief-claim th:first-child, .brief-claim td:first-child { width: 10%; }
+.brief-claim td { font-size: 18px; padding-right: 22px; }
+.brief-claim td small { display: block; font: 500 12px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.brief-claim td b, .brief-next td b { color: var(--ink); font-weight: 600; }

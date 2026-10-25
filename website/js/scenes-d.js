@@ -65,7 +65,7 @@
     const T0 = 860, T1 = 1800, wk = w => T0 + (w + 4) / 9 * (T1 - T0);
     const axis = S('line', { x1: T0, y1: 660, x2: T1, y2: 660, stroke: C.ink, 'stroke-width': 2 }, g);
     A.draw(axis, 'study', 0.3, 0.8);
-    const phases = [[-4, 0, 'Ethics, consent, baseline'], [0, 1, 'Profiles'], [1, 3, 'Matching'], [3, 4, 'Joint sessions'], [4, 5, 'Final measures']];
+    const phases = [[-4, 0, 'Ethics, consent, baseline'], [0, 1, 'Profiles'], [1, 3, 'Matching'], [3, 4, 'Joint sessions (weeks 3 and 4)'], [4, 5, 'Final measures']];
     const ph = phases.map(([a, b, t], i) => {
       const pg = G(g);
       S('rect', { x: wk(a) + 2, y: 640, width: wk(b) - wk(a) - 4, height: 40, rx: 6, fill: i === 0 ? C.bg2 : C.sys, 'fill-opacity': i === 0 ? 1 : 0.12 + i * 0.06 }, pg);
@@ -80,9 +80,9 @@
 
     caption(A, 'study', 'study-method', {
       y: 250, w: 640,
-      k: 'EM-08 · ER-03 Kinnect two-site study',
+      k: 'EM-08, ER-03: Kinnect two-site study',
       t: 'Two care homes, compared.',
-      s: 'Over the same weeks, one home uses Kinnect and the other keeps its usual activities. Each home has thirty residents. A plan, not a result.',
+      s: 'Over the same weeks, one home uses Kinnect and the other keeps its usual activities. Thirty residents are recruited per home so that twenty-five complete. A plan, not a result.',
       c: `${doi('Chenoweth et al. (2014)', '10.1017/S1041610214000398')} ${'<span class="cite">Donner and Klar (2000)</span>'}`,
     });
   });
@@ -95,7 +95,9 @@
     A.set(X.jan.p, 'again', { x: jP[0], y: jP[1] }, 0.05);
     A.set([X.gap, X.jan.ring], 'again', { autoAlpha: 0 }, 0.05);
     A.set(X.home.pepper.g, 'again', { autoAlpha: 1 }, 0.05);
-    S('path', { d: `M ${eP[0]} ${eP[1]} L ${jP[0]} ${jP[1]}`, stroke: C.ink, 'stroke-width': 3, 'stroke-linecap': 'round', fill: 'none' }, X.threads);
+    const joined = S('path', { d: `M ${eP[0]} ${eP[1]} L ${jP[0]} ${jP[1]}`, stroke: C.ink, 'stroke-width': 3, 'stroke-linecap': 'round', fill: 'none' }, X.threads);
+    gsap.set(joined, { autoAlpha: 0 });
+    A.set(joined, 'again', { autoAlpha: 1 }, 0.05);
     A.to([X.home.root, X.threads], 'again', { autoAlpha: 1 }, 0.1, 0.5);
     A.to(X.home.pepper.pulse, 'again', { autoAlpha: 1 }, 0.5, 0.8);
     say(A, 'again', 'thanks', { x: 120, y: 540, w: 760, who: 'Pepper, to Elena alone', text: '“Would you like to meet Jan again?”', a: 0.4 });
@@ -104,7 +106,7 @@
     say(A, 'again', 'thanks', { cls: 'jan', x: 120, y: 855, w: 300, who: 'Jan', text: '“Yes.”', a: 0.7 });
     caption(A, 'again', 'thanks', {
       cls: 'scene', y: 230,
-      k: 'OBJ-01 · the intended design outcome',
+      k: 'OBJ-01, the intended outcome',
       t: 'One person worth meeting again.',
       s: 'Not evaluation evidence: whether it happens is what the summative test will tell us.',
     });

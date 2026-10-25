@@ -1,6 +1,6 @@
 # Formative walkthrough: protocol and result sheet
 
-Fill this in during the walkthrough. Every number that ends up on the formative slides (`formative-premises`, `formative-claims`, `formative-changes`, `next`) comes from the tables below. Leave a cell empty if it was not observed: the slides only show what was observed.
+Fill this in during the walkthrough. Every number that ends up on the formative slides (`formative-claims`, `formative-changes`, `next`) comes from the tables below. Leave a cell empty if it was not observed: the slides only show what was observed.
 
 - **Build:** AT-01 proof of concept, commit `________`
 - **Date:** ________  **Place:** ________

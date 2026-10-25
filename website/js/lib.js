@@ -20,7 +20,7 @@
   const POC = 'https://github.com/gintskk/sce-poc';
 
   const CHAPTERS = [
-    'Opening', 'Moving in', 'Background', 'Elena and Jan · UC02',
+    'Opening', 'Moving in', 'Background', 'Elena and Jan, UC02',
     'Artifact', 'Formative evaluation',
     'Planned summative test', 'Outcomes and limits', 'Next iteration', 'Meet again',
   ];
@@ -37,17 +37,18 @@
     { id: 'wait', ch: 1, title: 'Same town, without knowing it', w: 1.2, dur: 2000 },
     { id: 'context', ch: 2, title: 'Who decides, what we protect', w: 1.2 },
     { id: 'rules', ch: 2, title: 'Four design rules', w: 1.2 },
-    { id: 'part2-video', ch: 3, title: 'Video: Elena and Jan · UC02', w: 1.1, dur: 1100 },
+    { id: 'part2-video', ch: 3, title: 'Video: Elena and Jan, UC02', w: 1.1, dur: 1100 },
     { id: 'demo-video', ch: 4, title: 'Demo video', w: 1.1, dur: 1100 },
-    { id: 'formative-claims', ch: 5, title: 'Findings: Claims and surprises', w: 1.1, dur: 1100 },
-    { id: 'formative-changes', ch: 5, title: 'What the findings change', w: 1.1, dur: 1100 },
+    { id: 'formative-claims', ch: 5, title: 'Planned walkthrough: what it tests', w: 1.1, dur: 1100 },
+    { id: 'claim-example', ch: 5, title: 'Example: how a Claim relates to a Function', w: 1.1, dur: 1100 },
+    { id: 'formative-changes', ch: 5, title: 'Planned walkthrough: result and change', w: 1.1, dur: 1100 },
     { id: 'summative-intro', ch: 6, title: 'What the summative test addresses', w: 1.1, dur: 1100 },
-    { id: 'verify', ch: 6, title: 'Verification gate', w: 1.1, dur: 1100 },
+    { id: 'verify', ch: 6, title: 'Premises first', w: 1.1, dur: 1100 },
     { id: 'study', ch: 6, title: 'Two care homes, compared', w: 1.4, dur: 2600 },
     { id: 'study-method', ch: 6, title: 'Participants, tasks and procedure', w: 1.1, dur: 1100 },
     { id: 'measures', ch: 6, title: 'Measures per Claim', w: 1.1, dur: 1100 },
     { id: 'outcomes', ch: 7, title: 'Support, qualify or challenge', w: 1.1, dur: 1100 },
-    { id: 'next', ch: 8, title: 'The next SCE cycle', w: 1.1, dur: 1100 },
+    { id: 'next', ch: 8, title: 'The next SCE cycle: found, why, next', w: 1.1, dur: 1100 },
     { id: 'again', ch: 9, title: '“Would you like to meet Jan again?”', w: 1.4, dur: 2600 },
     { id: 'thanks', ch: 9, title: 'Thank you', w: 1.2, dur: 2000 },
   ];
