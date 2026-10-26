@@ -10,7 +10,7 @@ syntax: xwiki/2.1
 
 = Edge inventory =
 
-Edges are listed by source ID. Targets in §2 and §3 are included where the Foundation already points forward to them. AT-01 and ER-03 are planned; their presence in this inventory does not mean that Kinnect has been built or evaluated.
+Edges are listed by source ID. Targets in §2 and §3 are included where the Foundation already points forward to them. AT-01 is documented in §3.1 (Build 1 ##sce-poc## implemented as a formative web simulation; Build 2 local verification build and Build 3 summative Pepper+ build planned), and ER-03 is designed but not yet run.
 
 == a1. Situated Activities ==
 
@@ -147,7 +147,7 @@ The Measure `used-by` and Evaluation Method `applies` edges agree. No Evaluation
 |TECH-07 Cloud speech and language|Rejected|No Specification edge|Earlier alternative only|Privacy reason for rejection
 |TECH-08 Audio recording|Rejected|No Specification edge|Earlier alternative only|Privacy reason for rejection
 |TECH-09 Location and body sensing|Rejected|No Specification edge|Earlier alternative only|Surveillance reason for rejection
-|TECH-18 On-device accelerator|Envisioned, not built|Extends TECH-01; enables M-21 and ER-03|HV-03|VT-05
+|TECH-18 Pepper+ (hardware acceleration and simultaneous speaking/listening)|Envisioned, not built|Extends TECH-01; enables M-21 and ER-03|HV-03|VT-05
 
 == Forward trace through the Specification ==
 
@@ -168,11 +168,11 @@ The Measure `used-by` and Evaluation Method `applies` edges agree. No Evaluation
 |IDP-01|shapes|F3
 |IDP-02|shapes; bounds|F1; F2
 |IDP-03|shapes|F4
-|AT-01|used-by|ER-03, planned; no implementation details yet
+|AT-01|instantiates; used-by|UC01 to UC03 (Build 1 ##sce-poc## formative simulation implemented; Build 2 local verification and Build 3 Pepper+ planned); EM-01 to EM-04, EM-08, ER-03
 
 = Dangling references, orphans and inconsistent edges =
 
-**Dangling references:** none found in the Kinnect Foundation or Specification. Every cited SA, ST, PS, HV, VT, HFC, M, EM, TECH, DS, HP, RP, OBJ, UC, Premise, Claim, TDP and IDP resolves to a defined entry. AT-01 also has a deliberate placeholder page, so references may point to the forthcoming artifact without implying that it exists as a build.
+**Dangling references:** none found in the Kinnect Foundation or Specification. Every cited SA, ST, PS, HV, VT, HFC, M, EM, TECH, DS, HP, RP, OBJ, UC, Premise, Claim, TDP, IDP and AT-01 resolves to a defined entry.
 
 **Orphans:** no selected Foundation entity is wholly disconnected. TECH-02 and TECH-07 to TECH-09 have no outgoing Specification edges because they are explicitly rejected alternatives, not accidental omissions.
 
@@ -211,8 +211,8 @@ No tension has been empirically resolved. “Provisionally resolved” means the
 |=Gap|=Stance
 |ST-05 Activity coordinator is marked Direct but has no Human Persona.|Add a persona or explicitly justify treating ST-05 through role requirements rather than a Persona. The current three Personas cover residents and the care worker only.
 |ER-03's composite primary hypothesis and first-time-usability hypothesis have no final Claim IDs.|Resolve before the study runs. Either narrow the hypotheses to existing Claims or add explicit Claims, then replace the provisional targets on M-19 to M-23 and EM-08.
-|AT-01 is forthcoming and contains no build details.|Correctly represented by a placeholder. Define its implementation and Builds only when those details exist.
-|TECH-18 is envisioned but not built.|Until it exists, M-21 and the free-conversation parts of ER-03 cannot run under the stated no-cloud policy.
+|AT-01 Build 1 (##sce-poc##) is a formative web simulation using cloud STT/TTS and a hosted LLM (PR6 fails by design; F5 not yet implemented).|Documented on AT-01. Complete Build 2 (local speech/prepared lines + F5 follow-up) to pass EM-01 before resident contact, and Build 3 (**Pepper+** with simultaneous speaking/listening support and TECH-18 hardware acceleration) before running ER-03.
+|TECH-18 (**Pepper+**) is envisioned for AT-01 Build 3 but not physically built.|Until it exists, M-21 and the free-conversation parts of ER-03 cannot run on physical hardware under the stated no-cloud policy.
 |ER-03 uses one care home per arm.|Site effects cannot be separated from the intervention effect. Baseline adjustment does not remove this limitation.
 |ER-03 proposes proximity badges although TECH-09 rejects wearable location sensing.|Resolve whether time-limited, separately consented room-level sensing is acceptable or replace it with the coarser TECH-03 approach.
 |No Kinnect Evaluation Report has results and no Kinnect Evidence page exists.|Keep all Foundation claims provisional until the artifact exists and EM-01 to EM-04 or EM-08 have actually run.
@@ -220,4 +220,4 @@ No tension has been empirically resolved. “Provisionally resolved” means the
 
 = Status of these edges =
 
-The chain is conceptually complete from situated activities through values, human factors, measures, technology and the current Specification. It supports a project about consent-gated social introductions and renewed peer contact; walking is only one optional activity selected from both residents' preferences. The chain remains a design hypothesis. AT-01, TECH-18 and the evaluations are not complete, and no empirical Evidence is claimed.
+The chain is conceptually complete from situated activities through values, human factors, measures, technology and the current Specification. It supports a project about consent-gated social introductions and renewed peer contact; walking is only one optional activity selected from both residents' preferences. The chain remains a design hypothesis: AT-01 Build 1 (##sce-poc##) is implemented for formative evaluation, while AT-01 Builds 2–3 (Pepper+ / TECH-18) and the evaluations are not yet complete, and no empirical Evidence is claimed.

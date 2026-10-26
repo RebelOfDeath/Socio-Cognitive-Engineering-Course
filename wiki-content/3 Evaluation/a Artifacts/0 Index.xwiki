@@ -7,7 +7,7 @@ syntax: xwiki/2.1
 = Concepts =
 
 |=Page|=Artifacts|=Status
-|[[a1 Kinnect>>doc:3 Evaluation.a Artifacts.a1 Kinnect.WebHome]]|AT-01 Kinnect (forthcoming)|**Planned**
+|[[a1 Kinnect>>doc:3 Evaluation.a Artifacts.a1 Kinnect.WebHome]]|AT-01 Kinnect social connection-maker|**In Progress** (Build 1 ##sce-poc## implemented; Builds 2–3 planned)
 |[[a2 Morning care - artifacts>>doc:3 Evaluation.a Artifacts.a2 Morning care - artifacts.WebHome]]|AT-02 Pepper tooth-brushing aid|Separate concept
 
 = Artifact [AT-nn] =

@@ -248,7 +248,7 @@ enables → F2, F3; addresses → HV-06, HV-07; strains → VT-01, VT-05.
 
 TECH-02 and TECH-07 to TECH-09: no outgoing edges to Specification - rejected options, kept as Foundation knowledge.
 
-= Technology Option - Pepper with an on-device accelerator (envisioned) [TECH-18] =
+= Technology Option - Pepper+ / Pepper Enhanced with full-duplex audio and on-device accelerator (envisioned) [TECH-18] =
 
 **Report Format:** §1.3 Technology
 
@@ -256,16 +256,17 @@ TECH-02 and TECH-07 to TECH-09: no outgoing edges to Specification - rejected op
 
 |=Field|=Description
 |ID|TECH-18
-|Name|Pepper with an on-device accelerator (envisioned)
+|Name|Pepper+ / Pepper Enhanced with full-duplex audio and on-device accelerator (envisioned)
 |Status|In Progress
 |Evidence basis|Group reasoning. No product chosen; no hands-on testing.
 |Category|Social Robot / AI/ICT
 |Capabilities|(((
-A second version of Pepper (TECH-01) with an added hardware accelerator, so that speech and language processing run on the robot itself:
+An envisioned enhanced version of Pepper (TECH-01), referred to as **Pepper+ (Pepper Enhanced)** (AT-01 Build 3), adding full-duplex audio (echo-cancelled microphone array supporting simultaneous speaking and listening) and an onboard hardware accelerator so that speech and language processing (including a local LLM) run on the robot itself:
 
-* Speech recognition and free one-to-one conversation (Kinnect, ER-03)
+* Simultaneous speaking and listening (full-duplex turn-taking, overcoming standard Pepper's half-duplex motor/speaker cross-talk limitation)
+* Local speech recognition, local LLM inference, and free one-to-one conversation (Kinnect, ER-03)
 * Persona items drawn from conversation, entered as private until the resident releases them (TECH-05)
-* Conversational measures (M-21), computed during the session
+* Conversational measures (M-21, M-22 acoustic cadence/turn-taking latency markers), computed during the session
 
 Audio is held only in working memory while it is processed. Transcripts are deleted on the robot at the end of each session. Only released profile items and the M-21 values reach the local server (TECH-04).
 )))
