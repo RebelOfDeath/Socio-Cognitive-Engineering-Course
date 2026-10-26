@@ -25,7 +25,7 @@ syntax: xwiki/2.1
 |Introduction|(((
 **Claims addressed.** The study design states two hypotheses and calls them premises. In SCE terms both are Claims, because they are about effects on people. UC01 to UC03 and their Claims now exist, but neither study hypothesis maps exactly to one current Claim ID (see //Open items//). UC02-F3-CL1 is the closest existing Claim to the primary hypothesis.
 
-* **Primary Claim.** Kinnect increases peer connections among residents with mild to moderate dementia, measured as dyadic social interactions and time spent in communal spaces, and reduces bedroom isolation.
+* **Primary Claim.** Kinnect increases peer connections among residents with early- to middle-stage dementia, measured as dyadic social interactions and time spent in communal spaces, and reduces bedroom isolation.
 * **Secondary Claim.** Kinnect is intuitive and easy to understand for first-time users living with cognitive impairment.
 
 **Background.** Residents of assisted living and dementia care homes are often socially isolated, and spend large parts of the day alone in their private bedrooms, away from communal areas (Jansen et al., 2017). Cognitive decline can make it harder to start a conversation with a peer spontaneously. Social network theory finds that ties form faster and last longer between people who share life histories, interests and ways of talking, a principle known as homophily (McPherson et al., 2001). Structured reminiscence about nostalgic eras, music and life histories has been associated with improved mood and communication in dementia care (Woods et al., 2018).
@@ -35,11 +35,11 @@ Kinnect is an autonomous conversational companion robot designed to act as a soc
 **Why a Summative Test.** Both Claims are about what happens to residents of a real care home over several weeks: whether they meet peers, talk with them and spend less time in their rooms. Only a study in that setting can support, qualify or challenge them.
 )))
 |Method|(((
-**Participants.** Residents with mild to moderate dementia or Mild Cognitive Impairment (MCI) who live in residential care, at two similarly equipped care homes. Care staff at both homes take part through training, protocol support and the debriefing interviews. Target: 30 residents recruited per home, 60 in total, so that 25 per home complete (see //Sample size// under //Hypotheses and analysis plan//).
+**Participants.** Residents with early- to medium-stage dementia or Mild Cognitive Impairment (MCI) who live in residential care, at two similarly equipped care homes. Care staff at both homes take part through training, protocol support and the debriefing interviews. Target: 30 residents recruited per home, 60 in total, so that 25 per home complete (see //Sample size// under //Hypotheses and analysis plan//).
 
 Inclusion:
 
-* A formal diagnosis of mild to moderate dementia or MCI, operationalised as a Mini-Mental State Examination (MMSE) score of 14 to 24 (Folstein et al., 1975) or a Montreal Cognitive Assessment (MoCA) score of 10 to 22 (Nasreddine et al., 2005).
+* A formal diagnosis of early- to medium-stage dementia or MCI, operationalised as a Mini-Mental State Examination (MMSE) score of 14 to 24 (Folstein et al., 1975) or a Montreal Cognitive Assessment (MoCA) score of 10 to 22 (Nasreddine et al., 2005).
 * Able to move to or spend time in communal areas, on their own or with standard assistive aids or staff support.
 * Able to talk in the main language Kinnect supports.
 * Written informed consent from a legal representative or guardian, with ongoing verbal and behavioural assent from the resident (Black et al., 2010; Slaughter et al., 2007).

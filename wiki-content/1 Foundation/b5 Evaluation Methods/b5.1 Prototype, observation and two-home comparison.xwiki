@@ -128,7 +128,7 @@ used-by → EM-01 (Build A), EM-03; applies → M-02 to M-04, M-06, M-07.
 |Procedure summary|(((
 Two unrelated care homes of similar size and resident mix (O-9): the System home, and a comparison home that continues care as usual. The homes have no contact with each other.
 
-Inclusion: residents with mild to moderate dementia who assent, with their representative's consent. Newcomers who arrive during the study join from their first week.
+Inclusion: residents with early- to middle-stage dementia who assent, with their representative's consent. Newcomers who arrive during the study join from their first week.
 
 Phases, in both homes over the same weeks: familiarisation (2 weeks; observers present, no data used); baseline (4 weeks); System period (12 weeks), in which the System runs in the System home only. Measures are taken in both homes throughout.
 
@@ -230,7 +230,7 @@ Inclusion: MMSE 14 to 24 or MoCA 10 to 22; can reach communal areas; can talk in
 Analysis: ANCOVA on the change from baseline (weeks -2 to 0) to weeks 4 and 5, with M-20 joint social time as the primary outcome; dyadic interactions and bedroom time as key secondary outcomes under Holm's correction; an exact binomial test for first-time usability. The full protocol and analysis plan are in ER-03.
 )))
 |Purpose|Validation
-|Human subjects required|Yes. Residents with mild to moderate dementia or MCI at both homes; care staff at both homes.
+|Human subjects required|Yes. Residents with early- to middle-stage dementia or MCI at both homes; care staff at both homes.
 |Measures used|M-19 to M-23; M-04 and M-06 room scans as the check on M-20
 |Cost and feasibility|High. Access to two care homes, ethics approval, badges, beacons and observers at both homes, Pepper with an on-device accelerator (TECH-18) at the intervention home, staff training. About nine weeks per home from setup to offboarding. No cost estimate yet.
 |Known limitations|(((

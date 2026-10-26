@@ -137,7 +137,7 @@
       k: 'SA-01, persona HP-01',
       t: 'Elena moves into Room 14.',
       wx: `<div class="w-chip-grid">
-        <div class="w-stat-chip"><span class="n">81</span><span class="l">Years old, mild Alzheimer’s</span></div>
+        <div class="w-stat-chip"><span class="n">81</span><span class="l">Years old, early Alzheimer’s</span></div>
         <div class="w-stat-chip"><span class="n">25 yrs</span><span class="l">Town post office counter</span></div>
         <div class="w-stat-chip alert"><span class="n">0</span><span class="l">People she knows here</span></div>
       </div>`,

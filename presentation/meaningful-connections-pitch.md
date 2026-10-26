@@ -401,7 +401,7 @@ style: |
 
 <!--
 - Our main resident persona
-- Mild Alzheimer's disease; notices her own slips, and is embarrassed by them
+- Early Alzheimer's disease; notices her own slips, and is embarrassed by them
 - Widowed last year; lonely since
 - Lives two doors from Jan; she had the post office, he had the bakery, in the same town
 - "Give me a moment first"

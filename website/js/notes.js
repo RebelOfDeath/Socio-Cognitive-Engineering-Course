@@ -14,11 +14,11 @@
       "It is almost never being introduced to ten people at once around a loud table. Usually you discover one small thing in common, there is no pressure, and you run into each other a second time before the first conversation is forgotten."
     ],
     "open-hook": [
-      "Now imagine doing that at eighty-one, after moving into a care home with mild Alzheimer’s disease.",
+      "Now imagine doing that at eighty-one, after moving into a care home with early Alzheimer’s disease.",
       "On day one you are introduced to the whole dining table at once; by the evening every name is gone, and staying in your room feels safer. Our goal is a quiet host that helps a newcomer find one person worth meeting again. Pepper does not pretend to be a friend, and it does not replace the people around her."
     ],
     "arrive": [
-      "Elena is 81 and has mild Alzheimer’s disease. Her son brings her in after a fall at home.",
+      "Elena is 81 and has early Alzheimer’s disease. Her son brings her in after a fall at home.",
       "For twenty-five years she ran the post office counter in a small town, and she knew half the town by name. In the care home she knows nobody."
     ],
     "flurry": [

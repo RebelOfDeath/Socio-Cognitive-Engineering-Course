@@ -22,7 +22,7 @@ It is almost never being introduced to ten people at once around a loud table. U
 
 **04 Starting over at eighty-one**
 
-Now imagine doing that at eighty-one, after moving into a care home with mild Alzheimer’s disease.
+Now imagine doing that at eighty-one, after moving into a care home with early Alzheimer’s disease.
 
 On day one you are introduced to the whole dining table at once; by the evening every name is gone, and staying in your room feels safer. Our goal is a quiet host that helps a newcomer find one person worth meeting again. Pepper does not pretend to be a friend, and it does not replace the people around her.
 
@@ -30,7 +30,7 @@ On day one you are introduced to the whole dining table at once; by the evening 
 
 **05 Elena moves in**
 
-Elena is 81 and has mild Alzheimer’s disease. Her son brings her in after a fall at home.
+Elena is 81 and has early Alzheimer’s disease. Her son brings her in after a fall at home.
 
 For twenty-five years she ran the post office counter in a small town, and she knew half the town by name. In the care home she knows nobody.
 
@@ -112,7 +112,7 @@ Then the validation: two care homes over the same weeks. One uses Kinnect, one k
 
 **18 Participants, tasks and procedure**
 
-Thirty residents per home with mild to moderate dementia or MCI; consent from a representative, their own assent, and separate consent for badges. Care staff at both homes are trained in the protocol and take part in the debriefing interviews.
+Thirty residents per home with early- to middle-stage dementia or MCI; consent from a representative, their own assent, and separate consent for badges. Care staff at both homes are trained in the protocol and take part in the debriefing interviews.
 
 Four weeks of set-up, with two baseline weeks at both homes. Week one: daily one-to-one sessions and profiles. Weeks two and three: matching and private asks. Weeks three and four: joint sessions with matched pairs. Week five: final agitation scores, badge data and debriefing interviews.
 

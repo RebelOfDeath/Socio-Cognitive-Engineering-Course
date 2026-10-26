@@ -25,7 +25,7 @@ Mihailidis et al. (2008) evaluated COACH, an automated prompting system for a co
 
 Peters et al. (2014) evaluated TEBRA, an automated system for supporting tooth brushing through task recognition and a hierarchy of prompts. This is a direct precedent for assigning routine tooth-brushing support and graduated prompting to the System. Its participants had moderate cognitive disabilities rather than dementia, and TEBRA did not use Pepper or the proposed item sensors and handover channel.
 
-Wang et al. (2017) studied robot-delivered stepwise prompts for handwashing and tea making with ten older adults with mild-to-moderate Alzheimer's disease and their caregivers. The study makes robot-delivered activity support plausible, but participants' views of having a robot were mixed. It therefore supports investigating this allocation rather than assuming acceptance.
+Wang et al. (2017) studied robot-delivered stepwise prompts for handwashing and tea making with ten older adults with early- to middle-stage Alzheimer's disease and their caregivers. The study makes robot-delivered activity support plausible, but participants' views of having a robot were mixed. It therefore supports investigating this allocation rather than assuming acceptance.
 
 Braley et al. (2019) found that some people with dementia, especially participants with moderate dementia, showed confusion or frustration during repeated automated prompting and benefited from communication with the researchers. This supports a human handover when prompting becomes unresolved or stressful; it does not establish the proposed System's handover thresholds.
 
