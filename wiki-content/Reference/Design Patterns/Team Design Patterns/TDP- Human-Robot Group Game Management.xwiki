@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Reference/spaces/Design%20Patterns/spaces/Team%20Design%20Patterns/spaces/TDP%3A%20Human-Robot%20Group%20Game%20Management/pages/WebHome
 title: TDP: Human-Robot Group Game Management
+synced_title: TDP: Human-Robot Group Game Management
 syntax: xwiki/2.1
+version: 2.1
+hash: 6141452153e173d79de8eea3dfdc3d1bb60aad2226651bef5c4621734ab9ac3a
 %%WIKI-SYNC-META%%
 |(% colspan="1" style="width:385px" %)Problem|(% style="width:726px" %)The [[Activity Coordinator>>doc:1 Foundation.a2 Stakeholders.Activity Coordinator.WebHome]] and [[Humanoid Robot>>doc:1 Foundation.Humanoid Robot.WebHome]] have to manage the interactive game play and emerging social behaviors of a group of vulnerable game participants such as [[Person with Dementia>>doc:1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]]. The allocation of tasks should be harmonized to the momentary capacities of the coordinator and robot, the varying needs of the players, and to the context. Pausing the game is part of the game management, as a mitigation strategy for prevention and handling of troubles that appear during the game play.
 |(% style="width:385px" %)Solution Structure|(% style="width:726px" %)[[image:129826985.png||height="231" width="539"]]

@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/c%20Team%20Design%20Pattern/spaces/c1%20Consent-gated%20social%20brokering%20with%20human%20handover/pages/WebHome
 title: c1 Consent-gated social brokering with human handover
+synced_title: c1 Consent-gated social brokering with human handover
 syntax: xwiki/2.1
+version: 1.1
+hash: 5bf9baf1826086d734073a894c1286f72b9d07b00d190e30037d59c35961ada8
 %%WIKI-SYNC-META%%
 **Abstract.** A reusable allocation for helping two people begin voluntary social contact when neither is likely to initiate it alone. A support system identifies an opportunity, a responsible human checks its suitability, and each participant decides independently. The system provides only enough support to begin and then withdraws. The participants own the social activity; humans retain responsibility for care, sensitive matters, conflict and failed handovers. Kinnect is one instantiation of this pattern.
 

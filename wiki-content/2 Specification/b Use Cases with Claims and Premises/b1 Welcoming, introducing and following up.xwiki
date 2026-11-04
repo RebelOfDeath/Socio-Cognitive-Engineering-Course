@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/b%20Use%20Cases%20with%20Claims%20and%20Premises/spaces/b1%20Welcoming%2C%20introducing%20and%20following%20up/pages/WebHome
 title: b1 Welcoming, introducing and following up
+synced_title: b1 Welcoming, introducing and following up
 syntax: xwiki/2.1
+version: 1.1
+hash: 8a6c84bcc5b36a8ed1666714935938f4a1f227e387b0bee234866c5ff6012b5e
 %%WIKI-SYNC-META%%
 **Abstract.** Nine objectives, three use cases, six functions. UC01: welcoming a newcomer. UC02: introducing two residents, the main use case. UC03: following up an agreed meeting, or a resident who has been staying in their room. Six Premises verify that the Functions work; nine Claims, four of them adverse, test whether they help.
 

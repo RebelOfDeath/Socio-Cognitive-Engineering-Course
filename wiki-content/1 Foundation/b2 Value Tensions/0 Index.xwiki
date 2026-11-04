@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Foundation/spaces/b2%20Value%20Tensions/pages/WebHome
 title: b2 Value Tensions
+synced_title: b2 Value Tensions
 syntax: xwiki/2.1
+version: 1.1
+hash: d9db7b98c0d3d07f62db144b75c22f1eb0c2be9d3ffe6f155b3ea36aa45dca4b
 %%WIKI-SYNC-META%%
 **Abstract.** Value Tensions: pairs of values that cannot both be fully served, documented through the concrete trade-offs the design makes. Our main concept is **Meaningful Connections** (social introductions). The morning care tensions are unrelated to social introductions and are documented separately below.
 

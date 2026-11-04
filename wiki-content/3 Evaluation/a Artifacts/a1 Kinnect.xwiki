@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3%20Evaluation/spaces/a%20Artifacts/spaces/a1%20Kinnect/pages/WebHome
 title: a1 Kinnect
+synced_title: a1 Kinnect
 syntax: xwiki/2.1
+version: 1.1
+hash: 0c4d883d01eceae739dd0a1ab48f9e84b84bfc0366d70080e52d11e7cc1ad64a
 %%WIKI-SYNC-META%%
 **Abstract.** Artifact **AT-01** instantiates the Kinnect social connection-maker across three progressive builds: a **Formative Web Proof of Concept (##sce-poc##)** that overlays an interactive chest-tablet GUI onto motion-tracked video clips of a moving Pepper robot (##idle##, ##hello##, ##yes##, ##no##, ##talk##), a **Revised Local Verification Build** that replaces cloud speech and hosted language-model calls with local speech and prepared lines to satisfy EM-01 before resident contact, and an envisioned **Summative Pepper+ Build** equipped with simultaneous speaking/listening support and hardware acceleration (TECH-18) capable of running a local LLM for the two-site longitudinal trial (ER-03).
 

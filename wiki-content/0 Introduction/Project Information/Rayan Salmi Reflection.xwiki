@@ -1,0 +1,35 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/0%20Introduction/spaces/Project%20Information/spaces/Rayan%20Salmi%20Reflection/pages/WebHome
+title: Rayan Salmi Reflection
+synced_title: Rayan Salmi Reflection
+syntax: xwiki/2.1
+version: 3.2
+hash: 1e663956ab87521b3f488ce2995c2b7d0ee87240f98c5089cb613f20af2a8819
+%%WIKI-SYNC-META%%
+
+
+=== 1. Understanding the SCE process ===
+
+During the project, I was mainly involved in the foundation and specification phases. Initially, our team explored the idea of helping people with dementia brush their teeth, as they can forget when or how to perform daily hygiene activities. During the foundation phase, I contributed to identifying relevant human values and considering possible tensions between them. This helped us think about the needs and experiences of the people who would use our system.
+
+However, I found it challenging to translate the initial problem into concrete specifications. Although we understood that people with dementia can experience difficulties with remembering and performing everyday activities, it was not always clear what exactly our technology should do or how it should address the problem. I experienced similar difficulties when trying to connect our specifications and use cases to the problem scenarios and the values we had identified.
+
+Eventually, our team decided to change direction and focus on creating meaningful connections between residents in a dementia care home. I was particularly involved in brainstorming this new direction together with Gints. We explored how residents could be matched with each other for shared activities, such as going for walks, and how technology could facilitate these interactions. I also helped think about and set up the situated activities and explore which technologies could support our concept. This included looking into the Pepper robot as a possible way to initiate interactions and connect residents. This concept seemed to address a more meaningful social need and gave us a clearer direction for the project.
+
+=== 2. Learning and critical self-assessment ===
+
+One of the biggest challenges I experienced was moving from a broad problem to a clear and concrete design. I often struggled with deciding what we should actually build, how the different parts of the specification connected to the original problem, and which technologies would be appropriate. I also realised that identifying human values is not enough on its own, but it is also important to understand how those values influence the design decisions and how potential value tensions can be addressed.
+
+I particularly enjoyed the lecture on memory support technology. It introduced different perspectives on human memory and its role in everyday life, including its social functions. This gave our team new ideas and helped us start brainstorming towards our final concept. I found it interesting that technology does not necessarily have to compensate for memory difficulties but can also support meaningful human experiences, such as social interaction, maintaining relationships and strengthening a sense of identity. This perspective helped me understand why facilitating connections between residents could be a valuable direction for our project.
+
+Another difficulty was working with the different templates throughout the SCE process. At times, I felt that we were trying to complete the templates without having a sufficiently clear idea of what we wanted to design. This sometimes made the process feel repetitive and left us unsure about how to proceed. Looking back, I think we could have benefited from spending more time discussing and refining the core concept before moving into detailed specifications. In a future project, I would try to establish a clearer understanding of the problem, the intended users and realistic usage scenarios first. This would make it easier to use the SCE methods and templates in a meaningful way rather than treating them as separate tasks to complete.
+
+=== 3. Team contribution and collaboration ===
+
+My main contribution to the project was working on the foundations and specifications, particularly identifying human values and possible value tensions. I also contributed to the overall brainstorming process, especially when we were developing our second idea around meaningful connections. Together with Gints, I helped explore the initial concept and think about how residents could be brought together through shared activities. In addition, I helped set up the situated activities and investigate possible technologies for the concept, including the Pepper robot. I conducted user testing with our built prototype, which yielded valuable feedback on the user experience and the specific technologies used. Finally, I presented our midterm presentation, in which we presented our initial idea about supporting people with dementia during toothbrushing.
+
+Team collaboration was generally constructive, although we encountered some practical difficulties. One issue was using XWiki for collaborative editing. I found the platform rather clunky, especially when several team members were working on the same documents. To make collaboration easier, our team developed a separate plugin and a Git synchronisation script. This allowed us to work on the documents more comfortably and reduced the risk of overwriting each other's contributions.
+
+Another challenge was that we sometimes struggled to agree on a clear project direction. Working through the templates without a shared understanding of the concept occasionally left the team stuck. Eventually, we recognised that our initial toothbrushing idea was not developing as well as we had hoped and decided to explore a different problem. I think this change demonstrated the importance of being open to feedback, discussing difficulties honestly and being willing to reconsider earlier decisions instead of continuing with an idea simply because we had already invested time in it.
+
+Overall, I contributed to developing the project, exploring its different directions, reflecting on its design and improving our collaboration. The experience taught me that the SCE process is not always straightforward or linear. It requires continuous discussion, reflection and adaptation, as well as a clear connection between the problem, the users' needs, the identified values and the proposed technology.

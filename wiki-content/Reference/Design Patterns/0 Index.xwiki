@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Reference/spaces/Design%20Patterns/pages/WebHome
 title: Design Patterns
+synced_title: Design Patterns
 syntax: xwiki/2.1
+version: 3.1
+hash: e6574317738982ea2ff204b7d7b9f3f5be281da96777ac36aac4ae5b255a534c
 %%WIKI-SYNC-META%%
 This project's own patterns are written next to the Use Case they were abstracted from, in §2 Specification:
 

@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/a2%20Personas%20and%20Profiles/spaces/a2.2%20Robot%20Profile/pages/WebHome
 title: a2.2 Robot Profile
+synced_title: a2.2 Robot Profile
 syntax: xwiki/2.1
+version: 4.1
+hash: 1c27dae881087714b259c66d8b91bc9a70d9dfdc229231d9b2a1655828e83bd4
 %%WIKI-SYNC-META%%
 **Abstract.** One robot, in the lounge, with one instance of the System per resident behind it. Pepper asks each resident privately, introduces residents who both said yes, welcomes newcomers and repeats names at later meetings (RP-01). It never deceives, stays silent while people talk, and passes painful topics to a trusted person. Each resident's settings follow their own wishes. The pocket guide of the earlier concept has been dropped (TECH-02).
 

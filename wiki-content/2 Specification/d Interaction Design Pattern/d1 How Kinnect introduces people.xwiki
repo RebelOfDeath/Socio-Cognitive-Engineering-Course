@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/d1%20How%20Kinnect%20introduces%20people/pages/WebHome
 title: d1 How Kinnect introduces people
+synced_title: d1 How Kinnect introduces people
 syntax: xwiki/2.1
+version: 1.1
+hash: 1ba091560671cfbe579b60c65259594f160d7da6993c2e8d56f1fd75765b6065
 %%WIKI-SYNC-META%%
 **Abstract.** Three interaction patterns govern Kinnect's role in a social introduction. It introduces two consenting residents on one piece of shared ground and then steps back (IDP-01). It asks each person privately, making refusal ordinary and final (IDP-02). It does not improvise an answer to a sensitive question, but truthfully hands the question to a named person (IDP-03). These are design hypotheses until the wording, timing and experience are evaluated.
 

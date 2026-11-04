@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Foundation/spaces/c1%20Technology%20Options/spaces/c1.1%20Pepper%2C%20resident%20profiles%20and%20local%20server/pages/WebHome
 title: c1.1 Pepper, resident profiles and local server
+synced_title: c1.1 Pepper, resident profiles and local server
 syntax: xwiki/2.1
+version: 1.1
+hash: e326cc7d581af29be28dd3b46409a45d2867b787c5336de6415b1a9edf8b7107
 %%WIKI-SYNC-META%%
 **Abstract.** Everything runs inside the care home, with no internet connection. Five options are selected: Pepper in the lounge (TECH-01), presence sensing in residents' rooms, opt-in only (TECH-03), a local server with one instance of the System per resident (TECH-04), consent-gated matching (TECH-05) and a resident profile for matching (TECH-06). Four are rejected: the pocket guide (TECH-02), cloud speech and language services (TECH-07), audio recording (TECH-08), and location and body sensing (TECH-09). One envisioned for the Kinnect study (ER-03): Pepper with an on-device accelerator (TECH-18). No hands-on testing yet.
 

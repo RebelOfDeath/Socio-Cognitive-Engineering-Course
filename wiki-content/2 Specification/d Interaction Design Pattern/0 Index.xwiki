@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/pages/WebHome
 title: d Interaction Design Pattern
+synced_title: d Interaction Design Pattern
 syntax: xwiki/2.1
+version: 1.1
+hash: 4e8e8650ad91d4eef409bfed322be9099bc3d8798a5181af339c1f8f053d20ae
 %%WIKI-SYNC-META%%
 **Abstract.** Interaction Design Patterns: reusable solutions for how the System communicates and is controlled. Kinnect introduces consenting residents on shared ground, steps back, protects private refusal and transfers sensitive questions to a trusted person. The morning-care pattern is listed separately.
 

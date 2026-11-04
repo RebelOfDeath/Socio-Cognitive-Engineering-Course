@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/c%20Team%20Design%20Pattern/pages/WebHome
 title: c Team Design Pattern
+synced_title: c Team Design Pattern
 syntax: xwiki/2.1
+version: 1.1
+hash: 0a6efeb2de38ebf0a5668884e39739367f4fef82cc6d25e227d0d4849afa6601
 %%WIKI-SYNC-META%%
 **Abstract.** Team Design Patterns generalise recurring allocations between people and systems across activities and use cases. TDP-01 describes consent-gated social brokering with human handover; Kinnect is its project-specific instantiation. The morning-care pattern is listed separately.
 

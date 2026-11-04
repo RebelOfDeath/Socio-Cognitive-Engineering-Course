@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/c%20Team%20Design%20Pattern/spaces/c2%20Morning%20care%20-%20team%20design%20pattern/pages/WebHome
 title: c2 Morning care - team design pattern
+synced_title: c2 Morning care - team design pattern
 syntax: xwiki/2.1
+version: 4.1
+hash: 7c9bf96ad49eff632a260d5e4fbe50fbb1bda8147e860bbdeb910e5e2c9ba037
 %%WIKI-SYNC-META%%
 **Abstract.** Team Design Pattern TDP-02 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Kinnect (see [[c1 Consent-gated social brokering with human handover>>doc:2 Specification.c Team Design Pattern.c1 Consent-gated social brokering with human handover.WebHome]]); IDs continue after the Kinnect pattern.
 

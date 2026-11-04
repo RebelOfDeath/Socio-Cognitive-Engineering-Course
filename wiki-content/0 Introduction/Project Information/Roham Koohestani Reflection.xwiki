@@ -1,0 +1,31 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/0%20Introduction/spaces/Project%20Information/spaces/Roham%20Koohestani%20Reflection/pages/WebHome
+title: Roham Koohestani Reflection
+synced_title: Roham Koohestani Reflection
+syntax: xwiki/2.1
+version: 3.2
+hash: 70d2fd2ac216561e7fd8e70386d186fd2e616155e959551b1acd3e2a7b994cbe
+%%WIKI-SYNC-META%%
+== Roham Koohestani ==
+
+=== Course content ===
+
+I found this course a lot harder than I expected. I assumed a design course would ask less of me than the technical courses in my programme, and underestimated how much discipline the SCE method asks for. Every Function traces back to an Objective, every Objective to the Foundation, and every Claim to a Human Factors concept, a Measure and an Evaluation Method, all linked by IDs, so a change in one place spreads through the wiki. When our group moved the concept to introducing residents to each other, almost every page from the situated activities to the use cases had to be rewritten, which took far more time than writing them the first time.
+
+The distinction between Premises and Claims also took me a while. A Premise is about what the System does and can be checked on the build without residents: does Pepper ever pass on a "no", does any packet leave the home. A Claim is about the effect a Function has on people, and only a study with those people can support or challenge it. Once that clicked, it was clear which questions a prototype test could answer and which only a summative study could.
+
+The human-centred parts of the method were the ones I enjoyed most. Starting from situated activities and from what residents, relatives and staff value, before choosing any technology, made the design discussion more grounded than I am used to from software projects. The value tensions made the trade-offs concrete: matching two residents on their life stories is what makes an introduction work, and also what exposes their private history (VT-01), and a resident with dementia asking "When can I go home?" puts truthfulness against well-being (VT-03).
+
+Working for a vulnerable user group made almost every step more complicated. Residents with dementia cannot simply be put in front of a prototype, so our formative walkthrough uses peers without dementia and can only give early signals. Consent needs a legal representative as well as the resident's own assent, and any sign of dissent ends the interaction. Some evidence does not transfer cleanly: the finding that refusing face to face is hard (HFC-17, Bohns 2016) comes from healthy adults, yet our rule to ask each resident in private depends on it. Measurement is harder too: self-report from residents has ceiling effects, and the location badges ER-03 relies on sit uneasily with our own rejection of wearable tracking (TECH-09).
+
+=== Project contribution ===
+
+Early on I wrote the wiki sync tool (##wiki-sync/sync.py##), which lets the group edit the wiki locally under git and push through the REST API without overwriting each other's edits. For the morning-care line I wrote the Specification: Objectives OBJ-01 to OBJ-05, Functions F1 to F4, and a tooth-brushing use case with four Premises and eight Claims, two of them adverse. I also replaced unsourced evidence claims on HFC-01 to HFC-03 with citations and drafted the Measures and Evaluation Methods those Claims refer to.
+
+Later I added the evaluation pages and the Foundation Coherence page, and wrote ER-03, the two-site summative study of Kinnect, with its method (EM-08) and Measures M-19 to M-23. I built the presentation and rebuilt it around Elena's first week once the concept had settled. For the final submission I checked every slide against the wiki, corrected IDs and study details that had drifted, replaced the formative findings with the plan for the walkthrough, and wrote the PDF export.
+
+=== Lessons learned ===
+
+The main lesson for me is how useful the traceability is, even when it feels slow. When I checked the final slides against the wiki, the IDs made the mistakes easy to find: a problem scenario under the wrong number, verdict rules that did not match ER-03, a design rule shown with "0 cloud packets" as if it had been measured, and a gap between our design and our artifact. Without the shared IDs, those would have gone into the submission.
+
+I also learned to be explicit about what has not been done. Our walkthrough was not run and ER-03 has no results, and saying so plainly was more defensible than filling the gaps with plausible numbers. Finally, during the presentation we were asked for one example of how a Claim relates to a Function and could not answer on the spot. Working it out afterwards made it concrete for me: Claim CL1 is the reason Function F3 (introducing two residents on something they share) exists, and the adverse Claim CL3 would change Function F1 (the private ask) if residents turn out to accept out of politeness. A positive Claim justifies a Function and an adverse one constrains it.

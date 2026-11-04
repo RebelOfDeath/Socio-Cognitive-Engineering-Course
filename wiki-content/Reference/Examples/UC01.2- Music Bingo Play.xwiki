@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Reference/spaces/Examples/spaces/UC01.2%3A%20Music%20Bingo%20Play/pages/WebHome
 title: UC01.2: Music Bingo Play
+synced_title: UC01.2: Music Bingo Play
 syntax: xwiki/2.1
+version: 2.1
+hash: c04b2d1bcd2afe81404430b552676580080f15705332cbdb7c7778bb7d24b57e
 %%WIKI-SYNC-META%%
 |(% style="width:147px" %)**Objective**|(% style="width:752px" %)[[OB01: Entertain and stimulate PwD>>doc:2 Specification.Objectives.OB01\: Entertain and stimulate PwD.WebHome]]
 |(% style="width:147px" %)**TDP**|(% style="width:752px" %)[[TDP: Human-Robot Group Game Management>>doc:Reference.Design Patterns.Team Design Patterns.TDP\: Human-Robot Group Game Management.WebHome]]

@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/Reference/spaces/Design%20Patterns/spaces/Interaction%20Design%20Patterns/spaces/IDP%3A%20Explain%20a%20Group%20Activity/pages/WebHome
 title: IDP: Explain a Group Activity
+synced_title: IDP: Explain a Group Activity
 syntax: xwiki/2.1
+version: 2.1
+hash: b0e871fb4fd41cf98ba42b16500f2a91e654043f6971fb4f218718a342dbf18e
 %%WIKI-SYNC-META%%
 **Design problem: **The specific role of the [[Humanoid Robot>>doc:1 Foundation.Humanoid Robot.WebHome]] (e.g., Pepper)  in the group activity (e.g., a game) and the game or activity to play, are not yet known to the [[Person with Dementia>>doc:1 Foundation.a2 Stakeholders.Person with Dementia.WebHome]] (i.e., the participants). The participants do not know how the activity has to be played and how they should participate.
 

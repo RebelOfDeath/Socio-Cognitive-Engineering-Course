@@ -1,6 +1,10 @@
 %%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/d%20Interaction%20Design%20Pattern/spaces/d2%20Morning%20care%20-%20interaction%20design%20pattern/pages/WebHome
 title: d2 Morning care - interaction design pattern
+synced_title: d2 Morning care - interaction design pattern
 syntax: xwiki/2.1
+version: 5.1
+hash: 8eea829a39727db07e1b4eef337955e83f75475864a69e2a99704f072ebcd804
 %%WIKI-SYNC-META%%
 **Abstract.** Interaction Design Pattern IDP-04 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Kinnect (see [[d1 How Kinnect introduces people>>doc:2 Specification.d Interaction Design Pattern.d1 How Kinnect introduces people.WebHome]]); IDs continue after the Kinnect patterns.
 

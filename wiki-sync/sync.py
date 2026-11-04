@@ -56,6 +56,7 @@ INVALID_CHARS = re.compile(r'[\\/:*?"<>|]')
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "wiki-content"
 INDEX = "0 Index.xwiki"
 STATE_FILE = CONTENT_DIR / ".sync-state.json"
+MOVE_PLAN = Path(__file__).resolve().parent / "moves.json"  # see move.py
 HOME = ("Main",)  # Main.WebHome, the wiki's home page: wiki-content/0 Index.xwiki
 DEFAULT_EXCLUDES = "XWiki,Menu,Diagram,Sandbox"
 
@@ -791,6 +792,20 @@ def push_attachments(cfg: Config, page_href: str, att_dir: Path) -> int:
     return pushed
 
 
+def href_of_path(cfg: Config, wiki_path: str) -> str:
+    """REST address of the page at a wiki path such as 'Main/sdf/Stakeholders'."""
+    spaces = "".join(f"/spaces/{urllib.parse.quote(name, safe='')}" for name in wiki_path.split("/"))
+    return rest_root(cfg) + spaces + "/pages/WebHome"
+
+
+def planned_moves(cfg: Config):
+    """What moves.json lists for move.py: the pages' current addresses, and the local files they move to."""
+    if not MOVE_PLAN.exists():
+        return set(), set()
+    plan = json.loads(MOVE_PLAN.read_text(encoding="utf-8"))
+    return {href_of_path(cfg, e["from"]) for e in plan}, {(CONTENT_DIR / e["to"]).resolve() for e in plan}
+
+
 def pending_deletions(state: dict) -> dict:
     """Pages that were in sync last time and whose files are gone: href -> last synced version."""
     local_hrefs = {read(p)[0].get("href") for p in iter_local_files()}
@@ -804,7 +819,7 @@ def confirm(question: str) -> bool:
         return False
 
 
-def cmd_push(cfg: Config, target: str, yes: bool):
+def cmd_push(cfg: Config, target: str, yes: bool, force: bool):
     target_path = Path(target).resolve() if target else None
     if target_path and not target_path.exists():
         sys.exit(f"No such file: {target_path}")
@@ -825,8 +840,12 @@ def cmd_push(cfg: Config, target: str, yes: bool):
         if not paths:
             sys.exit(f"{target} was re-filed by the layout step; push it at its new location.")
 
+    move_sources, move_files = planned_moves(cfg)
     pushed_pages = pushed_attachments = 0
     for path in sorted(paths, key=lambda p: len(p.parts)):  # parents first
+        if path.resolve() in move_files and not read(path)[0].get("version"):
+            print(f"WAIT {path.relative_to(CONTENT_DIR)}: moves.json moves a wiki page here; run move.py first.")
+            continue
         if push_file(cfg, path):
             pushed_pages += 1
         att = attachments_dir(path)
@@ -842,6 +861,14 @@ def cmd_push(cfg: Config, target: str, yes: bool):
             print(f"KEEP the home page: wiki-content/{INDEX} is missing, but the home page is never deleted.")
             del pending[home]
         hrefs = sorted(pending, key=lambda h: h.count("/spaces/"), reverse=True)  # children first
+        for href in [h for h in hrefs if h in move_sources]:
+            print(f"KEEP {pretty(href)}: moves.json moves it; run move.py.")
+            hrefs.remove(href)
+        if not force:  # deleting a page loses its history; a page that moved should be moved (move.py)
+            for href in [h for h in hrefs if pending[h] != "1.1"]:
+                print(f"KEEP {pretty(href)}: it has edit history (version {pending[href]}). "
+                      f"Move it with move.py, or pass --force to delete it.")
+                hrefs.remove(href)
         if hrefs:
             print(f"\n{len(hrefs)} page(s) deleted locally, to be deleted on the wiki:")
             for href in hrefs:
@@ -910,6 +937,7 @@ def main():
     p_push.add_argument("file", nargs="?", default=None,
                         help="One .xwiki file (default: everything, including deletions)")
     p_push.add_argument("--yes", action="store_true", help="Delete pages without asking")
+    p_push.add_argument("--force", action="store_true", help="Also delete pages that have edit history")
     sub.add_parser("status", help="What push would do (no network)")
     sub.add_parser("layout", help="Re-file pages under their titles (no network)")
     sub.add_parser("outline", help="Regenerate OUTLINE.md from the local files (no network)")
@@ -927,7 +955,7 @@ def main():
     if args.command == "pull":
         cmd_pull(cfg)
     elif args.command == "push":
-        cmd_push(cfg, args.file, args.yes)
+        cmd_push(cfg, args.file, args.yes, args.force)
 
 
 if __name__ == "__main__":
