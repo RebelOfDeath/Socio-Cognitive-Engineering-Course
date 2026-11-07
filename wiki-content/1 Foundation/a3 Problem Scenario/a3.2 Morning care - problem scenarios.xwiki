@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: a3.2 Morning care - problem scenarios
 synced_title: a3.2 Morning care - problem scenarios
 syntax: xwiki/2.1
-version: 13.1
-hash: 240636af4a7a08a9b9a7ee555b37db226d7b8928ce961ac44317681771d7c0b4
+version: 13.3
+hash: 82530d46051078c4939e4165da0373347a01d5aa88cfeaa0232895b2c4f64059
 %%WIKI-SYNC-META%%
 **Abstract.** Problem Scenarios PS-05 and PS-06 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[a3.1 Missed connections>>doc:1 Foundation.a3 Problem Scenario.a3\.1 Missed connections.WebHome]]). IDs continue after the main set.
 
@@ -19,7 +19,7 @@ hash: 240636af4a7a08a9b9a7ee555b37db226d7b8928ce961ac44317681771d7c0b4
 |=Field|=Description
 |ID|PS-05
 |Name|Losing track of the tooth brushing routine
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Constructed from SA-05 and the ST-08/ST-09 records, which rest on literature and group reasoning only. The pattern of stalling mid-sequence and needing repeated prompts matches Rogers et al. (1999) and the COACH study (Mihailidis et al., 2008). No resident or care worker has confirmed it.
 |Narrative|It is morning in the dementia care home. The resident has finished their breakfast and returns to their room to perform their normal morning routine. A care worker reminds the resident that it is time to brush their teeth. The resident goes into the bathroom and stands in front of the sink. The toothbrush and toothpaste are visible next to the sink. The resident picks up the toothbrush but then pauses and appears unsure of what to do next. After some thought, they put the toothbrush back down. The care worker notices this and verbally prompts the resident to pick up the toothpaste. However, after putting the toothpaste on the toothbrush they again pause and are unsure of what to do next. The resident requires another verbal prompt from the care worker to eventually successfully finish this activity.
 |Stakeholders involved|(((
@@ -70,7 +70,7 @@ Contributing causes:
 |=Field|=Description
 |ID|PS-06
 |Name|Difficulty completing the medication routine
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Constructed from SA-06 and the ST-08/ST-09 records, which rest on literature (While et al., 2013) and group reasoning only. No resident or care worker has confirmed it.
 |Narrative|(((
 A resident with dementia needs to take prescribed medication in the morning. At the right time, a care worker approaches the resident with their medication and explains that it is time to take it. At first the resident agrees to take the medicine.
@@ -119,7 +119,7 @@ Contributing causes:
 
 - Physically administering medication - would require a dedicated product involving computer vision and is very error-prone and time-consuming.
 
-- Emergency medical treatment - out of scope. Notifying a care worker when there is an immediate risk of serious harm during the activity is in scope (group decision, §2.3 Open item O-11); treating or assessing the emergency is not.
+- Emergency medical treatment - out of scope. Notifying a care worker when there is an immediate risk of serious harm during the activity is in scope treating or assessing the emergency is not.
 
 - Residents who have to take critical medication such as heart medication - the care home blacklists these residents to require a care home employee to be present.
 

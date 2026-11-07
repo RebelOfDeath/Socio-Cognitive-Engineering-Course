@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: d1 Kinnect - foundation coherence
 synced_title: d1 Kinnect - foundation coherence
 syntax: xwiki/2.1
-version: 1.1
-hash: b872eafe3800ca1f55a577515c484bae819c7b192176111e786db2c5ffe568ed
+version: 1.7
+hash: 95824d980ee3b90fe52fbebb2f0f54a638ffa8ea6551f8593c633dab1034f662
 %%WIKI-SYNC-META%%
 = Foundation Coherence - Meaningful Connections and Kinnect =
 
@@ -174,17 +174,7 @@ The Measure `used-by` and Evaluation Method `applies` edges agree. No Evaluation
 |IDP-03|shapes|F4
 |AT-01|instantiates; used-by|UC01 to UC03 (Build 1 ##sce-poc## formative simulation implemented; Build 2 local verification and Build 3 Pepper+ planned); EM-01 to EM-04, EM-08, ER-03
 
-= Dangling references, orphans and inconsistent edges =
-
-**Dangling references:** none found in the Kinnect Foundation or Specification. Every cited SA, ST, PS, HV, VT, HFC, M, EM, TECH, DS, HP, RP, OBJ, UC, Premise, Claim, TDP, IDP and AT-01 resolves to a defined entry.
-
-**Orphans:** no selected Foundation entity is wholly disconnected. TECH-02 and TECH-07 to TECH-09 have no outgoing Specification edges because they are explicitly rejected alternatives, not accidental omissions.
-
-Two one-sided edges were found while compiling this page and corrected at their source:
-
-|=Edge|=Missing from|=Correction
-|HV-04 operationalized-by M-19|M-19 on b4.1|M-19 now names both HV-04 Safety and HV-05 Well-being.
-|VT-05 strained-by TECH-18|TECH-18 on c1.1|TECH-18 now names VT-05, matching the tension page and its privacy/identity drawback.
+ 
 
 = Open tensions =
 
@@ -209,19 +199,3 @@ No tension has been empirically resolved. “Provisionally resolved” means the
 |Selected Technology Option addressing nothing|None. TECH-01 and TECH-03 to TECH-06 address at least one Human Value. TECH-18 also addresses HV-03, but remains envisioned.|Rejected options remain as documented alternatives without forward Specification edges.
 |Premise without an operational Measure|None. M-01 covers all six Premises; M-10 additionally covers PR2 and PR4.|Evidence still requires EM-01 to run.
 |Current Claim without an operational Measure|None. CL1 to CL9 each has at least one Measure through M-02 to M-10.|No Claim has Evidence yet.
-
-== Remaining gaps ==
-
-|=Gap|=Stance
-|ST-05 Activity coordinator is marked Direct but has no Human Persona.|Add a persona or explicitly justify treating ST-05 through role requirements rather than a Persona. The current three Personas cover residents and the care worker only.
-|ER-03's composite primary hypothesis and first-time-usability hypothesis have no final Claim IDs.|Resolve before the study runs. Either narrow the hypotheses to existing Claims or add explicit Claims, then replace the provisional targets on M-19 to M-23 and EM-08.
-|AT-01 Build 1 (##sce-poc##) is a formative web simulation using cloud STT/TTS and a hosted LLM (PR6 fails by design; F5 not yet implemented).|Documented on AT-01. Complete Build 2 (local speech/prepared lines + F5 follow-up) to pass EM-01 before resident contact, and Build 3 (**Pepper+** with simultaneous speaking/listening support and TECH-18 hardware acceleration) before running ER-03.
-|TECH-18 (**Pepper+**) is envisioned for AT-01 Build 3 but not physically built.|Until it exists, M-21 and the free-conversation parts of ER-03 cannot run on physical hardware under the stated no-cloud policy.
-|ER-03 uses one care home per arm.|Site effects cannot be separated from the intervention effect. Baseline adjustment does not remove this limitation.
-|ER-03 proposes proximity badges although TECH-09 rejects wearable location sensing.|Resolve whether time-limited, separately consented room-level sensing is acceptable or replace it with the coarser TECH-03 approach.
-|No Kinnect Evaluation Report has results and no Kinnect Evidence page exists.|Keep all Foundation claims provisional until the artifact exists and EM-01 to EM-04 or EM-08 have actually run.
-|Thresholds and operating rules in O-2 to O-9 remain open.|Set them through the EM-01 pilot, site checks, legal review and decisions with residents and care staff.
-
-= Status of these edges =
-
-The chain is conceptually complete from situated activities through values, human factors, measures, technology and the current Specification. It supports a project about consent-gated social introductions and renewed peer contact; walking is only one optional activity selected from both residents' preferences. The chain remains a design hypothesis: AT-01 Build 1 (##sce-poc##) is implemented for formative evaluation, while AT-01 Builds 2–3 (Pepper+ / TECH-18) and the evaluations are not yet complete, and no empirical Evidence is claimed.

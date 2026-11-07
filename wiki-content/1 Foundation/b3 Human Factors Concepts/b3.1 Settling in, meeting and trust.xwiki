@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b3.1 Settling in, meeting and trust
 synced_title: b3.1 Settling in, meeting and trust
 syntax: xwiki/2.1
-version: 1.1
-hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
+version: 1.11
+hash: c796538cd2d073ea09f07dcd454631ce6e99dfae121c2826ee3df0f2eb127aaf
 %%WIKI-SYNC-META%%
 **Abstract.** Eleven concepts. Why a walk may be one activity suggestion: time outdoors and on foot may lift mood, though the evidence in dementia is weak (HFC-01). Why newcomers withdraw: moving in is a loss, and adjusting takes months (HFC-02). Why residents do not meet on their own: each waits for the other (HFC-16), refusing a request is hard (HFC-17), and residents misread each other's interest (HFC-05). What brings them together: a shared background (HFC-15) and common ground (HFC-04). How talk survives a slip: self-repair first (HFC-03). What to protect: face (HFC-06). What withdrawal costs: loneliness (HFC-07). Why no deception: trust (HFC-08).
 
@@ -17,8 +17,8 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-01
 |Name|Fresh air, movement and mood
-|Status|In Progress
-|Evidence basis|Literature only. Evidence in dementia is weak (O-1).
+|Status|Finished
+|Evidence basis|Literature only. Evidence in dementia is weak.
 |Concept statement|Time outdoors and on foot may lift mood and help people keep up daily activities. Side by side, on the move, talk may come more easily and a pause may cost less. For these reasons a walk can be one optional activity where both residents prefer it and are assessed fit; the evidence does not justify making it the default.
 |Human factor addressed|Mood; daily functioning; conversation
 |Proposed mechanism|Exercise maintains physical function. Time in nature lowers rumination. Walking side by side asks for no eye contact, and the surroundings give talk a subject.
@@ -36,7 +36,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-02
 |Name|Moving into a care home
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Moving into a care home means losing a home, a routine and neighbours, often by someone else's decision. Newcomers with dementia take weeks to months to adjust, and many withdraw in that time.
 |Human factor addressed|Adjustment; orientation; loneliness
@@ -55,7 +55,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-03
 |Name|Conversation repair
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Speakers prefer to fix their own slips. In dementia, slips become more frequent and repair succeeds less often.
 |Human factor addressed|Conversation; face
@@ -74,7 +74,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-04
 |Name|Common ground and reminiscence
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Conversation rests on what both people know. Old memories outlast recent ones, and a past that two residents share gives them common ground.
 |Human factor addressed|Conversation; identity
@@ -93,7 +93,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-05
 |Name|Theory of mind
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature and group reasoning.
 |Concept statement|Understanding what others know, believe and feel weakens in dementia. Two residents often misread each other's interest, discomfort or wish to stop.
 |Human factor addressed|Social cognition; consent
@@ -112,7 +112,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-06
 |Name|Face and personhood
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Each interaction affirms or erodes a person's standing. Corrections, quizzing and sing-song speech (elderspeak) erode it.
 |Human factor addressed|Experienced dignity; withdrawal
@@ -131,7 +131,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-07
 |Name|Coping, withdrawal and loneliness
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Aware of decline, people protect themselves: some carry on as before, some face it openly. Avoiding company protects face and leads to loneliness. Withdrawal is gradual, so others notice it late.
 |Human factor addressed|Coping with cognitive loss; loneliness
@@ -150,7 +150,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-08
 |Name|Truth and trust
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Lies told to spare distress are common in dementia care, and contested. Once found out, they cost trust. A blunt truth from a stranger causes grief.
 |Human factor addressed|Trust; grief
@@ -169,7 +169,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-15
 |Name|Similarity and shared background
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|People tend to befriend people like themselves: from the same place, generation or trade, or with the same interests. Residents with dementia still form and keep friendships.
 |Human factor addressed|Friendship formation; conversation
@@ -188,7 +188,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-16
 |Name|Fear of rejection and the liking gap
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|People expect a conversation with a stranger to go worse than it does, and underestimate how much a new acquaintance liked them. So they rarely make the first move, and seldom follow up a good first talk.
 |Human factor addressed|Social initiative; friendship formation
@@ -207,7 +207,7 @@ hash: 4250fb80b2731bc79850fa2b1c8c01012698f74bc9fe2f142efca98738b2a591
 |=Field|=Description
 |ID|HFC-17
 |Name|The difficulty of saying no
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Literature only.
 |Concept statement|Refusing a request face to face is uncomfortable, so people agree to things they would rather not do. They also stay in conversations longer than they want, because ending one feels rude.
 |Human factor addressed|Consent; autonomy

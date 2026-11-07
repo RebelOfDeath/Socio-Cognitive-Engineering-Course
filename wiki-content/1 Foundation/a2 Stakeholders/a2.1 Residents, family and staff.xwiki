@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: a2.1 Residents, family and staff
 synced_title: a2.1 Residents, family and staff
 syntax: xwiki/2.1
-version: 1.1
-hash: 48c0660b2d5188cf9052bde33cef183146eea9b0c33e34f9a7e115829814e711
+version: 1.6
+hash: 343dcf88deab5d6ba7b36d7c345c6b16ebd21ae3591c914a3d871c1e7dd387dc
 %%WIKI-SYNC-META%%
 **Abstract.** Seven stakeholders shape how social introductions unfold in the care home. A resident with dementia (ST-01), often new to the facility or isolated in their bedroom, meets, converses with, and invites a fellow resident (ST-02). Three stakeholders help broker that connection: the relative, who arranges the move and shares biographical history (ST-03); the care worker, who welcomes newcomers, supports daily meetings, and handles sensitive questions (ST-04); and the activity coordinator, who records life stories, reviews matches, and arranges seating (ST-05). Medical and therapy staff assess cognitive and clinical suitability (ST-06), while care home management oversees admissions, staffing, and data protection (ST-07). All share a commitment to the resident's well-being and trust, while balancing social encouragement against personal autonomy and privacy.
 
@@ -17,7 +17,7 @@ hash: 48c0660b2d5188cf9052bde33cef183146eea9b0c33e34f9a7e115829814e711
 |=Field|=Description
 |ID|ST-01
 |Name|Resident with dementia
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
 |Type|Direct - moves into the home, converses with the System, meets peers, and extends or considers invitations
 |Values and motivations|(((
@@ -25,7 +25,7 @@ hash: 48c0660b2d5188cf9052bde33cef183146eea9b0c33e34f9a7e115829814e711
 * HV-02 Dignity (high) - being spoken to as an adult, without memory slips being exposed or patronised
 * HV-08 Truthfulness (high) - honest answers from a trusted person regarding painful topics such as why they live here or who has passed away
 * HV-01 Autonomy (high) - deciding for oneself whom to meet, when to socialise, and when to stay in one's room
-* HV-03 Privacy (high) - keeping personal secrets and controlling what biographical facts are shared with others
+* HV-03 Privacy (high) - keeping personal secrets and controlling what facts about themselves are shared with others
 * HV-07 Identity (high) - being known through one's own history, former trade, interests, and words
 * HV-05 Well-being (high) - calm, enjoyable days with something to look forward to
 * HV-04 Safety (high) - feeling secure and unthreatened in shared spaces and activities
@@ -45,7 +45,7 @@ performs → SA-01 to SA-04; holds → HV-01 to HV-08; appears-in → PS-01 to P
 |=Field|=Description
 |ID|ST-02
 |Name|Fellow resident
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01, SA-03, and SA-04 through group reasoning.
 |Type|Direct - interacts with the System, accepts or declines introductions, and talks with ST-01 (often also living with early- to middle-stage dementia)
 |Values and motivations|(((
@@ -70,7 +70,7 @@ performs → SA-03, SA-04; supports → SA-01; holds → HV-01 to HV-03, HV-05, 
 |=Field|=Description
 |ID|ST-03
 |Name|Relative
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
 |Type|Indirect - arranges the admission, contributes to the life story, agrees on how sensitive topics are handled, and provides legal representative consent where needed
 |Values and motivations|(((
@@ -95,7 +95,7 @@ supports → SA-01 to SA-04; holds → HV-03, HV-05 to HV-08; appears-in → PS-
 |=Field|=Description
 |ID|ST-04
 |Name|Care worker
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
 |Type|Direct - welcomes newcomers, brings matched residents together in common areas, supports informal meetings, and answers sensitive questions
 |Values and motivations|(((
@@ -120,7 +120,7 @@ supports → SA-01 to SA-04; holds → HV-03 to HV-06, HV-08; appears-in → PS-
 |=Field|=Description
 |ID|ST-05
 |Name|Activity coordinator
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
 |Type|Direct - conducts life-story interviews, manages the relationship map, reviews compatibility matches, and facilitates communal activities
 |Values and motivations|(((
@@ -145,14 +145,14 @@ supports → SA-01 to SA-04; holds → HV-01, HV-03, HV-05 to HV-07; appears-in 
 |=Field|=Description
 |ID|ST-06
 |Name|Medical and therapy staff (physician, nurse, physiotherapist, psychologist)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01 and SA-04 through group reasoning.
 |Type|Indirect - assess cognitive status, behavioural symptoms, and mobility, and communicate clinical diagnoses
 |Values and motivations|(((
 * HV-04 Safety (high) - preventing physical harm, falls, and acute behavioural distress
 * HV-05 Well-being (high) - supporting mood, cognitive stimulation, and healthy daily activity
 * HV-08 Truthfulness (high) - ensuring clinical diagnoses and medical realities are communicated properly
-* HV-03 Privacy (medium) - upholding medical confidentiality
+* HV-03 Privacy (high) - upholding medical confidentiality
 )))
 |Relationship to other Stakeholders|Assess ST-01 and ST-02 and advise ST-04 and ST-05 on clinical or mobility boundaries. Serve as the trusted authority for medical questions.
 
@@ -169,7 +169,7 @@ supports → SA-01, SA-04; holds → HV-03 to HV-05, HV-08.
 |=Field|=Description
 |ID|ST-07
 |Name|Care home management
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from SA-01 and SA-04 through group reasoning.
 |Type|Indirect - oversees admissions, staffing, facility safety, and data protection, and decides on deploying the System
 |Values and motivations|(((
@@ -182,4 +182,3 @@ supports → SA-01, SA-04; holds → HV-03 to HV-05, HV-08.
 == Graph edges ==
 
 governs → SA-01 (admissions), SA-04 (staffing and communal spaces), System data; holds → HV-03 to HV-05.
-

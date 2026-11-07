@@ -3,10 +3,10 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b5.1 Prototype, observation and two-home comparison
 synced_title: b5.1 Prototype, observation and two-home comparison
 syntax: xwiki/2.1
-version: 1.1
-hash: ca95750c1c9fb764f60794ccf376789cc98a96ecbb50c6d98bfefe7b7b841e2e
+version: 1.8
+hash: 51b79d84818758c22a3785085a76a9ee60a8ac172f1e5757e40e2e3e790bec84
 %%WIKI-SYNC-META%%
-**Abstract.** Four methods. A prototype shows every Function and is verified against staged events (EM-01). Observers code the lounge and dining room live, without recording: introductions, conversation, emotion and time together (EM-02). A formative comparison sets a care home with the System against an unrelated home without it (EM-03). Short interviews cover privacy, tone and trust (EM-04). No primary data yet; costs are the group's estimates. EM-08 is the summative two-site controlled trial of Kinnect, run as ER-03.
+**Abstract.** Four methods. A prototype shows every Function and is verified against staged events (EM-01). Observers code the lounge and dining room live, without recording: introductions, conversation, emotion and time together (EM-02). A formative comparison sets a care home with the System against an unrelated home without it (EM-03). Short interviews cover privacy, tone and trust (EM-04). EM-08 is the summative two-site controlled trial of Kinnect, run as ER-03.
 
 = Evaluation Method - Prototype: demonstration and staged verification [EM-01] =
 
@@ -17,7 +17,7 @@ hash: ca95750c1c9fb764f60794ccf376789cc98a96ecbb50c6d98bfefe7b7b841e2e
 |=Field|=Description
 |ID|EM-01
 |Name|Prototype: demonstration and staged verification
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Staged events against a timestamped reference log, as for the COACH prompting system (Mihailidis et al., 2008). Operator-voiced build: the Wizard-of-Oz method (Riek, 2012).
 |Procedure summary|(((
 One Artifact (AT-01) in three builds:
@@ -32,7 +32,7 @@ Staged verification on Build B: 20 trials per event (50 for disclosure events), 
 |Human subjects required|Builds B and C: no; team members act. Build A: yes, a few residents under EM-02 rules.
 |Measures used|M-01, M-10; M-03, M-07 (Build A)
 |Cost and feasibility|Moderate. Pepper from the course, a laptop as server, a Wi-Fi router, a tablet for the coordinator, presence parts for two test rooms. About 6-8 weeks to Build B.
-|Known limitations|Role-players do not behave like residents. Pepper's recognition of older voices is untested (O-3); residents can answer on the tablet instead. In Build A the operator adapts better than the System will.
+|Known limitations|Role-players do not behave like residents. Pepper's recognition of older voices is untested, residents can answer on the tablet instead. In Build A the operator adapts better than the System will.
 
 == Kit ==
 
@@ -86,7 +86,7 @@ produces → Evidence for UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC
 |=Field|=Description
 |ID|EM-02
 |Name|Observing shared rooms: live coding, no recording
-|Status|In Progress
+|Status|Finished
 |Evidence basis|OERS (Lawton et al., 1996); interval coding adapted from QUIS (Dean et al., 1993); process consent in dementia research (Dewing, 2007).
 |Procedure summary|(((
 1. Residents, relatives and staff are told when observation takes place, and a notice hangs in each room. Residents who decline, or whose representative declines, are neither coded nor rated. A resident who shows unease is not coded that session.
@@ -127,7 +127,7 @@ used-by → EM-01 (Build A), EM-03; applies → M-02 to M-04, M-06, M-07.
 |=Field|=Description
 |ID|EM-03
 |Name|Two-home comparison (formative)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Non-equivalent comparison group design with a pretest (Shadish, Cook & Campbell, 2002). Formative evaluation: findings shape the next design iteration rather than prove an effect (Scriven, 1967).
 |Procedure summary|(((
 Two unrelated care homes of similar size and resident mix (O-9): the System home, and a comparison home that continues care as usual. The homes have no contact with each other.
@@ -196,8 +196,8 @@ produces → Evidence for UC02-F3-CL1, UC01-F3-CL2, UC02-F1-CL3, UC03-F5-CL6, UC
 |=Field|=Description
 |ID|EM-04
 |Name|Interviews: residents, relatives, staff
-|Status|In Progress
-|Evidence basis|Bespoke. Concern set from Niemeijer et al. (2010, 2015) and the Mental Health Foundation (2016).
+|Status|Finished
+|Evidence basis|Concern set from Niemeijer et al. (2010, 2015) and the Mental Health Foundation (2016).
 |Procedure summary|After baseline and at the end, in both homes. Residents, if willing: three open questions. Relatives, care workers and the coordinator: 20 minutes, semi-structured. Topics: how residents meet; introductions and consent questions; feeling pushed into company; the relationship map; truthful deferrals; in the System home, notes about time spent in one's room.
 |Purpose|Validation
 |Human subjects required|Yes. Residents, relatives, staff.
@@ -218,7 +218,7 @@ produces → Evidence for UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC
 |=Field|=Description
 |ID|EM-08
 |Name|Two-site controlled trial (summative)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Cluster-controlled trial: allocation by care home, so that residents in the two arms do not share space or staff (Donner & Klar, 2000). Person-centred care has been evaluated in residential dementia care with allocation by home (Chenoweth et al., 2014).
 |Procedure summary|(((
 The summative counterpart of EM-03, with the same structure of one home per arm. It is shorter, adds sensor and on-robot conversation measures, and follows a fixed facilitation protocol. Two similarly equipped care homes, at the same time: one runs Kinnect, the other keeps its standard social activity programme. Five weeks in all, after a setup phase.

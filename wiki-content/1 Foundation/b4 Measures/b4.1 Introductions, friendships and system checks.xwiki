@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b4.1 Introductions, friendships and system checks
 synced_title: b4.1 Introductions, friendships and system checks
 syntax: xwiki/2.1
-version: 1.1
-hash: a5f1b323f52b1cc8aa9c8842763eb1d4bb1b69d5ba78059b97e1a736fea772f6
+version: 1.28
+hash: 786e2df6ddf8f226dfb3183999abb83b2a38c8b2ed51dd912a83127307dddebb
 %%WIKI-SYNC-META%%
 **Abstract.** Fifteen measures. M-01 checks that the System does what its Functions specify. The main outcomes are introductions and repeat contact (M-02) and friendships over weeks (M-05). Conversation between residents (M-04) and time spent together, walks included (M-06), are secondary. M-03 rates emotion, M-07 records the residents' own view and signs of pressure, and M-08 measures loneliness. M-09 and M-10 watch the values at risk: privacy, tone, trust and truth. Every outcome is collected in the same way in both care homes (EM-03), and nothing is recorded on audio or video. M-19 to M-23 are the measures of the two-site Kinnect study (EM-08, ER-03): agitation and affect, peer connections, conversational engagement, bedroom time and first-time usability. M-21 is computed on the robot (TECH-18), so no audio or transcript is kept for it either.
 
@@ -17,7 +17,7 @@ hash: a5f1b323f52b1cc8aa9c8842763eb1d4bb1b69d5ba78059b97e1a736fea772f6
 |=Field|=Description
 |ID|M-01
 |Name|System performance
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Bespoke. Staged-event protocol, as used for prompting systems (Mihailidis et al., 2008).
 |Construct measured|Whether the System does what F1 to F6 specify, on time, and nothing more.
 |Type|Quantitative
@@ -44,7 +44,7 @@ operationalizes → UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC01-F4-PR4, UC03-F5-
 |=Field|=Description
 |ID|M-02
 |Name|Introductions and repeat contact
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Bespoke count.
 |Construct measured|How often residents are introduced, how often they accept, and how often a first meeting leads to a second.
 |Type|Quantitative
@@ -53,10 +53,10 @@ In both homes, the coordinator keeps a short daily log: each introduction, who m
 
 Observers in the shared rooms (EM-02) note which pairs talk or do something together.
 
-In the System home, the System record (F6) serves as a cross-check, not as the source.
+In the System home, the System record (F6) serves as a cross-check.
 )))
 |Scoring or coding scheme|Per resident per month: introductions; share accepted; pairs who meet again within 14 days; pairs seen together on two or more observation days without being prompted.
-|Validity and reliability|Bespoke. A staff log misses introductions made in passing, and observation covers only some hours. Each log is checked against observation.
+|Validity and reliability|A staff log misses introductions made in passing, and observation covers only some hours. Each log is checked against observation.
 |Serves|Validation
 |Burden|A few minutes a day for the coordinator; none for residents.
 
@@ -73,7 +73,7 @@ operationalizes → UC02-F3-CL1, UC03-F5-CL6; used-by → EM-02, EM-03; operatio
 |=Field|=Description
 |ID|M-03
 |Name|Observed emotion
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Observed Emotion Rating Scale (OERS; Lawton, Van Haitsma & Klapper, 1996), built for nursing-home residents with Alzheimer's disease. Validated instrument.
 |Construct measured|Emotional state during introductions and time spent together, per resident.
 |Type|Quantitative (observational)
@@ -110,7 +110,7 @@ operationalizes → UC02-F3-CL1, UC01-F3-CL2; used-by → EM-01 (Build A), EM-02
 |=Field|=Description
 |ID|M-04
 |Name|Conversation between residents
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Interval coding adapted from the Quality of Interactions Schedule (QUIS; Dean, Proudfoot & Lindesay, 1993), developed for staff-resident interaction. The adaptation to talk between residents is bespoke.
 |Construct measured|How much residents talk with each other, and how well.
 |Type|Quantitative (observational)
@@ -133,8 +133,8 @@ operationalizes → UC02-F3-CL1; used-by → EM-02, EM-03; operationalizes → H
 |=Field|=Description
 |ID|M-05
 |Name|Friendships
-|Status|In Progress
-|Evidence basis|Bespoke name generator, with staff reports as a second source. Self-report is read alongside other sources, never alone: residents rate their own experience higher than observers do (Custers et al., 2013).
+|Status|Finished
+|Evidence basis|Name generator, with staff reports as a second source. Self-report is read alongside other sources, never alone: residents rate their own experience higher than observers do (Custers et al., 2013).
 |Construct measured|Whether residents have someone in the home they like to talk to, and whether the feeling is mutual.
 |Type|Quantitative (self-report and staff report)
 |Instrument or procedure|(((
@@ -143,7 +143,7 @@ At baseline, at six weeks and at the end (EM-03), each resident who is willing i
 Staff name, for each resident, the residents they spend time with.
 )))
 |Scoring or coding scheme|Per resident: names given (0-3); names reciprocated; named by staff. Per home: share of residents with at least one reciprocated tie; share named by nobody.
-|Validity and reliability|Bespoke. Depends on recall; the photo prompt helps, and may lead. Staff reports catch ties that residents cannot name.
+|Validity and reliability|Depends on recall; the photo prompt can help.
 |Serves|Validation
 |Burden|About five minutes per resident, three times.
 
@@ -160,8 +160,8 @@ operationalizes → UC02-F3-CL1, UC01-F3-CL2; used-by → EM-03; operationalizes
 |=Field|=Description
 |ID|M-06
 |Name|Time together, walks included
-|Status|In Progress
-|Evidence basis|Bespoke. Room scans follow the momentary time sampling used in care-home observation.
+|Status|Finished
+|Evidence basis|Room scans follow the momentary time sampling used in care-home observation.
 |Construct measured|How much time residents spend with each other, doing what, and whether anything goes wrong.
 |Type|Quantitative (observational and log)
 |Instrument or procedure|(((
@@ -189,8 +189,8 @@ operationalizes → UC02-F3-CL1, UC01-F3-CL2; used-by → EM-02, EM-03; operatio
 |=Field|=Description
 |ID|M-07
 |Name|The residents' own view
-|Status|In Progress
-|Evidence basis|Bespoke. Self-report read alongside observation, never alone (Custers et al., 2013).
+|Status|Finished
+|Evidence basis|Self-report read alongside observation, never alone (Custers et al., 2013).
 |Construct measured|Whether the resident valued meeting the other, felt free to decline or leave, and wants to meet again.
 |Type|Mixed
 |Instrument or procedure|(((
@@ -199,7 +199,7 @@ Resident, after each observed introduction or meeting, only if willing and not d
 Observer, before and during: pressure signs (agrees reluctantly; looks to staff or the other resident before answering; "if I must"). In the following week: avoidance (sits elsewhere; leaves when the other arrives), from the staff log.
 )))
 |Scoring or coding scheme|Faces 1-3; share of "Again?" answered yes; pressure signs per introduction; pairs with avoidance within 7 days.
-|Validity and reliability|Bespoke. Ceiling effects expected in self-report.
+|Validity and reliability|Ceiling effects expected in self-report.
 |Serves|Validation
 |Burden|Low; about a minute after the meeting.
 
@@ -216,7 +216,7 @@ operationalizes → UC02-F1-CL3, UC01-F3-CL5; used-by → EM-01 (Build A), EM-02
 |=Field|=Description
 |ID|M-08
 |Name|Loneliness
-|Status|In Progress
+|Status|Finished
 |Evidence basis|De Jong Gierveld 6-item loneliness scale (De Jong Gierveld & Van Tilburg, 2006). Validated in older adults; not in dementia.
 |Construct measured|Emotional and social loneliness.
 |Type|Quantitative (self-report)
@@ -239,8 +239,8 @@ operationalizes → UC02-F3-CL9; used-by → EM-03; operationalizes → HV-06.
 |=Field|=Description
 |ID|M-09
 |Name|Privacy, tone and trust codes
-|Status|In Progress
-|Evidence basis|Bespoke code set from Niemeijer et al. (2010, 2015), Kitwood (1997), Williams et al. (2009) and the Mental Health Foundation (2016).
+|Status|Finished
+|Evidence basis|Code set from Niemeijer et al. (2010, 2015), Kitwood (1997), Williams et al. (2009) and the Mental Health Foundation (2016).
 |Construct measured|Whether residents, relatives and staff experience the System as watching, talking down, pushing, revealing or misleading.
 |Type|Qualitative coding
 |Instrument or procedure|Short interviews (EM-04).
@@ -262,8 +262,8 @@ operationalizes → UC02-F1-CL3, UC02-F2-CL4, UC01-F3-CL5, UC03-F5-CL7, UC01-F4-
 |=Field|=Description
 |ID|M-10
 |Name|Sensitive topics, errors and disclosure
-|Status|In Progress
-|Evidence basis|Bespoke count. Safeguard for VT-01 and VT-03.
+|Status|Finished
+|Evidence basis|Count. Safeguard for VT-01 and VT-03.
 |Construct measured|Whether painful questions reach the trusted person; how often the System gets a fact wrong, and whether it corrects itself; whether it reveals what it should not.
 |Type|Quantitative
 |Instrument or procedure|(((
@@ -276,7 +276,7 @@ In use: the System record (F6) and staff reports of errors noticed by residents,
 |Scoring or coding scheme|(((
 Deception by design: untruths, denials or playing along in the script (target 0).
 
-Errors: wrong facts per 100 System statements; share corrected when contradicted; time to correct. Threshold: O-2.
+Errors: wrong facts per 100 System statements; share corrected when contradicted; time to correct.
 
 Sensitive questions: deferred to the listed person (yes/no); minutes until they arrive.
 
@@ -299,7 +299,7 @@ operationalizes → UC02-F2-PR2, UC01-F4-PR4, UC01-F4-CL8; used-by → EM-01, EM
 |=Field|=Description
 |ID|M-19
 |Name|Agitation and observed affect
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Cohen-Mansfield Agitation Inventory (CMAI; Cohen-Mansfield et al., 1989), developed in a nursing home. Validated instrument. Affect around sessions: OERS, as in M-03 (Lawton, Van Haitsma & Klapper, 1996).
 |Construct measured|Agitation and anxiety behaviour over the study, and shifts in observed mood and affect from before to after a Kinnect session or peer meeting.
 |Type|Quantitative (caregiver-rated and observational)
@@ -334,7 +334,7 @@ operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operatio
 |=Field|=Description
 |ID|M-20
 |Name|Peer connections and communal time
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Bespoke counts from a real-time location system (RTLS) with proximity badges (Grigorovich et al., 2021; Jansen et al., 2017), checked against the room scans of EM-02.
 |Construct measured|How often residents interact one-to-one with a peer after matching, how long they spend together in common areas, and how dense the social network in the home is.
 |Type|Quantitative (sensor and observational)
@@ -344,7 +344,7 @@ Proximity badges, worn during waking hours by residents who gave separate consen
 Room scans by observers every 2 minutes during EM-02 sessions, coding talk (M-04) and company (M-06). These serve as the observation log.
 )))
 |Scoring or coding scheme|(((
-Thresholds are proposed (O-2):
+Thresholds:
 
 * **Co-location episode:** two participants' badges within 2 m of each other in the same common area for 5 minutes or more.
 * **Joint social time:** minutes in co-location episodes, per resident per week.
@@ -371,7 +371,7 @@ operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; associat
 |=Field|=Description
 |ID|M-21
 |Name|Conversational engagement
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Automated linguistic and acoustic features of speech in dementia (Fraser et al., 2016; Luz et al., 2021). Their use as a measure of engagement in conversation is bespoke.
 |Construct measured|How engaged a resident is in conversation with Kinnect and with a matched peer.
 |Type|Quantitative (automated)
@@ -381,7 +381,7 @@ Speech recognition, transcript analysis and acoustic analysis run on the robot's
 Audio is held only in the robot's working memory while it is processed, and the transcript is deleted on the robot at the end of the session. Only the values below reach the local server (TECH-04).
 )))
 |Scoring or coding scheme|(((
-Per session (feature definitions proposed, O-2):
+Per session:
 
 * **Turn-taking ratio:** one-to-one sessions: the resident's turns divided by Kinnect's turns. Peer meetings: the shorter speaking time of the two residents divided by the longer (1 means equal).
 * **Utterance length:** mean words per turn.
@@ -406,7 +406,7 @@ operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; depends-
 |=Field|=Description
 |ID|M-22
 |Name|Bedroom isolation time
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Sensor-based assessment of life-space in nursing-home residents (Jansen et al., 2017).
 |Construct measured|How much of the waking day a resident spends in their own bedroom.
 |Type|Quantitative (sensor)
@@ -435,8 +435,8 @@ operationalizes → ER-03 primary Claim (no ID yet); used-by → EM-08; operatio
 |=Field|=Description
 |ID|M-23
 |Name|First-time usability
-|Status|In Progress
-|Evidence basis|Bespoke. Response latency as in Luz et al. (2021); the first-impression question follows M-07.
+|Status|Finished
+|Evidence basis|Response latency as in Luz et al. (2021); the first-impression question follows M-07.
 |Construct measured|Whether residents who meet Kinnect for the first time understand it and can use it without help.
 |Type|Quantitative (logs and observational checklist)
 |Instrument or procedure|(((
@@ -458,9 +458,9 @@ Response latency: median seconds per session, from the log.
 
 First-impression receptivity: faces 1 to 3, and the researcher's approach rating.
 
-Criterion for the secondary Claim (proposed, O-2): comprehension and task completion each at least 80% by the end of week 1.
+Criterion for the secondary Claim: comprehension and task completion each at least 80% by the end of week 1.
 )))
-|Validity and reliability|Bespoke. A second researcher fills in the checklist on 20% of sessions; κ ≥ .60 (Landis & Koch, 1977).
+|Validity and reliability|A second researcher fills in the checklist on 20% of sessions; κ ≥ .60 (Landis & Koch, 1977).
 |Serves|Validation
 |Burden|Low; part of the week 1 sessions.
 

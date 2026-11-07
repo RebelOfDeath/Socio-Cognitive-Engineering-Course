@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b5.2 Morning care - evaluation methods
 synced_title: b5.2 Morning care - evaluation methods
 syntax: xwiki/2.1
-version: 6.1
-hash: 030f8529b69055851c6c1fdbf504bbcf346984ccbac9aad2cbf98f2d7dd44ff9
+version: 6.5
+hash: b2d32dc27cf72dff5b7b0fb2528e1c88b73e1b58d923333acdd58645ed9ccadc
 %%WIKI-SYNC-META%%
 **Abstract.** Evaluation Methods EM-05 to EM-07 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b5.1 Prototype, observation and two-home comparison>>doc:1 Foundation.b5 Evaluation Methods.b5\.1 Prototype, observation and two-home comparison.WebHome]]); IDs continue after the Meaningful Connections set.
 
@@ -19,7 +19,7 @@ hash: 030f8529b69055851c6c1fdbf504bbcf346984ccbac9aad2cbf98f2d7dd44ff9
 |=Field|=Description
 |ID|EM-05
 |Name|Staged-session verification
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Staged-event testing against a ground-truth log follows the system-performance evaluation of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
 |Procedure summary|Scripted steps, stalls, resumptions and confounders are performed at a mock sink against a timestamped ground-truth log. The System's step identification, stall detection, brushing time, prompting and handover requests are compared with the log, including unacknowledged handovers to check re-sending and escalation. Stored session records are inspected for their content. The first run is a pilot that sets the proposed escalation values (§2.3 Open item O-29).
 |Purpose|Verification
@@ -43,7 +43,7 @@ produces → Evidence for UC04-F7-PR7, UC04-F8-PR8, UC04-F9-PR9, UC04-F10-PR10; 
 |=Field|=Description
 |ID|EM-06
 |Name|Within-resident baseline comparison
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Design follows the single-subject alternating baseline-intervention structure used in COACH (Mihailidis et al., 2008) with older adults with moderate-to-severe dementia.
 |Procedure summary|Residents are observed during the real morning routine, first without the System to establish each resident's own baseline, then with it, alternating between the two phases (A-B-A-B). In the baseline phases Pepper stands at the doorway on standby, so that the phases differ only in whether the Functions run. Trained observers score the activity during each session, and the toothbrush sensor logs brushing time in both phases. A trained assessor, who is not told the phase, scores plaque shortly after the routine on a fixed schedule in both phases (M-18). After each session in both phases the resident is asked the M-15 autonomy items, and after System sessions also M-16's three short, verbally administered interview questions, only if they are willing and not distressed. The full study design is ER-02 (§3).
 |Purpose|Validation
@@ -67,8 +67,8 @@ produces → Evidence for UC04-F8-CL10, UC04-F8-CL11, UC04-F8-CL12, UC04-F8-CL13
 |=Field|=Description
 |ID|EM-07
 |Name|Care-staff interview
-|Status|In Progress
-|Evidence basis|Bespoke. The interview's concern set is drawn from Niemeijer et al. (2010, 2015) on the acceptability of surveillance technology in residential dementia care.
+|Status|Finished
+|Evidence basis|The interview's concern set is drawn from Niemeijer et al. (2010, 2015) on the acceptability of surveillance technology in residential dementia care.
 |Procedure summary|Care staff are interviewed about the handover record the System produces and about whether they perceive the System as intrusive, for residents or for themselves. Interviews are coded with M-16's coding scheme, including whether staff describe the prompting as talking down to residents.
 |Purpose|Validation
 |Human subjects required|Yes - care staff.

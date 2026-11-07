@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b2.1 Matching, pressure, truth and privacy
 synced_title: b2.1 Matching, pressure, truth and privacy
 syntax: xwiki/2.1
-version: 1.1
-hash: 3fe0d617dd8c0d6edf76ece9cd6b50e4156c66ed346fe25ddc68ae180c3f07b6
+version: 1.10
+hash: f06dac6f37487a5047ead27527e716f8466f32e7b9d7cebad54d5cf9b85eff69
 %%WIKI-SYNC-META%%
 **Abstract.** Six value tensions shape the design of social introductions. The personal details that make a compelling match also expose private history (VT-01). Direct invitations to socialise are uncomfortable to refuse (VT-02). Blunt truths can cause fresh grief, yet well-meant lies erode trust (VT-03). Repeating a neighbour's name supports recognition, but can highlight a memory lapse if aimed at one person (VT-04). Rich persona profiles enable meaningful matching while increasing privacy exposure (VT-05). Finally, noticing when a resident spends days isolated in their bedroom protects well-being, but risks intruding on legitimate solitude and private space (VT-06).
 
@@ -17,7 +17,7 @@ hash: 3fe0d617dd8c0d6edf76ece9cd6b50e4156c66ed346fe25ddc68ae180c3f07b6
 |=Field|=Description
 |ID|VT-01
 |Name|Privacy vs Social connectedness (matching on personal facts)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; derived from group reasoning and illustrated in part by PS-03.
 |Values in tension|(((
 HV-06 Social connectedness: grounding peer matches and icebreakers in genuine shared history and interests.
@@ -25,7 +25,7 @@ HV-06 Social connectedness: grounding peer matches and icebreakers in genuine sh
 HV-03 Privacy: letting each resident control what fellow residents learn about their life.
 )))
 |Domain area|privacy
-|Nature of the conflict|The biographical details that spark immediate connection—a hometown, a former trade, a favourite era, or a shared interest—are personal. Telling one resident why they were matched reveals something about the other, and a personal fact once spoken cannot be taken back.
+|Nature of the conflict|The biographical details that spark immediate connection: a hometown, a former trade, a favourite era, or a shared interest are all personal. Telling one resident why they were matched reveals something about the other, and a personal fact once spoken cannot be taken back.
 |Non-negotiable floor|GDPR Articles 5 and 9 (health and sensitive personal data), alongside representative consent and ongoing resident assent (O-5).
 |Current resolution|(((
 * Each resident's profile is stored in an isolated, encrypted per-resident record on the local server (TECH-04)
@@ -51,7 +51,7 @@ Matching solely by residential unit or dining table without personal facts: reje
 |=Field|=Description
 |ID|VT-02
 |Name|Social connectedness vs Autonomy (pressure to accept an introduction)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; grounded in Bohns (2016) and Mastroianni et al. (2021), and illustrated by PS-04.
 |Values in tension|(((
 HV-06 Social connectedness: encouraging isolated residents to meet compatible peers and spend time together.
@@ -59,7 +59,7 @@ HV-06 Social connectedness: encouraging isolated residents to meet compatible pe
 HV-01 Autonomy: preserving each resident's freedom to decline an invitation or leave a conversation at will.
 )))
 |Domain area|social; personhood
-|Nature of the conflict|A direct invitation made face to face—especially within earshot of others in the lounge—is awkward to refuse. Residents who agree merely out of politeness often feel trapped during the encounter and avoid the peer afterwards (PS-04). Conversely, overly frequent suggestions turn companionship into a chore.
+|Nature of the conflict|A direct invitation made face to face, especially within earshot of others in the lounge, is awkward to refuse. Residents who agree merely out of politeness often feel trapped during the encounter and avoid the peer afterwards (PS-04). Conversely, overly frequent suggestions turn companionship into a chore.
 |Non-negotiable floor|All robot sessions and peer introductions are strictly voluntary; verbal or non-verbal dissent (such as turning away) ends the interaction immediately (Black et al., 2010).
 |Current resolution|(((
 * During one-to-one bridging sessions, the System invites each resident privately in a quiet setting before bringing the pair together, so neither hears whether the other was asked (IDP-02)
@@ -85,7 +85,7 @@ Brokering introductions only when a resident explicitly asks staff: rejected bec
 |=Field|=Description
 |ID|VT-03
 |Name|Truthfulness vs Well-being (truth that hurts)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; grounded in Mental Health Foundation (2016), James et al. (2006), and Wang et al. (2026), and illustrated in part by PS-01.
 |Values in tension|(((
 HV-08 Truthfulness: avoiding deception, false pretence, and untruthful reassurance.
@@ -117,7 +117,7 @@ Direct factual disclosure by the robot: rejected because painful truths require 
 |=Field|=Description
 |ID|VT-04
 |Name|Dignity vs Social connectedness (names that expose forgetting)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; grounded in Goffman (1967) and Schegloff et al. (1977), and illustrated by PS-01 and PS-03.
 |Values in tension|(((
 HV-06 Social connectedness: helping residents recognise one another and pick up prior conversations across meetings.
@@ -149,7 +149,7 @@ Visible name badges worn at all times: not preferred for everyday care, as badge
 |=Field|=Description
 |ID|VT-05
 |Name|Privacy vs Identity (a rich persona profile)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; grounded in Niemeijer et al. (2010) and Berridge & Grigorovich (2022).
 |Values in tension|(((
 HV-07 Identity: building a rich persona profile of life history, nostalgic eras, musical tastes, and conversational pace so matches reflect who the resident truly is.
@@ -181,7 +181,7 @@ Minimal profiles containing only age and unit: rejected because matches lose per
 |=Field|=Description
 |ID|VT-06
 |Name|Privacy and Autonomy vs Well-being (noticing bedroom isolation without intruding)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional; grounded in Niemeijer et al. (2010, 2015) and Jansen et al. (2017), and illustrated by PS-02.
 |Values in tension|(((
 HV-05 Well-being: noticing sustained bedroom isolation early, before mood, confidence, and mobility deteriorate.
@@ -218,4 +218,3 @@ VT-04: involves → HV-02, HV-06; bounds → F3; tested-by → UC02-F3-PR3, UC01
 VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-06, TECH-18; tested-by → UC02-F6-PR6, UC02-F2-CL4.
 
 VT-06: involves → HV-03, HV-01, HV-05; bounds → F5; strained-by → TECH-03; tested-by → UC03-F5-PR5, UC03-F5-CL7.
-

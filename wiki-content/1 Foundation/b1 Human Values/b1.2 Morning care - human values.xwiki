@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b1.2 Morning care - human values
 synced_title: b1.2 Morning care - human values
 syntax: xwiki/2.1
-version: 21.1
-hash: bb575d23add72539f951bab09a60783630e8cfb81327a74442cb707ff4c40c03
+version: 21.5
+hash: b4a8c2da7b68a95afb8be5ebe50a1fd881d946fd4be3eec02fd4bfcf3623fa7d
 %%WIKI-SYNC-META%%
 **Abstract.** Human Values HV-09 to HV-14 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[b1.1 What residents and staff value>>doc:1 Foundation.b1 Human Values.b1\.1 What residents and staff value.WebHome]]). IDs continue after the main set.
 
@@ -19,7 +19,7 @@ hash: bb575d23add72539f951bab09a60783630e8cfb81327a74442cb707ff4c40c03
 |=Field|=Description
 |ID|HV-09
 |Name|Autonomy
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Autonomy means being able to participate in everyday activities and make choices for themselves, rather than having tasks automatically taken over by caregivers or technology. In daily activities such as brushing teeth or taking medication, this means allowing the person to initiate and perform the steps they are still capable of doing, while providing assistance or prompting only when needed.
 |Held by|ST-08 (high); ST-09 (medium - endorses it for residents, but weighs it against the time available); ST-10 (medium); ST-12 (medium)
@@ -42,7 +42,7 @@ Violated: choices are unnecessarily overridden, the resident is not given an opp
 |=Field|=Description
 |ID|HV-10
 |Name|Dignity
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Dignity means treating people as individuals with individual preferences, abilities, and personal histories, rather than reducing them to their diagnosis or level of dependency. During everyday care activities, this means communicating respectfully, involving the resident in what is happening, avoiding unnecessary exposure or embarrassment, and providing assistance in a way that preserves the person's sense of self-worth.
 |Held by|ST-08 (high); ST-10 (high); ST-09 (medium); ST-11 (medium)
@@ -64,7 +64,7 @@ Violated: the resident is spoken about or treated as though they are not present
 |=Field|=Description
 |ID|HV-11
 |Name|Privacy
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|(((
 Privacy means that people retain appropriate control over access to their body, personal space, belongings, activities, and personal information, even when they require assistance or monitoring. In everyday care, this means that observation, reminders, sensors, or caregiver involvement should not be more intrusive than necessary and that sensitive activities such as dressing, toileting, medication use, or personal hygiene should be handled discretely.
@@ -90,7 +90,7 @@ Violated: residents are unnecessarily watched, exposed, interrupted, or monitore
 |=Field|=Description
 |ID|HV-12
 |Name|Competence
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Competence means enabling residents to experience that they are still capable of successfully carrying out meaningful parts of everyday activities despite cognitive decline. In activities such as brushing teeth, dressing, preparing for bed, or taking medication, this means adapting tasks and providing suitable prompts so that residents can use the abilities they still have instead of immediately having the activity completed for them.
 |Held by|ST-08 (medium); ST-09 (medium)
@@ -112,7 +112,7 @@ Violated: tasks are made unnecessarily difficult or confusing, the resident repe
 |=Field|=Description
 |ID|HV-13
 |Name|Well-being
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Well-being means supporting the resident's emotional and physical comfort and helping everyday life remain calm, meaningful, and pleasant. In the context of dementia care, this includes reducing avoidable stress, confusion, frustration, discomfort, and anxiety while supporting positive experiences such as familiarity, confidence, social connection, enjoyment, and a sense of security during daily activities.
 |Held by|ST-08 (high); ST-09 (high); ST-10 (high); ST-11 (high); ST-12 (high)
@@ -134,7 +134,7 @@ Violated: an activity, care practice, or technology causes avoidable anxiety, fr
 |=Field|=Description
 |ID|HV-14
 |Name|Attentive care
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Situated meaning|Attentive care means care staff having enough time and attention to give each resident the support they actually need during the morning round, without being pulled back to the same resident repeatedly or having to rush other residents. For the care worker it is about being able to do the job well; for management it is about staffing and the quality of care the home provides.
 |Held by|ST-09 (high); ST-11 (high); ST-10 (medium - wants their relative to be attended to)

@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b4.2 Morning care - measures
 synced_title: b4.2 Morning care - measures
 syntax: xwiki/2.1
-version: 6.1
-hash: 445e72ca78b92af105ce454671970205a6bffb200a80eb8df9b95fc4cb2963ff
+version: 6.12
+hash: f4568b5bd47da13fdc7e57aeeca32dc2ecd37229309fba5a953e3d39b94e3bb1
 %%WIKI-SYNC-META%%
 **Abstract.** Measures M-11 to M-18 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b4.1 Introductions, friendships and system checks>>doc:1 Foundation.b4 Measures.b4\.1 Introductions, friendships and system checks.WebHome]]); IDs continue after the Meaningful Connections set.
 
@@ -19,13 +19,13 @@ hash: 445e72ca78b92af105ce454671970205a6bffb200a80eb8df9b95fc4cb2963ff
 |=Field|=Description
 |ID|M-11
 |Name|Step-tracking and stall-detection performance
-|Status|In Progress
+|Status|Finished
 |Evidence basis|The protocol follows the system-performance reporting of the COACH prompting system (Mihailidis et al., 2008), the closest published precedent for prompting people with dementia through a stepwise ADL.
 |Construct measured|Whether the System correctly identifies which SA-05 step the resident is on, how quickly it detects a stall, how often it prompts when no stall has occurred, and how quickly handover requests arrive.
 |Type|Quantitative
 |Instrument or procedure|Staged-event protocol against a ground-truth log: scripted steps, stalls, resumptions and confounders at a mock sink, with each event timestamped by the experimenter.
 |Scoring or coding scheme|Proportion of steps correctly identified; stall-detection latency (s); spurious-prompt rate (prompts per session with no stall); time from triggering condition to handover request (s). Proposed pass thresholds are in UC04-F7-PR7 to UC04-F9-PR9 (§2.3), alongside the escalation timing they check. They are to be confirmed in a first EM-05 pilot with the selected item sensors (TECH-11); see §2.3 Open item O-29.
-|Validity and reliability|Bespoke. Validity rests on the accuracy of the ground-truth log, not on prior psychometric evidence.
+|Validity and reliability|Validity rests on the accuracy of the ground-truth log, not on prior psychometric evidence.
 |Serves|Verification
 |Burden|No human subjects - staged events only. Requires a mock sink set-up and the prototype.
 
@@ -44,7 +44,7 @@ operationalizes → UC04-F7-PR7, UC04-F8-PR8 (timing component), UC04-F9-PR9; us
 |=Field|=Description
 |ID|M-12
 |Name|Independent step completion
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Step-level scoring as used in COACH (Mihailidis et al., 2008), which scored older adults with moderate-to-severe dementia on handwashing steps completed without human assistance. Directly reused, not adapted.
 |Construct measured|How many steps of the SA-05 sequence the resident completes with no prompt, per session.
 |Type|Quantitative
@@ -69,13 +69,13 @@ operationalizes → UC04-F8-CL10, UC04-F8-CL11, UC04-F9-CL15, UC04-F9-CL20; used
 |=Field|=Description
 |ID|M-13
 |Name|Prompt level required
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Bespoke ordinal coding. The levels correspond to SA-05's own recorded existing workarounds and to the assistance levels used in graduated prompting of nursing-home residents with dementia (Rogers et al., 1999).
 |Construct measured|The highest level of assistance needed to get the resident through each step.
 |Type|Quantitative (ordinal)
 |Instrument or procedure|Observer coding per SA-05 step, during the real morning routine.
 |Scoring or coding scheme|Per step, code the highest level reached: 0 none, 1 orienting, 2 naming the next action, 3 demonstration, 4 care-worker takeover. Report the distribution across steps and sessions.
-|Validity and reliability|Bespoke - no prior validity evidence for this exact scale. Inter-rater reliability: as for M-12, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
+|Validity and reliability|No prior validity evidence for this exact scale. Inter-rater reliability: as for M-12, but using weighted kappa because the levels are ordinal. Two observers independently code at least 20% of sessions; agreement is reported as Cohen's kappa, with κ ≥ .60 treated as acceptable ("substantial" from .61, Landis & Koch, 1977). Coders are trained on pilot sessions until they reach that level.
 |Serves|Validation
 |Burden|Human subjects - as M-12, collected in the same observation.
 
@@ -94,7 +94,7 @@ operationalizes → UC04-F8-CL11, UC04-F8-CL13; used-by → EM-06; operationaliz
 |=Field|=Description
 |ID|M-14
 |Name|Observed distress and resistance
-|Status|In Progress
+|Status|Finished
 |Evidence basis|(((
 Resistiveness to Care Scale (Mahoney et al., 1999), developed specifically for ADL care episodes in advanced dementia, with later reliability and validity support (Galik et al., 2017).
 
@@ -123,7 +123,7 @@ operationalizes → UC04-F8-CL10, UC04-F8-CL13, UC04-F8-CL14, UC04-F8-CL19; used
 |=Field|=Description
 |ID|M-15
 |Name|Perceived autonomy and felt control
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Episode-specific need-fulfilment items from Custers et al. (2013), which measured Dutch nursing-home residents' fulfilment of the needs for autonomy, competence and relatedness during a specific videotaped caregiving episode, with a trained-observer counterpart. Provisional: that sample was physically frail residents (n = 36, mean age 80), not specifically residents with dementia.
 |Construct measured|The resident's felt sense of doing the activity themselves rather than being led through it, during a specific session.
 |Type|Quantitative, with an observer counterpart
@@ -154,8 +154,8 @@ operationalizes → UC04-F8-CL12; used-by → EM-06; operationalizes → HV-09 (
 |=Field|=Description
 |ID|M-16
 |Name|Perceived privacy and monitoring acceptability
-|Status|In Progress
-|Evidence basis|Bespoke, but the concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
+|Status|Finished
+|Evidence basis|The concern set is drawn from Niemeijer et al. (2010), a systematic review of surveillance technology in residential dementia care, and Niemeijer et al. (2015), which interviewed residents themselves.
 |Construct measured|Whether residents experience the System as watching them or talking down to them, and whether care staff judge what the session record exposes as proportionate.
 |Type|Mixed (qualitative coding, plus a check of record content)
 |Instrument or procedure|(((
@@ -170,7 +170,7 @@ Code each statement into one of: W - the System watches, checks on, or supervise
 
 Record-content check: pass if the record holds exactly the three specified items and no step-level trace.
 )))
-|Validity and reliability|Bespoke - no prior validity evidence; the code set follows the concerns in Niemeijer et al. (2010, 2015) and Kitwood (1997). Inter-coder reliability: two coders code all interviews independently, kappa per code, κ ≥ .60 acceptable (Landis & Koch, 1977); disagreements are resolved by discussion and the resolution recorded.
+|Validity and reliability|No prior validity evidence; the code set follows the concerns in Niemeijer et al. (2010, 2015) and Kitwood (1997). Inter-coder reliability: two coders code all interviews independently, kappa per code, κ ≥ .60 acceptable (Landis & Koch, 1977); disagreements are resolved by discussion and the resolution recorded.
 |Serves|Both - Verification (record content) and Validation (perceived privacy)
 |Burden|Human subjects for the validation component - residents with dementia (supported consent) and care staff. The record-content check needs no human subjects.
 
@@ -189,7 +189,7 @@ operationalizes → UC04-F10-PR10 (record-content component), UC04-F8-CL14, UC04
 |=Field|=Description
 |ID|M-17
 |Name|Care-worker prompting load
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Time-sampled observation as used in Rogers et al. (1999), which reported the proportion of a morning care session spent on physical assists.
 |Construct measured|How much of the care worker's time a resident's activity takes.
 |Type|Quantitative
@@ -214,7 +214,7 @@ operationalizes → UC04-F9-CL18; used-by → EM-06, EM-07; operationalizes → 
 |=Field|=Description
 |ID|M-18
 |Name|Brushing quality
-|Status|In Progress
+|Status|Finished
 |Evidence basis|(((
 Added in response to the midterm feedback, which asked how well the teeth were actually brushed. M-12 cannot answer that, because a resident can complete SA-05 task 7 and still brush badly.
 

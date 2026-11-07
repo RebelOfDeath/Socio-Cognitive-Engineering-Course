@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: a1.2 Morning care - situated activities
 synced_title: a1.2 Morning care - situated activities
 syntax: xwiki/2.1
-version: 20.1
-hash: 233b9ce555e40e57d5a095d1bd2e60a1b2090ff071573e76e42730089beac3ff
+version: 20.5
+hash: 2e097ef9b7acfe74abda4179bb82ad5e4cbf30b5bf21162178e7837a72119316
 %%WIKI-SYNC-META%%
 **Abstract.** Situated Activities SA-05 to SA-07 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[a1.1 Moving in, staying in, greeting and inviting>>doc:1 Foundation.a1 Situated Activities.a1\.1 Moving in, staying in, greeting and inviting.WebHome]]). IDs follow the main set.
 
@@ -19,7 +19,7 @@ hash: 233b9ce555e40e57d5a095d1bd2e60a1b2090ff071573e76e42730089beac3ff
 |=Field|=Description
 |ID|SA-05
 |Name|Brushing teeth
-|Status|In Progress
+|Status|Finished
 |Evidence basis|(((
 Provisional. Literature and group reasoning only.
 
@@ -98,7 +98,7 @@ performed-by → ST-08 (supported by ST-09); illustrated-by → PS-05.
 |=Field|=Description
 |ID|SA-06
 |Name|Taking prescribed medication
-|Status|In Progress
+|Status|Finished
 |Evidence basis|(((
 Provisional. Literature and group reasoning only.
 
@@ -165,7 +165,7 @@ performed-by → ST-08 (supported by ST-09); illustrated-by → PS-06.
 |=Field|=Description
 |ID|SA-07
 |Name|Morning care round
-|Status|In Progress
+|Status|Finished
 |Evidence basis|(((
 Provisional. Literature and group reasoning only.
 

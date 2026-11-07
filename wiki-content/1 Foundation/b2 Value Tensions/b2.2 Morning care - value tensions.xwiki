@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: b2.2 Morning care - value tensions
 synced_title: b2.2 Morning care - value tensions
 syntax: xwiki/2.1
-version: 7.1
-hash: 3da57ad2ff8ef6f88914a8b59a6ed82fe27ba184da90f1460880ce29d8c45fb2
+version: 7.10
+hash: e5da5590d91dc8bdd011fdded9ed6afbcb1a9d16e120ffc8d7a4d0e04c93e7f6
 %%WIKI-SYNC-META%%
 **Abstract.** Value Tensions VT-07 to VT-14 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[b2.1 Matching, pressure, truth and privacy>>doc:1 Foundation.b2 Value Tensions.b2\.1 Matching, pressure, truth and privacy.WebHome]]). IDs continue after the main set.
 
@@ -19,7 +19,7 @@ hash: 3da57ad2ff8ef6f88914a8b59a6ed82fe27ba184da90f1460880ce29d8c45fb2
 |=Field|=Description
 |ID|VT-07
 |Name|Autonomy vs Well-being
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-09 Autonomy: pulls toward allowing the resident to initiate and perform everyday activities independently.
@@ -28,7 +28,7 @@ HV-13 Well-being: pulls toward intervening when independent performance may lead
 )))
 |Domain area|safety/physical-environmental
 |Nature of the conflict|Giving residents more freedom to perform activities independently supports autonomy, but too little assistance may result in mistakes, confusion, frustration, or unsafe situations.
-|Non-negotiable floor|None identified. No regulation or hard safety standard has been found that bounds this trade-off; recorded explicitly so it reads as a genuine trade-off. Notifying a care worker on immediate risk of serious harm is a group design decision (§2.3 Open item O-11) and is part of the current resolution, not a floor.
+|Non-negotiable floor|None identified. No regulation or hard safety standard has been found that bounds this trade-off; recorded explicitly so it reads as a genuine trade-off. Notifying a care worker on immediate risk of serious harm is a group design decision and is part of the current resolution.
 |Current resolution|The situated objective is to support the resident in completing everyday activities as independently as possible while preventing avoidable distress or harm. The conditional function is: IF the resident is able to continue the activity independently, THEN no assistance is provided; IF difficulty is detected, THEN increasingly supportive prompting is provided; IF a safety-critical condition occurs (an immediate risk of serious harm during the activity), THEN a care worker is notified at once, pre-empting any prompting.
 |Alternatives considered|(((
 Immediate assistance whenever difficulty is detected: not preferred because it unnecessarily reduces autonomy.
@@ -48,7 +48,7 @@ No intervention unless explicitly requested: not preferred because a resident wi
 |=Field|=Description
 |ID|VT-08
 |Name|Privacy vs Well-being
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-11 Privacy: pulls toward allowing the resident to maintain their privacy and personal space.
@@ -75,7 +75,7 @@ Constant monitoring of all activities: not preferred because it unnecessarily re
 |=Field|=Description
 |ID|VT-09
 |Name|Competence vs Well-being
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-12 Competence: pulls toward giving the resident opportunities to perform activities and individual steps themselves, so that they can use and maintain their remaining abilities and experience themselves as capable.
@@ -104,7 +104,7 @@ Allowing the resident to continue attempting the task without assistance: not pr
 |=Field|=Description
 |ID|VT-10
 |Name|Dignity vs Competence
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-12 Competence: pulls toward prompting the resident through the activity so they can still do it themselves.
@@ -120,7 +120,7 @@ No prompting at all, care worker only: not preferred, because it removes the com
 
 Continuous step-by-step narration: not preferred, because it maximises the infantilisation risk and removes opportunities to act unprompted.
 )))
-|Status of the tension|Open. Tested by UC04-F8-CL14 (adverse Claim). Strained by TECH-10 (Pepper), whose humanoid form raises the risk (§2.3 Open item O-19).
+|Status of the tension|Open. Tested by UC04-F8-CL14 (adverse Claim). Strained by TECH-10 (Pepper), whose humanoid form raises the risk.
 
 = Autonomy vs Well-being (detection reliability)  [VT-11] =
 
@@ -133,7 +133,7 @@ Continuous step-by-step narration: not preferred, because it maximises the infan
 |=Field|=Description
 |ID|VT-11
 |Name|Autonomy vs Well-being (detection reliability)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-09 Autonomy: pulls toward prompting only when the resident is genuinely stuck, so that a false stall detection does not interrupt someone who was managing on their own.
@@ -158,7 +158,7 @@ HV-13 Well-being: pulls toward detecting every stall, so that a resident who is 
 |=Field|=Description
 |ID|VT-12
 |Name|Autonomy vs Well-being (medication timing)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-09 Autonomy: pulls toward letting the resident take their medication when they are ready.
@@ -183,7 +183,7 @@ HV-13 Well-being: pulls toward the medication being taken on time, as prescribed
 |=Field|=Description
 |ID|VT-13
 |Name|Competence vs Attentive care
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only.
 |Values in tension|(((
 HV-12 Competence: pulls toward giving the resident time and graduated prompting, so they do as much as possible themselves.
@@ -212,7 +212,7 @@ System completes the activity quickly for the resident: not possible for tooth b
 |=Field|=Description
 |ID|VT-14
 |Name|Privacy vs Well-being (brushing quality)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only. Raised by the midterm feedback, which asked how well the teeth were actually brushed.
 |Values in tension|(((
 HV-11 Privacy: pulls toward the System knowing only where the resident is in the sequence, and keeping nothing about how they brushed their teeth, as HP-04 asks.

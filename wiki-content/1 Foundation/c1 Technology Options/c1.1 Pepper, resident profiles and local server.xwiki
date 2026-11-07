@@ -3,10 +3,10 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: c1.1 Pepper, resident profiles and local server
 synced_title: c1.1 Pepper, resident profiles and local server
 syntax: xwiki/2.1
-version: 1.1
-hash: e326cc7d581af29be28dd3b46409a45d2867b787c5336de6415b1a9edf8b7107
+version: 1.11
+hash: ecdb2e927348802f2a2cf9a84c4cd377ab56c5b69dbc55d9c703061e28e9614d
 %%WIKI-SYNC-META%%
-**Abstract.** Everything runs inside the care home, with no internet connection. Five options are selected: Pepper in the lounge (TECH-01), presence sensing in residents' rooms, opt-in only (TECH-03), a local server with one instance of the System per resident (TECH-04), consent-gated matching (TECH-05) and a resident profile for matching (TECH-06). Four are rejected: the pocket guide (TECH-02), cloud speech and language services (TECH-07), audio recording (TECH-08), and location and body sensing (TECH-09). One envisioned for the Kinnect study (ER-03): Pepper with an on-device accelerator (TECH-18). No hands-on testing yet.
+**Abstract.** Everything runs inside the care home. Five options are selected: Pepper in the lounge (TECH-01), presence sensing in residents' rooms, opt-in only (TECH-03), a local server with one instance of the System per resident (TECH-04), consent-gated matching (TECH-05) and a resident profile for matching (TECH-06). Four are rejected: the pocket guide (TECH-02), cloud speech and language services (TECH-07), audio recording (TECH-08), and location and body sensing (TECH-09). One envisioned for the Kinnect study (ER-03): Pepper with an on-device accelerator (TECH-18). No hands-on testing yet.
 
 = Technology Option - Pepper in the lounge (selected) [TECH-01] =
 
@@ -17,7 +17,7 @@ hash: e326cc7d581af29be28dd3b46409a45d2867b787c5336de6415b1a9edf8b7107
 |=Field|=Description
 |ID|TECH-01
 |Name|Pepper in the lounge (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Vendor documentation; the course platform. No hands-on testing by this project.
 |Category|Social Robot
 |Capabilities|(((
@@ -28,7 +28,7 @@ Humanoid; speech and a chest tablet.
 * Welcomes newcomers, and repeats names at later meetings (F3)
 * Defers sensitive questions to the trusted person (F4)
 )))
-|Limitations|Flat indoor floors only. Speech recognition of older voices is unreliable, so residents can answer on the tablet (O-3). The humanoid form may read as a supervisor. Cameras present (covered). A lounge is not private: asking needs a quiet corner (O-8).
+|Limitations|Flat indoor floors only. Speech recognition of older voices is unreliable, so residents can answer on the tablet. The humanoid form may read as a supervisor. Cameras present (covered). A lounge is not private: asking needs a quiet corner.
 |Maturity and feasibility|Commercially available; supplied by the course.
 |Failure and fallback behaviour|Pepper unavailable: the coordinator or a care worker asks and introduces, from the same match panel.
 |Benefits|HV-01: each resident is asked face to face, in private. HV-06: introductions that staff have no time for.
@@ -48,7 +48,7 @@ enables → F1, F3, F4; addresses → HV-01, HV-06; realized-in → RP-01 (§2.2
 |=Field|=Description
 |ID|TECH-02
 |Name|Pocket guide (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning. Off-the-shelf parts.
 |Category|Wearable / AI-ICT
 |Capabilities|A palm-sized device on a rollator clip or a lanyard, with a speaker, a microphone, two buttons and motion sensing.
@@ -68,13 +68,13 @@ enables → F1, F3, F4; addresses → HV-01, HV-06; realized-in → RP-01 (§2.2
 |=Field|=Description
 |ID|TECH-03
 |Name|Presence sensing in residents' rooms (selected, opt-in only)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning. Door sensors and Bluetooth beacons are standard parts. Concerns about surveillance in residential care reviewed in Niemeijer et al. (2010).
 |Category|Sensing
 |Capabilities|(((
 A small sensor at the door of an opted-in resident's room, or a beacon the resident chooses to carry, registers whether they are in the room.
 
-The server keeps one number per day: hours spent in the room. When the count stays above the resident's usual level for several days [threshold - O-2], the named care worker receives a note (F5).
+The server keeps one number per day: hours spent in the room. When the count stays above the resident's usual level for several days, the named care worker receives a note (F5).
 )))
 |Limitations|Cannot tell sleep from reading, or a visitor from solitude. A few days in bed with a cold look like withdrawal. Only as good as its threshold.
 |Maturity and feasibility|High; standard parts.
@@ -83,7 +83,7 @@ The server keeps one number per day: hours spent in the room. When the count sta
 |Drawbacks|(((
 Intrudes on private time, and can cross a boundary: a visit prompted by a count can feel like being watched (VT-06). A record of where a resident is, however coarse, is a privacy risk (HV-03).
 
-Mitigations: opt-in only, with the resident's assent (O-7); one number a day, no timeline; notes to one named care worker, who calls in to offer company, never to check; the System never contacts the resident about it; the resident can stop it at any time; the setting is reviewed at every care-plan review.
+Mitigations: opt-in only, with the resident's assent; one number a day, no timeline; notes to one named care worker, who calls in to offer company, never to check; the System never contacts the resident about it; the resident can stop it at any time; the setting is reviewed at every care-plan review.
 )))
 |Selected or rejected|Selected, opt-in only.
 
@@ -100,7 +100,7 @@ enables → F5; addresses → HV-05, HV-06; strains → VT-06.
 |=Field|=Description
 |ID|TECH-04
 |Name|Local server, one instance per resident (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning. Care homes already run local networks and work phones.
 |Category|AI/ICT
 |Capabilities|(((
@@ -130,7 +130,7 @@ enables → F1, F2, F4, F5, F6; addresses → HV-01, HV-03.
 |=Field|=Description
 |ID|TECH-05
 |Name|Consent-gated matching (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning; HFC-15.
 |Category|AI/ICT
 |Capabilities|(((
@@ -164,7 +164,7 @@ enables → F1, F2, F3; addresses → HV-03, HV-06; strains → VT-01.
 |=Field|=Description
 |ID|TECH-06
 |Name|Resident profile for matching (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning; HFC-04, HFC-15. Life-story work is common practice in dementia care.
 |Category|AI/ICT
 |Capabilities|(((
@@ -197,7 +197,7 @@ enables → F2, F3; addresses → HV-06, HV-07; strains → VT-01, VT-05.
 |=Field|=Description
 |ID|TECH-07
 |Name|Cloud speech and language services (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning.
 |Category|AI/ICT
 |Capabilities|Better speech recognition; generated introductions; matching by a language model.
@@ -217,7 +217,7 @@ enables → F2, F3; addresses → HV-06, HV-07; strains → VT-01, VT-05.
 |=Field|=Description
 |ID|TECH-08
 |Name|Audio recording (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning.
 |Category|Sensing
 |Capabilities|Recordings for tuning speech recognition and for coding research sessions.
@@ -237,7 +237,7 @@ enables → F2, F3; addresses → HV-06, HV-07; strains → VT-01, VT-05.
 |=Field|=Description
 |ID|TECH-09
 |Name|Location and body sensing: GPS, cameras, wristbands (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Commercially common. Concerns reviewed in Niemeijer et al. (2010).
 |Category|Sensing / Wearable
 |Capabilities|Position anywhere in the home; faces and distress; heart rate and activity.
@@ -261,7 +261,7 @@ TECH-02 and TECH-07 to TECH-09: no outgoing edges to Specification - rejected op
 |=Field|=Description
 |ID|TECH-18
 |Name|Pepper+ / Pepper Enhanced with full-duplex audio and on-device accelerator (envisioned)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning. No product chosen; no hands-on testing.
 |Category|Social Robot / AI/ICT
 |Capabilities|(((

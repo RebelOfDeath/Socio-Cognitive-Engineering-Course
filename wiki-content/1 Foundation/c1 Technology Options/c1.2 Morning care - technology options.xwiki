@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: c1.2 Morning care - technology options
 synced_title: c1.2 Morning care - technology options
 syntax: xwiki/2.1
-version: 5.1
-hash: a85e38e517e4e43ffab7f85a2fe38cd6b34a647b6a0133880ccede66db7b365d
+version: 5.9
+hash: 1a9ec41a2e6a1d8e60bca188d1f8efc43f8954bea97e290a8a604d9f14e0adfb
 %%WIKI-SYNC-META%%
 **Abstract.** Technology Options TECH-10 to TECH-17 of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[c1.1 Pepper, resident profiles and local server>>doc:1 Foundation.c1 Technology Options.c1\.1 Pepper, resident profiles and local server.WebHome]]); IDs continue after the Meaningful Connections set.
 
@@ -19,7 +19,7 @@ hash: a85e38e517e4e43ffab7f85a2fe38cd6b34a647b6a0133880ccede66db7b365d
 |=Field|=Description
 |ID|TECH-10
 |Name|Pepper humanoid robot (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Vendor documentation (SoftBank Robotics / Aldebaran); the course's own design-pattern examples use Pepper. No hands-on testing by this project yet.
 |Category|Social Robot
 |Capabilities|Humanoid robot about 1.2 m tall on a wheeled base, with a tablet on its chest, microphones, speakers, head and body cameras, a depth sensor, touch sensors, and LEDs in its eyes and shoulders. Relevant here: spoken prompts that address the resident by name (F8); the chest tablet can show a picture or short video of the next step, which gives F8 its demonstration level without the robot miming the action; speech recognition for simple replies; touch sensors as a non-verbal way to respond.
@@ -61,7 +61,7 @@ enables → F8, F9 (resident-facing part); addresses → Goal (SA-05), HV-12, HV
 |=Field|=Description
 |ID|TECH-11
 |Name|Sensors on the tooth-brushing items (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning. Connected toothbrushes with built-in motion sensors are commercially available; weight and flow sensors are standard, off-the-shelf components. COACH (Mihailidis et al., 2008) tracked a comparable stepwise ADL, but with a camera (TECH-13).
 |Category|Sensing / AI-ICT
 |Capabilities|Tracks the SA-05 sequence from the items themselves rather than the person: a motion sensor in or clipped to the toothbrush (picked up, brushing motion, put down), a weight pad under the toothbrush cup and toothpaste (lifted, returned), and a flow sensor on the tap (rinsing). From these, F7 infers the current step and detects a stall when no expected change follows within the configured interval. The toothbrush sensor also gives the total time spent brushing, which F8 uses within the session to offer once to keep brushing (§2.3 Escalation specification). Requires nothing from the resident, and observes the activity, not the resident.
@@ -95,7 +95,7 @@ enables → F7, F8 (early-stop rule), F10 (session data); addresses → Goal (SA
 |=Field|=Description
 |ID|TECH-12
 |Name|Care-staff notification and session record (selected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group reasoning; care homes commonly already have a nurse-call system and work phones for staff. HP-05 requires alerts to be rare and meaningful.
 |Category|AI/ICT
 |Capabilities|Sends a handover request to the care worker's work phone - room, activity, step reached, reason (F9) - and stores the three-item session record (F10) on a local server for the care record.
@@ -121,7 +121,7 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-08; alerting pol
 |=Field|=Description
 |ID|TECH-13
 |Name|Camera-based activity recognition (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|COACH (Mihailidis et al., 2008) tracked handwashing with a camera over the sink; it is the closest published precedent.
 |Category|Sensing / AI-ICT
 |Capabilities|Could track every step, including ones that do not involve a sensed item, and could see distress or a collapse.
@@ -147,7 +147,7 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-08; alerting pol
 |=Field|=Description
 |ID|TECH-14
 |Name|Tool-like sink-side prompting device (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|HFC-13: older adults prefer tool-like framings that keep emotional distance (Pemberton et al., 2026). For personal care specifically the evidence is mixed: Prakash & Rogers (2015) found a robotic face rated more likeable than a human one, but not more trusted or more useful, and interviewees were split. COACH delivered prompts through a screen and speaker at the sink (Mihailidis et al., 2008).
 |Category|AI/ICT
 |Capabilities|A small speaker, light and screen mounted by the sink that gives the same F8 prompts, without a humanoid body.
@@ -173,7 +173,7 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-08; alerting pol
 |=Field|=Description
 |ID|TECH-15
 |Name|Medication tray or dispenser with sensors (deferred)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Previously the embodiment in RP-02 and DS-03 (§2.1, §2.2).
 |Category|Sensing / AI-ICT
 |Capabilities|A tray with a weight sensor, or a lockable dispenser with an open-state sensor, which detects whether medication has been picked up.
@@ -199,7 +199,7 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-08; alerting pol
 |=Field|=Description
 |ID|TECH-16
 |Name|Position-sensing connected toothbrush (deferred)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group knowledge of commercially available connected electric toothbrushes, which report brushing coverage in a companion app. Vendor claims only; no accuracy study has been read, and none with older adults or people with dementia is known to the group (§2.3 Open item O-32).
 |Category|Sensing / AI-ICT
 |Capabilities|Estimates from motion and orientation sensors which region of the mouth is being brushed, and for how long, so it could report coverage without any image.
@@ -231,7 +231,7 @@ enables → F9, F10; addresses → HV-13, HV-14; strains → VT-08; alerting pol
 |=Field|=Description
 |ID|TECH-17
 |Name|Smart mirror or camera-based brushing analysis (rejected)
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Group knowledge that research prototypes and consumer products of this kind exist; none has been reviewed. Rejected on the same grounds as TECH-13, so the comparison does not depend on their accuracy.
 |Category|Sensing / AI-ICT
 |Capabilities|A camera in or behind the bathroom mirror tracks the brush against the face, giving coverage and technique.

@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Fo
 title: a2.2 Morning care - stakeholders
 synced_title: a2.2 Morning care - stakeholders
 syntax: xwiki/2.1
-version: 17.1
-hash: cbe4dec4011295597c3b138e6168be142579ce2cbd7290d0919d125acdf2849c
+version: 17.2
+hash: 9d264458dffc33d269fd85cc1f14738da8d0f44f629a08e759f5d69afd2db2c7
 %%WIKI-SYNC-META%%
 **Abstract.** Stakeholders ST-08 to ST-12 for the morning personal care routine (tooth brushing and medication support). This material is unrelated to the main concept of social introductions (see [[a2.1 Residents, family and staff>>doc:1 Foundation.a2 Stakeholders.a2\.1 Residents, family and staff.WebHome]]). IDs continue after the main set.
 
@@ -19,7 +19,7 @@ hash: cbe4dec4011295597c3b138e6168be142579ce2cbd7290d0919d125acdf2849c
 |=Field|=Description
 |ID|ST-08
 |Name|Resident with dementia
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
 |Type|Direct - interacts with the System during the activity
 |Values and motivations|(((
@@ -50,7 +50,7 @@ performs → SA-05, SA-06; holds → HV-09, HV-10, HV-11, HV-12, HV-13; appears-
 |=Field|=Description
 |ID|ST-09
 |Name|Care home staff member
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
 |Type|Direct - receives handover requests and reviews the session record
 |Values and motivations|(((
@@ -83,7 +83,7 @@ performs → SA-07; supports → SA-05, SA-06; holds → HV-09 to HV-14; appears
 |=Field|=Description
 |ID|ST-10
 |Name|Family members of Resident
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
 |Type|Indirect - affected by outcomes, does not interact with the System and does not receive its records
 |Values and motivations|(((
@@ -114,7 +114,7 @@ holds → HV-09, HV-10, HV-11, HV-13, HV-14.
 |=Field|=Description
 |ID|ST-11
 |Name|Management or the Owners of the care home
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
 |Type|Indirect - decides on adopting the System, does not interact with it
 |Values and motivations|(((
@@ -143,7 +143,7 @@ holds → HV-10, HV-11, HV-13, HV-14.
 |=Field|=Description
 |ID|ST-12
 |Name|Medical staff: GP, Nurse
-|Status|In Progress
+|Status|Finished
 |Evidence basis|Provisional. Literature and group reasoning only. The stakeholder set is derived from SA-05 to SA-07. Values and priorities are the group's reasoning.
 |Type|Indirect - responsible for care plans and medication, does not interact with the System
 |Values and motivations|(((
