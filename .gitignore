@@ -12,3 +12,5 @@ wiki-backup/
 .DS_Store
 .idea/
 .acadus/
+*.zip
+/figures
