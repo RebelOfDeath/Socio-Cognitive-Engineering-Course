@@ -34,7 +34,7 @@ Build A: all four Premises, through EM-05 at a mock sink (ground-truth log, no h
 |Builds|(((
 |=Build|=What changed
 |Spec-1 (paper)|First evaluated build. The UC04 specification as of this cycle: Action Sequence, Functions F7 to F10, Escalation specification, Premises and Claims tables, DS-02, HP-04, HP-05 and RP-02. Walked through in ER-01.
-|Build A (planned)|Working system: Pepper with the F8 prompt script and tablet pictures, item sensors on the toothbrush, toothpaste and cup (TECH-11), and the phone message and session record (TECH-12). Planned to include the changes ER-01 recommends (§2.3 Open items O-34 to O-38). First evaluated in the EM-05 pilot (O-29); then used by ER-02.
+|Build A (planned)|Working system: Pepper with the F8 prompt script and tablet pictures, item sensors on the toothbrush, toothpaste and cup (TECH-11), and the phone message and session record (TECH-12). Planned to include the changes ER-01 recommends (§2.3 Open items O-35 to O-38), on top of O-34, which is already in the specification. First evaluated in the EM-05 pilot (O-29); then used by ER-02.
 )))
 
 == Graph edges ==

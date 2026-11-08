@@ -24,7 +24,7 @@ Where each UC04 Premise and Claim stands. "Planned" means the Evaluation Method 
 |UC04-F8-CL12|EM-06|ER-02 designed|none|none
 |UC04-F8-CL13 (adverse)|EM-06|ER-01; ER-02 designed|EV-02|Qualifies (walkthrough only)
 |UC04-F8-CL14 (adverse)|EM-06, EM-07|ER-01; ER-02 designed|EV-03|Qualifies (walkthrough only)
-|UC04-F9-CL15|EM-06|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; the cause (WF-07) is fixed and needs walking again
+|UC04-F9-CL15|EM-06|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; WF-07 is fixed and needs walking again, WF-06 and WF-08 are open (O-35, O-37)
 |UC04-F7-CL16|EM-06, EM-07|ER-01; ER-02 designed|EV-07|Qualifies (walkthrough only)
 |UC04-F10-CL17|EM-07|ER-01|EV-05|Challenges (walkthrough only; O-38)
 |UC04-F9-CL18|EM-06, EM-07|ER-02 designed|none|none

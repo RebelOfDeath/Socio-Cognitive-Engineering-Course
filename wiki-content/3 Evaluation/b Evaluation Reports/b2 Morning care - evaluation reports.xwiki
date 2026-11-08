@@ -41,7 +41,7 @@ Why now: the //Escalation specification// was added to answer the midterm feedba
 
 |=Field|=Description
 |Finding(s)|See //Walkthrough findings// below: a step-by-step table, then findings WF-01 to WF-12, grouped by the Claim they bear on.
-|Implications|See //Implications// below. One finding, WF-07, was a clear specification defect and has been fixed in §2.3 (O-34). The others are recorded as §2.3 Open items O-35 to O-38 for a group decision before Build A. One case, WF-10, is added to the EM-05 pilot (O-29).
+|Implications|See //Implications// below. One finding, WF-07, was a clear specification defect and has been fixed in §2.3 (O-34). WF-10 is added to the EM-05 pilot (O-29). The others are recorded as §2.3 Open items O-35 to O-38 for a group decision before Build A.
 
 == Summative-only fields ==
 
@@ -54,17 +54,17 @@ Why now: the //Escalation specification// was added to answer the midterm feedba
 
 === Step by step ===
 
-Answers are Yes, Partly or No; a No or Partly points to the finding that explains it.
+Answers are Yes, Partly or No; a No or Partly points to the finding that explains it. UC04 steps 4 to 8 are the prompting ladder, walked once at each SA-05 step; those rows name the SA-05 step as well. Step numbers in the findings below (for example "steps 8 and 9" in WF-02) are SA-05 steps.
 
 |=UC04 step|=Persona|=Q1 right effect|=Q2 notices action|=Q3 links action and effect|=Q4 sees progress|=Story
 |2-alt Not started|Mary|Partly (WF-01)|Partly|Partly|Yes|At 10 minutes before the window closes, Pepper says "Good morning Mary, it is time for your teeth." If Mary is in the bathroom or near it, this is a credible success. If she is elsewhere in the room, she may not hear a voice from the bathroom doorway (O-30).
 |2 and 3 Arrives, has not started|Mary|Yes|No (WF-01)|n/a|No|Mary stands at the sink and does not pick anything up. No item event happens, so no stall rule runs: step 4's T-stall starts only after the first lift, and the initiation path only acts at 10 minutes before the window closes. She can stand there unsupported for most of the window.
-|4 Pick up toothbrush|Mary|Yes|Yes|Yes|Yes|She has lifted the cup and stalls. Pepper waits 15 s, then gives L1 and L2 ("Would you like to pick up your toothbrush?"). HP-04 says she can act on a short spoken cue, so this is a credible success. The silent wait fits HP-04's need for time before being prompted.
-|5 and 6 Toothpaste|Mary|Yes|Partly (WF-04)|Yes|Partly|L2 is credible. If the blocker is opening the tube, L2 and L3 must show opening, which the merged step does not say. TECH-11 counts a lift and return as done, so she gets no sign if no paste reached the brush; the cost of that is small.
-|7 Brush|Mary|Yes|Partly (WF-04)|Yes|Yes|L2 "You could brush your teeth now." is credible. At L3 the picture is on Pepper's chest tablet, at the doorway behind her, while she faces the sink and mirror. The L3 sentence repeats L2 and does not tell her to look at the screen.
+|4 to 8 at SA-05 step 4, pick up toothbrush|Mary|Yes|Yes|Yes|Yes|She has lifted the cup and stalls. Pepper waits 15 s, then gives L1 and L2 ("Would you like to pick up your toothbrush?"). HP-04 says she can act on a short spoken cue, so this is a credible success. The silent wait fits HP-04's need for time before being prompted.
+|4 to 8 at SA-05 steps 5 and 6, toothpaste|Mary|Yes|Partly (WF-04)|Yes|Partly|L2 is credible. If the blocker is opening the tube, L2 and L3 must show opening, which the merged step does not say. TECH-11 counts a lift and return as done, so she gets no sign if no paste reached the brush; the cost of that is small.
+|4 to 8 at SA-05 step 7, brush|Mary|Yes|Partly (WF-04)|Yes|Yes|L2 "You could brush your teeth now." is credible. At L3 the picture is on Pepper's chest tablet, at the doorway behind her, while she faces the sink and mirror. The L3 sentence repeats L2 and does not tell her to look at the screen.
 |3-alt Early stop|Mary|Partly|Yes|Yes|Partly (WF-10)|"Would you like to brush a little longer?" is a single offer, with no call if she declines. Credible success. Unclear case: spitting or rinsing mid-brushing produces a tap or cup event, and the ladder does not say whether that is a pause in step 7 or the start of step 8.
-|8 Rinse|Mary|Partly (WF-02)|Yes|No (WF-02)|Yes|L1 at this step is still "Mary, you are brushing your teeth this morning." After she has brushed, that can be heard as an instruction to brush again. If she picks up the brush, that is not the expected tap or cup event, so the ladder carries on as if she had not responded.
-|9 Put away|Mary|Yes|Yes|Yes|Partly (WF-12)|L2 is credible. If the ladder runs out here nobody is called, which suits HV-14. The specification has no closing line; DS-02 has Pepper say "All done", the only point where Mary would hear that she has finished.
+|4 to 8 at SA-05 step 8, rinse|Mary|Partly (WF-02)|Yes|No (WF-02)|Yes|L1 at this step is still "Mary, you are brushing your teeth this morning." After she has brushed, that can be heard as an instruction to brush again. If she picks up the brush, that is not the expected tap or cup event, so the ladder carries on as if she had not responded.
+|4 to 8 at SA-05 step 9, put away|Mary|Yes|Yes|Yes|Partly (WF-12)|L2 is credible. If the ladder runs out here nobody is called, which suits HV-14. The specification has no closing line; DS-02 has Pepper say "All done", the only point where Mary would hear that she has finished.
 |Declining (ladder rule 3)|Mary|n/a|n/a|Partly (WF-03)|n/a|Every L2 is a yes/no question. Two quick "no"s, which a person may give before thinking about the question, end prompting with a routine call, reason "declined", even if she would have gone on.
 |8-alt Distress|Mary|Yes|No (WF-05)|Partly|Partly|To get help she must say something the System recognises as asking for help, or touch Pepper's head or hand. Nothing tells her that touching the robot does anything, and the rule that F8 must not depend on speech recognition conflicts with recognising "help", "no" or "stop".
 |9 Handover, resident side|Mary|n/a|n/a|n/a|No (WF-06)|Pepper says that someone is coming. Under H1 a routine call can wait 5 minutes for a re-send and 10 for a second care worker. Nothing is specified for Mary during that time, and she is not told when someone has answered.
@@ -91,7 +91,7 @@ Answers are Yes, Partly or No; a No or Partly points to the finding that explain
 == Implications ==
 
 * **Applied.** WF-07: the room is added to every handover message in F9, the handover rules, UC04-F9-PR9, DS-02 and TDP-02 (§2.3 O-34). The walkthrough of steps 9 and 10 from Myra's side should be repeated on the revised text.
-* **For a group decision before Build A.** WF-01, WF-02, WF-04, WF-06 and WF-12 change the resident-facing prompt script (O-35). WF-03 and WF-05 change how the System hears the resident (O-36). WF-08 adds an acknowledgement action to TECH-12 (O-37). WF-09 is a trade-off between the record's privacy and its usefulness (O-38).
+* **For a group decision before Build A.** WF-01, WF-02, WF-04, WF-06 and WF-12 change the resident-facing prompt script (O-35). WF-03 and WF-05 change how the System hears the resident (O-36). WF-08 adds an acknowledgement action to TECH-12 (O-37). WF-09 is a trade-off between the record's privacy and its usefulness (O-38). WF-11 changes what residents are told about the item sensors at consent and in RP-02, and goes with the prompt-script changes (O-35).
 * **For EM-05.** WF-05's word recognition and WF-10's rinse-or-pause rule become scripted cases in the first pilot (O-29).
 * **For ER-02.** The walkthrough found ways UC04-F8-CL13's adverse effect could arise that do not depend on the wait W: standing unsupported at the sink (WF-01), missing the picture (WF-04), and waiting after a handover (WF-06). ER-02 therefore codes M-14 per step and records which ladder rule fired, so that a rise in distress can be traced to its step.
 * **For the method.** Repeat the walkthrough with 3 to 5 independent evaluators, at least one with care experience if the group can find one, and compare their lists before merging them (O-39).
@@ -209,3 +209,8 @@ Each Claim becomes a yes/no question about the same residents in B compared with
 == Evidence produced by this report ==
 
 None yet: the study has not been run.
+
+= References =
+
+* Landis, J. R. & Koch, G. G. (1977). The measurement of observer agreement for categorical data. //Biometrics//, 33(1), 159-174. doi:10.2307/2529310
+* Mihailidis, A., Boger, J. N., Craig, T. & Hoey, J. (2008). The COACH prompting system to assist older adults with dementia through handwashing: an efficacy study. //BMC Geriatrics//, 8, 28. doi:10.1186/1471-2318-8-28
