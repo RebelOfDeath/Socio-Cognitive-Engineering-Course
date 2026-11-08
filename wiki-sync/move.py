@@ -44,8 +44,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import outline  # noqa: E402  (needs the path insert above)
 import sync  # noqa: E402
 
-PLAN_FILE = sync.MOVE_PLAN
+PLAN_FILE = Path(__file__).resolve().parent / "moves.json"
 WAIT_SECONDS = 120
+
+
+def href_of_path(cfg, wiki_path: str) -> str:
+    """REST address of the page at a wiki path such as 'Main/sdf/Stakeholders'."""
+    spaces = "".join(f"/spaces/{urllib.parse.quote(name, safe='')}" for name in wiki_path.split("/"))
+    return sync.rest_root(cfg) + spaces + "/pages/WebHome"
 
 
 def space_reference(names) -> str:
@@ -64,7 +70,7 @@ def load_moves(cfg) -> list:
         if entry.get("keep") not in ("local", "server"):
             sys.exit(f"{PLAN_FILE.name}: {entry['from']}: 'keep' must be \"local\" or \"server\".")
         path = sync.CONTENT_DIR / entry["to"]
-        moves.append(dict(entry, src=sync.href_of_path(cfg, entry["from"]), path=path, deep=path.name == sync.INDEX))
+        moves.append(dict(entry, src=href_of_path(cfg, entry["from"]), path=path, deep=path.name == sync.INDEX))
     return moves
 
 

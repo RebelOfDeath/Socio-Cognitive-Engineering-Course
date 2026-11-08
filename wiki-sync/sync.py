@@ -56,9 +56,10 @@ INVALID_CHARS = re.compile(r'[\\/:*?"<>|]')
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "wiki-content"
 INDEX = "0 Index.xwiki"
 STATE_FILE = CONTENT_DIR / ".sync-state.json"
-MOVE_PLAN = Path(__file__).resolve().parent / "moves.json"  # see move.py
 HOME = ("Main",)  # Main.WebHome, the wiki's home page: wiki-content/0 Index.xwiki
-DEFAULT_EXCLUDES = "XWiki,Menu,Diagram,Sandbox"
+# Top-level spaces that aren't the group's content: accounts, the Menu and Diagram
+# applications' own pages, XWiki's demo space, and the course's reference material.
+NON_CONTENT_SPACES = {"XWiki", "Menu", "Diagram", "Sandbox", "Reference"}
 
 ET.register_namespace("", "http://www.xwiki.org")
 
@@ -76,7 +77,6 @@ class Config:
     user: str
     password: str
     content_dir: Path
-    exclude_spaces: set
 
 
 def load_config() -> Config:
@@ -100,10 +100,7 @@ def load_config() -> Config:
     password = env.get("XWIKI_PASSWORD", "")
     if not all([base_url, wiki, user, password]):
         sys.exit(f"Missing XWiki credentials. Copy {script_dir / '.env.example'} to .env and fill it in.")
-
-    excludes = env.get("XWIKI_EXCLUDE_SPACES", DEFAULT_EXCLUDES)
-    exclude_spaces = set(filter(None, (s.strip() for s in excludes.split(","))))
-    return Config(base_url, wiki, user, password, CONTENT_DIR, exclude_spaces)
+    return Config(base_url, wiki, user, password, CONTENT_DIR)
 
 
 # --- HTTP / REST helpers -----------------------------------------------
@@ -308,9 +305,10 @@ def page_href_of(path: Path) -> str:
 
 def load_state() -> dict:
     """href -> version of every page that was in sync at the last pull or push."""
-    if STATE_FILE.exists():
-        return json.loads(STATE_FILE.read_text(encoding="utf-8"))["pages"]
-    return {}
+    if not STATE_FILE.exists():
+        return {}
+    pages = json.loads(STATE_FILE.read_text(encoding="utf-8"))["pages"]
+    return {h: v for h, v in pages.items() if managed(node_of(h))}
 
 
 def save_state(pending: dict):
@@ -339,8 +337,8 @@ def node_of(href: str) -> tuple:
 
 
 def managed(node: tuple) -> bool:
-    """The home page, and everything outside the Main space (Main also holds XWiki's own pages)."""
-    return node == HOME or (bool(node) and node[0] != HOME[0])
+    """The home page, and every page outside Main (XWiki's own pages) and the non-content spaces."""
+    return node == HOME or (bool(node) and node[0] != HOME[0] and node[0] not in NON_CONTENT_SPACES)
 
 
 def is_index(path: Path) -> bool:
@@ -360,6 +358,9 @@ def iter_local_files():
             continue
         if any(p.endswith(".attachments") for p in rel.parts[:-1]):
             continue
+        href = read(path)[0].get("href")
+        if href and not managed(node_of(href)):
+            continue  # a page in a space the sync leaves alone
         yield path
 
 
@@ -615,7 +616,7 @@ def pull_attachments(cfg: Config, page: dict, att_dir: Path, stats: dict):
 def list_remote_pages(cfg: Config):
     pages = []
     for pages_href in list_spaces(cfg):
-        if node_of(pages_href)[0] in cfg.exclude_spaces:
+        if node_of(pages_href)[0] in NON_CONTENT_SPACES:
             continue
         for page_href in list_pages(cfg, pages_href):
             page = fetch_page(cfg, page_href)
@@ -731,6 +732,9 @@ def push_file(cfg: Config, path: Path) -> bool:
         meta["href"] = derive_href(cfg, path, meta["title"])
     local_hash = sha256(content)
     rel = path.relative_to(CONTENT_DIR)
+    if not managed(node_of(meta["href"])):
+        print(f"SKIP {rel}: {pretty(meta['href'])} is outside the synced tree.")
+        return False
 
     if not meta.get("version"):  # never been on the wiki
         if fetch_page(cfg, meta["href"]) is not None:
@@ -792,20 +796,6 @@ def push_attachments(cfg: Config, page_href: str, att_dir: Path) -> int:
     return pushed
 
 
-def href_of_path(cfg: Config, wiki_path: str) -> str:
-    """REST address of the page at a wiki path such as 'Main/sdf/Stakeholders'."""
-    spaces = "".join(f"/spaces/{urllib.parse.quote(name, safe='')}" for name in wiki_path.split("/"))
-    return rest_root(cfg) + spaces + "/pages/WebHome"
-
-
-def planned_moves(cfg: Config):
-    """What moves.json lists for move.py: the pages' current addresses, and the local files they move to."""
-    if not MOVE_PLAN.exists():
-        return set(), set()
-    plan = json.loads(MOVE_PLAN.read_text(encoding="utf-8"))
-    return {href_of_path(cfg, e["from"]) for e in plan}, {(CONTENT_DIR / e["to"]).resolve() for e in plan}
-
-
 def pending_deletions(state: dict) -> dict:
     """Pages that were in sync last time and whose files are gone: href -> last synced version."""
     local_hrefs = {read(p)[0].get("href") for p in iter_local_files()}
@@ -840,12 +830,8 @@ def cmd_push(cfg: Config, target: str, yes: bool, force: bool):
         if not paths:
             sys.exit(f"{target} was re-filed by the layout step; push it at its new location.")
 
-    move_sources, move_files = planned_moves(cfg)
     pushed_pages = pushed_attachments = 0
     for path in sorted(paths, key=lambda p: len(p.parts)):  # parents first
-        if path.resolve() in move_files and not read(path)[0].get("version"):
-            print(f"WAIT {path.relative_to(CONTENT_DIR)}: moves.json moves a wiki page here; run move.py first.")
-            continue
         if push_file(cfg, path):
             pushed_pages += 1
         att = attachments_dir(path)
@@ -861,13 +847,10 @@ def cmd_push(cfg: Config, target: str, yes: bool, force: bool):
             print(f"KEEP the home page: wiki-content/{INDEX} is missing, but the home page is never deleted.")
             del pending[home]
         hrefs = sorted(pending, key=lambda h: h.count("/spaces/"), reverse=True)  # children first
-        for href in [h for h in hrefs if h in move_sources]:
-            print(f"KEEP {pretty(href)}: moves.json moves it; run move.py.")
-            hrefs.remove(href)
-        if not force:  # deleting a page loses its history; a page that moved should be moved (move.py)
+        if not force:  # deleting a page loses its history; a page that moved should be moved on the wiki
             for href in [h for h in hrefs if pending[h] != "1.1"]:
                 print(f"KEEP {pretty(href)}: it has edit history (version {pending[href]}). "
-                      f"Move it with move.py, or pass --force to delete it.")
+                      f"Move it with the wiki's Move/Rename and pull, or pass --force to delete it.")
                 hrefs.remove(href)
         if hrefs:
             print(f"\n{len(hrefs)} page(s) deleted locally, to be deleted on the wiki:")

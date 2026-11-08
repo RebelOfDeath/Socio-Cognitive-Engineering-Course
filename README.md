@@ -96,11 +96,13 @@ Multiple people edit this wiki, so the tool checks versions before overwriting a
 
 ## Excluding spaces
 
-`XWIKI_EXCLUDE_SPACES` in `wiki-sync/.env` names top-level spaces the tool leaves alone: `XWiki` (accounts), `Menu` and `Diagram` (the applications' own pages) and `Sandbox`. Apart from the home page, the `Main` space holds XWiki's own pages and is skipped too.
+`NON_CONTENT_SPACES` in `wiki-sync/sync.py` names the top-level spaces the tool leaves alone, both ways: `XWiki` (accounts), `Menu` and `Diagram` (the applications' own pages), `Sandbox`, and `Reference` (the course's reference material). Apart from the home page, the `Main` space holds XWiki's own pages and is skipped too. Local files of pages in these spaces are ignored by `pull`, `push` and `status`.
+
+`push` won't delete any page that has edit history unless you pass `--force`; a page that changed place should be moved with the wiki's Move/Rename instead, then pulled.
 
 `wiki-sync/delete.py` deletes pages (or a whole subtree with `--space`) directly on the wiki, including outside the synced tree; run `pull` afterwards.
 
-`wiki-sync/move.py` moves pages to where their local files are filed, using XWiki's Move/Rename action so history and attachments go along (no redirect is left behind). The moves are listed in `wiki-sync/moves.json`; `move.py status` checks them against the wiki without changing anything, and `move.py run <from>` moves one page and ties its local file to the new address. While `moves.json` lists a page, `push` neither deletes it nor creates a new page from the local file it moves to; and `push` won't delete any page that has edit history unless you pass `--force`.
+`wiki-sync/move.py` and `wiki-sync/moves.json` are kept as the record of the November 2026 restructure, which moved the old pages (`0. Introduction`, `Main/sdf/…`, …) into the current tree with XWiki's Move/Rename action. That restructure is done; `sync.py` doesn't use them.
 
 ## Meaningful Connections PDF
 

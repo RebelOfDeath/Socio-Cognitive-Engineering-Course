@@ -3,7 +3,7 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Sp
 title: b2 Morning care - use cases, claims and premises
 synced_title: b2 Morning care - use cases, claims and premises
 syntax: xwiki/2.1
-version: 9.1
+version: 10.1
 hash: b9acb721363e9fc919976c5a73bcdc45b387fa95c150059b2f74ce2e748e080a
 %%WIKI-SYNC-META%%
 **Abstract.** Objectives, Use Cases UC04 and UC05, Premises and Claims of the morning personal care concept: support with tooth brushing and the morning routine. A separate strand from Meaningful Connections (see [[b1 Welcoming, introducing and following up>>doc:2 Specification.b Use Cases with Claims and Premises.b1 Welcoming, introducing and following up.WebHome]]); IDs continue after the Meaningful Connections set.

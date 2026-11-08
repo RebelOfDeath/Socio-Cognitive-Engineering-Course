@@ -3,8 +3,8 @@ href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Sp
 title: a3 Objective Stories
 synced_title: a3 Objective Stories
 syntax: xwiki/2.1
-version: 6.1
-hash: 8809aaafee804486d28c20da00826d9bae65980b5fd518b41e9f74664edeb25a
+version: 6.2
+hash: cb56a58fa38ab6c2f6c654277a47a7eefce17dc438c3ae8deea93a8f4dc815fa
 %%WIKI-SYNC-META%%
 **Abstract.** Three short stories, each tying a Function to the value it serves, in a stakeholder's own words. Why Pepper gives both names (OS-01). Why painful questions go to a person (OS-02). Why each resident is asked alone (OS-03). Voices are provisional: written by the group, not yet heard from stakeholders.
 
@@ -19,7 +19,7 @@ hash: 8809aaafee804486d28c20da00826d9bae65980b5fd518b41e9f74664edeb25a
 |Name|Both our names
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-02, HFC-06.
-|Narrative|//Elena:// "New faces every day, and by lunch the names have gone. When someone is brought over, say both our names, as if we had all forgotten. Then nobody has to ask."
+|Narrative|//Elena: "New faces every day, and by lunch the names have gone. When someone is brought over, say both our names, as if we had all forgotten. Then nobody has to ask."//
 |Concerns|F3 Introduce; HV-02 Dignity, HV-06 Social connectedness
 
 = Objective Story - Fetch me [OS-02] =
@@ -33,7 +33,7 @@ hash: 8809aaafee804486d28c20da00826d9bae65980b5fd518b41e9f74664edeb25a
 |Name|Fetch me
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-08; IDP-03.
-|Narrative|//Myra:// "When a newcomer asks when she can go home, I want the robot to fetch me, not to answer her. Her family and I agreed what to say. A colleague once told a resident 'only for a few days', and she trusted none of us after that."
+|Narrative|//Myra: "When a newcomer asks when she can go home, I want the robot to fetch me, not to answer her. Her family and I agreed what to say. A colleague once told a resident 'only for a few days', and she trusted none of us after that."//
 |Concerns|F4 Defer sensitive topics; HV-08 Truthfulness, HV-05 Well-being
 
 = Objective Story - Ask me on my own [OS-03] =
@@ -47,7 +47,7 @@ hash: 8809aaafee804486d28c20da00826d9bae65980b5fd518b41e9f74664edeb25a
 |Name|Ask me on my own
 |Status|In Progress
 |Evidence basis|Provisional. Group reasoning; HFC-17; VT-02.
-|Narrative|//Jan:// "Don't ask me in front of her. If I say no, she shouldn't hear it, and I shouldn't have to explain. Ask me on my own, and take no for an answer."
+|Narrative|//Jan: "Don't ask me in front of her. If I say no, she shouldn't hear it, and I shouldn't have to explain. Ask me on my own, and take no for an answer."//
 |Concerns|F1 Ask first; HV-01 Autonomy, HV-02 Dignity
 
 == Graph edges ==
