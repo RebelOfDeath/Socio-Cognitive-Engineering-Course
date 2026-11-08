@@ -1,0 +1,17 @@
+//What one Evaluation Report established about one Premise or one Claim. One entry per Claim per report; findings are not averaged across Claims.//
+
+= Evidence [EV-08] =
+
+|=Field|=Description
+|ID|EV-08
+|Name|Walkthrough on getting to an introduction
+|Status|In Progress
+|Bears on|UC02-F3-CL1
+|Source|ER-04 (Peer walkthrough of the Kinnect prototype, 13 October 2026)
+|Assessed against criteria|Not assessed. CL1's criterion needs M-02 and M-05 from residents in two homes.
+|Result observed|The peers said the prototype asked many personal questions to build the profile and rarely got to suggesting a match (KF-02). They also found Pepper too clunky to go on a walk with other residents (KF-03).
+|Verdict|Qualifies
+|Basis for verdict|Reviewer judgement from verbal feedback. CL1 depends on introductions actually happening. In the prototype the long profile conversation delayed them, and the peers did not want Pepper along on a walk, which CL1 counts among the time residents spend together.
+|Limitations|Two peers, one session, no notes taken (ER-04 Method). The session walked the earlier walking version of Build 1, whose robot-led profile conversation the specification replaces with the coordinator's interview (UC01 step 2), so KF-02 may not hold for Build 2. The peers did not know which part of the screen a resident would see (KF-04).
+
+**Graph edges:** //produced-by ← ER-04; validates → UC02-F3-CL1.//

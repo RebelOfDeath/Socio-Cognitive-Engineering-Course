@@ -1,0 +1,58 @@
+**Abstract.** What the walkthroughs found means for the Use Cases, how each finding feeds back into the Foundation, the Specification and the planned studies, the limits of the walkthroughs and studies, and what the next iteration does. Morning care has a full walkthrough (ER-01). Kinnect had a peer walkthrough of its prototype in the lab session of 13 October (ER-04), with verbal findings only.
+
+= Interpretation of the walkthroughs =
+
+== Morning care (ER-01) ==
+
+ER-01 walked UC04 as Mary and Myra. The prompting ladder itself held up: at SA-05 steps 4 to 7, where Mary has started and faces the cue, the wait and the L1 and L2 prompts gave credible success stories, and so did the early-stop offer (EV-01, EV-06). The failures sit at the edges of the ladder. Before it starts, a resident who stands at the sink without lifting anything gets no support (WF-01). When it ends in a handover, Mary hears nothing for up to 10 minutes (WF-06), and Myra could not tell which room to go to (WF-07) or how to acknowledge (WF-08). After the session, the record does not tell Myra at which step Mary needed help (WF-09). In short, UC04 specifies the prompting well and the transitions into and out of it poorly.
+
+This shapes ER-02. A rise in distress in B (UC04-F8-CL13) could come from the wait W, which the Claim names, or from these transitions. ER-02 therefore codes M-14 per step and logs which ladder rule fired, so that a rise can be traced to its step. UC04-F9-CL15 was challenged on the Spec-1 handover; ER-02 tests it on the revised steps 9 and 10, which first need walking again.
+
+== Kinnect (ER-04) ==
+
+The peers' main point was that the prototype took too long to get to an introduction: it asked many personal questions and rarely suggested a match (KF-02). UC02-F3-CL1 rests on introductions happening, so this qualifies it (EV-08). The specification already places profile building with the coordinator (UC01 step 2), so the finding mostly concerns Build 1, which let the robot build the profile in conversation. It also concerns ER-03, whose intervention spends week 1 on one-to-one profile sessions before any matching. The second point was the robot itself: Pepper felt too clunky to take on a walk with others, and the peers preferred a small worn device that could also notice incidents (KF-03). That questions the choice of Pepper for the walking part of UC02 and asks for an alternative the Foundation does not yet compare. A worn device that notices incidents is close to the wearable location sensing that TECH-09 rejects as surveillance, so the peers' preference and VT-06 pull in opposite directions.
+
+= Feedback into the Foundation, the Specification and the study plan =
+
+|=Finding|=Foundation|=Specification|=Study plan and verification
+|WF-01 no support before the first lift|none|O-35; proposed UC04-F7-PR12 (below)|ER-02 codes M-14 per step
+|WF-02, WF-04, WF-06 prompt wording, picture placement, silence after a call|none|O-35 (prompt script)|ER-02 traces distress to its step
+|WF-03, WF-05 hearing "no" and "help"|none|O-36; proposed UC04-F8-PR11 (below)|Scripted case in the EM-05 pilot (O-29)
+|WF-07 room missing from the handover|none|Fixed in F9, UC04-F9-PR9, DS-02 and TDP-02 (O-34)|Walk steps 9 and 10 again
+|WF-08 no acknowledgement action|none|O-37|none
+|WF-09 record too thin for Myra|VT-08: record the detail of the session record as a considered alternative|O-38|EM-07 judges sufficiency (UC04-F10-CL17)
+|WF-10 rinse or pause unclear|none|none until the pilot settles it|Scripted case in the EM-05 pilot (O-29)
+|WF-11 well-timed prompts reveal the tracking|none|O-35 (what residents are told at consent); UC04-F7-CL16 revised (below)|M-16 code W in ER-02
+|WF-12 no closing line (unexpected)|none|O-35; proposed UC04-F8-PR13 (below)|none
+|KF-01 interface unclear (Kinnect)|none|none|Repeat ER-04 with Q2 asked at each step; bears on ER-03's usability hypothesis
+|KF-02 slow to reach a match (Kinnect)|none|Build 2 suggests a first match after a few released items, in line with UC01 step 2|ER-03: shorten week 1 or offer matching within it
+|KF-03 Pepper too clunky; worn device preferred (Kinnect)|Add a worn or handheld device to the Technology Options, weighed against TECH-09 and VT-06|none|none
+|KF-04 resident's part of the screen unclear (Kinnect, unexpected)|none|none|Explain the screen layout before the repeat walkthrough
+
+= New Premises and Claims from the findings =
+
+These are proposed for UC04 and are added to the Specification once the group decides O-35 and O-36.
+
+* **UC04-F8-PR11 (from WF-05).** The System recognises the fixed words "yes", "no", "stop" and "help", and treats any other speech as no reply. Threshold set from the EM-05 pilot.
+* **UC04-F7-PR12 (from WF-01).** A resident's arrival at the sink is detected without a camera, so that T-stall can start on arrival. Depends on O-30.
+* **UC04-F8-PR13 (from WF-12).** Every completed session ends with a closing line in an ordinary adult register, without praise.
+* **UC04-F7-CL16, revised (from WF-11).** The Claim now covers the timing of prompts as well as the sensors: a prompt that arrives just as the resident stops can make the tracking evident even with the cameras covered.
+
+= Limitations =
+
+**The morning-care walkthrough (ER-01).** One evaluator, without care experience, made one pass, where the procedure asks for 3 to 5 evaluators and a joint session (O-39). The evaluator is not a person with dementia, and HP-04 is provisional. A paper build has no timing, so the walkthrough cannot speak to the Premises. It also cannot say how often a failure would happen or how bad it would be for a resident.
+
+**The Kinnect walkthrough (ER-04).** Two peers in one session, and nothing was written down during it; the findings are what two group members reported afterwards. The facilitator found the procedure unclear on the day, so the four questions were not asked step by step. The session walked the earlier walking version of Build 1, and the peers did not know which part of the screen a resident would see. EV-08 therefore rests on reviewer judgement from verbal feedback.
+
+**The morning-care study (ER-02).** With 8 residents, a confirmatory test succeeds only if almost all residents move in the predicted direction, so the single-case plots carry as much weight as the tests. Observers cannot be blind to the phase, M-13 and the tooth-brushing version of M-15 are untested scales, and the study runs in one care home. Whether it falls under the Dutch WMO is still open (O-40).
+
+**The Kinnect study (ER-03).** With one home per arm, a difference between the arms cannot be separated from other differences between the homes. The badges it needs conflict with the rejection of wearable location sensing (TECH-09). Pepper+ does not exist yet. The two hypotheses do not yet map to Claim IDs, and the Premises they rest on, such as speech recognition with older speakers, have no verification method yet.
+
+= Next iteration =
+
+~1. Repeat ER-04 on the narrowed UC01 to UC03, with the screen layout explained first, the step table as protocol and a second group member recording each answer; write Evidence for each walked Claim.
+2. Repeat ER-01 with 3 to 5 evaluators, at least one with care experience, on the revised steps 9 and 10 (O-39).
+3. Decide O-35 to O-38, and add the accepted Premises and the revised CL16 to UC04.
+4. Make Build A and run the EM-05 pilot, with the WF-05 and WF-10 cases scripted (O-29); confirm the PR7 to PR9 thresholds.
+5. Ask the HREC whether ER-02 needs METC review (O-40).
+6. For Kinnect: map ER-03's hypotheses to Claim IDs, set the O-2 thresholds, and build and verify Build 2 under EM-01 before ER-03 can run.

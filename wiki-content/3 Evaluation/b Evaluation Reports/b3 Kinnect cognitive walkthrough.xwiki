@@ -1,0 +1,86 @@
+**Abstract.** Formative walkthrough of the Kinnect prototype (AT-01 Build 1) with two peers from another group, in the course lab session of 13 October 2026. No answers were written down during the session, so the findings below are the verbal feedback the group recorded afterwards. They bear mostly on how quickly the prototype gets to an introduction (UC02-F3-CL1), on the choice of robot, and on how the demo was presented. A repeat walkthrough with recorded answers is planned, with the step table below as its protocol.
+
+= Evaluation Report [ER-04] =
+
+== Shared fields ==
+
+|=Field|=Description
+|ID|ER-04
+|Name|Peer walkthrough of the Kinnect prototype, 13 October 2026
+|Status|In Progress (one session held; repeat planned)
+|Mode|Formative
+|Artifact used|[[AT-01 Kinnect social connection-maker>>doc:3 Evaluation.a Artifacts.a1 Kinnect.WebHome]], Build 1 (##sce-poc##), as deployed on 13 October 2026. This was an earlier state of Build 1: the concept was still "Walking with purpose", so a session centred on Pepper inviting a resident on a walk and asking whether another resident should join. The concept was narrowed to introductions three days later. On the day, the deployment was updated so that any of the persona cards could be used.
+|Evaluation Method(s) applied|(((
+Ad hoc, not one of EM-01 to EM-04. Two peers from another group used the prototype in the role of residents, with a group member facilitating, in the lab session set aside for walkthroughs. The four walkthrough questions used in ER-01 were the intended frame, but they were not applied step by step. The session addressed Claims, since the peers judged whether the interaction would work for a resident; it did not verify any Premise.
+)))
+|Ethics|No ethics review was required. The peers were students taking part in the course's lab session, playing personas from the persona cards. No personal data were recorded, and no resident or other person outside the course took part.
+|Introduction|(((
+Aimed at the Claims on asking, matching and introducing that a walkthrough can judge, in particular UC02-F3-CL1 (introductions lead to repeat contact), UC02-F1-CL3 (accepting out of politeness) and UC02-F2-CL4 (matching feels exposing). Claims about outcomes over weeks (UC01-F3-CL2, UC02-F3-CL9) were out of reach and are left to ER-03.
+
+Why then: the lab session was the course's slot for a formative walkthrough of each group's prototype, and Build 1 had just been deployed.
+)))
+|Method|(((
+**What was done.** A group member ran the prototype on a laptop and two peers took turns as the resident, using the persona cards (Elena, Jan, Ria). They talked to the simulated Pepper through the browser, and gave feedback during and after the session. A second group member discussed the prototype with the lecturer in a separate call during the same session.
+
+**What was recorded.** Nothing during the session. The facilitator was alone at the table and could not take notes while running the prototype. The findings below were reported by the two group members in the group chat on the same afternoon. Build 1 has a six-item feedback form (##logs/feedback.jsonl##); whether the peers filled it in is not known.
+
+**Limits.** Two peers, one session, no notes. The peers are not people with dementia. The facilitator found the walkthrough procedure unclear on the day, so the four questions were not asked systematically. The session walked the walking version of the concept, not the narrowed UC01 to UC03, and the peers did not know that only the left side of the screen is what a resident would see (KF-04). The findings can say that a problem was noticed, not how often it would occur or how serious it would be for residents.
+)))
+
+== Formative-only fields ==
+
+|=Field|=Description
+|Finding(s)|See //Walkthrough findings// below: KF-01 to KF-04.
+|Implications|See //Implications// below. KF-02 changes the order of profile building and matching in Build 2 and in ER-03's first week. KF-03 adds a non-robot alternative to the Technology Options. KF-04 changes how the demo is presented in the repeat walkthrough.
+
+== Summative-only fields ==
+
+|=Field|=Description
+|Result(s)|not applicable (Mode is Formative)
+|Discussion|not applicable (Mode is Formative)
+|Conclusions|not applicable (Mode is Formative)
+
+== Walkthrough findings ==
+
+|=ID|=Finding|=Suggestion|=Bears on
+|KF-01|The interface was not clear enough for the peers to follow what Pepper wanted from them.|Simplify the tablet screen; repeat the walkthrough with Q2 (does the user notice the action) asked at each step.|ER-03 secondary hypothesis (first-time usability); no Claim ID yet
+|KF-02|The prototype asked many personal questions to build the profile and rarely got to suggesting a match. The peers wanted matching to come sooner.|Suggest a first match after a few released items; in the specification the profile comes from the coordinator's life-story interview (UC01 step 2), not from a long robot conversation.|UC02-F3-CL1
+|KF-03|The peers found Pepper too large and clunky, especially for going on a walk with other residents. They preferred a small device worn on clothing, which could also notice when something happens to the wearer.|Record a small wearable or handheld device as a Technology alternative, with the surveillance concern of TECH-09 as its main drawback.|Technology choice (TECH-01, TECH-09); UC02-F3-CL1 (walks)
+|KF-04|Unexpected, about the demo: the lecturer noted that the demo should explain that only the left side of the screen is what a resident would see; the right side is the operator panel.|Show only the resident's side to evaluators, or state this before the walkthrough starts.|none (no Evidence)
+
+== Implications ==
+
+* **For Build 2 and the specification.** KF-02: Build 2 suggests a first match once a few items are released, in line with UC01 step 2, where the coordinator builds the profile with the resident and family.
+* **For ER-03.** KF-02 also bears on ER-03's schedule, which spends week 1 on one-to-one profile sessions before any matching in week 2. If residents lose interest during long profile building as the peers did, week 1 should be shortened or matching offered within it.
+* **For the Foundation.** KF-03: add a small wearable or handheld device to the Technology Options as a considered alternative to Pepper, and weigh it against VT-06 and the reasons TECH-09 was rejected.
+* **For the method.** KF-04 and the lack of notes: in the repeat walkthrough, explain the screen layout first, use the step table below, and have a second group member write down the answer to each question.
+
+== Protocol for the repeat walkthrough ==
+
+The steps to walk in the repeat pass, each with its persona and the Claims it bears on, on the narrowed UC01 to UC03. Steps that only the System or the coordinator perform (UC01 3, UC02 1 and 2) are not walked, nor are the record steps (UC01 8, UC02 10, UC03 7), whose only Claim (UC02-F6-CL21) is about how residents feel about the record once it is explained, which the EM-04 interviews address.
+
+|=Use Case step|=Persona|=Claims
+|UC01 1 Greeted by name on the first lounge visit|Elena|CL5
+|UC01 2 Decides on each profile item with the coordinator|Elena|CL4
+|UC02 3 Asked alone whether to meet Jan, and whether an item may be shared|Elena|CL3, CL4
+|UC02 3 Asked alone whether to meet Elena|Jan|CL3, CL4
+|UC02 3-alt Says no; later asks about it|Jan|CL3
+|UC02 4 Brings both to the lounge at a time that suits both|Myra|CL1
+|UC02 5 Introduced by name and photo, with one shared item|Elena and Jan|CL1
+|UC02 6 Talk stalls; Pepper offers one topic|Elena and Jan|CL1
+|UC02 7 Pepper suggests an activity for two|Elena and Jan|CL1
+|UC02 8 Wants to leave|Jan|CL3
+|UC02 9 Asked alone whether to meet again|Elena|CL3
+|UC01 6 Names given as statements at a later meeting|Elena|CL5
+|UC01 7 Asks "When can I go home?"|Elena|CL8
+|UC01 7 Receives the deferral note as trusted person|Myra|CL8
+|UC03 1 and 2 Receives the note at the agreed time and brings both together|Myra|CL6
+|UC03 3 Names given at the follow-up meeting|Jan|CL5
+|UC03 5 Receives a presence note|Myra|CL7
+|UC03 6 Visited by Myra after a presence note|Jan|CL7
+
+**Graph edges:** //uses → AT-01 (Build 1, deployment of 13 October 2026); applies → peer walkthrough (ad hoc); produces → EV-08.//
+
+== Evidence produced by this report ==
+
+* EV-08: walkthrough on getting to an introduction (UC02-F3-CL1)
