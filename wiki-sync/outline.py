@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate OUTLINE.md: the wiki sidebar tree, with links to local .xwiki files.
+"""Generate OUTLINE.md: the wiki's page tree, with links to the local .xwiki files.
 
-Directory names in wiki-content/ are XWiki *space* names ("Main", "sdf"), while
-the sidebar shows each page's *display title* ("1. Foundation", "a. Operational
-Demands"). This reads the title out of each file's %%WIKI-SYNC-META%% header and
-renders a nested list keyed on titles, so the outline reads the way the wiki does.
+A folder in wiki-content/ is a page with children; its own text is the
+'0 Index.xwiki' inside it, so that is what the folder's entry links to. Entries
+show each page's exact title, read from the file's %%WIKI-SYNC-META%% header
+(file names can't hold some characters, such as ':').
 """
 
 import re
@@ -15,83 +15,60 @@ from urllib.parse import quote
 META_MARK = "%%WIKI-SYNC-META%%"
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "wiki-content"
 OUT_FILE = CONTENT_DIR.parent / "OUTLINE.md"
+INDEX = "0 Index.xwiki"
 
 
-def read_title(path: Path) -> str:
-    """Pull `title:` from the sync meta header, falling back to the file stem."""
+def read_title(path: Path, fallback: str) -> str:
+    """Pull `title:` from the sync meta header, falling back to the given name."""
     try:
         text = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError):
-        return path.stem
+        return fallback
     if not text.startswith(META_MARK + "\n"):
-        return path.stem
+        return fallback
     rest = text[len(META_MARK) + 1:]
     idx = rest.find("\n" + META_MARK)
     if idx == -1:
-        return path.stem
+        return fallback
     for line in rest[:idx].split("\n"):
         if line.startswith("title:"):
-            return line.split(":", 1)[1].strip() or path.stem
-    return path.stem
+            return line.split(":", 1)[1].strip() or fallback
+    return fallback
 
 
 def sort_key(title: str):
-    """Natural sort: split digit runs out so "2." precedes "10.", case-insensitive.
-
-    Numbers compare as ints and sort ahead of text at the same position, so
-    "0. Intro" < "1. Foundation" < "2. Specification" < "a. Quickstart".
-    """
-    parts = re.split(r"(\d+)", title)
+    """Natural sort: split digit runs out so "2" precedes "10", case-insensitive."""
     key = []
-    for part in parts:
+    for part in re.split(r"(\d+)", title):
         if not part:
             continue
-        if part.isdigit():
-            key.append((0, int(part), ""))
-        else:
-            key.append((1, 0, part.lower()))
+        key.append((0, int(part), "") if part.isdigit() else (1, 0, part.lower()))
     return key
 
 
 def link(label: str, path: Path) -> str:
     rel = path.relative_to(OUT_FILE.parent).as_posix()
-    # Escape ] in labels so the markdown link target is not truncated.
     label = label.replace("[", "\\[").replace("]", "\\]")
     return f"[{label}]({quote(rel)})"
 
 
 def walk(directory: Path, depth: int, lines: list):
-    """Emit one list item per page, recursing into subspaces.
-
-    Entries are ordered by display title rather than by space name, since the
-    two often disagree (space "b. Design Scenario" has title "a1. Design
-    Scenario"). A space with no WebHome falls back to its directory name.
-    """
-    # A space's own page is WebHome.xwiki; other .xwiki files are leaf pages.
+    """One list item per page; a folder's page is its 0 Index.xwiki, followed by its children."""
     entries = []
     for child in directory.iterdir():
-        if child.name.endswith(".attachments"):
+        if child.name.startswith(".") or child.name.endswith(".attachments"):
             continue
         if child.is_dir():
-            home = child / "WebHome.xwiki"
-            title = read_title(home) if home.exists() else child.name
-            entries.append((title, child, home if home.exists() else None))
-        elif child.suffix == ".xwiki" and child.stem != "WebHome":
-            entries.append((read_title(child), child, child))
+            index = child / INDEX
+            entries.append((read_title(index, child.name) if index.exists() else child.name, child, index))
+        elif child.suffix == ".xwiki" and child.name != INDEX and not child.name.endswith(".remote.xwiki"):
+            entries.append((read_title(child, child.stem), child, child))
 
-    entries.sort(key=lambda e: sort_key(e[0]))
-
-    for title, entry, page in entries:
+    for title, entry, page in sorted(entries, key=lambda e: sort_key(e[0])):
         indent = "  " * depth
+        lines.append(f"{indent}- {link(title, page)}" if page.exists() else f"{indent}- {title}")
         if entry.is_dir():
-            if page is not None:
-                lines.append(f"{indent}- {link(title, page)}")
-            else:
-                # Space with no page of its own; show the bare name as a group.
-                lines.append(f"{indent}- {title}")
             walk(entry, depth + 1, lines)
-        else:
-            lines.append(f"{indent}- {link(title, page)}")
 
 
 def main():
@@ -103,10 +80,12 @@ def main():
         "# Wiki Outline",
         "",
         "Generated by `wiki-sync/outline.py` -- do not edit by hand.",
-        "Titles are the wiki's display names; links point at the local files,",
-        "whose directories are named after XWiki spaces.",
+        "Titles are the wiki's page titles; a page with children links to its folder's `0 Index.xwiki`.",
         "",
     ]
+    home = CONTENT_DIR / INDEX
+    if home.exists():
+        lines.append(f"- {link(read_title(home, 'Home'), home)} (home page)")
     walk(CONTENT_DIR, 0, lines)
     lines.append("")
 

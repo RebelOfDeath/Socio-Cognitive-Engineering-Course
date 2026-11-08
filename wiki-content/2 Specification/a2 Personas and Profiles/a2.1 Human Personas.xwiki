@@ -1,0 +1,120 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/2%20Specification/spaces/a2%20Personas%20and%20Profiles/spaces/a2.1%20Human%20Personas/pages/WebHome
+title: a2.1 Human Personas
+synced_title: a2.1 Human Personas
+syntax: xwiki/2.1
+version: 3.1
+hash: 9341d88ed64e76ebb1476896aaf6bd9889f426f1cc5afdb93156025cf46d7523
+%%WIKI-SYNC-META%%
+**Abstract.** Three personas, one per direct stakeholder role in the Design Scenario. Elena, our main persona, has just moved in; she ran the post office counter in a small town (HP-01). Jan, a long-time resident who has been keeping to his room, ran the bakery in the same town (HP-02). Myra is the care worker both of them trust (HP-03). All provisional: built from literature and group reasoning, not from interviews.
+
+= Human Persona - Elena [HP-01] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-01
+|Name|Elena, resident with dementia
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, PS-01, PS-03.
+|Elaborates|ST-01; ST-02 when Jan is introduced to her
+|Role in Scenario|Moves in; decides what others may know about her; meets Jan; asks when she can go home (DS-01).
+|Task Demands|(((
+1. Settle into a new place, among strangers
+1. Keep new names and faces
+1. Decide what other residents may know about her
+1. Accept or decline an introduction
+)))
+|Specific Capabilities and Needs|(((
+Can: walk 30 minutes without aid; talk easily; answer yes or no; decide item by item what to share.
+
+Cannot: keep new names for more than a day or two; hold on, on bad days, to the fact that she lives here now.
+
+Aged 81; early Alzheimer's disease. Copes by facing it openly, and is embarrassed by slips in company.
+)))
+|Values and Motivations|(((
+* HV-06 Social connectedness - lonely since Thomas died
+* HV-02 Dignity - slips not remarked on
+* HV-08 Truthfulness - "Don't fob me off"
+* HV-03 Privacy - keeps her diagnosis to herself
+* HV-07 Identity - twenty-five years behind the counter
+)))
+|Preferences|One person at a time rather than a group; talk over coffee; a walk in the garden when it is dry; mornings are her best time.
+|Past ties|Nobody in the home yet. Grew up and worked in the same town as Jan, without knowing him by name.
+|Social Network and Relationships|Widowed last year. Her son lives abroad and calls every week. Myra (ST-04) is her trusted person for Thomas's death and for going home.
+|History and Experiences|Ran the post office counter in a small town for twenty-five years, and knew half the town by name. Moved in after a fall, at her son's request.
+|Constraints and Privacy Considerations|Released: the post office counter, her town, her garden. Private: her diagnosis; Thomas's death (Myra only, as agreed with her son). Settings (RP-01): suggestions welcome; names repeated to both at meetings; first name.
+
+= Human Persona - Jan [HP-02] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-02
+|Name|Jan, resident with dementia
+|Status|In Progress
+|Evidence basis|Provisional. Literature and group reasoning only. Built on ST-01, ST-02, PS-02, PS-03.
+|Elaborates|ST-01; ST-02 when Elena is introduced to him
+|Role in Scenario|Long-time resident who has been keeping to his room; is introduced to Elena; suggests a walk (DS-01).
+|Task Demands|(((
+1. Find a reason to leave his room
+1. Agree, or not, to meet someone new
+1. Keep a conversation going
+1. Keep an agreed time in mind
+)))
+|Specific Capabilities and Needs|(((
+Can: walk 20-30 minutes with a rollator; tell old stories vividly; answer yes or no; choose between two options.
+
+Cannot: recall this morning; keep a time in mind for long.
+
+Moderate dementia. Hearing aid. Copes by laughing slips off and carrying on.
+)))
+|Values and Motivations|(((
+* HV-01 Autonomy - goes out for his own reasons, not to fill a timetable
+* HV-06 Social connectedness - misses the chat with the morning customers
+* HV-07 Identity - the bakery
+* HV-02 Dignity - plain talk, no fuss
+* HV-03 Privacy - "What I tell Elena is between us"
+)))
+|Preferences|One person rather than a group; afternoons; a walk in the garden; football results.
+|Past ties|Nobody in the home from before. Knew the post office in his town, though not who worked there.
+|Social Network and Relationships|His daughter (ST-03) visits monthly and wrote the life story with the coordinator. Myra (ST-04) works most afternoons and is his trusted person.
+|History and Experiences|Ran the bakery in a small town for thirty years, up before dawn. Moved in two years ago. The few residents he used to talk to have died or moved, and over the past months he has spent more of the day in his room.
+|Constraints and Privacy Considerations|Released: the bakery, his town, football. Agreed, with his daughter and Myra, that Myra hears when he stays in his room for several days running. Settings (RP-01): introductions on request or by suggestion; names repeated to both; first name.
+
+= Human Persona - Myra [HP-03] =
+
+**Report Format:** §2.2 Personas and Profiles
+
+== Fields ==
+
+|=Field|=Description
+|ID|HP-03
+|Name|Myra, care worker
+|Status|In Progress
+|Evidence basis|Provisional. Group reasoning only. Built on ST-04, PS-01, PS-02.
+|Elaborates|ST-04
+|Role in Scenario|Looks in on Jan after a note; brings Jan and Elena together; answers Elena's question about going home; brings them to the walk they agreed (DS-01).
+|Task Demands|(((
+1. Introduce residents when time allows
+1. Act on notes from the System, without checking up on residents
+1. Answer sensitive questions as agreed with families
+1. Keep the relationship map current with the coordinator
+)))
+|Specific Capabilities and Needs|Knows the residents; trained in gentle redirection. Needs: few, meaningful notes; agreed answers in one place.
+|Values and Motivations|(((
+* HV-08 Truthfulness - painful news told as agreed with the family
+* HV-05 Well-being - residents calm and active
+* HV-06 Social connectedness - residents know each other
+* HV-04 Safety - residents safe in the garden
+* HV-03 Privacy - no timing of her own work
+)))
+|Preferences|Notes on her work phone rather than calls; one place to look up agreed answers.
+|Past ties|Has worked in the home for six years and knows most families.
+|Social Network and Relationships|Several residents per shift. Works with the coordinator. Talks with families at visits.
+|History and Experiences|Has seen newcomers withdraw in their first weeks. Once heard a colleague tell a resident "Only for a few days".
+|Constraints and Privacy Considerations|Will not pass on news she has not agreed with the family. Decides for herself whether to act on a note. Will not accept frequent low-value notes.

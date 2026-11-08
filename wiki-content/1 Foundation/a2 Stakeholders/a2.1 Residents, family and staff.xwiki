@@ -1,0 +1,184 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Foundation/spaces/a2%20Stakeholders/spaces/a2.1%20Residents%2C%20family%20and%20staff/pages/WebHome
+title: a2.1 Residents, family and staff
+synced_title: a2.1 Residents, family and staff
+syntax: xwiki/2.1
+version: 1.6
+hash: 343dcf88deab5d6ba7b36d7c345c6b16ebd21ae3591c914a3d871c1e7dd387dc
+%%WIKI-SYNC-META%%
+**Abstract.** Seven stakeholders shape how social introductions unfold in the care home. A resident with dementia (ST-01), often new to the facility or isolated in their bedroom, meets, converses with, and invites a fellow resident (ST-02). Three stakeholders help broker that connection: the relative, who arranges the move and shares biographical history (ST-03); the care worker, who welcomes newcomers, supports daily meetings, and handles sensitive questions (ST-04); and the activity coordinator, who records life stories, reviews matches, and arranges seating (ST-05). Medical and therapy staff assess cognitive and clinical suitability (ST-06), while care home management oversees admissions, staffing, and data protection (ST-07). All share a commitment to the resident's well-being and trust, while balancing social encouragement against personal autonomy and privacy.
+
+= Stakeholder - Resident with dementia [ST-01] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-01
+|Name|Resident with dementia
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
+|Type|Direct - moves into the home, converses with the System, meets peers, and extends or considers invitations
+|Values and motivations|(((
+* HV-06 Social connectedness (high) - genuine company, conversation, and friendship with peers
+* HV-02 Dignity (high) - being spoken to as an adult, without memory slips being exposed or patronised
+* HV-08 Truthfulness (high) - honest answers from a trusted person regarding painful topics such as why they live here or who has passed away
+* HV-01 Autonomy (high) - deciding for oneself whom to meet, when to socialise, and when to stay in one's room
+* HV-03 Privacy (high) - keeping personal secrets and controlling what facts about themselves are shared with others
+* HV-07 Identity (high) - being known through one's own history, former trade, interests, and words
+* HV-05 Well-being (high) - calm, enjoyable days with something to look forward to
+* HV-04 Safety (high) - feeling secure and unthreatened in shared spaces and activities
+)))
+|Relationship to other Stakeholders|Arrives knowing nobody in the facility. Meets and spends time with ST-02. Relatives (ST-03) help provide biographical history and consent. Welcomed and supported by ST-04 and ST-05. Cognitive and clinical needs assessed by ST-06.
+
+== Graph edges ==
+
+performs → SA-01 to SA-04; holds → HV-01 to HV-08; appears-in → PS-01 to PS-04; elaborated-as → HP-01, HP-02 (§2.2).
+
+= Stakeholder - Fellow resident [ST-02] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-02
+|Name|Fellow resident
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01, SA-03, and SA-04 through group reasoning.
+|Type|Direct - interacts with the System, accepts or declines introductions, and talks with ST-01 (often also living with early- to middle-stage dementia)
+|Values and motivations|(((
+* HV-06 Social connectedness (high) - finding a compatible peer to talk and spend time with
+* HV-01 Autonomy (high) - freedom to decline an introduction or leave a conversation without pressure
+* HV-03 Privacy (high) - control over their own personal history and private room time
+* HV-05 Well-being (high) - calm, pleasant company without agitation or social strain
+* HV-02 Dignity (medium) - being treated as a peer rather than an obligation
+)))
+|Relationship to other Stakeholders|Encounters ST-01 in communal rooms or through introductions brokered by ST-04, ST-05, or the System. Has their own family (ST-03) and care plan.
+
+== Graph edges ==
+
+performs → SA-03, SA-04; supports → SA-01; holds → HV-01 to HV-03, HV-05, HV-06; appears-in → PS-01, PS-03, PS-04; elaborated-as → HP-01, HP-02 (§2.2).
+
+= Stakeholder - Relative [ST-03] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-03
+|Name|Relative
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
+|Type|Indirect - arranges the admission, contributes to the life story, agrees on how sensitive topics are handled, and provides legal representative consent where needed
+|Values and motivations|(((
+* HV-06 Social connectedness (high) - wanting their relative to have companionship and friends in the home
+* HV-08 Truthfulness (high) - expecting staff and systems not to deceive their relative
+* HV-05 Well-being (high) - seeing their relative settle in, stay engaged, and avoid isolation
+* HV-07 Identity (high) - having their relative's life history known and respected
+* HV-03 Privacy (low) - willing to share personal details with staff to help their relative settle, sometimes more freely than the resident themselves would choose
+)))
+|Relationship to other Stakeholders|Family member of ST-01. Shares biographical background with ST-05 and agrees with ST-04 on who should answer painful questions.
+
+== Graph edges ==
+
+supports → SA-01 to SA-04; holds → HV-03, HV-05 to HV-08; appears-in → PS-01, PS-03.
+
+= Stakeholder - Care worker [ST-04] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-04
+|Name|Care worker
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
+|Type|Direct - welcomes newcomers, brings matched residents together in common areas, supports informal meetings, and answers sensitive questions
+|Values and motivations|(((
+* HV-04 Safety (high) - keeping residents physically and emotionally safe during daily routines
+* HV-08 Truthfulness (high) - giving honest, compassionate answers and keeping confidences
+* HV-05 Well-being (high) - seeing residents calm, comfortable, and free from agitation
+* HV-06 Social connectedness (medium) - helping residents get to know one another when shift time allows
+* HV-03 Privacy (medium) - respecting residents' private space and refusing workplace surveillance of staff
+)))
+|Relationship to other Stakeholders|Acts as the trusted person for sensitive questions as agreed with ST-03. Shares day-to-day observations with ST-05 about which residents get along, and follows clinical guidance from ST-06.
+
+== Graph edges ==
+
+supports → SA-01 to SA-04; holds → HV-03 to HV-06, HV-08; appears-in → PS-01 to PS-03; elaborated-as → HP-03 (§2.2).
+
+= Stakeholder - Activity coordinator [ST-05] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-05
+|Name|Activity coordinator
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01 to SA-04 through group reasoning.
+|Type|Direct - conducts life-story interviews, manages the relationship map, reviews compatibility matches, and facilitates communal activities
+|Values and motivations|(((
+* HV-06 Social connectedness (high) - fostering friendships and using shared activities to ease first contact
+* HV-05 Well-being (high) - keeping residents engaged and content
+* HV-07 Identity (high) - grounding activities and introductions in each resident's life story
+* HV-03 Privacy (high) - safeguarding the biographical histories entrusted to them
+* HV-01 Autonomy (medium) - ensuring residents choose which invitations and activities to accept
+)))
+|Relationship to other Stakeholders|Records life stories with ST-01 and ST-03. Coordinates introductions and seating with ST-04. Employed by ST-07.
+
+== Graph edges ==
+
+supports → SA-01 to SA-04; holds → HV-01, HV-03, HV-05 to HV-07; appears-in → PS-02.
+
+= Stakeholder - Medical and therapy staff [ST-06] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-06
+|Name|Medical and therapy staff (physician, nurse, physiotherapist, psychologist)
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01 and SA-04 through group reasoning.
+|Type|Indirect - assess cognitive status, behavioural symptoms, and mobility, and communicate clinical diagnoses
+|Values and motivations|(((
+* HV-04 Safety (high) - preventing physical harm, falls, and acute behavioural distress
+* HV-05 Well-being (high) - supporting mood, cognitive stimulation, and healthy daily activity
+* HV-08 Truthfulness (high) - ensuring clinical diagnoses and medical realities are communicated properly
+* HV-03 Privacy (high) - upholding medical confidentiality
+)))
+|Relationship to other Stakeholders|Assess ST-01 and ST-02 and advise ST-04 and ST-05 on clinical or mobility boundaries. Serve as the trusted authority for medical questions.
+
+== Graph edges ==
+
+supports → SA-01, SA-04; holds → HV-03 to HV-05, HV-08.
+
+= Stakeholder - Care home management [ST-07] =
+
+**Report Format:** §1.1 Operational Demands
+
+== Fields ==
+
+|=Field|=Description
+|ID|ST-07
+|Name|Care home management
+|Status|Finished
+|Evidence basis|Provisional; derived from SA-01 and SA-04 through group reasoning.
+|Type|Indirect - oversees admissions, staffing, facility safety, and data protection, and decides on deploying the System
+|Values and motivations|(((
+* HV-04 Safety (high) - institutional responsibility for resident safety and duty of care
+* HV-03 Privacy (high) - compliance with GDPR and health-data protection standards
+* HV-05 Well-being (medium) - overall quality of residential care and family satisfaction
+)))
+|Relationship to other Stakeholders|Employs ST-04 and ST-05, admits ST-01, and governs facility policies and local data infrastructure.
+
+== Graph edges ==
+
+governs → SA-01 (admissions), SA-04 (staffing and communal spaces), System data; holds → HV-03 to HV-05.

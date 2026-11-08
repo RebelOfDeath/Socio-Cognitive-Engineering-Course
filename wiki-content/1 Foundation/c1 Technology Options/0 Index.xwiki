@@ -1,0 +1,15 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/1%20Foundation/spaces/c1%20Technology%20Options/pages/WebHome
+title: c1 Technology Options
+synced_title: c1 Technology Options
+syntax: xwiki/2.1
+version: 1.1
+hash: 2a7d194ca413c901c67be96e74d57bd06555de96b74a4d28635df7de483710ba
+%%WIKI-SYNC-META%%
+**Abstract.** Technology Options: available or emerging capabilities considered for the System, rejected ones included, so the rationale is a selection rather than a justification. Main concept: Meaningful Connections. The morning-care options are listed separately.
+
+= Concepts =
+
+|=Page|=Options|=Status
+|[[c1.1 Pepper, resident profiles and local server>>doc:1 Foundation.c1 Technology Options.c1\.1 Pepper, resident profiles and local server.WebHome]]|Selected: TECH-01 Pepper in the lounge; TECH-03 Presence sensing in residents' rooms, opt-in only; TECH-04 Local server, one instance per resident; TECH-05 Consent-gated matching; TECH-06 Resident profile for matching. Rejected: TECH-02 Pocket guide; TECH-07 Cloud speech and language services; TECH-08 Audio recording; TECH-09 Location and body sensing. Envisioned: TECH-18 Pepper with an on-device accelerator|**Current**
+|[[c1.2 Morning care - technology options>>doc:1 Foundation.c1 Technology Options.c1\.2 Morning care - technology options.WebHome]]|TECH-10 to TECH-17|Separate concept

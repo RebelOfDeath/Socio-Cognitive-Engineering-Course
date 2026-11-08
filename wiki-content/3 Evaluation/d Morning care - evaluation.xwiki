@@ -1,0 +1,36 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/3%20Evaluation/spaces/d%20Morning%20care%20-%20evaluation/pages/WebHome
+title: d Morning care - evaluation
+synced_title: d Morning care - evaluation
+syntax: xwiki/2.1
+version: 3.1
+hash: a661f06299af43e8beeab2c00c9f511c37b4231ada9b5083f81e0189e56839f3
+%%WIKI-SYNC-META%%
+* [[a2 Morning care - artifacts>>doc:3 Evaluation.a Artifacts.a2 Morning care - artifacts.WebHome]]: AT-02 Pepper tooth-brushing aid
+* [[b2 Morning care - evaluation reports>>doc:3 Evaluation.b Evaluation Reports.b2 Morning care - evaluation reports.WebHome]]: ER-01 cognitive walkthrough of UC04; ER-02 within-resident baseline comparison (study design)
+* [[c1 Morning care - evidence>>doc:3 Evaluation.c Evidence.c1 Morning care - evidence.WebHome]]: EV-01 to EV-07
+
+= Verification and validation summary =
+
+Where each UC04 Premise and Claim stands. "Planned" means the Evaluation Method is designed but has not produced Evidence.
+
+|=Premise or Claim|=Planned method|=Report so far|=Evidence so far|=Verdict so far
+|UC04-F7-PR7|EM-05|none (needs Build A)|none|none
+|UC04-F8-PR8|EM-05|none (needs Build A)|none|none
+|UC04-F9-PR9|EM-05|none (needs Build A)|none|none
+|UC04-F10-PR10|EM-05|none (needs Build A)|none|none
+|UC04-F8-CL10|EM-06|ER-01; ER-02 designed|EV-01|Qualifies (walkthrough only)
+|UC04-F8-CL11|EM-06|ER-02 designed|none|none
+|UC04-F8-CL12|EM-06|ER-02 designed|none|none
+|UC04-F8-CL13 (adverse)|EM-06|ER-01; ER-02 designed|EV-02|Qualifies (walkthrough only)
+|UC04-F8-CL14 (adverse)|EM-06, EM-07|ER-01; ER-02 designed|EV-03|Qualifies (walkthrough only)
+|UC04-F9-CL15|EM-06|ER-01; ER-02 designed|EV-04|Challenges, as specified in Spec-1; WF-07 is fixed and needs walking again, WF-06 and WF-08 are open (O-35, O-37)
+|UC04-F7-CL16|EM-06, EM-07|ER-01; ER-02 designed|EV-07|Qualifies (walkthrough only)
+|UC04-F10-CL17|EM-07|ER-01|EV-05|Challenges (walkthrough only; O-38)
+|UC04-F9-CL18|EM-06, EM-07|ER-02 designed|none|none
+|UC04-F8-CL19|EM-06|ER-01; ER-02 designed|EV-06|Qualifies (walkthrough only)
+|UC04-F9-CL20 (adverse)|EM-06|ER-02 designed|none|none
+
+No Claim has yet been tested on a verified Premise, because EM-05 has not run.
+
+ER-01 judged Claims on a paper build (Spec-1), on which no Premise can be verified. Its verdicts therefore say whether the mechanism each Claim relies on is credible as specified; they cannot say whether the System produces the effect. Two verdicts are Challenges (CL15, CL17): as specified, the handover and the session record could not deliver what those Claims state. Five are Qualifies: the mechanism is credible at some steps and fails under conditions the findings name. None is Supports, which one evaluator's walkthrough could not justify. In the next iteration EM-05 runs on Build A first, so that ER-02 tests Claims on verified Premises and a Claim that fails can be told apart from a System that did not work. Interpretation across both concepts is on [[e Discussion, limitations and next iteration>>doc:3 Evaluation.e Discussion, limitations and next iteration.WebHome]].

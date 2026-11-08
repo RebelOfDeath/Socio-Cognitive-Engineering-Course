@@ -1,0 +1,6 @@
+{
+  // Sync bookkeeping: which pages were on the wiki at the last pull or push. Don't hand-edit.
+  "files.exclude": {
+    "wiki-content/.sync-state.json": true
+  }
+}

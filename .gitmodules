@@ -1,0 +1,3 @@
+[submodule "sce-poc"]
+	path = sce-poc
+	url = git@github.com:gintskk/sce-poc.git

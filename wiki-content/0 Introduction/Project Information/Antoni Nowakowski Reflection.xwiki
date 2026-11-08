@@ -1,0 +1,29 @@
+%%WIKI-SYNC-META%%
+href: https://xwiki.ewi.tudelft.nl/xwiki/rest/wikis/sce2026group04/spaces/0%20Introduction/spaces/Project%20Information/spaces/Antoni%20Nowakowski%20Reflection/pages/WebHome
+title: Antoni Nowakowski Reflection
+synced_title: Antoni Nowakowski Reflection
+syntax: xwiki/2.1
+version: 2.2
+hash: c1fa3347caf2faef075b3be9c8fc5b4e1874e976e33519a78b8870e4d849a85c
+%%WIKI-SYNC-META%%
+Course Content
+
+For me the biggest challenge in this course was creating the mental map that connects every concept that needs to be well thought out in the final design. While individually the terms like Human Value, Value Tension, Premise, Claim or Measure are simple enough to understand, once they are put together into this spider-web of terms that each shape how the other is formed for me it became a quite difficult landscape to wrap my head around. It was genuinely a great exercise as in software projects I normally start from what the system has to do. SCE starts with the situated activity, and module 1a explained why: cognition is embodied and embedded, so it cannot be understood apart from the place, the people and the routine it happens in. For our project this meant first describing what it is like to move into a care home, to greet someone new, and to sit in your room waiting for a reason to leave it (SA-01 to SA-04). Several of our later design rules came from those descriptions, not from what Pepper can do. 
+
+The memory lecture was the most useful for our concept. One idea that stuck with me is that you should support what people use their memory for, not try to improve their memory. Kinnect does not train residents to remember each other; it uses reminiscence to help two people find something in common. The lecture also explained why topics from early adulthood, like a trade or a hometown, are easiest to recall (HFC-04), and why asking "Do you remember...?" can embarrass someone when they cannot recall it.
+
+From the evaluation lecture I learned that a use case is more than documentation. Its action sequence can be used directly as the script for a cognitive walkthrough. I also saw its limit for our project: the evaluator has to imagine being the persona, which is hard when that persona is an 81-year-old with dementia.
+
+The ethics lecture made me look at the whole care situation instead of only the robot. Good care depends on residents, staff and the robot together. This is why in our design the activity coordinator approves every match and painful questions go to a trusted person (IDP-03). It also made me notice our own assumptions, for example that every resident can hear Pepper in a noisy lounge.
+
+Project contribution
+
+Most of our design decisions were made together in team meetings, and I took an active part in that ideation, also for parts of the wiki that were later written up by other team members. I wrote the Team Design Pattern and the Interaction Design Patterns for both of our concepts. For Kinnect this is TDP-01 (consent-gated social brokering with human handover) and IDP-01 to IDP-03 (introduce then step back, ask each person in private, defer sensitive questions to a trusted person); I also wrote the patterns for the morning-care concept. Besides that I did maintenance work on the Foundation: I updated the value tensions, reworded the situated activities, and renumbered the problem scenarios, which meant fixing every page that referred to the old IDs. I also took part in creating the summative study for Kinnect (ER-03): the two-home comparison was worked out together in a team meeting and a teammate then wrote it up on the wiki. I prepared and gave the final presentation.
+In my opinion our collaboration went smoothly throughout the project. We met during the weekly working-group sessions and kept all our work in a shared Git repository that synced with the wiki, so everyone could see what the others were writing and build on it. Work was divided by section and by concept, which meant we rarely got in each other's way, even while we were developing the morning-care idea and Kinnect side by side. Serious disagreements were rare. When we did see things differently, for example about which concept to take forward or how a page should be worded, we talked it through as a group and agreed on a direction without much trouble. Splitting the presentations was also easy: one half of the team gave the interim presentation, and the other half, including me, gave the final one.
+
+Lessons learned
+The main lesson for me was learning to work in such a structured way. At first the fixed formats and IDs felt like paperwork, but they are what let five people work on different parts and still end up with one consistent design. Renumbering the problem scenarios showed me how connected everything is: one small change meant updating many pages.
+
+Writing the design patterns taught me to think more abstractly, taking a solution that repeats across use cases and describing it so it can be reused elsewhere, while still linking it to the Claims it supports. Planning and presenting the summative study showed me that evaluation means deciding in advance what counts as success and what a result can and cannot tell you.
+
+If I started again, I would take ownership of a larger section of the wiki early on, instead of mainly working on patterns and maintenance later, and I would start preparing the presentation sooner.
