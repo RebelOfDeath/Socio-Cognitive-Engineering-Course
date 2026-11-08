@@ -34,7 +34,7 @@ hash: 7cd7157a6a49362c2cf6ef51be7d74d1c2013f5b19d928bafc0e539524be08c1
 
 **Background.** Residents of assisted living and dementia care homes are often socially isolated, and spend large parts of the day alone in their private bedrooms, away from communal areas (Jansen et al., 2017). Cognitive decline can make it harder to start a conversation with a peer spontaneously. Social network theory finds that ties form faster and last longer between people who share life histories, interests and ways of talking, a principle known as homophily (McPherson et al., 2001). Structured reminiscence about nostalgic eras, music and life histories has been associated with improved mood and communication in dementia care (Woods et al., 2018).
 
-Kinnect is an autonomous conversational companion robot designed to act as a social catalyst. It does not replace human contact. In one-to-one, person-centred conversations it learns each resident's background, hobbies and conversational pace. It then computes compatibility between residents and brings matched residents together through tailored conversational icebreakers (Wang et al., 2026).
+Kinnect is an autonomous conversational companion robot designed to act as a social catalyst. It does not replace human contact. In one-to-one, person-centred conversations it learns each resident's background, hobbies and conversational pace. It then computes compatibility between residents and brings matched residents together through tailored conversational icebreakers.
 
 **Why a Summative Test.** Both Claims are about what happens to residents of a real care home over several weeks: whether they meet peers, talk with them and spend less time in their rooms. Only a study in that setting can support, qualify or challenge them.
 )))
@@ -57,7 +57,7 @@ Exclusion:
 
 **Experimental design.** Between-subject, longitudinal cluster-controlled trial (Donner & Klar, 2000): a one-month intervention within a five-week operational window, at two homes that run at the same time. One home is allocated to the intervention arm and the other to the control arm, which limits cross-exposure and contamination between the arms (Chenoweth et al., 2014; Donner & Klar, 2000).
 
-* **Intervention arm.** Kinnect engages residents in person-centred dialogue and matches them with peers by compatibility (the "Vibing Algorithm"). Matched residents are offered voluntary shared time in the communal lounge (Wang et al., 2026; Woods et al., 2018).
+* **Intervention arm.** Kinnect engages residents in person-centred dialogue and matches them with peers by compatibility (the "Vibing Algorithm"). Matched residents are offered voluntary shared time in the communal lounge (Woods et al., 2018).
 * **Control arm.** The home's standard social activity programme: communal lounge time on one's own, or the home's usual group activities, without algorithmic matching and without robot icebreakers.
 
 Independent variable: arm, nominal with two levels (intervention, control), allocated per home. Dependent variables: the Measures below.
@@ -164,7 +164,7 @@ The control home keeps its standard care routines throughout. Where a phase does
 * **Staff education and training.** Study procedures, protocol compliance, usability observation, and running the intervention and control conditions (Chenoweth et al., 2014).
 )))
 |1 Individual rapport and baseline persona collection|Week 1|(((
-* **One-to-one sessions and usability baseline.** Daily sessions of 15 to 20 minutes between each intervention participant and Kinnect (Wang et al., 2026), to see how new users understand and respond to the robot.
+* **One-to-one sessions and usability baseline.** Daily sessions of 15 to 20 minutes between each intervention participant and Kinnect, to see how new users understand and respond to the robot.
 * **Data collection.** On the robot (TECH-18), persona attributes (life history, nostalgic eras, music, activity preferences) and acoustic markers (speech cadence, turn-taking latency) are extracted from the conversation (Fraser et al., 2016; Luz et al., 2021; Woods et al., 2018). Persona items enter the profile as private until the resident releases them (TECH-05).
 * **Control home.** Standard care routines and communal lounge access, with no companion sessions.
 )))
@@ -174,7 +174,7 @@ The control home keeps its standard care routines throughout. Where a phase does
 )))
 |3 Joint icebreaking and facilitated engagement|Weeks 3 to 4|(((
 * **Icebreaking in pairs.** Kinnect hosts short joint sessions with matched pairs, or checks in with them, and supplies shared-memory icebreaker topics that prompt the two to talk on their own (Woods et al., 2018).
-* **Care staff support.** When matched participants show interest, staff arrange informal seating or coffee and tea in common areas, without requiring anyone to take part (Black et al., 2010).
+* **Care staff support.** When matched participants show interest, staff arrange informal seating or coffee and tea in common areas, without requiring anyone to take part.
 )))
 |4 Post-intervention evaluation and offboarding|Week 5|(((
 * **Primary measures.** Final CMAI (Cohen-Mansfield et al., 1989). Analysis of the beacon logs for social network density, time in the communal lounge and bedroom isolation time (Jansen et al., 2017). Analysis of the M-21 values computed on the robot: turn-taking, sentiment, topic coherence (Fraser et al., 2016; Luz et al., 2021).
@@ -232,18 +232,19 @@ Where each Kinnect Premise and Claim stands. "Planned" means the Evaluation Meth
 |UC01-F4-PR4|EM-01|none (needs Build 2)|none|none
 |UC03-F5-PR5|EM-01|none (needs Build 2)|none|none
 |UC02-F6-PR6|EM-01|none (needs Build 2)|none|none
-|UC02-F3-CL1|EM-03; EM-08 (closest Claim to ER-03's primary hypothesis)|ER-03 designed|none|none
+|UC02-F3-CL1|EM-03; EM-08 (closest Claim to ER-03's primary hypothesis); ER-04 walkthrough|ER-04; ER-03 designed|EV-08|Qualifies (walkthrough only)
 |UC01-F3-CL2|EM-03|none|none|none
-|UC02-F1-CL3 (adverse)|EM-03, EM-04|none|none|none
-|UC02-F2-CL4 (adverse)|EM-04|none|none|none
-|UC01-F3-CL5 (adverse)|EM-03, EM-04|none|none|none
-|UC03-F5-CL6|EM-03|none|none|none
-|UC03-F5-CL7 (adverse)|EM-04|none|none|none
-|UC01-F4-CL8|EM-03, EM-04|none|none|none
+|UC02-F1-CL3 (adverse)|EM-03, EM-04; repeat of ER-04 planned|none|none|none
+|UC02-F2-CL4 (adverse)|EM-04; repeat of ER-04 planned|none|none|none
+|UC01-F3-CL5 (adverse)|EM-03, EM-04; repeat of ER-04 planned|none|none|none
+|UC03-F5-CL6|EM-03; repeat of ER-04 planned|none|none|none
+|UC03-F5-CL7 (adverse)|EM-04; repeat of ER-04 planned|none|none|none
+|UC01-F4-CL8|EM-03, EM-04; repeat of ER-04 planned|none|none|none
 |UC02-F3-CL9|EM-03|none|none|none
+|UC02-F6-CL21 (adverse)|EM-04|none|none|none
 |ER-03 secondary hypothesis (first-time usability)|EM-08|ER-03 designed|none|none (no Claim ID yet; see //Open items//)
 
-No Kinnect Premise or Claim has Evidence yet, because no Evaluation Report on AT-01 has been run.
+Only UC02-F3-CL1 has Evidence so far, from the ER-04 peer walkthrough of 13 October, which recorded no step-by-step answers. The repeat of ER-04 is planned for the other Claims marked for it. No Premise is verified yet, because EM-01 needs Build 2.
 
 = References =
 
@@ -261,5 +262,4 @@ No Kinnect Premise or Claim has Evidence yet, because no Evaluation Report on AT
 * McPherson, M., Smith-Lovin, L. & Cook, J. M. (2001). Birds of a feather: homophily in social networks. //Annual Review of Sociology//, 27(1), 415-444. doi:10.1146/annurev.soc.27.1.415
 * Nasreddine, Z. S. et al. (2005). The Montreal Cognitive Assessment, MoCA: a brief screening tool for mild cognitive impairment. //Journal of the American Geriatrics Society//, 53(4), 695-699. doi:10.1111/j.1532-5415.2005.53221.x
 * Slaughter, S., Cole, D., Jennings, E. & Reimer, M. A. (2007). Consent and assent to participate in research from people with dementia. //Nursing Ethics//, 14(1), 27-40. doi:10.1177/0969733007071355
-* Wang, F., Perugia, G., Feng, Y. & IJsselsteijn, W. A. (2026). Social robots for people living with dementia: a scoping review on deception from design to perception. //International Journal of Social Robotics//, 18, 89. doi:10.1007/s12369-026-01422-x
 * Woods, B., O'Philbin, L., Farrell, E. M., Spector, A. E. & Orrell, M. (2018). Reminiscence therapy for dementia. //Cochrane Database of Systematic Reviews//, 2018(3), CD001120. doi:10.1002/14651858.CD001120.pub3

@@ -128,7 +128,7 @@ OBJ-03: derived-from → Goal (SA-04), HV-05, HV-06, HFC-01; served-by → F3, F
 
 OBJ-04: derived-from → HV-08, HFC-08; served-by → F3, F4; referenced-by → UC01-F4-CL8; narrated-by → OS-02.
 
-OBJ-05: derived-from → HV-03; served-by → F1, F2, F6; referenced-by → UC02-F2-CL4.
+OBJ-05: derived-from → HV-03; served-by → F1, F2, F6; referenced-by → UC02-F2-CL4, UC02-F6-CL21.
 
 OBJ-06: derived-from → HV-01, HFC-17; served-by → F1; referenced-by → UC02-F1-CL3; narrated-by → OS-03.
 
@@ -332,12 +332,13 @@ Validation: does the Function have the intended effect.
 |UC03-F5-CL7|F5|OBJ-09|**Adverse.** Notes about time spent in one's room feel like being watched, to residents or their families. Concerns ST-01, ST-03, VT-06, PS-02.|VT-06; Niemeijer et al. (2015).|EM-04; M-09 (W)|Confirmed if a resident or relative uses code W about the notes, or a resident who opted in stops them. If confirmed: no longer offered; stopped for anyone who wishes it.|UC03 5-6
 |UC01-F4-CL8|F4|OBJ-04|Positive. Painful questions, such as when a newcomer can go home, are answered by the trusted person, and trust is kept: no complaint of being misled or fobbed off. Concerns ST-01, ST-04, SA-01, PS-01.|HFC-08; Mental Health Foundation (2016).|EM-03, EM-04; M-10, M-09 (U)|All listed questions deferred; the trusted person arrives within [threshold - O-2]; System errors below [threshold - O-2] per 100 statements, all corrected; no U codes.|UC01 7
 |UC02-F3-CL9|F2, F3|OBJ-08|Positive, exploratory. Loneliness falls more in the System home than in the comparison home. Concerns ST-01, HV-06.|HFC-07; Holwerda et al. (2014).|EM-03; M-08|A larger fall in M-08 in the System home. Three months is short and the samples are small: a null result is likely, and is reported as such.|-
+|UC02-F6-CL21|F6|OBJ-05|**Adverse.** Residents or relatives feel recorded: they believe Pepper keeps what they said, even though the record holds only events and item IDs. Concerns ST-01, ST-03, VT-05.|VT-05; Niemeijer et al. (2015).|EM-04; M-09 (W, S)|Confirmed if a resident or relative uses code W or S about the record when it is explained to them. If confirmed: the record is shown to the resident or representative in plain words at the next review.|UC01 8; UC02 10; UC03 7
 
 == Graph edges ==
 
 UC01: realizes → DS-01; serves → OBJ-02, OBJ-04 to OBJ-08; uses → TDP-01, IDP-01 to IDP-03; asserts → UC01-F4-PR4, UC01-F3-CL2, UC01-F3-CL5, UC01-F4-CL8.
 
-UC02: realizes → DS-01; serves → OBJ-01, OBJ-03, OBJ-05 to OBJ-08; uses → TDP-01, IDP-01, IDP-02; asserts → UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC02-F6-PR6, UC02-F3-CL1, UC02-F1-CL3, UC02-F2-CL4, UC02-F3-CL9.
+UC02: realizes → DS-01; serves → OBJ-01, OBJ-03, OBJ-05 to OBJ-08; uses → TDP-01, IDP-01, IDP-02; asserts → UC02-F1-PR1, UC02-F2-PR2, UC02-F3-PR3, UC02-F6-PR6, UC02-F3-CL1, UC02-F1-CL3, UC02-F2-CL4, UC02-F3-CL9, UC02-F6-CL21.
 
 UC03: realizes → DS-01; serves → OBJ-01, OBJ-03, OBJ-06, OBJ-09; uses → TDP-01, IDP-02; asserts → UC03-F5-PR5, UC03-F5-CL6, UC03-F5-CL7.
 

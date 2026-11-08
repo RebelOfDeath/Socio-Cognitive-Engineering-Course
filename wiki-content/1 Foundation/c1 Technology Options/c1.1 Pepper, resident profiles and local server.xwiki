@@ -270,7 +270,7 @@ An envisioned enhanced version of Pepper (TECH-01), referred to as **Pepper+ (Pe
 * Simultaneous speaking and listening (full-duplex turn-taking, overcoming standard Pepper's half-duplex motor/speaker cross-talk limitation)
 * Local speech recognition, local LLM inference, and free one-to-one conversation (Kinnect, ER-03)
 * Persona items drawn from conversation, entered as private until the resident releases them (TECH-05)
-* Conversational measures (M-21, M-22 acoustic cadence/turn-taking latency markers), computed during the session
+* Conversational measures (M-21, including acoustic markers of cadence and turn-taking latency), computed during the session
 
 Audio is held only in working memory while it is processed. Transcripts are deleted on the robot at the end of each session. Only released profile items and the M-21 values reach the local server (TECH-04).
 )))
@@ -278,7 +278,7 @@ Audio is held only in working memory while it is processed. Transcripts are dele
 |Maturity and feasibility|Envisioned; not built.
 |Failure and fallback behaviour|Accelerator unavailable: Pepper behaves as TECH-01, with answers on the tablet, and M-21 is not collected for that session.
 |Benefits|HV-03: gives the understanding TECH-07 offers while conversations stay in the home and nothing is recorded (TECH-08). Makes ER-03's conversational measures possible.
-|Drawbacks|The robot still listens to and processes conversations. Residents may feel listened in on even when nothing is kept (M-09 code W). Cost of a custom build.
+|Drawbacks|The robot still listens to and processes conversations. Residents may feel listened in on even when nothing is kept (M-09 code W). Free conversation gives up the rule of TECH-06 and the current prototype that Pepper speaks only prepared, checked lines, so every generated utterance still has to pass Build 1's deterministic guard (no unreleased items, no sensitive topics). Cost of a custom build.
 |Selected or rejected|Envisioned for ER-03. Not part of the current prototype, which uses TECH-01 (EM-01).
 
 == Graph edges ==

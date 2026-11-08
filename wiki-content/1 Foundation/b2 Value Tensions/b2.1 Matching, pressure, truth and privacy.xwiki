@@ -218,3 +218,17 @@ VT-04: involves → HV-02, HV-06; bounds → F3; tested-by → UC02-F3-PR3, UC01
 VT-05: involves → HV-03, HV-07; bounds → F2, F6; strained-by → TECH-06, TECH-18; tested-by → UC02-F6-PR6, UC02-F2-CL4.
 
 VT-06: involves → HV-03, HV-01, HV-05; bounds → F5; strained-by → TECH-03; tested-by → UC03-F5-PR5, UC03-F5-CL7.
+
+= References =
+
+* Berridge, C. & Grigorovich, A. (2022). Algorithmic harms and digital ageism in the use of surveillance technologies in nursing homes. //Frontiers in Sociology//, 7, 957246.
+* Black, B. S., Rabins, P. V., Sugarman, J. & Karlawish, J. H. (2010). Seeking assent and respecting dissent in dementia research. //The American Journal of Geriatric Psychiatry//, 18(1), 77-85.
+* Bohns, V. K. (2016). (Mis)understanding our influence over others: a review of the underestimation-of-compliance effect. //Current Directions in Psychological Science//, 25(2), 119-123.
+* Goffman, E. (1967). //Interaction Ritual: Essays on Face-to-Face Behavior//. Anchor Books.
+* James, I. A., Wood-Mitchell, A., Waterworth, A. M., Mackenzie, L. E. & Cunningham, J. (2006). Lying to people with dementia: developing ethical guidelines for care settings. //International Journal of Geriatric Psychiatry//, 21(8), 800-801.
+* Jansen, C. P., Diegelmann, M., Schnabel, E. L., Wahl, H. W. & Hauer, K. (2017). Life-space and movement behavior in nursing home residents: results of a new sensor-based assessment and associated factors. //BMC Geriatrics//, 17, 36.
+* Mastroianni, A. M., Gilbert, D. T., Cooney, G. & Wilson, T. D. (2021). Do conversations end when people want them to? //PNAS//, 118(10), e2011809118.
+* Mental Health Foundation (2016). //What Is Truth? An Inquiry about Truth and Lying in Dementia Care//. London: Mental Health Foundation.
+* Niemeijer, A. R. et al. (2010). Ethical and practical concerns of surveillance technologies in residential care for people with dementia or intellectual disabilities: an overview of the literature. //International Psychogeriatrics//, 22(7), 1129-1142.
+* Schegloff, E. A., Jefferson, G. & Sacks, H. (1977). The preference for self-correction in the organization of repair in conversation. //Language//, 53(2), 361-382.
+* Wang, F., Perugia, G., Feng, Y. & IJsselsteijn, W. A. (2026). Social robots for people living with dementia: a scoping review on deception from design to perception. //International Journal of Social Robotics//, 18, 89.
